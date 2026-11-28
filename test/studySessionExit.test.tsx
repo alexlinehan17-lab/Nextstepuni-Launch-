@@ -101,7 +101,7 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     expect(mocks.resumeSession).toHaveBeenCalledOnce();
     expect(mocks.saveSession).not.toHaveBeenCalled();
     fireEvent.click(screen.getByRole('button', { name: 'Finish for now' }));
-    expect(screen.getByRole('dialog', { name: 'End this study session?' })).toBeInTheDocument();
+    expect(screen.getByRole('dialog', { name: 'Finish for now?' })).toBeInTheDocument();
   });
 
   test('the receipt saves quick debrief metadata through the existing session handler', async () => {
@@ -109,7 +109,7 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     renderActiveSession();
     fireEvent.click(screen.getByRole('button', { name: 'Skip this step' }));
     expect(screen.getByRole('article', { name: 'Your study receipt' })).toHaveTextContent('Mathematics');
-    fireEvent.click(screen.getByRole('button', { name: 'Good' }));
+    fireEvent.click(screen.getByRole('radio', { name: 'Good' }));
     fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
     await waitFor(() => expect(mocks.saveSession).toHaveBeenCalledWith(10, [], {
       confidenceAfter: 4, confidenceLabel: 'good', reflectionMode: 'quick',
@@ -121,7 +121,7 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     renderActiveSession();
 
     fireEvent.click(screen.getByRole('button', { name: 'Leave study session' }));
-    fireEvent.click(screen.getByRole('button', { name: 'End early and debrief' }));
+    fireEvent.click(screen.getByRole('button', { name: /^End and keep 1 min/ }));
 
     expect(mocks.endSession).toHaveBeenCalledTimes(1);
     expect(mocks.cancelSession).not.toHaveBeenCalled();
@@ -144,7 +144,12 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     fireEvent.click(screen.getByRole('button', { name: 'Leave study session' }));
 
     expect(screen.getByText(/Study for at least 5 minutes/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'End early after 5 min' })).toBeDisabled();
+    // Not a silent disabled button (agreed design): it is marked unavailable,
+    // says why, and pressing it still ends nothing.
+    const endEarly = screen.getByRole('button', { name: 'End early after 5 min' });
+    expect(endEarly).toHaveAttribute('aria-disabled', 'true');
+    fireEvent.click(endEarly);
+    expect(mocks.endSession).not.toHaveBeenCalled();
     expect(screen.getByRole('button', { name: 'Discard without saving' })).toBeEnabled();
   });
 
@@ -197,14 +202,23 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     expect(colourSwitch.compareDocumentPosition(subjectsHeading) & Node.DOCUMENT_POSITION_PRECEDING).toBeTruthy();
     fireEvent.click(colourSwitch);
     expect(colourSwitch).toHaveAttribute('aria-checked', 'true');
-    expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
+    // Start session never goes dead (agreed design): until everything is chosen
+    // it names what is missing and starts nothing. On a phone it is not there
+    // at all until something is chosen (the tab bar holds the bottom).
+    const startWaits = () => {
+      const start = screen.queryByRole('button', { name: 'Start session' });
+      if (start) { expect(start).toHaveAttribute('data-missing'); fireEvent.click(start); }
+      expect(mocks.startSession).not.toHaveBeenCalled();
+      return start ? 'waiting' : 'absent';
+    };
+    expect(startWaits()).toBe(mobile ? 'absent' : 'waiting');
     fireEvent.click(screen.getByRole('button', { name: 'Set up Mathematics, 45 minutes' }));
-    expect(screen.getByRole('button', { name: '45 min' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('radio', { name: '45 min' })).toHaveAttribute('aria-checked', 'true');
     fireEvent.click(screen.getByRole('radio', { name: 'Practice Work through questions' }));
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '3' } });
-    expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
+    expect(startWaits()).toBe('waiting');
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '35' } });
-    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start session' }));
     expect(mocks.startSession).toHaveBeenCalledWith('Mathematics', 'practice', 35, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }), { openEnded: false });
   });
 
@@ -221,11 +235,11 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     expect(peekTopicStudy(user.uid)).toBeUndefined();
     fireEvent.click(screen.getByRole('radio', { name: 'Revision Recall what you know' }));
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '30' } });
-    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start session' }));
     expect(mocks.startSession).toHaveBeenCalledWith('Accounting', 'revision', 30, selection, { openEnded: false });
     fireEvent.click(screen.getByRole('button', { name: 'Study Mathematics' }));
     expect(screen.queryByRole('button', { name: `Remove ${topic.title}` })).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start session' }));
     expect(mocks.startSession).toHaveBeenLastCalledWith('Mathematics', 'revision', 30, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }), { openEnded: false });
   });
 

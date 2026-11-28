@@ -1,22 +1,35 @@
 import React from 'react';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
-import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
+import { act, cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import DashboardView from '../components/DashboardView';
 import { createDemoStudentLoadedData } from '../data/devStudent';
 import { ALL_COURSES } from '../courseData';
 vi.mock('../hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }));
 vi.mock('../components/MountainLandscape', () => ({ default: () => <div>Programme mountains</div> }));
-beforeEach(() => { vi.useFakeTimers(); vi.setSystemTime(new Date(2026, 8, 20, 12)); });
+// Only the date is fixed: the shared menu's own timers run (it opens and closes as on a phone).
+beforeEach(() => { vi.useFakeTimers({ toFake: ['Date'] }); vi.setSystemTime(new Date(2026, 8, 20, 12)); });
 afterEach(() => { cleanup(); vi.useRealTimers(); });
-function chooseSubject(subject: string) {
-  fireEvent.click(screen.getByRole('button', { name: 'Filter by subject' }));
-  fireEvent.click(within(screen.getByRole('group', { name: 'Filter by subject' })).getByRole('checkbox', { name: subject }));
-  fireEvent.click(screen.getByRole('button', { name: 'Filter by subject' }));
+/** One tap as WebKit on iOS delivers it (see test/sharedPartsMenu.test.tsx): the agreed
+ *  menus (the shared Menu) open and choose on a tap with nothing focused. */
+async function tap(element: Element) {
+  const touch = { pointerType: 'touch', pointerId: 1, isPrimary: true, button: 0, buttons: 1, bubbles: true };
+  fireEvent.pointerDown(element, touch);
+  fireEvent.pointerUp(element, { ...touch, buttons: 0 });
+  fireEvent.mouseDown(element, { button: 0 });
+  fireEvent.mouseUp(element, { button: 0 });
+  fireEvent.click(element, { button: 0, detail: 1 });
+  await act(async () => { await new Promise(resolve => setTimeout(resolve, 30)); });
 }
-
-function chooseSection(label: string) {
-  fireEvent.click(screen.getByRole('button', { name: 'Progress section' }));
-  fireEvent.click(screen.getByRole('option', { name: new RegExp(label) }));
+const sectionButton = () => screen.getByRole('button', { name: /Progress section/ });
+const subjectButton = () => screen.getByRole('button', { name: /Filter by subject/ });
+/** One subject at a time, from a short menu with a tick (the agreed board, area-3 checklist). */
+async function chooseSubject(subject: string) {
+  await tap(subjectButton());
+  await tap(await screen.findByRole('menuitemradio', { name: subject }));
+}
+async function chooseSection(label: string) {
+  await tap(sectionButton());
+  await tap(await screen.findByRole('menuitemradio', { name: label }));
 }
 function show() {
   const demo = createDemoStudentLoadedData(new Date());
@@ -27,52 +40,56 @@ function show() {
     studyReflections={demo.rawProgressDoc.reflections} topicMastery={demo.rawProgressDoc.topicMasteryV2}
     mockResults={demo.rawProgressDoc.unifiedMockResults} />);
 }
-test('section changes preserve subject and range; milestones removes period controls', () => {
+test('section changes preserve subject and range; milestones removes period controls', async () => {
   show();
-  const section = screen.getByRole('button', { name: 'Progress section' });
-  fireEvent.click(section);
-  expect(within(screen.getByRole('listbox', { name: 'Progress sections' })).getAllByRole('option')).toHaveLength(5);
-  fireEvent.keyDown(screen.getByRole('listbox'), { key: 'Escape' });
-  chooseSubject('Irish');
-  fireEvent.click(screen.getByRole('tab', { name: 'Month' }));
-  chooseSection('Confidence');
-  expect(screen.getByRole('button', { name: 'Filter by subject' })).toHaveTextContent('Irish');
-  expect(screen.getByRole('tab', { name: 'Month' })).toHaveAttribute('aria-selected', 'true');
+  expect(sectionButton()).toHaveTextContent(/Overview.*1 of 5/);
+  await tap(sectionButton());
+  const menu = await screen.findByRole('menu');
+  expect(within(menu).getAllByRole('menuitemradio')).toHaveLength(5);
+  expect(within(menu).getByRole('menuitemradio', { name: 'Overview' })).toHaveAttribute('aria-checked', 'true');
+  await act(async () => { fireEvent.keyDown(menu, { key: 'Escape' }); await new Promise(resolve => setTimeout(resolve, 400)); });
+  await chooseSubject('Irish');
+  fireEvent.click(screen.getByRole('radio', { name: 'Month' }));
+  await chooseSection('Confidence');
+  expect(sectionButton()).toHaveTextContent(/Confidence.*3 of 5/);
+  expect(subjectButton()).toHaveTextContent('Irish');
+  expect(screen.getByRole('radio', { name: 'Month' })).toHaveAttribute('aria-checked', 'true');
+  // Topic readiness sits on Practice (and Overview) on the agreed board.
+  await chooseSection('Practice');
   expect(screen.getByRole('heading', { name: 'Topic readiness' })).toBeInTheDocument();
-  chooseSection('Milestones');
-  expect(screen.queryByRole('tablist', { name: 'Dashboard time range' })).not.toBeInTheDocument();
-  expect(screen.queryByRole('button', { name: 'Filter by subject' })).not.toBeInTheDocument();
-  chooseSection('Study');
-  expect(screen.getByRole('button', { name: 'Filter by subject' })).toHaveTextContent('Irish');
+  await chooseSection('Milestones');
+  expect(screen.queryByRole('radiogroup', { name: 'Dashboard time range' })).not.toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: /Filter by subject/ })).not.toBeInTheDocument();
+  await chooseSection('Study');
+  expect(subjectButton()).toHaveTextContent('Irish');
 });
-test('all seven subjects remain visible and full mocks retain their all-subject evidence', () => {
+test('all seven subjects remain visible and full mocks retain their all-subject evidence', async () => {
   const { container } = show();
-  chooseSection('Confidence');
+  await chooseSection('Confidence');
   expect(within(screen.getByRole('group', { name: 'Subjects to compare' })).getAllByRole('checkbox')).toHaveLength(7);
-  fireEvent.click(screen.getByRole('tab', { name: 'By subject' }));
+  fireEvent.click(screen.getByRole('radio', { name: 'By subject' }));
   expect(container.querySelectorAll('.pr-confidence-grid > article')).toHaveLength(7);
-  chooseSubject('Irish');
-  chooseSection('Practice');
+  await chooseSubject('Irish');
+  await chooseSection('Practice');
   expect(screen.getByText(/Full mock totals stay all-subject/)).toBeInTheDocument();
-  fireEvent.click(screen.getByRole('tab', { name: 'The record' }));
-  expect(container.querySelectorAll('.dashboard-mock-record')).toHaveLength(3);
-  for (const record of container.querySelectorAll('.dashboard-mock-record')) {
+  // The record is the first view on the agreed board: one row per sitting, each opening its subjects.
+  const records = container.querySelectorAll('.dashboard-mock-record');
+  expect(records).toHaveLength(3);
+  for (const record of records) {
+    fireEvent.click(within(record as HTMLElement).getByRole('button'));
     expect(record.textContent).toContain('Mathematics');
     expect(record.textContent).toContain('Irish');
   }
 });
 
-test('section menu supports keyboard selection and escape, and the programme belongs only to Overview', () => {
+test('the next part is named at the foot, and the programme belongs only to Overview', async () => {
   show();
-  const trigger = screen.getByRole('button', { name: 'Progress section' });
-  fireEvent.keyDown(trigger, { key: 'ArrowDown' });
-  expect(screen.getByRole('option', { name: /Overview/ })).toHaveFocus();
-  fireEvent.keyDown(screen.getByRole('listbox'), { key: 'End' });
-  expect(screen.getByRole('option', { name: /Milestones/ })).toHaveFocus();
-  fireEvent.keyDown(screen.getByRole('listbox'), { key: 'Escape' });
-  expect(trigger).toHaveFocus();
-  expect(trigger).toHaveAttribute('aria-expanded', 'false');
   expect(screen.getByText('Five climbs, all your own.')).toBeInTheDocument();
-  chooseSection('Confidence');
+  fireEvent.click(screen.getByRole('button', { name: /Next · 2 of 5\s*Study/ }));
+  expect(sectionButton()).toHaveTextContent(/Study.*2 of 5/);
   expect(screen.queryByText('Five climbs, all your own.')).not.toBeInTheDocument();
+  await chooseSection('Confidence');
+  expect(screen.queryByText('Five climbs, all your own.')).not.toBeInTheDocument();
+  await chooseSection('Milestones');
+  expect(screen.queryByRole('button', { name: /^Next/ })).not.toBeInTheDocument();
 });

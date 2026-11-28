@@ -181,6 +181,6 @@ describe('starting-point flow in the existing question interface', () => {
     render(<MarkBank {...props} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Where should I start?' })).toBeEnabled());
     expect(readLocal(undefined, 'chemistry-ordinary').cards[cards[0].id].reps).toBe(1);
-    expect(within(screen.getByRole('navigation', { name: 'Subject units' })).getAllByRole('button').length).toBeGreaterThan(0);
+    expect(within(await screen.findByRole('list', { name: 'All topics' })).getAllByRole('button').length).toBeGreaterThan(0);
   });
 });

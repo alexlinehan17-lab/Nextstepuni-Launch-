@@ -1,12 +1,14 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { ArrowUpRight, X } from 'lucide-react';
 import { useReducedMotion } from '../Motion';
+import { PinnedFooter, TopBar } from '../ui/Bars';
+import { Button, TextButton } from '../ui/Button';
 import { useModal } from '../../hooks/useModal';
 import StudySnoozer from './StudySnoozer';
 import StudySoundToggle from './StudySoundToggle';
 import { animateStudyChange, studyControlOrigin } from './studyMotion';
 import { formatStudyTime } from './StudySessionFinish';
 import './study-crew.css';
+import './study-room.css';
 
 export default function StudyBreak({ subject, elapsedSeconds, onResume, onLeave, sound }: {
   subject: string;
@@ -70,8 +72,10 @@ export default function StudyBreak({ subject, elapsedSeconds, onResume, onLeave,
           { offset: 1, transform: start },
         ], { duration: 10000, iterations: Infinity }));
       };
-      cycle(core.current, 'scale(.86)', 'scale(1.04)');
-      cycle(character.current, 'translateY(4px)', 'translateY(-6px)');
+      // One breath in ten seconds, four in and six out, as today; the Snoozer
+      // itself rises and grows, then settles (r5-b1.js, breathe()).
+      cycle(core.current, 'scale(.94)', 'scale(1.05)');
+      cycle(character.current, 'translateY(5px)', 'translateY(-7px)');
     }
     const timer = window.setInterval(() => setInhale((performance.now() - epoch) % 10000 < 4000), 100);
     return () => {
@@ -84,43 +88,42 @@ export default function StudyBreak({ subject, elapsedSeconds, onResume, onLeave,
 
   return <section className="study-break-experience">
     <div ref={rest} className="study-break" inert={open} aria-hidden={open}>
-      {/* Pinned inside the takeover's safe box (components/ui/frame.css), so it sits below the island. */}
-      {sound && <div className="frame-safe-box"><div className="study-break-tools"><StudySoundToggle muted={sound.muted} /></div></div>}
-      <p className="study-crew-eyebrow" data-study-arrive>A little room to breathe</p>
-      <div className="study-break-art" data-study-arrive><StudySnoozer artworkRef={restMascot} /></div>
-      <h1 id="study-break-title" data-study-arrive>Even stars take a moment.</h1>
-      <p data-study-arrive>Look away. Stretch a little. Come back when you’re ready.</p>
-      <div className="study-break-context" data-study-arrive><strong>{subject}</strong><span>{formatStudyTime(elapsedSeconds)} studied · Timer paused</span></div>
-      <button type="button" className="crew-primary" data-study-arrive onClick={onResume}>Back to study<ArrowUpRight size={21} aria-hidden="true" /></button>
-      <button ref={trigger} type="button" className="crew-link study-breathe-toggle" data-study-arrive aria-haspopup="dialog" aria-expanded={open} onClick={event => {
-        if (busy.current) return;
-        busy.current = true;
-        origin.current = studyControlOrigin(event.currentTarget);
-        sound?.play('pause'); setInhale(true); setOpen(true); setMoving('opening');
-      }}>Take a few slow breaths</button>
-      <p className="study-breath-prompt" data-study-arrive>Your place is right here.</p>
-      <button type="button" className="crew-link study-break-leave" data-study-arrive onClick={onLeave}>Finish for now</button>
+      {/* The bar owns the status area: the sound sits in it, below the island (issue 2). */}
+      <TopBar className="study-break-bar" placeLabel="A little room to breathe" action={sound ? <StudySoundToggle muted={sound.muted} /> : undefined} />
+      <div className="study-break-body">
+        <div className="study-break-art" data-study-arrive><StudySnoozer artworkRef={restMascot} /></div>
+        <h1 id="study-break-title" className="t-title" data-study-arrive>Even stars take a moment.</h1>
+        <p className="t-sub study-break-line" data-study-arrive>Look away. Stretch a little. Come back when you’re ready.</p>
+        <div className="study-break-context" data-study-arrive><strong>{subject}</strong><span>{formatStudyTime(elapsedSeconds)} studied · Timer paused</span></div>
+        <Button ref={trigger} className="study-breathe-toggle" data-study-arrive aria-haspopup="dialog" aria-expanded={open} onClick={event => {
+          if (busy.current) return;
+          busy.current = true;
+          origin.current = studyControlOrigin(event.currentTarget);
+          sound?.play('pause'); setInhale(true); setOpen(true); setMoving('opening');
+        }}>Take a few slow breaths</Button>
+      </div>
+      <PinnedFooter className="study-break-foot">
+        <Button kind="main" size="lg" block arrow="forward" className="crew-primary" data-study-arrive onClick={onResume}>Back to study</Button>
+        <TextButton tone="quiet" className="study-break-leave" data-study-arrive onClick={onLeave}>Finish for now</TextButton>
+      </PinnedFooter>
     </div>
     {open && <div ref={guide} className="study-breathe-guide" role="dialog" aria-modal="true" aria-labelledby="study-breathe-title" aria-describedby="study-breathe-detail" tabIndex={-1}>
-      <header className="study-breathe-top">
-        <p className="study-breathe-kicker">A little room to breathe</p>
-        <div className="study-room-tools">{sound && <StudySoundToggle muted={sound.muted} />}<button type="button" className="study-breathe-close" aria-label="Close breathing guide" onClick={close} disabled={Boolean(moving)}><X size={17} aria-hidden="true" /></button></div>
-      </header>
+      <TopBar className="study-breathe-bar" title="A little room to breathe" action={sound ? <StudySoundToggle muted={sound.muted} /> : undefined}
+        leave={{ kind: 'close', onPress: close, label: 'Close breathing guide' }} />
       <div className="study-breathe-content">
-        <h2 id="study-breathe-title" data-study-arrive>Take a moment.</h2>
-        <div className="study-breathe-circle" data-study-arrive>
-          <div ref={core} className="study-breathe-core" aria-hidden="true" />
-          <div ref={character} className="study-breathe-character"><StudySnoozer artworkRef={guideMascot} /></div>
+        <h2 id="study-breathe-title" className="t-heading" data-study-arrive>Take a moment.</h2>
+        {/* The Snoozer stands bare, with no circle behind it (agreed board). */}
+        <div className="study-breathe-figure" data-study-arrive>
+          <div ref={character} className="study-breathe-character"><div ref={core} className="study-breathe-core"><StudySnoozer artworkRef={guideMascot} /></div></div>
         </div>
         <div className="study-breathe-guidance" key={inhale ? 'inhale' : 'exhale'} data-study-arrive>
-          <p className="study-breathe-phase">{inhale ? 'Breathe in' : 'Breathe out'}<span aria-hidden="true">.</span></p>
-          <p id="study-breathe-detail">{inhale ? 'Slowly. There’s no rush.' : 'Let your shoulders soften.'}</p>
+          <p className="t-display study-breathe-phase">{inhale ? 'Breathe in' : 'Breathe out'}<span aria-hidden="true">.</span></p>
+          <p id="study-breathe-detail" className="t-sub">{inhale ? 'Slowly. There’s no rush.' : 'Let your shoulders soften.'}</p>
         </div>
       </div>
-      <footer className="study-breathe-footer" data-study-arrive>
-        <button type="button" className="crew-primary study-breathe-return" onClick={close} disabled={Boolean(moving)}>Back to your break<ArrowUpRight size={19} aria-hidden="true" /></button>
-        <p>Your place is right here.</p>
-      </footer>
+      <PinnedFooter className="study-breathe-footer">
+        <Button kind="main" size="lg" block arrow="forward" className="crew-primary study-breathe-return" data-study-arrive onClick={close}>Back to your break</Button>
+      </PinnedFooter>
     </div>}
   </section>;
 }

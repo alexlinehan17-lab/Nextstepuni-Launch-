@@ -13,17 +13,10 @@
   "components/AccreditationPage.tsx": {
    "100vh": 1,
    "h-screen": 1,
-   "var(--sa*)": 2
-  },
-  "components/AdminDashboard.tsx": {
-   "fixed": 1,
-   "inset-0": 1
+   "var(--sa*)": 1
   },
   "components/AppRouter.tsx": {
-   "100vh": 1,
-   "fixed": 1,
-   "h-screen": 4,
-   "var(--sa*)": 2
+   "h-screen": 3
   },
   "components/AuthActionCard.tsx": {
    "h-screen": 1
@@ -32,26 +25,15 @@
    "fixed": 1,
    "inset-0": 2
   },
-  "components/CourseworkStudio/coursework-activities.css": {
-   "100vh": 1
-  },
   "components/CutContentPage.tsx": {
-   "h-screen": 1,
-   "var(--sa*)": 1
-  },
-  "components/DashboardView.tsx": {
-   "h-screen": 1,
-   "var(--sa*)": 2
+   "h-screen": 1
   },
   "components/DiveIn.tsx": {
    "fixed": 1,
    "inset-0": 1
   },
-  "components/ElaborativeInterrogationModule.tsx": {
-   "inset-0": 2
-  },
   "components/EmotionalIntelligenceModule.tsx": {
-   "inset-0": 3
+   "inset-0": 2
   },
   "components/ErrorBoundary.tsx": {
    "h-screen": 1
@@ -59,26 +41,12 @@
   "components/ExamHallStrategiesModule.tsx": {
    "inset-0": 2
   },
-  "components/FirstVisitCoachMarks.tsx": {
-   "fixed": 1,
-   "inset-0": 2
-  },
   "components/FutureFinderResults.tsx": {
    "fixed": 1,
    "inset-0": 1
   },
-  "components/GCDashboard.tsx": {
-   "fixed": 6,
-   "h-screen": 1,
-   "inset-0": 4
-  },
-  "components/HowTheyDidIt/index.tsx": {
-   "inset-0": 1
-  },
   "components/InnovationZone.tsx": {
-   "fixed": 1,
-   "h-screen": 1,
-   "var(--sa*)": 4
+   "h-screen": 1
   },
   "components/InsightsView.tsx": {
    "h-screen": 1
@@ -92,12 +60,8 @@
   "components/KnowledgeTree.tsx": {
    "h-screen": 1
   },
-  "components/LaunchpadGuidance.tsx": {
-   "inset-0": 1
-  },
   "components/LearningPathsView.tsx": {
-   "h-screen": 1,
-   "var(--sa*)": 1
+   "h-screen": 1
   },
   "components/Library.tsx": {
    "100vh": 1,
@@ -105,10 +69,6 @@
    "h-screen": 1,
    "inset-0": 1,
    "var(--sa*)": 2
-  },
-  "components/ListeningStudio/listening-studio.css": {
-   "fixed": 1,
-   "var(--sa*)": 8
   },
   "components/LoadingSpinner.tsx": {
    "fixed": 1,
@@ -121,19 +81,6 @@
   "components/MasteringTheCreativesModule.tsx": {
    "inset-0": 2
   },
-  "components/ModuleCompleteScreen.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
-  "components/ModuleLayout.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
-  "components/ModulesView.tsx": {
-   "h-screen": 2,
-   "inset-0": 2,
-   "var(--sa*)": 3
-  },
   "components/MyDirection.tsx": {
    "h-screen": 1
   },
@@ -143,20 +90,16 @@
   },
   "components/PaperTrail/ImageViewer.tsx": {
    "fixed": 1,
-   "inset-0": 1,
-   "var(--sa*)": 3
-  },
-  "components/PaperTrail/MilestoneCelebration.tsx": {
-   "inset-0": 2
+   "inset-0": 1
   },
   "components/PaperTrail/ReviewSession.tsx": {
    "fixed": 1,
    "inset-0": 2
   },
   "components/PaperTrail/Viewer.tsx": {
-   "fixed": 24,
-   "inset-0": 10,
-   "var(--sa*)": 10
+   "fixed": 12,
+   "inset-0": 7,
+   "var(--sa*)": 3
   },
   "components/PaperTrail/WpmCalibrator.tsx": {
    "fixed": 1,
@@ -164,16 +107,10 @@
    "var(--sa*)": 1
   },
   "components/PaperTrail/archive.css": {
-   "var(--sa*)": 3
+   "var(--sa*)": 1
   },
   "components/PaperTrail/milestones.ts": {
    "100vh": 1
-  },
-  "components/PaperTrail/viewer-chrome.css": {
-   "var(--sa*)": 5
-  },
-  "components/PointsOptimizationModule.tsx": {
-   "inset-0": 3
   },
   "components/PullToRefresh.tsx": {
    "env(safe-area-": 1,
@@ -199,11 +136,6 @@
    "h-screen": 1,
    "inset-0": 2
   },
-  "components/UserProfileMenu.tsx": {
-   "fixed": 2,
-   "inset-0": 1,
-   "var(--sa*)": 1
-  },
   "components/WaysIn/waysIn.css": {
    "fixed": 1,
    "var(--sa*)": 5
@@ -220,10 +152,6 @@
   "components/account-live.css": {
    "var(--sa*)": 2
   },
-  "components/admin/admin-dashboard.css": {
-   "100vh": 1,
-   "fixed": 1
-  },
   "components/approved-ui-runtime.css": {
    "fixed": 3
   },
@@ -234,27 +162,8 @@
    "100vh": 1,
    "fixed": 1
   },
-  "components/collegeCompass/HearMeter.tsx": {
-   "inset-0": 1
-  },
   "components/feedback-listening-room.css": {
    "env(safe-area-": 3
-  },
-  "components/gc/GCExportModal.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
-  "components/gc/GCOverview.tsx": {
-   "fixed": 1,
-   "inset-0": 1
-  },
-  "components/gc/GCStudentDetail.tsx": {
-   "fixed": 2,
-   "inset-0": 3
-  },
-  "components/gc/StaffAccessPanel.tsx": {
-   "fixed": 1,
-   "inset-0": 1
   },
   "components/immersiveDeck/Celebration.tsx": {
    "inset-0": 1
@@ -290,10 +199,6 @@
   "components/journey/PurchaseCelebrationModal.tsx": {
    "fixed": 2,
    "inset-0": 2
-  },
-  "components/journey/paper/paper.css": {
-   "env(safe-area-": 6,
-   "var(--sa*)": 1
   },
   "components/kobra-navigation-runtime.css": {
    "fixed": 1
@@ -331,33 +236,19 @@
   "components/learning/module-brand-review.css": {
    "100vh": 1
   },
-  "components/learning/reader.css": {
-   "var(--sa*)": 1
-  },
   "components/legal/legal-document.css": {
    "env(safe-area-": 4,
    "fixed": 3
-  },
-  "components/mobile-editorial.css": {
-   "var(--sa*)": 3
   },
   "components/navigation/sidebar.css": {
    "fixed": 2,
    "var(--sa*)": 2
   },
   "components/onboarding/onboarding.css": {
-   "env(safe-area-": 2,
    "fixed": 1
   },
-  "components/settings-modal.css": {
-   "var(--sa*)": 4
-  },
   "components/setup/YourSetupView.tsx": {
-   "h-screen": 1,
-   "var(--sa*)": 1
-  },
-  "components/setup/your-setup.css": {
-   "var(--sa*)": 1
+   "h-screen": 1
   },
   "components/sign-in-directions/sign-in-directions.css": {
    "fixed": 1

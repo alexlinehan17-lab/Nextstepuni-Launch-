@@ -1,15 +1,12 @@
 import { getBlockId } from './subjectData';
 import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
-import { COLORS } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
 
 import React, { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import BackButton from './ui/BackButton';
-import { motion } from 'framer-motion';
-import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
+import { Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
@@ -20,6 +17,9 @@ import {
   subscribeToRegistrationProvisioning,
 } from '../utils/registrationProvisioning';
 import { LoadingSpinner } from './LoadingSpinner';
+import { Button, IconButton } from './ui/Button';
+import { ErrorState } from './ui/States';
+import { Field } from './ui/Field';
 import { LoadingCrewProvider } from '../contexts/LoadingCrewContext';
 import { getToolLoadingLabel } from '../utils/loadingLabels';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
@@ -29,7 +29,7 @@ import { Library } from './Library';
 // subjectContent* files (~442KB). Loading it eagerly folded all of that into
 // the entry chunk — audit 2026-06-01. Its only other consumer, SubjectModule,
 // is already lazy (moduleRegistry.ts).
-const ModuleShowcase = lazy(() => import('./ModuleShowcase'));
+const ModuleWorldScreen = lazy(() => import('./ModuleShowcase').then(m => ({ default: m.ModuleWorldScreen })));
 import AppLaunch from './AppLaunch';
 import { LegalAgreementGate } from './legal/LegalAgreementGate';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
@@ -48,6 +48,8 @@ import { moduleComponents, InnovationZone } from '../moduleRegistry';
 import { ALL_COURSES, categoryTitles } from '../courseData';
 import { ModulePositionProvider, resolveModulePosition } from '../contexts/ModulePositionContext';
 import { moduleAvailability } from '../utils/courseVisibility';
+import { markWorldReturn, requestModuleResume } from './learning/intents';
+import { ModuleFinishContext } from './learning/readerContext';
 import { type ModuleProgress, type UserProgress, type UserSettings, type NorthStar, type StudyReflection, type TopicMasteryV2, type UnifiedMockResult } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
@@ -126,24 +128,17 @@ class ModuleErrorBoundary extends React.Component<ModuleErrorBoundaryProps, Modu
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-white dark:bg-surface-canvas flex items-center justify-center p-6">
-          <div className="max-w-md w-full bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-2xl p-8 text-center">
-            <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-rose-100 dark:bg-rose-500/10 flex items-center justify-center">
-              <span className="text-2xl">!</span>
-            </div>
-            <h2 className="text-lg font-bold text-zinc-800 dark:text-white mb-2">Something went wrong</h2>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
-              {this.state.error?.message || 'This module failed to load. Please try again.'}
-            </p>
-            <button
-              onClick={() => {
+        /* On the page, in the shared error state: what happened, and the way out (area 9). */
+        <div className="min-h-screen bg-white dark:bg-surface-canvas flex items-center justify-center px-6 py-6">
+          <div className="max-w-md w-full flex flex-col gap-2">
+            <h2 className="t-heading text-[var(--ink-primary)]">Something went wrong</h2>
+            <ErrorState
+              sentence={this.state.error?.message || 'This module failed to load. Please try again.'}
+              action={<Button kind="main" onClick={() => {
                 this.setState({ hasError: false, error: null });
                 this.props.onBack();
-              }}
-              className="px-6 py-2.5 rounded-full bg-[var(--accent-hex)] text-white text-sm font-medium hover:opacity-90 transition-opacity"
-            >
-              Go Back
-            </button>
+              }}>Go Back</Button>}
+            />
           </div>
         </div>
       );
@@ -243,6 +238,8 @@ export interface AppRouterProps {
   onOpenFeedback: () => void;
   onOpenMobileProfile: () => void;
   hasUnreadNotifications: boolean;
+  /** Settings, the page (the `settings` view): built in App, where its actions live. */
+  settingsPage?: React.ReactNode;
 }
 
 /**
@@ -292,7 +289,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   const nav = useNavigation();
   const registrationHeld = useRegistrationHold();
   const { updateDemoProgress, setTimetableCompletions, progressLoaded, progressDataUid } = useProgress();
-  const { viewState, dashboardSection, currentCategory, currentModuleId, cameFromJourney } = nav.state;
+  const { viewState, dashboardSection, currentCategory, currentModuleId } = nav.state;
   const { user, userResolved, needsOnboarding, handleLoginSuccess, handleLogout } = useAuth();
 
   // Guest setup keeps its draft in sessionStorage, which the unauthenticated
@@ -319,6 +316,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
     onOpenSiteGuide, onOpenFeedback, onOpenMobileProfile, hasUnreadNotifications,
+    settingsPage,
   } = props;
 
   // Navigation handlers from context
@@ -330,15 +328,35 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     const availability = moduleAvailability(ALL_COURSES.find(course => course.id === moduleId), user?.curriculumLevel, studentProfile);
     if (availability === 'unavailable') return;
     if (availability === 'coming-soon') { nav.navigateToJCComingSoon(moduleId); return; }
+    // Home's continue card picks up where the student left off: straight to their step, not the
+    // module's title page (area 5, board c-read-flow: "Continue on Home still goes straight to your step").
+    if (viewState === 'tree') requestModuleResume(moduleId);
     nav.navigateToModule(moduleId, viewState, currentCategory);
   };
 
-  const handleBackToTree = () => { nav.navigateToTree(); };
-  const handleBackToCategory = () => {
-    if (cameFromJourney) nav.navigateToInnovationZone('journey');
-    else if (currentCategory) nav.navigateToCategory(currentCategory);
-    else nav.navigateToModules();
+  // A place's own controls (the study room's Minimise, Journey's Home link)
+  // go Home. A page's Back is the app's one Back (navigation.md): the screen
+  // you came from, else its parent (utils/places.ts parentOf: the module world
+  // or Modules for a module, Journey results when it came from there).
+  // The finishing screen's "Up next in <world>": the next module in the module's world still to read.
+  const moduleFinish = (moduleId: string) => {
+    const category = studentCourses.find(course => course.id === moduleId)?.category;
+    if (!category) return null;
+    const world = studentCourses.filter(course => course.category === category);
+    const isDone = (course: CourseData) => (userProgress[course.id]?.unlockedSection ?? 0) >= course.sectionsCount;
+    const at = world.findIndex(course => course.id === moduleId);
+    const next = [...world.slice(at + 1), ...world.slice(0, Math.max(0, at))].find(course => !isDone(course));
+    return {
+      category,
+      done: world.filter(isDone).length,
+      total: world.length,
+      next: next ? { course: next, number: world.indexOf(next) + 1 } : null,
+      openModule: handleSelectModule,
+    };
   };
+  const handleBackToTree = () => { nav.navigateToTree(); };
+  const handleBack = () => { nav.goBack(); };
+  const handleBackToCategory = handleBack;
   const handleGoToModules = () => { nav.navigateToModules(); };
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
@@ -515,7 +533,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           uid={user.uid}
           streak={streak}
           strategyMastery={strategyMastery.masteryMap}
-          onBack={handleBackToTree}
+          onBack={handleBack}
         onAction={action => {
             if (action === 'study') nav.navigateToStudySession();
             else if (action === 'planner') nav.navigateToInnovationZone('planner');
@@ -576,7 +594,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           curriculumLevel={user?.curriculumLevel}
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
-          onBack={handleBackToTree}
+          onBack={handleBack}
         />
       </Suspense>
     );
@@ -585,7 +603,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'wip-tools') {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" label="Opening the Workshop" />}>
-        <WipTools onBack={handleBackToTree} onOpenTool={(toolId: string) => nav.navigateToInnovationZone(toolId)} />
+        <WipTools onBack={handleBack} onOpenTool={(toolId: string) => nav.navigateToInnovationZone(toolId)} />
       </Suspense>
     );
   }
@@ -597,7 +615,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           allCourses={studentCourses}
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
-          onBack={handleBackToTree}
+          onBack={handleBack}
           isLca={isLcaYear(user?.yearGroup ?? studentProfile?.yearGroup)}
           currentYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
         />
@@ -613,7 +631,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           northStar={northStar}
           yearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
           darkMode={settings.darkMode}
-          onBack={handleBackToTree}
+          onBack={handleBack}
           onFinishSetup={() => nav.navigateToOnboarding()}
           onEditSubjects={() => setChangeSubjectsOpen(true)}
           onSaveExamDate={handleExamDateSave}
@@ -624,6 +642,10 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
         />
       </Suspense>
     );
+  }
+
+  if (viewState === 'settings') {
+    return <>{settingsPage ?? null}</>;
   }
 
   if (viewState === 'onboarding') {
@@ -651,7 +673,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'cut-content') {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" label="Opening the archive" />}>
-        <CutContentPage onBack={handleBackToTree} />
+        <CutContentPage onBack={handleBack} />
       </Suspense>
     );
   }
@@ -659,7 +681,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'accreditation') {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" label="Opening accreditation" />}>
-        <AccreditationPage onBack={handleBackToTree} onOpenModule={handleSelectModule} />
+        <AccreditationPage onBack={handleBack} onOpenModule={handleSelectModule} />
       </Suspense>
     );
   }
@@ -691,7 +713,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
         <MyDirection
           uid={user.uid}
           northStar={northStar}
-          onBack={handleBackToTree}
+          onBack={handleBack}
           onEditNorthStar={() => setNorthStarEditOpen(true)}
           onOpenFutureFinder={() => nav.navigateToInnovationZone('future-finder-revamped')}
           onOpenPointsPassport={() => nav.navigateToInnovationZone('points-passport')}
@@ -758,7 +780,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your modules" />}>
         <ModulesView
-          onBack={handleBackToTree}
+          onBack={handleBack}
           onSelectCategory={handleSelectCategory}
           onSelectModule={handleSelectModule}
           allCourses={studentCourses}
@@ -779,38 +801,21 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     // its displayed module numbers also work for filtered JC/subject views.
     const categoryCourses = studentCourses.filter(c => c.category === currentCategory);
 
-    // Showcase view for all main categories
+    // A world's page (area 5): its own bar with one Back, then the module to read next. Back to
+    // Modules closes the world into its door (ModulesView plays the move when it mounts).
     const showcaseCategories: string[] = ['architecture-mindset', 'science-growth', 'learning-cheat-codes', 'subject-specific-science', 'exam-zone'];
     if (showcaseCategories.includes(currentCategory)) {
       return (
-        // Page transition from ModulesView's hero — fade + lift + slight
-        // scale so the carousel arrives feeling like the hero opened up,
-        // not like a hard route change. ~450ms total.
-        <motion.div
-          initial={mobileAppDesign ? { opacity: 0, y: 8 } : { opacity: 0, y: 18, scale: 0.985 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: mobileAppDesign ? 0.2 : 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="min-h-screen bg-white dark:bg-surface-canvas"
-        >
-          {/* Header */}
-          <header data-student-page-header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-surface-canvas border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
-            <div className="flex items-center gap-4">
-              <BackButton label="Back to modules" onClick={handleGoToModules} showLabel={!mobileAppDesign} />
-            </div>
-          </header>
-          {/* Showcase */}
-          <div className="frame-page [--frame-pad-top:7rem] md:[--frame-pad-top:8rem] pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
-            <Suspense fallback={<LoadingSpinner variant="compact" calm placement="panel" label={`Opening ${categoryTitles[currentCategory]}`} />}>
-              <ModuleShowcase
-                courses={categoryCourses}
-                categoryTitle={categoryTitles[currentCategory]}
-                categoryId={currentCategory}
-                userProgress={userProgress}
-                onSelectCourse={handleSelectModule}
-              />
-            </Suspense>
-          </div>
-        </motion.div>
+        <Suspense fallback={<LoadingSpinner variant="compact" calm placement="panel" label={`Opening ${categoryTitles[currentCategory]}`} />}>
+          <ModuleWorldScreen
+            onBack={() => { markWorldReturn(currentCategory); handleBack(); }}
+            courses={categoryCourses}
+            categoryTitle={categoryTitles[currentCategory]}
+            categoryId={currentCategory}
+            userProgress={userProgress}
+            onSelectCourse={handleSelectModule}
+          />
+        </Suspense>
       );
     }
 
@@ -864,30 +869,20 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
       return (
         <ModuleErrorBoundary onBack={handleBackToCategory}>
           <Suspense fallback={<LoadingSpinner variant="compact" calm label={`Opening ${studentCourses.find(course => course.id === currentModuleId)?.title ?? "your module"}`} />}>
-            {cameFromJourney && (
-              // Keep this in normal document flow. A fixed banner competes
-              // with each module's own sticky mobile header and can obscure
-              // both its title and back control.
-              <div
-                className="journey-return-bar frame-page relative z-10 bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]"
-              >
-                <button
-                  onClick={handleBackToCategory}
-                  className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-[var(--accent-dark-hex)] dark:hover:bg-[var(--accent-dark-hex)] transition-colors"
-                >
-                  <ArrowLeft size={14} />
-                  Back to Journey Results
-                </button>
-              </div>
-            )}
+            {/* A module opened from Journey results has one way out: the
+                module's own Back returns there (the history, or its parent
+                when there is none), so the orange "Back to Journey Results"
+                bar that repeated it is gone (navigation.md: one leave control). */}
             <ModulePositionProvider value={modulePosition}>
-              <div>
-                <ModuleComponent
-                  onBack={handleBackToCategory}
-                  progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
-                  onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
-                />
-              </div>
+              <ModuleFinishContext.Provider value={moduleFinish(currentModuleId)}>
+                <div>
+                  <ModuleComponent
+                    onBack={handleBackToCategory}
+                    progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
+                    onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
+                  />
+                </div>
+              </ModuleFinishContext.Provider>
             </ModulePositionProvider>
           </Suspense>
         </ModuleErrorBoundary>
@@ -895,18 +890,13 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     }
     // Module ID not found in registry — show fallback and navigate back
     return (
-      <div className="min-h-screen bg-white dark:bg-surface-canvas flex items-center justify-center p-6">
-        <div className="max-w-md w-full bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-2xl p-8 text-center">
-          <h2 className="text-lg font-bold text-zinc-800 dark:text-white mb-2">Module not found</h2>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
-            The module &ldquo;{currentModuleId}&rdquo; could not be found.
-          </p>
-          <button
-            onClick={handleBackToCategory}
-            className="px-6 py-2.5 rounded-full bg-[var(--accent-hex)] text-white text-sm font-medium hover:opacity-90 transition-opacity"
-          >
-            Go Back
-          </button>
+      <div className="min-h-screen bg-white dark:bg-surface-canvas flex items-center justify-center px-6 py-6">
+        <div className="max-w-md w-full flex flex-col gap-2">
+          <h2 className="t-heading text-[var(--ink-primary)]">Module not found</h2>
+          <ErrorState
+            sentence={<>The module &ldquo;{currentModuleId}&rdquo; could not be found.</>}
+            action={<Button kind="main" onClick={handleBackToCategory}>Go Back</Button>}
+          />
         </div>
       </div>
     );
@@ -966,6 +956,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const passwordRef = useRef<HTMLInputElement>(null);
 
   const handleChangePassword = async () => {
     if (newPassword.length < 12) { setError('Password must be at least 12 characters.'); return; }
@@ -985,38 +976,42 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
     setIsLoading(false);
   };
 
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-surface-paper border-2 border-zinc-200 dark:border-zinc-700 focus:border-accent";
+  const tooShort = newPassword.length < 12;
+  const tooLong = newPassword.length > 128;
+  // The button never waits silently: what is still needed is said directly above it, in today's words.
+  const stillNeeded = tooLong ? 'Password must be no more than 128 characters.'
+    : tooShort ? `${12 - newPassword.length} more character${12 - newPassword.length !== 1 ? 's' : ''} needed` : null;
 
+  // The sign-in standard (area 9): the words on the page, the shared field and the charcoal button.
   return (
-    <div className="min-h-screen flex items-center justify-center p-5 bg-white dark:bg-surface-canvas">
-      <div className="w-full max-w-md bg-white dark:bg-surface-paper rounded-2xl p-8 md:p-10" style={{ border: '2px solid #1a1a1a' }}>
-        <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Set a new password</h2>
-        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Your password was reset by your guidance counsellor. Please choose a new password to continue.</p>
-        <div className="space-y-4">
-          <div>
-            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>New Password</label>
-            <div className="relative">
-              <input type={showPassword ? 'text' : 'password'} value={newPassword} onChange={e => { setNewPassword(e.target.value); setError(''); }} placeholder="Choose a new password" className={inputClass} autoFocus />
-              <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
-                {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-              </button>
-            </div>
-            {newPassword.length > 0 && newPassword.length < 12 && (
-              <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{12 - newPassword.length} more character{12 - newPassword.length !== 1 ? 's' : ''} needed</p>
-            )}
-            {newPassword.length >= 12 && newPassword.length <= 128 && (
-              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: COLORS.accent }}><Check size={12} /> Looks good</p>
-            )}
-          </div>
-          {error && <p className="text-sm text-red-500 font-medium">{error}</p>}
-          <button
-            onClick={handleChangePassword}
-            disabled={isLoading || newPassword.length < 12 || newPassword.length > 128}
-            className="w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-            style={{ backgroundColor: COLORS.accent, borderBottom: '3px solid var(--accent-dark-hex)', boxShadow: '0 4px 0 var(--accent-dark-hex)' }}
-          >
+    <div className="min-h-screen flex items-center justify-center px-6 py-10 bg-white dark:bg-surface-canvas">
+      <div className="w-full max-w-md flex flex-col gap-2">
+        <h2 className="t-title text-[var(--ink-primary)]">Set a new password</h2>
+        <p className="t-sub">Your password was reset by your guidance counsellor. Please choose a new password to continue.</p>
+        <div className="mt-6 flex flex-col gap-4">
+          <Field
+            ref={passwordRef}
+            label="New Password"
+            type={showPassword ? 'text' : 'password'}
+            value={newPassword}
+            onChange={e => { setNewPassword(e.target.value); setError(''); }}
+            placeholder="Choose a new password"
+            autoComplete="new-password"
+            autoCapitalize="off"
+            autoCorrect="off"
+            spellCheck={false}
+            enterKeyHint="done"
+            autoFocus
+            error={error || undefined}
+            help={!stillNeeded ? <span className="inline-flex items-center gap-1"><Check size={16} className="text-[var(--success-hex)]" aria-hidden="true" /> Looks good</span> : undefined}
+            end={<IconButton label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} onClick={() => setShowPassword(!showPassword)}
+              icon={showPassword ? <EyeOff className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" /> : <Eye className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />}
+          />
+          <Button kind="main" size="lg" block
+            missing={stillNeeded ? { sentence: stillNeeded, goTo: () => passwordRef.current?.focus() } : undefined}
+            onClick={() => { if (!isLoading) void handleChangePassword(); }}>
             {isLoading ? 'Saving...' : 'Set Password'}
-          </button>
+          </Button>
         </div>
       </div>
     </div>

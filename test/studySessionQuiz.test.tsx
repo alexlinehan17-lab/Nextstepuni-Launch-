@@ -96,7 +96,8 @@ describe('the quick check', () => {
     render(<StudySessionQuiz uid="student-a" subject="Chemistry" topicSelection={selection} profileSubjects={profile} onDone={onDone} onSkip={vi.fn()} now={() => 1_700_000_000_000} />);
 
     expect(await screen.findByText('Is ethene planar or tetrahedral?')).toBeInTheDocument();
-    expect(screen.getByText(/Question 1 of 3/)).toBeInTheDocument();
+    // The practice card's progress: the topic, then 1 / 3 (area 6b).
+    expect(screen.getByText('· 1 / 3')).toBeInTheDocument();
     // The scheme stays hidden until the student has had a go.
     expect(screen.queryByText('planar')).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/ }));

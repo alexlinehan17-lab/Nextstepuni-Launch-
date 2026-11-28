@@ -65,6 +65,14 @@ describe('Mark Bank', () => {
 });
 
 describe('Listening Studio', () => {
+  // The laptop layout (area 7b, board r5-listening-studio): today's two panels, the subjects in a row
+  // with All N subjects, Back at the top of the charcoal panel. The phone layout is in area7bTools.
+  beforeEach(() => {
+    vi.spyOn(window, 'matchMedia').mockImplementation(query => ({
+      matches: query.includes('min-width'), media: query, onchange: null,
+      addEventListener: () => {}, removeEventListener: () => {}, addListener: () => {}, removeListener: () => {}, dispatchEvent: () => false,
+    }) as unknown as MediaQueryList);
+  });
   const mount = (subjects = [{ subjectName: 'Biology', level: 'higher' }, { subjectName: 'Music', level: 'higher' }]) => {
     const leave = vi.fn();
     render(<MarkBank studio uid="student-a" now={() => NOW} studentSubjects={subjects} onLeaveStudio={leave} />);
@@ -74,7 +82,8 @@ describe('Listening Studio', () => {
 
   it('opens on the student\'s first subject with listenings, as a wall of papers', async () => {
     const { leave } = mount();
-    expect(await screen.findByRole('dialog', { name: 'Listening Studio' })).toBeInTheDocument();
+    // The Studio is a page of the Launchpad now, not a layer over it (area 7b).
+    expect(await screen.findByRole('region', { name: 'Listening Studio' })).toBeInTheDocument();
     await waitFor(() => expect(mocks.loadCards).toHaveBeenCalledWith('music', 'higher'));
     expect(mocks.library).not.toHaveBeenCalled();
 
@@ -95,7 +104,8 @@ describe('Listening Studio', () => {
     const sitting = listeningSittings(MUSIC_2025)[0];
     expect(within(paper).getByText(new RegExp(sitting.playsInApp ? 'Recording plays here' : 'Recording opens on the SEC site'))).toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole('button', { name: 'Leave Listening Studio' }));
+    // The corner X became Back at the top of the charcoal panel (area 7b).
+    fireEvent.click(within(screen.getByRole('region', { name: 'The paper you have chosen' })).getByRole('button', { name: 'Back' }));
     expect(leave).toHaveBeenCalledTimes(1);
   });
 

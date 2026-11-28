@@ -7,7 +7,7 @@
  */
 import React from 'react';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 import { canEditExamDate, examDateProblem, summariseSetup } from '@/components/setup/yourSetupModel';
 import YourSetupView from '@/components/setup/YourSetupView';
 import NextStepUniSidebar from '@/components/navigation/NextStepUniSidebar';
@@ -118,7 +118,7 @@ describe('YourSetupView', () => {
     fireEvent.click(screen.getByRole('button', { name: /Edit North Star/ }));
     fireEvent.click(screen.getByRole('button', { name: /Change subjects/ }));
     fireEvent.click(screen.getByRole('button', { name: /Open Planner/ }));
-    fireEvent.click(screen.getByRole('tab', { name: 'Dark' }));
+    fireEvent.click(screen.getByRole('radio', { name: 'Dark' }));
 
     expect(h.onOpenSettings).toHaveBeenCalledOnce();
     expect(h.onEditNorthStar).toHaveBeenCalledOnce();
@@ -151,22 +151,27 @@ describe('getting to Your setup', () => {
   const Location = () => <output aria-label="Current app view">{useNavigation().state.viewState}</output>;
   const noop = vi.fn();
 
-  test('the sidebar button opens it and shows it as the current page', () => {
+  // Sidebar B (agreed 25 Nov 2026) moved Your setup from a sidebar row into the
+  // menu under the student's name; no sidebar row is shaded while it is open.
+  test('the menu under the name opens it, and no sidebar row claims it', async () => {
+    vi.useFakeTimers({ toFake: ['setTimeout'] });
     render(<NavigationProvider><Location /><NextStepUniSidebar
       user={{ uid: 'setup-nav-test', name: 'Demo Student', avatar: '' }}
       settings={{ darkMode: false } as never} updateSetting={noop} onLogout={noop}
       onOpenSettings={noop} onOpenPassport={noop} onOpenSiteGuide={noop}
-      onOpenFeedback={noop} onUnreadCountChange={noop} completedCount={0}
+      onOpenFeedback={noop} onOpenDirection={noop} onUnreadCountChange={noop} completedCount={0}
       totalCount={0} unreadCount={0}
     ><div /></NextStepUniSidebar></NavigationProvider>);
 
-    const button = screen.getByRole('button', { name: 'Your setup' });
-    expect(button).not.toHaveAttribute('aria-current');
-    fireEvent.click(button);
+    expect(screen.queryByRole('button', { name: 'Your setup' })).toBeNull();
+    act(() => { fireEvent.click(screen.getByRole('button', { name: 'Open account menu' })); });
+    act(() => { fireEvent.click(screen.getByRole('menuitem', { name: 'Your setup' })); vi.runAllTimers(); });
+    vi.useRealTimers();
 
     expect(screen.getByLabelText('Current app view')).toHaveTextContent('your-setup');
     expect(window.location.search).toContain('view=your-setup');
-    expect(screen.getByRole('button', { name: 'Your setup' })).toHaveAttribute('aria-current', 'page');
+    const list = screen.getByRole('navigation', { name: 'Main navigation' });
+    expect(list.querySelector('[aria-current="page"]')).toBeNull();
   });
 
   test('a deep link restores it', () => {

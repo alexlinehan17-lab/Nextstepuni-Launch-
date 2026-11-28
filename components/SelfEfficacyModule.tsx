@@ -1,5 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
-
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -12,7 +10,7 @@ Eye,Settings,
 Shield,
 Target
 } from 'lucide-react';
-import React,{ useState } from 'react';
+import React,{ useId,useState } from 'react';
 import { SELF_EFFICACY_REFERENCE_LIST } from '../data/references/selfEfficacy';
 import { COLORS, accentRgba } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
@@ -25,6 +23,10 @@ import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionPolygon } from './Motion';
 import NorthStarCallout from './NorthStarCallout';
+import { AnswerGroup,AnswerLine,ExerciseRange,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { Field } from './ui/Field';
 
 const theme = roseTheme;
 
@@ -83,31 +85,21 @@ const EfficacyRadar: React.FC = () => {
   const scoreLabel = average >= 7 ? 'Strong foundation — now let\'s make it bulletproof.' : average >= 4 ? 'Building confidence across your domains.' : 'Room to grow — this module will help.';
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      {/* Section chip + title */}
-      <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>Self-Assessment</span>
-        <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>Self-Efficacy Radar</h4>
-        <p className="text-sm mt-1 max-w-md mx-auto" style={{ color: "var(--module-muted)" }}>
-          Rate your belief in your ability across these 6 domains (1 = no confidence, 10 = total confidence).
-        </p>
-      </div>
-
-      {/* Radar Chart — in a bordered card */}
-      <div className="flex justify-center mb-8">
-        <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] p-6 inline-block" style={{ border: "2px solid var(--module-line)", borderRadius: 16 }}>
+    <ExerciseSheet label="Self-Assessment" title="Self-Efficacy Radar" sub="Rate your belief in your ability across these 6 domains (1 = no confidence, 10 = total confidence)." name="EfficacyRadar">
+      {/* The radar, on the sheet (no box of its own) */}
+      <div className="ex-figure">
           <svg
             viewBox={`0 0 ${size} ${size}`}
-            className="w-full max-w-xs"
+            className="ex-figure-art w-full max-w-xs"
             style={{ overflow: 'visible' }}
           >
-            {/* Grid hexagons — alternating warm tints */}
-            {[0.33, 0.66, 1].map((scale, gi) => (
+            {/* Grid hexagons: hairlines, no tint */}
+            {[0.33, 0.66, 1].map((scale) => (
               <polygon
                 key={scale}
                 points={hexagonPoints(maxR * scale)}
-                fill={gi % 2 === 0 ? accentRgba(0.04) : accentRgba(0.02)}
-                stroke="var(--module-muted)"
+                fill="none"
+                stroke="var(--hairline)"
                 strokeWidth="1.5"
               />
             ))}
@@ -116,11 +108,11 @@ const EfficacyRadar: React.FC = () => {
             {Array.from({ length: 6 }, (_, i) => {
               const pt = pointOnHex(i, maxR);
               return (
-                <line key={i} x1={cx} y1={cy} x2={pt.x} y2={pt.y} stroke="var(--module-muted)" strokeWidth="1" />
+                <line key={i} x1={cx} y1={cy} x2={pt.x} y2={pt.y} stroke="var(--hairline)" strokeWidth="1" />
               );
             })}
 
-            {/* Data polygon — teal */}
+            {/* Data polygon: the student's own value, in orange */}
             <MotionPolygon
               points={dataPoints}
               fill={accentRgba(0.18)}
@@ -132,16 +124,16 @@ const EfficacyRadar: React.FC = () => {
               transition={{ type: 'spring', stiffness: 200, damping: 20 }}
             />
 
-            {/* Data point dots — teal with white stroke */}
+            {/* Data point dots: the student's own value, with a paper edge */}
             {values.map((v, i) => {
               const r = (v / 10) * maxR;
               const pt = pointOnHex(i, r);
               return (
-                <circle key={i} cx={pt.x} cy={pt.y} r="5" fill={COLORS.accent} stroke="var(--module-on-fill)" strokeWidth="2" />
+                <circle key={i} cx={pt.x} cy={pt.y} r="5" fill={COLORS.accent} stroke="var(--surface-paper)" strokeWidth="2" />
               );
             })}
 
-            {/* Labels — warm muted */}
+            {/* Labels in ink-2, the one typeface, 11px */}
             {labelPositions.map((pt, i) => (
               <text
                 key={i}
@@ -149,9 +141,9 @@ const EfficacyRadar: React.FC = () => {
                 y={pt.y}
                 textAnchor="middle"
                 dominantBaseline="middle"
-                fill="var(--module-muted)"
-                fontSize="10"
-                fontWeight="500"
+                fill="var(--ink-secondary)"
+                fontSize="11"
+                style={{ fontFamily: 'var(--font-ui)' }}
               >
                 {EFFICACY_DOMAINS[i].length > 20
                   ? EFFICACY_DOMAINS[i].split(' ').reduce<string[]>((lines, word) => {
@@ -171,19 +163,17 @@ const EfficacyRadar: React.FC = () => {
               </text>
             ))}
           </svg>
-        </div>
       </div>
 
-      {/* Sliders */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 max-w-2xl mx-auto mb-8">
+      {/* Sliders: the one slider, its name and its value above it */}
+      <div className="ex-sliders">
         {EFFICACY_DOMAINS.map((domain, i) => (
-          <div key={domain}>
-            <div className="flex justify-between items-baseline mb-1.5">
-              <label className="text-[15px] font-medium" style={{ color: "var(--module-ink)" }}>{domain}</label>
-              <span className="text-sm font-bold tabular-nums" style={{ color: 'var(--module-accent-text)' }}>{values[i]}</span>
+          <div key={domain} className="ex-slider">
+            <div className="flex justify-between items-baseline gap-3">
+              <p className="ex-slider-name">{domain}</p>
+              <span className="ui-readout text-ink-primary">{values[i]}</span>
             </div>
-            <input
-              type="range"
+            <ExerciseRange
               min={1}
               max={10}
               value={values[i]}
@@ -192,55 +182,52 @@ const EfficacyRadar: React.FC = () => {
                 next[i] = Number(e.target.value);
                 setValues(next);
               }}
-              className="chunky-slider chunky-slider-accent"
+              aria-label={domain}
             />
           </div>
         ))}
       </div>
 
-      {/* Score card */}
-      <div className="max-w-xs mx-auto bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: '20px 28px' }}>
-        <p className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--module-muted)", letterSpacing: '0.1em' }}>Your Self-Efficacy Score</p>
-        <p className="font-serif font-bold mt-1" style={{ fontSize: 48, color: 'var(--module-accent-text)', lineHeight: 1.1 }}>{average.toFixed(1)}</p>
-        <p className="text-[13px] mt-1" style={{ color: "var(--module-muted)" }}>{scoreLabel}</p>
+      {/* Score: under a hairline, its label, the number in ink, its words (no box) */}
+      <div className="ex-result">
+        <p className="ex-label">Your Self-Efficacy Score</p>
+        <p className="t-number text-ink-primary">{average.toFixed(1)}</p>
+        <p className="ex-sub">{scoreLabel}</p>
         {lowDomains.length > 0 && (
-          <motion.p
+          <motion.div
             key={lowDomains.join(',')}
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)]"
           >
-            Your belief in <span className="font-bold">{lowDomains[0]}</span> is low — this module will show you how to build it up.
-          </motion.p>
+            <AnswerLine tone="note">
+            Your belief in <b>{lowDomains[0]}</b> is low — this module will show you how to build it up.
+            </AnswerLine>
+          </motion.div>
         )}
       </div>
-    </div>
+    </ExerciseSheet>
   );
 };
 const RoleModelSelector = () => {
     const [choice, setChoice] = useState<null | 'mastery' | 'coping'>(null);
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Which Story Builds More Belief?</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">You're struggling with a subject. Which of these role models is more helpful?</p>
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <button onClick={() => setChoice('mastery')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: moduleFill(choice === 'mastery' ? "var(--module-surface)" : "var(--module-surface)"), border: `2.5px solid ${choice === 'mastery' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(choice === 'mastery' ? "var(--module-danger-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(choice === 'mastery')} data-tone="coral" aria-pressed={!!(choice === 'mastery')}>
-                    <div>
-                        <p className="font-bold text-lg">The Genius (Mastery Model)</p>
-                        <p className="text-xs mt-1">A past pupil who always got top marks, found school easy, and never really had to study.</p>
-                    </div>
-                    <p className="text-xs font-mono self-end">"Just work hard."</p>
-                </button>
-                 <button onClick={() => setChoice('coping')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: moduleFill(choice === 'coping' ? "var(--module-success-soft)" : "var(--module-surface)"), border: `2.5px solid ${choice === 'coping' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(choice === 'coping' ? "var(--module-success-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(choice === 'coping')} data-tone="mint" aria-pressed={!!(choice === 'coping')}>
-                    <div>
-                        <p className="font-bold text-lg">The Grafter (Coping Model)</p>
-                        <p className="text-xs mt-1">A past pupil who used to struggle in tests, changed how they studied, and completely turned things around.</p>
-                    </div>
-                     <p className="text-xs font-mono self-end">"Here's how I recovered."</p>
-                </button>
-             </div>
-             {choice === 'coping' && <motion.p initial={{opacity:0}} animate={{opacity:1}} className="text-center mt-4 text-sm text-[var(--module-success-text)] font-bold">Correct. Seeing someone struggle and bounce back is way more motivating than watching someone who made it look easy.</motion.p>}
-        </div>
+        <ExerciseSheet title="Which Story Builds More Belief?" sub="You're struggling with a subject. Which of these role models is more helpful?" name="RoleModelSelector">
+             <AnswerGroup kind="one">
+                <ChoiceTile
+                    chosen={choice === 'mastery'}
+                    onClick={() => setChoice('mastery')}
+                    label="The Genius (Mastery Model)"
+                    meta={<>A past pupil who always got top marks, found school easy, and never really had to study.<span className="block mt-2 text-ink-secondary">"Just work hard."</span></>}
+                />
+                <ChoiceTile
+                    chosen={choice === 'coping'}
+                    onClick={() => setChoice('coping')}
+                    label="The Grafter (Coping Model)"
+                    meta={<>A past pupil who used to struggle in tests, changed how they studied, and completely turned things around.<span className="block mt-2 text-ink-secondary">"Here's how I recovered."</span></>}
+                />
+             </AnswerGroup>
+             {choice === 'coping' && <motion.div initial={{opacity:0}} animate={{opacity:1}}><AnswerLine>Correct. Seeing someone struggle and bounce back is way more motivating than watching someone who made it look easy.</AnswerLine></motion.div>}
+        </ExerciseSheet>
     );
 };
 
@@ -249,6 +236,7 @@ const ICEBERG_SUGGESTIONS = ['Failed attempts', 'Asking for help', 'Late nights'
 const IcebergInteractive = () => {
     const [inputs, setInputs] = useState<string[]>([]);
     const [textVal, setTextVal] = useState('');
+    const processId = useId();
 
     const addItem = (text: string) => {
       const trimmed = text.trim();
@@ -256,84 +244,66 @@ const IcebergInteractive = () => {
     };
 
     return (
-        <div className="my-10">
-            {/* Section chip + title */}
-            <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>Reflection Activity</span>
-                <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>The Success Iceberg</h4>
-                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Success is what people see. Process is what it takes.</p>
+        <ExerciseSheet label="Reflection Activity" title="The Success Iceberg" sub="Success is what people see. Process is what it takes." name="IcebergInteractive">
+            {/* TOP: Above the waterline: words you read, under a hairline */}
+            <div className="ex-block">
+                <p className="ex-label">Above the waterline</p>
+                <p className="ex-block-title">Visible Success</p>
+                <p className="ex-block-text">The result people see and celebrate</p>
             </div>
 
-            {/* Iceberg card */}
-            <div className="max-w-lg mx-auto overflow-hidden" style={{ border: "2px solid var(--module-line)", borderRadius: 16 }}>
+            {/* WATERLINE: a line across the sheet with its words in the middle */}
+            <div className="flex items-center gap-3">
+                <i className="block h-px flex-1" style={{ background: 'var(--outline-strong)' }} aria-hidden="true" />
+                <span className="t-meta">~ waterline ~</span>
+                <i className="block h-px flex-1" style={{ background: 'var(--outline-strong)' }} aria-hidden="true" />
+            </div>
 
-                {/* TOP: Above the waterline — sky */}
-                <div className="flex flex-col items-center justify-center text-center" style={{ backgroundColor: "var(--module-surface)", padding: '24px 28px', minHeight: 140 }}>
-                    <span className="text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-ink)", borderRadius: 20, padding: '3px 10px' }}>Above the waterline</span>
-                    <p className="font-serif font-bold text-xl" style={{ color: "var(--module-ink)" }}>Visible Success</p>
-                    <p className="text-[13px] mt-1" style={{ color: "var(--module-ink)" }}>The result people see and celebrate</p>
+            {/* BOTTOM: Below the waterline */}
+            <div className="ex-stack">
+                <div className="flex flex-col gap-1.5">
+                    <p className="ex-label">Below the waterline</p>
+                    <p id={processId} className="ex-block-title">The Invisible Process</p>
+                    <p className="ex-block-text">What actually made it happen — that nobody sees</p>
                 </div>
 
-                {/* WATERLINE */}
-                <div className="relative" style={{ height: 3, background: moduleFill(`linear-gradient(to right, #93c5fd, ${COLORS.accent})`) }}>
-                    <span className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] bg-[var(--module-surface)] px-2" style={{ color: "var(--module-ink)" }}>~ waterline ~</span>
-                </div>
-
-                {/* BOTTOM: Below the waterline */}
-                <div style={{ backgroundColor: "var(--module-surface)", padding: '24px 28px', minHeight: 220 }}>
-                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: 'var(--module-surface)', color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '3px 10px' }}>Below the waterline</span>
-                    <p className="font-serif font-bold text-lg" style={{ color: "var(--module-ink)" }}>The Invisible Process</p>
-                    <p className="text-xs mb-4" style={{ color: "var(--module-muted)" }}>What actually made it happen — that nobody sees</p>
-
-                    {/* Entered items */}
-                    {inputs.length > 0 && (
-                        <div className="flex flex-wrap gap-2 mb-4">
-                            {inputs.map((input, i) => (
-                                <span key={i} className="text-[13px] font-medium" style={{ backgroundColor: 'var(--module-surface)', border: '1.5px solid rgba(var(--nsu-orange-rgb), 0.25)', color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '4px 12px' }}>{input}</span>
-                            ))}
-                        </div>
-                    )}
-
-                    {/* Input */}
-                    <input
-                        value={textVal}
-                        onChange={(e) => setTextVal(e.target.value)}
-                        placeholder="e.g., failed attempts, asking for help..."
-                        className="w-full text-sm outline-none"
-                        style={{
-                            backgroundColor: "var(--module-surface)",
-                            border: "1.5px solid var(--module-line)",
-                            borderRadius: 12,
-                            padding: '14px 16px',
-                            color: "var(--module-ink)",
-                            fontSize: 14,
-                        }}
-                        onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-                        onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-on-fill)"; }}
-                        onKeyDown={(e) => {
-                            if (e.key === 'Enter' && textVal.trim()) {
-                                addItem(textVal);
-                                setTextVal('');
-                            }
-                        }}
-                    />
-
-                    {/* Suggestion chips */}
-                    <div className="flex flex-wrap gap-1.5 mt-3">
-                        {ICEBERG_SUGGESTIONS.filter(s => !inputs.includes(s)).map(s => (
-                            <button
-                                key={s}
-                                onClick={() => addItem(s)}
-                                className="text-xs transition-opacity hover:opacity-80"
-                                style={{ backgroundColor: 'var(--module-surface)', border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '4px 10px' }} data-wide-button="true"
-                            >
-                              + {s}
-                            </button>
+                {/* Entered items: ruled like rows, not pills */}
+                {inputs.length > 0 && (
+                    <ul className="ex-list">
+                        {inputs.map((input, i) => (
+                            <li key={i} className="t-body text-ink-primary">{input}</li>
                         ))}
-                    </div>
+                    </ul>
+                )}
+
+                {/* Input */}
+                <Field
+                    aria-labelledby={processId}
+                    value={textVal}
+                    onChange={(e) => setTextVal(e.target.value)}
+                    placeholder="e.g., failed attempts, asking for help..."
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter' && textVal.trim()) {
+                            addItem(textVal);
+                            setTextVal('');
+                        }
+                    }}
+                />
+
+                {/* Suggestions: white buttons with a line */}
+                <div className="flex flex-wrap gap-2">
+                    {ICEBERG_SUGGESTIONS.filter(s => !inputs.includes(s)).map(s => (
+                        <Button
+                            key={s}
+                            size="sm"
+                            onClick={() => addItem(s)}
+                        >
+                          + {s}
+                        </Button>
+                    ))}
                 </div>
             </div>
-        </div>
+        </ExerciseSheet>
     );
 }
 

@@ -1,0 +1,108 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * How They Did It in the agreed look (area 7b; boards c-tools2-how and r5-how-they-did-it). Real
+ * people, a drawing for each and their stories in four short beats stay; the featured story is the
+ * one raised sheet with Save and Next beside its move; no colour bands, tints or orange pills.
+ */
+.hw7 { padding: 0 var(--space-2) var(--space-8); color: var(--ink-primary); font-family: var(--font-ui); }
+.hw7 p, .hw7 h2, .hw7 h3, .hw7 ul { margin: 0; }
+.hw7 ul { padding: 0; list-style: none; }
+/* Two classes deep, so mobile-editorial's bold DM Sans heading rules cannot restyle a headline. */
+.hw7 .t-title, .hw7 .t-heading { font-family: var(--font-ui); font-weight: 400; }
+.hw7 .t-label { color: var(--ink-muted); }
+.hw7-loading { padding: var(--space-12) 0; text-align: center; }
+.hw7 .ui-btn > span { display: inline-flex; align-items: center; gap: var(--space-2); }
+
+/* ── The deck: the filters in one row, the featured story, another way in ── */
+.hw7-deck { display: flex; flex-direction: column; gap: var(--space-6); }
+.hw7-filters { display: flex; gap: var(--space-2); margin: 0 calc(var(--space-6) * -1); padding: 2px var(--space-6); overflow-x: auto; scrollbar-width: none; }
+.hw7-filters::-webkit-scrollbar { display: none; }
+.hw7-filters .ui-btn { flex: none; }
+.hw7 .hw7-filters .ui-btn[aria-pressed='true'], .hw7 .ui-pair .ui-btn[aria-pressed='true'], .hw7 .hw7-save.ui-btn[aria-pressed='true'] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.hw7-layout { display: flex; flex-direction: column; gap: var(--space-8); }
+.hw7-story .ui-paper-face { display: flex; flex-direction: column; }
+.hw7-feature { display: grid; grid-template-columns: minmax(0, 1fr) 88px; align-items: start; gap: 6px var(--space-3); }
+.hw7-feature-copy { display: flex; min-width: 0; flex-direction: column; gap: 6px; }
+.hw7-feature .hw7-portrait { grid-column: 2; grid-row: 1 / span 2; }
+.hw7-hook { grid-column: 1 / -1; font-size: 21px; line-height: 28px; letter-spacing: -0.02em; text-wrap: pretty; }
+.hw7 .hw7-read-btn.ui-btn { margin-top: var(--space-4); }
+.hw7-borrow { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-4); padding-top: 14px; border-top: 1px solid var(--hairline); }
+.hw7-borrow .ui-pair { margin-top: var(--space-1); }
+.hw7-portrait { display: block; flex: none; width: 88px; height: 88px; object-fit: contain; }
+.hw7-portrait--lg { width: 64px; height: 64px; }
+.hw7-initials { display: grid; place-items: center; border: 1px solid var(--hairline); border-radius: 50%; color: var(--ink-secondary); font-size: 24px; letter-spacing: -0.02em; }
+.hw7-portrait--lg.hw7-initials { font-size: 20px; }
+.dark .hw7 img.hw7-portrait { filter: invert(1) hue-rotate(180deg); }
+.hw7-others { display: flex; min-width: 0; flex-direction: column; gap: var(--space-3); }
+.hw7-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.hw7-head .ui-readout { color: var(--ink-muted); }
+.hw7 .hw7-people .ui-row { align-items: flex-start; }
+.hw7 .hw7-people .ui-row-over { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.hw7 .hw7-people .ui-row-body { gap: 3px; }
+.hw7 .hw7-people .ui-row-meta { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.hw7 .hw7-people .ui-row-chev { margin-top: 20px; }
+
+/* ── A story: who, the four beats, the next beat pinned ─────────────────── */
+.hw7-read { display: flex; flex-direction: column; gap: var(--space-5); padding-bottom: 136px; }
+.hw7-who { display: flex; align-items: center; gap: 14px; }
+.hw7-who-name { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 2px; }
+.hw7-progress { display: flex; align-items: center; gap: var(--space-3); }
+.hw7-steps { display: grid; flex: 1; grid-auto-columns: 1fr; grid-auto-flow: column; gap: 5px; }
+.hw7-steps i { display: block; height: 4px; border-radius: 2px; background: var(--hairline); }
+.hw7-steps i[data-state] { background: var(--ink-primary); }
+.hw7-progress .ui-readout { color: var(--ink-muted); }
+.hw7-beat { display: flex; flex-direction: column; gap: var(--space-6); }
+.hw7-sec { display: flex; flex-direction: column; gap: var(--space-2); }
+.hw7-quote { text-wrap: pretty; }
+.hw7-struggle { display: flex; flex-direction: column; gap: 14px; margin-top: var(--space-1) !important; }
+.hw7-struggle li { display: flex; align-items: flex-start; gap: var(--space-3); font-size: 17px; line-height: 24px; }
+.hw7-dot { flex: none; width: 6px; height: 6px; margin-top: 9px; border-radius: 50%; background: var(--ink-muted); }
+.hw7-flips { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-1); }
+.hw7 .hw7-flip.ui-press { display: flex; align-items: center; gap: 14px; min-height: 68px; padding: var(--space-3) 14px; border-radius: var(--r-sm); }
+.hw7 .hw7-flip.ui-press[aria-pressed='true'] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.hw7-flip-n { display: grid; flex: none; place-items: center; width: 30px; height: 30px; border: 1.5px solid var(--ink-primary); border-radius: 50%; font-size: 14px; }
+.hw7-flip[aria-pressed='true'] .hw7-flip-n { background: var(--ink-primary); color: var(--surface-paper); }
+.hw7-flip-front { flex: 1; min-width: 0; font-size: 16px; line-height: 21px; letter-spacing: -0.015em; }
+.hw7-turn { margin-left: auto; white-space: nowrap; }
+.hw7-flip-back { flex: 1; min-width: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.hw7-flip-title { display: block; margin-bottom: 2px; color: var(--ink-primary); }
+.hw7-now { font-size: 18px; line-height: 25px; letter-spacing: -0.01em; }
+.hw7-steal { padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
+.hw7 .hw7-save.ui-btn { align-self: flex-start; margin-top: var(--space-2); }
+.hw7-sources { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-1); }
+.hw7-sources .ui-link > span { display: inline-flex; align-items: center; gap: var(--space-1); }
+.hw7-chev { transition: transform var(--t-ui) var(--ease-out); }
+.hw7-chev[data-open] { transform: rotate(180deg); }
+.hw7-source-list { display: flex; flex-direction: column; }
+.hw7-source { display: inline-flex; align-items: center; gap: var(--space-1); min-height: 44px; color: var(--ink-secondary); font-size: 13px; text-decoration: none; overflow-wrap: anywhere; }
+.hw7 .hw7-to-deck.ui-link { align-self: center; }
+/* The next beat is pinned over the home indicator on a phone (the tab bar has stepped aside). */
+.hw7-foot-wrap { --frame-float-gap: calc(-1 * var(--safe-bottom)); left: 0; right: 0; z-index: var(--z-sticky); }
+.hw7 .hw7-foot.ui-foot { position: static; padding-left: max(var(--space-6), var(--safe-left)); padding-right: max(var(--space-6), var(--safe-right)); background: var(--surface-canvas); }
+.hw7-playbook { display: flex; flex-direction: column; gap: var(--space-6); }
+.hw7-playbook .ui-row-art { flex: none; width: 40px; height: 40px; }
+.hw7-playbook .hw7-portrait { width: 40px; height: 40px; }
+.hw7-playbook .hw7-initials { font-size: 14px; }
+
+@media (min-width: 768px) {
+  .hw7 { padding: 0 0 var(--space-12); }
+  .hw7-filters { flex-wrap: wrap; margin: 0; padding: 0; overflow: visible; }
+  .hw7-story .ui-paper-face { align-items: flex-start; gap: 20px; padding: 28px; }
+  .hw7 .hw7-read-btn.ui-btn { width: 260px; margin-top: 0; }
+  .hw7-borrow { width: 100%; margin-top: 0; }
+  .hw7-read { max-width: 680px; margin: 0 auto; padding-bottom: 0; }
+  .hw7-foot-wrap.frame-float { position: static; }
+  .hw7 .hw7-foot.ui-foot { flex-direction: row; align-items: center; gap: var(--space-5); margin: 0; padding: 0; border: 0; background: none; }
+  .hw7 .hw7-foot .ui-btn--lg { width: 300px; flex: none; }
+}
+/* The two columns start at 1024px: between 768 and 1023 the sidebar is beside the tool and they squeezed the
+   headline to a word a line (area 7b second pass); the rest of the laptop look starts at 768. */
+@media (min-width: 1024px) {
+  .hw7-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; align-items: start; gap: 48px; }
+  .hw7-feature { grid-template-columns: minmax(0, 1fr) 150px; gap: 10px var(--space-6); width: 100%; align-items: center; }
+  .hw7-feature .hw7-portrait { width: 150px; height: 150px; }
+  .hw7 .hw7-name { font-size: 44px; line-height: 48px; letter-spacing: -0.045em; }
+  .hw7-hook { grid-column: 1; }
+}

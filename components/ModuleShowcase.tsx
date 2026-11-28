@@ -1,609 +1,219 @@
 import './module-cards.css';
-import { ModuleOutcome } from './learning/ModuleDiscovery';
-import { COLORS } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * ModuleShowcase — module detail / picker for a single world.
+ * ModuleShowcase: one module world (area 5 of the design build; boards
+ * c-modules-world on a phone, r5-module-world on a laptop).
  *
- * Layout: cream hero card on cream page background, with a horizontal
- * carousel of mini-cards below for the other modules in this world.
- * Clicking a carousel card promotes it to the hero position with a
- * Framer Motion `layoutId` morph (same pattern as ModulesView's
- * hero/satellite swap on the Library page).
+ * A world opens on the module to read next, with one Continue, under the
+ * world's drawing and its own words. The rest are short boxes you press, and
+ * the finished modules fold into one row. On a laptop the drawing and the
+ * world's words stay at the left; the module to read next keeps its topics and
+ * "What's in this module" (ROUND5-RESULTS, "c1").
  *
- * The hero is wrapped in <AnimatePresence mode="popLayout"> with a
- * `key` tied to the active module id, so when the module changes:
- *   - The exiting hero stays mounted long enough for Framer to morph
- *     it back to its carousel slot
- *   - The entering hero animates in concurrently (popLayout) rather
- *     than waiting for the exit to finish
- *
- * Active-in-carousel: the currently-active module is rendered in the
- * carousel as a muted, non-interactive card with NO layoutId, so it
- * doesn't conflict with the hero's layoutId of the same module id.
- * (Two simultaneously-mounted elements with the same layoutId breaks
- * Framer's tracking and produces hard cuts instead of morphs.)
+ * ModuleWorldScreen is the whole page (its bar included): the router shows it,
+ * and Modules draws it into a door as the door opens.
  */
-import React, { useState, useCallback, useEffect, useRef } from 'react';
-import { useCompactLayout } from '../hooks/useCompactLayout';
-import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
-import { CheckCircle2, ChevronDown, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
-import { Capacitor } from '@capacitor/core';
+import React, { useState } from 'react';
+import { Search } from 'lucide-react';
 import { type CourseData } from './Library';
-import { MODULE_SECTIONS, type SectionInfo } from '../moduleSections';
-import { SUBJECT_MODULE_CONTENT } from '../subjectModuleData';
-import { WorldIconBlob, type WorldId } from './WorldIconBlob';
-import { WORLD_TONES, useWorldTones, type WorldTones } from './worldPalette';
+import type { UserProgress } from '../types';
+import { useCompactLayout } from '../hooks/useCompactLayout';
+import { useSettingsContext } from '../contexts/SettingsContext';
+import { TopBar } from './ui/Bars';
+import { Button, IconButton, Glyph, Arrow } from './ui/Button';
+import { List, Row, PaperSheet, PressBox } from './ui/List';
+import { SearchField } from './ui/Field';
+import { CompletionMark } from './learning/CompletionMark';
+import { sectionsFor } from './learning/data';
+import { requestModuleResume } from './learning/intents';
+import { moduleOutcome, moduleReadingTime } from '../utils/moduleDiscovery';
+import { MODULE_WORLDS, Marks, Readout, WorldArt, isModuleDone, isModuleStarted, moduleResumePoint, worldProgress, worldStyle, type ModuleWorld } from './moduleWorlds';
 
-// ── World theming ──────────────────────────────────────────────────────
-interface WorldTheme extends WorldTones {
-  worldKey: WorldId;
-  number: string;
-  worldName: string;
-}
-
-const WORLD_THEMES: Record<string, WorldTheme> = {
-  'architecture-mindset': {
-    worldKey: 'mind',   number: '01', worldName: 'The Architecture',
-    ...WORLD_TONES['architecture-mindset'],
-  },
-  'science-growth': {
-    worldKey: 'growth', number: '02', worldName: 'The Garden',
-    ...WORLD_TONES['science-growth'],
-  },
-  'learning-cheat-codes': {
-    worldKey: 'learn',  number: '03', worldName: 'The Cheat Codes',
-    ...WORLD_TONES['learning-cheat-codes'],
-  },
-  'subject-specific-science': {
-    worldKey: 'decode', number: '04', worldName: 'The Decoder',
-    ...WORLD_TONES['subject-specific-science'],
-  },
-  'exam-zone': {
-    worldKey: 'exam',   number: '05', worldName: 'The Arena',
-    ...WORLD_TONES['exam-zone'],
-  },
-};
-
-const FALLBACK_THEME: WorldTheme = WORLD_THEMES['architecture-mindset'];
-
-const CARD_WIDTH = 280; // px — matches w-[280px] used on carousel cards
-const IS_NATIVE_IOS = Capacitor.getPlatform() === 'ios';
-
-// ── Section helpers ────────────────────────────────────────────────────
-function getSectionsForModule(moduleId: string, sectionsCount: number): SectionInfo[] {
-  if (MODULE_SECTIONS[moduleId]) return MODULE_SECTIONS[moduleId];
-  const subjectMatch = moduleId.match(/^subject-(.+)-protocol$/);
-  if (subjectMatch) {
-    const subjectId = subjectMatch[1];
-    const content = SUBJECT_MODULE_CONTENT[subjectId];
-    if (content?.sections) {
-      return content.sections.map((s: { title: string; eyebrow: string }) => ({
-        title: s.title,
-        eyebrow: s.eyebrow,
-      }));
-    }
-  }
-  return Array.from({ length: sectionsCount }, (_, i) => ({
-    title: `Section ${i + 1}`,
-    eyebrow: '',
-  }));
-}
-
-// ── Component ──────────────────────────────────────────────────────────
 interface ModuleShowcaseProps {
   courses: CourseData[];
   categoryTitle: string;
   categoryId: string;
-  userProgress: Record<string, { unlockedSection: number }>;
+  userProgress: UserProgress | Record<string, { unlockedSection: number }>;
   onSelectCourse: (courseId: string) => void;
+  /** On a phone: the world's own search ("Find a module") is open from the bar's search button. */
+  searchOpen?: boolean;
 }
 
-export default function ModuleShowcase({
-  courses,
-  categoryId,
-  userProgress,
-  onSelectCourse,
-}: ModuleShowcaseProps) {
-  const rawTheme = WORLD_THEMES[categoryId] ?? FALLBACK_THEME;
-  const tones = useWorldTones();
-  const compactLayout = useCompactLayout();
-  const [moduleQuery, setModuleQuery] = useState('');
-  // Same object, with the ink and mid resolved for the active theme.
-  // Only `deep` is swapped wholesale: it is text everywhere it appears. `mid`
-  // also fills buttons and bars, so it stays raw and the eyebrow asks for
-  // midText at its own use site.
-  const theme = { ...rawTheme, deep: tones.ink(rawTheme) };
+const pad = (n: number) => String(n).padStart(2, '0');
 
-  // Synchronous initialiser — hero mounts with the right module on the
-  // first render, no useEffect tick.
-  const [currentIndex, setCurrentIndex] = useState(() => {
-    if (courses.length === 0) return 0;
-    const firstIncomplete = courses.findIndex(c => {
-      const p = userProgress[c.id];
-      return !p || p.unlockedSection < c.sectionsCount;
-    });
-    return firstIncomplete === -1 ? 0 : firstIncomplete;
-  });
-  const [sectionsExpanded, setSectionsExpanded] = useState(false);
-
-  // Defensive: if courses is empty or currentIndex out of bounds, bail
-  // before destructuring to avoid the "blank hero" rendering bug.
+/** The world's page under its bar. */
+export default function ModuleShowcase({ courses, categoryId, userProgress, onSelectCourse, searchOpen = false }: ModuleShowcaseProps) {
+  const phone = useCompactLayout();
+  const dark = useSettingsContext()?.settings.darkMode ?? false;
+  const essentials = useSettingsContext()?.settings.essentialsMode;
+  const progress = userProgress as UserProgress;
+  const world: ModuleWorld = MODULE_WORLDS.find(item => item.id === categoryId) ?? MODULE_WORLDS[0];
+  const [query, setQuery] = useState('');
+  const [whatsIn, setWhatsIn] = useState(false);
+  const [finishedOpen, setFinishedOpen] = useState(false);
   if (courses.length === 0) return null;
-  const safeIndex = Math.min(Math.max(currentIndex, 0), courses.length - 1);
-  const course = courses[safeIndex];
 
-  const progress = userProgress[course.id];
-  const isCompleted = !!progress && progress.unlockedSection >= course.sectionsCount;
-  const isInProgress = !!progress && progress.unlockedSection > 0 && !isCompleted;
+  const numberOf = (course: CourseData) => courses.findIndex(item => item.id === course.id) + 1;
+  const next = courses.find(course => isModuleStarted(course, progress)) ?? courses.find(course => !isModuleDone(course, progress)) ?? courses[0];
+  const nextDone = isModuleDone(next, progress);
+  const nextStarted = isModuleStarted(next, progress);
+  const at = moduleResumePoint(next, progress);
+  const matches = (course: CourseData) => !query.trim() || `${course.title} ${course.description}`.toLowerCase().includes(query.toLowerCase().trim());
+  const rest = courses.filter(course => course.id !== next.id && !isModuleDone(course, progress) && matches(course));
+  const finished = courses.filter(course => course.id !== next.id && isModuleDone(course, progress) && matches(course));
+  const p = worldProgress(world.id, courses, progress);
+  const label = nextDone ? 'Review module' : nextStarted ? 'Continue' : 'Start module';
+  const go = () => { if (nextStarted) requestModuleResume(next.id); onSelectCourse(next.id); };
 
-  const sections = getSectionsForModule(course.id, course.sectionsCount);
-  const startStep = isInProgress
-    ? Math.min((progress?.unlockedSection ?? 0) + 1, course.sectionsCount)
-    : 1;
-  const startSection = sections[startStep - 1];
-  const startSectionTitle = startSection?.title ?? `Section ${startStep}`;
-  // Section eyebrow strings tend to be in the form "Section 1 // Sub-headline".
-  // Strip the prefix to get just the sub-headline part.
-  const sectionSubhed = startSection?.eyebrow?.includes(' // ')
-    ? startSection.eyebrow.split(' // ').slice(1).join(' // ')
-    : '';
-
-  const ctaLabel = isCompleted ? 'Review module' : isInProgress ? 'Continue module' : 'Start module';
-
-  const goTo = useCallback((idx: number) => {
-    if (idx < 0 || idx >= courses.length || idx === safeIndex) return;
-    setCurrentIndex(idx);
-    setSectionsExpanded(false);
-  }, [safeIndex, courses.length]);
-
-  // Keyboard nav
-  useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight') goTo(safeIndex + 1);
-      if (e.key === 'ArrowLeft') goTo(safeIndex - 1);
-    };
-    window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  }, [goTo, safeIndex]);
-
-  // ── Carousel scroll affordance ──────────────────────────────────────
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
-
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-    const update = () => {
-      setCanScrollLeft(el.scrollLeft > 8);
-      setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 8);
-    };
-    update();
-    el.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
-    return () => {
-      el.removeEventListener('scroll', update);
-      window.removeEventListener('resize', update);
-    };
-  }, [courses.length]);
-
-  const scrollByCard = (dir: 1 | -1) => {
-    scrollRef.current?.scrollBy({ left: dir * (CARD_WIDTH + 12), behavior: 'smooth' });
-  };
-
-  if (IS_NATIVE_IOS || compactLayout) {
-    return (
-      <div className="w-full max-w-xl px-4 theme-compat">
-        <div className="mb-5">
-          <div className="flex items-center gap-3">
-            <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-visible">
-              <WorldIconBlob world={theme.worldKey} size={64} />
-            </div>
-            <div className="min-w-0">
-              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: tones.midText(rawTheme) }}>
-                {theme.number} · {theme.worldName}
-              </p>
-              <h1 className="mt-1 font-serif text-[32px] font-medium leading-none tracking-tight text-[#1A1A1A] dark:text-white">{theme.worldKey.charAt(0).toUpperCase() + theme.worldKey.slice(1)}</h1>
-              <p className="mt-2 text-sm text-[var(--ink-secondary)]">Choose a module</p>
-            </div>
+  const head = (
+    <div className={phone ? 'mw-whead' : 'mw-wlead'} style={worldStyle(world, dark)}>
+      {phone ? (
+        <div className="mw-whead-row" data-in="1">
+          <div className="mw-whead-copy">
+            <p className="t-label mw-w-ink mw-whead-place">{world.place}</p>
+            <h1 className="t-title mw-whead-title">{world.blurb}</h1>
           </div>
-          <p className="mt-3 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
-            Your next section is saved automatically.
-          </p>
+          <WorldArt world={world} size={112} className="mw-whead-art" />
         </div>
-
-        <label className="mb-5 block text-sm font-medium">Find a module<input type="search" value={moduleQuery} onChange={event => setModuleQuery(event.target.value)} placeholder="Search modules" className="mt-2 min-h-12 w-full rounded-lg border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-3 text-base" /></label>
-        {moduleQuery.trim() && !courses.some(course => `${course.title} ${course.description}`.toLowerCase().includes(moduleQuery.toLowerCase().trim())) && <p className="my-6 text-sm">No matching modules. <button type="button" className="min-h-11 underline underline-offset-4" onClick={() => setModuleQuery('')}>Clear search</button></p>}
-        <div className="space-y-3">
-          {courses.filter(course => `${course.title} ${course.description}`.toLowerCase().includes(moduleQuery.toLowerCase().trim())).map((item) => {
-            const index = courses.findIndex(course => course.id === item.id);
-            const itemProgress = userProgress[item.id];
-            const completedSections = Math.min(itemProgress?.unlockedSection ?? 0, item.sectionsCount);
-            const itemCompleted = completedSections >= item.sectionsCount;
-            const itemInProgress = completedSections > 0 && !itemCompleted;
-            const percent = item.sectionsCount > 0
-              ? Math.round((completedSections / item.sectionsCount) * 100)
-              : 0;
-            const status = itemCompleted
-              ? 'Complete'
-              : itemInProgress
-                ? `Continue · ${percent}%`
-                : `${item.sectionsCount} sections`;
-
-            return (
-              <button
-                key={item.id}
-                type="button"
-                onClick={() => onSelectCourse(item.id)}
-                className="world-ink-card group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-surface-paper"
-                style={{ borderColor: itemInProgress ? COLORS.accent : 'var(--module-card-border, #383838)' }}
-              >
-                <div className="flex items-start gap-3">
-                  <span
-                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-mono text-[11px] font-bold"
-                    style={{ background: itemCompleted ? theme.mid : `${theme.blob}45`, color: itemCompleted ? '#fff' : theme.deep }}
-                  >
-                    {itemCompleted ? <CheckCircle2 size={18} /> : String(index + 1).padStart(2, '0')}
-                  </span>
-
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-start justify-between gap-3">
-                      <h3 className="font-serif text-[20px] font-medium leading-[1.08] tracking-tight text-[#1A1A1A] dark:text-white">
-                        {item.title}
-                      </h3>
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full" style={{ background: `${theme.blob}38`, color: theme.deep }}>
-                        <ChevronRight size={17} />
-                      </span>
-                    </div>
-                    <p className="mt-2 line-clamp-2 text-[12px] leading-relaxed text-zinc-600 dark:text-zinc-400">
-                      {item.description}
-                    </p>
-                    <ModuleOutcome course={item} />
-
-                    <div className="mt-3 flex items-center gap-2.5">
-                      <span className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: `${theme.deep}1F` }}>
-                        <span className="block h-full rounded-full" style={{ width: `${percent}%`, background: theme.mid }} />
-                      </span>
-                      <span className="shrink-0 font-mono text-[9px] font-bold uppercase tracking-[0.12em]" style={{ color: theme.deep }}>
-                        {status}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </button>
-            );
-          })}
-        </div>
+      ) : (
+        <>
+          <WorldArt world={world} size={168} className="mw-wlead-art" />
+          <p className="t-label mw-w-ink mw-whead-place" data-in="1">{world.place}</p>
+          <h1 className="t-display mw-wlead-title" data-in="1">{world.blurb}</h1>
+        </>
+      )}
+      <p className="t-sub mw-whead-sub" data-in="1">{world.description}</p>
+      <div className="mw-prog mw-whead-prog" data-in="1">
+        <Marks total={p.total} on={p.done} part={p.part} />
+        <Readout>{p.done} of {p.total} done</Readout>
       </div>
-    );
-  }
+    </div>
+  );
 
-  return (
-    <div className="w-full max-w-5xl mx-auto px-4 flex flex-col gap-5 md:gap-6 theme-compat">
-      <LayoutGroup>
-        {/* ── Hero card ───────────────────────────────────────────
-            Wrapped in AnimatePresence with key=course.id so each
-            module mount/unmount is tracked. mode="popLayout" lets
-            the exiting hero animate concurrently with the entering
-            one (otherwise the hero slot is blank during the gap). */}
-        <div className="relative">
-          <AnimatePresence mode="popLayout" initial={false}>
-            <motion.div
-              key={course.id}
-              layoutId={`module-card-${course.id}`}
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ type: 'spring', stiffness: 240, damping: 32, opacity: { duration: 0.18 } }}
-              className="world-ink-card rounded-[24px] md:rounded-[28px] overflow-hidden"
-            >
-              <div className="p-6 md:p-9 lg:p-10">
-                {/* ── Eyebrow row — full width, above both columns ── */}
-                <div className="flex items-center gap-5 mb-6 md:mb-8">
-                  <WorldIconBlob world={theme.worldKey} size={140} />
-                  <div className="flex items-center gap-3 min-w-0">
-                    <span className="font-mono text-[11px] font-bold tracking-[0.25em]" style={{ color: theme.deep }}>
-                      {theme.number}
-                    </span>
-                    <span className="h-px w-8 shrink-0" style={{ background: `${theme.deep}40` }} />
-                    <span className="font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: theme.deep }}>
-                      {theme.worldName}
-                    </span>
-                  </div>
-                </div>
-
-                {/* ── Two-column body ────────────────────────────── */}
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
-                  {/* Left column — what this is */}
-                  <div className="md:col-span-7 flex flex-col">
-                    <h1
-                      className="font-serif font-medium tracking-[-0.03em] leading-[1.0] text-[#1A1A1A]"
-                      style={{ fontSize: 'clamp(36px, 4.5vw, 56px)' }}
-                    >
-                      {course.title}
-                    </h1>
-
-                    {course.subtitle && (
-                      <p className="font-serif italic text-[18px] md:text-[22px] mt-4" style={{ color: tones.midText(rawTheme) }}>
-                        {course.subtitle}
-                      </p>
-                    )}
-
-                    <p className="text-[14px] md:text-[15px] leading-relaxed mt-5" style={{ color: 'rgba(0,0,0,0.62)' }}>
-                      {course.description}
-                    </p>
-                  </div>
-
-                  {/* Right column — how to start */}
-                  <div className="md:col-span-5 md:pl-8 md:border-l flex flex-col" style={{ borderColor: `${theme.mid}4D` }}>
-                    <p className="font-mono text-[11px] font-medium uppercase tracking-[0.22em]" style={{ color: tones.midText(rawTheme) }}>
-                      {isInProgress ? 'Continue here' : 'Start here'}
-                    </p>
-
-                    <h3 className="font-serif font-medium leading-snug tracking-tight text-[#1A1A1A] mt-3" style={{ fontSize: 'clamp(20px, 2vw, 24px)' }}>
-                      {startSectionTitle}
-                    </h3>
-
-                    {sectionSubhed && (
-                      <p className="font-serif italic text-[14px] mt-1.5" style={{ color: 'rgba(0,0,0,0.6)' }}>
-                        {sectionSubhed}
-                      </p>
-                    )}
-
-                    {/* Begins with panel — muted secondary chip */}
-                    <div className="world-section-preview mt-5 px-3 py-2 rounded-lg" style={{ background: 'var(--surface-soft)', border: '1px solid var(--outline-soft)' }}>
-                      <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: theme.deep }}>
-                        {isInProgress
-                          ? `Up next · Section ${startStep} of ${course.sectionsCount}`
-                          : `Begins with · Section 1 of ${course.sectionsCount}`}
-                      </p>
-                    </div>
-
-                    {/* Buttons */}
-                    <div className="mt-6 flex flex-col items-start gap-3">
-                      <button
-                        onClick={() => onSelectCourse(course.id)}
-                        className="world-primary-action group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
-                        style={{
-                          ...tones.cta(rawTheme),
-                          boxShadow: `0 6px 16px ${tones.cta(rawTheme).background}55`,
-                        }}
-                      >
-                        {ctaLabel}
-                        <ArrowRight size={16} />
-                      </button>
-                      <button
-                        onClick={() => setSectionsExpanded(!sectionsExpanded)}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold transition-colors duration-200"
-                        style={{ color: tones.midText(rawTheme), border: `1px solid ${theme.mid}55` }}
-                      >
-                        What&rsquo;s in this module
-                        <motion.span animate={{ rotate: sectionsExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                          <ChevronDown size={12} />
-                        </motion.span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Expandable sections — full width below body */}
-                <AnimatePresence>
-                  {sectionsExpanded && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
-                      className="overflow-hidden mt-6"
-                    >
-                      <div className="space-y-1">
-                        {sections.map((section, i) => {
-                          const sectionDone = !!progress && progress.unlockedSection > i;
-                          return (
-                            <div
-                              key={i}
-                              className="world-section-row flex items-start gap-3 py-2"
-                              style={{ borderTop: i === 0 ? 'none' : '1px solid var(--outline-soft)' }}
-                            >
-                              <span
-                                className={`${sectionDone ? '' : 'world-section-number '}shrink-0 mt-0.5 flex items-center justify-center`}
-                                style={{
-                                  width: 22, height: 22, borderRadius: '50%',
-                                  backgroundColor: sectionDone ? theme.mid : '#e0dbd4',
-                                  color: sectionDone ? '#fff' : '#9e9186',
-                                  fontSize: 11, fontWeight: 700,
-                                }}
-                              >
-                                {sectionDone ? <CheckCircle2 size={12} /> : i + 1}
-                              </span>
-                              <div>
-                                <p className="text-sm font-medium text-[#1A1A1A]">{section.title}</p>
-                                {section.eyebrow && (
-                                  <p className="text-xs mt-0.5" style={{ color: '#9e9186' }}>
-                                    {section.eyebrow.split(' // ')[1] || section.eyebrow}
-                                  </p>
-                                )}
-                              </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-
-                {/* ── Metadata footer — full width below both columns ── */}
-                <div className="mt-7 pt-5 flex flex-wrap items-baseline gap-x-8 gap-y-3" style={{ borderTop: '1px solid var(--outline-soft)' }}>
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: theme.deep }}>Progress</span>
-                    <span className="text-[13px] font-medium" style={{ color: isCompleted ? tones.midText(rawTheme) : 'var(--ink-primary)' }}>
-                      {isCompleted ? 'Completed' : isInProgress ? `${progress?.unlockedSection} of ${course.sectionsCount} sections` : 'Not started'}
-                    </span>
-                  </div>
-                  {course.tags.length > 0 && (
-                    <div className="flex items-baseline gap-2 min-w-0">
-                      <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: theme.deep }}>Topics</span>
-                      <span className="text-[13px] font-medium text-[#1A1A1A] truncate">{course.tags.slice(0, 3).join(', ')}</span>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        {/* ── Carousel ─────────────────────────────────────────── */}
-        {courses.length > 1 && (
-          <div>
-            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] mb-3" style={{ color: tones.midText(rawTheme) }}>
-              More in {theme.worldName}
-            </p>
-
-            <div className="relative">
-              {/* Scroll container — scrollbar hidden, arrow buttons drive nav */}
-              <div
-                ref={scrollRef}
-                className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 snap-x scroll-px-4 [&::-webkit-scrollbar]:hidden"
-                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-              >
-                {courses.map((c, originalIdx) => {
-                  const isActive = originalIdx === safeIndex;
-                  const cProgress = userProgress[c.id];
-                  const cCompleted = !!cProgress && cProgress.unlockedSection >= c.sectionsCount;
-                  const cPct = cProgress ? Math.round((cProgress.unlockedSection / c.sectionsCount) * 100) : 0;
-                  const cNumber = String(originalIdx + 1).padStart(2, '0');
-
-                  // Active card: muted, non-interactive, NO layoutId — never
-                  // share a layoutId with the hero or Framer drops the morph.
-                  if (isActive) {
-                    return (
-                      <div
-                        key={c.id}
-                        aria-current="true"
-                        className="world-current-card shrink-0 w-[260px] md:w-[280px] rounded-2xl overflow-hidden snap-start cursor-default"
-                        style={{
-                          background: '#FFFFFF',
-                          border: `1px dashed ${theme.mid}55`,
-                          boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.04)',
-                          opacity: 0.5,
-                        }}
-                      >
-                        <div className="flex flex-col h-full p-5 min-h-[220px]">
-                          <div className="flex justify-center -mt-4 -mb-2">
-                            <WorldIconBlob world={theme.worldKey} size={120} compact />
-                          </div>
-                          <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: tones.midText(rawTheme) }}>
-                            {cNumber}
-                          </span>
-                          <h4 className="font-serif text-[20px] md:text-[22px] font-medium tracking-tight leading-[1.05] text-[#1A1A1A] mt-1">
-                            {c.title}
-                          </h4>
-                          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] mt-auto pt-3" style={{ color: tones.midText(rawTheme) }}>
-                            Currently viewing
-                          </p>
-                        </div>
-                      </div>
-                    );
-                  }
-
-                  return (
-                    <motion.button
-                      key={c.id}
-                      layoutId={`module-card-${c.id}`}
-                      layout
-                      transition={{ type: 'spring', stiffness: 240, damping: 32 }}
-                      onClick={() => goTo(originalIdx)}
-                      whileHover={{ y: -2 }}
-                      className="world-ink-card shrink-0 w-[260px] md:w-[280px] text-left rounded-2xl overflow-hidden snap-start transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                    >
-                      <div className="flex flex-col h-full p-5 min-h-[220px]">
-                        <div className="flex justify-center -mt-4 -mb-2">
-                          <WorldIconBlob world={theme.worldKey} size={120} compact />
-                        </div>
-                        <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: tones.midText(rawTheme) }}>
-                          {cNumber}
-                        </span>
-                        <h4 className="font-serif text-[20px] md:text-[22px] font-medium tracking-tight leading-[1.05] text-[#1A1A1A] mt-1">
-                          {c.title}
-                        </h4>
-                        <p className="text-[12px] leading-snug mt-2" style={{ color: 'rgba(0,0,0,0.55)' }}>
-                          {c.description}
-                        </p>
-                        <div className="mt-auto pt-3 flex items-center gap-2">
-                          {cCompleted ? (
-                            <span className="inline-flex items-center justify-center w-4 h-4 rounded-full" style={{ background: theme.mid, color: 'white' }}>
-                              <CheckCircle2 size={10} />
-                            </span>
-                          ) : (
-                            <span className="h-1 rounded-full overflow-hidden flex-1" style={{ background: `${theme.deep}1F` }}>
-                              <span className="block h-full rounded-full" style={{ width: `${cPct}%`, background: theme.mid }} />
-                            </span>
-                          )}
-                          <span className="text-[10px] font-mono font-bold tabular-nums" style={{ color: theme.deep }}>
-                            {cCompleted ? 'Done' : `${cPct}%`}
-                          </span>
-                        </div>
-                      </div>
-                    </motion.button>
-                  );
-                })}
-              </div>
-
-              {/* Scroll arrows — fade in/out based on scroll position */}
-              <AnimatePresence>
-                {canScrollLeft && (
-                  <motion.button
-                    key="left"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.8 }}
-                    transition={{ duration: 0.18 }}
-                    onClick={() => scrollByCard(-1)}
-                    aria-label="Scroll modules left"
-                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center"
-                    style={{
-                      background: '#FFFFFF',
-                      border: `1px solid ${theme.blob}66`,
-                      boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-                      color: tones.midText(rawTheme),
-                    }}
-                  >
-                    <ChevronLeft size={18} />
-                  </motion.button>
-                )}
-                {canScrollRight && (
-                  <motion.button
-                    key="right"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.8 }}
-                    transition={{ duration: 0.18 }}
-                    onClick={() => scrollByCard(1)}
-                    aria-label="Scroll modules right"
-                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center"
-                    style={{
-                      background: '#FFFFFF',
-                      border: `1px solid ${theme.blob}66`,
-                      boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-                      color: tones.midText(rawTheme),
-                    }}
-                  >
-                    <ChevronRight size={18} />
-                  </motion.button>
-                )}
-              </AnimatePresence>
-            </div>
-
-            <p className="text-center mt-3 font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: theme.deep }}>
-              Module {safeIndex + 1} of {courses.length}
-            </p>
+  const sections = sectionsFor(next);
+  const upNext = (
+    <section className="mw-wsec mw-wsec--next" data-in="2">
+      <PaperSheet className={`mw-upnext${phone ? '' : ' mw-upnext--wide'}`} label={`Up next: ${next.title}`}>
+        <p className="t-label mw-upnext-label">Up next · Module {pad(numberOf(next))}</p>
+        <h2 className={phone ? 't-heading mw-upnext-title' : 't-title mw-upnext-title'}>{next.title}</h2>
+        <p className="t-sub mw-upnext-sub">{moduleOutcome(next)}</p>
+        <hr className="mw-rule" />
+        <p className="t-meta mw-upnext-meta">{nextStarted ? 'Section' : 'Begins with · Section'} {nextStarted ? at.step : 1} of {next.sectionsCount} · <b>{nextStarted ? at.title : sections[0]?.title ?? 'Section 1'}</b></p>
+        <Marks total={next.sectionsCount} on={Math.min(at.read, next.sectionsCount)} className="mw-upnext-marks" />
+        {!phone && next.tags.length ? <p className="t-meta mw-upnext-topics">Topics · {next.tags.slice(0, 3).join(', ')}</p> : null}
+        {phone ? (
+          <Button kind="main" size="lg" block arrow="forward" className="mw-upnext-go" onClick={go}>{label}</Button>
+        ) : (
+          <div className="mw-upnext-acts">
+            <Button kind="main" size="lg" block arrow="forward" onClick={go}>{label}</Button>
+            <Button size="lg" block arrow="menu" aria-expanded={whatsIn} className="mw-whatsin-btn" onClick={() => setWhatsIn(value => !value)}>What’s in this module</Button>
           </div>
         )}
-      </LayoutGroup>
+        {!phone && whatsIn ? (
+          <List className="mw-whatsin" label={`What’s in ${next.title}`}>
+            {sections.map((section, index) => (
+              <Row key={`${index}-${section.title}`} icon={<CompletionMark number={index + 1} complete={(progress[next.id]?.unlockedSection ?? 0) > index} />}
+                title={section.title} meta={section.eyebrow?.includes(' // ') ? section.eyebrow.split(' // ').slice(1).join(' // ') : undefined} />
+            ))}
+          </List>
+        ) : null}
+      </PaperSheet>
+    </section>
+  );
+
+  const box = (course: CourseData, done: boolean) => (
+    <PressBox key={course.id} className={`mw-mod${phone ? '' : ' mw-mod--wide'}`} onPress={() => onSelectCourse(course.id)}>
+      <span className="mw-mod-in">
+        <Readout className="mw-mod-no">{pad(numberOf(course))}</Readout>{' '}
+        <span className="mw-mod-copy">
+          <span className="mw-mod-title">{course.title}</span>{' '}
+          {!phone && !done ? <><span className="t-sub mw-mod-sub">{moduleOutcome(course)}</span>{' '}</> : null}
+          {done
+            ? <span className="t-meta mw-mod-done"><svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.5 6.2l2.4 2.4 4.6-5" /></svg>Finished</span>
+            : <span className="t-meta">{moduleReadingTime(course, essentials).replace(/ reading$/, '')} · {course.sectionsCount} sections</span>}
+        </span>
+        <Arrow meaning="opens" size={20} className="mw-chev" />
+      </span>
+    </PressBox>
+  );
+
+  const names = finished.length > 2 ? `${finished[0].title}, ${finished[1].title} and ${finished.length - 2} more` : finished.map(course => course.title).join(' and ');
+  const lists = (
+    <>
+      {rest.length ? (
+        <section className="mw-wsec" data-in="3" aria-labelledby="mw-rest-head">
+          <div className="mw-sec-head"><h2 id="mw-rest-head" className="t-heading">Still to read</h2><Readout className="mw-ink3">{rest.length}</Readout></div>
+          <div className="mw-mods">{rest.map(course => box(course, false))}</div>
+        </section>
+      ) : null}
+      {finished.length ? (
+        <section className="mw-wsec" data-in="4" aria-labelledby="mw-done-head">
+          <div className="mw-sec-head"><h2 id="mw-done-head" className="t-heading">Finished</h2><Readout className="mw-ink3">{finished.length}</Readout></div>
+          <div className="mw-mods">
+            <PressBox className="mw-mod mw-fold" expanded={finishedOpen} onPress={() => setFinishedOpen(value => !value)}>
+              <span className="mw-mod-in">
+                <span className="mw-tick" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M2.5 6.2l2.4 2.4 4.6-5" /></svg></span>
+                <span className="mw-mod-copy">
+                  <span className="mw-mod-title">{finished.length} {finished.length === 1 ? 'module' : 'modules'} finished</span>{' '}
+                  <span className="t-meta">{names}</span>
+                </span>
+                <Arrow meaning="menu" size={20} className="mw-chev mw-turn" />
+              </span>
+            </PressBox>
+            {finishedOpen ? <div className="mw-mods mw-finished">{finished.map(course => box(course, true))}</div> : null}
+          </div>
+        </section>
+      ) : null}
+      {query.trim() && !rest.length && !finished.length ? (
+        <p className="t-body mw-wsec">No matching modules. <Button size="sm" onClick={() => setQuery('')}>Clear search</Button></p>
+      ) : null}
+    </>
+  );
+
+  const search = (
+    <SearchField className="mw-wsearch" label="Find a module" placeholder="Search modules" value={query} onChange={event => setQuery(event.target.value)} autoComplete="off" />
+  );
+
+  return phone ? (
+    <div className="mw-world mw-world--phone">
+      {searchOpen || query.trim() ? <div className="mw-wsec mw-wsearch-slot">{search}</div> : null}
+      {head}
+      {upNext}
+      {lists}
+    </div>
+  ) : (
+    <div className="mw-world mw-world--desk">
+      <div className="mw-wcols">
+        {head}
+        <div className="mw-wmain">
+          {upNext}
+          {lists}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/** The whole world page: its one bar (one Back, the world's number over its name) and the page. */
+export function ModuleWorldScreen({ onBack, ...props }: ModuleShowcaseProps & { onBack: () => void }) {
+  const phone = useCompactLayout();
+  const [searching, setSearching] = useState(false);
+  const world = MODULE_WORLDS.find(item => item.id === props.categoryId) ?? MODULE_WORLDS[0];
+  const bar = (
+    <TopBar data-student-page-header tool={!phone} ruled={!phone} className="mw-wbar"
+      leave={{ kind: 'back', onPress: onBack, label: 'Back to Modules' }} over={`Modules · ${world.number}`}
+      title={<span data-world-name>{world.name}</span>}
+      action={phone ? <IconButton label="Find a module" aria-expanded={searching} icon={<Glyph icon={Search} />} onClick={() => setSearching(!searching)} /> : undefined} />
+  );
+  return (
+    <div className={`mw-page ${phone ? 'mw-page--phone' : 'mw-page--desk'} mw-worldpage`}>
+      {phone ? bar : null}
+      <div className="mw-col">
+        {phone ? null : bar}
+        <ModuleShowcase {...props} searchOpen={searching} />
+      </div>
     </div>
   );
 }

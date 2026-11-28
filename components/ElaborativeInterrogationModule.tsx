@@ -13,7 +13,7 @@ HelpCircle,
 Link,
 Wrench
 } from 'lucide-react';
-import React,{ useState } from 'react';
+import React,{ useId,useState } from 'react';
 import { ELABORATIVE_INTERROGATION_REFERENCE_LIST } from '../data/references/elaborativeInterrogation';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { pinkTheme } from '../moduleThemes';
@@ -21,6 +21,10 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { AnswerGroup,AnswerLine,ExerciseSheet,RevealCard } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { Field } from './ui/Field';
 
 const theme = pinkTheme;
 
@@ -31,25 +35,23 @@ const HungryManExperiment = BrandedHungryMan;
 const FlashcardFlipper = () => {
     const [isFlipped, setIsFlipped] = useState(false);
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Flashcard 2.0</h4>
-            <p className="text-sm mt-1 mb-6" style={{ color: "var(--module-muted)" }}>Stop making "what" cards. Start making "why" cards.</p>
-            <div className="w-full cursor-pointer" style={{ perspective: 1000, minHeight: 220 }} onClick={() => setIsFlipped(!isFlipped)}>
-                <motion.div className="relative w-full" style={{ transformStyle: 'preserve-3d', minHeight: 220 }} animate={{ rotateY: isFlipped ? 180 : 0 }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
-                    {/* Front */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', border: "2px solid var(--module-line)", borderRadius: 16, padding: '32px 28px' }}>
-                        <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 16, textTransform: 'uppercase' as const }}>Front</p>
-                        <p className="font-serif font-semibold" style={{ fontSize: 20, color: "var(--module-ink)", lineHeight: 1.5 }}>Why is the left ventricle wall thicker than the right?</p>
-                        <p className="italic mt-4" style={{ fontSize: 12, color: "var(--module-muted)" }}>Tap to reveal</p>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)', backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 16, padding: '32px 28px' }}>
-                        <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-danger-text)", marginBottom: 16, textTransform: 'uppercase' as const }}>Back</p>
-                        <p className="font-serif" style={{ fontSize: 18, color: "var(--module-ink)", lineHeight: 1.6 }}>Because it pumps blood to the whole body (high pressure), while the right only pumps to the lungs (low pressure).</p>
-                    </div>
-                </motion.div>
-            </div>
-        </div>
+        <ExerciseSheet title="Flashcard 2.0" sub={'Stop making "what" cards. Start making "why" cards.'} name="FlashcardFlipper">
+            {/* The card you press to turn over (it turns back when pressed again, as today); its side's name as a small label */}
+            <RevealCard
+                revealed={isFlipped}
+                onPress={() => setIsFlipped(!isFlipped)}
+                keepBefore={false}
+                before={<>
+                    <span className="ex-label">Front</span>
+                    <span className="ex-reveal-words">Why is the left ventricle wall thicker than the right?</span>
+                </>}
+                hint="Tap to reveal"
+                after={<>
+                    <span className="ex-label block mb-1.5">Back</span>
+                    <span className="ex-reveal-words">Because it pumps blood to the whole body (high pressure), while the right only pumps to the lungs (low pressure).</span>
+                </>}
+            />
+        </ExerciseSheet>
     );
 };
 
@@ -80,13 +82,6 @@ const WHY_CHAIN_FACTS = [
   },
 ];
 
-const CHAIN_COLORS = [
-  { dot: "bg-[var(--module-surface)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", label: "text-[var(--module-muted)] dark:text-[var(--module-muted)]" },
-  { dot: "bg-[var(--module-solid)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", label: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" },
-  { dot: "bg-[var(--module-solid)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", label: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" },
-  { dot: "bg-[var(--module-success)]", bg: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", label: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" },
-];
-
 const DEPTH_LABELS = ['Starting Fact', 'Level 1', 'Level 2', 'Level 3'];
 
 const WhyChainBuilder = () => {
@@ -94,6 +89,7 @@ const WhyChainBuilder = () => {
   const [chain, setChain] = useState<string[]>([]);
   const [currentInput, setCurrentInput] = useState('');
   const [askingWhy, setAskingWhy] = useState(false);
+  const titleId = useId();
 
   const handleSelectFact = (index: number) => {
     setSelectedFactIndex(index);
@@ -121,22 +117,16 @@ const WhyChainBuilder = () => {
   const fact = selectedFactIndex !== null ? WHY_CHAIN_FACTS[selectedFactIndex] : null;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Why-Chain Builder</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Pick a fact, then keep asking "Why?" to build deeper understanding.</p>
-
+    <ExerciseSheet title="Why-Chain Builder" sub={'Pick a fact, then keep asking "Why?" to build deeper understanding.'} name="WhyChainBuilder" id={titleId}>
       {selectedFactIndex === null ? (
-        <div className="space-y-3">
-          <p className="text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-muted)] text-center mb-2">Choose a starting fact:</p>
+        <AnswerGroup kind="one" legend="Choose a starting fact:" chooseOnArrow={false}>
           {WHY_CHAIN_FACTS.map((item, i) => (
-            <button key={i} onClick={() => handleSelectFact(i)} className="w-full text-left p-4 rounded-xl text-sm text-[var(--module-ink)] font-medium" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true">
-              {item.fact}
-            </button>
+            <ChoiceTile key={i} chosen={selectedFactIndex === i} onClick={() => handleSelectFact(i)} label={item.fact} />
           ))}
-        </div>
+        </AnswerGroup>
       ) : (
-        <div className="space-y-0">
-          {/* Chain links */}
+        <div className="flex flex-col">
+          {/* Chain links: each one's words on the sheet under its level's label (no tinted box), an ink arrow between */}
           <AnimatePresence>
             {chain.map((text, i) => (
               <React.Fragment key={i}>
@@ -144,7 +134,7 @@ const WhyChainBuilder = () => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="flex justify-center py-2 text-[var(--module-muted)] dark:text-[var(--module-muted)] text-xl select-none"
+                    className="flex justify-center py-2 text-ink-muted text-xl select-none"
                   >
                     ↓
                   </motion.div>
@@ -153,13 +143,10 @@ const WhyChainBuilder = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className={`p-4 rounded-lg ${CHAIN_COLORS[i].bg}`}
+                  className="ex-thought"
                 >
-                  <div className="flex items-center gap-2">
-                    <span className={`w-2 h-2 rounded-full flex-shrink-0 ${CHAIN_COLORS[i].dot}`} />
-                    <span className={`text-xs font-semibold uppercase tracking-wide ${CHAIN_COLORS[i].label}`}>{DEPTH_LABELS[i]}</span>
-                  </div>
-                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] mt-1">{text}</p>
+                  <span className="ex-label">{DEPTH_LABELS[i]}</span>
+                  <p className="ex-quote">{text}</p>
                 </motion.div>
               </React.Fragment>
             ))}
@@ -167,15 +154,10 @@ const WhyChainBuilder = () => {
 
           {/* Why button or input or completion */}
           {!isComplete && !askingWhy && (
-            <div className="flex justify-center py-4">
-              <motion.button
-                onClick={() => setAskingWhy(true)}
-                className="px-6 py-2.5 rounded-full bg-[var(--module-solid)] text-[var(--module-ink)] font-semibold text-sm shadow-none hover:bg-[var(--module-solid)] transition-colors"
-                animate={{ scale: [1, 1.05, 1] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }} data-wide-button="true"
-              >
+            <div className="ex-actions py-4">
+              <Button onClick={() => setAskingWhy(true)}>
                 Why?
-              </motion.button>
+              </Button>
             </div>
           )}
 
@@ -185,25 +167,25 @@ const WhyChainBuilder = () => {
               animate={{ opacity: 1, y: 0 }}
               className="mt-4 space-y-3"
             >
-              <div className="flex justify-center py-2 text-[var(--module-muted)] dark:text-[var(--module-muted)] text-xl select-none">↓</div>
-              <div className="flex gap-2">
-                <input
+              <div className="flex justify-center py-2 text-ink-muted text-xl select-none">↓</div>
+              <div className="flex gap-2 items-center">
+                <Field
                   type="text"
+                  aria-labelledby={titleId}
                   value={currentInput}
                   onChange={(e) => setCurrentInput(e.target.value)}
                   onKeyDown={(e) => { if (e.key === 'Enter') handleSubmitAnswer(); }}
                   placeholder={fact.hints[currentLevel - 1] || 'Type your explanation…'}
-                  className="flex-1 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none"
-                  style={{ border: "1.5px solid var(--module-line)" }}
+                  className="flex-1 min-w-0"
                   autoFocus
                 />
-                <button
+                <Button
                   onClick={handleSubmitAnswer}
-                  disabled={!currentInput.trim()}
-                  className="px-5 py-2.5 rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] text-sm font-semibold disabled:opacity-40 hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true"
+                  {...{ disabled: !currentInput.trim() }}
+                  className="disabled:opacity-40"
                 >
                   Submit
-                </button>
+                </Button>
               </div>
             </motion.div>
           )}
@@ -213,21 +195,23 @@ const WhyChainBuilder = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="mt-6 p-6 rounded-xl bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border border-success/30 dark:border-success/40 text-center space-y-3"
+              className="mt-6 ex-stack"
             >
-              <p className="font-serif text-lg font-semibold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Nice one — you've gone 4 levels deep.</p>
-              <p className="text-sm text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Each "Why?" created a new connection in your memory. That's why this technique beats just reading your notes over and over.</p>
-              <button
-                onClick={handleStartOver}
-                className="mt-3 px-5 py-2 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] text-sm font-semibold hover:opacity-80 transition-opacity" data-wide-button="true"
-              >
-                Start Over
-              </button>
+              {/* Done: a line in ink with the tick, not a mint panel */}
+              <AnswerLine>
+                <b>Nice one — you've gone 4 levels deep.</b>{' '}
+                <span>Each "Why?" created a new connection in your memory. That's why this technique beats just reading your notes over and over.</span>
+              </AnswerLine>
+              <div className="ex-actions">
+                <TextButton tone="quiet" onClick={handleStartOver}>
+                  Start Over
+                </TextButton>
+              </div>
             </motion.div>
           )}
         </div>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -332,40 +316,36 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
               ) : (
                 <p>You know why it works. Now here's a simple four-step plan to actually use it when you study.</p>
               )}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                {/* Card 1 — Sky */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Highlight the facts</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Look at your notes and highlight the main facts.</p>
+              <ol className="ex-nums">
+                <li>
+                  <span className="ex-num">1</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Highlight the facts</p>
+                    <p className="ex-num-sub">Look at your notes and highlight the main facts.</p>
                   </div>
-                </div>
-                {/* Card 2 — Sunshine */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Ask "Why?"</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>For each fact, write "Why?" in the margin.</p>
+                </li>
+                <li>
+                  <span className="ex-num">2</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Ask "Why?"</p>
+                    <p className="ex-num-sub">For each fact, write "Why?" in the margin.</p>
                   </div>
-                </div>
-                {/* Card 3 — Peach */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Answer it yourself</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Write an explanation in your own words.</p>
+                </li>
+                <li>
+                  <span className="ex-num">3</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Answer it yourself</p>
+                    <p className="ex-num-sub">Write an explanation in your own words.</p>
                   </div>
-                </div>
-                {/* Card 4 — Mint */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>4</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Check your answer</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>Compare it against the textbook to make sure you didn't get it wrong.</p>
+                </li>
+                <li>
+                  <span className="ex-num">4</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Check your answer</p>
+                    <p className="ex-num-sub">Compare it against the textbook to make sure you didn't get it wrong.</p>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ol>
               <p>This turns passive note-reading into something that actually builds your memory. One of the best things to come out of this is the "Why" flashcard.</p>
               <FlashcardFlipper />
               <MicroCommitment theme={theme}>

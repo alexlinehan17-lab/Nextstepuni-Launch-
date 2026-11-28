@@ -74,21 +74,21 @@ describe('approved onboarding interactions', () => {
     mount({ ...initialDraft(), step: 'north', year: '6th' });
     expect(screen.getByRole('img', { name: 'Find your direction illustration' })).toHaveAttribute('src', '/icons/onboarding/north-star.png');
     expect(screen.getByRole('button', { name: 'Continue' })).toBeDisabled();
-    const learning = screen.getByRole('button', { name: 'Keep Learning' });
+    const learning = screen.getByRole('button', { name: 'Keep learning' });
     learning.focus();
     fireEvent.click(learning);
     expect(learning).toHaveFocus();
     expect(learning).toHaveAttribute('aria-pressed', 'true');
     expect(within(learning).queryByRole('img')).not.toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'Keep Learning illustration' })).toHaveAttribute('src', '/icons/north-star/learning.png');
-    fireEvent.click(screen.getByRole('button', { name: 'My Own Path' }));
+    fireEvent.click(screen.getByRole('button', { name: 'My own path' }));
     expect(screen.queryByRole('img', { name: 'Keep Learning illustration' })).not.toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'My Own Path illustration' })).toHaveAttribute('src', '/icons/north-star/my-own-path.png');
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
     expect(screen.getByLabelText('Explore ideas')).toHaveValue('independence');
     expect(screen.getByRole('button', { name: 'My First Real Paycheck' })).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Back' }));
-    expect(screen.getByRole('button', { name: 'My Own Path' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'My own path' })).toHaveAttribute('aria-pressed', 'true');
     expect(screen.getByRole('img', { name: 'My Own Path illustration' })).toBeInTheDocument();
   });
   it('keeps navigation outside the scrolling choices on every onboarding step', () => {
@@ -128,7 +128,7 @@ describe('approved onboarding interactions', () => {
     mount(reviewDraft());
     expect(screen.getByText('256 target points, from 200 current points')).toBeInTheDocument();
     expect(screen.getByText('Based on your 3 subjects.')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Start Learning' })).toBeEnabled();
+    expect(screen.getByRole('button', { name: 'Start learning' })).toBeEnabled();
   });
   it('keeps day buttons stable, focusable and positively selected, without decorative ticks', () => {
     mount({ ...reviewDraft(), step: 'schedule' });
@@ -164,7 +164,7 @@ describe('approved onboarding interactions', () => {
     await userEvent.click(await screen.findByRole('option', { name: 'O3' }));
     fireEvent.click(screen.getByRole('button', { name: 'Save and review' }));
     expect(screen.getByText('O2 → O3')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Start Learning' })).toBeEnabled();
+    expect(screen.getByRole('button', { name: 'Start learning' })).toBeEnabled();
   });
   it('requires new subjects to be reviewed rather than filling defaults', () => {
     mount(reviewDraft());
@@ -173,14 +173,14 @@ describe('approved onboarding interactions', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Biology' }));
     fireEvent.click(screen.getByRole('button', { name: 'Save and review' }));
     expect(screen.getByText('Not reviewed')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Start Learning' })).toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Start learning' })).toBeDisabled();
   });
   it('keeps answers and allows retry after a rejected save', async () => {
     const complete = vi.fn().mockRejectedValueOnce(new Error('offline')).mockResolvedValue(undefined);
     mount(reviewDraft(), complete);
-    fireEvent.click(screen.getByRole('button', { name: 'Start Learning' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start learning' }));
     await screen.findByText('We couldn’t save your setup. Your answers are still here. Please try again.');
-    fireEvent.click(screen.getByRole('button', { name: 'Start Learning' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Start learning' }));
     await waitFor(() => expect(complete).toHaveBeenCalledTimes(2));
     expect(complete.mock.calls[1][0].subjects).toHaveLength(3);
     expect(complete.mock.calls[1][2]).toBe(false);

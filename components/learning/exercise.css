@@ -1,0 +1,368 @@
+/* The pieces an exercise in a module is made of (area 5b; boards c-read-flow, c-read-choices, c-read-write, agreed
+   26 Nov 2026; components/learning/Exercise.tsx). The one lifted sheet, a question's answers, the answer line, the
+   written answer, the card you press to turn it over. Tokens only. Every answer line is ink with a green tick beside
+   it; green is never a sentence; no mint, coral, peach or orange fill on an answer. */
+
+/* ── The sheet: the page's one lifted sheet is the thing you do ─────────────────────────────────────────── */
+.ex-sheet { position: relative; isolation: isolate; margin: 34px 0 0; text-align: left; }
+.ex-sheet::before,
+.ex-sheet::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; border: 1px solid var(--outline-soft); border-radius: var(--r-card); background: var(--surface-paper); transform: rotate(-0.8deg); }
+.ex-sheet::after { transform: rotate(0.8deg); }
+.ex-sheet-face { position: relative; z-index: 1; display: flex; flex-direction: column; gap: var(--space-3); padding: 22px 20px 20px; border: 1px solid var(--outline-soft); border-radius: var(--r-card); background: var(--surface-paper); box-shadow: var(--lift); color: var(--ink-primary); font-family: var(--font-ui); font-size: 16px; line-height: 24px; letter-spacing: 0; }
+.ex-sheet-face > * { margin: 0; }
+.ex-head { display: flex; flex-direction: column; gap: 6px; margin-bottom: var(--space-1); }
+.ex-label { margin: 0; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; }
+.ex-title { margin: 0; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; text-align: left; text-wrap: balance; }
+.ex-sub { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; text-align: left; }
+/* a second exercise on the same sheet, under a hairline */
+.ex-part { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-3); padding-top: 20px; border-top: 1px solid var(--hairline); }
+/* in the reader the sheet follows the words on the page; on a laptop the step is already on the screen's one sheet,
+   so the exercise lies flat on it under a hairline (no sheet on a sheet) */
+.rd-reader .mr-prose > .ex-sheet { margin-top: 34px; }
+/* an exercise a module places beside its step's words (not inside them) keeps the page margin */
+.rd-reader--phone .ex-sheet:not(.mr-prose .ex-sheet) { margin-left: var(--space-6); margin-right: var(--space-6); }
+/* one lifted sheet per screen: where a step holds a second exercise further down, after more of its words, the second
+   lies flat on the page under a hairline (as every exercise does on a laptop's sheet). No board draws this case;
+   listed for the owner. */
+.rd-reader--phone .mr-prose > :is(.ex-sheet, .wr-exercise) ~ .ex-sheet::before,
+.rd-reader--phone .mr-prose > :is(.ex-sheet, .wr-exercise) ~ .ex-sheet::after { display: none; }
+.rd-reader--phone .mr-prose > :is(.ex-sheet, .wr-exercise) ~ .ex-sheet > .ex-sheet-face { padding: 24px 0 0; border: 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; box-shadow: none; }
+.rd-reader--phone .mr-prose > :is(.ex-sheet, .wr-exercise) ~ .wr-exercise { padding: 24px 0 0 !important; border: 0 !important; border-top: 1px solid var(--hairline) !important; border-radius: 0 !important; background: none !important; box-shadow: none !important; }
+.rd-reader--desk .ex-sheet::before,
+.rd-reader--desk .ex-sheet::after { display: none; }
+.rd-reader--desk .ex-sheet-face { padding: 24px 0 0; border: 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; box-shadow: none; }
+.rd-reader--desk .mr-prose > .ex-sheet { margin-top: 36px; }
+
+/* ── A question's answers ─────────────────────────────────────────────────────────────────────────────── */
+.ex-group { display: flex; flex-direction: column; gap: var(--space-3); }
+.ex-group-head { margin-top: var(--space-1); }
+.ex-group-head .ui-choices-count { color: var(--ink-muted); }
+.ex-sheet .ui-choice { padding: 13px 14px 13px 16px; }
+.ex-sheet .ui-choice-label { font-size: 16px; line-height: 23px; letter-spacing: 0; }
+.ex-sheet .ui-choice--tile { padding: 14px; }
+
+/* the first exercise on a sheet that holds two starts at the top, with no rule above it */
+.ex-sheet-face > .ex-part:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+/* a question's own words above its answers */
+.ex-group .ui-choices-legend { color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+
+/* ── One slider: a hairline track, an ink fill, a white handle with an ink edge ───────────────────────── */
+.ex-sliders { display: flex; flex-direction: column; gap: 6px; }
+.ex-slider { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-3) 0 var(--space-1); border-top: 1px solid var(--hairline); }
+.ex-slider:first-child { padding-top: var(--space-1); border-top: 0; }
+.ex-slider-name { margin: 0; color: var(--ink-primary); font-size: 16px; line-height: 21px; letter-spacing: -0.015em; }
+.ex-slider-ends { display: flex; justify-content: space-between; gap: var(--space-4); color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.ex-slider-ends > span { display: flex; max-width: 48%; flex-direction: column; text-align: left; }
+.ex-slider-ends > span:last-child { text-align: right; }
+.ex-slider-ends small { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ex-range { position: relative; display: block; height: 44px; margin: -8px 2px; --p: 0.5; }
+.ex-range-track, .ex-range-fill { position: absolute; left: 0; top: 20px; height: 4px; border-radius: 2px; pointer-events: none; }
+.ex-range-track { right: 0; background: var(--hairline); }
+.ex-range-fill { width: calc((100% - 28px) * var(--p) + 14px); background: var(--ink-primary); }
+.nsu-module-reader .ex-range input.ex-range-input, .ex-range input.ex-range-input { position: absolute; top: 0; left: 0; width: 100%; height: 44px; min-height: 0; margin: 0; padding: 0; border: 0; background: transparent; accent-color: var(--ink-primary); cursor: pointer; -webkit-appearance: none; appearance: none; }
+.ex-range-input::-webkit-slider-runnable-track { height: 44px; background: transparent; border: 0; }
+.ex-range-input::-moz-range-track { height: 44px; background: transparent; border: 0; }
+.ex-range-input::-webkit-slider-thumb { width: 28px; height: 28px; margin-top: 8px; border: 1.5px solid var(--outline-strong); border-radius: 50%; background: var(--surface-paper); box-shadow: var(--lift-ctl); -webkit-appearance: none; appearance: none; }
+.ex-range-input::-moz-range-thumb { width: 28px; height: 28px; box-sizing: border-box; border: 1.5px solid var(--outline-strong); border-radius: 50%; background: var(--surface-paper); box-shadow: var(--lift-ctl); }
+/* keyboard focus rings the handle, not the 44px band round the track (the app's focus layer would draw a box) */
+@layer nsu-focus {
+  :root:not([data-focus-review]) .ex-range input.ex-range-input:focus-visible { outline: none !important; }
+}
+.ex-range-input:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 2px var(--surface-paper), 0 0 0 4px var(--nsu-focus-edge); }
+.ex-range-input:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 2px var(--surface-paper), 0 0 0 4px var(--nsu-focus-edge); }
+/* what the student's answer comes to, said in words under a hairline */
+.ex-result { display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 1px solid var(--hairline); text-align: left; }
+.ex-result-name { margin: 0; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+
+/* ── Named ideas as numbered lines on the page (board c-read-flow, step 2): no box round words you read ── */
+.ex-nums { display: flex; flex-direction: column; margin: 26px 0 0; padding: 0; border-top: 1px solid var(--hairline); list-style: none; }
+.ex-nums > li { display: flex; align-items: flex-start; gap: var(--space-4); margin: 0; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+.ex-num { flex: none; width: 20px; color: var(--ink-primary); font: 400 29px/30px var(--font-ui); letter-spacing: -0.04em; }
+.ex-num-copy { display: flex; min-width: 0; flex-direction: column; gap: 3px; padding-top: 2px; }
+.ex-num-title { margin: 0; color: var(--ink-primary); font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ex-num-sub { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.rd-reader .mr-prose > .ex-nums { margin-top: 26px; }
+/* a word you tap for its meaning sits in the line like any word (the reader's buttons are 36 tall otherwise) */
+.nsu-module-reader :is(.ex-num-sub, .ex-sub, .ex-slider-ends) .mr-term { min-height: 0; line-height: inherit; vertical-align: baseline; }
+
+/* ── The answer line: ink words, a green tick ─────────────────────────────────────────────────────────── */
+.ex-line { display: flex; align-items: flex-start; gap: var(--space-2); margin: 0; color: var(--ink-primary); font-size: 15px; line-height: 21px; text-align: left; animation: ui-rise var(--t-ui) var(--ease-out) both; }
+.ex-line .ex-line-tick { width: 18px; height: 18px; margin-top: 1.5px; }
+.ex-line-words b, .ex-line-words strong { font-weight: 700; }
+
+/* ── A card you press to turn it over: stacked 8 apart ── */
+.ex-cards { display: flex; flex-direction: column; gap: var(--space-2); }
+/* ── A card you press to turn it over ─────────────────────────────────────────────────────────────────── */
+.ui-press.ex-reveal { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; padding: 13px 14px 13px 16px; border-radius: var(--r-ctl); }
+.ex-reveal-body { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: var(--space-1); }
+.ex-reveal-before, .ex-reveal-after { display: block; color: var(--ink-primary); font-size: 16px; line-height: 23px; }
+.ex-reveal--on .ex-reveal-before { color: var(--ink-muted); font-size: 13px; line-height: 18px; text-decoration: line-through; text-decoration-color: var(--ink-muted); }
+.ex-reveal-after { animation: ui-rise var(--t-ui) var(--ease-out) both; }
+.ex-reveal-state { display: flex; align-items: center; gap: 5px; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ex-reveal-state--done { color: var(--ink-primary); }
+.ex-reveal-state--done .ui-tick { margin-top: 0; }
+.ex-reveal-turn { flex: none; color: var(--ink-muted); transition: transform var(--t-move) var(--ease-move); }
+.ex-reveal--on .ex-reveal-turn { transform: rotate(180deg); }
+
+/* ── Inside an exercise: a module's own furniture, in the system's look ────────────────────────────── */
+/* several questions on one sheet, each with its answers */
+.ex-questions { display: flex; flex-direction: column; gap: var(--space-6); }
+/* a drawing on the sheet under its label, with its count under a hairline (no box of its own) */
+.ex-figure { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); padding: var(--space-2) 0 0; }
+.ex-figure-art { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.ex-figure-count { align-self: stretch; margin: 0; padding-top: var(--space-3); border-top: 1px solid var(--hairline); color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: center; }
+/* the exercise's own actions: white buttons with a line and text buttons (the footer's Continue is the one charcoal) */
+.ex-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-3) var(--space-5); }
+/* words you start from: under their label, set large, not in a box */
+.ex-thought { display: flex; flex-direction: column; gap: var(--space-2); }
+.ex-thought-words { margin: 0; color: var(--ink-primary); font-size: 20px; line-height: 27px; letter-spacing: -0.02em; }
+/* a step between two things (a thought and its rewrite): a hairline, its words as a small label, an ink chevron */
+.ex-connector { display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--ink-muted); }
+.ex-connector > i { display: block; width: 1px; height: 16px; background: var(--outline-soft); }
+.ex-connector > .ex-label { color: var(--ink-primary); }
+/* a count of what is done, in the readout */
+.ex-count { margin: 0; color: var(--ink-muted); }
+.ex-stack { display: flex; flex-direction: column; gap: var(--space-3); }
+/* a card that turns over: its own small label above its words, a quieter line under them */
+.ex-reveal-before > .ex-label, .ex-reveal-tickrow > .ex-label { display: block; margin-bottom: 6px; }
+.ex-reveal-words { display: block; }
+.ex-reveal-tickrow { display: flex; align-items: flex-start; }
+.ex-reveal-check { order: 2; margin-left: auto; color: var(--success-hex); font-size: 15px; line-height: 14px; }
+.ex-reveal-note { display: block; margin-top: var(--space-1); color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+
+/* ── Read-only content inside a module: no box, held by a hairline, a label and space ───────────────── */
+/* a block of words you read (a thought, a result, a tip, today's boxed card): hairline above, label, words */
+.ex-block { display: flex; flex-direction: column; gap: 6px; margin: 0; padding-top: var(--space-3); border-top: 1px solid var(--hairline); color: var(--ink-primary); text-align: left; }
+.ex-block > * { margin: 0; }
+.ex-block-title { color: var(--ink-primary); font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ex-block-text { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+/* several such blocks one after another, ruled like rows */
+.ex-list { display: flex; flex-direction: column; margin: 0; padding: 0; border-top: 1px solid var(--hairline); list-style: none; }
+.ex-list > * { display: flex; flex-direction: column; gap: var(--space-1); margin: 0; padding: var(--space-3) 0; border-bottom: 1px solid var(--hairline); text-align: left; }
+/* a number that orders steps, as a neutral ring with an ink numeral (never an orange or tinted disc) */
+.ex-badge { display: inline-grid; place-items: center; width: 26px; height: 26px; flex: none; border: 1.5px solid var(--outline-soft); border-radius: 50%; color: var(--ink-primary); font: 400 13px/1 var(--font-ui); font-variant-numeric: tabular-nums; }
+.ex-badge--on { border-color: var(--ink-primary); background: var(--ink-primary); color: var(--surface-paper); }
+.ex-badge--done { border-color: var(--success-hex); background: var(--success-hex); color: var(--surface-paper); }
+/* a glyph on its own, in ink-3: no tinted square behind it */
+.ex-icon { display: inline-flex; flex: none; color: var(--ink-muted); }
+/* a run of step marks (1 2 3 4): the current one ink, done ones with the green tick, the rest a hairline ring */
+.ex-steps { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
+/* a quoted thought the student starts from or chooses */
+.ex-quote { margin: 0; color: var(--ink-primary); font-size: 17px; line-height: 25px; letter-spacing: -0.01em; }
+
+/* ── A student's story (ModuleShared PersonalStory): on the page under a hairline, not in a box; its label is small
+   capitals, not a bordered pill; the quote mark is ink, not orange ── */
+.ms-story { position: relative; padding-top: 18px; border-top: 1px solid var(--hairline); color: var(--ink-primary); text-align: left; }
+.rd-reader .mr-prose > .ms-story { margin-top: 34px; }
+.ms-story-mark { position: absolute; top: 46px; right: 0; color: var(--ink-primary); opacity: 0.06; font: 400 72px/1 var(--font-ui); pointer-events: none; }
+.ms-story-head { position: relative; display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3); }
+.ms-story-icon { flex: none; color: var(--ink-muted); }
+.ms-story-who { display: flex; flex: 1; min-width: 0; flex-wrap: wrap; align-items: baseline; gap: 2px var(--space-2); margin: 0; }
+.ms-story-name { color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.ms-story-role, .ms-story-label { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; }
+.ms-story-label { flex: none; }
+.ms-story-text { position: relative; color: var(--ink-primary); font-size: 16px; line-height: 26px; }
+.ms-story-text > * + * { margin-top: var(--space-3); }
+
+/* the keep-a-copy row in a module's private draft: the mark sits before its words */
+.mr-private-keep .ui-mark { margin-left: 0; }
+.mr-private-draft > div:last-child { display: flex; flex-wrap: wrap; gap: 0 var(--space-5); }
+
+/* ── ModuleShared: ConceptCardGrid, GlossaryGrid, ToolJumpCard ── */
+.ms-concepts { margin: 32px 0; }
+.ms-concepts > .ex-nums { margin-top: 0; }
+.ms-concept { flex-wrap: wrap; }
+.ms-concept-key { flex-basis: 100%; margin-bottom: -6px; }
+.ms-concepts-note { margin: var(--space-3) 0 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.ms-glossary-row { flex-direction: row !important; align-items: flex-start; gap: var(--space-4) !important; }
+.ms-glossary-term { flex: none; color: var(--ink-primary); font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ms-glossary-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: var(--space-1); }
+.ms-glossary-def { color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.ms-glossary-text { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.ms-tool { margin: 40px 0; }
+.ui-press.ms-tool-box { padding: var(--space-4) var(--space-4) var(--space-4) 18px; border-radius: var(--r-box); }
+.ms-tool-row { display: flex; align-items: center; gap: var(--space-4); }
+.ms-tool-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: var(--space-1); }
+.ms-tool-label { display: block; }
+.ms-tool-title { display: block; color: var(--ink-primary); font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ms-tool-text { display: block; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.ms-tool-arrow { flex: none; color: var(--ink-primary); }
+.ms-tool-cta { display: inline-flex; align-items: center; gap: var(--space-1); margin-top: var(--space-3); color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.rd-reader .mr-prose > :is(.ms-tool, .ms-concepts) { margin-top: 32px; }
+
+/* ── Inside a module: the reader's older sheets style every button and field there; the parts keep their look ─ */
+.nsu-module-reader .ui-part.ui-choice { min-height: 56px; }
+.nsu-module-reader .ui-part:is(.ui-press, .ui-link) { min-height: 44px; }
+.nsu-module-reader .ui-part.ui-field .ui-field-input:is(textarea, input, select),
+.rd-reader.nsu-module-reader select.ui-field-input:not([multiple]) { min-height: 48px; border: 1px solid var(--outline-soft) !important; border-radius: var(--r-sm); background: var(--surface-paper) !important; color: var(--ink-primary) !important; font-family: var(--font-ui); }
+.nsu-module-reader .ui-part.ui-field .ui-field-input.ui-field-input--area:is(textarea) { min-height: 104px; }
+
+/* ── The shared Branded exercises (WideFeatures / BrandedFeatures) on the shared parts ─────────────────── */
+/* a choice tile in a row of actions keeps to its words' width; in a pair it fills its column */
+.nsu-module-reader :is(.wr-actions, .wr-three) > .ui-choice { width: auto; flex: 1 1 150px; }
+/* a WideButton choice with a title and words under it (Cortisol: "Low-hope response" then the quote): two lines */
+.ui-choice.wr-choice .ui-choice-label > :is(strong, span, small) { display: block; }
+.ui-choice.wr-choice .ui-choice-label > strong { font-weight: 400; }
+.ui-choice.wr-choice .ui-choice-label > :is(span, small) { margin-top: 2px; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+/* on a phone a pair of long choices sits one above the other (a two-column tile is for short words) */
+.rd-reader--phone .wr-two:has(> .ui-choice) { display: flex; flex-direction: column; gap: var(--space-2); }
+/* a right answer: the mark fills green (never a green or red fill on the answer) */
+.ui-choice[data-success] .ui-mark--on { border-color: var(--success-hex); background: var(--success-hex); }
+.nsu-module-reader .bf-practice-list button.ui-choice:is(.is-correct, .is-incorrect) { border-color: var(--ink-primary); background: var(--surface-paper); color: var(--ink-primary) !important; }
+.nsu-module-reader .bf-practice-list button.ui-choice:is(.is-correct, .is-incorrect)::before { border-color: transparent; background: none; }
+.nsu-module-reader .bf-practice-list button.ui-choice { min-width: 0; font-size: inherit; }
+/* the IF templates wrap their words */
+.nsu-module-reader .bf-templates .ui-btn { height: auto; min-height: 36px; padding-top: 8px; padding-bottom: 8px; white-space: normal; text-align: left; line-height: 18px; }
+
+/* ── One typeface inside a module: the older sheets set Source Serif, Georgia or DM Sans on their own classes, which
+   the reader's [style*=serif] rule cannot see; inside the reader they take the one typeface, upright. Their mono
+   readouts take the system's readout mono (generated from module-brand-review.css, area 5b). ── */
+.rd-reader textarea,
+.rd-reader select),
+.rd-reader .bf-heading h3,
+.rd-reader .bf-heading>p:last-child,
+.rd-reader .bf-index,
+.rd-reader .bf-instructions h4,
+.rd-reader .bf-instructions p,
+.rd-reader .bf-gauge>strong,
+.rd-reader .bf-gauge small,
+.rd-reader .bf-letter,
+.rd-reader .bf-lever output,
+.rd-reader .bf-lever>label,
+.rd-reader .bf-direction,
+.rd-reader .bf-diagnosis p:last-child,
+.rd-reader .bf-thought blockquote,
+.rd-reader .bf-templates button,
+.rd-reader .bf-plan-fields label,
+.rd-reader .bf-primary,
+.rd-reader .bf-plan-output>p:last-child,
+.rd-reader .bf-endpoint>p:last-child,
+.rd-reader .bf-bridge-options button,
+.rd-reader .bf-feedback,
+.rd-reader .bf-text-button,
+.rd-reader .bf-step-word,
+.rd-reader .bf-lever-meter>span,
+.rd-reader .bf-plan-sentence p,
+.rd-reader .bf-bridge-end p,
+.rd-reader .bf-plank,
+.rd-reader .bf-flip-front>p,
+.rd-reader .bf-flip-back>p,
+.rd-reader .bf-flip-hint,
+.rd-reader .bf-reframe-note,
+.rd-reader .bf-reframe-row-heading h4,
+.rd-reader .bf-resilience output,
+.rd-reader .bf-reframed-thought>p:last-child,
+.rd-reader .bf-chart-card h4,
+.rd-reader .bf-chart-legend,
+.rd-reader .bf-chart-axis,
+.rd-reader .bf-chart-phases>span,
+.rd-reader .bf-chart-note-title,
+.rd-reader .bf-chart-notes article>p:last-child,
+.rd-reader .cn-input-otp [data-slot=input-otp-slot],
+.rd-reader .bf-yet-sentence,
+.rd-reader .bf-yet-number,
+.rd-reader .bf-yet-board h4,
+.rd-reader .bf-yet-open h4,
+.rd-reader .bf-yet-stack h4,
+.rd-reader .bf-yet-board li p,
+.rd-reader .bf-yet-open li p,
+.rd-reader .bf-yet-stack li p,
+.rd-reader .bf-yet-phrase,
+.rd-reader .wr-chart text,
+.rd-reader .wr-stats strong,
+.rd-reader .wr-retention-bars output,
+.rd-reader .wr-scale svg,
+.rd-reader .wr-sentence,
+.rd-reader .wr-lanes h4,
+.rd-reader .wr-engine-face p,
+.rd-reader .wr-flip-label,
+.rd-reader .wr-concepts>div>div:first-child,
+.rd-reader .wr-concepts>div p:first-child,
+.rd-reader .wr-concepts>div p:last-child,
+.rd-reader .wr-skin h4,
+.rd-reader .wr-skin[data-wide=WOOPPlanner] .w-8,
+.rd-reader .wr-cognition-state h4,
+.rd-reader .wr-breath-copy h4,
+.rd-reader .wr-grades>div>span:not(:first-child),
+.rd-reader .wr-plan-item>strong,
+.rd-reader.nsu-module-reader .mr-exercise h3,
+.rd-reader.nsu-module-reader .mr-exercise .mr-letters,
+.rd-reader.nsu-module-reader .mr-break h4,
+.rd-reader.nsu-module-reader .mr-break-time,
+.rd-reader.nsu-module-reader .mr-break-time small,
+.rd-reader.nsu-module-reader .mr-puzzle-result h4,
+.rd-reader /* Revision 05: restrained chart type and clear answer markers. */
+html[data-version=after] .mr-definition,
+.rd-reader .wr-score-ring output,
+.rd-reader .wr-location-score>p,
+.rd-reader .wr-scale-labels,
+.rd-reader .wr-recall-condition,
+.rd-reader .wr-recall-unit,
+.rd-reader .mr-definition { font-family: var(--font-ui); font-style: normal; }
+.rd-reader .bf-eyebrow,
+.rd-reader .bf-lever output small,
+.rd-reader .bf-connector,
+.rd-reader .bf-plan-output>p:last-child>span,
+.rd-reader .bf-bridge-meta output,
+.rd-reader .bf-planks span,
+.rd-reader .bf-plan-sentence p>span:first-child,
+.rd-reader .bf-reframe-state,
+.rd-reader .bf-chart-phases small,
+.rd-reader .wr-meter output,
+.rd-reader .wr-plan-index,
+.rd-reader.nsu-module-reader .mr-exercise-counter,
+.rd-reader .wr-skin[data-wide=CrisisScenarioTrainer] .wr-answer-letter,
+.rd-reader .wr-score-ring output small { font-family: 'Departure Mono', ui-monospace, monospace; font-style: normal; }
+
+/* text under 11px set by the older sheets' own classes is lifted to the smallest style (generated, area 5b) */
+.rd-reader .bf-eyebrow,
+.rd-reader .bf-lever output small,
+.rd-reader .bf-connector,
+.rd-reader .bf-plan-output>p:last-child>span,
+.rd-reader .bf-endpoint .bf-eyebrow,
+.rd-reader .bf-planks span,
+.rd-reader .bf-plan-sentence p>span:first-child,
+.rd-reader .bf-bridge-end>.bf-eyebrow,
+.rd-reader .bf-plank.placed>span,
+.rd-reader .bf-flip-hint,
+.rd-reader .bf-reframe-state,
+.rd-reader .bf-chart-axis,
+.rd-reader .bf-chart-phases small,
+.rd-reader .bf-plank,
+.rd-reader .bf-chart-phases>span,
+.rd-reader .wr-clusters small,
+.rd-reader .wr-skin[data-wide=StudyLocationPlanner] table button,
+.rd-reader .wr-score-ring output small { font-size: 11px; }
+
+/* the older sheet's fills and borders on the Branded pieces' own classes, in the system's colours (area 5b): an ink
+   fill on a track, an ink outline for what is chosen or placed, the neutral edge on hover, green only for the tick */
+.rd-reader :is(.bf-lever, .wr-concepts-roadmap, input.wr-range) { --module-orange: var(--ink-primary); }
+.rd-reader.nsu-module-reader input.wr-range { height: 44px !important; min-height: 44px; margin: 0; background-size: 100% 4px !important; background-position: center !important; background-repeat: no-repeat !important; }
+.rd-reader .bf-lever input[type=range] { height: 44px !important; margin: 4px 0; background-size: 100% 4px !important; background-position: center !important; background-repeat: no-repeat !important; }
+.rd-reader .bf-lever input[type=range]::-webkit-slider-thumb { width: 28px; height: 28px; border: 1.5px solid var(--outline-strong); background: var(--surface-paper); }
+.rd-reader :is(.bf-meter-track, .bf-resilience-track) > div { background: var(--ink-primary); }
+.rd-reader :is(.bf-planks .placed, .bf-plank.placed > span) { border-color: var(--ink-primary); background: var(--surface-paper); color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.rd-reader :is(.bf-goal, .bf-bridge-goal, .bf-flip-back, .wr-engine-back) { border-color: var(--outline-soft); }
+.rd-reader .bf-yet-cards .bf-index { border-color: var(--outline-soft) !important; }
+.rd-reader .bf-reframed-thought { padding: 14px 0 0; border: 0; border-top: 1px solid var(--hairline); border-radius: 0; }
+.rd-reader.nsu-module-reader .bf-bridge-options button[aria-pressed=true] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); color: var(--ink-primary); }
+.rd-reader.nsu-module-reader .bf-reframe-switch [data-slot=switch][data-on=true] { border-color: var(--ink-primary); background: var(--ink-primary); }
+.rd-reader .bf-fact-mark { border: 0; background: none; color: var(--success-hex); }
+.rd-reader :is(.wr-sorted, .wr-plan-item)[data-result=correct] { border-color: var(--ink-primary); background: var(--surface-paper); color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.rd-reader :is(.wr-sorted, .wr-plan-item)[data-result=incorrect] { border-color: var(--outline-strong); border-style: dashed; background: var(--surface-paper); color: var(--ink-primary); }
+.rd-reader .wr-clusters > div[data-active=true] { border-color: var(--ink-primary); background: var(--surface-paper); color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+@media (hover: hover) and (pointer: fine) {
+  .rd-reader.nsu-module-reader :is(.bf-templates button, .bf-bridge-options button, .bf-instructions li):hover { border-color: var(--outline-strong); }
+}
+
+/* the reader's own exercises (ReaderExercises: Pinball, Incubation): the label and the small print at 11px */
+.rd-reader .mr-exercise .rs-eyebrow { font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; color: var(--ink-muted); }
+.rd-reader .mr-exercise small { font-size: 11px; }
+
+/* the Branded exercise's small label ("Try the idea") is the sheet's small capitals label, in the one typeface */
+.rd-reader .bf-eyebrow { font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; color: var(--ink-muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ex-line, .ex-reveal-after { animation: none; }
+  .ex-reveal-turn { transition: none; }
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
-import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import DashboardInsights from '../components/dashboard/DashboardInsights';
-import { ProgressBreakdown, ProgressSections } from '../components/dashboard/progress/ProgressRefinements';
+import DashboardView from '../components/DashboardView';
+import { ReadinessStrip } from '../components/dashboard/progress/ProgressParts';
+import { toLocalDateKey } from '../components/dashboard/dashboardAnalytics';
+import type { StudySessionRecord } from '../utils/strategyRegistry';
 import { ProgressMilestones } from '../components/dashboard/progress/ProgressMilestones';
 import { ATHLETE_RANKS, type GamificationState } from '../gamificationConfig';
 
@@ -31,25 +34,29 @@ describe('selected Progress designs', () => {
     expect(screen.getByText('Recent ratings rose.')).toBeInTheDocument();
   });
 
-  it('supports arrow-key navigation through the paper tabs', () => {
-    const onChange = vi.fn();
-    render(<ProgressSections value="study" options={[{ id: 'overview', label: 'Overview' }, { id: 'study', label: 'Study' }, { id: 'confidence', label: 'Confidence' }]} onChange={onChange} />);
-    fireEvent.keyDown(screen.getByRole('tab', { name: 'Study' }), { key: 'ArrowRight' });
-    expect(onChange).toHaveBeenLastCalledWith('confidence');
-    expect(screen.getByRole('tab', { name: 'Confidence' })).toHaveFocus();
-    fireEvent.keyDown(screen.getByRole('tab', { name: 'Confidence' }), { key: 'Home' });
-    expect(onChange).toHaveBeenLastCalledWith('overview');
+  it('moves between the parts with the one menu on a laptop too: no row of tabs', () => {
+    render(<DashboardView userProgress={{}} allCourses={[]} categoryTitles={{} as never} streak={{ currentStreak: 0, longestStreak: 0, lastActiveDate: '' }}
+      recommendation={null} onSelectModule={vi.fn()} onBack={vi.fn()} pointsEarned={0} activeTab="study" />);
+    expect(screen.queryByRole('tab', { name: 'Study' })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Progress section/ })).toHaveTextContent(/Study\s*·?\s*2 of 5/);
   });
 
-  it('calculates ruled rows from recorded counts and handles an empty period', () => {
-    const { rerender } = render(<ProgressBreakdown kind="mix" values={[{ id: 'practice', label: 'Practice', value: 3 }, { id: 'revision', label: 'Revision', value: 1 }]} />);
-    const practice = screen.getByRole('button', { name: /Practice/ });
-    expect(practice).toHaveTextContent('75%');
-    fireEvent.click(practice);
-    expect(screen.getByRole('status')).toHaveTextContent('Putting what you know to work.');
-    rerender(<ProgressBreakdown kind="readiness" summary={{ total: 0, notStarted: 0, shaky: 0, solid: 0 }} />);
-    expect(screen.getByRole('status')).toHaveTextContent('No topics recorded yet.');
-    expect(screen.getAllByRole('button').every(button => button.textContent?.includes('0%'))).toBe(true);
+  it('works out the learning mix from recorded counts, and an empty readiness strip says zero', () => {
+    const today = toLocalDateKey(new Date());
+    const session = (id: string, sessionType: StudySessionRecord['sessionType']): StudySessionRecord => ({
+      id, subject: 'Irish', date: today, sessionType, plannedMinutes: 25, actualSeconds: 1500,
+      startedAt: Date.now() - 1500000, completedAt: Date.now(), pointsEarned: 10, hadReflection: false,
+    });
+    render(<DashboardView userProgress={{}} allCourses={[]} categoryTitles={{} as never} streak={{ currentStreak: 1, longestStreak: 1, lastActiveDate: today }}
+      recommendation={null} onSelectModule={vi.fn()} onBack={vi.fn()} pointsEarned={0} activeTab="study"
+      studySessions={[session('1', 'practice'), session('2', 'practice'), session('3', 'practice'), session('4', 'revision')]} />);
+    const mix = within(screen.getByRole('group', { name: 'Session types' }));
+    expect(mix.getByText('Practice').closest('.mp-bar')).toHaveTextContent('3 sessions · 75%');
+    expect(mix.getByText('Revision').closest('.mp-bar')).toHaveTextContent('1 session · 25%');
+    expect(mix.getByText('Putting what you know to work.')).toBeInTheDocument();
+    cleanup();
+    render(<ReadinessStrip summary={{ total: 0, notStarted: 0, shaky: 0, solid: 0 }} />);
+    expect(screen.getByRole('img', { name: 'Of 0 topics: 0 solid, 0 shaky, 0 not started' })).toBeInTheDocument();
   });
 
   it('keeps daily and weekly records distinct and preserves the achievement gallery', () => {
@@ -60,7 +67,8 @@ describe('selected Progress designs', () => {
     expect(within(day).getByText('8')).toBeInTheDocument();
     expect(within(week).getByText('486')).toBeInTheDocument();
     expect(within(week).getByText('11')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Save term review' })).toBeDisabled();
+    // The shared Button has no silent disabled state: unavailable says why (aria-disabled).
+    expect(screen.getByRole('button', { name: 'Save term review' })).toHaveAttribute('aria-disabled', 'true');
     fireEvent.click(screen.getByRole('button', { name: 'Open achievement gallery' }));
     expect(screen.getByRole('region', { name: 'Achievement collection' })).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Close gallery' }));

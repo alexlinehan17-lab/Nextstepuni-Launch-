@@ -3,7 +3,6 @@ import React from 'react';
 import type { AccountingRubric, SecRubricCard } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
 import { ClaimRow } from './ClaimRows';
-import { COLORS } from '../../design/tokens';
 
 export const accountingScoreId = 'accounting:allocation' as const;
 export type AccountingScoreId = typeof accountingScoreId | `accounting:row:${string}`;
@@ -37,11 +36,11 @@ const AccountingAssessment: React.FC<{
     const claimed = accountingMarks(card, scores);
     return (
       <section aria-label="Accounting assessment">
-        <p style={{ fontWeight: 700, margin: '0 0 4px' }}>Claim each figure the scheme prices.</p>
-        <p style={{ color: 'var(--mb-muted)', margin: '0 0 12px', fontSize: 13 }}>
-          The scheme\u2019s own lines with their marks, as printed; {claimed} of {card.totalMarks} marks claimed.
+        <p className="mb-scheme-title">Claim each figure the scheme prices.</p>
+        <p className="mb-scheme-sub">
+          The scheme’s own lines with their marks, as printed; {claimed} of {card.totalMarks} marks claimed.
         </p>
-        <div role="list" aria-label="Scheme rows">
+        <div role="list" aria-label="Scheme rows" className="mb-anyn-options">
           {rows.map(row => {
             const on = (scores[accountingRowScoreId(row.id)] ?? 0) > 0;
             return (
@@ -51,42 +50,35 @@ const AccountingAssessment: React.FC<{
             );
           })}
         </div>
-        <p style={{ color: 'var(--mb-muted)', margin: '16px 0 8px', fontSize: 13 }}>{card.rubric.allocationNote}</p>
+        <p className="mb-scheme-sub" style={{ marginTop: 16 }}>{card.rubric.allocationNote}</p>
         <SourceMaterialReader source={card.rubric.solution} subjectId={card.subjectId}
           year={card.year} paperFileid={card.paperFileid!} />
       </section>
     );
   }
-  const control: React.CSSProperties = {
-    border: '2px solid var(--mb-ink)', borderRadius: 8,
-    background: 'var(--mb-paper)', color: 'var(--mb-ink)',
-    padding: '9px 14px', minHeight: 44, fontWeight: 700,
-  };
   return (
     <section aria-label="Accounting assessment">
-      <p style={{ fontWeight: 700, margin: '0 0 8px' }}>Compare your workings with the SEC solution.</p>
-      <p style={{ color: 'var(--mb-muted)', margin: '0 0 16px', fontSize: 13 }}>
+      <p className="mb-scheme-title">Compare your workings with the SEC solution.</p>
+      <p className="mb-scheme-sub">
         {card.rubric.allocationNote}
       </p>
       <SourceMaterialReader source={card.rubric.solution} subjectId={card.subjectId}
         year={card.year} paperFileid={card.paperFileid!} />
-      <p style={{ color: 'var(--mb-muted)', margin: '16px 0', fontSize: 13 }}>
+      <p className="mb-scheme-sub" style={{ marginTop: 16 }}>
         Use the printed marks and any calculation or transfer penalties. Record the marks
         earned for this task, including partial credit for workings.
       </p>
-      <label htmlFor={`accounting-score-${card.id}`} style={{ display: 'block', fontWeight: 700, marginBottom: 8 }}>
+      <label htmlFor={`accounting-score-${card.id}`} style={{ display: 'block', marginBottom: 8, font: '400 15px/21px var(--font-ui)' }}>
         Your marks out of {card.totalMarks}
       </label>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <button type="button" aria-label="Subtract half a mark" disabled={selected === 0}
-          style={{ ...control, cursor: selected === 0 ? 'default' : 'pointer' }}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+        <button type="button" className="mb-mark-btn mb-mark-btn--step" aria-label="Subtract half a mark" disabled={selected === 0}
           onClick={() => onScore(accountingMark(card.totalMarks, selected - 0.5))}>−</button>
         <input id={`accounting-score-${card.id}`} type="number" inputMode="decimal"
           min={0} max={card.totalMarks} step={0.5} value={selected}
-          style={{ ...control, width: 100, background: COLORS.accent, color: '#171717', textAlign: 'center' }}
+          className="mb-mark-field"
           onChange={event => onScore(accountingMark(card.totalMarks, Number(event.currentTarget.value)))} />
-        <button type="button" aria-label="Add half a mark" disabled={selected === card.totalMarks}
-          style={{ ...control, cursor: selected === card.totalMarks ? 'default' : 'pointer' }}
+        <button type="button" className="mb-mark-btn mb-mark-btn--step" aria-label="Add half a mark" disabled={selected === card.totalMarks}
           onClick={() => onScore(accountingMark(card.totalMarks, selected + 0.5))}>+</button>
       </div>
     </section>

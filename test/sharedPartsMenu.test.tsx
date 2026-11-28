@@ -135,3 +135,15 @@ test('it opens inside the safe box: the insets, the tab bar and a gap are its co
     for (const name of ['--sat', '--sab', '--tabbar-h', '--safe-top', '--safe-bottom']) document.documentElement.style.removeProperty(name);
   }
 });
+
+test('a face shows in the button instead of the value: a row that opens a menu of choices (Modules on a laptop)', async () => {
+  const onChange = vi.fn();
+  render(<Menu label="Find a starting point" value="none" onChange={onChange} face={<span>Find a starting point</span>}
+    options={[{ value: 'remember', label: 'I forget what I study' }, { value: 'start', label: 'I keep putting it off' }]} />);
+  const button = screen.getByRole('button', { name: 'Find a starting point' });
+  expect(button).not.toHaveTextContent('I forget what I study');
+  fireEvent.click(button);
+  const option = await screen.findByRole('menuitemradio', { name: 'I keep putting it off' });
+  fireEvent.click(option);
+  expect(onChange).toHaveBeenCalledWith('start');
+});

@@ -1,5 +1,4 @@
 import { BrandedEngineCard,BrandedMindsetSorter } from './learning/WideFeatures';
-import { moduleFill } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -21,7 +20,6 @@ Zap
 } from 'lucide-react';
 import React,{ useEffect,useState } from 'react';
 import { AGENCY_PROTOCOL_REFERENCE_LIST } from '../data/references/agencyProtocol';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useNorthStar } from '../hooks/useNorthStar';
@@ -32,6 +30,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import NorthStarCallout from './NorthStarCallout';
+import { AnswerGroup,AnswerLine,ExercisePart,ExerciseSheet } from './learning/Exercise';
+import { ChoiceTile } from './ui/Choice';
+import { Field } from './ui/Field';
 
 const theme = blueTheme;
 
@@ -44,14 +45,6 @@ const FlipCard = BrandedEngineCard;
    MindsetSorter — chunky chips into coloured lanes
    ═══════════════════════════════════════════════════════ */
 const MindsetSorter = BrandedMindsetSorter;
-
-/* ═══ Reorder item colours ═══ */
-const REORDER_COLORS = [
-  { bg: COLORS.accent, border: COLORS.accentDark },
-  { bg: "var(--module-danger-text)", border: "var(--module-line)" },
-  { bg: "var(--module-ink)", border: "var(--module-line)" },
-  { bg: "var(--module-danger-text)", border: "var(--module-line)" },
-];
 
 
 const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
@@ -129,24 +122,15 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               </MicroCommitment>
 
               {/* Input form */}
-              <div className="wr-destination my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-6">Program Your Destination</h4>
-                <div className="space-y-4 max-w-lg mx-auto">
-                  <div>
-                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">The Destination (Your Dream Course/Career)</label>
-                    <input value={futureSelf} onChange={(e) => setFutureSelf(e.target.value)} onBlur={() => saveResponse('futureSelf', futureSelf)} placeholder="e.g., Computer Science at Trinity" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">The First Turn (One Small Action Tomorrow)</label>
-                    <input value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} onBlur={() => saveResponse('dailyAction', dailyAction)} placeholder="e.g., 20 minutes of Maths revision" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
-                  </div>
-                  {futureSelf && dailyAction && (
-                    <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="p-4 rounded-xl text-center" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
-                      <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Route locked in. The journey starts now.</p>
-                    </motion.div>
-                  )}
-                </div>
-              </div>
+              <ExerciseSheet title="Program Your Destination" name="ProgramDestination">
+                <Field label="The Destination (Your Dream Course/Career)" value={futureSelf} onChange={(e) => setFutureSelf(e.target.value)} onBlur={() => saveResponse('futureSelf', futureSelf)} placeholder="e.g., Computer Science at Trinity" />
+                <Field label="The First Turn (One Small Action Tomorrow)" value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} onBlur={() => saveResponse('dailyAction', dailyAction)} placeholder="e.g., 20 minutes of Maths revision" />
+                {futureSelf && dailyAction && (
+                  <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}>
+                    <AnswerLine>Route locked in. The journey starts now.</AnswerLine>
+                  </motion.div>
+                )}
+              </ExerciseSheet>
             </ReadingSection>
           )}
 
@@ -181,94 +165,75 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               </MicroCommitment>
 
               {/* Branching Scenario */}
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <div className="flex justify-center mb-4">
-                  <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", color: "var(--module-danger-text)", boxShadow: 'none' }}>
-                    Scenario
-                  </span>
-                </div>
-                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Confusion</h4>
-                <p className="text-sm text-[var(--module-muted)] text-center mt-1 mb-6">You don't understand the teacher's explanation. What's your move?</p>
-
-                <div className="space-y-3 max-w-lg mx-auto">
+              <ExerciseSheet label="Scenario" title="The Confusion" sub="You don't understand the teacher's explanation. What's your move?" name="BranchingScenario">
+                {/* Choosing locks the move in, so the arrow keys only move between the two */}
+                <AnswerGroup kind="one" chooseOnArrow={false}>
                   <AnimatePresence>
                     {/* Passenger option — hide after choosing driver */}
                     {(!scenarioChoice || scenarioChoice === 'passive') && (
-                      <motion.button
+                      <motion.div
                         layout
                         exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-                        whileHover={!scenarioChoice ? { x: -2, y: -2, boxShadow: 'none' } : {}}
-                        whileTap={!scenarioChoice ? { x: 2, y: 2, boxShadow: 'none' } : {}}
                         transition={press}
-                        onClick={() => { if (!scenarioChoice) { setScenarioChoice('passive'); saveResponse('scenarioChoice', 'passive'); } }}
-                        className="w-full text-left p-5 flex items-center gap-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
-                        style={{
-                          border: "2.5px solid var(--module-line)",
-                          borderRadius: 16,
-                          boxShadow: 'none',
-                        }} data-wide-button="true"
                       >
-                        <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ backgroundColor: "var(--module-danger)", borderRadius: 12 }}>
-                          <X size={18} style={{ color: "var(--module-on-fill)" }} />
-                        </div>
-                        <div>
-                          <p className="text-[10px] font-bold uppercase tracking-wider mb-0.5 text-[var(--module-muted)]">Passenger Move</p>
-                          <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Say nothing and hope you figure it out later.</p>
-                        </div>
-                      </motion.button>
+                        <ChoiceTile
+                          chosen={scenarioChoice === 'passive'}
+                          onClick={() => { if (!scenarioChoice) { setScenarioChoice('passive'); saveResponse('scenarioChoice', 'passive'); } }}
+                          label={
+                            <span className="flex items-start gap-3">
+                              <span className="ex-icon mt-0.5"><X size={18} aria-hidden="true" /></span>
+                              <span className="flex flex-col gap-1">
+                                <span className="ex-label">Passenger Move</span>{' '}
+                                <span>Say nothing and hope you figure it out later.</span>
+                              </span>
+                            </span>
+                          }
+                        />
+                      </motion.div>
                     )}
 
                     {/* Driver option — hide after choosing passenger */}
                     {(!scenarioChoice || scenarioChoice === 'agentic') && (
-                      <motion.button
+                      <motion.div
                         layout
                         exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-                        whileHover={!scenarioChoice ? { x: -2, y: -2, boxShadow: 'none' } : {}}
-                        whileTap={!scenarioChoice ? { x: 2, y: 2, boxShadow: 'none' } : {}}
                         transition={press}
-                        onClick={() => { if (!scenarioChoice) { setScenarioChoice('agentic'); saveResponse('scenarioChoice', 'agentic'); } }}
-                        className="w-full text-left p-5 flex items-center gap-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
-                        style={{
-                          border: "2.5px solid var(--module-line)",
-                          borderRadius: 16,
-                          boxShadow: 'none',
-                        }} data-wide-button="true"
                       >
-                        <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ backgroundColor: "var(--module-success)", borderRadius: 12 }}>
-                          <CheckCircle2 size={18} style={{ color: "var(--module-on-fill)" }} />
-                        </div>
-                        <div>
-                          <p className="text-[10px] font-bold uppercase tracking-wider mb-0.5 text-[var(--module-muted)]">Driver Move</p>
-                          <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Ask a strategic question to clarify.</p>
-                        </div>
-                      </motion.button>
+                        <ChoiceTile
+                          chosen={scenarioChoice === 'agentic'}
+                          onClick={() => { if (!scenarioChoice) { setScenarioChoice('agentic'); saveResponse('scenarioChoice', 'agentic'); } }}
+                          label={
+                            <span className="flex items-start gap-3">
+                              <span className="ex-icon mt-0.5"><CheckCircle2 size={18} aria-hidden="true" /></span>
+                              <span className="flex flex-col gap-1">
+                                <span className="ex-label">Driver Move</span>{' '}
+                                <span>Ask a strategic question to clarify.</span>
+                              </span>
+                            </span>
+                          }
+                        />
+                      </motion.div>
                     )}
                   </AnimatePresence>
-                </div>
+                </AnswerGroup>
 
                 <AnimatePresence>
                   {scenarioChoice && (
-                    <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="mt-5 max-w-lg mx-auto">
-                      <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] overflow-hidden" style={{ border: "2.5px solid var(--module-line)", borderRadius: 18, boxShadow: 'none' }}>
-                        {/* Coloured header bar */}
-                        <div style={{ backgroundColor: moduleFill(scenarioChoice === 'passive' ? "var(--module-danger)" : "var(--module-success)"), padding: '10px 16px', borderBottom: "2.5px solid var(--module-line)" }}>
-                          <p className="text-[13px] font-medium tracking-wider uppercase text-[var(--module-ink)] text-center">
-                            {scenarioChoice === 'passive' ? 'Roadblock ahead!' : 'Route recalculated!'}
-                          </p>
-                        </div>
-                        <div className="p-5">
-                          <p className="text-sm leading-relaxed text-[var(--module-ink)] dark:text-[var(--module-muted)]">
-                            {scenarioChoice === 'passive'
-                              ? "You've missed a turn. The feeling of being \"lost\" grows, making it harder to catch up later."
-                              : "You get a clear direction, help others in the car, and show the teacher you're a co-pilot. This is Agentic Engagement."
-                            }
-                          </p>
-                        </div>
-                      </div>
+                    <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="ex-block">
+                      {/* The result's label, then its words (no coloured header band) */}
+                      <p className="ex-label">
+                        {scenarioChoice === 'passive' ? 'Roadblock ahead!' : 'Route recalculated!'}
+                      </p>
+                      <AnswerLine tone={scenarioChoice === 'passive' ? 'note' : 'ok'}>
+                        {scenarioChoice === 'passive'
+                          ? "You've missed a turn. The feeling of being \"lost\" grows, making it harder to catch up later."
+                          : "You get a clear direction, help others in the car, and show the teacher you're a co-pilot. This is Agentic Engagement."
+                        }
+                      </AnswerLine>
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </ExerciseSheet>
             </ReadingSection>
           )}
 
@@ -291,31 +256,25 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                 <p>Write this 'Reframe' on a small piece of paper: "This is hard because it's a high-level problem. Solving it is a step toward my goal." Fold it up and put it in your wallet or pencil case.</p>
               </MicroCommitment>
 
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-6">The Mental Suspension System</h4>
-                {/* Negative thought — coral card */}
-                <div className="p-4 mb-4 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)" }}>
-                  <p className="text-sm font-bold flex items-center gap-2" style={{ color: "var(--module-danger-text)" }}>
-                    <AlertTriangle size={14} /> &ldquo;I'll never be able for Higher Level Maths.&rdquo;
-                  </p>
-                </div>
+              <ExerciseSheet title="The Mental Suspension System" name="MentalSuspensionSystem">
+                {/* Negative thought: words you read, on the sheet, not in a box */}
+                <p className="ex-quote flex items-start gap-2">
+                  <span className="ex-icon mt-1"><AlertTriangle size={14} aria-hidden="true" /></span>
+                  <span>&ldquo;I'll never be able for Higher Level Maths.&rdquo;</span>
+                </p>
                 {/* Reframe input */}
-                <div>
-                  <label className="block text-xs font-medium text-[var(--module-muted)] mb-2 ml-1">Your reframe</label>
-                  <input
-                    value={responses['reframeText'] || ''}
-                    onChange={(e) => saveResponse('reframeText', e.target.value)}
-                    placeholder="e.g., Maths is hard right now, but I haven't tried every approach yet."
-                    className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all"
-                    style={{ border: "1.5px solid var(--module-line)" }}
-                  />
-                </div>
+                <Field
+                  label="Your reframe"
+                  value={responses['reframeText'] || ''}
+                  onChange={(e) => saveResponse('reframeText', e.target.value)}
+                  placeholder="e.g., Maths is hard right now, but I haven't tried every approach yet."
+                />
                 {responses['reframeText'] && (
-                  <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-4 p-4 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Suspension installed. Pothole → speed bump.</p>
+                  <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}>
+                    <AnswerLine>Suspension installed. Pothole → speed bump.</AnswerLine>
                   </motion.div>
                 )}
-              </div>
+              </ExerciseSheet>
             </ReadingSection>
           )}
 
@@ -340,53 +299,41 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
             <ReadingSection title="Your Route Plan: Building Your Driver Identity." eyebrow={essentials ? "Step 4" : "Step 6"} icon={Map} theme={theme}>
               <p>{essentials ? 'Build your Driver identity through daily action. Arrange your protocol below, then fill in your route plan.' : "A Driver identity isn't something you find; it's something you build through deliberate, daily action. It's the route plan that guides you when motivation is low and the road is long. First, arrange your protocol components into your personal pre-drive checklist."}</p>
 
+              {/* The step's two exercises share one sheet (board c-read-flow: two exercises in a step, one sheet) */}
+              <ExerciseSheet name="PreDriveChecklist">
               {/* Reorder checklist */}
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-2">Pre-Drive Checklist</h4>
-                <p className="text-sm text-[var(--module-muted)] text-center mb-6">Drag to reorder by priority</p>
-                <Reorder.Group axis="y" values={battlePlanItems} onReorder={setBattlePlanItems} className="space-y-3 max-w-md mx-auto">
+              <ExercisePart title="Pre-Drive Checklist" sub="Drag to reorder by priority">
+                {/* Rows you drag: each a box with a line, its number a neutral ring */}
+                <Reorder.Group axis="y" values={battlePlanItems} onReorder={setBattlePlanItems} className="ex-cards">
                   {battlePlanItems.map((item, i) => {
-                    const c = REORDER_COLORS[i % REORDER_COLORS.length];
                     return (
                       <Reorder.Item
                         key={item.id}
                         value={item}
-                        className="flex items-center gap-3 cursor-grab active:cursor-grabbing bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
+                        className="flex items-center gap-3 cursor-grab active:cursor-grabbing border border-outline-soft bg-surface-paper text-ink-primary"
                         style={{
-                          border: "2.5px solid var(--module-line)",
-                          borderRadius: 16,
+                          borderRadius: 'var(--r-box)',
                           padding: '14px 16px',
-                          boxShadow: 'none',
+                          minHeight: 56,
                         }}
-                        whileDrag={{ scale: 1.03, y: -2, boxShadow: 'none' }}
+                        whileDrag={{ scale: 1.03, y: -2 }}
                       >
-                        <GripVertical size={18} className="text-[var(--module-muted)] shrink-0" style={{ opacity: 0.5 }} />
-                        <span className="w-9 h-9 rounded-xl flex items-center justify-center text-xs font-bold text-[var(--module-ink)] shrink-0" style={{ backgroundColor: moduleFill(c.bg), border: `2px solid ${c.border}` }}>{i + 1}</span>
-                        <span className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{item.text}</span>
+                        <GripVertical size={18} className="text-ink-muted shrink-0" aria-hidden="true" />
+                        <span className="ex-badge">{i + 1}</span>
+                        <span className="t-row">{item.text}</span>
                       </Reorder.Item>
                     );
                   })}
                 </Reorder.Group>
-              </div>
+              </ExercisePart>
 
               {/* Final route plan inputs */}
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-6">Finalise Your Route Plan</h4>
-                <div className="space-y-4 max-w-lg mx-auto">
-                  <div>
-                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">My Destination (LC Goal)</label>
-                    <input value={responses['routeDestination'] || ''} onChange={(e) => saveResponse('routeDestination', e.target.value)} placeholder="e.g., 500 points for Engineering at UCD" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">My Custom Engine (My Advantage)</label>
-                    <input value={responses['routeEngine'] || ''} onChange={(e) => saveResponse('routeEngine', e.target.value)} placeholder="e.g., I'm good at staying calm under pressure." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">My First Turn (Classroom Hack)</label>
-                    <input value={responses['routeHack'] || ''} onChange={(e) => saveResponse('routeHack', e.target.value)} placeholder="e.g., Tomorrow in Maths, ask the teacher to explain the 'why'." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
-                  </div>
-                </div>
-              </div>
+              <ExercisePart title="Finalise Your Route Plan">
+                <Field label="My Destination (LC Goal)" value={responses['routeDestination'] || ''} onChange={(e) => saveResponse('routeDestination', e.target.value)} placeholder="e.g., 500 points for Engineering at UCD" />
+                <Field label="My Custom Engine (My Advantage)" value={responses['routeEngine'] || ''} onChange={(e) => saveResponse('routeEngine', e.target.value)} placeholder="e.g., I'm good at staying calm under pressure." />
+                <Field label="My First Turn (Classroom Hack)" value={responses['routeHack'] || ''} onChange={(e) => saveResponse('routeHack', e.target.value)} placeholder="e.g., Tomorrow in Maths, ask the teacher to explain the 'why'." />
+              </ExercisePart>
+              </ExerciseSheet>
             </ReadingSection>
           )}
         </>

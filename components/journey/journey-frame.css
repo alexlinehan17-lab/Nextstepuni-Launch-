@@ -1,0 +1,191 @@
+/* Journey in the agreed look (c-world.html "c-world-journeybar", "c-world-island"; r5-b2.html
+   "r5-journey-mode"): the app's own bars round the painted island. On a phone the name, "?" and
+   the points sit in one row with Island, Build, Fieldbook and Your year in the shared selection
+   bar under them; on a laptop one bar holds "How it works" at the left end, the selection bar
+   midway between sidebar B and the right edge, and the points at the right. The Fieldbook and
+   Your year open in place under the bar; a tile's card and the other panels are the shared sheet;
+   Build heads its drawer with its own line. The map's drawing, panning, zooming and dragging are
+   untouched: only the bars, the drawer, the sheets and the zoom box's look change here.
+   Loaded after paper.css and journey-workspace.css; the doubled classes outrank their rules.
+   Tokens only, except the painted map's own paper, which stays in daylight in both themes. */
+
+/* ── the frame: the bars own the insets; the island ends where the tab bar begins ── */
+.journey-paper.journey-paper.jm-frame.jm-frame { padding-top: 0; background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+@media (max-width: 767px) {
+  .journey-paper.journey-paper.jm-frame.jm-frame { height: calc(100dvh - var(--edge-bottom)); }
+}
+.jm-frame .jm-head { flex: none; background: var(--surface-canvas); border-bottom: 1px solid var(--hairline); }
+.jm-frame .jm-place { padding-left: var(--space-6); padding-right: var(--space-3); }
+.jm-frame .jm-place .ui-place-row { min-height: 52px; }
+.jm-frame .jm-place .ui-place-name { font-size: 20px; line-height: 24px; letter-spacing: -0.04em; white-space: nowrap; }
+.jm-frame .jm-place .ui-place-actions { gap: var(--space-1); }
+.jm-frame .jm-segrow { padding: var(--space-1) var(--space-6) var(--space-3); }
+.jm-frame .jm-seg { width: 100%; }
+.journey-paper.journey-paper.jm-frame .jm-points { min-width: 0; padding: 0 var(--space-3); font-family: inherit; }
+.journey-paper.journey-paper.jm-frame .jm-points .ui-readout { font-size: 13px; letter-spacing: 0.04em; }
+.jm-frame .jm-deskbar { flex: none; padding: 0 32px; border-bottom: 1px solid var(--hairline); }
+.jm-frame .jm-deskbar .ui-bar-row { height: 72px; }
+.jm-frame .jm-deskbar .ui-bar-mid--control { left: 160px; right: 160px; }
+.jm-frame .jm-deskbar .jm-seg { width: 452px; max-width: 100%; }
+.jm-frame .jm-deskbar .ui-bar-slot:first-child { margin-left: 0; }
+
+/* the buttons inside the island's own layer keep the system's look (paper.css resets every button) */
+.journey-paper.journey-paper.jm-frame :is(.ui-btn, .ui-link, .ui-icon-btn, .ui-seg-item, .ui-word, .ui-row, .ui-menu-btn) { font-family: var(--font-ui); }
+.journey-paper.journey-paper.jm-frame .ui-btn { border: 1px solid var(--outline-soft); background: var(--surface-paper); color: var(--ink-primary); font-size: 15px; }
+.journey-paper.journey-paper.jm-frame .ui-btn--lg { font-size: 16px; }
+.journey-paper.journey-paper.jm-frame .ui-btn--sm { font-size: 14px; }
+.journey-paper.journey-paper.jm-frame .ui-btn--main { border-color: var(--action); background: var(--action); color: var(--action-ink); }
+.journey-paper.journey-paper.jm-frame :is(.ui-btn--waiting, .ui-btn--unavailable) { border-color: var(--hairline); background: var(--surface-soft); color: var(--ink-muted); }
+.journey-paper.journey-paper.jm-frame .ui-link { font-size: 15px; }
+.journey-paper.journey-paper.jm-frame .ui-need { font-size: 15px; color: var(--ink-primary); }
+.journey-paper.journey-paper.jm-frame .ui-btn:disabled, .journey-paper.journey-paper.jm-frame .ui-btn[aria-disabled='true'] { opacity: 1; }
+.journey-paper.journey-paper.jm-frame :is(button, [tabindex]):focus-visible { outline: 2px solid var(--nsu-focus-edge, var(--outline-strong)); outline-offset: 2px; }
+.journey-paper.journey-paper.jm-frame .ui-seg-item { color: var(--ink-secondary); font-size: 14px; }
+.journey-paper.journey-paper.jm-frame .ui-word { font-size: 15px; }
+.journey-paper.journey-paper.jm-frame .ui-seg-item[aria-checked='true'] { color: var(--ink-primary); }
+
+/* ── the map: nothing floats on it but the zoom box (a box you press: three buttons in one line) ── */
+.journey-paper.journey-paper.jm-frame .map-navigation { right: var(--space-6); bottom: var(--space-4); gap: 0; }
+.journey-paper.journey-paper.jm-frame .map-navigation > span,
+.journey-paper.journey-paper.jm-frame .map-navigation small { display: none; }
+.journey-paper.journey-paper.jm-frame .map-navigation > div { overflow: hidden; border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); box-shadow: var(--lift-ctl); }
+.journey-paper.journey-paper.jm-frame .map-navigation button { width: 44px; height: 44px; min-width: 44px; margin: 0; padding: 0; color: var(--ink-primary); transition: background-color var(--t-press) var(--ease-out); }
+.journey-paper.journey-paper.jm-frame .map-navigation button + button,
+.journey-paper.journey-paper.jm-frame .map-navigation button:last-child { margin-left: 0; border-left: 1px solid var(--hairline); }
+.journey-paper.journey-paper.jm-frame .map-navigation button:active { background: var(--surface-soft); }
+.journey-paper.journey-paper.jm-frame .map-navigation button svg { stroke-width: 1.75; }
+.journey-paper.journey-paper.jm-frame.is-building .map-navigation { top: var(--space-2); bottom: auto; right: var(--space-4); }
+.journey-paper.journey-paper.jm-frame.is-building .map-navigation > div { flex-direction: column; }
+.journey-paper.journey-paper.jm-frame.is-building .map-navigation button + button,
+.journey-paper.journey-paper.jm-frame.is-building .map-navigation button:last-child { border-left: 0; border-top: 1px solid var(--hairline); }
+
+/* a short update after a change on the island: one floating note, ink on white */
+.journey-paper.journey-paper.jm-frame .island-notice { display: flex; align-items: flex-start; gap: var(--space-2); max-width: min(420px, calc(100% - 2 * var(--space-6))); padding: var(--space-3) var(--space-2) var(--space-3) var(--space-4); border: 1px solid var(--outline-soft); border-radius: var(--r-box); background: var(--surface-raised); color: var(--ink-primary); box-shadow: var(--float); font-family: var(--font-ui); }
+.journey-paper.journey-paper.jm-frame .island-notice-copy strong { display: block; font-size: 16px; font-weight: 400; line-height: 21px; }
+.journey-paper.journey-paper.jm-frame .island-notice-copy p { margin: 2px 0 0; color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+
+/* ── Build: the drawer is headed by its own line; filters and tiles are boxes you press ── */
+.journey-paper.journey-paper.jm-frame .coast-build-tray { border: 0; border-top: 1px solid var(--hairline); background: var(--surface-canvas); box-shadow: none; font-family: var(--font-ui); }
+.journey-paper.journey-paper.jm-frame .build-drawer-toolbar { flex-direction: column; align-items: stretch; height: auto; border-bottom: 0; }
+.journey-paper.journey-paper.jm-frame .build-drawer-grip { flex: none; height: 20px; gap: 0; }
+.journey-paper.journey-paper.jm-frame .build-drawer-grab-line { width: 36px; height: 5px; border-radius: 3px; background: var(--outline-soft); }
+.journey-paper.journey-paper.jm-frame .build-drawer-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 40px; padding: 0 var(--space-6); }
+.journey-paper.journey-paper.jm-frame .build-drawer-head .ui-link { min-height: 40px; }
+.journey-paper.journey-paper.jm-frame .build-drawer-title { margin: 0; color: var(--ink-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.journey-paper.journey-paper.jm-frame .build-drawer-toggle { height: 44px; min-width: 0; padding: 0; border: 0; font-size: 15px; }
+.journey-paper.journey-paper.jm-frame .resizable-build-tray { grid-template-rows: auto minmax(0, 1fr); }
+.journey-paper.journey-paper.jm-frame .coast-build-tray > .tile-shelf { gap: var(--space-2); padding: var(--space-1) var(--space-6) var(--space-2); }
+.journey-paper.journey-paper.jm-frame .tile-library-heading { display: flex; align-items: center; gap: var(--space-3); margin: 0; }
+.journey-paper.journey-paper.jm-frame .tile-library-heading .ui-field { flex: 1; min-width: 0; }
+.journey-paper.journey-paper.jm-frame .tile-library-heading .ui-field-wrap { position: relative; display: block; }
+.journey-paper.journey-paper.jm-frame .tile-library-heading .ui-field-input { height: 44px; min-height: 44px; margin: 0; padding: 0 14px 0 44px; border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary); box-shadow: var(--lift-ctl); font-family: var(--font-ui); font-size: 16px; }
+.journey-paper.journey-paper.jm-frame .tile-library-heading .ui-field-input::placeholder { color: var(--ink-muted); }
+.journey-paper.journey-paper.jm-frame .tile-count { flex: none; color: var(--ink-muted); font-size: 13px; line-height: 18px; white-space: nowrap; }
+.journey-paper.journey-paper.jm-frame .category-heading { margin: 0; }
+.journey-paper.journey-paper.jm-frame .tile-categories { display: flex; gap: 6px; overflow-x: auto; margin: 0 calc(-1 * var(--space-6)); padding: 0 var(--space-6); scrollbar-width: none; }
+.journey-paper.journey-paper.jm-frame .tile-categories::-webkit-scrollbar { display: none; }
+.journey-paper.journey-paper.jm-frame .tile-categories > button { position: relative; flex: none; height: 36px; padding: 0 var(--space-3); border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary); box-shadow: var(--lift-ctl); font-size: 14px; font-weight: 400; line-height: 1; white-space: nowrap; transition: border-color var(--t-ui) var(--ease-out), box-shadow var(--t-ui) var(--ease-out), transform var(--t-press) var(--ease-out); }
+.journey-paper.journey-paper.jm-frame .tile-categories > button::after { content: ""; position: absolute; inset: -4px 0; }
+.journey-paper.journey-paper.jm-frame .tile-categories > button:active { transform: scale(0.98); }
+.journey-paper.journey-paper.jm-frame .tile-categories > button[aria-pressed='true'] { border-color: var(--outline-strong); background: var(--surface-paper); color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+.journey-paper.journey-paper.jm-frame .coast-build-tray .student-tile-grid { display: flex; gap: var(--space-2); margin: 0 calc(-1 * var(--space-6)); padding: 2px var(--space-6) 4px; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: var(--space-6); scrollbar-width: none; }
+.journey-paper.journey-paper.jm-frame .coast-build-tray .student-tile-grid > .shelf-tile { flex: 0 0 calc((100% - 2 * var(--space-2)) / 3); width: auto; min-height: 100px; }
+.journey-paper.journey-paper.jm-frame .coast-build-tray .student-tile-grid::-webkit-scrollbar { display: none; }
+.journey-paper.journey-paper.jm-frame .shelf-tile { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; padding: 6px 4px 7px; border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); color: var(--ink-primary); box-shadow: var(--lift-ctl); text-align: center; transition: border-color var(--t-ui) var(--ease-out), box-shadow var(--t-ui) var(--ease-out), transform var(--t-press) var(--ease-out); }
+.journey-paper.journey-paper.jm-frame .shelf-tile:active { transform: scale(0.98); }
+.journey-paper.journey-paper.jm-frame .shelf-tile[aria-pressed='true'] { border-color: var(--outline-strong); background: var(--surface-paper); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+.journey-paper.journey-paper.jm-frame .shelf-tile > .ui-mark { position: absolute; top: 6px; right: 6px; width: 20px; height: 20px; }
+.journey-paper.journey-paper.jm-frame .shelf-tile > .ui-mark:not(.ui-mark--on) { visibility: hidden; }
+.journey-paper.journey-paper.jm-frame .shelf-tile > strong { height: auto; min-height: 0; font-size: 13px; font-weight: 400; line-height: 16px; letter-spacing: -0.01em; text-wrap: balance; }
+.journey-paper.journey-paper.jm-frame .shelf-tile > span:not(.shelf-portrait):not(.ui-mark) { margin-top: auto; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.journey-paper.journey-paper.jm-frame .shelf-tile > span.over-budget { color: var(--ink-muted); }
+.journey-paper.journey-paper.jm-frame .tile-search-empty { color: var(--ink-muted); font-size: 13px; }
+
+/* the chosen tile and the one main action */
+.journey-paper.journey-paper.jm-frame .coast-build-tray > .placement-inspector { display: flex; flex-direction: column; gap: 4px; margin: 0 var(--space-6); padding: 2px 0 var(--space-3); border: 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; }
+.journey-paper.journey-paper.jm-frame .placement-title { display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-start; gap: 10px; min-height: 40px; margin: 0; text-align: left; }
+.journey-paper.journey-paper.jm-frame .placement-title h3 { margin: 0; overflow: hidden; color: var(--ink-primary); font-family: var(--font-ui); font-size: 21px; font-weight: 400; line-height: 26px; letter-spacing: -0.03em; text-overflow: ellipsis; white-space: nowrap; }
+.journey-paper.journey-paper.jm-frame .placement-price { margin-right: auto; color: var(--ink-secondary); font-family: "Departure Mono", ui-monospace, monospace; font-size: 13px; letter-spacing: 0.04em; white-space: nowrap; }
+.journey-paper.journey-paper.jm-frame .placement-undo > span { display: inline-flex; align-items: center; gap: 6px; }
+.journey-paper.journey-paper.jm-frame .placement-undo[aria-disabled='true'] { border-color: var(--hairline); background: var(--surface-soft); color: var(--ink-muted); }
+.journey-paper.journey-paper.jm-frame .placement-description { display: none; }
+.journey-paper.journey-paper.jm-frame .placement-foot { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.journey-paper.journey-paper.jm-frame .place-action { margin: 0; }
+.journey-paper.journey-paper.jm-frame .place-action small { font-size: 13px; opacity: 0.8; }
+.journey-paper.journey-paper.jm-frame .tile-editor-actions { display: flex; flex-direction: column; gap: var(--space-2); margin: 0; }
+.journey-paper.journey-paper.jm-frame .tile-editor-undo { align-self: flex-start; }
+.journey-paper.journey-paper.jm-frame .tile-editor-undo > span { display: inline-flex; align-items: center; gap: 6px; }
+.journey-paper.journey-paper.jm-frame .tile-editor-note { margin: 0; color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.journey-paper.journey-paper.jm-frame .tile-editor-close { margin-left: auto; }
+.journey-paper.journey-paper.jm-frame .is-compact .place-action { min-height: 44px; }
+
+/* on a phone the drawer is one scrolling column over the tab bar, its top corners rounded */
+@media (max-width: 700px) {
+  .journey-paper.journey-paper.jm-frame .coast-build-tray { position: relative; z-index: 2; display: flex; flex-direction: column; margin-top: -20px; overflow-y: auto; overscroll-behavior: contain; border: 1px solid var(--outline-soft); border-bottom: 0; border-radius: var(--r-card) var(--r-card) 0 0; background: var(--surface-raised); }
+  .journey-paper.journey-paper.jm-frame.is-viewing .coast-build-tray { display: none; }
+  .journey-paper.journey-paper.jm-frame .coast-build-tray > .tile-shelf { flex: none; height: auto; min-height: 0; overflow: visible; }
+  .journey-paper.journey-paper.jm-frame .coast-build-tray > .placement-inspector { flex: none; height: auto; min-height: 0; overflow: visible; display: flex; }
+  .journey-paper.journey-paper.jm-frame .build-drawer-toolbar { flex: none; padding-top: var(--space-1); }
+  .journey-paper.journey-paper.jm-frame .coast-build-tray .student-tile-grid > .shelf-tile { min-height: 86px; }
+  .journey-paper.journey-paper.jm-frame .coast-build-tray .shelf-portrait { width: 64px; height: 42px; margin: 0 auto 2px; }
+  .journey-paper.journey-paper.jm-frame .coast-build-tray .shelf-tile .tile-portrait { height: 42px; }
+}
+
+/* ── the Fieldbook and Your year, in place under the bar ── */
+.jm-frame .coast-world { position: relative; }
+.journey-paper.journey-paper.jm-frame .jm-page { position: absolute; inset: 0; z-index: 9; overflow-y: auto; overscroll-behavior: contain; background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.jm-frame .jm-page-col { display: flex; flex-direction: column; gap: var(--space-3); padding: 10px var(--space-6) var(--space-12); }
+.jm-frame--desk .jm-page-col { width: min(720px, 100% - 2 * var(--space-12)); margin: 0 auto; padding-top: var(--space-6); }
+.jm-frame .jm-fb-words { align-self: flex-start; margin: 0 0 var(--space-1) calc(-1 * var(--space-2)); }
+.journey-paper.journey-paper.jm-frame .jm-fb { display: flex; flex-direction: column; gap: var(--space-3); padding: 0; border: 0; background: none; }
+.jm-frame .jm-fb-head { display: flex; flex-direction: column; gap: var(--space-2); margin-top: 6px; }
+.jm-frame .jm-label { margin: 0; color: var(--ink-muted); }
+.journey-paper.journey-paper.jm-frame .jm-fb-title { margin: 0; color: var(--ink-primary); font-family: var(--font-ui); font-size: 29px; font-weight: 400; line-height: 33px; letter-spacing: -0.04em; }
+.journey-paper.journey-paper.jm-frame .jm-live { color: var(--nsu-orange); font-style: normal; font-family: inherit; }
+.journey-paper.journey-paper.jm-frame .jm-fb .t-sub { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.journey-paper.journey-paper.jm-frame .jm-fb .t-label { font-size: 11px; font-weight: 400; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.jm-frame .jm-find { align-self: flex-start; }
+.journey-paper.journey-paper.jm-frame .fieldbook-discoveries { display: flex; flex-direction: column; margin-top: var(--space-2); }
+.journey-paper.journey-paper.jm-frame .fieldbook-discoveries .ui-row { gap: var(--space-4); min-height: 66px; }
+.journey-paper.journey-paper.jm-frame .fieldbook-discoveries .ui-row-icon { color: var(--ink-muted); }
+.journey-paper.journey-paper.jm-frame .fieldbook-discoveries .ui-row-title { font-size: 17px; line-height: 22px; }
+.journey-paper.journey-paper.jm-frame .fieldbook-discoveries .ui-row-art > * { width: 40px; height: 40px; }
+.journey-paper.journey-paper.jm-frame .fieldbook-discoveries .ui-row-chev { color: var(--ink-primary); }
+
+/* Your year, in place: the same frame (one typeface, a regular headline, ink for what is on) */
+.journey-paper.journey-paper.jm-frame .jm-page .year-book { padding: 0; font-family: var(--font-ui); }
+.journey-paper.journey-paper.jm-frame .jm-page .year-book .eyebrow { color: var(--ink-muted); font-size: 11px; font-weight: 400; line-height: 14px; letter-spacing: 0.1em; }
+.journey-paper.journey-paper.jm-frame .jm-page .year-book-heading h2 { font-family: var(--font-ui); font-size: 29px; font-weight: 400; line-height: 33px; letter-spacing: -0.04em; }
+.journey-paper.journey-paper.jm-frame .jm-page .year-switch[aria-checked='true'] .year-switch-track { background: var(--ink-primary); }
+.journey-paper.journey-paper.jm-frame .jm-page :is(.year-action, .year-classmate-card:hover .year-visit-cta, .year-classmate-card:focus-visible .year-visit-cta) { background: var(--action); color: var(--action-ink); }
+
+/* ── the sheets: a tile's card, your points, a treasure, a discovery, a visitor ── */
+.island-sheet.jm-sheet { font-family: var(--font-ui); }
+.island-sheet .journey-paper.jm-sheet-inner { height: auto; background: none; color: var(--ink-primary); font-family: var(--font-ui); }
+.island-sheet .jm-sheet-copy { display: flex; flex-direction: column; gap: var(--space-2); padding-bottom: var(--space-2); }
+.island-sheet .journey-paper.jm-sheet-inner .jm-sheet-copy :is(h2, p) { margin: 0; font-family: var(--font-ui); text-transform: none; }
+.island-sheet .journey-paper.jm-sheet-inner .jm-sheet-copy .t-title { color: var(--ink-primary); font-size: 29px; font-weight: 400; line-height: 33px; letter-spacing: -0.04em; }
+.island-sheet .journey-paper.jm-sheet-inner .jm-sheet-copy .t-sub { color: var(--ink-secondary); font-size: 15px; line-height: 21px; letter-spacing: 0; }
+.island-sheet .journey-paper.jm-sheet-inner .jm-sheet-copy .t-label { color: var(--ink-muted); font-size: 11px; font-weight: 400; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.island-sheet .jm-label { margin: var(--space-2) 0 0; color: var(--ink-muted); }
+.island-sheet .journey-paper.jm-sheet-inner .tile-detail-panel { padding: 0; }
+.island-sheet .journey-paper.jm-sheet-inner .tile-detail-panel > .tile-portrait { display: block; align-self: center; width: 100%; height: 232px; max-height: none; margin: 0 0 var(--space-3); }
+.island-sheet .jm-big { display: flex; align-items: baseline; gap: 4px; font-size: 56px; line-height: 56px; letter-spacing: -0.055em; font-variant-numeric: lining-nums proportional-nums; }
+.island-sheet .jm-big small { color: var(--ink-secondary); font-size: 20px; letter-spacing: -0.01em; }
+.island-sheet .jm-facts { margin: var(--space-2) 0 0; border-top: 1px solid var(--hairline); }
+.island-sheet .jm-facts > div { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--hairline); }
+.island-sheet .jm-facts dt { color: var(--ink-secondary); font-size: 15px; }
+.island-sheet .jm-facts dd { margin: 0; }
+.island-sheet .jm-discovery-art { display: grid; place-items: center; height: 200px; border-radius: var(--r-box); background-size: cover; background-position: center; }
+.island-sheet .jm-discovery-art > * { width: 150px; height: 150px; }
+@media (min-width: 640px) {
+  .ui-sheet.island-sheet.has-visitor { width: min(100%, 680px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-paper.journey-paper.jm-frame :is(.shelf-tile, .tile-categories > button, .map-navigation button) { transition: none; }
+  .journey-paper.journey-paper.jm-frame :is(.shelf-tile, .tile-categories > button):active { transform: none; }
+}
+/* Visit island stays in the app: the forward arrow, bare (no circle round it; area 9). */
+.journey-paper.journey-paper.jm-frame .jm-page .year-visit-cta svg,
+.journey-paper.journey-paper.jm-frame .jm-page .year-classmate-card:is(:hover,:focus-visible) .year-visit-cta svg { width: 20px; height: 20px; padding: 0; border: 0; border-radius: 0; background: none; color: inherit; }

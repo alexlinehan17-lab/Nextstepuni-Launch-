@@ -1,170 +1,233 @@
-/* Graphite is the chosen After Hours palette, independent of the
-   student's saved theme. Tokens stay scoped so student and GC screens retain
-   their own visual language. */
-.admin-workspace {
-  --admin-bg: #191919;
-  --admin-surface: #202020;
-  --admin-raised: #282828;
-  --admin-ink: #f4f3ef;
-  --admin-body: #dcdad5;
-  --admin-muted: #b8b5af;
-  --admin-rule: #444444;
-  --admin-track: #414141;
-  --admin-control: #76736e;
-  --admin-hover: #2e2e2e;
-  --admin-selected: #303030;
-  --admin-accent: var(--nsu-orange);
-  --admin-action: #f5f5ee;
-  --admin-action-ink: #191919;
-  --admin-success: #a7cfb1;
-  --admin-success-bg: #28372d;
-  --admin-warning-bg: #373127;
-  --admin-danger: #ffada4;
-  --admin-danger-bg: #3b2b28;
-  --admin-chart-idle: #83817d;
-  --admin-chart-started: #df9a6f;
-  --admin-chart-building: #c3bab0;
-  --admin-chart-advanced: #96b4a8;
-  min-height: 100vh;
-  width: 100%;
-  background: var(--admin-bg);
-  color: var(--admin-ink);
-  color-scheme: dark;
-  font-family: 'DM Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
+/* The Admin dashboard in the agreed look (area 8b): the counsellor's staff frame (gc-8a.css: the
+   sidebar, the bar, the phone's bars and rows) and what the Admin pages add. It opens in dark on the
+   app's own four surfaces (AdminDashboard.tsx, useAdminOpensDark): its separate palette is gone.
+   Ported from the agreed boards (site/src/css/c-staff.css, section c-staff-admin, and r5-d3.css,
+   r5-admin-dashboard) onto the app's tokens. Class prefix `adm-`. No colour is typed here. */
+
+/* ── The page ────────────────────────────────────────────────────────── */
+/* The column fills the screen, so on a short page (a search with no match, one student) the tab bar
+   still rests at the bottom edge rather than under the last line. */
+.adm .gc8-col { display: flex; flex-direction: column; min-height: 100dvh; }
+.adm .gc8-main { flex: 1 0 auto; }
+.adm .adm-head { display: flex; flex-direction: column; gap: 6px; }
+.adm .adm-head > .ui-seg,
+.adm .adm-head > .adm-filters,
+.adm .adm-head > .ui-field--search { margin-top: 10px; }
+.adm .adm-head > .ui-field--search + .adm-filters { margin-top: 4px; }
+.adm-filters { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+.adm-hero { align-items: flex-start; }
+.adm-hero > .gc8-head { min-width: 0; }
+.adm-hero > .adm-filters { flex: none; flex-wrap: nowrap; }
+/* Beside the sidebar below 1200px the opening words take the width and the controls sit under them. */
+@media (min-width: 1024px) and (max-width: 1199px) { .adm-hero.gc8-hero { flex-direction: column; align-items: flex-start; } }
+@media (max-width: 1199px) { .adm-hero > .adm-filters { flex-wrap: wrap; } }
+.adm-titlerow { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); }
+.adm-titlerow .ui-icon-btn { flex: none; margin: -6px -10px 0 0; }
+.adm-one { display: block; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.adm-ink { color: var(--ink-primary); }
+.adm-alert { margin: 0; padding-top: var(--space-3); border-top: 1px solid var(--hairline); color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.adm-backrow { width: 100%; max-width: 760px; margin: -8px auto -16px; }
+.adm-back.ui-link { margin-left: -6px; }
+.adm-back.ui-link > span { display: inline-flex; align-items: center; gap: 2px; }
+.adm-spin { animation: adm-turn 900ms linear infinite; }
+@keyframes adm-turn { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .adm-spin { animation: none; } }
+
+/* The phone's account button: the rounded square with an ink outline, in a 44px target (as on Home). */
+.adm-me.ui-part { display: grid; place-items: center; width: 44px; height: 44px; margin-right: calc(var(--space-6) - 14px); padding: 0; border: 0; background: none; color: var(--ink-primary); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.adm-me .ui-menu-btn-text { display: grid; place-items: center; }
+.adm-me-box { display: grid; place-items: center; width: 40px; height: 40px; border: 1.5px solid var(--outline-strong); border-radius: 11px; background: var(--surface-paper); color: var(--ink-primary); }
+.adm-me:active .adm-me-box, .adm-me[data-popup-open] .adm-me-box { background: var(--surface-soft); }
+/* Its short menu: who you are, then School access, Refresh data, a hairline, Log out. */
+.adm-accountmenu.ui-menu.ui-menu--panel { width: 268px; padding: 4px 6px 6px; }
+.adm-accountmenu .ui-menu-head { min-height: 0; padding: 10px 18px 12px; }
+.adm-menuhead { display: flex; flex-direction: column; gap: 2px; }
+.adm-mrow { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.adm-mrow .ui-icon { visibility: visible; color: var(--ink-primary); }
+.adm-accountmenu .ui-menu-item--plain .ui-menu-item-title { width: 100%; }
+/* School access opens a page: its chevron at the right, as drawn (parts.css hides a menu row's icons
+   unless the row is checked, which also hides MenuAction's glyph; SWEEP, area 8b). */
+.adm-accountmenu .ui-menu-item--row .ui-menu-item-glyph { visibility: visible; }
+
+/* ── Overview ────────────────────────────────────────────────────────── */
+.adm-attn .ui-row { min-height: 60px; }
+.adm-attn .ui-row-meta { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* On a laptop the three things to look at first sit side by side over one hairline (from 1200px; beside
+   the sidebar below that each would wrap, so they stay one under another). */
+@media (min-width: 1200px) {
+  .adm-attn--wide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px; }
+  .adm-attn--wide .ui-row { min-height: 64px; }
 }
-.admin-workspace :is(h1, h2, h3) { font-weight: 700; letter-spacing: -.035em; }
-.admin-workspace :is(button, input, select, textarea):focus-visible {
-  outline: 2px solid var(--admin-accent);
-  outline-offset: 4px;
+/* The four figures: two by two, ruled; each number over its small label, the % hanging. */
+.adm-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--hairline); }
+.adm-stats > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; padding: 14px 0 14px 16px; border-bottom: 1px solid var(--hairline); border-left: 1px solid var(--hairline); }
+.adm-stats > div:nth-child(2n + 1) { padding-left: 0; border-left: 0; }
+.adm-stats--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.adm-stats--four > div:nth-child(2n + 1) { padding-left: 16px; border-left: 1px solid var(--hairline); }
+.adm-stats--four > div:first-child { padding-left: 0; border-left: 0; }
+.adm-statnum.gc8-num { --unit-w: 14px; display: flex; align-items: baseline; height: 40px; font-size: 40px; line-height: 40px; }
+.adm-stats .gc8-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Where students are: the whole cohort as one bar, then each group with its count and share. Four
+   steps from the hairline to ink, read without colour (the board's "Where students are"). */
+.adm-where { gap: var(--space-3); }
+.adm-stack { display: flex; gap: 2px; height: 10px; margin-top: 4px; overflow: hidden; border-radius: 5px; }
+.adm-stack > i { display: block; min-width: 3px; }
+.adm-stack > i.adm-s0, .adm-dbar.adm-s0 > i { background: var(--outline-soft); }
+.adm-stack > i.adm-s1, .adm-dbar.adm-s1 > i { background: color-mix(in srgb, var(--ink-primary) 40%, var(--surface-canvas)); }
+.adm-stack > i.adm-s2, .adm-dbar.adm-s2 > i { background: color-mix(in srgb, var(--ink-primary) 70%, var(--surface-canvas)); }
+.adm-stack > i.adm-s3, .adm-dbar.adm-s3 > i { background: var(--ink-primary); }
+.adm-dist { display: flex; flex-direction: column; gap: 14px; margin-top: 6px; }
+.adm-dist > div { display: flex; flex-direction: column; gap: 7px; }
+.adm-dhead { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); color: var(--ink-primary); font-size: 15px; line-height: 20px; }
+.adm-dn { display: inline-grid; grid-template-columns: auto 52px; align-items: baseline; font-variant-numeric: tabular-nums; text-align: right; }
+.adm-dp { --unit-w: 12px; padding-right: var(--unit-w); color: var(--ink-muted); font-size: 14px; }
+.adm-dp .gc8-unit { font-size: 12px; }
+@media (min-width: 1200px) {
+  .adm-two.gc8-two { grid-template-columns: minmax(0, 1fr) 340px; }
 }
-.admin-workspace button { transition: background-color .15s, border-color .15s, color .15s; }
-.admin-workspace button:not(:disabled) { cursor: pointer; }
-.admin-workspace button:disabled { cursor: not-allowed; }
-.admin-workspace select { cursor: pointer; }
-.admin-workspace ::selection { background: var(--admin-accent); color: var(--admin-action-ink); }
-.admin-skip-link {
-  position: fixed; top: calc(8px + var(--safe-top)); left: 12px; z-index: 250;
-  padding: 12px 18px; background: var(--admin-action); color: var(--admin-action-ink);
-  transform: translateY(calc(-180% - var(--safe-top))); border-radius: 4px;
+
+/* A percent whose digits end on one edge, the % hanging past it. */
+.adm-pct { --unit-w: 11px; padding-right: var(--unit-w); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.adm-pct .gc8-unit { color: var(--ink-muted); font-size: 12px; }
+.adm-n { font-variant-numeric: tabular-nums; text-align: right; }
+
+/* Cohorts as rows (a phone, and beside the sidebar below 1200px): a heading line over them. */
+.adm-colhead { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-3); padding-bottom: 2px; }
+.adm-rows .ui-row { min-height: 60px; padding: 8px 0; }
+.adm-rows .ui-row-title { min-width: 0; }
+.adm-rows .ui-row-value.gc8-pct { min-width: 44px; }
+/* The full comparison from 1200px: every figure on its column's right edge. */
+.adm-tbl { border-top: 1px solid var(--hairline); }
+.adm-tr { display: grid; grid-template-columns: minmax(0, 1fr) 72px 112px 172px 152px 112px; align-items: center; column-gap: var(--space-4); min-height: 52px; border-bottom: 1px solid var(--hairline); color: var(--ink-primary); font-size: 15px; line-height: 20px; }
+.adm-tr--head { min-height: 36px; }
+.adm-tr > b { min-width: 0; overflow: hidden; font-weight: 400; text-overflow: ellipsis; white-space: nowrap; }
+.adm-tr .gc8-label { white-space: nowrap; }
+.adm-split { display: grid; grid-template-columns: minmax(0, 1fr) 56px; align-items: baseline; column-gap: 6px; font-variant-numeric: tabular-nums; text-align: right; }
+.adm-split > .adm-pct { color: var(--ink-muted); }
+.adm-prog { display: grid; grid-template-columns: 48px minmax(0, 1fr); align-items: center; gap: var(--space-2); }
+.adm-prog > .adm-pct { text-align: right; }
+.adm-open { display: flex; justify-content: flex-end; }
+.adm-openbtn.ui-btn { gap: 4px; padding: 0 8px 0 12px; }
+.adm-tbl > .gc8-empty { padding: var(--space-4) 0; }
+
+/* "Best on a laptop": a small label and a plain line, under a hairline. */
+.adm-best { padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
+
+/* ── Schools: the switch ─────────────────────────────────────────────── */
+.adm-switch.ui-seg { width: 100%; }
+@media (min-width: 768px) { .adm-switch.ui-seg { width: 340px; } }
+
+/* ── Students ────────────────────────────────────────────────────────── */
+.adm-find.ui-field--search { width: 100%; }
+@media (min-width: 768px) { .adm-hero .adm-find.ui-field--search { width: 240px; } }
+.adm-none { display: flex; flex-direction: column; gap: 4px; }
+/* One student's three figures in a line, each centred in its column (My Progress's agreed figures). */
+.adm-fa { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 14px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.adm-fa > div { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.adm-fa .gc8-num { --unit-w: 18px; font-size: 40px; line-height: 42px; }
+/* The five course areas: each name and its figure, then an ink bar (green once complete). */
+.adm-areas { display: flex; flex-direction: column; gap: var(--space-4); }
+.adm-area { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.adm-ahead { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.adm-ahead > span:first-child { min-width: 0; overflow: hidden; color: var(--ink-primary); font-size: 15px; line-height: 20px; text-overflow: ellipsis; white-space: nowrap; }
+.adm-ahead > .adm-pct { flex: none; color: var(--ink-primary); font-size: 14px; line-height: 18px; }
+.adm-abar.gc8-bar { height: 10px; border-radius: 5px; }
+.adm-abar--done > i { background: var(--success-hex); }
+.adm-areas--sm { gap: 12px; }
+.adm-areas--sm .adm-ahead > span:first-child { font-size: 14px; line-height: 18px; }
+.adm-areas--sm .adm-abar.gc8-bar { height: 8px; border-radius: 4px; }
+/* One student on its own page (a phone): the character bare, the year and school over the name. */
+.adm-who { display: flex; align-items: center; gap: 14px; padding-top: var(--space-2); }
+.adm-who-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.adm-who-copy .gc8-name { overflow-wrap: anywhere; }
+/* Students on a laptop: three across, each laid on the page under a hairline, the bin at its top right. */
+.adm-sgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); gap: 36px 32px; }
+.adm-stu { display: flex; flex-direction: column; gap: 14px; min-width: 0; padding-top: 14px; border-top: 1px solid var(--hairline); }
+.adm-shead { display: flex; align-items: center; gap: var(--space-3); min-width: 0; }
+.adm-shead-copy { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+.adm-shead-copy .gc8-person { margin: 0; font-size: 16px; font-weight: 400; }
+.adm-bin.ui-icon-btn { flex: none; margin: -6px -10px -6px 0; color: var(--ink-muted); }
+.adm-stu .adm-fa .gc8-num { font-size: 30px; line-height: 32px; }
+
+/* ── First run ───────────────────────────────────────────────────────── */
+.adm-funnel { display: flex; flex-direction: column; gap: var(--space-8); }
+.adm-seg2.ui-seg { width: 236px; }
+.adm-through { display: flex; flex-direction: column; gap: 6px; }
+.adm-throughnum.gc8-num { --unit-w: 20px; margin: 2px 0; font-size: 48px; line-height: 50px; }
+.adm-steps { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--hairline); }
+.adm-steps > li { display: flex; flex-direction: column; gap: 8px; padding: 12px 0 14px; border-bottom: 1px solid var(--hairline); }
+.adm-stephead { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); color: var(--ink-primary); font-size: 16px; line-height: 21px; }
+.adm-count { font-size: 21px; line-height: 24px; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.adm-livebar.gc8-bar { height: 10px; border-radius: 5px; }
+.adm-lost { margin: 0; color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.adm-foot b { color: var(--ink-primary); font-weight: 400; }
+
+/* ── Feedback ────────────────────────────────────────────────────────── */
+.adm-feedback, .adm-access, .adm-progpanel { display: flex; flex-direction: column; gap: var(--space-8); }
+.adm-asof { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.adm-msgs { border-top: 1px solid var(--hairline); }
+.adm-msg { display: flex; flex-direction: column; gap: 6px; padding: 16px 0; border-bottom: 1px solid var(--hairline); }
+.adm-msgtext { margin: 0; color: var(--ink-primary); font-size: 16px; line-height: 24px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.adm-msgfoot { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-top: 6px; }
+.adm-msgmeta { display: flex; flex-direction: column; min-width: 0; }
+.adm-msgfoot > .ui-menu-btn { flex: none; }
+.adm-more { display: flex; justify-content: center; padding-top: var(--space-4); }
+.adm-empty { padding: var(--space-6) 0; }
+
+/* ── School access ───────────────────────────────────────────────────── */
+.adm-notice { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); padding: var(--space-3) 0 var(--space-4); border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.adm-notice-text { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.adm-btnrow { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--space-2); }
+.adm-secretrow { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+.adm-secret { overflow-wrap: anywhere; }
+.adm-logins { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--hairline); }
+.adm-login { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 14px 0 16px; border-bottom: 1px solid var(--hairline); }
+.adm-lwho { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; margin: 0; }
+.adm-addr.gc8-readout { margin: 0 0 10px; color: var(--ink-secondary); overflow-wrap: anywhere; }
+.adm-setpw { display: flex; flex-direction: column; gap: var(--space-4); width: 100%; margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
+.adm-pwfield { position: relative; }
+.adm-pwfield .ui-field-input { padding-right: 48px; }
+.adm-eye.ui-icon-btn { position: absolute; right: 2px; bottom: 2px; color: var(--ink-muted); }
+.adm-mono .ui-field-input { font-family: 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; letter-spacing: 0.02em; }
+.adm-mono .ui-field-input::placeholder { font-family: var(--font-ui); letter-spacing: 0; }
+/* On a laptop the reading pages (First run, Feedback, School access) are one column, centred between
+   the sidebar and the right edge, as the counsellor's School access is. */
+@media (min-width: 768px) { .adm-access, .adm-feedback, .adm-funnel { width: 100%; max-width: 760px; margin: 0 auto; } }
+
+/* ── Programme ───────────────────────────────────────────────────────── */
+.adm-state { gap: var(--space-2); }
+.adm-progtools { display: flex; flex-direction: column; gap: var(--space-3); }
+.adm-range.ui-seg { width: 100%; }
+@media (min-width: 768px) { .adm-range.ui-seg { width: 360px; } }
+@media (min-width: 1024px) {
+  .adm-progtools { flex-direction: row; align-items: center; justify-content: space-between; }
+  .adm-progtools .adm-asof { gap: var(--space-4); }
 }
-.admin-skip-link:focus { transform: none; }
-.admin-masthead { position: sticky; top: 0; z-index: 40; background: var(--admin-bg); border-bottom: 1px solid var(--admin-rule); }
-.admin-masthead-inner { max-width: 1512px; margin: auto; padding: 0 32px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 26px; }
-.admin-brand { display: flex; flex-direction: column; gap: 4px; padding: 19px 0; white-space: nowrap; }
-.admin-brand > span:first-child { font-size: 28px; line-height: 1.1; font-weight: 700; letter-spacing: -1.5px; }
-.admin-eyebrow { font-size: 10px; font-weight: 700; line-height: 1.5; text-transform: uppercase; letter-spacing: .15em; color: var(--admin-muted); }
-.admin-brand .admin-eyebrow { font-size: 8px; letter-spacing: .19em; }
-.admin-nav { position: relative; display: flex; align-self: stretch; justify-content: center; gap: 2px; min-width: 0; }
-.admin-nav button { display: flex; align-items: center; gap: 7px; padding: 0 12px; min-height: 48px; border-bottom: 2px solid transparent; background: transparent; color: var(--admin-muted); font-size: 12px; font-weight: 700; white-space: nowrap; }
-.admin-nav-number { font-size: 10px; font-weight: 400; color: var(--admin-muted); }
-.admin-nav button:is(:hover, [aria-current='page']) { color: var(--admin-ink); }
-.admin-nav button:not([aria-current='page']):hover .admin-nav-label { text-decoration: underline; text-decoration-color: var(--admin-control); text-decoration-thickness: 2px; text-underline-offset: 8px; }
-.admin-nav button[aria-current='page'] .admin-nav-number { color: var(--admin-accent); }
-.admin-nav:not([data-indicator-ready='true']) button[aria-current='page'] { border-bottom-color: var(--nsu-orange); }
-.admin-nav[data-indicator-ready='true']::after {
-  content: ''; position: absolute; pointer-events: none; height: 2px;
-  left: var(--admin-nav-line-left); top: var(--admin-nav-line-top); width: var(--admin-nav-line-width);
-  background: var(--nsu-orange);
-  transition: left 220ms cubic-bezier(.2,.7,.3,1), top 220ms cubic-bezier(.2,.7,.3,1), width 220ms cubic-bezier(.2,.7,.3,1);
-}
-.admin-logout { display: flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 0 10px; border: 1px solid var(--admin-control); border-radius: 5px; font-size: 11px; color: var(--admin-body); }
-.admin-logout:hover { background: var(--admin-hover); }
-.admin-main { max-width: 1512px; margin: auto; padding: 40px 32px 44px; }
-.admin-page-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 32px; }
-.admin-page-heading h1 { font-size: clamp(32px, 3.2vw, 44px); line-height: 1.12; margin-top: 12px; }
-.admin-page-heading > div:first-child > p:first-child { font-size: 10px; letter-spacing: .17em; }
-.admin-page-heading > div:first-child > p:last-child { margin-top: 12px; max-width: 550px; font-size: 13px; }
-.admin-page-heading [aria-label='Dashboard filters'] { flex-wrap: nowrap; flex-shrink: 0; }
-.admin-page-heading select { border-color: var(--admin-control); background: var(--admin-surface); border-radius: 5px; font-size: 12px; min-height: 42px; }
-.admin-page-heading label > span { font-size: 9px; letter-spacing: .15em; }
-.admin-summary { padding: 22px 26px 0; border: 1px solid var(--admin-rule); border-radius: 7px; background: var(--admin-raised); }
-.admin-summary-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 24px; }
-.admin-summary-heading h2 { letter-spacing: .15em; }
-.admin-summary-heading p { font-size: 11px; color: var(--admin-muted); }
-.admin-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding-bottom: 24px; }
-.admin-metric { min-width: 0; padding: 0 24px; border-left: 1px solid var(--admin-rule); }
-.admin-metric:first-child { padding-left: 0; border-left: 0; }
-.admin-metric:last-child { padding-right: 0; }
-.admin-metric strong { display: block; margin-top: 13px; font-size: 48px; line-height: 1.15; font-weight: 700; letter-spacing: -1.8px; font-variant-numeric: tabular-nums; }
-.admin-metric--accent strong { color: var(--admin-accent); }
-.admin-metric p { font-size: 11px; line-height: 1.65; color: var(--admin-muted); margin-top: 8px; max-width: 235px; }
-.admin-summary-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 14px 0; border-top: 1px solid var(--admin-rule); }
-.admin-summary-footer p { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--admin-body); }
-.admin-status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--admin-accent); flex-shrink: 0; }
-.admin-summary-footer button { display: flex; align-items: center; gap: 8px; padding: 5px 0 5px 10px; font-size: 12px; font-weight: 700; white-space: nowrap; }
-.admin-summary-footer button:hover { color: var(--admin-accent); }
-.admin-overview-grid { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(290px, 1fr); align-items: start; gap: 24px; }
-.admin-panel { min-width: 0; border: 1px solid var(--admin-rule); border-radius: 7px; background: var(--admin-surface); overflow: hidden; }
-.admin-panel h2 { font-size: 22px; }
-.admin-panel > div:first-child > div > p, .admin-distribution > p { font-size: 9px; letter-spacing: .15em; }
-.admin-cohort-table thead { font-size: 9px; letter-spacing: .1em; }
-.admin-cohort-table th { vertical-align: middle; }
-.admin-cohort-table :is(th, td) { padding-left: 14px; padding-right: 14px; }
-.admin-cohort-table :is(th, td):first-child { padding-left: 22px; }
-.admin-cohort-table :is(th, td):last-child { padding-right: 22px; }
-.admin-cohort-table td { font-size: 12px; }
-.admin-cohort-table tbody tr:hover { background: var(--admin-hover); }
-.admin-cohort-table button { border-color: var(--admin-control); font-size: 10px; border-radius: 5px; min-height: 32px; }
-.admin-table-track { display: block; width: 70px; max-width: 100%; height: 3px; margin-top: 6px; background: var(--admin-track); border-radius: 3px; overflow: hidden; }
-.admin-table-track > span { display: block; height: 100%; background: var(--admin-chart-building); }
-.admin-distribution { padding: 23px; }
-.admin-distribution h2 { max-width: 240px; }
-.admin-distribution-stack { display: flex; height: 9px; border-radius: 3px; overflow: hidden; background: var(--admin-track); margin: 26px 0; gap: 3px; }
-.admin-distribution .space-y-5 > div > div:first-child > span { font-size: 12px; }
-.admin-distribution .h-2\.5 { height: 4px; }
-@media (max-width: 1400px) {
-  .admin-masthead-inner { grid-template-columns: 1fr auto; gap: 0 20px; }
-  .admin-brand { padding: 15px 0; flex-direction: row; align-items: baseline; gap: 18px; }
-  .admin-nav { grid-row: 2; grid-column: 1 / -1; justify-content: flex-start; }
-  .admin-nav button { padding: 0 16px; }
-  .admin-logout { grid-column: 2; grid-row: 1; }
-}
-@media (max-width: 1100px) {
-  .admin-page-heading { flex-direction: column; align-items: stretch; gap: 24px; }
-  .admin-page-heading [aria-label='Dashboard filters'] { justify-content: flex-end; }
-  .admin-overview-grid { grid-template-columns: minmax(0, 1fr); }
-  .admin-distribution h2 { max-width: none; }
-  .admin-nav { justify-content: space-between; }
-  .admin-nav button { padding: 0 8px; font-size: 11px; }
-  .admin-metric { padding: 0 16px; }
-  .admin-metric strong { font-size: 42px; }
-}
-@media (max-width: 760px) {
-  .admin-masthead-inner { padding: 0 20px; }
-  .admin-nav { display: grid; grid-template-columns: repeat(4, 1fr); }
-  .admin-nav button { justify-content: center; padding: 0 6px; min-height: 50px; }
-  .admin-nav-number { display: none; }
-  .admin-brand > span:first-child { font-size: 25px; }
-  .admin-brand .admin-eyebrow { display: none; }
-  .admin-main { padding: 28px 20px 36px; }
-  .admin-page-heading h1 { font-size: 34px; }
-  .admin-page-heading [aria-label='Dashboard filters'] { width: 100%; gap: 10px; }
-  .admin-page-heading label { min-width: 0; flex: 1; }
-  .admin-page-heading select { width: 100%; padding-left: 10px; padding-right: 22px; }
-  .admin-summary { padding: 20px 18px 0; }
-  .admin-summary-heading { display: block; margin-bottom: 22px; }
-  .admin-summary-heading p { margin-top: 5px; }
-  .admin-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 0; padding-bottom: 20px; }
-  .admin-metric { padding: 0 0 0 16px; }
-  .admin-metric:nth-child(odd) { padding: 0 16px 0 0; border-left: 0; }
-  .admin-metric:nth-child(n+3) { padding-top: 20px; border-top: 1px solid var(--admin-rule); }
-  .admin-metric .admin-eyebrow { font-size: 9px; letter-spacing: .08em; }
-  .admin-metric strong { font-size: 40px; }
-  .admin-summary-footer { flex-direction: column; align-items: flex-start; gap: 6px; padding: 15px 0; }
-  .admin-summary-footer button { padding-left: 16px; min-height: 36px; }
-  .admin-cohort-table, .admin-cohort-table tbody { display: block; }
-  .admin-cohort-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  .admin-cohort-table tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 18px 20px; gap: 16px; }
-  .admin-cohort-table :is(td, td:first-child, td:last-child) { padding: 0; }
-  .admin-cohort-table td:first-child { grid-column: 1; grid-row: 1; align-self: center; font-size: 16px; }
-  .admin-cohort-table td:last-child { grid-column: 2; grid-row: 1; }
-  .admin-cohort-table td[data-label] { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 4px; font-size: 15px; }
-  .admin-cohort-table td[data-label]::before { content: attr(data-label); width: 100%; font-size: 10px; font-weight: 400; margin-bottom: 4px; color: var(--admin-muted); }
-  .admin-cohort-table .admin-table-track { display: none; }
-  .admin-cohort-table td[colspan] { grid-column: 1 / -1; font-size: 13px; text-align: left; }
-  .admin-cohort-table button { min-height: 36px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .admin-workspace *, .admin-workspace *::before, .admin-workspace *::after { animation-duration: .01ms; transition-duration: .01ms; }
-}
+.adm-progtwo { display: flex; flex-direction: column; gap: var(--space-8); }
+@media (min-width: 1200px) { .adm-progtwo { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 48px; align-items: start; } }
+/* Active students by week: ink bars on one baseline, each count over its bar in the readout mono. */
+.adm-weeks { display: flex; align-items: flex-end; gap: var(--space-2); height: 176px; padding-top: 4px; border-bottom: 1px solid var(--outline-soft); }
+.adm-weeks > div { display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; min-width: 0; height: 100%; }
+.adm-weeks > div > i { display: block; width: 100%; max-width: 56px; border-radius: var(--r-xs) var(--r-xs) 0 0; background: var(--ink-primary); }
+.adm-weeks .gc8-readout { color: var(--ink-secondary); }
+.adm-weekday { color: var(--ink-muted); font-size: 12px; line-height: 16px; white-space: nowrap; }
+.adm-weeks:has(.adm-weekday) { height: 196px; }
+.adm-figrows { margin: 0; }
+.adm-figrows dt, .adm-figrows dd { margin: 0; }
+.adm-figrows .gc8-num { font-size: 26px; line-height: 30px; white-space: nowrap; }
+.adm-pu { font-variant-numeric: proportional-nums; letter-spacing: 0; }
+.adm-of { color: var(--ink-muted); font-size: 16px; letter-spacing: -0.01em; }
+/* The feature table: on a phone the name and Exposed; on a laptop every column. */
+.adm-ftable { width: 100%; border-collapse: collapse; border-top: 1px solid var(--hairline); }
+.adm-ftable :is(th, td) { height: 48px; padding: 0 0 0 var(--space-4); border-bottom: 1px solid var(--hairline); color: var(--ink-primary); font-size: 15px; font-weight: 400; line-height: 20px; text-align: left; vertical-align: middle; }
+.adm-ftable thead th.gc8-label { height: 36px; color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; }
+.adm-ftable :is(th, td):first-child { padding-left: 0; }
+.adm-ftable .adm-n { text-align: right; font-variant-numeric: tabular-nums; }
+.adm-ftable:not(.adm-ftable--two) :is(th, td).adm-n { width: 112px; }
+.adm-ftable td.gc8-empty { color: var(--ink-secondary); text-align: left; }
+.adm-cover { display: flex; flex-direction: column; gap: var(--space-6); padding-top: 14px; border-top: 1px solid var(--hairline); }
+.adm-cover-part { display: flex; flex-direction: column; gap: var(--space-2); min-width: 0; }
+.adm-cover-text { margin: 0; color: var(--ink-primary); font-size: 15px; line-height: 22px; }
+.adm-ruled { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--hairline); }
+.adm-ruled > li { padding: 10px 0; border-bottom: 1px solid var(--hairline); color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+@media (min-width: 1000px) { .adm-cover { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; } }

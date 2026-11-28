@@ -1,11 +1,10 @@
 import { BrandedClusters,BrandedGrades } from './learning/WideFeatures';
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import { AnimatePresence,motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { Briefcase,Calculator,Eye,HeartPulse,PenSquare,Target } from 'lucide-react';
 import React,{ useEffect,useRef,useState } from 'react';
 import { LEAVING_CERT_STRATEGY_REFERENCE_LIST } from '../data/references/leavingCertStrategy';
@@ -19,8 +18,20 @@ import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
 import { MotionDiv } from './Motion';
 import NorthStarCallout from './NorthStarCallout';
+import { AnswerGroup,AnswerLine,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = redTheme;
+
+/** The warning triangle the planner has always drawn beside a bad choice, in ink-3. */
+const WarningGlyph = ({ className = '' }: { className?: string }) => (
+    <span className={`ex-icon ${className}`.trim()}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+    </span>
+);
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -38,43 +49,30 @@ const CommandWordDecoder = () => {
     const [selected, setSelected] = useState(words[0]);
 
     return (
-         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Command Word Decoder</h4>
-                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Misreading what this word is asking for is one of the most common ways students lose marks.</p>
-            </div>
-            <div className="flex justify-center flex-wrap gap-2 mb-6">
+        <ExerciseSheet label="Exam Skills Tool" title="Command Word Decoder" sub="Misreading what this word is asking for is one of the most common ways students lose marks." name="CommandWordDecoder">
+            {/* The four words: one is shown at a time */}
+            <AnswerGroup kind="one" columns={2}>
                 {words.map(w => (
-                    <button
+                    <ChoiceTile
                         key={w.word}
+                        chosen={selected.word === w.word}
                         onClick={() => setSelected(w)}
-                        style={{
-                            backgroundColor: moduleFill(selected.word === w.word ? "var(--module-danger)" : "var(--module-surface)"),
-                            border: selected.word === w.word ? "2px solid var(--module-line)" : "2px solid var(--module-line)",
-                            borderRadius: 20,
-                            padding: '10px 20px',
-                            fontSize: 14,
-                            fontWeight: selected.word === w.word ? 600 : 500,
-                            color: moduleText(selected.word === w.word ? "var(--module-on-fill)" : "var(--module-muted)"),
-                            cursor: 'pointer',
-                        }} data-wide-button="true" data-selected={!!(selected.word === w.word)} data-tone="coral" aria-pressed={!!(selected.word === w.word)}
-                    >
-                        {w.word}
-                    </button>
+                        label={w.word}
+                    />
                 ))}
+            </AnswerGroup>
+            {/* What the chosen word asks for: words you read, under their labels, not in boxes */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="ex-block">
+                    <ExerciseLabel>Expectation</ExerciseLabel>
+                    <p className="ex-block-title">{selected.expectation}</p>
+                </div>
+                <div className="ex-block">
+                    <ExerciseLabel>Common Pitfall</ExerciseLabel>
+                    <p className="ex-block-title">{selected.pitfall}</p>
+                </div>
             </div>
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                 <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 22px' }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Expectation</span>
-                    <p className="mt-3" style={{ fontSize: 15, color: "var(--module-ink)" }}>{selected.expectation}</p>
-                 </div>
-                 <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 22px' }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-ink)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Common Pitfall</span>
-                    <p className="mt-3" style={{ fontSize: 15, color: "var(--module-ink)" }}>{selected.pitfall}</p>
-                 </div>
-             </div>
-        </div>
+        </ExerciseSheet>
     );
 }
 
@@ -160,82 +158,64 @@ const ExamDayTimelineBuilder = () => {
     const totalMinutes = sequence.reduce((sum, a) => sum + a.time, 0);
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Preparation</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Exam Morning Planner</h4>
-                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Build your optimal exam morning routine. Order matters.</p>
-            </div>
-
-            {/* Warning flash */}
+        <ExerciseSheet label="Exam Preparation" title="Exam Morning Planner" sub="Build your optimal exam morning routine. Order matters." name="ExamDayTimelineBuilder">
+            {/* Warning flash: a line that answers the choice, not a callout with a side stripe */}
             <AnimatePresence>
                 {flashWarning && (
-                    <MotionDiv initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="mb-6" style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-                        <p className="text-sm italic" style={{ color: "var(--module-ink)" }}>{flashWarning}</p>
+                    <MotionDiv initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+                        <AnswerLine tone="note" live>{flashWarning}</AnswerLine>
                     </MotionDiv>
                 )}
             </AnimatePresence>
 
-            {/* Activity chips */}
-            <div className="mb-8">
-                <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 12, textTransform: 'uppercase' as const }}>Click to add to your timeline:</p>
-                <div className="flex flex-wrap gap-2">
-                    {TIMELINE_ACTIVITIES.map(activity => {
-                        const isSelected = selectedIds.has(activity.id);
-                        return (
-                            <button
-                                key={activity.id}
-                                onClick={() => handleAddActivity(activity)}
-                                disabled={isSelected || showFeedback}
-                                className="inline-flex items-center gap-1.5 transition-all"
-                                style={
-                                    isSelected
-                                        ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: "var(--module-danger-text)", opacity: 0.6, cursor: 'default' }
-                                        : activity.isBad
-                                        ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: "var(--module-muted)", cursor: 'pointer' }
-                                        : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: "var(--module-ink)", cursor: 'pointer' }
-                                } data-wide-button="true" data-selected={!!(isSelected)} data-tone="coral" aria-pressed={!!(isSelected)}
-                            >
-                                {activity.isBad && !isSelected && <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: "var(--module-solid)", flexShrink: 0 }} />}
+            {/* Activities: each one is added to the timeline once */}
+            <AnswerGroup kind="several" legend="Click to add to your timeline:">
+                {TIMELINE_ACTIVITIES.map(activity => {
+                    const isSelected = selectedIds.has(activity.id);
+                    return (
+                        <ChoiceTile
+                            key={activity.id}
+                            kind="several"
+                            chosen={isSelected}
+                            onClick={() => handleAddActivity(activity)}
+                            disabled={isSelected || showFeedback}
+                            label={<span className="inline-flex items-center gap-2">
+                                {activity.isBad && !isSelected && <span aria-hidden="true" style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: "var(--ink-muted)", flexShrink: 0 }} />}
                                 {activity.label}
-                                <span style={{ fontSize: 11, color: "var(--module-muted)", marginLeft: 4 }}>{activity.time}m</span>
-                            </button>
-                        );
-                    })}
-                </div>
-            </div>
+                            </span>}
+                            meta={<>{activity.time}m</>}
+                        />
+                    );
+                })}
+            </AnswerGroup>
 
-            {/* Timeline */}
+            {/* Timeline: the planner's own drawing, a line through the morning, in ink and hairline */}
             {sequence.length > 0 && (
-                <div className="mb-6">
-                    <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 12, textTransform: 'uppercase' as const }}>Your Morning Timeline:</p>
+                <div>
+                    <ExerciseLabel className="mb-3">Your Morning Timeline:</ExerciseLabel>
                     <div className="relative pl-16 space-y-0">
                         {sequence.map((activity, index) => {
                             const startMin = getRunningTime(index);
                             const timeLabel = formatTime(startMin);
                             return (
                                 <MotionDiv key={activity.id} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }} className="relative flex items-stretch">
-                                    <span className="absolute left-[-64px] top-3 text-right" style={{ fontSize: 12, fontWeight: 600, color: "var(--module-muted)", width: 48 }}>{timeLabel}</span>
+                                    <span className="absolute left-[-64px] top-3 text-right ui-readout" style={{ fontSize: 13, color: "var(--ink-muted)", width: 48 }}>{timeLabel}</span>
                                     {index < sequence.length - 1 && (
-                                        <div className="absolute top-6 bottom-0" style={{ left: -1, width: 2, backgroundColor: "var(--module-surface)" }} />
+                                        <div className="absolute top-6 bottom-0" style={{ left: -1, width: 2, backgroundColor: "var(--hairline)" }} />
                                     )}
-                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: moduleFill(activity.isBad ? "var(--module-solid)" : "var(--module-danger)") }} />
-                                    <div className="ml-4 mb-2 flex-1 flex items-center gap-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: activity.isBad ? "1.5px solid var(--module-line)" : "1.5px solid var(--module-line)", borderRadius: 12, padding: '14px 16px' }}>
-                                        {activity.isBad && (
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--module-ink)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-                                                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
-                                            </svg>
-                                        )}
-                                        <span style={{ fontSize: 14, fontWeight: 500, color: moduleText(activity.isBad ? "var(--module-ink)" : "var(--module-ink)") }}>{activity.label}</span>
-                                        <span style={{ marginLeft: 'auto', fontSize: 13, color: "var(--module-muted)" }}>{activity.time} min</span>
+                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: activity.isBad ? "var(--ink-muted)" : "var(--ink-primary)" }} />
+                                    <div className="ml-4 mb-2 flex-1 flex items-center gap-2" style={{ padding: '10px 0', borderBottom: "1px solid var(--hairline)" }}>
+                                        {activity.isBad && <WarningGlyph />}
+                                        <span style={{ fontSize: 15, color: "var(--ink-primary)" }}>{activity.label}</span>
+                                        <span className="ui-readout" style={{ marginLeft: 'auto', fontSize: 13, color: "var(--ink-muted)" }}>{activity.time} min</span>
                                     </div>
                                 </MotionDiv>
                             );
                         })}
                         <div className="relative">
-                            <span className="absolute left-[-64px] top-0 text-right" style={{ fontSize: 12, fontWeight: 600, color: "var(--module-muted)", width: 48 }}>{formatTime(totalMinutes)}</span>
-                            <div className="absolute top-1 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: "var(--module-surface)" }} />
-                            <p className="ml-4" style={{ fontSize: 13, color: "var(--module-muted)" }}>
+                            <span className="absolute left-[-64px] top-0 text-right ui-readout" style={{ fontSize: 13, color: "var(--ink-muted)", width: 48 }}>{formatTime(totalMinutes)}</span>
+                            <div className="absolute top-1 rounded-full" style={{ left: -5, width: 8, height: 8, border: "1.5px solid var(--outline-soft)", backgroundColor: "var(--surface-paper)" }} />
+                            <p className="ml-4" style={{ fontSize: 13, color: "var(--ink-muted)" }}>
                                 {totalMinutes > 140 ? `Total: ${totalMinutes} min — You may be cutting it close!` : `Total: ${totalMinutes} min`}
                             </p>
                         </div>
@@ -243,60 +223,58 @@ const ExamDayTimelineBuilder = () => {
                 </div>
             )}
 
-            {/* Buttons */}
+            {/* Buttons: the exercise's own, white with a line and a quiet text button */}
             {sequence.length > 0 && !showFeedback && (
-                <div className="flex justify-center items-center gap-4 mt-6">
-                    <motion.button onClick={handleCheckPlan} whileTap={{ y: 3 }} className="text-[var(--module-ink)] font-semibold" style={{ backgroundColor: "var(--module-danger)", borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: "3px solid var(--module-line)", boxShadow: 'none' }} data-wide-button="true">
+                <div className="ex-actions">
+                    <Button onClick={handleCheckPlan}>
                         Check My Plan
-                    </motion.button>
-                    <button onClick={handleReset} style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-muted)" }} data-wide-button="true">
+                    </Button>
+                    <TextButton tone="quiet" onClick={handleReset}>
                         Start Over
-                    </button>
+                    </TextButton>
                 </div>
             )}
 
-            {/* Feedback */}
+            {/* Feedback: words you read, held by hairlines, no side stripes */}
             <AnimatePresence>
                 {showFeedback && (
-                    <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-8 space-y-4">
+                    <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
                         {hasBadChoices && (
-                            <div style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: "var(--module-ink)" }}>Bad choices detected:</p>
+                            <div className="ex-block">
+                                <p className="ex-block-title">Bad choices detected:</p>
                                 {sequence.filter(a => a.isBad).map(a => (
-                                    <div key={a.id} className="flex items-start gap-2 mb-1">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--module-ink)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 3 }}>
-                                            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
-                                        </svg>
-                                        <p style={{ fontSize: 14, color: "var(--module-ink)" }}><strong>{a.label}</strong> — {a.warning}</p>
+                                    <div key={a.id} className="flex items-start gap-2">
+                                        <WarningGlyph className="mt-1" />
+                                        <p className="ex-block-text text-ink-primary"><strong>{a.label}</strong> — {a.warning}</p>
                                     </div>
                                 ))}
                             </div>
                         )}
 
-                        <div style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                            <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: "var(--module-danger-text)" }}>Optimal morning sequence:</p>
-                            <ol className="list-decimal list-inside space-y-1">
+                        <div className="ex-block">
+                            <p className="ex-block-title">Optimal morning sequence:</p>
+                            <ol className="list-decimal list-inside space-y-1 ex-block-text text-ink-primary">
                                 {optimalSequence.map(a => (
-                                    <li key={a.id} style={{ fontSize: 14, color: "var(--module-danger-text)" }}>{a.label} <span style={{ color: "var(--module-muted)" }}>({a.time} min)</span></li>
+                                    <li key={a.id}>{a.label} <span className="text-ink-muted">({a.time} min)</span></li>
                                 ))}
                             </ol>
                         </div>
 
-                        <div style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                            <p className="text-sm italic" style={{ color: "var(--module-ink)" }}>
+                        <div className="ex-block">
+                            <p className="ex-quote">
                                 "A calm, structured morning sets your brain up to perform at its best. A chaotic one sets it up for panic."
                             </p>
                         </div>
 
-                        <div className="flex justify-center mt-4">
-                            <button onClick={handleReset} style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-muted)" }} data-wide-button="true">
+                        <div className="ex-actions">
+                            <TextButton tone="quiet" onClick={handleReset}>
                                 Start Over
-                            </button>
+                            </TextButton>
                         </div>
                     </MotionDiv>
                 )}
             </AnimatePresence>
-        </div>
+        </ExerciseSheet>
     );
 };
 

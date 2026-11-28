@@ -83,7 +83,8 @@ describe('Command-Word Reflex subject picker', () => {
     fireEvent.click(screen.getByRole('button', {name:'All subjects'}));
     fireEvent.change(screen.getByRole('searchbox', {name:'Search subjects'}), {target:{value:'Chemistry'}});
     fireEvent.click(screen.getByRole('button', {name:/^Chemistry/}));
-    expect(screen.getByRole('button', {name:'All subjects'})).toHaveTextContent('Chemistry');
+    // All subjects is a link now (area 7b, board c-tools2-command); the chosen subject shows in the example's label.
+    expect(screen.getByText(/^Try the idea · Chemistry/)).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', {name:'Start practising'}));
     expect(screen.getByText(/Tap the command word/i)).toBeInTheDocument();
   });

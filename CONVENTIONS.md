@@ -73,69 +73,56 @@ have no other way in — so a new destination gets a row there as well as a side
 
 ---
 
-## 2. The two surface registers — ToolHeader vs SectionCard
+## 2. The frame of a screen — bars, pages, tools, things that come up over
 
-Both are **real component files** with their own docblocks ("sister components, different surface, different role").
+Since 26 November 2026 every screen is built inside one agreed frame (the design skill,
+`~/.claude/skills/nextstepuni-design/`, `references/navigation.md`; the code in `components/ui/`):
 
-- **`components/ToolHeader.tsx`** — the Innovation-Zone *tile-list* / Training-Hub header. Cream ground `#FAFBF6`, **no**
-  border, **no** shadow, a 108px square saturated-colour tile on the left holding a white-ink SVG, then eyebrow + serif
-  title + sans subtitle. Props `{themeColor, eyebrow, title, subtitle, icon?|iconImage?|iconBlob?, className?}`.
-  Consumers: `InnovationZone.tsx`, `TrainingHub.tsx`. It replaced the legacy flat-coloured banner.
-- **`components/SectionCard.tsx`** — the home-dashboard nav tile (Modules / Innovation Zone / My Progress / Learning
-  Paths). White card, `1px #EDEBE8` border, soft shadow, painted-blob + ink illustration tile, eyebrow/serif title/sans
-  subtitle, a right arrow that slides in on hover, 2px hover-lift. Props `{eyebrow, title, subtitle, icon, onClick?,
-  className?}`. Consumer: `KnowledgeTree.tsx`.
+- **A place** (Home, Progress, Study, Journey, Launch) has no leave control; the tab bar (phone) or the
+  sidebar (laptop) is how you move. Its opening line is a large headline in the content.
+- **A page** (tapped into: a tool's home, a subject, Settings) uses the shared bar, `PageHeader` or `TopBar`
+  (`components/ui/Bars.tsx`): one Back at the top left, the small line over the name. **A Launchpad tool**
+  uses the same bar (`tool`): its family over its name, its own drawing at the right end on a phone only.
+- **Over-screens** (a viewer, a session, a practice run) use `OverScreen` with Close at the top left; things
+  that come up over a phone screen are a `Sheet` (from the bottom); a destructive choice is the two-button
+  `Confirm`; a passing note is a message (`showMessage`, one `MessageHost`), and a lasting one such as
+  offline is `StandingMessage`.
+- One leave control per screen, always at the top left. Never a top-right X, never a "Back to …" link in the
+  content as well.
 
-**Critical:** the IZ *content tools* (`CommandWordReflex`, `CatchUpLane`) render **neither** — confirmed they import
-neither. The ToolHeader band belongs to the InnovationZone tile list, not to a tool body. Inside a tool, identity is
-carried by a per-tool colour trio + the shared **`cardShell`** literal (copy verbatim):
-
-```
-w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700
-bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7
-```
-
-White card, 2px ink border, **hard 4px offset shadow (no blur)**, `rounded-2xl`. List/tile rows use the 3px-shadow
-variant + `hover:-translate-y-0.5`. Each tool declares its own identity hex consts at module top (not in `design/tokens`):
-CatchUpLane `CYAN #0E9AA8 / #E6F4F5 / #0A5560`; CommandWordReflex `INDIGO #6366F1 / #EEF0FF / #3730A3` (+ an amber
-highlighter pair). Only `success`/`accent` come from `COLORS`.
+**Retired, do not copy:** `components/ToolHeader.tsx` (the cream tile header) and `components/SectionCard.tsx`
+(the old dashboard tile) belong to the look before 24 November 2026, and so does the `cardShell` literal the
+old Innovation-Zone tools shared (2px ink border, hard 4px offset shadow) and each tool's own identity hex
+(cyan, indigo). A tool's identity now comes from its own drawing, headline, pictures and graphs, inside the
+shared frame.
 
 ---
 
-## 3. The three aesthetic registers (with live exemplars)
+## 3. One look, and each screen's character
 
-The ExamStrategiser exemplars CLAUDE.md once named are **deleted**. The live ones:
+The three "aesthetic registers" this section used to name (Headspace saturated cards, Mercury stats cards,
+Brilliant.org 2px ink cards) and the chunky neobrutalist tool look are retired: Alex chose one look for every
+screen on 24 November 2026 ("the sign-in standard") and approved every screen in it by 26 November 2026. The
+rule that replaced them: **the system is the frame and each screen keeps its character**
+(`references/identity.md`, "The two halves"). Bars, the one leave control, margins, type, buttons, chosen
+state, colours and safe areas are shared; a screen's own Star Crew character or drawing, headline, pictures
+of real things and graphs stay. Never flatten a screen into plain rows to make it "consistent", and never
+invent a new card, button, menu, pop-up or header: use or extend the shared part.
 
-- **Headspace — bold-colour-environment.** Each card **owns a saturated identity colour as its background** (not a
-  tint/border), white text, translucent-white chips `rgba(255,255,255,0.18–0.25)`, soft circle "blob" overlays. Colours
-  from the `WORLDS` palette in `components/immersiveDeck/colorWorlds.ts`. **Exemplar:**
-  `components/journey/PeerIslandsList.tsx`. Use for celebratory / social / identity screens.
-- **Mercury — data-dense.** White cards, restrained `1px #EDEBE8` borders, confident large numerals (`text-4xl/5xl`),
-  no decoration, generous whitespace, muted neutral labels. **Exemplar:** `components/CAOPointsSimulator.tsx` (the Points
-  Summary card). Note: code-Mercury is neutral + orange-accented — the memory's "lavender" is **not** in code, and purple
-  is banned (§9 #7). Use for dashboards / stats.
-- **Brilliant.org — mistake-first / instrument-panel.** White cards, bold `2px solid #1a1a1a` borders, radius 16,
-  mistake-first pedagogy (lead with the wrong choice, visualise the mark consequence), Framer Motion where animation
-  **encodes meaning**, SVG diagrammatic interactives, inset cream allowed (`#FDF8F0`). **Exemplar:**
-  `components/ExamCrisisManagementModule.tsx`. Use for dense interactive learning tools + module simulators.
-
-Cross-register primitives: `components/immersiveDeck/HybridCard.tsx` `PrimaryButton`/`SecondaryButton`;
-`components/ui/PrimaryActionButton.tsx` (the IZ orange CTA). **Always import Motion from `components/Motion.tsx`**
-(`MotionDiv = motion.div as any`, the React-19/Framer workaround) — never from `'framer-motion'` directly.
-
-The IZ content tools are a de-facto **4th idiom**: the chunky `cardShell` neobrutalist look (§2), not any of the three
-module registers and not `ModuleLayout`.
+**Always import Motion from `components/Motion.tsx`** (`MotionDiv = motion.div as any`, the React-19/Framer
+workaround), never from `'framer-motion'` directly. Motion values come from the `--t-*` and `--ease-*`
+tokens (`references/motion.md`): short, no bounce, no looping decoration.
 
 ---
 
 ## 4. Question-display patterns — Command-Word Reflex + Catch-Up Lane
 
 **Shared skeleton.** Both are `React.FC<{ uid?: string; studentSubjects?: string[] }>`, self-routing via local `useState`
-state machines, returning early per state. Both share: the `cardShell` string, `AnimatePresence mode='wait'` over a
-single `MotionDiv` keyed per item+phase, the `fade` transition `{initial:{opacity:0,y:10}, animate:{opacity:1,y:0},
-exit:{opacity:0,y:-8}, transition:{duration:0.22}}`, a Higher/Ordinary toggle, and a cycle-grouped subject picker.
-Typography is set **inline** (not Tailwind font classes): serif `fontFamily:"'Source Serif 4', serif"`, body
-`"'DM Sans', sans-serif"`; uppercase micro-labels `text-[11px] font-bold tracking-[0.14em]` in `#9e9186`.
+state machines, returning early per state. Both share: `AnimatePresence mode='wait'` over a single `MotionDiv` keyed
+per item+phase, the `fade` transition `{initial:{opacity:0,y:10}, animate:{opacity:1,y:0}, exit:{opacity:0,y:-8},
+transition:{duration:0.22}}`, a Higher/Ordinary toggle, and a subject picker. Their look is the shared frame and
+parts (§2, §5): Command-Word Reflex was rebuilt on them in November 2026; Catch-Up Lane has left the app (its code and
+direct link stay) and still carries the retired `cardShell` and serif, which are not a pattern to copy.
 
 **Command-Word Reflex** — state `view 'home'|'play'` + `phase 'spot'|'reveal'`. The cue-detection algorithm (verbatim,
 `components/CommandWordReflex/index.tsx`): split the stem `q.stem.split(/(\s+)/)` (whitespace preserved);
@@ -196,49 +183,61 @@ an HL question must never appear at OL or vice versa.
 
 ---
 
-## 5. Design system — tokens, fonts, borders, the Tailwind constraint
+## 5. Design system — tokens, type, the shared parts, the Tailwind constraint
 
-Colour comes from **one source per layer**, kept in sync: inline-style / SVG / Framer → `import { COLORS } from
-'design/tokens.ts'`; Tailwind classes → named colours in `tailwind.config.ts`; CSS-var consumers
-(`bg-[var(--accent-hex)]`) → the `:root` block in `index.html`. Never hardcode a hex when a token exists.
+The specification is the design skill (`~/.claude/skills/nextstepuni-design/SKILL.md`, its "Never ship"
+table, and `references/tokens.md` and `components.md`); Alex's rulings in `references/decisions.md` outrank
+it and this file. Colour, space, radius and motion come from **one home**: the `:root` and `.dark` blocks at
+the top of `index.css`, mirrored for TypeScript in `design/tokens.ts` and for Tailwind in
+`tailwind.config.ts`. Never type a hex, rgb, size or duration where a token exists:
+`test/colourLiterals.guard.test.ts` fails on a new literal.
 
-**Core tokens (`COLORS`, verbatim):** `accent #F26B1F`, `accentDark #B54D14`, `accentTint #FDEEDF`,
-`accentDarkText #8C3A0E`, `success #3A8D5F`, `successTint #E8F2EC`, `successDarkText #1F5F3E`, `cream #FDF8F0`,
-`creamSubtle #F9F9F7`, `border #1A1A1A` (the ink/border colour — the token key is `COLORS.border`, there is no `COLORS.ink`). Untoken'd but standard: page bg `#f0f0f0`, card `#ffffff`, muted border `#d0cdc8`,
-muted text `#7a7068`, label text `#9e9186`.
+**Colour.** The page is white (`--surface-canvas`; dark `#181818`), never grey or cream. Four surfaces:
+canvas, `--surface-paper` (a box you press, the one raised sheet), `--surface-soft` (a track, a pressed
+moment, a disabled button, the selection-bar tray; never the fill of a control), `--surface-raised` (menus,
+sheets, messages). Ink `--ink-primary` / `--ink-secondary` / `--ink-muted`; lines `--hairline`,
+`--outline-soft` (a control's line), `--outline-strong` (the ink edge of what is chosen). The main button is
+charcoal, `--action`. **Orange `--nsu-orange` (`#eb692a`) is for the artwork only** (the Star Crew, a tool's
+drawing, the wordmark's full stop, one live word, the student's own value in a graph); onboarding's own
+pages keep `#f26b1f`. **Green `--success-hex` marks done and correct** (a tick, a mark); feedback sentences
+are ink. There is no orange button, fill, border, tint, chip or tab marker, and no coloured stripe down the
+side of anything (callouts included).
 
-**The hardest rule — accent ≠ success.** `accent #F26B1F` = brand / the action to take / selected / active / in-progress
-fill / focus ring. `success #3A8D5F` = correct / complete / you-got-it / healthy zone. **Never use orange to mean
-good/complete** — that's success's job.
+**Type.** One typeface, ABC Diatype, sentence case, through the named styles in `index.css`: `t-title`,
+`t-heading`, `t-row`, `t-body`, `t-sub`, `t-meta`, `t-label` (11px capitals, the only text that small), and
+the mono `t-readout` / `ui-readout` (Departure Mono) for timers, counters, dates and citations. Headlines are
+regular weight (onboarding's bold capital titles and the island welcome's headline are the two exceptions
+on record). No Source Serif, no DM Sans in new work, no italic for emphasis.
 
-**Typography.** Serif = **Source Serif 4** (`font-serif`) for titles, headings, concept terms, stat numbers. Sans =
-**DM Sans** (`font-sans`) for body and labels. Section labels 10–11px / 700 / UPPERCASE / letter-spacing 0.12em /
-`#9e9186`; stat numbers 32–48px / 700 in accent.
+**Depth and boxes.** Four levels: on the page (read it: no box, held together by space and a hairline), a
+box you press (1px `--outline-soft`, no shadow), the one raised sheet per screen (`--lift`), floating
+(`--float`). No box round content that cannot be pressed, no box inside a box, no hard offset shadow. Chosen
+is a 1px ink edge plus a 1px inset and a tick that draws (round for "pick one", rounded square for "pick
+several").
 
-**Card system.** Primary card = white, `2px solid #1a1a1a`, radius 14–16, padding 18–24 (the bold ink border is the
-signature). Active/selected = `accentTint #FDEEDF` + `2px solid #F26B1F`. Muted/locked = white + `1.5px solid #d0cdc8`.
-Numbered badges/steppers encode state by token (active=accent, completed=success, locked=`#d0cdc8`), **never rainbow**.
-
-**No coloured left borders — on CARDS.** Use dots, tints, fills, or coloured text instead. The **one sanctioned**
-left border is the **Callout** primitive: `accentTint` bg + `border-left:3px solid #F26B1F`, radius `0 10px 10px 0`,
-italic 14px `#8C3A0E` (success variant `#3A8D5F`/`#1F5F3E`). So: cards no, callouts yes (see §9 #5).
+**Shared parts** (`components/ui/`, styled in `parts.css`, framed by `frame.css` / `Frame.tsx`): Button
+(main / second; three heights), TextButton, IconButton, Choice and CheckRow, the selection bar
+(`HorizontalTabs`, two to four short words), Menu (a choice applies at once), Sheet and Confirm, OverScreen,
+Message / StandingMessage, TopBar / TabBar / PinnedFooter, PageHeader, Row and List, Field and SearchField,
+EmptyState / LoadingShape / ErrorState. A hand-made one in screen code is a defect
+(`test/sharedParts.guard.test.ts`); positioning against the raw screen edge instead of the frame is caught
+by `test/frameEdges.guard.test.ts`. Both baselines only go down (`*_UPDATE=1`). Targets are at least 44 x 44.
 
 **Tailwind is a PostCSS build** (`postcss.config.js` + `tailwind.config.ts`; **no CDN** in `index.html`). JIT
 class-literal constraint: never build `bg-${color}-500` in component code. `moduleThemes.ts` *can* construct theme class
 strings dynamically **only** because `tailwind.config.ts` exhaustively **safelists** every shade it emits. For any value
 not in the safelist, use inline `style={{}}` — that's why all dynamic hex/widths live in inline style.
 
-**Banned in module/tool surfaces:** saturated extra accents (amber/yellow/lime/non-token orange as primary), bright green
-other than `success`, purple/violet as accent, red as primary (only as a "harmful thought" marker), dark/near-black
-module backgrounds, rainbow card sequences, coloured card backgrounds (white only), gradients on cards/backgrounds. The
-**only** sanctioned off-token pair is the productive-vs-intrusive simulation pair `#5B8FD4` / `#E85D75` (sims only). IZ
-tools each declare their own identity hex (cyan/indigo) as a deliberate self-contained exception. Listening Studio's
-charcoal sitting ground is the one approved dark surface (§10a).
+**Still banned in module and tool surfaces:** saturated extra colours, purple or violet as an accent, red
+except for a destructive action or a wrong answer, gradients, glows, emoji, sparkle or rocket icons, an icon
+in a tinted tile. The **only** sanctioned off-token pair is the productive-vs-intrusive simulation pair
+`#5B8FD4` / `#E85D75` (sims only). The study room's dark olive and Listening Studio's charcoal sitting ground
+are the approved dark surfaces (§10a).
 
 `ConceptCardGrid` (`components/ModuleShared.tsx`) replaces all inline numbered lists: 3+ named concepts with descriptions
 → `ConceptCardGrid`, never `1) Term, 2) Term` prose.
 
----
+Its look comes from the system above; change it in `ModuleShared.tsx`, never per module.
 
 ## 6. Firestore patterns
 
@@ -309,11 +308,9 @@ new validated field/collection needs matching rules.
 | Type a card-deck tool's **data + state** | `types/catchUpLane.ts` + the flat array + tail accessors in `catchUpLaneData.ts` |
 | Add **points / achievement / quest** logic | `hooks/useGamification.ts` (+ `hooks/useQuests.ts` for claim-once); respect `firestore.rules` invariants |
 | Reuse a module **UI primitive** | `components/ModuleShared.tsx` (`Highlight`, `ReadingSection`, `MicroCommitment`, `ConceptCardGrid`, `ActivityRing`) — never roll your own |
-| Pick the right **header** | `components/SectionCard.tsx` (dashboard tile) vs `components/ToolHeader.tsx` (IZ tile-list header) — don't add ToolHeader inside a tool body |
-| Style a **Headspace** screen | `components/journey/PeerIslandsList.tsx` + `components/immersiveDeck/colorWorlds.ts` |
-| Style a **Mercury** stats screen | `components/CAOPointsSimulator.tsx` |
-| Style a **Brilliant.org** interactive | `components/ExamCrisisManagementModule.tsx` |
-| Use the shared **CTA / Motion** primitives | `components/ui/PrimaryActionButton.tsx`; import motion via `components/Motion.tsx`, never `'framer-motion'` |
+| Pick the right **header** | `components/ui/PageHeader.tsx` for a page, `TopBar` (`components/ui/Bars.tsx`, `tool`) for a Launchpad tool, `OverScreen` for a viewer or task. Never `ToolHeader` or `SectionCard` (retired, §2) |
+| Build or restyle **any screen** | The design skill first (`~/.claude/skills/nextstepuni-design/SKILL.md`, its "Never ship" table); start from today's screen and keep its character; frame it with `components/ui/` and the `index.css` tokens (§3, §5) |
+| Use the shared **button / Motion** primitives | `components/ui/Button.tsx` (`Button` kind main or second, `TextButton`, `IconButton`); import motion via `components/Motion.tsx`, never `'framer-motion'` |
 | Add an **on-paper study tool** to the Paper Trail viewer | `components/PaperTrail/textOverlay.ts` (live pdf.js text-layer scan → fractional-position tokens) + the `Tools` popover + gated tool rows in `components/PaperTrail/Viewer.tsx`; subject→dataset mapping in `components/PaperTrail/subjectMeta.ts`. Overlays position by fraction of page W/H (same convention as the answer-map anchors) so they ride zoom + virtualisation. The one-shot scan is guarded by a **ref**, not `scanState` — putting the loading state in the effect deps self-cancels the in-flight scan. Escape unwinds the open panel/menu before closing the viewer. Tools needing booklet/Storage data ship **gated OFF** (e.g. `FORMULAE_BOOKLET_LIVE`) so no dead button reaches students |
 | Add **per-question topic tags** (frequency chips / cross-year jump) | Runtime: `components/PaperTrail/topics.ts` (paperKey normalise, `frequencyFor`, `siblingsFor`) reading committed `data/paperTrail/topicTags.ts`; wired in `Viewer.tsx` (Topics tool → chip per anchor + cross-year sheet) and `index.tsx` (`topics` prop + `onCrossYear`). Tags join to the answer-map anchors by question `n`, so the tool only lights when a paper has BOTH an answer map and a tag record. Generate a wave with the verify-don't-guess pipeline in `scripts/paper-trail/topic-tags/` (extract stems → classifier agents → adversarial verifier agents → `tags/<subject>.json` → `build-tags.mjs`); see `TOPICS.md`. Frequency is always phrased "N of M **tagged** years" so partial coverage stays honest |
 | Show a **question as a real paper crop** (Topic Vault feed) | Runtime: `components/PaperTrail/VaultQuestionCard.tsx` derives a paper-side region via `paperRegion.ts` (`paperRegionFor`) from a lazily-fetched answer-map sidecar (`vaultResolve.ts` orders Storage sidecar → hosted `public/paper-anchors/` fallback; `isAnswerMap` shape-guards the SPA-rewrite 200). **Honesty rule: never show a crop you can't stand over** — missing sidecar / non-monotonic anchors / >`MAX_PAGES` span → `paperRegionFor` returns null and the card degrades to "open in the full paper". Generate anchors credential-free with `scripts/paper-trail/paper_anchors.py` (paper-side only, `mode:'pagejump'`, `conf<0.6`, written to `public/paper-anchors/` and served by Hosting itself). **Section-restart papers** (numbering restarts per reading text / Part) use the `armed_sectioned` detector + a `SUBJECT_ARMED_PATTERNS` entry (arm on the question-block header, disarm/`open` on the next section header, **case-sensitive** so title-case contents entries don't fire) + per-question crop-**ends** (`endP`/`endY`) that clamp each island's last question at the next boundary. Shipped: german HL, irish P2, geography Part One. **Every new anchor file is render-QA'd** (view the actual crop) before shipping — a wrong crop shown to a student is the worst failure; a missing one is acceptable. Type-split subjects (irish, geography) stay unpinned/`question` and get their armed sidecars from a second explicit `--grammar armed_sectioned` pass writing disjoint fileids. `test/vaultAnchors.test.ts` sweeps every committed sidecar; `test/paperRegion.test.ts` pins the derivation. See `scripts/paper-trail/PAPER-ANCHORS.md` |
@@ -326,7 +323,7 @@ new validated field/collection needs matching rules.
 | **Export** a printable pack (topic revision pack / mock set) | `components/PaperTrail/revisionPack.ts` — pure `buildPackHtml` (self-contained, inline-CSS, print-friendly, escapes untrusted labels) + `packFilename` slug + a thin `downloadPack` Blob wrapper. Lists **question references only** (year/level/paper/Q-number) with the SEC attribution footer — never answer text. Pass `dateIso` in; don't read the clock inside the builder |
 | Add a **step after a study session** (the end-of-session quiz is the first) | Hook it in `components/study/StudySessionView.tsx` AND `StudySessionView.mobile.tsx` (near-identical copies) **after** `saveSession` + `resetSession`, gated on `savedSummary` — never before the save, which is the fragile unsaved `complete` phase behind the lost-study-time outbox. Capture what the step needs (e.g. `session.topicSelection`) in `rememberSaved`, because `resetSession` clears it. `lazy()` the step so the study room chunk stays lean. Preference = an optional `UserSettings` boolean (`studyQuiz`), read via `useSettingsContext()?.settings` (null in tests), toggled in `StudySessionSetup` and `YourSetupView`. Questions come from Mark Bank through `components/study/quiz/studyQuizPlan.ts` (`cardsForCurriculumNode` + `resolveSessionQueue`, dynamic `loadCards` only — the boot-precache guard fails the build on a static card import); its scoring is pinned to `SessionScreen`'s in `test/studyQuizPlan.test.ts`. A real session needs five minutes before it can save, so look at the page with `/study-quiz-dev.html?subject=…&level=…&theme=dark` |
 | Add a **local notification** (study timer is the first) | `services/notifications.ts`: add an id to `NOTICE_IDS` and a key to `NotificationPreferences` (`types.ts`, saved in `settings/{uid}`); keep the when-to-schedule rules pure and tested like `services/studyTimerAlerts.ts`; run them from a hook like `hooks/useStudyTimerAlerts.ts`. Never prompt on launch: `scheduleLocalNotice` never asks, the student's tap does (`hooks/useStudyNotifications.ts`). See §11 |
-| Get a **colour / font** token | `design/tokens.ts` (`COLORS`); `tailwind.config.ts` (class names); `index.html` `:root` (CSS vars) |
+| Get a **colour / type / space** token | the `:root` and `.dark` blocks at the top of `index.css` (mirrored in `design/tokens.ts` and `tailwind.config.ts`); the named type styles `t-*` in `index.css` |
 | Add/change a **security rule** | `firestore.rules` |
 | Let **classmates see** part of a student's data (year islands) | Never open a peer read on `users`/`progress`. Copy an allowlisted subset into its own server-written collection: pure planner `functions/src/islandProjection.ts` (`planYearIsland`: field allowlist, caps, exclusions, owner opt-out) + `islandProjectionSync.ts` (fresh transactional, field-masked read of both sources, so an opt-out can never be overtaken by an older trigger) called from the `onProgressWritten`/`onUserWritten` triggers, which first skip writes that cannot change the projection. The rule compares the projection's OWN `school` + `yearGroup` with the requester's `users` doc, so the client query (`hooks/useYearIslands.ts`) must filter on both; add the collection to the erasure cascade and the export. Backfill with a script that runs the compiled sync (`scripts/backfill-year-islands.mjs`), never a second copy of the rules. Dev harness: `/year-islands-dev.html` (sample classmates; `?theme=dark`, `?classmates=none\|slow\|error`) |
 
@@ -350,14 +347,12 @@ resolve deliberately, don't assume.
 4. **Tailwind / GenAI.** `CLAUDE.md`'s old "Tailwind CDN" / "Gemini API integrated" claims are stale — the repo uses a
    PostCSS build (no CDN in `index.html`), and `firebase.ts`'s apiKey is the public Firebase web config, not a GenAI key.
    Memory is correct here; `CLAUDE.md` is not.
-5. **No-coloured-left-borders.** Memory bans coloured left borders project-wide, but `CLAUDE.md`'s Callout spec **requires**
-   `border-left:3px solid #F26B1F`, and ~39 live `border-l` usages exist. Code follows the Callout spec; the ban is
-   effectively **card-scoped** (this doc states it that way in §5).
-6. **Warm cream.** Memory bans `#FAF7F4`/`#FDF8F0` in module surfaces, yet `cream #FDF8F0` is a named token, `CLAUDE.md`
-   sanctions it for inset content, and ~23 files still use it (ToolHeader's own ground is `#FAFBF6`). Intent (prefer cool
-   neutrals like `#F0FAF8`) is not enforced in code.
-7. **Mercury "lavender".** The Mercury memory calls for lavender accents, but live Mercury surfaces are neutral +
-   orange-accented, and purple/violet is on the banned list. Copying the memory literally would introduce a banned colour.
+5. **No-coloured-left-borders.** *Resolved 27 Nov 2026 by the design system:* no coloured stripe down the side of
+   anything, callouts included (the old Callout spec in `CLAUDE.md` is gone). Remaining `border-l` stripes are leftovers
+   to remove when their screen is touched.
+6. **Warm cream.** *Resolved by the design system:* the page is white and there is no cream surface; the `cream`
+   token and `#FDF8F0` / `#FAFBF6` literals are leftovers to remove when their screen is touched.
+7. **Mercury "lavender".** *Obsolete:* the Mercury register is retired (§3); there is no lavender and no purple.
 8. **Auth/nav/progress location.** `CLAUDE.md` says App.tsx manages auth (`onAuthStateChanged`) and navigation via local
    state. **Reality:** all three are in `contexts/AuthContext.tsx`, `NavigationContext.tsx`, `ProgressContext.tsx`;
    App.tsx is a data-assembly shell.

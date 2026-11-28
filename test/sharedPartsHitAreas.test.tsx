@@ -14,7 +14,7 @@
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { cleanup, render } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import { afterEach, expect, test } from 'vitest';
 import { ChevronLeft } from 'lucide-react';
 import { Button, Glyph, IconButton, TextButton } from '@/components/ui/Button';
@@ -94,4 +94,14 @@ test('the sheet header controls are 44 and sit in a frame-dialog-head (44 x 44 l
   const head = document.querySelector('.ui-sheet-head');
   expect(head).toHaveClass('frame-dialog-head');
   expect(declared('ui-sheet-text').h).toBeGreaterThanOrEqual(44);
+});
+
+test('a box you press that opens a list in place says whether it is open', () => {
+  render(<PressBox expanded={false} onPress={() => {}}>9 modules finished</PressBox>);
+  expect(screen.getByRole('button', { name: '9 modules finished' })).toHaveAttribute('aria-expanded', 'false');
+});
+
+test('the pinned footer can say where its action goes, over it', () => {
+  render(<PinnedFooter lead="Next: Your New OS"><Button kind="main">Continue</Button></PinnedFooter>);
+  expect(screen.getByText('Next: Your New OS')).toHaveClass('ui-foot-lead');
 });

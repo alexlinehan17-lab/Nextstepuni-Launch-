@@ -27,6 +27,8 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 import NorthStarCallout from './NorthStarCallout';
+import { ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
 
 const theme = orangeTheme;
 
@@ -56,25 +58,24 @@ const GuiltSpiral = () => {
     }
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Guilt Spiral</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">"Tough love" doesn't work. It just adds more negative emotion to the fire. Try both buttons to see the difference.</p>
-             <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="text-center">
-                    <p className="font-bold text-sm text-[var(--module-danger-text)] mb-2">Guilt Meter</p>
-                    <div className="w-full h-6 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full"><motion.div className="h-full bg-[var(--module-danger)] rounded-full" initial={{width: "10%"}} animate={{width: `${guilt}%`}} /></div>
+        <ExerciseSheet title="The Guilt Spiral" sub={'"Tough love" doesn\'t work. It just adds more negative emotion to the fire. Try both buttons to see the difference.'} name="GuiltSpiral">
+             {/* The two meters: a hairline track, an ink fill to the value */}
+             <div className="grid grid-cols-2 gap-6">
+                <div className="flex flex-col gap-2">
+                    <ExerciseLabel>Guilt Meter</ExerciseLabel>
+                    <div className="w-full h-2 rounded-full" style={{ background: 'var(--hairline)' }}><motion.div className="h-full rounded-full" style={{ background: 'var(--ink-primary)' }} initial={{width: "10%"}} animate={{width: `${guilt}%`}} /></div>
                 </div>
-                <div className="text-center">
-                    <p className="font-bold text-sm text-[var(--module-ink)] mb-2">Urge to Avoid</p>
-                    <div className="w-full h-6 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full"><motion.div className="h-full bg-[var(--module-orange)] rounded-full" initial={{width: "10%"}} animate={{width: `${avoidance}%`}} /></div>
+                <div className="flex flex-col gap-2">
+                    <ExerciseLabel>Urge to Avoid</ExerciseLabel>
+                    <div className="w-full h-2 rounded-full" style={{ background: 'var(--hairline)' }}><motion.div className="h-full rounded-full" style={{ background: 'var(--ink-primary)' }} initial={{width: "10%"}} animate={{width: `${avoidance}%`}} /></div>
                 </div>
             </div>
-             <div className="flex justify-center gap-3 flex-wrap">
-                <button onClick={addCriticism} className="px-4 py-2 bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] text-xs font-bold rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]" data-wide-button="true">Add Self-Criticism</button>
-                <button onClick={practiceForgiveness} className="px-4 py-2 bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] text-xs font-bold rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]" data-wide-button="true">Practice Self-Forgiveness</button>
-                <button onClick={reset} className="px-4 py-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] text-xs font-bold rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]" data-wide-button="true">Reset</button>
+             <div className="ex-actions">
+                <Button onClick={addCriticism}>Add Self-Criticism</Button>
+                <Button onClick={practiceForgiveness}>Practice Self-Forgiveness</Button>
+                <TextButton tone="quiet" onClick={reset}>Reset</TextButton>
              </div>
-        </div>
+        </ExerciseSheet>
     );
 };
 

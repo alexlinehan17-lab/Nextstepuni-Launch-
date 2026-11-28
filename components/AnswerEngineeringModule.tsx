@@ -1,4 +1,3 @@
-import { moduleBorder,moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -8,7 +7,6 @@ import { AnimatePresence,motion } from 'framer-motion';
 import { AlertTriangle,BarChart2,FlaskConical,Layers,LifeBuoy,Target,Wrench } from 'lucide-react';
 import React,{ useState } from 'react';
 import { ANSWER_ENGINEERING_REFERENCE_LIST } from '../data/references/answerEngineering';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { redTheme } from '../moduleThemes';
 import { type ModuleProgress } from '../types';
@@ -16,8 +14,18 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,AnswerTick,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile,SelectionBar } from './ui/Choice';
+import { PressBox } from './ui/List';
 
 const theme = redTheme;
+
+/** A quiz's progress: a row of step marks (done and right in the tick's green, done and wrong in ink-3, the current one
+ *  ringed in ink, the rest a hairline ring). Drawn from the module's own state; no words. */
+const stepMarkStyle = (done: boolean, right: boolean, current: boolean): React.CSSProperties =>
+  done ? { background: right ? 'var(--success-hex)' : 'var(--ink-muted)' }
+    : current ? { border: '1.5px solid var(--ink-primary)' } : { border: '1px solid var(--outline-soft)' };
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -58,12 +66,16 @@ const peelExamples = [
   },
 ];
 
-const peelLabels: Record<string, { label: string; color: string; bg: string; border: string; hex: string }> = {
-  P: { label: 'Point', color: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", hex: "var(--module-ink)" },
-  E: { label: 'Evidence', color: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", hex: "var(--module-danger-text)" },
-  E2: { label: 'Explain', color: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", hex: "var(--module-success-text)" },
-  L: { label: 'Link', color: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", hex: "var(--module-ink)" },
+// Each slot's name (no colour per slot: the name says which it is).
+const peelLabels: Record<string, { label: string }> = {
+  P: { label: 'Point' },
+  E: { label: 'Evidence' },
+  E2: { label: 'Explain' },
+  L: { label: 'Link' },
 };
+
+/** The builder's title, also the name of its subject bar for screen readers. */
+const PEEL_BUILDER_TITLE = 'PEEL Builder';
 
 const PEELBuilder = () => {
   const [exampleIndex, setExampleIndex] = useState(0);
@@ -118,120 +130,102 @@ const PEELBuilder = () => {
   const allPlaced = placed.every(p => p !== null);
 
   return (
-    <div className="my-10 p-6 md:p-10 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">PEEL Builder</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-2">Arrange the sentences in the correct PEEL order.</p>
+    <ExerciseSheet title={PEEL_BUILDER_TITLE} sub="Arrange the sentences in the correct PEEL order." name="PEELBuilder">
+      {/* Subject tabs: the system's selection bar, named by the sheet's own title (it changes the example only while building, as before) */}
+      <SelectionBar
+        label={PEEL_BUILDER_TITLE}
+        value={String(exampleIndex)}
+        onChange={(v) => { const i = Number(v); if (phase === 'building') { setExampleIndex(i); setPlaced([null, null, null, null]); } }}
+        options={peelExamples.map((e, i) => ({ value: String(i), label: e.subject }))}
+      />
 
-      {/* Subject tabs */}
-      <div className="flex gap-2 mb-4 justify-center">
-        {peelExamples.map((e, i) => (
-          <button key={i} onClick={() => { if (phase === 'building') { setExampleIndex(i); setPlaced([null, null, null, null]); } }}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
-              exampleIndex === i ? "bg-[var(--module-danger)] text-[var(--module-ink)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)]"
-            }`} data-wide-button="true" data-selected={!!(exampleIndex === i)} data-tone="coral" aria-pressed={!!(exampleIndex === i)}>
-            {e.subject}
-          </button>
-        ))}
+      {/* Question: under its subject label, set large (no box) */}
+      <div className="ex-thought">
+        <ExerciseLabel>{ex.subject}</ExerciseLabel>
+        <p className="ex-thought-words">{ex.question}</p>
       </div>
 
-      {/* Question */}
-      <div className="text-center mb-5">
-        <span className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)]">{ex.subject}</span>
-        <p className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-1">{ex.question}</p>
-      </div>
-
-      {/* Slots */}
-      <div className="space-y-3 mb-5">
+      {/* Slots: each under its own label; a placed sentence is a box you press to take it back out; an empty slot is a
+          dashed hairline; once checked, each sentence is a line in ink (the tick where it is in the right place) */}
+      <div className="ex-questions">
         {slotLabels.map((label, slotIdx) => {
           const sentIdx = placed[slotIdx];
           const pl = peelLabels[label];
           const isCorrect = phase === 'result' && sentIdx === ex.correctOrder[slotIdx];
           const isWrong = phase === 'result' && sentIdx !== null && sentIdx !== ex.correctOrder[slotIdx];
           const correctSentIdx = phase === 'result' ? ex.correctOrder[slotIdx] : null;
-          const borderColor = isCorrect ? "var(--module-success-text)" : isWrong ? "var(--module-danger-text)" : "var(--module-ink)";
 
           return (
-            <div key={slotIdx}>
-              <div
-                className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] transition-all"
-                style={{ border: `2.5px solid ${borderColor}`, borderRadius: 18, boxShadow: 'none', overflow: 'hidden' }}
-              >
-                {/* Header bar */}
-                <div
-                  className="text-[13px] font-medium tracking-wider uppercase text-[var(--module-ink)] text-center"
-                  style={{ backgroundColor: moduleFill(pl.hex), padding: '10px 16px', borderBottom: `2.5px solid ${borderColor}` }}
-                >
-                  {slotIdx + 1}. {pl.label}
-                </div>
-                {/* Body */}
-                <div
-                  className={`p-4 min-h-[56px] flex items-center ${sentIdx !== null && phase === 'building' ? 'cursor-pointer' : ''}`}
-                  onClick={() => sentIdx !== null && phase === 'building' ? handleRemoveFromSlot(slotIdx) : undefined}
-                >
-                  {sentIdx !== null ? (
-                    <div
-                      className="text-[13px] text-[var(--module-ink)] dark:text-[var(--module-muted)] w-full"
-                      style={{ backgroundColor: "var(--module-surface)", border: `2px solid ${pl.hex}`, borderRadius: 12, boxShadow: 'none', padding: '8px 12px' }}
-                    >
-                      {ex.sentences[sentIdx].text}
-                    </div>
-                  ) : (
-                    <span className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] italic">Click a sentence below to place it here</span>
-                  )}
-                </div>
-              </div>
+            <div key={slotIdx} className="flex flex-col gap-2">
+              {/* Header */}
+              <p className="ex-label">
+                {slotIdx + 1}. {pl.label}
+              </p>
+              {/* Body */}
+              {sentIdx !== null ? (
+                phase === 'building' ? (
+                  <PressBox onPress={() => handleRemoveFromSlot(slotIdx)}>
+                    <span className="block t-sub text-ink-primary">{ex.sentences[sentIdx].text}</span>
+                  </PressBox>
+                ) : (
+                  <AnswerLine tone={isCorrect ? 'ok' : 'note'}>{ex.sentences[sentIdx].text}</AnswerLine>
+                )
+              ) : (
+                <p className="min-h-[56px] flex items-center t-meta" style={{ padding: '12px 16px', border: '1px dashed var(--outline-soft)', borderRadius: 'var(--r-box)' }}>Click a sentence below to place it here</p>
+              )}
               {isWrong && correctSentIdx !== null && (
-                <div className="mt-1 ml-2 text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] italic">
+                <p className="t-meta text-ink-secondary">
                   Correct: {ex.sentences[correctSentIdx].text.slice(0, 80)}...
-                </div>
+                </p>
               )}
             </div>
           );
         })}
       </div>
 
-      {/* Available sentences */}
+      {/* Available sentences: each a box you press to place it */}
       {phase === 'building' && availableSentences.length > 0 && (
-        <div className="space-y-2 mb-5">
-          <p className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] mb-2">Available sentences</p>
-          {availableSentences.map(i => (
-            <button key={i} onClick={() => handlePlaceSentence(i)}
-              className="w-full text-left p-3 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-danger)] transition-all cursor-pointer"
-              style={{ borderColor: moduleBorder(undefined) }} data-wide-button="true">
-              {ex.sentences[i].text}
-            </button>
-          ))}
+        <div className="ex-stack">
+          <ExerciseLabel>Available sentences</ExerciseLabel>
+          <div className="ex-cards">
+            {availableSentences.map(i => (
+              <PressBox key={i} onPress={() => handlePlaceSentence(i)}>
+                <span className="block t-sub text-ink-primary">{ex.sentences[i].text}</span>
+              </PressBox>
+            ))}
+          </div>
         </div>
       )}
 
       {/* Actions */}
-      <div className="text-center">
-        {phase === 'building' && allPlaced && (
-          <button onClick={handleSubmit} className="px-6 py-3 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
+      {phase === 'building' && allPlaced && (
+        <div className="ex-actions">
+          <Button onClick={handleSubmit}>
             Check Order
-          </button>
-        )}
-        {phase === 'result' && (
-          <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
-            <div className="flex justify-center my-4">
-              <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-                <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{score}/4</div>
-                <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Correct</div>
-              </div>
-            </div>
+          </Button>
+        </div>
+      )}
+      {phase === 'result' && (
+        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="ex-stack">
+          {/* The score: the number in ink with its word under it (no box) */}
+          <div className="flex flex-col">
+            <p className="t-number text-ink-primary">{score}/4</p>
+            <p className="ex-label">Correct</p>
+          </div>
+          <div className="ex-actions">
             {exampleIndex < peelExamples.length - 1 ? (
-              <button onClick={handleNextExample} className="px-5 py-2.5 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
+              <Button onClick={handleNextExample}>
                 Next Example
-              </button>
+              </Button>
             ) : (
-              <button onClick={handleReset} className="px-5 py-2.5 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
+              <Button onClick={handleReset}>
                 Try Again
-              </button>
+              </Button>
             )}
-          </MotionDiv>
-        )}
-      </div>
-    </div>
+          </div>
+        </MotionDiv>
+      )}
+    </ExerciseSheet>
   );
 };
 
@@ -318,139 +312,129 @@ const StackBuilder = () => {
 
   if (phase === 'ready') {
     return (
-      <div className="my-10 p-8 md:p-12 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] text-center bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Stack Builder</h4>
-        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-2 max-w-md mx-auto">Build a science answer step by step and see how marks accumulate.</p>
-        <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] mb-5 max-w-md mx-auto">
-          <p className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] mb-1">Physics Problem</p>
-          <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{stackProblem.question}</p>
+      <ExerciseSheet title="Stack Builder" sub="Build a science answer step by step and see how marks accumulate." name="StackBuilder">
+        {/* The problem: words you read, under their label (no box) */}
+        <div className="ex-thought">
+          <ExerciseLabel>Physics Problem</ExerciseLabel>
+          <p className="ex-quote">{stackProblem.question}</p>
         </div>
-        <button onClick={startBuild} className="px-6 py-3 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Start Building</button>
-      </div>
+        <div className="ex-actions">
+          <Button onClick={startBuild}>Start Building</Button>
+        </div>
+      </ExerciseSheet>
     );
   }
 
   if (phase === 'done') {
     return (
-      <div className="my-10 p-6 md:p-10 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Stack Builder Results</h4>
-        <div className="flex justify-center my-5">
-          <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-            <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{earnedMarks}/{stackProblem.totalMarks}</div>
-            <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Marks Earned</div>
-          </div>
+      <ExerciseSheet title="Stack Builder Results" name="StackBuilder">
+        {/* The score: the number in ink with its words under it (no box) */}
+        <div className="flex flex-col">
+          <p className="t-number text-ink-primary">{earnedMarks}/{stackProblem.totalMarks}</p>
+          <p className="ex-label">Marks Earned</p>
         </div>
-        <div className="space-y-2.5 mb-6">
+        {/* Each step ruled like a row: its name, its marks (the green tick when earned), your step, the right one */}
+        <div className="ex-list">
           {stackProblem.steps.map((step, i) => {
             const got = choices[i];
             const correct = got === step.correct;
             return (
-              <div key={i} className={`p-3 rounded-lg border ${correct ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border-success/30 dark:border-success/40" : "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}>
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-xs font-bold text-[var(--module-muted)]">{step.label}</span>
-                  <span className={`text-xs font-bold ${correct ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
+              <div key={i}>
+                <div className="flex items-center justify-between gap-3">
+                  <span className="ex-label">{step.label}</span>
+                  <span className="flex items-center gap-1 t-meta text-ink-primary">
+                    {correct ? <AnswerTick /> : null}
                     {correct ? `+${step.marks} marks` : '0 marks'}
                   </span>
                 </div>
-                <p className="text-sm font-mono text-[var(--module-ink)] dark:text-[var(--module-muted)]">{got}</p>
+                <p className="t-body text-ink-primary">{got}</p>
                 {!correct && (
-                  <p className="text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mt-1 italic">Correct: {step.correct}</p>
+                  <p className="t-meta text-ink-secondary">Correct: {step.correct}</p>
                 )}
               </div>
             );
           })}
         </div>
-        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] text-center mb-4 italic">
+        <AnswerLine tone={earnedMarks === stackProblem.totalMarks ? 'ok' : 'note'}>
           {earnedMarks === stackProblem.totalMarks
             ? 'Perfect! Every step earned its marks.'
             : earnedMarks >= stackProblem.totalMarks * 0.75
             ? 'Great work! Even the steps you got right earned marks independently.'
             : 'Notice how each correct step earns marks independently. Even with mistakes, the right steps still count.'}
-        </p>
-        <div className="text-center">
-          <button onClick={startBuild} className="px-5 py-2.5 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Try Again</button>
+        </AnswerLine>
+        <div className="ex-actions">
+          <Button onClick={startBuild}>Try Again</Button>
         </div>
-      </div>
+      </ExerciseSheet>
     );
   }
 
   const step = stackProblem.steps[stepIndex];
   const isCorrect = showStepFeedback && choices[stepIndex] === step.correct;
-  const isWrong = showStepFeedback && choices[stepIndex] !== step.correct;
 
   return (
-    <div className="my-10 p-6 md:p-10 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
-      <div className="flex items-center justify-between mb-2">
-        <h4 className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Stack Builder</h4>
-        <span className="text-xs font-bold text-[var(--module-muted)]">Step {stepIndex + 1} / {stackProblem.steps.length}</span>
+    <ExerciseSheet title="Stack Builder" name="StackBuilder">
+      <p className="ex-count ui-readout">Step {stepIndex + 1} / {stackProblem.steps.length}</p>
+
+      {/* Question reminder: under a hairline and its label (no box) */}
+      <div className="ex-block">
+        <p className="ex-label">Question</p>
+        <p className="ex-block-text">{stackProblem.question}</p>
       </div>
 
-      {/* Question reminder */}
-      <div className="p-3 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] mb-4">
-        <p className="text-xs text-[var(--module-muted)] font-bold mb-0.5">Question</p>
-        <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">{stackProblem.question}</p>
-      </div>
-
-      {/* Running marks */}
-      <div className="flex items-center gap-2 mb-4">
-        <span className="text-xs font-bold text-[var(--module-muted)]">Marks so far:</span>
-        <div className="flex-1 h-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
+      {/* Running marks: the student's own marks, ink on a hairline track */}
+      <div className="flex items-center gap-3">
+        <span className="t-meta">Marks so far:</span>
+        <div className="flex-1 h-2 rounded-full overflow-hidden" style={{ background: 'var(--hairline)' }}>
           <motion.div
-            className="h-full bg-[var(--module-success)] rounded-full"
+            className="h-full rounded-full"
+            style={{ background: 'var(--ink-primary)' }}
             animate={{ width: `${(earnedMarks / stackProblem.totalMarks) * 100}%` }}
             transition={{ duration: 0.5 }}
           />
         </div>
-        <span className="text-xs font-bold text-[var(--module-success-text)]">{earnedMarks}/{stackProblem.totalMarks}</span>
+        <span className="ui-readout text-ink-primary">{earnedMarks}/{stackProblem.totalMarks}</span>
       </div>
 
-      {/* Step prompt */}
+      {/* Step prompt: on the sheet (no tinted card); the feedback is a line in ink, the tick when right */}
       <AnimatePresence mode="wait">
         <motion.div key={stepIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
-          className={`p-5 rounded-xl border mb-5 transition-colors ${
-            isCorrect ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border-success/30 dark:border-success/40" :
-            isWrong ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-            "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-          }`}>
-          <p className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] mb-2">{step.label}</p>
-          <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">Choose the correct step worth <strong>{step.marks} marks</strong>:</p>
+          className="ex-stack">
+          <p className="ex-label">{step.label}</p>
+          <p className="t-body text-ink-primary">Choose the correct step worth <strong>{step.marks} marks</strong>:</p>
           {showStepFeedback && (
-            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}
-              className={`text-xs mt-3 italic ${isCorrect ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
-              {isCorrect ? `Correct! +${step.marks} marks` : `Not quite. The correct step was: ${step.correct}`}
-            </motion.p>
+            <motion.div initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}>
+              <AnswerLine tone={isCorrect ? 'ok' : 'note'}>
+                {isCorrect ? `Correct! +${step.marks} marks` : `Not quite. The correct step was: ${step.correct}`}
+              </AnswerLine>
+            </motion.div>
           )}
         </motion.div>
       </AnimatePresence>
 
-      {/* Options */}
-      <div className="space-y-2">
+      {/* Options: one answer locks in while its feedback shows (disabled, as before); the chosen one and the right one
+          stay at full strength */}
+      <AnswerGroup kind="one" chooseOnArrow={false}>
         {shuffledOptions[stepIndex]?.map((opt, i) => {
           const selected = showStepFeedback && choices[stepIndex] === opt;
           const isAnswer = showStepFeedback && opt === step.correct;
           return (
-            <button key={i} onClick={() => handleChoice(opt)} disabled={showStepFeedback}
-              className={`w-full text-left p-3 rounded-xl font-mono text-sm border transition-all ${
-                isAnswer ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border-success dark:border-success ring-2 ring-success ring-offset-1" :
-                selected && !isAnswer ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
-                "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-danger)]"
-              } ${showStepFeedback ? 'cursor-default' : 'cursor-pointer'}`} data-wide-button="true" data-selected={!!(isAnswer)} data-tone="mint" aria-pressed={!!(isAnswer)}>
-              {opt}
-            </button>
+            <ChoiceTile key={i} onClick={() => handleChoice(opt)} disabled={showStepFeedback}
+              chosen={selected}
+              style={selected || isAnswer ? { opacity: 1 } : undefined}
+              label={opt}
+            />
           );
         })}
-      </div>
+      </AnswerGroup>
 
-      {/* Progress dots */}
-      <div className="flex justify-center gap-1.5 mt-5">
+      {/* Progress: a row of step marks */}
+      <ol className="ex-steps justify-center">
         {stackProblem.steps.map((_, i) => (
-          <div key={i} className={`w-2 h-2 rounded-full transition-colors ${
-            i < stepIndex ? (choices[i] === stackProblem.steps[i].correct ? "bg-[var(--module-success)]" : "bg-[var(--module-danger)]") :
-            i === stepIndex ? "bg-[var(--module-danger)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
-          }`} />
+          <li key={i} className="w-2 h-2 rounded-full box-border" style={stepMarkStyle(i < stepIndex, choices[i] === stackProblem.steps[i].correct, i === stepIndex)} />
         ))}
-      </div>
-    </div>
+      </ol>
+    </ExerciseSheet>
   );
 };
 
@@ -514,45 +498,43 @@ const ShapeQuiz = () => {
 
   if (phase === 'ready') {
     return (
-      <div className="my-10 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 24 }}>
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Skills Quiz</span>
-        <h4 className="font-serif font-semibold" style={{ fontSize: 20, color: "var(--module-ink)" }}>Shape Quiz</h4>
-        <p className="text-sm mt-2 mb-6 max-w-md mx-auto" style={{ color: "var(--module-muted)" }}>Can you match the mark allocation to the right answer shape?</p>
-        <button onClick={startQuiz} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Start Quiz</button>
-      </div>
+      <ExerciseSheet label="Exam Skills Quiz" title="Shape Quiz" sub="Can you match the mark allocation to the right answer shape?" name="ShapeQuiz">
+        <div className="ex-actions">
+          <Button onClick={startQuiz}>Start Quiz</Button>
+        </div>
+      </ExerciseSheet>
     );
   }
 
   if (phase === 'done') {
     return (
-      <div className="my-10 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 24 }}>
-        <h4 className="font-serif font-semibold text-center" style={{ fontSize: 20, color: "var(--module-ink)" }}>Shape Quiz Results</h4>
-        <div className="flex justify-center my-5">
-          <div className="text-center" style={{ backgroundColor: moduleFill(COLORS.accentTint), border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '14px 20px' }}>
-            <div className="font-serif font-bold" style={{ fontSize: 28, color: 'var(--module-accent-text)' }}>{score}/{shapeQuestions.length}</div>
-            <div style={{ fontSize: 11, fontWeight: 600, color: "var(--module-muted)" }}>Correct</div>
-          </div>
+      <ExerciseSheet title="Shape Quiz Results" name="ShapeQuiz">
+        {/* The score: the number in ink with its word under it (no orange box) */}
+        <div className="flex flex-col">
+          <p className="t-number text-ink-primary">{score}/{shapeQuestions.length}</p>
+          <p className="ex-label">Correct</p>
         </div>
-        <div className="space-y-2 mb-6">
+        {/* Each question ruled like a row: its marks, how you did, the right shape, what you said */}
+        <div className="ex-list">
           {shapeQuestions.map((q, i) => {
             const got = choices[i];
             const correct = got === q.correct;
             return (
-              <div key={i} className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: correct ? `2px solid ${COLORS.accent}` : "2px solid var(--module-line)", borderRadius: 14, padding: '14px 16px' }}>
-                <div className="flex items-center justify-between mb-1">
-                  <span className="font-serif font-bold" style={{ fontSize: 14, color: "var(--module-ink)" }}>{q.marks}</span>
-                  <span style={{ fontSize: 12, fontWeight: 700, color: moduleText(correct ? COLORS.accentDarkText : "var(--module-danger-text)") }}>{correct ? '✓ Correct' : '✗ Incorrect'}</span>
+              <div key={i}>
+                <div className="flex items-center justify-between gap-3">
+                  <span className="t-row text-ink-primary">{q.marks}</span>
+                  <span className="t-meta text-ink-primary">{correct ? '✓ Correct' : '✗ Incorrect'}</span>
                 </div>
-                <p style={{ fontSize: 14, color: "var(--module-ink)" }}>{q.correct}</p>
-                {!correct && got && <p className="italic mt-1" style={{ fontSize: 12, color: "var(--module-danger-text)" }}>You said: {got}</p>}
+                <p className="t-body text-ink-primary">{q.correct}</p>
+                {!correct && got && <p className="t-meta text-ink-secondary">You said: {got}</p>}
               </div>
             );
           })}
         </div>
-        <div className="text-center">
-          <button onClick={startQuiz} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Try Again</button>
+        <div className="ex-actions">
+          <Button onClick={startQuiz}>Try Again</Button>
         </div>
-      </div>
+      </ExerciseSheet>
     );
   }
 
@@ -561,59 +543,48 @@ const ShapeQuiz = () => {
   const _isWrong = showFeedback && choices[qIndex] !== null && choices[qIndex] !== q.correct;
 
   return (
-    <div className="my-10 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 24 }}>
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
-          <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>Exam Skills Quiz</span>
-          <h4 className="font-serif font-semibold" style={{ fontSize: 18, color: "var(--module-ink)" }}>Shape Quiz</h4>
-        </div>
-        <span style={{ fontSize: 13, fontWeight: 600, color: "var(--module-muted)", backgroundColor: "var(--module-surface)", border: "1px solid var(--module-line)", borderRadius: 20, padding: '3px 10px' }}>{qIndex + 1} / {shapeQuestions.length}</span>
-      </div>
+    <ExerciseSheet label="Exam Skills Quiz" title="Shape Quiz" name="ShapeQuiz">
+      <p className="ex-count ui-readout">{qIndex + 1} / {shapeQuestions.length}</p>
 
-      {/* Mark allocation */}
+      {/* Mark allocation: under its label, the marks as a number in ink (no box); the feedback is a line in ink, the tick when right */}
       <AnimatePresence mode="wait">
         <motion.div key={qIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
-          className="mb-5" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 12, padding: '14px 18px', minHeight: 80, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-          <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 8, textTransform: 'uppercase' as const }}>Mark allocation</p>
-          <p style={{ lineHeight: 1 }}>
-            <span className="font-serif font-bold" style={{ fontSize: 32, color: 'var(--module-accent-text)' }}>{q.marks.replace(/[()]/g, '')}</span>
-          </p>
+          className="ex-stack min-h-[80px] justify-center">
+          <ExerciseLabel>Mark allocation</ExerciseLabel>
+          <p className="t-number text-ink-primary">{q.marks.replace(/[()]/g, '')}</p>
           {showFeedback && (
-            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="italic mt-3" style={{ fontSize: 13, color: moduleText(isCorrect ? COLORS.accentDarkText : "var(--module-danger-text)") }}>
-              {isCorrect ? 'Correct! You can read the marks.' : `Not quite — the right shape is: ${q.correct}`}
-            </motion.p>
+            <motion.div initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}>
+              <AnswerLine tone={isCorrect ? 'ok' : 'note'}>
+                {isCorrect ? 'Correct! You can read the marks.' : `Not quite — the right shape is: ${q.correct}`}
+              </AnswerLine>
+            </motion.div>
           )}
         </motion.div>
       </AnimatePresence>
 
-      {/* Options */}
-      <div className="space-y-2">
+      {/* Options: one answer locks in while its feedback shows (disabled, as before); the chosen one and the right one
+          (still marked "✓ ") stay at full strength, the others fade as today */}
+      <AnswerGroup kind="one" chooseOnArrow={false}>
         {shuffledOptions[qIndex]?.map((opt, i) => {
           const selected = showFeedback && choices[qIndex] === opt;
           const isAnswer = showFeedback && opt === q.correct;
           return (
-            <button key={i} onClick={() => handleChoice(opt)} disabled={showFeedback} className="w-full text-left transition-all" style={
-              isAnswer
-                ? { backgroundColor: moduleFill(COLORS.accentTint), border: `2px solid ${COLORS.accent}`, borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 600, color: moduleText(COLORS.accentDarkText), cursor: 'default' }
-                : selected && !isAnswer
-                ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: "var(--module-muted)", cursor: 'default' }
-                : showFeedback
-                ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: "var(--module-ink)", opacity: 0.5, cursor: 'not-allowed' }
-                : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: "var(--module-ink)", cursor: 'pointer' }
-            } data-wide-button="true" data-selected={!!(isAnswer)} data-tone="orange" aria-pressed={!!(isAnswer)}>
-              {isAnswer && '✓ '}{opt}
-            </button>
+            <ChoiceTile key={i} onClick={() => handleChoice(opt)} disabled={showFeedback}
+              chosen={selected}
+              style={selected || isAnswer ? { opacity: 1 } : showFeedback ? { opacity: 0.5 } : undefined}
+              label={<>{isAnswer && '✓ '}{opt}</>}
+            />
           );
         })}
-      </div>
+      </AnswerGroup>
 
-      {/* Progress dots */}
-      <div className="flex justify-center gap-1.5 mt-5">
+      {/* Progress: a row of step marks (reached ones ink, the rest a hairline ring) */}
+      <ol className="ex-steps justify-center">
         {shapeQuestions.map((_, i) => (
-          <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: moduleFill(i <= qIndex ? COLORS.accent : "var(--module-surface)"), transition: 'background-color 0.3s' }} />
+          <li key={i} className="rounded-full box-border" style={{ width: 10, height: 10, transition: 'background-color 0.3s', ...(i <= qIndex ? { background: 'var(--ink-primary)' } : { border: '1px solid var(--outline-soft)' }) }} />
         ))}
-      </div>
-    </div>
+      </ol>
+    </ExerciseSheet>
   );
 };
 
@@ -680,24 +651,25 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
           {activeSection === 1 && (
             <ReadingSection title="The PEEL Framework." eyebrow="02 // The Essay Engine" icon={Layers} theme={theme}>
               <p>{essentials ? 'For essay questions, use' : 'For any essay-style question — English, History, Business, Geography, and more —'} <Highlight description="PEEL stands for Point, Evidence, Explain, Link. It gives you a paragraph skeleton that ensures every paragraph in your essay has a clear structure the examiner can follow and award marks to." theme={theme}>PEEL</Highlight>{essentials ? '. Each paragraph follows four steps:' : ' gives you a paragraph skeleton that ensures every paragraph earns its full marks:'}</p>
-              <div className="my-6 space-y-3">
-                <div className="flex items-start gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">P</span>
-                  <div><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Point</strong> — State your argument in one clear sentence. This tells the examiner exactly what this paragraph is about.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">E</span>
-                  <div><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Evidence</strong> — Give a specific example, quote, or fact. Not a vague reference — something concrete.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">E</span>
-                  <div><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Explain</strong> — Say WHY this evidence supports your point. This is the step most students skip, and it is where the real marks are.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">L</span>
-                  <div><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Link</strong> — Connect back to the question asked. This closes the loop and shows the examiner you are directly answering what was asked.</div>
-                </div>
-              </div>
+              {/* The four steps as lettered lines on the page (no boxes, no bordered letter tags) */}
+              <ol className="ex-nums">
+                <li>
+                  <span className="ex-num">P</span>
+                  <div className="ex-num-copy"><p className="ex-num-sub"><strong className="text-ink-primary">Point</strong> — State your argument in one clear sentence. This tells the examiner exactly what this paragraph is about.</p></div>
+                </li>
+                <li>
+                  <span className="ex-num">E</span>
+                  <div className="ex-num-copy"><p className="ex-num-sub"><strong className="text-ink-primary">Evidence</strong> — Give a specific example, quote, or fact. Not a vague reference — something concrete.</p></div>
+                </li>
+                <li>
+                  <span className="ex-num">E</span>
+                  <div className="ex-num-copy"><p className="ex-num-sub"><strong className="text-ink-primary">Explain</strong> — Say WHY this evidence supports your point. This is the step most students skip, and it is where the real marks are.</p></div>
+                </li>
+                <li>
+                  <span className="ex-num">L</span>
+                  <div className="ex-num-copy"><p className="ex-num-sub"><strong className="text-ink-primary">Link</strong> — Connect back to the question asked. This closes the loop and shows the examiner you are directly answering what was asked.</p></div>
+                </li>
+              </ol>
               {essentials ? (
                 <p>A 60-mark essay = 4-5 PEEL paragraphs + intro + conclusion. PEEL makes your <Highlight description="The examiner is not looking for creative writing. They are looking for clear, structured arguments with evidence. PEEL makes your thinking visible so they can award marks at every step of your paragraph." theme={theme}>THINKING visible</Highlight>.</p>
               ) : (
@@ -742,43 +714,16 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
           {!essentials && activeSection === 3 && (
             <ReadingSection title="The Marks-Shape Connection." eyebrow="04 // The Decoder" icon={BarChart2} theme={theme}>
               <p>The marks beside a question tell you <em>exactly</em> what <Highlight description="The 'shape' of an answer means its length and structure. A 4-mark answer should look completely different from a 20-mark answer. The marks are a blueprint telling you exactly how much to write and how to organise it." theme={theme}>SHAPE</Highlight> your answer should be. Here is how to decode them:</p>
-              <div className="my-6 space-y-2.5">
-                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(4 marks)</span>
-                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
-                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">1-2 sentences. Name it and briefly explain.</span>
-                </div>
-                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(10 marks)</span>
-                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
-                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">A developed paragraph. Make a point, support it, explain it.</span>
-                </div>
-                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(15 marks)</span>
-                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
-                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Two developed paragraphs OR one long one with multiple examples.</span>
-                </div>
-                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(20-25 marks)</span>
-                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
-                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">A structured mini-essay. Introduction, 2-3 body paragraphs, brief conclusion.</span>
-                </div>
-                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(30+ marks)</span>
-                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
-                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Full essay structure. Every mark corresponds to roughly one strong sentence.</span>
-                </div>
-                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(3 &times; 5 marks)</span>
-                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
-                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Three SEPARATE short answers, not one long one. Examiners mark each independently.</span>
-                </div>
-                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(2 &times; 10 marks)</span>
-                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
-                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Two developed points. Give EXACTLY two, not three.</span>
-                </div>
-              </div>
+              {/* The decoder: read-only lines ruled like rows (no boxes); the marks in ink, the meaning beside them */}
+              <ul className="ex-list my-6">
+                <li><p><span className="t-row text-ink-primary">(4 marks)</span><span className="text-ink-muted mx-2">=</span><span className="text-ink-primary">1-2 sentences. Name it and briefly explain.</span></p></li>
+                <li><p><span className="t-row text-ink-primary">(10 marks)</span><span className="text-ink-muted mx-2">=</span><span className="text-ink-primary">A developed paragraph. Make a point, support it, explain it.</span></p></li>
+                <li><p><span className="t-row text-ink-primary">(15 marks)</span><span className="text-ink-muted mx-2">=</span><span className="text-ink-primary">Two developed paragraphs OR one long one with multiple examples.</span></p></li>
+                <li><p><span className="t-row text-ink-primary">(20-25 marks)</span><span className="text-ink-muted mx-2">=</span><span className="text-ink-primary">A structured mini-essay. Introduction, 2-3 body paragraphs, brief conclusion.</span></p></li>
+                <li><p><span className="t-row text-ink-primary">(30+ marks)</span><span className="text-ink-muted mx-2">=</span><span className="text-ink-primary">Full essay structure. Every mark corresponds to roughly one strong sentence.</span></p></li>
+                <li><p><span className="t-row text-ink-primary">(3 &times; 5 marks)</span><span className="text-ink-muted mx-2">=</span><span className="text-ink-primary">Three SEPARATE short answers, not one long one. Examiners mark each independently.</span></p></li>
+                <li><p><span className="t-row text-ink-primary">(2 &times; 10 marks)</span><span className="text-ink-muted mx-2">=</span><span className="text-ink-primary">Two developed points. Give EXACTLY two, not three.</span></p></li>
+              </ul>
               <p>The most common mistake is writing a <Highlight description="Writing too much for a small question wastes time. Writing too little for a big question loses marks. The mark allocation is the examiner's way of telling you exactly how much they expect." theme={theme}>4-mark answer for a 15-mark question</Highlight>, or a 15-mark answer for a 4-mark question. The marks tell you exactly how much to write. Reading them correctly is one of the simplest ways to improve your results.<Cite n={1} /></p>
               <ShapeQuiz />
             </ReadingSection>
@@ -807,30 +752,31 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
           {!essentials && activeSection === 5 && (
             <ReadingSection title="Subject-Specific Structures." eyebrow="06 // The Toolkit" icon={Wrench} theme={theme}>
               <p>Here is a quick reference for the dominant answer structure in each subject family. Keep this in mind as you practise past papers.</p>
-              <div className="my-6 space-y-3">
-                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Languages (English, Irish, French etc.)</h4>
-                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>PEEL for essays</strong>, quote-integrate-analyse for poetry and prose. Always embed quotes rather than dropping them in. Every paragraph should have a clear topic sentence.</p>
+              {/* The reference card: one block per subject family, ruled like rows (no boxes) */}
+              <div className="ex-list my-6">
+                <div>
+                  <h4 className="ex-block-title">Languages (English, Irish, French etc.)</h4>
+                  <p className="ex-block-text"><strong className="text-ink-primary">PEEL for essays</strong>, quote-integrate-analyse for poetry and prose. Always embed quotes rather than dropping them in. Every paragraph should have a clear topic sentence.</p>
                 </div>
-                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Sciences (Biology, Chemistry, Physics)</h4>
-                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>S&sup3;S for calculations</strong>, "State-Explain-Example" for definitions, labelled diagrams everywhere. Every label on a diagram is a potential mark.</p>
+                <div>
+                  <h4 className="ex-block-title">Sciences (Biology, Chemistry, Physics)</h4>
+                  <p className="ex-block-text"><strong className="text-ink-primary">S&sup3;S for calculations</strong>, "State-Explain-Example" for definitions, labelled diagrams everywhere. Every label on a diagram is a potential mark.</p>
                 </div>
-                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Business Subjects</h4>
-                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>Point-Explain-Example-Apply</strong> (the business PEEL variant). Always apply to a real business or the case study in the question.</p>
+                <div>
+                  <h4 className="ex-block-title">Business Subjects</h4>
+                  <p className="ex-block-text"><strong className="text-ink-primary">Point-Explain-Example-Apply</strong> (the business PEEL variant). Always apply to a real business or the case study in the question.</p>
                 </div>
-                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Maths</h4>
-                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>Every line is a mark</strong> — never skip steps. Use the left column for working, right column for answers. Circle or underline final answers.</p>
+                <div>
+                  <h4 className="ex-block-title">Maths</h4>
+                  <p className="ex-block-text"><strong className="text-ink-primary">Every line is a mark</strong> — never skip steps. Use the left column for working, right column for answers. Circle or underline final answers.</p>
                 </div>
-                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">History / Geography</h4>
-                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>PEEL for essays</strong>, "Describe-Explain-Evaluate" for source analysis. Case Study structure for Geography — always name, locate, and describe the process.</p>
+                <div>
+                  <h4 className="ex-block-title">History / Geography</h4>
+                  <p className="ex-block-text"><strong className="text-ink-primary">PEEL for essays</strong>, "Describe-Explain-Evaluate" for source analysis. Case Study structure for Geography — always name, locate, and describe the process.</p>
                 </div>
-                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Practical Subjects</h4>
-                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>Process documentation</strong> — materials, method, outcome, evaluation. Always explain <em>why</em> you chose a material or method, not just what you did.</p>
+                <div>
+                  <h4 className="ex-block-title">Practical Subjects</h4>
+                  <p className="ex-block-text"><strong className="text-ink-primary">Process documentation</strong> — materials, method, outcome, evaluation. Always explain <em>why</em> you chose a material or method, not just what you did.</p>
                 </div>
               </div>
               <p>These command-word structures mirror what the marking schemes and Chief Examiner reports reward — for example, Business answers that State, Explain, and Example a developed point rather than name it in one word.<Cite n={2} /> This is a reference card, not deep teaching. Bookmark this section and come back to it when you are practising past papers in a specific subject.</p>
@@ -844,28 +790,29 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
               ) : (
                 <p>You now have <strong>four frameworks</strong> for building better answers:</p>
               )}
-              <div className="my-6 space-y-2.5">
-                <div className="flex items-center gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">1</span>
-                  <div className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>PEEL</strong> for essay paragraphs</div>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">2</span>
-                  <div className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>S&sup3;S</strong> for science and maths calculations</div>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">3</span>
-                  <div className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>The marks-shape decoder</strong> for reading mark allocations</div>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">4</span>
-                  <div className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>The 60% rescue strategy</strong> for partial answers</div>
-                </div>
-              </div>
+              {/* The four frameworks as numbered lines on the page (no boxes, no bordered number tags) */}
+              <ol className="ex-nums">
+                <li>
+                  <span className="ex-num">1</span>
+                  <div className="ex-num-copy"><p className="ex-num-title"><strong>PEEL</strong> for essay paragraphs</p></div>
+                </li>
+                <li>
+                  <span className="ex-num">2</span>
+                  <div className="ex-num-copy"><p className="ex-num-title"><strong>S&sup3;S</strong> for science and maths calculations</p></div>
+                </li>
+                <li>
+                  <span className="ex-num">3</span>
+                  <div className="ex-num-copy"><p className="ex-num-title"><strong>The marks-shape decoder</strong> for reading mark allocations</p></div>
+                </li>
+                <li>
+                  <span className="ex-num">4</span>
+                  <div className="ex-num-copy"><p className="ex-num-title"><strong>The 60% rescue strategy</strong> for partial answers</p></div>
+                </li>
+              </ol>
               <MicroCommitment theme={theme}>
                 <p>Pick one past exam question from your <strong>strongest</strong> subject. Answer it using the right framework. Then pick one from your <strong>weakest</strong> subject. Compare how it feels — that is the difference structure makes.</p>
               </MicroCommitment>
-              <p className="mt-8 text-center font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Knowledge gets you in the door. Structure gets you the marks. You have always had the knowledge — now you have the engineering.</p>
+              <p className="mt-8 t-row text-ink-primary">Knowledge gets you in the door. Structure gets you the marks. You have always had the knowledge — now you have the engineering.</p>
             </ReadingSection>
           )}
         </>

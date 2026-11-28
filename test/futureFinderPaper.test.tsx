@@ -1,5 +1,5 @@
 import React from 'react';
-import { act, cleanup, fireEvent, render, screen, within } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
 import FutureFinderPaper from '../components/FutureFinderPaper';
 import { computeAnalysis } from '../components/futureFinderAnalysis';
@@ -15,12 +15,14 @@ test('the focus flow saves the final answer, values, and actual ranked results',
   render(<FutureFinderPaper uid="student-test" profile={profile}/>);
   fireEvent.click(screen.getByRole('radio',{name:/Quick discovery/}));
   fireEvent.click(screen.getByRole('button',{name:'Let’s explore'}));
-  vi.useFakeTimers();
+  // Area 7a: an answer is chosen (ink outline and tick) and Continue moves on; the answers,
+  // the scoring and what is saved are as before.
   for(let i=0;i<42;i++) {
-    const scale = document.querySelector('.ff-answer-scale')!;
-    fireEvent.click(within(scale as HTMLElement).getAllByRole('button')[3]);
+    const scale = document.querySelector('.ff7-answers')!;
+    fireEvent.click(within(scale as HTMLElement).getAllByRole('radio')[3]);
+    expect(within(scale as HTMLElement).getAllByRole('radio')[3]).toHaveAttribute('aria-checked','true');
     expect(screen.queryByText('Keep this answer')).not.toBeInTheDocument();
-    act(()=>vi.advanceTimersByTime(300));
+    fireEvent.click(screen.getByRole('button',{name:'Continue'}));
   }
   expect(state.persist).toHaveBeenCalledOnce();
   const saved = state.persist.mock.calls[0][0] as FutureFinderRevampedState;
@@ -37,7 +39,8 @@ test('saved results restore, expose all course facts, and preserve answers when 
   const course = document.querySelector('.ff-course')! as HTMLElement;
   fireEvent.click(within(course).getByRole('button',{name:'Save'}));
   expect(state.persist.mock.lastCall?.[0]).toMatchObject({responses:state.saved.responses,valueResponses:{},picks:[expect.any(String)]});
-  fireEvent.click(within(course).getByRole('button',{name:'Explore'}));
+  // Area 7a: the course's name opens it (the board drops the second "Explore" button).
+  fireEvent.click(within(course).getByRole('button',{name:/^Explore /}));
   const dialog = screen.getByRole('dialog');
   for(const label of ['Region','Salary band','Duration','Typical entry','Why it appears here','Possible paths']) expect(within(dialog).getByText(label)).toBeInTheDocument();
   expect(within(dialog).getByRole('link',{name:/Visit .* page/})).toHaveAttribute('href');

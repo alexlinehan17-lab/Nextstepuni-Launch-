@@ -1,7 +1,10 @@
 import React from "react";
 import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
-import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, X } from "lucide-react";
+import { SelectionMark } from "../ui/Choice";
+import { useFlowDark } from "./useFlowDark";
+import { sentenceCase } from "../../utils/sentenceCase";
 import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
@@ -71,9 +74,13 @@ export default function SetupFlow(props: OnboardingProps) {
     transition,
     guest,
   } = useSetupFlow(props);
+  // The white steps follow the phone's dark setting; the review follows the
+  // appearance the student picks there; the orange pages stay orange.
+  const phoneDark = useFlowDark();
+  const dark = surface === "ink" || (surface === "paper" && draft.step !== "summary" && phoneDark);
   return (
     <div
-      className="setup-flow"
+      className={`setup-flow${dark ? " dark" : ""}`}
       data-step={draft.step}
       data-surface={surface}
       data-prevent-pull-to-refresh="true"
@@ -182,6 +189,7 @@ export default function SetupFlow(props: OnboardingProps) {
                                 ? "Leaving Cert Applied"
                                 : "Year"}
                           </span>
+                          <SelectionMark on={draft.year === year} />
                         </button>
                       ))}
                     </div>
@@ -209,7 +217,7 @@ export default function SetupFlow(props: OnboardingProps) {
                     }
                   />
                   <span className="setup-art-label">
-                    {category?.label ?? "Find your direction"}
+                    {sentenceCase(category?.label ?? "Find your direction")}
                   </span>
                 </div>
                 <p className="setup-description">
@@ -234,7 +242,8 @@ export default function SetupFlow(props: OnboardingProps) {
                       <span className="setup-choice-number" aria-hidden="true">
                         {String(index + 1).padStart(2, "0")}
                       </span>
-                      <span>{item.label}</span>
+                      <span>{sentenceCase(item.label)}</span>
+                      <SelectionMark on={draft.category === item.id} />
                     </button>
                   ))}
                 </div>
@@ -312,8 +321,9 @@ export default function SetupFlow(props: OnboardingProps) {
                             })
                           }
                         >
-                          <img src={VISION_CARD_ART[item.id]} alt="" />
+                          <img className="setup-ink-art" src={VISION_CARD_ART[item.id]} alt="" />
                           <span>{item.label}</span>
+                          <SelectionMark on={selected} shape="square" />
                         </button>
                       );
                     })}
@@ -336,7 +346,7 @@ export default function SetupFlow(props: OnboardingProps) {
                   data-compact={draft.subjects.length > 0}
                 >
                   <img
-                    className="setup-art"
+                    className="setup-art setup-ink-art"
                     src="/icons/onboarding/subjects.png"
                     alt=""
                   />
@@ -402,10 +412,11 @@ export default function SetupFlow(props: OnboardingProps) {
                         aria-pressed={draft.subjects.includes(item.name)}
                         onClick={() => toggleSubject(item.name)}
                       >
-                        <span className="setup-subject-name"><SubjectAvatar subject={item.name} /><span>{item.label ?? item.name}</span></span>
+                        <span className="setup-subject-name"><SubjectAvatar subject={item.name} bare /><span>{item.label ?? item.name}</span></span>
                         <span className="setup-subject-state" aria-hidden="true">
                           {draft.subjects.includes(item.name) ? "Added" : "Add"}
                         </span>
+                        <SelectionMark on={draft.subjects.includes(item.name)} shape="square" />
                       </button>
                     ))}
                 </div>
@@ -449,6 +460,7 @@ export default function SetupFlow(props: OnboardingProps) {
                           }
                         >
                           {LEVEL_LABELS[level]}
+                          <SelectionMark on={config.level === level} />
                         </button>
                       ))}
                     </div>
@@ -578,6 +590,7 @@ export default function SetupFlow(props: OnboardingProps) {
                           <span className="setup-day-state">
                             {selected ? "Study" : "Rest"}
                           </span>
+                          <SelectionMark on={selected} shape="square" />
                         </button>
                       );
                     })}
@@ -762,11 +775,11 @@ export default function SetupFlow(props: OnboardingProps) {
             {saving
               ? "Saving your plan…"
               : draft.step === "welcome"
-                ? "Get Started"
+                ? "Get started"
                 : draft.step === "summary"
                   ? guest
                     ? "Dive in"
-                    : "Start Learning"
+                    : "Start learning"
                   : editSnapshot
                     ? "Save and review"
                     : draft.step === "grades"
@@ -777,7 +790,7 @@ export default function SetupFlow(props: OnboardingProps) {
                           : "Continue to schedule"
                       : "Continue"}
           </span>
-          <ArrowUpRight size={24} aria-hidden="true" />
+          <ArrowRight size={20} strokeWidth={1.75} aria-hidden="true" />
         </button>
         <div className="setup-footer-links">
           {(!transition || draft.step !== "subjects" || editSnapshot) && (

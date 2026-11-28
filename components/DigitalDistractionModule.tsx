@@ -1,4 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -16,7 +15,6 @@ Users
 } from 'lucide-react';
 import React,{ useState } from 'react';
 import { DIGITAL_DISTRACTION_REFERENCE_LIST } from '../data/references/digitalDistraction';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { slateTheme } from '../moduleThemes';
 import { type ModuleProgress } from '../types';
@@ -24,6 +22,8 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,ExerciseLabel,ExercisePart,ExerciseSheet } from './learning/Exercise';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = slateTheme;
 
@@ -35,76 +35,66 @@ const AttentionDeficitCalculator = () => {
     const deepWorkTime = Math.max(0, 60 - timeLost);
     const deepPct = Math.round((deepWorkTime / 60) * 100);
 
-    const statColor = deepWorkTime >= 45 ? COLORS.success : deepWorkTime >= 20 ? "var(--module-muted)" : "var(--module-ink)";
-    const calloutStyle = checks === 0
-      ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: moduleFill(COLORS.successTint), color: moduleText(COLORS.successDarkText) }
-      : { border: "1px solid var(--module-line)", backgroundColor: "var(--module-surface)", color: "var(--module-muted)" };
-
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Attention Deficit Calculator</h4>
-                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>After an interruption it can take a while to fully refocus. This is a simplified illustration of how quickly those costs add up.</p>
-            </div>
-
-            {/* Stat card */}
-            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: '24px 28px', maxWidth: 400, margin: '0 auto 20px' }}>
+        <ExerciseSheet label="Interactive Calculator" title="Attention Deficit Calculator" sub="After an interruption it can take a while to fully refocus. This is a simplified illustration of how quickly those costs add up." name="AttentionDeficitCalculator">
+            {/* The readout: the minutes left, on the sheet (no box of its own) */}
+            <div className="text-center">
                 <motion.div key={checks} initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="inline-block">
-                    <span className="font-serif font-bold" style={{ fontSize: 64, color: moduleText(statColor) }}>{deepWorkTime.toFixed(0)}</span>
-                    <span className="font-serif" style={{ fontSize: 28, color: "var(--module-muted)", marginLeft: 6 }}>/ 60 min</span>
+                    <span className="t-number-xl text-ink-primary">{deepWorkTime.toFixed(0)}</span>
+                    {' '}<span className="t-name-sm text-ink-muted">/ 60 min</span>
                 </motion.div>
-                <p style={{ fontSize: 14, color: "var(--module-muted)", marginTop: 4 }}>of actual deep work</p>
+                <p className="t-sub">of actual deep work</p>
             </div>
 
-            {/* Split bar */}
-            <div className="flex mb-2" style={{ border: "2px solid var(--module-line)", borderRadius: 100, height: 28, overflow: 'hidden' }}>
-                <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: moduleFill(COLORS.success) }} animate={{ width: `${deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
-                    {deepPct > 15 && <span style={{ fontSize: 12, fontWeight: 600, color: "var(--module-on-fill)" }}>{deepPct}%</span>}
-                </motion.div>
-                <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--module-solid)" }} animate={{ width: `${100 - deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
-                    {(100 - deepPct) > 15 && <span style={{ fontSize: 12, fontWeight: 600, color: "var(--module-on-fill)" }}>{100 - deepPct}%</span>}
-                </motion.div>
-            </div>
-            <div className="flex justify-between text-xs mb-6">
-                <span className="font-semibold" style={{ color: moduleText(COLORS.success) }}>Deep Work</span>
-                <span className="font-semibold" style={{ color: "var(--module-ink)" }}>Recovery Time</span>
+            {/* Split bar: deep work in ink, recovery time a hairline tone */}
+            <div>
+                <div className="flex mb-2" style={{ border: "1px solid var(--outline-soft)", borderRadius: 100, height: 28, overflow: 'hidden' }}>
+                    <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--ink-primary)" }} animate={{ width: `${deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
+                        {deepPct > 15 && <span className="t-meta" style={{ color: "var(--surface-paper)" }}>{deepPct}%</span>}
+                    </motion.div>
+                    <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--hairline)" }} animate={{ width: `${100 - deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
+                        {(100 - deepPct) > 15 && <span className="t-meta" style={{ color: "var(--ink-primary)" }}>{100 - deepPct}%</span>}
+                    </motion.div>
+                </div>
+                <div className="flex justify-between">
+                    <span className="t-meta" style={{ color: "var(--ink-primary)" }}>Deep Work</span>
+                    <span className="t-meta">Recovery Time</span>
+                </div>
             </div>
 
-            {/* Phone check selector */}
-            <div className="mb-5">
-                <p className="mb-3" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Phone checks per study hour</p>
-                <div className="flex gap-1.5">
+            {/* Phone check selector: white keys with a line; the chosen one an ink outline */}
+            <div className="flex flex-col gap-3">
+                <ExerciseLabel>Phone checks per study hour</ExerciseLabel>
+                <div className="grid grid-cols-6 sm:grid-cols-11 gap-1.5">
                     {Array.from({ length: 11 }).map((_, i) => (
-                        <button key={i} onClick={() => setChecks(i)} className="flex-1 flex items-center justify-center transition-all" style={{
-                            width: 52, height: 52,
-                            backgroundColor: moduleFill(i === checks ? COLORS.success : "var(--module-surface)"),
-                            border: i === checks ? `2px solid ${COLORS.successDarkText}` : "2px solid var(--module-line)",
-                            borderRadius: 10,
-                            fontSize: 15, fontWeight: i === checks ? 700 : 600,
-                            color: moduleText(i === checks ? "var(--module-on-fill)" : "var(--module-muted)"),
+                        <button key={i} type="button" onClick={() => setChecks(i)} className="flex items-center justify-center t-row" style={{
+                            minHeight: 44,
+                            backgroundColor: "var(--surface-paper)",
+                            border: i === checks ? "1.5px solid var(--ink-primary)" : "1px solid var(--outline-soft)",
+                            borderRadius: 'var(--r-ctl)',
+                            color: i === checks ? "var(--ink-primary)" : "var(--ink-secondary)",
                             cursor: 'pointer',
-                        }} data-wide-button="true" data-selected={!!(i === checks)} data-tone="mint" aria-pressed={!!(i === checks)}>
+                        }} aria-pressed={!!(i === checks)}>
                             {i}
                         </button>
                     ))}
                 </div>
-                <div className="flex justify-between mt-1.5" style={{ fontSize: 12, color: "var(--module-muted)" }}>
+                <div className="flex justify-between -mt-1.5 t-meta">
                     <span>Phone away</span>
                     <span>Constant</span>
                 </div>
             </div>
 
-            {/* Insight callout */}
-            <div className="text-sm italic" style={{ ...calloutStyle, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-                {checks === 0 && <span className="font-semibold not-italic">Phone away = full hour of deep work. This is the goal.</span>}
+            {/* Insight: a line in ink (the tick once the phone is away) */}
+            <AnswerLine tone={checks === 0 ? 'ok' : 'note'}>
+                {checks === 0 && <span>Phone away = full hour of deep work. This is the goal.</span>}
                 {checks === 1 && <span>Even <strong>one check</strong> can cost around 23 minutes of recovery — on this model, over a third of your hour.</span>}
                 {checks === 2 && <span><strong>Two checks</strong> could cost you up to 46 minutes on this model — leaving little of the hour for real studying.</span>}
                 {checks === 3 && <span>At <strong>3 checks</strong>, on this model almost the whole hour is eaten by recovery time — your brain barely reaches deep processing.</span>}
                 {checks >= 4 && checks <= 6 && <span>At <strong>{checks} checks per hour</strong>, virtually none of your study time is productive. You&apos;re just sitting with a book open.</span>}
                 {checks > 6 && <span><strong>{checks} checks per hour</strong> means you&apos;re checking your phone every {(60 / checks).toFixed(0)} minutes. This isn&apos;t studying — it&apos;s scrolling with extra steps.</span>}
-            </div>
-        </div>
+            </AnswerLine>
+        </ExerciseSheet>
     );
 };
 
@@ -151,39 +141,6 @@ const PHASES = [
   },
 ] as const;
 
-const phaseStyles: Record<string, { accentDot: string; accentBg: string; checkBg: string; checkBorder: string; completedBorder: string; completedGlow: string; badge: string; text: string }> = {
-  blue: {
-    accentDot: "bg-[var(--module-solid)]",
-    accentBg: "bg-[var(--module-solid)]",
-    checkBg: "bg-[var(--module-solid)]",
-    checkBorder: "border-[var(--module-line)] dark:border-[var(--module-line)]",
-    completedBorder: "border-[var(--module-line)] dark:border-[var(--module-line)]",
-    completedGlow: "shadow-none shadow-none",
-    badge: "bg-[var(--module-surface)] text-[var(--module-ink)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]",
-    text: "text-[var(--module-ink)] dark:text-[var(--module-ink)]",
-  },
-  amber: {
-    accentDot: "bg-[var(--module-surface)]",
-    accentBg: "bg-[var(--module-surface)]",
-    checkBg: "bg-[var(--module-surface)]",
-    checkBorder: "border-[var(--module-line)] dark:border-[var(--module-line)]",
-    completedBorder: "border-[var(--module-line)] dark:border-[var(--module-line)]",
-    completedGlow: "shadow-none shadow-none",
-    badge: "bg-[var(--module-surface)] text-[var(--module-ink)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]",
-    text: "text-[var(--module-ink)] dark:text-[var(--module-ink)]",
-  },
-  rose: {
-    accentDot: "bg-[var(--module-danger)]",
-    accentBg: "bg-[var(--module-danger)]",
-    checkBg: "bg-[var(--module-danger)]",
-    checkBorder: "border-[var(--module-line)] dark:border-[var(--module-line)]",
-    completedBorder: "border-[var(--module-line)] dark:border-[var(--module-line)]",
-    completedGlow: "shadow-none shadow-none",
-    badge: "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:bg-[var(--module-danger-soft)] dark:text-[var(--module-danger-text)]",
-    text: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]",
-  },
-};
-
 const PhasedDetoxRoadmap = () => {
   const [checked, setChecked] = useState<Set<string>>(new Set());
 
@@ -210,38 +167,30 @@ const PhasedDetoxRoadmap = () => {
   const progressPct = Math.round((totalChecked / totalItems) * 100);
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      {/* Header */}
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">
-        Phased Detox Roadmap
-      </h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-2">
-        Progressively build your digital fortress across the school year.
-      </p>
-
-      {/* Overall progress */}
-      <div className="text-center mb-8">
+    <ExerciseSheet title="Phased Detox Roadmap" sub="Progressively build your digital fortress across the school year." name="PhasedDetoxRoadmap">
+      {/* Overall progress: the count in ink, on the sheet */}
+      <div className="text-center">
         <MotionDiv
           key={totalChecked}
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           className="inline-block"
         >
-          <span className={`text-4xl font-bold tabular-nums ${allDone ? '' : "text-[var(--module-ink)] dark:text-[var(--module-muted)]"}`} style={allDone ? { color: moduleText(COLORS.success) } : undefined}>
+          <span className="t-number text-ink-primary">
             {totalChecked}
           </span>
-          <span className="text-lg font-bold text-[var(--module-muted)] ml-1">/ {totalItems}</span>
+          {' '}<span className="t-name-sm text-ink-muted">/ {totalItems}</span>
         </MotionDiv>
-        <p className="text-sm font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">barriers activated</p>
+        <p className="t-sub">barriers activated</p>
       </div>
 
       {/* Timeline */}
       <div className="relative pl-8 md:pl-10">
-        {/* Vertical progress line */}
-        <div className="absolute left-3 md:left-4 top-0 bottom-0 w-1 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+        {/* Vertical progress line: a hairline track, ink to the progress */}
+        <div className="absolute left-3 md:left-4 top-0 bottom-0 rounded-full" style={{ width: 2, backgroundColor: "var(--hairline)" }}>
           <motion.div
             className="w-full rounded-full"
-            style={{ backgroundColor: moduleFill(COLORS.success) }}
+            style={{ backgroundColor: "var(--ink-primary)" }}
             animate={{ height: `${progressPct}%` }}
             transition={{ type: 'spring', stiffness: 80, damping: 18 }}
           />
@@ -249,7 +198,6 @@ const PhasedDetoxRoadmap = () => {
 
         <div className="space-y-8">
           {PHASES.map((phase, pi) => {
-            const style = phaseStyles[phase.color];
             const pc = phaseCompletions[pi];
             const phaseDone = pc.done;
 
@@ -259,74 +207,48 @@ const PhasedDetoxRoadmap = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: pi * 0.12 }}
-                className="relative rounded-xl p-5 md:p-6 transition-all duration-500"
-                style={phaseDone ? { backgroundColor: moduleFill(COLORS.successTint), border: `2.5px solid ${COLORS.success}`, borderRadius: 16, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}
+                className="relative"
               >
-                {/* Dot on timeline */}
-                <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-hairline ${phaseDone ? '' : style.accentBg}`} style={phaseDone ? { backgroundColor: moduleFill(COLORS.success) } : undefined} />
+                {/* Dot on timeline: a ring, green once the phase is done */}
+                <div className="absolute -left-[29px] md:-left-[33px] top-6 w-5 h-5 rounded-full" style={phaseDone ? { backgroundColor: "var(--success-hex)", border: "1.5px solid var(--success-hex)" } : { backgroundColor: "var(--surface-paper)", border: "1.5px solid var(--outline-strong)" }} />
 
-                {/* Phase header */}
-                <div className="flex flex-wrap items-center gap-2 mb-3">
-                  <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full ${style.badge}`}>
-                    Phase {phase.number}
-                  </span>
-                  <h5 className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">
-                    {phase.title}
-                  </h5>
-                  <span className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] ml-auto">{phase.range}</span>
-                </div>
+                {/* Phase header: its label, title and months, then the checklist */}
+                <ExercisePart label={<>Phase {phase.number}</>} title={phase.title} sub={phase.range} level={5}>
+                  {/* Progress count */}
+                  <p className="ex-count t-readout">
+                    {pc.phaseChecked}/{pc.phaseTotal} complete
+                  </p>
 
-                {/* Progress count */}
-                <p className={`text-xs font-semibold mb-3 ${style.text}`}>
-                  {pc.phaseChecked}/{pc.phaseTotal} complete
-                </p>
-
-                {/* Checklist */}
-                <ul className="space-y-2.5">
-                  {phase.items.map((item, ii) => {
-                    const key = `${phase.number}-${ii}`;
-                    const isChecked = checked.has(key);
-                    return (
-                      <li key={key}>
-                        <button
+                  {/* Checklist */}
+                  <AnswerGroup kind="several">
+                    {phase.items.map((item, ii) => {
+                      const key = `${phase.number}-${ii}`;
+                      const isChecked = checked.has(key);
+                      return (
+                        <ChoiceTile
+                          key={key}
+                          kind="several"
+                          chosen={isChecked}
+                          label={item}
                           onClick={() => toggle(key)}
-                          className="flex items-start gap-3 w-full text-left group" data-wide-button="true"
-                        >
-                          {/* Custom checkbox */}
-                          <MotionDiv
-                            className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${isChecked ? `${style.checkBg} border-transparent` : `${style.checkBorder} bg-white dark:bg-surface-paper`}`}
-                            animate={isChecked ? { scale: [1, 1.25, 1] } : { scale: 1 }}
-                            transition={{ duration: 0.25 }}
-                          >
-                            {isChecked && (
-                              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-[var(--module-ink)]">
-                                <path d="M2.5 6L5 8.5L9.5 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                              </svg>
-                            )}
-                          </MotionDiv>
-                          <span className={`text-sm leading-snug transition-colors ${isChecked ? "line-through text-[var(--module-muted)] dark:text-[var(--module-muted)]" : "text-[var(--module-ink)] dark:text-[var(--module-muted)] group-hover:text-[var(--module-ink)] dark:group-hover:text-[var(--module-ink)]"}`}>
-                            {item}
-                          </span>
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
+                        />
+                      );
+                    })}
+                  </AnswerGroup>
 
-                {/* Phase completion badge */}
-                <AnimatePresence>
-                  {phaseDone && (
-                    <MotionDiv
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      className="mt-4 p-3 rounded-lg text-center text-sm font-semibold"
-                      style={{ backgroundColor: moduleFill(COLORS.successTint), border: `1px solid ${COLORS.success}`, color: moduleText(COLORS.successDarkText) }}
-                    >
-                      Phase {phase.number} complete
-                    </MotionDiv>
-                  )}
-                </AnimatePresence>
+                  {/* Phase completion line */}
+                  <AnimatePresence>
+                    {phaseDone && (
+                      <MotionDiv
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                      >
+                        <AnswerLine>Phase {phase.number} complete</AnswerLine>
+                      </MotionDiv>
+                    )}
+                  </AnimatePresence>
+                </ExercisePart>
               </MotionDiv>
             );
           })}
@@ -340,19 +262,15 @@ const PhasedDetoxRoadmap = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
-            className="mt-8 p-5 rounded-xl text-center"
-            style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2.5px solid ${COLORS.success}`, boxShadow: 'none' }}
           >
-            <p className="font-serif text-lg font-semibold" style={{ color: moduleText(COLORS.successDarkText) }}>
-              Full digital fortress activated.
-            </p>
-            <p className="text-sm mt-1" style={{ color: moduleText(COLORS.successDarkText) }}>
-              You&apos;ve removed every barrier between you and deep focus.
-            </p>
+            <AnswerLine>
+              <b>Full digital fortress activated.</b>
+              {' '}You&apos;ve removed every barrier between you and deep focus.
+            </AnswerLine>
           </MotionDiv>
         )}
       </AnimatePresence>
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -487,32 +405,29 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
               ) : (
                 <p>You don't have to do everything at once. This is a gradual plan that builds up across the school year.</p>
               )}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-                {/* Card 1 — Sky */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Phase 1: Getting Started (Sept - Dec)</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Turn off unnecessary notifications, start charging your phone outside your bedroom, and figure out where your time actually goes.</p>
+              <ol className="ex-nums">
+                <li>
+                  <span className="ex-num">1</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Phase 1: Getting Started (Sept - Dec)</p>
+                    <p className="ex-num-sub">Turn off unnecessary notifications, start charging your phone outside your bedroom, and figure out where your time actually goes.</p>
                   </div>
-                </div>
-                {/* Card 2 — Sunshine */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 2: Locking It Down (Jan - Mar)</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Set up website blockers on your laptop, start batching your social media into one window each evening, and delete the worst time-wasting apps.</p>
+                </li>
+                <li>
+                  <span className="ex-num">2</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Phase 2: Locking It Down (Jan - Mar)</p>
+                    <p className="ex-num-sub">Set up website blockers on your laptop, start batching your social media into one window each evening, and delete the worst time-wasting apps.</p>
                   </div>
-                </div>
-                {/* Card 3 — Peach */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 3: Full Focus (Apr - June)</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>This is where you go all-in for the exams. Minimal phone use, locked blockers on your laptop, and maybe even deactivating social media until exam season is over.</p>
+                </li>
+                <li>
+                  <span className="ex-num">3</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Phase 3: Full Focus (Apr - June)</p>
+                    <p className="ex-num-sub">This is where you go all-in for the exams. Minimal phone use, locked blockers on your laptop, and maybe even deactivating social media until exam season is over.</p>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ol>
               <PhasedDetoxRoadmap />
               <MicroCommitment theme={theme}>
                 <p>Tonight, move your phone charger out of your bedroom and into the kitchen. That's it. One small change, but it's the single most effective thing you can do right now.</p>

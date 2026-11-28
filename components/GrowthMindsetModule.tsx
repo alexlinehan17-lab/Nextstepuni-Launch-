@@ -1,5 +1,3 @@
-import { moduleFill,moduleText } from './learning/brandTokens';
-
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -13,7 +11,7 @@ Cpu,
 MessageSquareQuote,
 RotateCcw,Zap
 } from 'lucide-react';
-import React,{ useEffect,useState } from 'react';
+import React,{ useEffect,useId,useState } from 'react';
 import { GROWTH_MINDSET_REFERENCE_LIST } from '../data/references/growthMindset';
 import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
@@ -24,6 +22,10 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,ExerciseLabel,ExercisePart,ExerciseSheet,RevealCard } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { AreaField,Field } from './ui/Field';
 
 const theme = amberTheme;
 
@@ -46,47 +48,36 @@ const MindsetDiagnostic = ({ savedAnswers, onSaveAnswers }: { savedAnswers?: ('f
 
   const isComplete = answers.every(a => a !== null);
 
-  return <div className="wr-skin" data-wide="MindsetDiagnostic"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Mindset Diagnostic</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Which thought sounds more like you in a tough situation?</p>
-      <div className="space-y-6">
+  return <ExerciseSheet title="Mindset Diagnostic" sub="Which thought sounds more like you in a tough situation?" name="MindsetDiagnostic">
+      <div className="ex-questions">
         {/* Question 1 */}
-        <div>
-          <p className="text-sm font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-3">When I fail at something...</p>
-          <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(0, 'fixed')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[0] === 'fixed' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(answers[0] === 'fixed')} data-tone="coral" aria-pressed={!!(answers[0] === 'fixed')}>A) I feel like I'm a failure.</button>
-            <button onClick={() => handleAnswer(0, 'growth')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[0] === 'growth' ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(answers[0] === 'growth')} data-tone="mint" aria-pressed={!!(answers[0] === 'growth')}>B) I feel like I need to try a new strategy.</button>
-          </div>
-        </div>
+        <AnswerGroup kind="one" legend="When I fail at something..." columns={2}>
+            <ChoiceTile tile chosen={answers[0] === 'fixed'} onClick={() => handleAnswer(0, 'fixed')} label="A) I feel like I'm a failure." />
+            <ChoiceTile tile chosen={answers[0] === 'growth'} onClick={() => handleAnswer(0, 'growth')} label="B) I feel like I need to try a new strategy." />
+        </AnswerGroup>
         {/* Question 2 */}
-         <div>
-          <p className="text-sm font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-3">If a subject is hard for me...</p>
-          <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(1, 'fixed')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[1] === 'fixed' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(answers[1] === 'fixed')} data-tone="coral" aria-pressed={!!(answers[1] === 'fixed')}>A) It means I'm probably not smart enough for it.</button>
-            <button onClick={() => handleAnswer(1, 'growth')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[1] === 'growth' ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(answers[1] === 'growth')} data-tone="mint" aria-pressed={!!(answers[1] === 'growth')}>B) It means I have a great opportunity to learn.</button>
-          </div>
-        </div>
+        <AnswerGroup kind="one" legend="If a subject is hard for me..." columns={2}>
+            <ChoiceTile tile chosen={answers[1] === 'fixed'} onClick={() => handleAnswer(1, 'fixed')} label="A) It means I'm probably not smart enough for it." />
+            <ChoiceTile tile chosen={answers[1] === 'growth'} onClick={() => handleAnswer(1, 'growth')} label="B) It means I have a great opportunity to learn." />
+        </AnswerGroup>
         {/* Question 3 */}
-         <div>
-          <p className="text-sm font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-3">I believe my intelligence is something...</p>
-          <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(2, 'fixed')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[2] === 'fixed' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(answers[2] === 'fixed')} data-tone="coral" aria-pressed={!!(answers[2] === 'fixed')}>A) That I can't change very much.</button>
-            <button onClick={() => handleAnswer(2, 'growth')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[2] === 'growth' ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(answers[2] === 'growth')} data-tone="mint" aria-pressed={!!(answers[2] === 'growth')}>B) That I can grow with effort.</button>
-          </div>
-        </div>
+        <AnswerGroup kind="one" legend="I believe my intelligence is something..." columns={2}>
+            <ChoiceTile tile chosen={answers[2] === 'fixed'} onClick={() => handleAnswer(2, 'fixed')} label="A) That I can't change very much." />
+            <ChoiceTile tile chosen={answers[2] === 'growth'} onClick={() => handleAnswer(2, 'growth')} label="B) That I can grow with effort." />
+        </AnswerGroup>
       </div>
       <AnimatePresence>
       {isComplete && (
-        <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-xl" style={score === 3 ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", boxShadow: 'none' } : score === 2 ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
-          <p className="text-center font-bold">
-            {score === 3 && <span style={{ color: "var(--module-success-text)" }}>Result: You're operating with a strong Growth Mindset OS!</span>}
-            {score === 2 && <span style={{ color: "var(--module-danger-text)" }}>Result: You're leaning towards Growth, with some Fixed-Mindset code still running.</span>}
-            {score < 2 && <span style={{ color: "var(--module-danger-text)" }}>Result: Your system is currently running a Fixed-Mindset OS. Time for an upgrade!</span>}
-          </p>
+        <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}}>
+          <AnswerLine tone={score === 3 ? 'ok' : 'note'}>
+            {score === 3 && <span>Result: You're operating with a strong Growth Mindset OS!</span>}
+            {score === 2 && <span>Result: You're leaning towards Growth, with some Fixed-Mindset code still running.</span>}
+            {score < 2 && <span>Result: Your system is currently running a Fixed-Mindset OS. Time for an upgrade!</span>}
+          </AnswerLine>
         </motion.div>
       )}
       </AnimatePresence>
-    </div></div>;
+    </ExerciseSheet>;
 };
 
 const NeuroplasticityVisualizer = () => {
@@ -94,20 +85,14 @@ const NeuroplasticityVisualizer = () => {
   const milestone = connections === 1 ? 'First connection forming.' : connections === 3 ? 'Pathway strengthening — repetition is working.' : connections === 5 ? 'Strong neural pathway established.' : null;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
-        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>The Brain Rewiring Simulator</h4>
-        <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Every time you practice, you strengthen the physical connections in your brain.</p>
-      </div>
+    <ExerciseSheet label="Neuroscience Simulation" title="The Brain Rewiring Simulator" sub="Every time you practice, you strengthen the physical connections in your brain." name="NeuroplasticityVisualizer">
+      {/* The drawing, on the sheet under its label (no box of its own) */}
+      <div className="ex-figure">
+        <ExerciseLabel>Neural Pathway</ExerciseLabel>
 
-      {/* SVG card */}
-      <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 28, maxWidth: 380, margin: '0 auto' }}>
-        <p className="text-center mb-3" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Neural Pathway</p>
-
-        <svg width="250" height="100" viewBox="0 0 250 100" style={{ display: 'block', margin: '0 auto' }}>
+        <svg width="250" height="100" viewBox="0 0 250 100" className="ex-figure-art">
           {/* Base placeholder connection */}
-          <path d="M 70 50 Q 125 50 180 50" fill="none" stroke="var(--module-muted)" strokeWidth="1" opacity="0.5" />
+          <path d="M 70 50 Q 125 50 180 50" fill="none" stroke="var(--ink-muted)" strokeWidth="1" opacity="0.5" />
 
           {/* Connection arcs */}
           <AnimatePresence>
@@ -137,50 +122,35 @@ const NeuroplasticityVisualizer = () => {
           <circle cx="200" cy="50" r="8" fill="rgba(255,255,255,0.25)" />
 
           {/* Node labels */}
-          <text x="50" y="82" textAnchor="middle" fontSize="11" fill="var(--module-muted)" fontFamily="DM Sans, sans-serif">Neuron A</text>
-          <text x="200" y="82" textAnchor="middle" fontSize="11" fill="var(--module-muted)" fontFamily="DM Sans, sans-serif">Neuron B</text>
+          <text x="50" y="82" textAnchor="middle" fontSize="11" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>Neuron A</text>
+          <text x="200" y="82" textAnchor="middle" fontSize="11" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>Neuron B</text>
         </svg>
 
         {/* Connection count */}
-        <div className="text-center mt-3 pt-3" style={{ borderTop: "1px solid var(--module-line)" }}>
-          <p style={{ fontSize: 12, color: "var(--module-muted)" }}>{connections} connection{connections !== 1 ? 's' : ''} formed</p>
-        </div>
+        <p className="ex-figure-count">{connections} connection{connections !== 1 ? 's' : ''} formed</p>
       </div>
 
-      {/* Milestone callout */}
+      {/* Milestone: a line in ink (the tick once the pathway is established) */}
       {milestone && (
         <motion.div
           key={milestone}
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 max-w-sm mx-auto"
-          style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: moduleFill(COLORS.accentTint), borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
         >
-          <p className="text-sm italic" style={{ color: moduleText(COLORS.accentDarkText) }}>{milestone}</p>
+          <AnswerLine tone={connections === 5 ? 'ok' : 'note'}>{milestone}</AnswerLine>
         </motion.div>
       )}
 
       {/* Buttons */}
-      <div className="flex items-center justify-center gap-5 mt-6">
-        <motion.button
-          onClick={() => setConnections(c => Math.min(c + 1, 5))}
-          whileTap={{ y: 3 }}
-          className="text-[var(--module-ink)] font-semibold"
-          style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 100, padding: '14px 32px', fontSize: 15, borderBottom: `3px solid ${COLORS.accentDark}`, boxShadow: 'none' }} data-wide-button="true"
-        >
+      <div className="ex-actions">
+        <Button onClick={() => setConnections(c => Math.min(c + 1, 5))}>
           Practice a Skill
-        </motion.button>
-        <button
-          onClick={() => setConnections(0)}
-          className="font-medium"
-          style={{ fontSize: 13, color: "var(--module-muted)", background: 'none', border: 'none' }}
-          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = "var(--module-ink)"; }}
-          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = "var(--module-muted)"; }} data-wide-button="true"
-        >
+        </Button>
+        <TextButton tone="quiet" onClick={() => setConnections(0)}>
           Reset
-        </button>
+        </TextButton>
       </div>
-    </div>
+    </ExerciseSheet>
   );
 }
 
@@ -193,55 +163,40 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
     }, [savedText]);
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>The "Yet" Reframe Challenge</h4>
-                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Upgrade this fixed thought into a growth mindset statement using the power of "yet".</p>
-            </div>
-
-            {/* Fixed thought card */}
-            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] max-w-lg mx-auto" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 24px' }}>
-                <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", borderRadius: 20, padding: '3px 10px' }}>Fixed Mindset Thought</span>
-                <p className="font-serif italic" style={{ fontSize: 17, color: "var(--module-ink)" }}>I'm just not a maths person.</p>
+        <ExerciseSheet label="Growth Mindset Activity" title={'The "Yet" Reframe Challenge'} sub={'Upgrade this fixed thought into a growth mindset statement using the power of "yet".'} name="ReframeChallenge">
+            {/* The fixed thought: words you read, so on the sheet under their label, not in a box */}
+            <div className="ex-thought">
+                <ExerciseLabel>Fixed Mindset Thought</ExerciseLabel>
+                <p className="ex-thought-words">I'm just not a maths person.</p>
             </div>
 
             {/* Transformation connector */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
-                <div style={{ width: 2, height: 20, background: "var(--module-surface)" }} />
-                <div style={{ background: moduleFill(COLORS.accentTint), border: '1.5px solid rgba(var(--nsu-orange-rgb), 0.3)', borderRadius: 20, padding: '6px 14px' }}>
-                    <span style={{ fontSize: 12, fontWeight: 700, color: moduleText(COLORS.accentDarkText), letterSpacing: '0.05em' }}>ADD "YET"</span>
-                </div>
-                <div style={{ width: 2, height: 20, background: "var(--module-surface)" }} />
-                <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1L8 8L15 1" stroke={COLORS.accent} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <div className="ex-connector">
+                <i aria-hidden="true" />
+                <span className="ex-label">ADD "YET"</span>
+                <i aria-hidden="true" />
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path d="M1 1L8 8L15 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>
 
-            {/* Rewrite area */}
-            <div className="max-w-lg mx-auto" style={{ backgroundColor: moduleFill(COLORS.accentTint), border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '18px 20px' }}>
-                <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '3px 10px' }}>Your Reframe</span>
-                <textarea
-                    value={reframe}
-                    onChange={(e) => setReframe(e.target.value)}
-                    onBlur={() => onSave?.(reframe)}
-                    placeholder="Rewrite this using the word 'yet'..."
-                    className="w-full outline-none font-serif"
-                    style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '14px 16px', fontSize: 15, color: "var(--module-ink)", lineHeight: 1.6, minHeight: 100, resize: 'none' as const }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-                    onBlurCapture={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }}
-                />
+            {/* Rewrite area: the field and the line that answers it */}
+            <AreaField
+                label="Your Reframe"
+                value={reframe}
+                onChange={(e) => setReframe(e.target.value)}
+                onBlur={() => onSave?.(reframe)}
+                placeholder="Rewrite this using the word 'yet'..."
+            />
 
-                <AnimatePresence>
-                    {containsYet && (
-                        <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={{ marginTop: 12, backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
-                            <p className="font-serif font-semibold" style={{ fontSize: 16, color: moduleText(COLORS.successDarkText) }}>Reframe complete.</p>
-                            <p style={{ fontSize: 13, color: moduleText(COLORS.success), marginTop: 4 }}>You've opened up the possibility of future growth.</p>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-            </div>
-        </div>
+            <AnimatePresence>
+                {containsYet && (
+                    <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}>
+                        <AnswerLine><b>Reframe complete.</b> You've opened up the possibility of future growth.</AnswerLine>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </ExerciseSheet>
     );
 };
 
@@ -288,6 +243,7 @@ const FeedbackTranslator = () => {
   const [flipped, setFlipped] = useState<boolean[]>(Array(6).fill(false));
   const [customFeedback, setCustomFeedback] = useState('');
   const [selectedTranslation, setSelectedTranslation] = useState<number | null>(null);
+  const writeOwnId = useId();
 
   const translatedCount = flipped.filter(Boolean).length;
   const allTranslated = translatedCount === 6;
@@ -300,117 +256,80 @@ const FeedbackTranslator = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <div className="text-center mb-2">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Interactive Activity</span>
-        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Feedback Translator</h4>
-        <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Tap each card to translate harsh "verdict language" into constructive "data language."</p>
-      </div>
+    <ExerciseSheet label="Interactive Activity" title="Feedback Translator" sub={'Tap each card to translate harsh "verdict language" into constructive "data language."'} name="FeedbackTranslator">
+      {/* Progress: a count in the readout, not a tinted chip */}
+      <p className="ex-count ui-readout" aria-live="polite">
+        {allTranslated ? `All ${feedbackPairs.length} translated ✓` : `${translatedCount} / ${feedbackPairs.length} translated`}
+      </p>
 
-      {/* Progress chip */}
-      <div className="flex justify-center mb-8 mt-3">
-        <div className="inline-flex items-center gap-2" style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '5px 14px' }}>
-          <span style={{ fontSize: 13, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>
-            {allTranslated ? `All ${feedbackPairs.length} translated ✓` : `${translatedCount} / ${feedbackPairs.length} translated`}
-          </span>
-        </div>
-      </div>
-
-      <div className="space-y-3">
+      <div className="ex-cards">
         {feedbackPairs.map((pair, i) => (
-          <div key={i}>
-            <AnimatePresence mode="wait">
-              {!flipped[i] ? (
-                <MotionDiv
-                  key={`verdict-${i}`}
-                  initial={{ opacity: 1 }}
-                  exit={{ opacity: 0, rotateY: 90 }}
-                  transition={{ duration: 0.25 }}
-                  onClick={() => handleFlip(i)}
-                  className="cursor-pointer bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
-                  style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 22px' }}
-                >
-                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", borderRadius: 20, padding: '3px 10px', letterSpacing: '0.1em' }}>Verdict Language</span>
-                  <p className="font-serif italic mt-2" style={{ fontSize: 16, color: "var(--module-ink)" }}>{pair.verdict}</p>
-                  <p className="flex items-center gap-1.5 mt-3" style={{ fontSize: 12, color: "var(--module-muted)" }}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--module-muted)" strokeWidth="2" strokeLinecap="round"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/></svg>
+          <RevealCard
+            key={i}
+            revealed={flipped[i]}
+            onPress={() => handleFlip(i)}
+            keepBefore={false}
+            toggles={false}
+            before={<>
+              <span className="ex-label">Verdict Language</span>
+              <span className="ex-reveal-words">{pair.verdict}</span>
+            </>}
+            hint={<>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/></svg>
                     Tap to translate
-                  </p>
-                </MotionDiv>
-              ) : (
-                <MotionDiv
-                  key={`data-${i}`}
-                  initial={{ opacity: 0, rotateY: -90 }}
-                  animate={{ opacity: 1, rotateY: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="relative"
-                  style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 22px' }}
-                >
-                  <span className="absolute top-4 right-4 font-bold" style={{ fontSize: 16, color: moduleText(COLORS.success) }}>✓</span>
-                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: moduleFill(COLORS.successTint), color: moduleText(COLORS.successDarkText), borderRadius: 20, padding: '3px 10px', letterSpacing: '0.1em' }}>Data Language</span>
-                  <p className="font-serif mt-2" style={{ fontSize: 16, color: "var(--module-ink)" }}>{pair.data}</p>
-                  <p className="italic mt-3" style={{ fontSize: 13, color: moduleText(COLORS.success) }}>{pair.shift}</p>
-                </MotionDiv>
-              )}
-            </AnimatePresence>
-          </div>
+            </>}
+            after={<>
+              <span className="ex-reveal-tickrow"><span className="ex-reveal-check">✓</span><span className="ex-label">Data Language</span></span>
+              <span className="ex-reveal-words">{pair.data}</span>
+              <span className="ex-reveal-note">{pair.shift}</span>
+            </>}
+          />
         ))}
       </div>
 
       {/* Completion */}
       <AnimatePresence>
         {allTranslated && (
-          <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-6" style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 16, padding: '20px 24px', textAlign: 'center' }}>
-            <p className="font-serif font-semibold" style={{ fontSize: 18, color: moduleText(COLORS.successDarkText) }}>Translation complete.</p>
-            <p style={{ fontSize: 14, color: moduleText(COLORS.success), marginTop: 4 }}>You can now hear feedback as information, not judgment.</p>
+          <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
+            <AnswerLine><b>Translation complete.</b> You can now hear feedback as information, not judgment.</AnswerLine>
           </MotionDiv>
         )}
       </AnimatePresence>
 
       {/* Write Your Own */}
-      <div className="mt-10 pt-8" style={{ borderTop: "1px solid var(--module-line)" }}>
-        <h5 className="font-serif font-semibold text-center mb-2" style={{ fontSize: 18, color: "var(--module-ink)" }}>Write Your Own</h5>
-        <p className="text-center text-sm mb-4" style={{ color: "var(--module-muted)" }}>Type a piece of feedback you've received, then pick the translation that fits best.</p>
-        <input
+      <ExercisePart title="Write Your Own" level={5} id={writeOwnId} sub="Type a piece of feedback you've received, then pick the translation that fits best.">
+        <Field
           type="text"
+          aria-labelledby={writeOwnId}
           value={customFeedback}
           onChange={(e) => { setCustomFeedback(e.target.value); setSelectedTranslation(null); }}
           placeholder="e.g. You always make silly mistakes..."
-          className="w-full outline-none"
-          style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '14px 16px', fontSize: 14, color: "var(--module-ink)" }}
-          onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-          onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }}
         />
         <AnimatePresence>
           {customFeedback.trim().length > 0 && (
-            <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} className="mt-4 space-y-3">
-              <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Pick your growth translation:</p>
-              {writeYourOwnTranslations.map((t, i) => (
-                <button
-                  key={i}
-                  onClick={() => setSelectedTranslation(i)}
-                  className="w-full text-left text-sm font-medium transition-all"
-                  style={selectedTranslation === i
-                    ? { backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px', color: moduleText(COLORS.successDarkText) }
-                    : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14, padding: '16px 20px', color: "var(--module-ink)", cursor: 'pointer' }
-                  } data-wide-button="true" data-selected={!!(selectedTranslation === i)} data-tone="mint" aria-pressed={!!(selectedTranslation === i)}
-                >
-                  {t}
-                </button>
-              ))}
+            <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} className="ex-stack">
+              <AnswerGroup kind="one" legend="Pick your growth translation:">
+                {writeYourOwnTranslations.map((t, i) => (
+                  <ChoiceTile
+                    key={i}
+                    chosen={selectedTranslation === i}
+                    onClick={() => setSelectedTranslation(i)}
+                    label={t}
+                  />
+                ))}
+              </AnswerGroup>
               <AnimatePresence>
                 {selectedTranslation !== null && (
-                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
-                    <p className="font-serif font-semibold" style={{ fontSize: 16, color: moduleText(COLORS.successDarkText) }}>You just turned a verdict into data.</p>
-                    <p style={{ fontSize: 13, color: moduleText(COLORS.success), marginTop: 4 }}>That's the growth mindset in action.</p>
+                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}>
+                    <AnswerLine><b>You just turned a verdict into data.</b> That's the growth mindset in action.</AnswerLine>
                   </MotionDiv>
                 )}
               </AnimatePresence>
             </MotionDiv>
           )}
         </AnimatePresence>
-      </div>
-    </div>
+      </ExercisePart>
+    </ExerciseSheet>
   );
 };
 

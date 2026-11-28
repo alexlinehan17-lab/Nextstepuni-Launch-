@@ -3,13 +3,20 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useMemo } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from '../Motion';
-import { CalendarPlus, Trash2, Calendar, ChevronDown, Plus, X } from 'lucide-react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { ChevronLeft, ChevronRight, MoreHorizontal, Plus } from 'lucide-react';
 import { db } from '../../firebase';
 import { saveInBackground } from '../../utils/firestoreWrite';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { Button, IconButton, TextButton } from '../ui/Button';
+import { SelectionBar } from '../ui/Choice';
+import { Field } from '../ui/Field';
+import { List, Row } from '../ui/List';
+import { Menu, MenuAction, MenuPanel } from '../ui/Menu';
+import { Sheet } from '../ui/Sheet';
+import { LoadingShape } from '../ui/States';
+import { getDaysUntilLC } from './gcUtils';
+import { useWide } from './gcView';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -103,9 +110,14 @@ interface GCKeyEventsProps {
     curriculumLevel?: 'junior' | 'senior';
     yearGroup?: EventYearGroup;
   };
+  /** page: the Key dates place (a title, the list and the calendar); panel (default): a part of the Overview. */
+  layout?: 'panel' | 'page';
 }
 
-export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext }) => {
+export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext, layout = 'panel' }) => {
+  const wide = useWide();
+  const titleRef = useRef<HTMLInputElement>(null);
+  const dateRef = useRef<HTMLInputElement>(null);
   const [events, setEvents] = useState<SchoolEvent[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showAddForm, setShowAddForm] = useState(false);
@@ -219,14 +231,6 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
   const upcomingEvents = filteredEvents.filter(e => e.date >= today);
   const pastEvents = filteredEvents.filter(e => e.date < today);
 
-  const getCategoryConfig = (cat: EventCategory) =>
-    EVENT_CATEGORIES.find(c => c.id === cat) ?? EVENT_CATEGORIES[3];
-
-  const formatDate = (dateStr: string) => {
-    const d = new Date(dateStr + 'T00:00:00');
-    return d.toLocaleDateString('en-IE', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
-  };
-
   const getDaysUntil = (dateStr: string) => {
     const d = new Date(dateStr + 'T00:00:00');
     const now = new Date();
@@ -234,255 +238,338 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
     return Math.ceil((d.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
   };
 
-  if (isLoading) {
-    return (
-      <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5">
-        <div className="h-4 w-32 bg-zinc-200 dark:bg-surface-soft rounded animate-pulse mb-4" />
-        <div className="space-y-3">
-          {[1, 2, 3].map(i => (
-            <div key={i} className="h-12 bg-zinc-100 dark:bg-zinc-800/50 rounded-lg animate-pulse" />
-          ))}
-        </div>
-      </div>
-    );
-  }
+  const categoryWords: Record<EventCategory, string> = { exams: 'Exam', deadlines: 'Deadline', school: 'School', other: 'Other' };
+  const yearWords = (yg: EventYearGroup) => (yg === 'all' ? 'All years' : yg === 'both' ? 'Both senior years' : yg === 'TY' ? 'TY' : `${yg} Year`);
+  const shortDate = (dateStr: string) => new Date(dateStr + 'T00:00:00').toLocaleDateString('en-IE', { weekday: 'short', day: 'numeric', month: 'short' }).replace(/,/g, '');
+  const toGo = (days: number) => (days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : `${days} days`);
+  const page = layout === 'page';
 
-  return (
-    <div id="gc-events" className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline overflow-hidden">
-      {/* Header */}
-      <div className="flex items-center justify-between px-5 pt-5 pb-3">
-        <div className="flex items-center gap-2">
-          <Calendar size={18} className="text-zinc-400" />
-          <h3 className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Key Dates & Events</h3>
-          <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-zinc-100 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400">
-            {filteredEvents.length}
-          </span>
+  const eventRow = (event: SchoolEvent, past: boolean) => (
+    <Row
+      key={event.id}
+      icon={<i className={`gc8-mk gc8-mk--${event.category}`} />}
+      title={event.title}
+      meta={`${shortDate(event.date)} · ${categoryWords[event.category]} · ${yearWords(event.yearGroup)}`}
+      value={past ? undefined : toGo(getDaysUntil(event.date))}
+      end={
+        <MenuPanel
+          label={event.title}
+          buttonLabel={`Actions for ${event.title}`}
+          buttonClassName="gc8-acts"
+          className="gc8-rowmenu"
+          chevron={false}
+          face={<MoreHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />}
+        >
+          <MenuAction plain tone="danger" title="Delete" onPress={() => handleDelete(event.id)} />
+        </MenuPanel>
+      }
+    />
+  );
+
+  const tools = (
+    <div className="gc8-date-tools">
+      <Menu
+        label="Year"
+        value={yearFilter}
+        onChange={value => setYearFilter(value as 'all' | EventYearGroup)}
+        options={[
+          { value: 'all', label: 'All years' },
+          ...(['1st', '2nd', '3rd', 'TY', '5th', '6th'] as const).map(yg => ({ value: yg, label: yearWords(yg) })),
+        ]}
+      />
+      <Button className="gc8-ib" onClick={() => setShowAddForm(true)}><Plus className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />Add event</Button>
+    </div>
+  );
+
+  const lists = filteredEvents.length === 0 ? (
+    <p className="gc8-empty">No events yet. Add key dates for your students.</p>
+  ) : (
+    <>
+      {upcomingEvents.length > 0 && (
+        <div className="gc8-sec">
+          {page && <p className="gc8-label">Upcoming</p>}
+          <List className="gc8-list gc8-dates">{upcomingEvents.map(e => eventRow(e, false))}</List>
         </div>
-        <div className="flex items-center gap-2">
-          {/* Year filter. JC schools see JC years + TY in the dropdown;
-              the legacy 5th/6th + 'all' remain for senior. Rendered as a
-              select rather than a pill row to fit 6 + 'all' cleanly. */}
-          <select
-            value={yearFilter}
-            onChange={e => setYearFilter(e.target.value as 'all' | EventYearGroup)}
-            className="px-2 py-1 rounded-md text-[10px] font-bold bg-zinc-100 dark:bg-surface-soft text-zinc-700 dark:text-zinc-200 border-0"
-          >
-            <option value="all">All years</option>
+      )}
+      {pastEvents.length > 0 && (
+        <div className="gc8-sec">
+          <p className="gc8-label">Past</p>
+          <List className="gc8-list gc8-dates gc8-dates--past">{pastEvents.map(e => eventRow(e, true))}</List>
+        </div>
+      )}
+    </>
+  );
+
+  const addSheet = (
+    <Sheet
+      open={showAddForm}
+      title="Add event"
+      onClose={() => setShowAddForm(false)}
+      footer={
+        <Button
+          kind="main"
+          size="lg"
+          block
+          missing={!newTitle.trim() || !newDate ? { sentence: 'Add an event name and a date.', goTo: !newTitle.trim() ? titleRef : dateRef } : undefined}
+          onClick={handleAdd}
+        >
+          Add event
+        </Button>
+      }
+    >
+      <div className="gc8-sheet-body">
+        <div className="gc8-sheet-group">
+          <TextButton tone="quiet" arrow="menu" aria-expanded={showPresets} onClick={() => setShowPresets(!showPresets)}>Quick add</TextButton>
+          {showPresets && (
+            <div className="gc8-presets">
+              {visiblePresets.length === 0 && (
+                <p className="gc8-meta">No quick-add presets match this student's curriculum / year.</p>
+              )}
+              {visiblePresets.map(preset => (
+                <Button key={preset.title} size="sm" className="gc8-ib" onClick={() => handlePresetClick(preset)}>
+                  <i className={`gc8-mk gc8-mk--${preset.category}`} aria-hidden="true" />{preset.title}
+                </Button>
+              ))}
+            </div>
+          )}
+        </div>
+        <Field ref={titleRef} label="Event name" placeholder="Event name" value={newTitle} onChange={e => setNewTitle(e.target.value)} enterKeyHint="done" />
+        <Field ref={dateRef} label="Date" type="date" value={newDate} onChange={e => setNewDate(e.target.value)} />
+        <label className="ui-part ui-field">
+          <span className="ui-field-label">Year group</span>
+          {/* A long form's own picker (components.md: native select is acceptable inside a form). */}
+          <select className="ui-field-input" value={newYearGroup} onChange={e => setNewYearGroup(e.target.value as EventYearGroup)}>
+            <option value="all">Everyone</option>
             <option value="1st">1st Year</option>
             <option value="2nd">2nd Year</option>
             <option value="3rd">3rd Year</option>
             <option value="TY">TY</option>
             <option value="5th">5th Year</option>
             <option value="6th">6th Year</option>
+            <option value="both">Both senior years</option>
           </select>
-          {/* Add button */}
-          <button
-            onClick={() => setShowAddForm(!showAddForm)}
-            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 text-xs font-semibold hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors"
-          >
-            {showAddForm ? <X size={12} /> : <Plus size={12} />}
-            {showAddForm ? 'Cancel' : 'Add Event'}
-          </button>
+        </label>
+        <div className="gc8-sheet-group">
+          <p className="ui-field-label">Category</p>
+          <SelectionBar
+            label="Category"
+            size="md"
+            value={newCategory}
+            onChange={value => setNewCategory(value as EventCategory)}
+            options={EVENT_CATEGORIES.map(cat => ({ value: cat.id, label: cat.label }))}
+          />
         </div>
       </div>
+    </Sheet>
+  );
 
-      {/* Add Form */}
-      <AnimatePresence>
-        {showAddForm && (
-          <MotionDiv
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="overflow-hidden"
-          >
-            <div className="px-5 pb-4 space-y-3 border-b border-zinc-100 dark:border-hairline">
-              {/* Preset quick-picks */}
-              <div>
-                <button
-                  onClick={() => setShowPresets(!showPresets)}
-                  className="flex items-center gap-1 text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-2 hover:text-zinc-600 dark:hover:text-zinc-300"
-                >
-                  Quick Add <ChevronDown size={10} className={`transition-transform ${showPresets ? 'rotate-180' : ''}`} />
-                </button>
-                {showPresets && (
-                  <div className="flex flex-wrap gap-1.5 mb-3">
-                    {visiblePresets.length === 0 && (
-                      <p className="text-[10px] italic text-zinc-400 dark:text-zinc-500">
-                        No quick-add presets match this student's curriculum / year.
-                      </p>
-                    )}
-                    {visiblePresets.map(preset => {
-                      const cat = getCategoryConfig(preset.category);
-                      return (
-                        <button
-                          key={preset.title}
-                          onClick={() => handlePresetClick(preset)}
-                          className="flex items-center gap-1 px-2 py-1 rounded-md bg-zinc-50 dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 text-[10px] font-medium text-zinc-600 dark:text-zinc-400 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
-                        >
-                          <div className={`w-1.5 h-1.5 rounded-full ${cat.dotColor}`} />
-                          {preset.title}
-                        </button>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
+  if (isLoading) {
+    return <LoadingShape rows={3} label="Loading key dates" />;
+  }
 
-              {/* Form fields */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <input
-                  type="text"
-                  value={newTitle}
-                  onChange={e => setNewTitle(e.target.value)}
-                  placeholder="Event name"
-                  className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-soft text-sm text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500"
-                />
-                <input
-                  type="date"
-                  value={newDate}
-                  onChange={e => setNewDate(e.target.value)}
-                  className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-soft text-sm text-zinc-900 dark:text-white"
-                />
+  const comingUp = `${upcomingEvents.length} coming up`;
+
+  if (page) {
+    const daysUntilLC = getDaysUntilLC();
+    return (
+      <div id="gc-events" className="gc8-dates-page">
+        <section className="gc8-hero" aria-labelledby="gc8-dates-title">
+          <div className="gc8-head">
+            <h1 id="gc8-dates-title" className={wide ? 'gc8-title' : 'gc8-name'}>Key dates and events</h1>
+            <p className="gc8-sub">{comingUp}</p>
+          </div>
+          {tools}
+        </section>
+        <div className="gc8-two">
+          <section className="gc8-sec" aria-label="Key dates">{lists}</section>
+          <section className="gc8-sec" aria-labelledby="gc8-dates-cal">
+            {wide ? (
+              <p id="gc8-dates-cal" className="gc8-label">Exam calendar</p>
+            ) : (
+              <div className="gc8-sechead">
+                <div className="gc8-sechead-col"><p className="gc8-label">Countdown</p><h2 id="gc8-dates-cal" className="gc8-h">Exam calendar</h2></div>
+                <p className="gc8-countdown"><span className="gc8-num gc8-live">{daysUntilLC}</span><span className="gc8-meta">days to the<br />Leaving Cert</span></p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                {/* Year group — widened to JC years + TY + 'all' for mixed
-                    cohorts. Rendered as a select to fit 8 options cleanly. */}
-                <div>
-                  <p className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase mb-1">Year Group</p>
-                  <select
-                    value={newYearGroup}
-                    onChange={e => setNewYearGroup(e.target.value as EventYearGroup)}
-                    className="w-full py-1.5 px-2 rounded-md text-[11px] font-bold bg-white dark:bg-surface-soft border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200"
-                  >
-                    <option value="all">Everyone</option>
-                    <option value="1st">1st Year</option>
-                    <option value="2nd">2nd Year</option>
-                    <option value="3rd">3rd Year</option>
-                    <option value="TY">TY</option>
-                    <option value="5th">5th Year</option>
-                    <option value="6th">6th Year</option>
-                    <option value="both">Both senior years</option>
-                  </select>
-                </div>
-                {/* Category */}
-                <div>
-                  <p className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase mb-1">Category</p>
-                  <div className="flex gap-1">
-                    {EVENT_CATEGORIES.map(cat => (
-                      <button
-                        key={cat.id}
-                        onClick={() => setNewCategory(cat.id)}
-                        className={`flex-1 py-1.5 rounded-md text-[10px] font-bold border transition-all ${
-                          newCategory === cat.id
-                            ? `bg-zinc-50 dark:bg-surface-soft border-zinc-400 dark:border-zinc-500 ${cat.color}`
-                            : 'bg-white dark:bg-surface-soft border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500'
-                        }`}
-                      >
-                        {cat.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                {/* Save button */}
-                <div className="flex items-end">
-                  <button
-                    onClick={handleAdd}
-                    disabled={!newTitle.trim() || !newDate}
-                    className="w-full py-2 rounded-lg bg-indigo-500 text-white text-xs font-bold hover:bg-indigo-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                  >
-                    <CalendarPlus size={12} className="inline mr-1 -mt-0.5" />
-                    Add Event
-                  </button>
-                </div>
-              </div>
-            </div>
-          </MotionDiv>
+            )}
+            <GCCalendar events={events} months={1} initialDate={upcomingEvents[0]?.date} />
+          </section>
+        </div>
+        {addSheet}
+      </div>
+    );
+  }
+
+  return (
+    <section id="gc-events" className="gc8-sec" aria-labelledby="gc8-dates-panel">
+      <div className="gc8-sechead"><h2 id="gc8-dates-panel" className="gc8-h">Key dates and events</h2><span className="gc8-meta">{comingUp}</span></div>
+      {tools}
+      {lists}
+      {addSheet}
+    </section>
+  );
+};
+
+// ─── The calendar (the Kobra calendar: months in one frame, today in ink, the chosen day outlined,
+// a mark under each event by its kind, and what is on the chosen day under or beside it) ─────────
+
+/** The Leaving Cert starts on the first Wednesday of June (the next one still to come). */
+export function getLCExamDate(): Date {
+  const now = new Date();
+  const year = now.getFullYear();
+  const june1 = new Date(year, 5, 1);
+  let firstWed = new Date(june1);
+  const dow = june1.getDay();
+  const daysUntilWed = (3 - dow + 7) % 7;
+  firstWed.setDate(june1.getDate() + daysUntilWed);
+  if (firstWed.getTime() < now.getTime()) {
+    const nextJune1 = new Date(year + 1, 5, 1);
+    const nextDow = nextJune1.getDay();
+    const nextDays = (3 - nextDow + 7) % 7;
+    firstWed = new Date(nextJune1);
+    firstWed.setDate(nextJune1.getDate() + nextDays);
+  }
+  return firstWed;
+}
+
+const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const keyOf = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
+export function GCCalendar({ events, months = 1, beside = false, countdown, initialDate }: {
+  events: SchoolEvent[];
+  /** One month on a phone and beside a list; two on a wide laptop. */
+  months?: 1 | 2;
+  /** What is on the chosen day sits beside the calendar (a laptop's Overview), not under it. */
+  beside?: boolean;
+  /** Shown above the chosen day when beside (the countdown to the Leaving Cert). */
+  countdown?: React.ReactNode;
+  /** The day chosen at first (today if not given). */
+  initialDate?: string;
+}) {
+  const today = new Date();
+  const todayKey = keyOf(today);
+  const lcKey = keyOf(getLCExamDate());
+  const [chosen, setChosen] = useState<string>(initialDate ?? todayKey);
+  const start = new Date(`${chosen}T00:00:00`);
+  const [view, setView] = useState({ year: (initialDate ? start : today).getFullYear(), month: (initialDate ? start : today).getMonth() });
+
+  const byDay = useMemo(() => {
+    const map: Record<string, SchoolEvent[]> = {};
+    for (const ev of events) (map[ev.date] ??= []).push(ev);
+    return map;
+  }, [events]);
+
+  const step = (by: number) => setView(v => {
+    const d = new Date(v.year, v.month + by, 1);
+    return { year: d.getFullYear(), month: d.getMonth() };
+  });
+  const daysTo = (key: string) => {
+    const d = new Date(`${key}T00:00:00`);
+    const now = new Date(); now.setHours(0, 0, 0, 0);
+    return Math.round((d.getTime() - now.getTime()) / 86400000);
+  };
+  const toGo = (days: number) => (days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : days > 0 ? `${days} days` : `${-days} days ago`);
+  const catWords: Record<EventCategory, string> = { exams: 'Exam', deadlines: 'Deadline', school: 'School', other: 'Other' };
+  const yearWords = (yg: EventYearGroup) => (yg === 'all' ? 'All years' : yg === 'both' ? 'Both senior years' : yg === 'TY' ? 'TY' : `${yg} Year`);
+  const shortDate = (key: string) => new Date(`${key}T00:00:00`).toLocaleDateString('en-IE', { weekday: 'short', day: 'numeric', month: 'short' }).replace(/,/g, '');
+
+  const chosenDate = new Date(`${chosen}T00:00:00`);
+  const chosenWords = `${chosen === todayKey ? 'Today, ' : ''}${chosenDate.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' }).replace(/,/g, '')}`;
+  const onDay = [...(byDay[chosen] ?? [])];
+  const next = onDay.length === 0 ? events.filter(e => e.date > chosen).sort((a, b) => a.date.localeCompare(b.date))[0] : undefined;
+
+  const monthGrid = (offset: number) => {
+    const first = new Date(view.year, view.month + offset, 1);
+    const y = first.getFullYear();
+    const m = first.getMonth();
+    const lead = (first.getDay() + 6) % 7; // Monday first
+    const count = new Date(y, m + 1, 0).getDate();
+    return (
+      <div key={`${y}-${m}`}>
+        <p className="gc8-cal-title" aria-live={offset === 0 ? 'polite' : undefined}>{MONTH_NAMES[m]} {y}</p>
+        <div className="gc8-cal-grid" role="group" aria-label={`${MONTH_NAMES[m]} ${y}`}>
+          {WEEKDAYS.map(w => <span key={w} className="gc8-cal-wd" aria-hidden="true">{w}</span>)}
+          {Array.from({ length: lead }, (_, i) => <span key={`b${i}`} aria-hidden="true" />)}
+          {Array.from({ length: count }, (_, i) => {
+            const key = keyOf(new Date(y, m, i + 1));
+            const dayEvents = byDay[key] ?? [];
+            const isLC = key === lcKey;
+            const mark = isLC ? 'lc' : dayEvents[0]?.category;
+            const label = `${new Date(y, m, i + 1).toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' }).replace(/,/g, '')}${key === todayKey ? ', today' : ''}${isLC ? ', Leaving Cert' : ''}${dayEvents.map(e => `, ${e.title}`).join('')}`;
+            return (
+              <button
+                key={key}
+                type="button"
+                className={`gc8-day${key === todayKey ? ' gc8-day--today' : ''}`}
+                aria-pressed={key === chosen}
+                aria-label={label}
+                onClick={() => setChosen(key)}
+              >
+                {i + 1}
+                {mark ? <i className={`gc8-mk--${mark}`} aria-hidden="true" /> : null}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+
+  const agenda = (
+    <div className="gc8-agenda" aria-live="polite">
+      <p className="gc8-ag-day">{chosenWords}</p>
+      {onDay.length === 0 && chosen !== lcKey && <p className="gc8-meta">Nothing on this day.</p>}
+      <div className="gc8-ag-list">
+        {chosen === lcKey && (
+          <div className="gc8-ag-ev"><i className="gc8-mk gc8-mk--lc" aria-hidden="true" /><span><span className="gc8-person">Leaving Cert</span><span className="gc8-meta">Exam</span></span><span className="gc8-readout">{toGo(daysTo(chosen))}</span></div>
         )}
-      </AnimatePresence>
-
-      {/* Events List */}
-      <div className="px-5 py-4">
-        {filteredEvents.length === 0 ? (
-          <p className="text-sm text-zinc-400 dark:text-zinc-500 text-center py-6">
-            No events yet. Add key dates for your students.
-          </p>
-        ) : (
-          <div className="space-y-4">
-            {/* Upcoming */}
-            {upcomingEvents.length > 0 && (
-              <div>
-                <p className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-2">Upcoming</p>
-                <div className="space-y-1.5">
-                  {upcomingEvents.map(event => {
-                    const cat = getCategoryConfig(event.category);
-                    const daysUntil = getDaysUntil(event.date);
-                    return (
-                      <div key={event.id} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800/50 group">
-                        <div className={`w-2 h-2 rounded-full flex-shrink-0 ${cat.dotColor}`} />
-                        <div className="flex-1 min-w-0">
-                          <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 truncate">{event.title}</p>
-                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
-                            {formatDate(event.date)}
-                            {event.yearGroup !== 'both' && event.yearGroup !== 'all' && (
-                              <span className="ml-2 px-1.5 py-0.5 rounded bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 font-bold">
-                                {event.yearGroup === 'TY' ? 'TY' : `${event.yearGroup} Year`}
-                              </span>
-                            )}
-                          </p>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className={`text-xs font-bold ${daysUntil <= 7 ? 'text-red-500' : daysUntil <= 30 ? 'text-amber-500' : 'text-zinc-400 dark:text-zinc-500'}`}>
-                            {daysUntil === 0 ? 'Today' : daysUntil === 1 ? 'Tomorrow' : `${daysUntil}d`}
-                          </span>
-                          <button
-                            onClick={() => handleDelete(event.id)}
-                            className="frame-reveal p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20 text-zinc-300 hover:text-red-500 transition-all"
-                          >
-                            <Trash2 size={12} />
-                          </button>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-
-            {/* Past */}
-            {pastEvents.length > 0 && (
-              <div>
-                <p className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-2">Past</p>
-                <div className="space-y-1.5">
-                  {pastEvents.map(event => {
-                    const cat = getCategoryConfig(event.category);
-                    return (
-                      <div key={event.id} className="flex items-center gap-3 px-3 py-2 rounded-lg opacity-50 group">
-                        <div className={`w-2 h-2 rounded-full flex-shrink-0 ${cat.dotColor}`} />
-                        <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400 truncate line-through">{event.title}</p>
-                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
-                            {formatDate(event.date)}
-                            {event.yearGroup !== 'both' && event.yearGroup !== 'all' && (
-                              <span className="ml-2 font-bold">{event.yearGroup === 'TY' ? 'TY' : `${event.yearGroup} Year`}</span>
-                            )}
-                          </p>
-                        </div>
-                        <button
-                          onClick={() => handleDelete(event.id)}
-                          className="frame-reveal p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20 text-zinc-300 hover:text-red-500 transition-all"
-                        >
-                          <Trash2 size={12} />
-                        </button>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
+        {onDay.map(ev => (
+          <div key={ev.id} className="gc8-ag-ev">
+            <i className={`gc8-mk gc8-mk--${ev.category}`} aria-hidden="true" />
+            <span><span className="gc8-person">{ev.title}</span><span className="gc8-meta">{catWords[ev.category]} · {yearWords(ev.yearGroup)}</span></span>
+            <span className="gc8-readout">{toGo(daysTo(ev.date))}</span>
+          </div>
+        ))}
+        {next && (
+          <div className="gc8-ag-ev">
+            <i className={`gc8-mk gc8-mk--${next.category}`} aria-hidden="true" />
+            <span><span className="gc8-person">Next: {next.title}</span><span className="gc8-meta">{shortDate(next.date)} · {yearWords(next.yearGroup)}</span></span>
+            <span className="gc8-readout">{toGo(daysTo(next.date))}</span>
           </div>
         )}
       </div>
     </div>
   );
-};
+  const legend = (
+    <ul className="gc8-legend" aria-label="Key">
+      <li><i className="gc8-mk gc8-mk--today" />Today</li>
+      <li><i className="gc8-mk gc8-mk--exams" />Exam</li>
+      <li><i className="gc8-mk gc8-mk--deadlines" />Deadline</li>
+      <li><i className="gc8-mk gc8-mk--school" />School</li>
+      <li><i className="gc8-mk gc8-mk--other" />Other</li>
+      <li><i className="gc8-mk gc8-mk--lc" />Leaving Cert</li>
+    </ul>
+  );
+
+  return (
+    <div className={`gc8-calwrap${beside ? ' gc8-calwrap--beside' : ''}`}>
+      <div className="gc8-cal">
+        <IconButton className="gc8-cal-step gc8-cal-step--prev" label="Previous month" onClick={() => step(-1)}
+          icon={<ChevronLeft className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />} />
+        <IconButton className="gc8-cal-step gc8-cal-step--next" label="Next month" onClick={() => step(1)}
+          icon={<ChevronRight className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />} />
+        <div className="gc8-cal-months">{Array.from({ length: months }, (_, i) => monthGrid(i))}</div>
+      </div>
+      {beside ? (
+        <div className="gc8-cal-side">
+          {countdown}
+          {countdown ? <hr className="gc8-rule" /> : null}
+          {agenda}
+          {legend}
+        </div>
+      ) : (
+        <>{agenda}{legend}</>
+      )}
+    </div>
+  );
+}

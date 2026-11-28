@@ -1,0 +1,35 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Insights (r5-insights, agreed "for now", 26 Nov 2026): on the white page, in
+ * the one typeface; the first insight is the one sheet; the rest lie between
+ * thin rules. On a laptop the column is centred beside the sidebar.
+ */
+.ins-page { background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.ins-width { width: 100%; max-width: 720px; margin: 0 auto; }
+.ins-bar { position: sticky; top: 0; z-index: var(--z-sticky); background: var(--surface-canvas); }
+.ins-body { padding: 0 var(--space-6) calc(var(--space-12) + var(--edge-bottom)); }
+.ins-page :is(h1, h2) { margin: 0; color: var(--ink-primary); font-weight: 400; }
+.ins-page .t-sub, .ins-page .t-label { margin: 0; }
+.ins-intro { padding: var(--space-2) 0 var(--space-6); }
+.ins-open { display: flex; align-items: center; justify-content: space-between; gap: var(--space-6); padding: var(--space-6) 0 var(--space-6); }
+.ins-open-words { display: flex; flex-direction: column; gap: var(--space-2); }
+.ins-guide { flex: none; }
+.ins-label { color: var(--ink-muted); }
+.ins-live { color: var(--accent-text); }
+.ins-status { margin: 0; padding: var(--space-8) 0; border-top: 1px solid var(--hairline); color: var(--ink-secondary); }
+.ins-lead { margin: 0 0 var(--space-8); }
+.ins-lead .ui-paper-face { display: flex; flex-direction: column; gap: 10px; }
+.ins-lead .ins-go { margin-top: 10px; }
+.ins-go:not(.ui-btn--block) { align-self: flex-start; min-width: 300px; justify-content: space-between; }
+.ins-item { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); padding: var(--space-6) 0; border-top: 1px solid var(--hairline); }
+.ins-item .ui-link { margin-top: var(--space-1); }
+.ins-source { margin: 0; padding: var(--space-5) 0 var(--space-3); border-top: 1px solid var(--hairline); }
+.ins-empty { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-6) 0; border-top: 1px solid var(--hairline); }
+@media (min-width: 768px) {
+  .ins-bar { padding: 0 var(--space-12); }
+  .ins-body { padding: 0 var(--space-12) var(--space-12); }
+  .ins-lead { margin-bottom: var(--space-12); }
+  .ins-lead .ui-paper-face { padding: 28px; }
+}

@@ -14,6 +14,8 @@ import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { AnswerGroup, AnswerLine, ExerciseRange, ExerciseSheet } from './learning/Exercise';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = skyTheme;
 
@@ -26,24 +28,25 @@ const DualTrackPlanner = () => {
     const currentPlan = plan === 'rescue' ? rescuePlan : masteryPlan;
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Study Plan Breakdown</h4>
-             <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-surface-soft rounded-full my-6 max-w-sm mx-auto">
-                <button onClick={() => setPlan('rescue')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'rescue' ? 'bg-white shadow' : ''}`}>Rescue Plan (Pass)</button>
-                <button onClick={() => setPlan('mastery')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'mastery' ? 'bg-white shadow' : ''}`}>Mastery Plan (H1)</button>
-            </div>
+        <ExerciseSheet title="Your Study Plan Breakdown" name="DualTrackPlanner">
+             {/* The two plans: one is chosen (an ink outline, not a grey pill bar) */}
+             <AnswerGroup kind="one" columns={2}>
+                <ChoiceTile tile chosen={plan === 'rescue'} onClick={() => setPlan('rescue')} label="Rescue Plan (Pass)" />
+                <ChoiceTile tile chosen={plan === 'mastery'} onClick={() => setPlan('mastery')} label="Mastery Plan (H1)" />
+            </AnswerGroup>
+            {/* The plan's split, drawn as bars on the sheet: an ink bar on a hairline track */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                 {Object.entries(currentPlan).map(([component, value]) => (
                     <div key={component}>
-                        <p className="font-bold text-sm">{component}</p>
-                        <div className="w-full h-24 bg-zinc-100 dark:bg-surface-soft rounded-lg mt-2 flex items-end">
-                            <motion.div className="w-full bg-sky-400 rounded-t-lg" initial={{height:0}} animate={{height: `${value*2}%`}}/>
+                        <p className="ex-label">{component}</p>
+                        <div className="w-full h-24 mt-2 flex items-end overflow-hidden" style={{ backgroundColor: 'var(--hairline)', borderRadius: 'var(--r-sm)' }}>
+                            <motion.div className="w-full" style={{ backgroundColor: 'var(--ink-primary)' }} initial={{height:0}} animate={{height: `${value*2}%`}}/>
                         </div>
-                        <p className="text-xl font-bold mt-1">{value}%</p>
+                        <p className="t-row text-ink-primary mt-1 tabular-nums">{value}%</p>
                     </div>
                 ))}
             </div>
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -71,77 +74,66 @@ const OralBlueprintSliders = () => {
     const grade = getGrade(totalScore);
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Oral Exam Blueprint</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Adjust each quadrant to see how the weighted marking scheme affects your grade.</p>
-            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-8">Structure + Communication = 60% of marks. Focus there.</p>
+        <ExerciseSheet title="Oral Exam Blueprint" sub="Adjust each quadrant to see how the weighted marking scheme affects your grade." name="OralBlueprintSliders">
+            <p className="t-meta">Structure + Communication = 60% of marks. Focus there.</p>
 
-            {/* Slider cards */}
-            <div className="space-y-5 mb-8">
+            {/* The four sliders: each one's name, its weight and what it earns, then the one shared slider */}
+            <div className="ex-sliders">
                 {sliders.map(s => {
                     const value = q[s.key];
                     const contribution = Math.round(value * (s.weight / 100));
                     return (
-                        <div key={s.key}>
-                            <div className="flex items-center justify-between mb-2">
-                                <div className="flex items-center gap-2">
-                                    <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">{s.label}</span>
-                                    <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-950/30 text-sky-600 dark:text-sky-400">{s.weight}%</span>
+                        <div key={s.key} className="ex-slider">
+                            <div className="flex items-baseline justify-between gap-3">
+                                <div className="flex items-baseline gap-2">
+                                    <span className="ex-slider-name">{s.label}</span>
+                                    <span className="t-meta">{s.weight}%</span>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <span className="text-sm font-bold text-zinc-700 dark:text-zinc-200">{value}</span>
-                                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500">= {contribution} marks</span>
+                                <div className="flex items-baseline gap-2">
+                                    <span className="ui-readout text-ink-primary">{value}</span>
+                                    <span className="t-meta">= {contribution} marks</span>
                                 </div>
                             </div>
-                            <div className="w-full h-1.5 bg-zinc-100 dark:bg-surface-paper rounded-full overflow-hidden mb-2">
-                                <motion.div
-                                    className="h-full rounded-full bg-sky-400"
-                                    animate={{ width: `${value}%` }}
-                                    transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-                                />
-                            </div>
-                            <input type="range" min="0" max="100" value={value}
+                            <ExerciseRange min="0" max="100" value={value}
                                 onChange={e => setQ({ ...q, [s.key]: parseInt(e.target.value) })}
-                                className="chunky-slider chunky-slider-accent" />
+                                aria-label={s.label} />
                         </div>
                     );
                 })}
             </div>
 
-            {/* Score panel */}
-            <div className="p-5 rounded-xl border" style={{ backgroundColor: grade.color + '08', borderColor: grade.color + '30' }}>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-center text-zinc-400 dark:text-zinc-500 mb-2">Weighted Oral Grade</p>
-                <div className="flex items-center justify-center gap-3 mb-4">
+            {/* The grade it comes to: under a hairline, the figure and the grade in ink (no tinted panel or pill) */}
+            <div className="ex-result">
+                <p className="ex-label">Weighted Oral Grade</p>
+                <div className="flex items-baseline gap-3">
                     <motion.span
                         key={totalScore}
-                        className="text-4xl font-bold"
-                        style={{ color: grade.color }}
+                        className="ex-result-name tabular-nums"
                         initial={{ scale: 0.9 }}
                         animate={{ scale: 1 }}
                     >
                         {totalScore}%
                     </motion.span>
-                    <span className="text-lg font-bold px-3 py-1 rounded-full"
-                        style={{ backgroundColor: grade.color + '18', color: grade.color }}>
+                    <span className="t-row text-ink-primary">
                         {grade.label}
                     </span>
                 </div>
-                <div className="w-full h-2.5 bg-white/50 dark:bg-zinc-800/50 rounded-full overflow-hidden">
+                <div className="w-full h-1 rounded-sm overflow-hidden mt-2" style={{ backgroundColor: 'var(--hairline)' }}>
                     <motion.div
-                        className="h-full rounded-full"
-                        style={{ backgroundColor: grade.color }}
+                        className="h-full"
+                        style={{ backgroundColor: 'var(--ink-primary)' }}
                         animate={{ width: `${totalScore}%` }}
                         transition={{ type: 'spring', stiffness: 80, damping: 18 }}
                     />
                 </div>
-                <div className="flex justify-between mt-1.5 px-0.5">
+                <div className="flex justify-between px-0.5">
                     {['H7','H6','H5','H4','H3','H2','H1'].map(g => (
-                        <span key={g} className={`text-[7px] ${grade.label === g ? 'font-bold' : ''}`}
-                            style={{ color: grade.label === g ? grade.color : '#a1a1aa' }}>{g}</span>
+                        <span key={g} className="t-label"
+                            style={{ color: grade.label === g ? 'var(--ink-primary)' : 'var(--ink-muted)' }}>{g}</span>
                     ))}
                 </div>
             </div>
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -156,24 +148,23 @@ const ParagraphSorter = () => {
     const isCorrect = items.every((item, i) => item.id === correctOrder[i]);
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Paragraph Builder</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Drag these into the right order to build a top-scoring essay paragraph.</p>
-            <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-2 max-w-sm mx-auto">
+        <ExerciseSheet title="Paragraph Builder" sub="Drag these into the right order to build a top-scoring essay paragraph." name="ParagraphSorter">
+            {/* The four parts you drag: boxes with a line, no shadow */}
+            <Reorder.Group axis="y" values={items} onReorder={setItems} className="ex-cards">
                 {items.map(item => (
                     <Reorder.Item
                         key={item.id}
                         value={item}
-                        className="p-4 text-center font-bold text-zinc-700 dark:text-zinc-200 cursor-grab active:cursor-grabbing"
-                        style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 16, boxShadow: '4px 4px 0px 0px #1C1917' }}
-                        whileDrag={{ scale: 1.03, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' }}
+                        className="flex items-center gap-3 min-h-[56px] cursor-grab active:cursor-grabbing t-body text-ink-primary"
+                        style={{ backgroundColor: 'var(--surface-paper)', border: '1px solid var(--outline-soft)', borderRadius: 'var(--r-ctl)', padding: '13px 14px 13px 16px', boxShadow: 'none' }}
+                        whileDrag={{ scale: 1.03, y: -2, boxShadow: 'none' }}
                     >
                         {item.text}
                     </Reorder.Item>
                 ))}
             </Reorder.Group>
-            {isCorrect && <p className="text-center font-bold text-emerald-600 mt-4">Correct! This is the blueprint for a high-scoring paragraph.</p>}
-        </div>
+            {isCorrect && <AnswerLine>Correct! This is the blueprint for a high-scoring paragraph.</AnswerLine>}
+        </ExerciseSheet>
     );
 };
 

@@ -23,6 +23,8 @@
 import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { lockBodyScroll } from '../../utils/bodyScrollLock';
+import { Button, Glyph, IconButton } from '../ui/Button';
+import { X } from 'lucide-react';
 import './figure-zoom.css';
 
 const ZOOM_STEP = 1.5;
@@ -38,12 +40,6 @@ const EnlargeIcon = () => (
   <svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true">
     <circle cx="8.5" cy="8.5" r="5.25" stroke="currentColor" strokeWidth="1.8" />
     <path d="M12.5 12.5 16.5 16.5M8.5 6.25v4.5M6.25 8.5h4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-  </svg>
-);
-
-const CloseIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-    <path d="m5 5 10 10M15 5 5 15" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
   </svg>
 );
 
@@ -250,9 +246,8 @@ const FigureViewer: React.FC<{
               <span aria-hidden="true">+</span>
             </button>
           </div>
-          <button ref={closeRef} type="button" className="mb-figzoom-close" onClick={() => onCloseRef.current()} aria-label="Close enlarged figure" title="Close (Esc)">
-            <CloseIcon />
-          </button>
+          <IconButton ref={closeRef} className="mb-figzoom-close" onClick={() => onCloseRef.current()} label="Close enlarged figure" title="Close (Esc)"
+            icon={<Glyph icon={X} />} />
         </header>
         <div
           ref={stageRef}
@@ -321,9 +316,9 @@ const FigureZoom: React.FC<{
       {imgWrapStyle ? <div style={imgWrapStyle}>{img}</div> : img}
       <figcaption className="mb-figzoom-bar" style={captionStyle}>
         <span>{caption}</span>
-        <button ref={triggerRef} type="button" className="mb-figzoom-open" onClick={() => setOpen(true)} aria-label={`Enlarge: ${kicker}`}>
+        <Button ref={triggerRef} size="sm" className="mb-figzoom-open" onClick={() => setOpen(true)} aria-label={`Enlarge: ${kicker}`}>
           <EnlargeIcon />Enlarge
-        </button>
+        </Button>
       </figcaption>
       {open && <FigureViewer src={src} alt={alt} kicker={kicker} caption={caption} onClose={close} />}
     </>

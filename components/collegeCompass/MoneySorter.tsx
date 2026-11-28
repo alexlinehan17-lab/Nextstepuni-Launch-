@@ -50,12 +50,8 @@ const MoneySorter: React.FC = () => {
                       >
                         <span className="text-sm font-semibold text-[#1A1A1A] flex-1 min-w-0">{item.name}</span>
                         <span
-                          className="text-[9px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full shrink-0"
-                          style={
-                            item.isAutomatic
-                              ? { backgroundColor: COLORS.successTint, color: COLORS.successDarkText }
-                              : { backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText }
-                          }
+                          className="t-label shrink-0"
+                          style={{ color: 'var(--ink-muted)' }}
                         >
                           {item.isAutomatic ? 'Automatic' : 'Apply'}
                         </span>

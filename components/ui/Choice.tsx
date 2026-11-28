@@ -51,39 +51,81 @@ export interface ChoiceOption<V extends string = string> {
 
 export interface ChoiceTileProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'role'> {
   chosen: boolean;
-  kind?: 'one' | 'several';
+  /** one: a radio (round mark); several: a checkbox (square mark); toggle: a button that stays
+   *  pressed (aria-pressed, round mark), for a screen whose choice is not part of a group. */
+  kind?: 'one' | 'several' | 'toggle';
   tile?: boolean;
   label: ReactNode;
   meta?: ReactNode;
   art?: string;
+  /** The answer line under a chosen answer (a module's own words for it). The words are
+   *  ink, never green; `ok` puts the green tick beside them (Alex, 26 Nov 2026: "can be
+   *  black. Don't like the dark green text"); `plain` is a quieter line with no tick. */
+  note?: ReactNode;
+  noteTone?: 'ok' | 'plain';
+  /** Short choices in a row (self-mark's Blank to Full, why marks were lost): 44px tall, the
+   *  words centred, no ring until chosen, then the ink outline and the tick drawn before the
+   *  words. Not with `art`, `meta`, `note` or `tile`. */
+  compact?: boolean;
+}
+
+/** The green tick that sits beside an answer line: the only green on an answer. */
+export function AnswerTick({ className = '' }: { className?: string }) {
+  return (
+    <svg className={`ui-tick ${className}`.trim()} viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+      <path d="M2.5 6.2l2.4 2.4 4.6-5" />
+    </svg>
+  );
 }
 
 /** One choice: an outlined tile before it is touched; chosen, an ink outline. */
 export const ChoiceTile = React.forwardRef<HTMLButtonElement, ChoiceTileProps>(function ChoiceTile(
-  { chosen, kind = 'one', tile = false, label, meta, art, className = '', type = 'button', ...props },
+  { chosen, kind = 'one', tile = false, label, meta, art, note, noteTone = 'ok', compact = false, className = '', type = 'button', ...props },
   ref,
 ) {
+  if (compact) {
+    return (
+      <button
+        {...props}
+        ref={ref}
+        type={type}
+        role={kind === 'one' ? 'radio' : kind === 'several' ? 'checkbox' : undefined}
+        aria-checked={kind === 'toggle' ? undefined : chosen}
+        aria-pressed={kind === 'toggle' ? chosen : undefined}
+        className={`ui-part ui-choice ui-choice--compact ${className}`.trim()}
+      >
+        <SelectionMark on={chosen} shape={kind === 'several' ? 'square' : 'round'} />
+        <span className="ui-choice-label">{label}</span>
+      </button>
+    );
+  }
   return (
     <button
       {...props}
       ref={ref}
       type={type}
-      role={kind === 'one' ? 'radio' : 'checkbox'}
-      aria-checked={chosen}
+      role={kind === 'one' ? 'radio' : kind === 'several' ? 'checkbox' : undefined}
+      aria-checked={kind === 'toggle' ? undefined : chosen}
+      aria-pressed={kind === 'toggle' ? chosen : undefined}
       className={`ui-part ui-choice${tile ? ' ui-choice--tile' : ''} ${className}`.trim()}
     >
       {art ? <ThemeArtwork className="ui-choice-art" src={art} transparentBackground alt="" /> : null}
       <span className="ui-choice-body">
         <span className="ui-choice-label">{label}</span>
-        {meta ? <span className="ui-choice-meta">{meta}</span> : null}
+        {/* The space keeps the accessible name two words apart ("Practice Work
+            through questions"); a flex column does not draw it. */}
+        {meta ? <>{' '}<span className="ui-choice-meta">{meta}</span></> : null}
+        {note ? <>{' '}<span className={`ui-choice-note${noteTone === 'ok' ? ' ui-choice-note--ok' : ''}`}>{noteTone === 'ok' ? <AnswerTick /> : null}<span>{note}</span></span></> : null}
       </span>
-      <SelectionMark on={chosen} shape={kind === 'one' ? 'round' : 'square'} />
+      <SelectionMark on={chosen} shape={kind === 'several' ? 'square' : 'round'} />
     </button>
   );
 });
 
-/** Arrow keys move through a row of radios; the one they land on is chosen. */
-function useRovingRadios(count: number, current: number, choose: (index: number) => void) {
+/** Arrow keys move through a row of radios; the one they land on is chosen.
+ *  Exported for a screen that lays out its own radios (study set-up's subject
+ *  names and its time presets) with ChoiceTile. */
+export function useRovingRadios(count: number, current: number, choose: (index: number) => void) {
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
   const onKeyDown = (event: KeyboardEvent, index: number) => {
     const step = event.key === 'ArrowRight' || event.key === 'ArrowDown' ? 1
@@ -198,6 +240,44 @@ export interface SelectionBarProps<V extends string> {
   className?: string;
 }
 
+export interface SelectionWordsProps<V extends string> {
+  /** What the words choose, for screen readers ("Period", "Fieldbook page"). */
+  label: string;
+  /** Two to four short words. */
+  options: { value: V; label: ReactNode }[];
+  value: V;
+  onChange: (value: V) => void;
+  className?: string;
+}
+
+/** Choices as plain words (components.md, "Selection bar": Week / Month / Year,
+ *  agreed 25 Nov 2026): the current word in ink with a short ink line under it,
+ *  the others quieter; no tray. The line draws in under the new word; what it
+ *  controls changes at once. A radio group with arrow keys, like the bar. */
+export function SelectionWords<V extends string>({ label, options, value, onChange, className = '' }: SelectionWordsProps<V>) {
+  const current = options.findIndex(option => option.value === value);
+  const roving = useRovingRadios(options.length, current, index => onChange(options[index].value));
+  return (
+    <div role="radiogroup" aria-label={label} className={`ui-part ui-words ${className}`.trim()}>
+      {options.map((option, index) => (
+        <button
+          key={option.value}
+          ref={element => { roving.refs.current[index] = element; }}
+          type="button"
+          role="radio"
+          aria-checked={index === current}
+          tabIndex={roving.tabIndexOf(index)}
+          className="ui-word"
+          onKeyDown={event => roving.onKeyDown(event, index)}
+          onClick={() => onChange(option.value)}
+        >
+          {option.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 /** The selection bar: a tray with a white pill on the current choice. The pill
  *  slides (260ms, the move curve); what it controls changes at once. */
 export function SelectionBar<V extends string>({ label, options, value, onChange, size = 'sm', className = '' }: SelectionBarProps<V>) {
@@ -231,3 +311,53 @@ export function SelectionBar<V extends string>({ label, options, value, onChange
     </div>
   );
 }
+
+export interface RulerOption<V extends string = string> {
+  value: V;
+  label: ReactNode;
+  /** The choice's accessible name when its label is short ("Mathematics H3"). */
+  name?: string;
+  /** A small dot under the label (today's grade, on Points Passport's What if?). */
+  marked?: boolean;
+}
+
+export interface ChoiceRulerProps<V extends string> {
+  /** What the ruler chooses, for screen readers ("Mathematics grade"). */
+  label: string;
+  options: RulerOption<V>[];
+  /** The chosen value; a value not in `options` means none chosen yet. */
+  value: V | '';
+  onChange: (value: V) => void;
+  className?: string;
+}
+
+/** A ruler of short choices in one row (grades H1 to H8; the boards' c-tools1 "Tap a grade to try
+ *  it"): one box you press, divided by hairlines; the chosen one gains the ink outline. For more
+ *  than four short choices of one kind, where a selection bar would jam. A radio group with arrow
+ *  keys; 44px tall to the finger. */
+export function ChoiceRuler<V extends string>({ label, options, value, onChange, className = '' }: ChoiceRulerProps<V>) {
+  const current = options.findIndex(option => option.value === value);
+  const roving = useRovingRadios(options.length, current, index => onChange(options[index].value));
+  return (
+    <div role="radiogroup" aria-label={label} className={`ui-part ui-ruler ${className}`.trim()} style={{ '--ruler-n': options.length } as React.CSSProperties}>
+      {options.map((option, index) => (
+        <button
+          key={option.value}
+          ref={element => { roving.refs.current[index] = element; }}
+          type="button"
+          role="radio"
+          aria-checked={index === current}
+          aria-label={option.name}
+          tabIndex={roving.tabIndexOf(index)}
+          className="ui-ruler-item"
+          onKeyDown={event => roving.onKeyDown(event, index)}
+          onClick={() => onChange(option.value)}
+        >
+          <span>{option.label}</span>
+          {option.marked ? <i className="ui-ruler-dot" aria-hidden="true" /> : null}
+        </button>
+      ))}
+    </div>
+  );
+}
+

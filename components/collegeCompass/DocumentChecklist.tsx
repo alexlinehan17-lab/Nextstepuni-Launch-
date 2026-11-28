@@ -33,15 +33,15 @@ const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ hearIndicators, d
   return (
     <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
       <div className="flex items-start gap-3 mb-3">
-        <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl shrink-0" style={{ backgroundColor: COLORS.accentTint }}>
-          <FileText size={17} style={{ color: COLORS.accent }} />
+        <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl shrink-0" style={{ backgroundColor: 'transparent' }}>
+          <FileText size={20} style={{ color: 'var(--ink-secondary)' }} />
         </span>
         <div className="min-w-0 flex-1">
           <h4 className="font-serif text-lg font-bold text-[#1A1A1A] dark:text-white leading-tight">Your document pack</h4>
           <p className="text-xs text-[#7a7068]">Built from your answers above</p>
         </div>
         {totalToPost > 0 && (
-          <span className="text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-full shrink-0" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText }}>
+          <span className="t-label shrink-0" style={{ color: 'var(--ink-muted)' }}>
             {totalToPost} to post
           </span>
         )}
@@ -58,10 +58,10 @@ const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ hearIndicators, d
           {/* HEAR */}
           {pack.hear.applying && (
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-2" style={{ color: '#2A7D6F' }}>For HEAR</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-2" style={{ color: 'var(--ink-muted)' }}>For HEAR</p>
               <div className="space-y-1.5">
                 {pack.hear.toPost.map((t, i) => (
-                  <PostRow key={`hp${i}`} icon={Mail} tint={COLORS.accentTint} iconColor={COLORS.accent} text={t} />
+                  <PostRow key={`hp${i}`} icon={Mail} tint="transparent" iconColor="var(--ink-secondary)" text={t} />
                 ))}
                 {pack.hear.autoVerified.map((t, i) => (
                   <PostRow key={`ha${i}`} icon={ShieldCheck} tint={COLORS.successTint} iconColor={COLORS.success} text={t} muted />
@@ -73,13 +73,13 @@ const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ hearIndicators, d
           {/* DARE */}
           {pack.dare.applying && (
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-2" style={{ color: '#2A7D6F' }}>For DARE</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-2" style={{ color: 'var(--ink-muted)' }}>For DARE</p>
               <div className="space-y-1.5">
                 {pack.dare.online.map((t, i) => (
                   <PostRow key={`do${i}`} icon={Laptop} tint="#EAF1F8" iconColor="#2C4B6E" text={t} />
                 ))}
                 {pack.dare.toPost.map((t, i) => (
-                  <PostRow key={`dp${i}`} icon={Mail} tint={COLORS.accentTint} iconColor={COLORS.accent} text={t} />
+                  <PostRow key={`dp${i}`} icon={Mail} tint="transparent" iconColor="var(--ink-secondary)" text={t} />
                 ))}
               </div>
               {pack.dare.categoryReqs.length > 0 && (

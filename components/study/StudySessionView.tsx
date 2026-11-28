@@ -11,8 +11,6 @@ import { readPlannerTodos } from '../launchpad/plannerTodos';
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import MobileStudySessionView from './StudySessionView.mobile';
-import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from '../Motion';
 import { BookOpen, Target, RotateCcw, type LucideIcon } from 'lucide-react';
 import StudySessionSetup from './StudySessionSetup';
 import type { PlanStep } from '../approved-ui-runtime';
@@ -32,7 +30,7 @@ import { STRATEGY_REGISTRY } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
 import { MIN_STUDY_SESSION_MINUTES } from '../../hooks/useStudySession';
 import { StudySessionProvider, useSharedStudySession, useStudySessionScope } from '../../contexts/StudySessionContext';
-import StudyTimeUp from './StudyTimeUp';
+import StudyTimeUp, { sessionTodosFor } from './StudyTimeUp';
 import { useStudyTransitionSound } from '../../hooks/useStudyTransitionSound';
 import StudySessionCompletion from './StudySessionCompletion';
 import StrategyPickerStep from './StrategyPickerStep';
@@ -50,7 +48,9 @@ import { logError } from '../../utils/logError';
 import { useProgress } from '../../contexts/ProgressContext';
 import { useSettingsContext } from '../../contexts/SettingsContext';
 import { DEMO_STUDENT_UID } from '../../data/devStudent';
-import { useModal } from '../../hooks/useModal';
+import { Sheet } from '../ui/Sheet';
+import { Button, TextButton } from '../ui/Button';
+import { formatStudyTime } from '../../utils/studyTime';
 
 const CONFIDENCE_SCORE: Record<StudyConfidenceLabel, number> = {
   lost: 1,
@@ -166,8 +166,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [selectedMinutes, setSelectedMinutes] = useState<number>(timetableBlock?.durationMinutes ?? 0);
   const [_blockCompleteBanner, setBlockCompleteBanner] = useState<{ done: number; total: number } | null>(null);
   const [confirmQuit, setConfirmQuit] = useState(false);
-  const exitDialogRef = useRef<HTMLDivElement>(null);
-  useModal(confirmQuit, () => setConfirmQuit(false), exitDialogRef);
 
   // Re-sync selections when timetable block changes
   useEffect(() => {
@@ -498,6 +496,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onSubject={setSelectedSubject}
           onType={setSelectedType}
           onMinutes={minutes => { setOpenEndedChoice(false); setSelectedMinutes(minutes); }}
+          onClear={() => { setSelectedSubject(''); setSelectedType(''); setOpenEndedChoice(false); setSelectedMinutes(0); }}
           todayBlocks={computedTodayBlocks}
           onBlock={block => {
             setTopicLaunch(undefined);
@@ -548,6 +547,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     ? <StudyTimeUp subject={session.subject} elapsedSeconds={session.elapsedSeconds}
         extendedMinutes={session.extendedMinutes ?? 0} extensionBonus={session.extensionBonus ?? 0}
         sessionPoints={sessionPoints} onKeepGoing={minutes => { session.extendSession(minutes); }}
+        todos={sessionTodos ?? sessionTodosFor(session.subject, session.sessionType, session.plannedSeconds ?? session.totalDuration)}
         onFinish={() => setFinishing(true)} /> : null;
 
   // ── ACTIVE / PAUSED PHASE ──
@@ -592,63 +592,23 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onSkipPrompt={session.dismissPrompt}
         />
 
-        <AnimatePresence>
-          {confirmQuit && (
-            <MotionDiv
-              className="frame-sheet-backdrop [--frame-gap:1rem] z-[var(--z-dialog)] flex items-end sm:items-center justify-center bg-[#1A1A1A]/55"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              role="dialog"
-              aria-modal="true"
-              aria-labelledby="study-exit-title"
-              tabIndex={-1}
-              ref={exitDialogRef}
-            >
-              <MotionDiv
-                initial={{ opacity: 0, y: 12, scale: 0.98 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: 8, scale: 0.98 }}
-                transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-                className="ss-exit-panel"
-              >
-                <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">Leave session</p>
-                <h2 id="study-exit-title" className="font-serif text-2xl font-bold text-[#1A1A1A]">End this study session?</h2>
-                <p className="mt-2 text-sm leading-relaxed text-[#7A7068]">
-                  {session.canRecordSession
-                    ? 'End early to record the time you have studied and continue to your debrief, or discard the session without saving it.'
-                    : `Study for at least ${MIN_STUDY_SESSION_MINUTES} minutes to record this session. You can keep studying or discard this start.`}
-                </p>
-                <div className="mt-6 grid gap-2">
-                  <button
-                    type="button"
-                    onClick={() => setConfirmQuit(false)}
-                    className="ss-keep-studying"
-                  >
-                    Keep studying
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleEndEarly}
-                    disabled={!session.canRecordSession}
-                    className="ss-end-early"
-                  >
-                    {session.canRecordSession
-                      ? 'End early and debrief'
-                      : `End early after ${MIN_STUDY_SESSION_MINUTES} min`}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleDiscard}
-                    className="ss-discard"
-                  >
-                    Discard without saving
-                  </button>
-                </div>
-              </MotionDiv>
-            </MotionDiv>
-          )}
-        </AnimatePresence>
+        {/* Finish for now (c-study-pause, agreed 24 Nov 2026): what happens to
+            the time, then three named choices; Discard is red words, clear of
+            the bottom edge. The same three actions as before. */}
+        <Sheet open={confirmQuit} onClose={() => setConfirmQuit(false)} plain title="Finish for now?" className="ss-exit-sheet"
+          footer={<>
+            {session.canRecordSession
+              ? <Button kind="main" size="lg" block arrow="forward" onClick={handleEndEarly}>{`End and keep ${Math.floor(session.elapsedSeconds / 60)} min`}</Button>
+              : <Button size="lg" block unavailable={`Your time is kept from ${MIN_STUDY_SESSION_MINUTES} minutes.`} onClick={handleEndEarly}>{`End early after ${MIN_STUDY_SESSION_MINUTES} min`}</Button>}
+            <Button size="lg" block onClick={() => setConfirmQuit(false)}>Keep studying</Button>
+            <TextButton tone="danger" className="ss-exit-discard" onClick={handleDiscard}>Discard without saving</TextButton>
+          </>}>
+          <p className="t-sub">
+            {session.canRecordSession
+              ? <>Ending keeps your <strong>{formatStudyTime(session.elapsedSeconds)}</strong> of {session.subject} on your record and takes you to a short debrief. Discarding throws that time away.</>
+              : `Study for at least ${MIN_STUDY_SESSION_MINUTES} minutes to record this session. You can keep studying or discard this start.`}
+          </p>
+        </Sheet>
       </div>
     );
   }

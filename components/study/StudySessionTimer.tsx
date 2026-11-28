@@ -1,8 +1,12 @@
 import React from 'react';
-import { Check, Minimize2, Pause, Play, X } from 'lucide-react';
+import { Check, Pause, Play } from 'lucide-react';
 import { MotionDiv, useReducedMotion } from '../Motion';
 import { PROMPT_AUTO_DISMISS_SECONDS, getSubjectHex } from '../../studySessionData';
+import { TopBar } from '../ui/Bars';
+import { Button } from '../ui/Button';
+import StudyRule, { roomMarks } from './StudyRule';
 import './study-session.css';
+import './study-room.css';
 import type { StudyTimerAppearance } from '../../hooks/useStudyTimerAppearance';
 import { useNativeStatusBarAppearance } from '../../hooks/useNativeStatusBarAppearance';
 
@@ -54,27 +58,32 @@ export default function StudySessionTimer({ appearance = 'ink', subject, subject
   // even for Mathematics, whose established subject colour is near black.
   return (
     <div className={`ss-timer-content ss-room-${appearance} ${paused ? 'ss-room-paused' : ''} ${prompt ? 'ss-room-coaching' : ''}`} style={{ '--ss-subject': subjectColor, '--ss-landscape': subjectHex, '--ss-session-progress': `${progress}%` } as React.CSSProperties}>
-      {appearance === 'layers' ? <div className="ss-colour-landscape" aria-hidden="true">{[0, 1, 2, 3, 4].map(band => <i key={band} style={{ '--band': band } as React.CSSProperties} />)}</div> : <div className="ss-ink-edge" aria-hidden="true"><i style={{ height: `${progress}%` }} /></div>}
-      <header className="ss-timer-navigation" data-study-arrive><span className="ss-eyebrow">The study room</span><div className="study-room-tools">{soundControl}{onMinimise && <button type="button" className="ss-minimise" onClick={onMinimise} aria-label="Minimise timer and keep studying in the app"><Minimize2 size={17} aria-hidden="true" /><span>Minimise</span></button>}<button type="button" onClick={onLeave} aria-label="Leave study session"><X size={20} aria-hidden="true" /></button></div></header>
+      {appearance === 'layers' ? <div className="ss-colour-landscape" aria-hidden="true">{[0, 1, 2, 3, 4].map(band => <i key={band} style={{ '--band': band } as React.CSSProperties} />)}</div> : null}
+      {/* The one bar (c-study-pause, agreed 24 Nov 2026): Close at the left puts
+          the room away while the timer runs (or leaves, where the room cannot be
+          put away), the sound at the right. Ending is a choice on the pause screen. */}
+      <div className="ss-room-barwrap" data-study-arrive>
+        <TopBar className="ss-room-bar" title="The Study Room" action={soundControl}
+          leave={{ kind: 'close', onPress: onMinimise ?? onLeave, label: onMinimise ? 'Close the room. Your session keeps running.' : 'Leave study session' }} />
+      </div>
       <main className="ss-timer-main">
-        <p className="ss-timer-subject" data-study-arrive><i aria-hidden="true" />{subject}</p>
+        <p className="ss-timer-subject" data-study-arrive>{subject}</p>
         <p className="ss-timer-type" data-study-arrive>{type} · {length}</p>
-        <p className="ss-timer-digits" data-study-arrive role="timer" aria-label={openEnded ? `${formatTime(shown)} studied` : `${formatTime(shown)} remaining`}>{formatTime(shown)}</p>
+        <p className="ss-timer-digits" data-study-arrive role="timer" aria-label={openEnded ? `${formatTime(shown)} studied` : `${formatTime(shown)} remaining`}>{[...formatTime(shown)].map((character, index) => <span key={index} className={character === ':' ? 'ss-timer-colon' : undefined}>{character}</span>)}</p>
         <p className="ss-timer-status" data-study-arrive>{paused ? 'Session paused' : openEnded ? 'Time studied' : extendedMinutes > 0 ? 'Extra time remaining' : 'Time remaining'}</p>
         <div className="ss-timer-actions" data-study-arrive>
-          <button type="button" className="ss-timer-pause" onClick={onTogglePause} aria-label={paused ? 'Resume study session' : 'Pause study session'}>{paused ? <Play size={19} fill="currentColor" aria-hidden="true" /> : <Pause size={19} aria-hidden="true" />}{paused ? 'Resume' : 'Pause'}</button>
-          {openEnded && onFinish && <button type="button" className="ss-timer-finish" onClick={onFinish} disabled={!canFinish} aria-describedby={canFinish ? undefined : 'ss-finish-help'}><Check size={18} aria-hidden="true" />Finish</button>}
+          <Button kind="main" className="ss-timer-pause" onClick={onTogglePause} aria-label={paused ? 'Resume study session' : 'Pause study session'}>{paused ? <Play size={20} strokeWidth={1.75} aria-hidden="true" /> : <Pause size={20} strokeWidth={1.75} aria-hidden="true" />}{paused ? 'Resume' : 'Pause'}</Button>
+          {openEnded && onFinish && <Button className="ss-timer-finish" onClick={onFinish} unavailable={canFinish ? undefined : 'Finish after 5 minutes'}><Check size={20} strokeWidth={1.75} aria-hidden="true" />Finish</Button>}
         </div>
-        {openEnded && onFinish && !canFinish && <p id="ss-finish-help" className="ss-finish-help">Finish after 5 minutes</p>}
         {notifyOffer}
       </main>
       {prompt && <section className="ss-coaching" aria-label="Study strategy prompt" key={prompt.prompt}>
         <div className="ss-coaching-heading"><p className="ss-eyebrow">Put it into practice</p><span>{prompt.strategyName}</span></div>
         <p className="ss-coaching-prompt">{prompt.prompt}</p>
-        <div className="ss-coaching-actions"><button type="button" onClick={onCompletePrompt}>Done</button><button type="button" onClick={onSkipPrompt}>Skip</button></div>
+        <div className="ss-coaching-actions"><Button onClick={onCompletePrompt}>Done</Button><Button onClick={onSkipPrompt}>Skip</Button></div>
         {!reduceMotion && <MotionDiv className="ss-prompt-countdown" initial={{ scaleX: 1 }} animate={{ scaleX: 0 }} transition={{ duration: PROMPT_AUTO_DISMISS_SECONDS, ease: 'linear' }} />}
       </section>}
-      <footer className="ss-timer-footer"><div className="ss-timer-track" role="progressbar" aria-label="Session progress" aria-valuenow={Math.round(progress)} aria-valuemin={0} aria-valuemax={100}><span style={{ width: `${progress}%` }} /></div><div><span>{formatTime(elapsedSeconds)} elapsed</span><span>{openEnded ? 'No set end' : `${formatTime(totalSeconds)} planned`}</span></div></footer>
+      <footer className="ss-timer-footer"><div className="ss-timer-track" role="progressbar" aria-label="Session progress" aria-valuenow={Math.round(progress)} aria-valuemin={0} aria-valuemax={100}><StudyRule size="room" marks={roomMarks(totalSeconds, elapsedSeconds, openEnded)} /></div><div><span>{formatTime(elapsedSeconds)} elapsed</span><span>{openEnded ? 'No set end' : `${formatTime(totalSeconds)} planned`}</span></div></footer>
     </div>
   );
 }

@@ -1,0 +1,452 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The counsellor's dashboard in the agreed look (area 8a): the white page, the one typeface,
+ * ruled rows, ink marks, figures that line up on their digits. Ported from the agreed boards
+ * (site/src/css/c-staff.css, the c-staff-counsellor section, and r5-d2.css, r5-counsellor-dashboard)
+ * onto the app's tokens. Class prefix `gc8-`. Every value is a token or the board's own measure;
+ * no colour is typed here. Things that come up over the page (sheets, menus) are portalled to the
+ * end of <body>, so their classes never rely on the .gc8 root.
+ */
+
+/* ── The page ────────────────────────────────────────────────────────── */
+.gc8 { min-height: 100dvh; background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); -webkit-font-smoothing: antialiased; }
+.gc8 :is(h1, h2, h3, p) { margin: 0; }
+.gc8-main { display: flex; flex-direction: column; gap: var(--space-8); padding: var(--space-1) max(var(--space-6), var(--safe-right, 0px)) var(--space-8) max(var(--space-6), var(--safe-left, 0px)); }
+.gc8-head { display: flex; flex-direction: column; gap: 6px; }
+.gc8-head-row { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.gc8-title { font-size: 29px; line-height: 33px; letter-spacing: -0.04em; font-weight: 400; text-wrap: balance; }
+.gc8-name { font-size: 28px; line-height: 32px; letter-spacing: -0.04em; font-weight: 400; }
+.gc8-sub { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.gc8-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.gc8-label { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.gc8-strong { color: var(--ink-primary); }
+.gc8-readout { font-family: 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-size: 13px; line-height: 16px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+.gc8-sec { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; }
+.gc8-sechead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--space-2) var(--space-3); min-height: 28px; }
+.gc8-sechead > .gc8-h { flex: none; }
+.gc8-sechead-col { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.gc8-h { font-size: 21px; line-height: 26px; letter-spacing: -0.03em; font-weight: 400; }
+.gc8-sechead > .gc8-meta { flex: none; text-align: right; padding-bottom: 3px; }
+.gc8-pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+.gc8-pair > * { width: 100%; justify-content: center; }
+.gc8-row-x { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.gc8-more { align-self: flex-start; }
+.gc8-rule { height: 1px; background: var(--hairline); border: 0; margin: 0; }
+.gc8-empty { padding: var(--space-4) 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.gc8-empty b { display: block; color: var(--ink-primary); font-weight: 400; }
+/* A button that filters: chosen keeps its white face and gains the ink outline. */
+.gc8-filts { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.gc8-filts .ui-btn { gap: 6px; }
+.gc8-filts .ui-btn[aria-pressed='true'], .gc8-tag[aria-pressed='true'] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+.gc8-count { color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+/* A button with a small glyph before its word (a toolbar's Refresh, Add event, Status guide). */
+.gc8-ib > span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* ── People and marks ────────────────────────────────────────────────── */
+/* A student's character stands bare: no tile, no circle. */
+.gc8-art, .gc8-art.gc8-art.star-crew-avatar { display: block; flex: none; width: 40px; height: 40px; border: 0; border-radius: 0; background: transparent; object-fit: contain; mix-blend-mode: normal; }
+.gc8-art--32.gc8-art--32.star-crew-avatar, .gc8-art--32 { width: 32px; height: 32px; }
+.gc8-art--28.gc8-art--28.star-crew-avatar, .gc8-art--28 { width: 28px; height: 28px; }
+.gc8-art--56.gc8-art--56.star-crew-avatar, .gc8-art--56 { width: 56px; height: 56px; }
+.gc8-person { font-size: 16px; line-height: 21px; letter-spacing: -0.015em; }
+/* Status in words, repeated by a mark in shape: filled ink = at risk / urgent, ring = drifting / watch,
+   green = thriving, grey = inactive; a grey ring = new, a green ring = active (r5-d2). */
+.gc8-dot { display: inline-block; flex: none; width: 8px; height: 8px; margin: 0 7px 1px 0; border-radius: 50%; background: var(--ink-primary); vertical-align: middle; }
+.gc8-dot--ring { background: none; box-shadow: inset 0 0 0 1.5px var(--ink-primary); }
+.gc8-dot--good { background: var(--success-hex); }
+.gc8-dot--quiet { background: var(--ink-muted); }
+.gc8-dot--new { background: none; box-shadow: inset 0 0 0 1.5px var(--ink-muted); }
+.gc8-dot--active { background: none; box-shadow: inset 0 0 0 1.5px var(--success-hex); }
+.gc8-why { color: var(--ink-muted); }
+.gc8-why b { color: var(--ink-primary); font-weight: 400; }
+/* Calendar kinds, by shape so they read without colour. */
+.gc8-mk { display: inline-block; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-primary); }
+.gc8-mk--deadlines { background: none; box-shadow: inset 0 0 0 1.5px var(--ink-primary); }
+.gc8-mk--school { border-radius: 1.5px; }
+.gc8-mk--other { width: 9px; height: 2px; border-radius: 1px; background: var(--ink-secondary); }
+.gc8-mk--lc { width: 12px; height: 4px; border-radius: 2px; }
+.gc8-mk--today { width: 14px; height: 14px; border-radius: 4px; background: var(--action); }
+.gc8-flag { color: var(--ink-primary); flex: none; }
+
+/* ── Figures: the digits of a column end on one edge; the unit hangs past it ── */
+.gc8-unit { display: inline-block; width: var(--unit-w, 14px); margin-right: calc(var(--unit-w, 14px) * -1); text-align: left; white-space: nowrap; }
+.gc8-num { font-size: 40px; line-height: 40px; letter-spacing: -0.055em; font-weight: 400; font-variant-numeric: tabular-nums; }
+.gc8-num .gc8-unit { font-size: 0.42em; letter-spacing: 0; padding-left: 0.08em; color: var(--ink-secondary); }
+.gc8-figrows { border-top: 1px solid var(--hairline); }
+.gc8-figrows > div { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 58px; padding: 6px 0; border-bottom: 1px solid var(--hairline); }
+.gc8-figrows .gc8-sub { color: var(--ink-primary); }
+.gc8-figrows .gc8-num { --unit-w: 16px; font-size: 30px; line-height: 32px; padding-right: var(--unit-w); }
+.gc8-figrows-col { display: flex; flex-direction: column; gap: 2px; }
+.gc8-pct { --unit-w: 9px; padding-right: var(--unit-w); text-align: right; white-space: nowrap; }
+.gc8-pct .gc8-unit { font-size: 11px; color: var(--ink-muted); }
+.gc8-trend { display: inline-flex; align-items: center; gap: 6px; }
+.gc8-up { color: var(--success-hex); }
+.gc8-down { color: var(--ink-secondary); }
+
+/* ── The phone: the place's bar, the account button, the list rows ─────── */
+.gc8-me.ui-icon-btn { margin-right: calc(var(--space-6) - 14px); background: none; }
+.gc8-me > span, .gc8-user-box { display: grid; place-items: center; width: 40px; height: 40px; border: 1.5px solid var(--outline-strong); border-radius: 11px; background: var(--surface-paper); color: var(--ink-primary); }
+.gc8-me.ui-icon-btn:active { background: none; }
+.gc8-me:active > span { background: var(--surface-soft); }
+@media (hover: hover) and (pointer: fine) { .gc8-me.ui-icon-btn:hover { background: none; } }
+/* One student over the page: a page of its own on a phone, the side tray on a laptop. */
+.gc8-scrim { z-index: calc(var(--z-takeover) - 1); background: var(--scrim); }
+.gc8-over { overflow-y: auto; overscroll-behavior: contain; }
+.gc8-over.gc8-tray { left: auto !important; width: min(640px, 100vw); border-left: 1px solid var(--outline-soft); background: var(--surface-raised); box-shadow: var(--float); }
+.gc8 .ui-bar.gc8-placebar { background: var(--surface-canvas); }
+.gc8 .ui-bar.gc8-placebar .ui-bar-label { padding-left: var(--space-6); }
+.gc8-list .ui-row { min-height: 60px; padding: 8px 0; }
+.gc8-list .ui-row-art { width: 40px; height: 40px; }
+.gc8-list .ui-row-meta { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gc8-list .ui-row-value { color: var(--ink-muted); font-family: var(--font-ui); font-size: 13px; letter-spacing: 0; }
+.gc8-list .ui-row-value.gc8-pct { color: var(--ink-primary); font-family: 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
+.gc8-list .ui-row-end .ui-icon-btn { margin-right: -10px; }
+.gc8-best { display: flex; flex-direction: column; gap: 6px; padding-top: var(--space-2); }
+
+/* ── The laptop: the staff sidebar, the bar along the top, the body ─────── */
+.gc8-side { display: none; }
+.gc8-dbar { display: none; }
+@media (min-width: 768px) {
+  .gc8 { display: grid; grid-template-columns: 264px minmax(0, 1fr); align-items: start; }
+  .gc8-side { position: sticky; top: 0; display: flex; flex-direction: column; gap: 18px; height: 100dvh; padding: 22px 14px 16px; border-right: 1.5px solid var(--outline-strong); background: var(--surface-canvas); }
+  .gc8-brand { display: flex; flex-direction: column; gap: 6px; }
+  .gc8-wordmark { padding: 0 10px; font-size: 22px; line-height: 26px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink-primary); }
+  .gc8-wordmark i { font-style: normal; color: var(--nsu-orange); }
+  .gc8-brand .gc8-label { padding: 0 10px; }
+  .gc8-nav { display: flex; flex: 1; flex-direction: column; gap: 2px; }
+  .gc8-nav-item { display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 10px; border: 1px solid transparent; border-radius: var(--r-sm); background: none; color: var(--ink-secondary); font-family: var(--font-ui); font-size: 15px; text-align: left; cursor: pointer; transition: background-color var(--t-press) var(--ease-out); -webkit-tap-highlight-color: transparent; }
+  .gc8-nav-item:active { background: var(--surface-soft); }
+  .gc8-nav-item[aria-current='page'] { border-color: var(--outline-strong); background: var(--surface-paper); color: var(--ink-primary); }
+  .gc8-nav-item .ui-icon { color: currentColor; }
+  .gc8-user.ui-part { display: flex; align-items: center; gap: 10px; width: 100%; padding: 10px; border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); color: var(--ink-primary); font-family: var(--font-ui); text-align: left; cursor: pointer; }
+  .gc8-user .ui-menu-btn-text { display: flex; flex: 1; align-items: center; gap: 10px; min-width: 0; }
+  .gc8-user-box { display: grid; flex: none; place-items: center; width: 32px; height: 32px; border: 1.5px solid var(--outline-strong); border-radius: 9px; background: var(--surface-paper); }
+  .gc8-user-copy { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+  .gc8-user-copy > span:first-child { overflow: hidden; font-size: 15px; line-height: 20px; text-overflow: ellipsis; white-space: nowrap; }
+  .gc8-user > .ui-icon { color: var(--ink-muted); }
+  .gc8-col { min-width: 0; min-height: 100dvh; }
+  .gc8-dbar { position: sticky; top: 0; z-index: var(--z-sticky); display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); height: 56px; padding: 0 40px; border-bottom: 1px solid var(--hairline); background: var(--surface-canvas); }
+  .gc8-dbar-end { display: flex; align-items: center; gap: var(--space-4); }
+  .gc8-dbar .ui-link { min-height: 44px; }
+  .gc8-main { width: 100%; max-width: 1120px; margin: 0 auto; gap: var(--space-8); padding: var(--space-6) 40px 48px; }
+  .gc8-placebar, .gc8-tabbar { display: none !important; }
+  .gc8-title { font-size: 29px; line-height: 33px; }
+}
+@media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+  .gc8-nav-item:not([aria-current='page']):hover { background: var(--surface-soft); color: var(--ink-primary); }
+}
+/* The hero on a laptop: the greeting at the left; the countdown, Export and Broadcast at the right. */
+.gc8-hero { display: flex; flex-direction: column; gap: var(--space-4); }
+.gc8-hero-end { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.gc8-countdown { display: flex; align-items: center; gap: 10px; }
+.gc8-countdown .gc8-meta { line-height: 16px; }
+.gc8-countdown--big .gc8-num { font-size: 56px; line-height: 56px; }
+.gc8-live { color: var(--accent-text); }
+.gc8-filter { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; padding-bottom: 22px; border-bottom: 1px solid var(--hairline); }
+.gc8-filter > .gc8-meta:last-child { margin-left: auto; }
+.gc8-figs { display: flex; flex-wrap: wrap; gap: var(--space-6) 88px; }
+.gc8-figs > div { display: flex; flex-direction: column; gap: 6px; }
+.gc8-figs .gc8-num { --unit-w: 18px; display: flex; align-items: baseline; height: 40px; }
+@media (min-width: 1024px) {
+  .gc8-hero { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: var(--space-6); }
+}
+/* Two columns side by side from 1200px (beside the sidebar they squeeze below that). */
+.gc8-two { display: flex; flex-direction: column; gap: var(--space-8); }
+@media (min-width: 1200px) {
+  .gc8-two { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 48px; align-items: start; }
+  .gc8-two--wide { grid-template-columns: minmax(0, 1fr) 384px; }
+  .gc8-two--even { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr); }
+}
+
+/* Early warning rows on a laptop: severity, the student, the reason in full, Dismiss; the row opens the student. */
+.gc8-warns { border-top: 1px solid var(--hairline); }
+.gc8-warn { display: grid; grid-template-columns: 76px 32px minmax(0, 1fr) auto 20px; align-items: center; column-gap: 14px; min-height: 60px; padding: 8px 0; border-bottom: 1px solid var(--hairline); }
+.gc8-sev { color: var(--ink-secondary); font-size: 13px; line-height: 18px; white-space: nowrap; }
+.gc8-warn-open { display: flex; flex-direction: column; gap: 2px; min-width: 0; min-height: 44px; justify-content: center; padding: 0; border: 0; background: none; color: var(--ink-primary); font-family: var(--font-ui); text-align: left; cursor: pointer; }
+.gc8-warn-open .gc8-person { font-size: 15px; line-height: 20px; }
+.gc8-warn-open .gc8-person span { color: var(--ink-secondary); }
+.gc8-warn .ui-link { min-height: 44px; font-size: 14px; }
+.gc8-warn > .ui-icon { color: var(--ink-muted); }
+.gc8-att .ui-row { min-height: 52px; padding: 8px 0; gap: var(--space-3); }
+.gc8-att .ui-row-art { width: 32px; height: 32px; }
+.gc8-att .ui-row-title { font-size: 15px; line-height: 20px; }
+.gc8-ago { min-width: 52px; color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: right; white-space: nowrap; }
+/* The digits line up (tabular); the space after them stays a normal one (Diatype's tabular space is a figure wide). */
+.gc8-ago > b { font-weight: 400; font-variant-numeric: tabular-nums; }
+
+/* ── The activity graph: one series, quiet axes, a reading pinned to the day chosen ── */
+.gc8-chart { position: relative; margin: 0; touch-action: pan-y; }
+.gc8-chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.gc8-chart .gc8-grid line { stroke: var(--hairline); stroke-width: 1; }
+.gc8-chart text { font-family: var(--font-ui); font-size: 12px; fill: var(--ink-muted); }
+.gc8-chart .gc8-ylab text { text-anchor: end; }
+.gc8-chart .gc8-xlab text { text-anchor: middle; }
+.gc8-chart .gc8-xlab .gc8-now { fill: var(--ink-primary); }
+.gc8-chart .gc8-area { fill: color-mix(in srgb, var(--ink-primary) 7%, transparent); stroke: none; }
+.gc8-chart .gc8-line { fill: none; stroke: var(--ink-primary); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.gc8-chart .gc8-cross { stroke: var(--outline-soft); stroke-width: 1; stroke-dasharray: 3 3; }
+.gc8-chart .gc8-pt { fill: var(--surface-canvas); stroke: var(--ink-primary); stroke-width: 2; }
+.gc8-chart .gc8-read rect { fill: var(--surface-raised); stroke: var(--outline-soft); }
+.gc8-chart .gc8-read .gc8-k { font-size: 12px; fill: var(--ink-muted); }
+.gc8-chart .gc8-read .gc8-v { font-size: 14px; fill: var(--ink-primary); }
+.gc8-chart-hit { position: absolute; inset: 0; cursor: crosshair; }
+.gc8-totals { display: flex; flex-wrap: wrap; gap: 6px 24px; color: var(--ink-secondary); font-size: 14px; line-height: 20px; }
+.gc8-totals b { color: var(--ink-primary); font-weight: 400; }
+.gc8-totals .gc8-hint { color: var(--ink-muted); }
+
+/* ── Key dates ───────────────────────────────────────────────────────── */
+.gc8-dates .ui-row { min-height: 56px; padding: 6px 0; gap: 14px; }
+.gc8-dates .ui-row-value, .gc8-list.gc8-dates .ui-row-value { color: var(--ink-secondary); font-family: 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; letter-spacing: 0.02em; }
+.gc8-dates .ui-row-end .ui-icon-btn { margin-right: -10px; }
+.gc8-dates--past .ui-row-title { color: var(--ink-muted); text-decoration: line-through; }
+.gc8-date-tools { display: flex; align-items: center; gap: var(--space-2); }
+@media (max-width: 767px) { .gc8-date-tools { display: grid; grid-template-columns: 1fr 1fr; } .gc8-date-tools > * { width: 100%; justify-content: center; } }
+.gc8-dates-page { display: flex; flex-direction: column; gap: var(--space-8); }
+@media (min-width: 1024px) {
+  .gc8-dates-page .gc8-two { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 40px; align-items: start; }
+}
+.gc8-presets { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+
+/* Recently active: eight students, four to a row on a laptop. */
+.gc8-recent { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 32px; border-top: 1px solid var(--hairline); }
+.gc8-ra.ui-part { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; padding: 0; border: 0; border-bottom: 1px solid var(--hairline); background: none; color: var(--ink-primary); font-family: var(--font-ui); text-align: left; cursor: pointer; }
+.gc8-ra-copy { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+.gc8-ra-copy :is(.gc8-person, .gc8-meta) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gc8-ra-copy .gc8-person { font-size: 15px; line-height: 20px; }
+.gc8-ra > .gc8-meta { flex: none; }
+@media (max-width: 1199px) { .gc8-recent { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ── The calendar: months in one frame, today in ink, the chosen day outlined ── */
+.gc8-calwrap { display: flex; flex-direction: column; gap: var(--space-4); align-items: stretch; }
+.gc8-cal { position: relative; align-self: flex-start; padding: 6px 12px 12px; border: 1px solid var(--outline-soft); border-radius: var(--r-box); background: var(--surface-paper); }
+.gc8-cal-step { position: absolute; top: 6px; z-index: 2; }
+.gc8-cal-step--prev { left: 6px; }
+.gc8-cal-step--next { right: 6px; }
+.gc8-cal-months { display: grid; grid-auto-flow: column; gap: 36px; }
+.gc8-cal-title { display: flex; align-items: center; justify-content: center; height: 44px; font-size: 15px; letter-spacing: -0.01em; }
+.gc8-cal-grid { display: grid; grid-template-columns: repeat(7, 40px); gap: 4px 6px; justify-content: center; }
+.gc8-cal-wd { display: flex; align-items: center; justify-content: center; height: 26px; color: var(--ink-muted); font-size: 12px; }
+.gc8-day { position: relative; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: var(--r-sm); background: none; color: var(--ink-primary); font-family: var(--font-ui); font-size: 14px; line-height: 1; font-variant-numeric: tabular-nums; cursor: pointer; transition: background-color var(--t-ui) var(--ease-out), box-shadow var(--t-ui) var(--ease-out); -webkit-tap-highlight-color: transparent; }
+.gc8-day::after { content: ''; position: absolute; inset: -2px -3px; }
+.gc8-day:active { background: var(--surface-soft); }
+.gc8-day--today { background: var(--action); color: var(--action-ink); }
+.gc8-day--today:active { background: var(--action-press); }
+.gc8-day[aria-pressed='true'] { box-shadow: inset 0 0 0 1.5px var(--ink-primary); }
+.gc8-day--today[aria-pressed='true'] { box-shadow: inset 0 0 0 1.5px var(--action), inset 0 0 0 3px var(--surface-paper); }
+.gc8-day > i { position: absolute; bottom: 5px; left: 50%; width: 5px; height: 5px; margin-left: -2.5px; border-radius: 50%; background: currentColor; }
+.gc8-day > i.gc8-mk--deadlines { background: none; box-shadow: inset 0 0 0 1.2px currentColor; }
+.gc8-day > i.gc8-mk--school { border-radius: 1px; }
+.gc8-day > i.gc8-mk--other { width: 7px; height: 2px; margin-left: -3.5px; border-radius: 1px; }
+.gc8-day > i.gc8-mk--lc { width: 12px; height: 3px; margin-left: -6px; border-radius: 2px; }
+.gc8-cal-side { display: flex; flex: 1; flex-direction: column; gap: var(--space-4); min-width: 0; padding-top: 4px; }
+.gc8-agenda { display: flex; flex-direction: column; gap: var(--space-2); }
+.gc8-ag-day { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.gc8-ag-list { border-top: 1px solid var(--hairline); }
+.gc8-ag-ev { display: flex; align-items: center; gap: var(--space-3); padding: 8px 0; border-bottom: 1px solid var(--hairline); }
+.gc8-ag-ev > span:nth-child(2) { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+.gc8-ag-ev .gc8-readout { margin-left: auto; color: var(--ink-secondary); }
+.gc8-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0; padding: 0; list-style: none; }
+.gc8-legend li { display: flex; align-items: center; gap: 7px; color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+@media (max-width: 767px) { .gc8-cal { align-self: stretch; } }
+@media (min-width: 1024px) {
+  .gc8-calwrap--beside { flex-direction: row; align-items: flex-start; gap: 40px; }
+  .gc8-calwrap--beside .gc8-cal { padding: 6px 16px 14px; }
+  .gc8-calwrap--beside .gc8-cal-grid { grid-template-columns: repeat(7, 36px); gap: 4px; }
+  .gc8-calwrap--beside .gc8-day { width: 36px; height: 38px; }
+}
+@media (prefers-reduced-motion: reduce) { .gc8-day { transition: none; } }
+
+/* ── Progress breakdown: four columns on one baseline, 4px rounded tops ── */
+.gc8-dist { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); align-items: end; height: 150px; border-bottom: 1px solid var(--outline-soft); }
+.gc8-dist > div { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; height: 100%; }
+.gc8-dist i { display: block; width: 100%; max-width: 56px; border-radius: var(--r-xs) var(--r-xs) 0 0; background: var(--ink-primary); }
+.gc8-distx { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); margin-top: -4px; }
+.gc8-distx span { color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: center; }
+@media (max-width: 767px) { .gc8-dist { height: 130px; } .gc8-dist i { max-width: 44px; } }
+
+/* ── Subject-level gaps: each subject's character, its name, one live bar, the number ── */
+.gc8-bar { display: block; height: 8px; overflow: hidden; border-radius: 4px; background: var(--surface-soft); }
+.gc8-bar > i { display: block; height: 100%; border-radius: inherit; background: var(--ink-primary); }
+.gc8-bar--thin { height: 3px; border-radius: 2px; background: var(--hairline); }
+.gc8-gaps { display: flex; flex-direction: column; }
+.gc8-gaprow { display: grid; grid-template-columns: 28px 124px minmax(0, 1fr) 56px 28px; align-items: center; column-gap: var(--space-3); min-height: 31px; font-size: 14px; line-height: 18px; }
+.gc8-gaprow > span:nth-child(2) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gc8-gpts { --unit-w: 24px; padding-right: var(--unit-w); font-size: 14px; line-height: 18px; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.gc8-gpts .gc8-unit { padding-left: 3px; color: var(--ink-muted); font-size: 12px; }
+.gc8-n { text-align: right; font-variant-numeric: tabular-nums; }
+.gc8-pgaps { display: flex; flex-direction: column; gap: 14px; }
+.gc8-pgap { display: flex; align-items: center; gap: var(--space-3); }
+.gc8-pgap-body { display: flex; flex: 1; flex-direction: column; gap: 7px; min-width: 0; }
+.gc8-who { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.gc8-who .gc8-person { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── Subject health: four to a row on a laptop, laid on the page between hairlines ── */
+.gc8-health { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 28px; border-top: 1px solid var(--hairline); }
+.gc8-hc { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; align-items: center; column-gap: 10px; min-height: 50px; border-bottom: 1px solid var(--hairline); }
+.gc8-hc-copy { display: flex; flex-direction: column; min-width: 0; padding: 6px 0; }
+.gc8-hc-copy .gc8-person { font-size: 15px; line-height: 20px; }
+.gc8-hc-copy .gc8-meta { overflow-wrap: anywhere; }
+.gc8-gcol { display: flex; flex-direction: column; align-items: flex-end; }
+.gc8-g { display: inline-flex; align-items: center; gap: 5px; font-size: 15px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (max-width: 1199px) { .gc8-health { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ── All students on a laptop: search, status filters, the table ───────── */
+.gc8-find { width: 220px; }
+.gc8-table { border-top: 1px solid var(--hairline); }
+.gc8-tr { display: grid; grid-template-columns: minmax(0, 1fr) 148px 64px 64px 52px 56px 112px 20px 44px; align-items: center; column-gap: 14px; min-height: 48px; border-bottom: 1px solid var(--hairline); font-size: 15px; line-height: 20px; }
+.gc8-tr--head { min-height: 38px; }
+.gc8-tr > span:nth-child(7) { padding-left: 8px; white-space: nowrap; }
+.gc8-th { display: inline-flex; align-items: center; gap: 4px; min-height: 38px; padding: 0; border: 0; background: none; color: var(--ink-muted); font-family: var(--font-ui); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; }
+.gc8-th[aria-sort='ascending'], .gc8-th[aria-sort='descending'] { color: var(--ink-primary); }
+.gc8-th--n { justify-content: flex-end; width: 100%; }
+.gc8-stu.ui-part { display: flex; align-items: center; gap: var(--space-3); min-width: 0; min-height: 44px; padding: 0; border: 0; background: none; color: var(--ink-primary); font-family: var(--font-ui); font-size: 15px; text-align: left; cursor: pointer; }
+.gc8-stu > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gc8-prog { display: grid; grid-template-columns: 40px minmax(0, 1fr); align-items: center; gap: var(--space-2); }
+.gc8-streak { display: inline-flex; align-items: center; justify-content: flex-end; gap: 4px; }
+.gc8-dim { color: var(--ink-muted); }
+.gc8-acts.ui-part { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: var(--r-ctl); background: none; color: var(--ink-muted); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.gc8-acts[data-popup-open] { color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+.gc8-acts:active { background: var(--surface-soft); }
+.gc8-acts .ui-menu-btn-text { display: grid; place-items: center; }
+.gc8-rowmenu.ui-menu.ui-menu--panel { width: 280px; padding: 6px; }
+@media (max-width: 1199px) {
+  .gc8-tablewrap { overflow-x: auto; }
+  .gc8-table { min-width: 860px; }
+}
+
+/* ── Practice ────────────────────────────────────────────────────────── */
+.gc8-pr { display: grid; grid-template-columns: minmax(0, 1fr) 60px 52px 44px; column-gap: 6px; align-items: center; min-height: 60px; border-bottom: 1px solid var(--hairline); }
+.gc8-pr--head { min-height: 30px; }
+.gc8-pr--head .gc8-label.gc8-n { justify-self: end; font-size: 11px; line-height: 14px; letter-spacing: 0.1em; white-space: nowrap; }
+.gc8-pr .gc8-acts { margin-right: -10px; justify-self: end; }
+.gc8-pr .gc8-n { font-size: 15px; line-height: 20px; }
+.gc8-hpct { padding-right: 9px; }
+.gc8-pwho.ui-part { display: flex; align-items: center; gap: var(--space-3); min-width: 0; min-height: 56px; padding: 0; border: 0; background: none; color: var(--ink-primary); font-family: var(--font-ui); text-align: left; cursor: pointer; }
+.gc8-pwho-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.gc8-pwho-copy :is(.gc8-person, .gc8-meta) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gc8-pwho-copy .gc8-person { font-size: 15px; line-height: 20px; }
+.gc8-ptable { border-top: 1px solid var(--hairline); }
+.gc8-ptr { display: grid; grid-template-columns: minmax(0, 1fr) 120px 96px 84px 60px 236px; column-gap: var(--space-4); align-items: center; min-height: 46px; border-bottom: 1px solid var(--hairline); font-size: 15px; line-height: 20px; }
+.gc8-ptr--head { min-height: 36px; }
+.gc8-tags { display: flex; flex-wrap: nowrap; gap: var(--space-2); }
+.gc8-tags .ui-btn { padding: 0 10px; }
+.gc8-note { display: flex; align-items: flex-start; gap: var(--space-2); color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.gc8-note .ui-icon { margin-top: 1px; }
+@media (max-width: 1199px) {
+  .gc8-ptablewrap { overflow-x: auto; }
+  .gc8-ptable { min-width: 760px; }
+}
+
+/* ── School access ──────────────────────────────────────────────────── */
+.gc8-narrow { display: flex; flex-direction: column; gap: 28px; width: 100%; max-width: 680px; margin: var(--space-4) auto 0; }
+.gc8-code { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.gc8-code .ui-btn { margin-top: var(--space-2); }
+.gc8-code-value { font-family: 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-size: 22px; line-height: 28px; letter-spacing: 0.16em; user-select: all; -webkit-user-select: all; }
+
+/* ── Sheets (portalled: no .gc8 ancestor) ───────────────────────────── */
+.gc8-sheet-group { display: flex; flex-direction: column; gap: 10px; }
+.gc8-sheet-group + .gc8-sheet-group { margin-top: var(--space-3); }
+.gc8-sheet-body { display: flex; flex-direction: column; gap: var(--space-4); }
+.gc8-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+.gc8-grid2 .ui-choice { min-height: 56px; padding: 10px 10px 10px 12px; }
+.gc8-msgs { display: flex; flex-direction: column; gap: var(--space-2); }
+.gc8-msgs .ui-choice { min-height: 56px; }
+.gc8-guide { border-top: 1px solid var(--hairline); }
+.gc8-guide > div { display: grid; grid-template-columns: 18px minmax(0, 1fr); column-gap: var(--space-2); padding: 11px 0; border-bottom: 1px solid var(--hairline); }
+.gc8-guide > div:last-child { border-bottom: 0; }
+.gc8-guide .gc8-dot { margin: 6px 0 0; }
+.gc8-guide-copy { display: flex; flex-direction: column; gap: 2px; }
+.gc8-laptopnote { display: flex; flex-direction: column; gap: 4px; padding-top: var(--space-3); border-top: 1px solid var(--hairline); }
+.gc8-secret { padding: var(--space-4); border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); text-align: center; }
+.gc8-reading { display: flex; flex-direction: column; gap: var(--space-2); color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.gc8-reading b { color: var(--ink-primary); font-weight: 400; }
+.gc8-sheet-foot { display: flex; flex-direction: column; gap: var(--space-2); align-items: stretch; }
+.gc8-sheet-foot > .ui-link { align-self: center; }
+.gc8-sheet-foot .gc8-pair .ui-btn { height: 52px; }
+.gc8-yearbtns { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.gc8-yearbtns .ui-btn { gap: 6px; }
+.gc8-yearbtns .ui-btn[aria-pressed='true'] { border-color: var(--ink-primary); box-shadow: inset 0 0 0 1px var(--ink-primary); }
+
+.gc8-filterbtn.ui-btn { justify-content: space-between; padding-right: 12px; }
+.gc8-grid2 .ui-choice-label { font-size: 15px; line-height: 20px; }
+
+/* ── One student (GCStudentDetail): a page of its own on a phone, the side tray on a laptop ── */
+.gc8-sd { display: flex; flex-direction: column; min-height: 100%; color: var(--ink-primary); font-family: var(--font-ui); -webkit-font-smoothing: antialiased; }
+.gc8-sd :is(h2, h3, p, ul) { margin: 0; }
+.gc8-sd ul { padding: 0; list-style: none; }
+.gc8-sd-body { display: flex; flex: 1; flex-direction: column; gap: var(--space-8); padding: 4px max(var(--space-6), var(--safe-right, 0px)) var(--space-8) max(var(--space-6), var(--safe-left, 0px)); }
+.gc8-tray .gc8-sd-bar.ui-bar { background: var(--surface-raised); }
+.gc8-tray .gc8-sd-body { padding: 8px 32px 48px; }
+.gc8-sd-head { display: flex; flex-direction: column; gap: 6px; }
+.gc8-sd-who { display: flex; align-items: center; gap: 14px; }
+.gc8-sd-whocopy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.gc8-sd-acts { display: flex; flex-direction: column; gap: var(--space-2); }
+/* A notice: a lined box, the page's own white, never tinted. */
+.gc8-sd-notices { display: flex; flex-direction: column; gap: var(--space-3); }
+.gc8-sd-notice { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 12px 14px; border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); }
+/* Needs support cannot be pressed: it lies on the page under its label, a hairline above it. */
+.gc8-sd-reasons { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding-top: var(--space-3); border-top: 1px solid var(--hairline); }
+.gc8-sd-reasons ul { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.gc8-sd-notice ul { display: flex; flex-direction: column; gap: 2px; }
+.gc8-sd-notice .ui-link { min-height: 36px; margin-top: 4px; }
+/* Sections: laid on the page, a hairline between them, never boxed. */
+.gc8-sd-sec { padding-top: var(--space-6); border-top: 1px solid var(--hairline); }
+.gc8-sd-copy { display: flex; flex-direction: column; gap: 4px; }
+.gc8-sd-ends { display: flex; justify-content: space-between; gap: var(--space-3); }
+.gc8-sd-cao { display: flex; flex-direction: column; gap: 6px; }
+.gc8-sd-caobar { position: relative; }
+.gc8-sd-caobar > b { position: absolute; top: 0; bottom: 0; border: 1px dashed var(--ink-muted); border-radius: inherit; }
+.gc8-sd-subjects { display: flex; flex-direction: column; gap: var(--space-4); padding-top: 4px; }
+.gc8-sd-subject { display: flex; align-items: center; gap: var(--space-3); }
+.gc8-sd-subject-copy { display: flex; flex: 1; flex-direction: column; gap: 6px; min-width: 0; }
+/* What a row opens in place: indented, no second rule under its row. */
+.gc8-sd-more { display: block; margin: 0; padding: 0; }
+.gc8-sd-more .ui-list { padding-left: var(--space-4); border-top: 0; }
+.gc8-sd-more .ui-row { min-height: 48px; padding: 8px 0; }
+.gc8-sd-more .ui-row-title { font-size: 15px; line-height: 20px; }
+.gc8-sd-more .ui-row-value { color: var(--ink-muted); font-family: var(--font-ui); font-size: 13px; letter-spacing: 0; }
+.gc8-sd-dim .ui-row-title { color: var(--ink-muted); }
+.gc8-sd-tick { display: inline-block; margin-right: 4px; vertical-align: -3px; color: var(--success-hex); }
+.gc8-sd ul.gc8-sd-items { display: flex; flex-direction: column; gap: var(--space-2); padding: 4px 0 var(--space-3) var(--space-4); border-bottom: 1px solid var(--hairline); }
+.gc8-sd-items li { display: flex; align-items: center; gap: var(--space-2); color: var(--ink-secondary); font-size: 14px; line-height: 19px; }
+.gc8-sd-items svg { flex: none; color: var(--ink-secondary); }
+.gc8-sd-items .gc8-sd-ok { color: var(--success-hex); }
+.gc8-sd-ring { flex: none; width: 14px; height: 14px; border: 1.5px solid var(--outline-soft); border-radius: 50%; }
+.gc8-sd-items li[data-state='done'] .gc8-sd-itemtext { color: var(--ink-muted); text-decoration: line-through; }
+.gc8-sd-items li[data-state='in-progress'] .gc8-sd-itemtext { color: var(--ink-primary); }
+/* The Journey Simulator's capability chart, drawn in ink on hairlines. */
+.gc8-sd-radar { display: flex; justify-content: center; }
+.gc8-sd .gc8-sd-radar svg :is(polygon, line) { stroke: var(--hairline); }
+.gc8-sd .gc8-sd-radar svg polygon[filter] { fill: color-mix(in srgb, var(--ink-primary) 8%, transparent); stroke: var(--ink-primary); filter: none; }
+.gc8-sd .gc8-sd-radar svg circle { fill: var(--ink-primary); filter: none; }
+.gc8-sd .gc8-sd-radar svg text { fill: var(--ink-secondary); font-family: var(--font-ui); font-weight: 400; }
+/* Activity (30 days): one series in ink, empty days a hairline. */
+.gc8-sd-act { display: block; width: 100%; height: 64px; }
+.gc8-sd-act rect { fill: var(--hairline); }
+.gc8-sd-act rect.gc8-sd-on { fill: var(--ink-primary); }
+/* Streak and points: a word for a unit, so it hangs in a wider column. */
+.gc8-sd-words .gc8-num { --unit-w: 44px; }
+/* Mock trajectory: a ruled table, the figures in the readout mono. */
+.gc8-sd-table { width: 100%; border-collapse: collapse; border-top: 1px solid var(--hairline); }
+.gc8-sd-table :is(th, td) { height: 44px; padding: 0 var(--space-3) 0 0; border-bottom: 1px solid var(--hairline); font-weight: 400; text-align: left; vertical-align: middle; }
+.gc8-sd-table th { height: 36px; }
+.gc8-sd-table td { font-size: 15px; line-height: 20px; }
+.gc8-sd-table :is(th, td):nth-child(2) { width: 64px; }
+.gc8-sd-table :is(th, td):last-child { width: 104px; padding-right: 0; text-align: right; }
+.gc8-sd-table td.gc8-readout { font-size: 13px; color: var(--ink-secondary); }
+.gc8-sd-table td.gc8-readout:nth-child(2) { color: var(--ink-primary); }
+.gc8-sd-struggle { display: flex; flex-direction: column; gap: var(--space-4); }
+.gc8-sd-struggle ul { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
+.gc8-usermenu.ui-menu.ui-menu--panel { width: 236px; padding: 6px; }
+/* A table cell never lets its words run into the next column. */
+.gc8-tr > span, .gc8-ptr > span { min-width: 0; }
+.gc8-tr > span:first-child, .gc8-ptr > span:first-child { overflow: hidden; }
+.gc8-stu.ui-part { max-width: 100%; }
+/* The whole list of warnings (a sheet on a phone): Dismiss first, the row's chevron the last thing at
+   its edge, as the laptop board orders them. The chevron stays part of the row (it opens the student);
+   Dismiss sits over the row's end, its own 44px target, and does not open the student. */
+.gc8-warnlist .ui-row-item--end { position: relative; }
+.gc8-warnlist .ui-row-item--end .ui-row-body { padding-right: 60px; }
+.gc8-warnlist .ui-row-end { position: absolute; top: 50%; right: 28px; transform: translateY(-50%); }

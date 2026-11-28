@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, ArrowUpRight, BookOpen, Check, ChevronLeft, FileText, Plus, RotateCcw, X } from 'lucide-react';
-import { Button, Checkbox, Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Input, Progress, Textarea } from '../approved-ui-runtime';
+import { BookOpen, Check, ChevronLeft, FileText, Plus, RotateCcw, X } from 'lucide-react';
+import { Arrow, Button, Glyph, TextButton } from '../ui/Button';
+import { Sheet } from '../ui/Sheet';
+import { ChoiceTile, SelectionBar } from '../ui/Choice';
+import { AreaField, Field } from '../ui/Field';
+import { PressBox } from '../ui/List';
 import { courseworkBrief } from '../../data/curriculum/coursework';
 import { courseworkResources, scopePrompts, type CourseworkResource, type ResourceStage } from '../../data/curriculum/courseworkResources';
 import { activeEvidence, newId, today, type CourseworkProject, type Evidence, type Milestone } from './model';
@@ -11,9 +15,11 @@ import './coursework-activities.css';
 export type SupportPanel='restart'|'pressure'|'resources'|'feedback';
 export interface SupportCache { drafts:SupportDrafts; dirty:boolean }
 interface Props { project:CourseworkProject; panel:SupportPanel|null; connectionId?:string; saving:boolean; error:string; cache?:SupportCache; onCache:(cache:SupportCache)=>void; onClose:()=>void; onSave:(project:CourseworkProject)=>Promise<boolean>; onNavigate:(view:'Plan'|'Evidence'|'Connections'|'Review')=>void }
-const Field=({label,hint,children}:{label:string;hint?:string;children:React.ReactNode})=><label className="ap-field"><span>{label}</span>{children}{hint&&<small>{hint}</small>}</label>;
+/** The shared Button has no `disabled`: a button that cannot go yet says so with aria-disabled and swallows the press. */
+const waitFor = (blocked: boolean) => blocked ? { 'aria-disabled': true as const, onClickCapture: (event: React.MouseEvent) => { event.preventDefault(); event.stopPropagation(); } } : {};
 const titles={restart:'Find a way back in.',pressure:'Pressure-test your thinking.',resources:'The resource desk.',feedback:'Put feedback to work.'};
 const descriptions={restart:'Turn a blocker into a small, concrete step for your plan.',pressure:'Use your own evidence, or learn the process with a clearly fictional example.',resources:'Help matched to your subject and examination year. Keep a takeaway with its source.',feedback:'Preserve the original comment, decide what it means, and give it a next step.'};
+const ROLES:EvidenceRole[]=['Supports','Challenges','Context'];
 
 export default function CourseworkSupport({project,panel,connectionId,saving,error,cache,onCache,onClose,onSave,onNavigate}:Props) {
   const [drafts,setDrafts]=useState<SupportDrafts>(()=>cache?.drafts??project.support?.drafts??{});
@@ -52,11 +58,23 @@ export default function CourseworkSupport({project,panel,connectionId,saving,err
   const connection=project.connections.find(c=>c.id===target)??project.connections[0];
   const pd:PressureDraft=connection?(drafts.pressure?.[connection.id]??{claim:connection.claim,reasoning:connection.reasoning,limitation:connection.limitation,next:connection.pressureReview?.next??'',roles:connection.pressureReview?.roles??Object.fromEntries(connection.evidenceIds.map(id=>[id,'Context' as EvidenceRole])),withheld:''}):{claim:'',reasoning:'',limitation:'',next:'',roles:{},withheld:''};
   const updatePressure=(value:PressureDraft)=>{if(connection)patch({...drafts,pressure:{...drafts.pressure,[connection.id]:value}});};
-  return <Dialog open={!!panel} onOpenChange={open=>{if(!open&&!saving)onClose();}}><DialogContent className="ap-dialog cs-support-dialog" size="lg"><DialogHeader><DialogTitle>{resource?.title??(practice?'Learn with a worked example.':panel?titles[panel]:'Coursework help')}</DialogTitle><DialogDescription>{resource?.publisher??(practice?'Fictional practice only. This material never becomes evidence in your project.':panel?descriptions[panel]:'')}</DialogDescription></DialogHeader>
-    <div className="cs-support-context">{courseworkBrief(project.subjectId,project.examYear)?.specification.subjectName} / {project.examYear} / {project.title}</div>
-    {error&&<p className="ap-error" role="alert">{error}</p>}
-    <fieldset disabled={saving} className="cs-support-fields ap-root cs-support">
-      {(resource||practice)&&<Button variant="ghost" className="cs-back" onClick={()=>{setResourceId('');setPractice(false);}}><ChevronLeft size={15}/>Back to {panel==='restart'?'my next step':panel==='resources'?'resources':'my connections'}</Button>}
+  const title=resource?.title??(practice?'Learn with a worked example.':panel?titles[panel]:'Coursework help');
+  const description=resource?.publisher??(practice?'Fictional practice only. This material never becomes evidence in your project.':panel?descriptions[panel]:'');
+  const footer=(
+    <div className="cw7s-foot">
+      <Button {...waitFor(saving||!dirty)} onClick={()=>void saveDrafts()}>Save draft</Button>
+      <span role="status" className="cw7s-status">{saving?'Saving…':message|| (dirty?'Unsaved changes · save to keep on this device.':'Your saved work stays with this project.')}</span>
+      {savedView&&<TextButton arrow="forward" onClick={()=>navigate(savedView)}>View saved work</TextButton>}
+    </div>
+  );
+  return <Sheet open={!!panel} onClose={()=>{if(!saving)onClose();}} title={title} className="cw7s" footer={footer}>
+    <div className="cw7s-head">
+      {description&&<p className="t-sub">{description}</p>}
+      <p className="t-label cw7s-context">{courseworkBrief(project.subjectId,project.examYear)?.specification.subjectName} / {project.examYear} / {project.title}</p>
+    </div>
+    {error&&<p className="cw7s-error" role="alert">{error}</p>}
+    <fieldset disabled={saving} className="cw7s-fields">
+      {(resource||practice)&&<TextButton tone="quiet" className="cw7s-back" onClick={()=>{setResourceId('');setPractice(false);}}><Glyph icon={ChevronLeft} size={16}/>Back to {panel==='restart'?'my next step':panel==='resources'?'resources':'my connections'}</TextButton>}
       {resource?<ResourceReader resource={resource} draft={drafts.resources?.[resource.id]??{id:'',note:'',why:'',locator:''}} onChange={d=>patch({...drafts,resources:{...drafts.resources,[resource.id]:d}})} onSave={async d=>{
         const old=project.evidence.find(e=>e.id===d.id);
         const item:Evidence={id:d.id,kind:resource.url?'Source':'Reflection',title:resource.title,notes:d.note,why:d.why,author:resource.url?resource.publisher:'',locator:resource.url?d.locator:'',url:resource.url??'',quote:old?.quote??'',date:old?.date??today(),files:old?.files??[],archived:false};
@@ -66,12 +84,12 @@ export default function CourseworkSupport({project,panel,connectionId,saving,err
           const old=project.milestones.find(m=>m.id===value.id);const b=restartOptions(project).find(o=>o.id===value.blocker)!;const steps=b.steps.slice(0,value.minutes===5?1:value.minutes===15?2:3);
           const step:Milestone={id:value.id,label:value.note.trim(),date:old?.date??'',done:steps.every((_,i)=>value.checked.includes(`${value.blocker}-${i}`)),minutes:value.minutes,setting:value.blocker==='waiting'?'With my teacher':'Anywhere',details:`${b.move}\n${steps.map((s,i)=>`${value.checked.includes(`${value.blocker}-${i}`)?'Done':'To do'}: ${s}`).join('\n')}`};
           await save({...project,milestones:upsert(project.milestones,step),support:{...support,drafts,restartHidden:false}},'Your next step is saved in Plan.','Plan');
-        }}/>:<Button onClick={ensureRestart}>Begin a small step</Button>)}
+        }}/>:<Button kind="main" onClick={ensureRestart}>Begin a small step</Button>)}
         {panel==='resources'&&<Resources catalogue={catalogue} bookmarks={support.bookmarks} subject={courseworkBrief(project.subjectId,project.examYear)?.specification.subjectName??''} year={project.examYear} onOpen={openResource} onBookmark={async id=>{await save({...project,support:{...support,drafts,bookmarks:support.bookmarks.includes(id)?support.bookmarks.filter(x=>x!==id):[...support.bookmarks,id]}},'Resource shelf saved.');}}/>}
         {panel==='pressure'&&<>
-          <div className="cs-pressure-start"><p>Keep your evidence in view as you test a conclusion or decision. The roles are your judgement; the app does not grade the claim.</p><Button variant="outline" onClick={()=>{setPractice(true);setMessage('');}}>Try the worked example<ArrowRight size={15}/></Button></div>
-          {!connection?<p className="ap-empty">Create a connection from your own evidence first. You can use the worked example while you get started.</p>:<>
-            <Field label="Connection to examine"><select value={connection.id} onChange={e=>{setTarget(e.target.value);setMessage('');}}>{project.connections.map(c=><option key={c.id} value={c.id}>{c.claim.slice(0,110)}</option>)}</select></Field>
+          <div className="cw7s-start"><p>Keep your evidence in view as you test a conclusion or decision. The roles are your judgement; the app does not grade the claim.</p><Button arrow="forward" onClick={()=>{setPractice(true);setMessage('');}}>Try the worked example</Button></div>
+          {!connection?<p className="cw7s-empty">Create a connection from your own evidence first. You can use the worked example while you get started.</p>:<>
+            <label className="ui-part ui-field cw7s-pick"><span className="ui-field-label">Connection to examine</span><select className="ui-field-input cw7s-select" value={connection.id} onChange={e=>{setTarget(e.target.value);setMessage('');}}>{project.connections.map(c=><option key={c.id} value={c.id}>{c.claim.slice(0,110)}</option>)}</select></label>
             <OwnPressure project={project} value={pd} onChange={updatePressure} onSave={async value=>{
               const activeIds=new Set(activeEvidence(project).map(e=>e.id));const selected=Object.keys(value.roles).filter(id=>activeIds.has(id));
               const revised={...connection,claim:value.claim,reasoning:value.reasoning,limitation:value.limitation,evidenceIds:selected,pressureReview:{originalClaim:connection.pressureReview?.originalClaim??connection.claim,roles:Object.fromEntries(Object.entries(value.roles).filter(([id])=>project.evidence.some(e=>e.id===id))),withheld:project.evidence.some(e=>e.id===value.withheld)?value.withheld:'',next:value.next,testedAt:new Date().toISOString()}};
@@ -82,8 +100,7 @@ export default function CourseworkSupport({project,panel,connectionId,saving,err
         {panel==='feedback'&&drafts.feedback&&<Feedback value={drafts.feedback} onChange={value=>patch({...drafts,feedback:value})} onNew={()=>patch({...drafts,feedback:newFeedback()})} onSave={async value=>{await save({...project,...feedbackRecords(project,value,today()),support:{...support,drafts}},'Feedback saved in Evidence, with a linked next step in Plan.','Plan');}}/>}
       </>}
     </fieldset>
-    <div className="cs-support-footer"><Button variant="outline" disabled={saving||!dirty} onClick={()=>void saveDrafts()}>Save draft</Button><span role="status">{saving?'Saving…':message|| (dirty?'Unsaved changes · save to keep on this device.':'Your saved work stays with this project.')}</span>{savedView&&<Button variant="ghost" onClick={()=>navigate(savedView)}>View saved work<ArrowRight size={14}/></Button>}</div>
-  </DialogContent></Dialog>;
+  </Sheet>;
 }
 
 function restartOptions(project:CourseworkProject) {
@@ -97,29 +114,165 @@ function restartOptions(project:CourseworkProject) {
 }
 function Restart({project,value,onChange,onResource,onSave,onNew,hasSaved}:{onNew:()=>void;hasSaved:boolean;project:CourseworkProject;value:RestartDraft;onChange:(v:RestartDraft)=>void;onResource:(id:string)=>void;onSave:(v:RestartDraft)=>Promise<void>}) {
   const choices=restartOptions(project),choice=choices.find(b=>b.id===value.blocker)!;const steps=choice.steps.slice(0,value.minutes===5?1:value.minutes===15?2:3),complete=steps.filter((_,i)=>value.checked.includes(`${value.blocker}-${i}`)).length;
-  return <><h3>What is getting in the way?</h3><div className="ap-blockers">{choices.map(b=><button key={b.id} aria-pressed={b.id===value.blocker} onClick={()=>onChange({...value,blocker:b.id})}><span className="ap-choice-dot">{b.id===value.blocker&&<Check size={12}/>}</span><span><strong>{b.title}</strong><small>{b.detail}</small></span></button>)}</div><div className="ap-budget"><span>I have about</span><div role="group" aria-label="Time available">{[5,15,25].map(m=><button key={m} aria-pressed={value.minutes===m} onClick={()=>onChange({...value,minutes:m})}>{m} <small>min</small></button>)}</div><small>A planning allowance, not a countdown.</small></div><div className="ap-two-col"><div className="ap-move-card"><p className="cw-eyebrow">One manageable move</p><h3>{choice.move}</h3><div className="ap-step-count"><span>{complete} of {steps.length} steps</span><Progress aria-label="Small-step progress" value={complete/steps.length*100}/></div><div className="ap-checklist">{steps.map((s,i)=><label key={s}><Checkbox checked={value.checked.includes(`${value.blocker}-${i}`)} onCheckedChange={checked=>onChange({...value,checked:checked?[...value.checked,`${value.blocker}-${i}`]:value.checked.filter(k=>k!==`${value.blocker}-${i}`)})}/><span>{s}</span></label>)}</div><Field label={choice.prompt}><Textarea rows={3} maxLength={300} value={value.note} onChange={e=>onChange({...value,note:e.target.value})}/></Field><Button disabled={!value.note.trim()} onClick={()=>void onSave(value)}><Plus size={16}/>Save next step to Plan</Button>{hasSaved&&<Button variant="ghost" onClick={onNew}>Start another step</Button>}</div><aside className="ap-margin-note"><p className="ap-small-label">Small enough to finish</p><p>{choice.example}</p><button className="ap-resource-shortcut" onClick={()=>onResource(choice.resource)}><BookOpen size={19}/><span><strong>A little help with this</strong><small>Open the relevant guide</small></span><ArrowUpRight size={15}/></button><div className="ap-nudge-reason"><span>Why this nudge?</span><p>You chose “{choice.title.toLowerCase()}”. The move changes with your blocker and available time.</p></div></aside></div></>;
+  const pct=complete/steps.length*100;
+  return <>
+    <div className="cw7s-ask">
+      <h3>What is getting in the way?</h3>
+      <div className="cw7s-blockers" role="radiogroup" aria-label="What is getting in the way?">
+        {choices.map(b=><ChoiceTile key={b.id} kind="one" label={b.title} meta={b.detail} chosen={b.id===value.blocker} onClick={()=>onChange({...value,blocker:b.id})}/>)}
+      </div>
+    </div>
+    <div className="cw7s-budget">
+      <span className="cw7s-budget-lead">I have about</span>
+      <div className="cw7s-minutes" role="radiogroup" aria-label="Time available">
+        {[5,15,25].map(m=><ChoiceTile key={m} compact kind="one" label={<>{m} min</>} chosen={value.minutes===m} onClick={()=>onChange({...value,minutes:m})}/>)}
+      </div>
+      <small className="cw7s-meta">A planning allowance, not a countdown.</small>
+    </div>
+    <div className="cw7s-two">
+      <div className="cw7s-move">
+        <div className="cw7s-titled"><p className="t-label">One manageable move</p><h3>{choice.move}</h3></div>
+        <div className="cw7s-count"><span className="cw7s-meta">{complete} of {steps.length} steps</span><span className="cw7s-bar" role="progressbar" aria-label="Small-step progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct}><i style={{width:pct+'%'}}/></span></div>
+        <div className="cw7s-checklist">
+          {steps.map((s,i)=>{const key=`${value.blocker}-${i}`;const on=value.checked.includes(key);return <ChoiceTile key={s} kind="several" label={s} chosen={on} onClick={()=>onChange({...value,checked:on?value.checked.filter(k=>k!==key):[...value.checked,key]})}/>;})}
+        </div>
+        <AreaField label={choice.prompt} rows={3} maxLength={300} value={value.note} onChange={e=>onChange({...value,note:e.target.value})}/>
+        <div className="cw7s-row">
+          <Button kind="main" {...waitFor(!value.note.trim())} onClick={()=>void onSave(value)}><Glyph icon={Plus} size={16}/>Save next step to Plan</Button>
+          {hasSaved&&<TextButton onClick={onNew}>Start another step</TextButton>}
+        </div>
+      </div>
+      <aside className="cw7s-note">
+        <p className="t-label">Small enough to finish</p>
+        <p className="cw7s-note-text">{choice.example}</p>
+        <PressBox className="cw7s-shortcut" onPress={()=>onResource(choice.resource)}><Glyph icon={BookOpen} size={20}/><span className="cw7s-shortcut-words"><strong>A little help with this</strong><small>Open the relevant guide</small></span><Arrow meaning="opens" size={20} className="cw7s-chev"/></PressBox>
+        <div className="cw7s-why"><span className="t-label">Why this nudge?</span><p>You chose “{choice.title.toLowerCase()}”. The move changes with your blocker and available time.</p></div>
+      </aside>
+    </div>
+  </>;
 }
 
 function Resources({catalogue,bookmarks,subject,year,onOpen,onBookmark}:{catalogue:CourseworkResource[];bookmarks:string[];subject:string;year:number;onOpen:(id:string)=>void;onBookmark:(id:string)=>Promise<void>}) {
   const [stage,setStage]=useState<ResourceStage>('Researching'),[onlySaved,setOnlySaved]=useState(false);
   const matches=catalogue.filter(r=>onlySaved?bookmarks.includes(r.id):r.stages.includes(stage));
-  return <><div className="ap-resource-toolbar"><div className="ap-stage-picker" role="group" aria-label="Project stage">{(['Starting','Researching','Writing'] as ResourceStage[]).map(s=><button key={s} aria-pressed={!onlySaved&&stage===s} onClick={()=>{setStage(s);setOnlySaved(false);}}>{s}</button>)}</div><Button variant="outline" aria-pressed={onlySaved} onClick={()=>setOnlySaved(v=>!v)}><BookOpen size={15}/>Saved {bookmarks.filter(id=>catalogue.some(r=>r.id===id)).length}</Button></div><p className="ap-resource-context">{subject} · {year} · {onlySaved?'Your saved shelf':stage+'. Sources show their own checked date.'}</p><div className="ap-resource-list">{matches.map(r=><article key={r.id}><div className="ap-resource-type"><FileText size={18}/><span>{r.kind}</span></div><div className="ap-resource-main"><h3>{r.title}</h3><small>{r.publisher}{r.checked?' · checked '+r.checked:''}</small><p>{r.why}</p><div className="ap-resource-limits"><span>Keep in mind</span><p>{r.limit}</p></div><div className="ap-resource-actions"><Button variant="outline" onClick={()=>onOpen(r.id)}>{r.url?'Open resource notes':'Try the guide'}<ArrowRight size={14}/></Button><Button variant="ghost" aria-pressed={bookmarks.includes(r.id)} onClick={()=>void onBookmark(r.id)}>{bookmarks.includes(r.id)?<Check size={14}/>:<Plus size={14}/>} {bookmarks.includes(r.id)?'On my shelf':'Keep on my shelf'}</Button></div></div></article>)}</div>{!matches.length&&<p className="ap-empty">Keep a useful resource from one of the stages. It will appear here.</p>}</>;
+  return <>
+    <div className="cw7s-toolbar">
+      <SelectionBar label="Project stage" size="sm" options={(['Starting','Researching','Writing'] as ResourceStage[]).map(s=>({value:s,label:s}))} value={onlySaved?'':stage} onChange={s=>{setStage(s);setOnlySaved(false);}}/>
+      <Button size="sm" aria-pressed={onlySaved} onClick={()=>setOnlySaved(v=>!v)}><Glyph icon={BookOpen} size={16}/>Saved {bookmarks.filter(id=>catalogue.some(r=>r.id===id)).length}</Button>
+    </div>
+    <p className="cw7s-meta">{subject} · {year} · {onlySaved?'Your saved shelf':stage+'. Sources show their own checked date.'}</p>
+    <div className="cw7s-list">
+      {matches.map(r=><article key={r.id} className="cw7s-resource">
+        <div className="cw7s-kind t-label"><Glyph icon={FileText} size={16}/><span>{r.kind}</span></div>
+        <div className="cw7s-resource-main">
+          <div className="cw7s-titled"><h3>{r.title}</h3><small className="cw7s-meta">{r.publisher}{r.checked?' · checked '+r.checked:''}</small></div>
+          <p>{r.why}</p>
+          <div className="cw7s-limits"><span className="t-label">Keep in mind</span><p>{r.limit}</p></div>
+          <div className="cw7s-actions">
+            <Button size="sm" onClick={()=>onOpen(r.id)}>{r.url?'Open resource notes':'Try the guide'}</Button>
+            <TextButton aria-pressed={bookmarks.includes(r.id)} onClick={()=>void onBookmark(r.id)}><Glyph icon={bookmarks.includes(r.id)?Check:Plus} size={16}/>{bookmarks.includes(r.id)?'On my shelf':'Keep on my shelf'}</TextButton>
+          </div>
+        </div>
+      </article>)}
+    </div>
+    {!matches.length&&<p className="cw7s-empty">Keep a useful resource from one of the stages. It will appear here.</p>}
+  </>;
 }
 function ResourceReader({resource,draft,onChange,onSave}:{resource:CourseworkResource;draft:ResourceDraft;onChange:(d:ResourceDraft)=>void;onSave:(d:ResourceDraft)=>Promise<void>}) {
-  return <div className="ap-reader"><div className="ap-reader-meta"><span>{resource.kind}</span><span>{resource.checked?'Checked '+resource.checked:'NextStepUni learning prompts'}</span></div><p>{resource.why}</p>{resource.url&&<a className="ap-open-source" href={resource.url} target="_blank" rel="noreferrer">Open the original resource<ArrowUpRight size={15}/></a>}<h3>{resource.url?'Read with these questions in mind.':'Try this with your own question.'}</h3><ol>{resource.prompts.map(p=><li key={p}>{p}</li>)}</ol><p className="ap-reader-limit">{resource.limit}</p><div className="ap-reader-takeaway"><h3>Bring something back.</h3><Field label={resource.url?'A detail worth keeping from the resource':'My response to the guide'}><Textarea rows={4} maxLength={4000} value={draft.note} onChange={e=>onChange({...draft,note:e.target.value})}/></Field><Field label="How this helps my question"><Textarea rows={2} maxLength={2000} value={draft.why} onChange={e=>onChange({...draft,why:e.target.value})}/></Field>{resource.url&&<Field label="Page, section, table or access detail" hint={resource.where?'The source record points to: '+resource.where:undefined}><Input value={draft.locator} maxLength={500} onChange={e=>onChange({...draft,locator:e.target.value})} placeholder="Enough detail to find this again"/></Field>}<Button disabled={!draft.note.trim()||!draft.why.trim()||(!!resource.url&&!draft.locator.trim())} onClick={()=>void onSave(draft)}><Plus size={16}/>Save takeaway to Evidence</Button></div></div>;
+  return <div className="cw7s-reader">
+    <div className="cw7s-reader-meta t-label"><span>{resource.kind}</span><span>{resource.checked?'Checked '+resource.checked:'NextStepUni learning prompts'}</span></div>
+    <p>{resource.why}</p>
+    {resource.url&&<a className="ui-part ui-link frame-hit cw7s-source" href={resource.url} target="_blank" rel="noreferrer"><span>Open the original resource</span><Arrow meaning="leaves" size={16}/></a>}
+    <h3>{resource.url?'Read with these questions in mind.':'Try this with your own question.'}</h3>
+    <ol className="cw7s-prompts">{resource.prompts.map(p=><li key={p}>{p}</li>)}</ol>
+    <p className="cw7s-limit">{resource.limit}</p>
+    <div className="cw7s-takeaway">
+      <h3>Bring something back.</h3>
+      <AreaField label={resource.url?'A detail worth keeping from the resource':'My response to the guide'} rows={4} maxLength={4000} value={draft.note} onChange={e=>onChange({...draft,note:e.target.value})}/>
+      <AreaField label="How this helps my question" rows={2} maxLength={2000} value={draft.why} onChange={e=>onChange({...draft,why:e.target.value})}/>
+      {resource.url&&<Field label="Page, section, table or access detail" help={resource.where?'The source record points to: '+resource.where:undefined} value={draft.locator} maxLength={500} onChange={e=>onChange({...draft,locator:e.target.value})} placeholder="Enough detail to find this again"/>}
+      <Button kind="main" {...waitFor(!draft.note.trim()||!draft.why.trim()||(!!resource.url&&!draft.locator.trim()))} onClick={()=>void onSave(draft)}><Glyph icon={Plus} size={16}/>Save takeaway to Evidence</Button>
+    </div>
+  </div>;
 }
 
 function OwnPressure({project,value,onChange,onSave}:{project:CourseworkProject;value:PressureDraft;onChange:(v:PressureDraft)=>void;onSave:(v:PressureDraft)=>Promise<void>}) {
   const evidence=activeEvidence(project);const remaining=evidence.filter(e=>e.id!==value.withheld&&value.roles[e.id]);const patch=(p:Partial<PressureDraft>)=>onChange({...value,...p});
-  return <><div className="ap-claim"><span className="ap-small-label">Your claim or decision</span><p>{value.claim}</p></div><div className="ap-evidence-stack">{evidence.map((e,i)=><article key={e.id} className="ap-evidence-slip" data-withheld={value.withheld===e.id}><div className="ap-slip-number">{String(i+1).padStart(2,'0')}</div><div><div className="ap-slip-meta"><span>{e.kind}</span>{value.withheld===e.id&&<b>Set aside for this test</b>}</div><h3>{e.title}</h3><p className="cs-evidence-text">{e.notes}</p><div className="ap-role-choices" role="group" aria-label={`Role of ${e.title}`}>{(['Supports','Challenges','Context'] as EvidenceRole[]).map(role=><button key={role} aria-pressed={value.roles[e.id]===role} onClick={()=>{const roles={...value.roles};if(roles[e.id]===role)delete roles[e.id];else roles[e.id]=role;patch({roles});}}>{role}{value.roles[e.id]===role&&<Check size={12}/>}</button>)}<button aria-pressed={value.withheld===e.id} onClick={()=>patch({withheld:value.withheld===e.id?'':e.id})}>{value.withheld===e.id?'Restore':'Set aside'}</button></div></div></article>)}</div>{!evidence.length&&<p className="ap-empty">Capture evidence before revising this connection.</p>}
-    <div className="ap-stress"><div><p className="cw-eyebrow">{value.withheld?'With that note set aside':'Your evidence roles'}</p><h3>{remaining.length} assigned {remaining.length===1?'piece remains':'pieces remain'}.</h3><p>{remaining.filter(e=>value.roles[e.id]==='Supports').length} supports · {remaining.filter(e=>value.roles[e.id]==='Challenges').length} challenges · {remaining.filter(e=>value.roles[e.id]==='Context').length} context. These are your classifications, not a quality score.</p><p>Would the same claim still follow? What would you now need to find out?</p></div></div>
-    <div className="ap-rewrite"><Field label="The claim I can defend, or question still open"><Textarea rows={3} maxLength={4000} value={value.claim} onChange={e=>patch({claim:e.target.value})}/></Field><Field label="How the evidence supports my thinking"><Textarea rows={3} maxLength={8000} value={value.reasoning} onChange={e=>patch({reasoning:e.target.value})}/></Field><Field label="The limit I would keep visible"><Textarea rows={3} maxLength={5000} value={value.limitation} onChange={e=>patch({limitation:e.target.value})}/></Field><Field label="One thing I would investigate next"><Input value={value.next} maxLength={500} onChange={e=>patch({next:e.target.value})}/></Field><p className="ap-muted">Saving updates this connection and retains its original claim. Setting evidence aside is only a thought experiment; it does not archive or delete a note.</p><Button disabled={!value.claim.trim()||!value.reasoning.trim()||!value.limitation.trim()||!value.next.trim()||!evidence.some(e=>value.roles[e.id])} onClick={()=>void onSave(value)}><Check size={16}/>Save revised connection</Button></div></>;
+  return <>
+    <div className="cw7s-claim"><span className="t-label">Your claim or decision</span><p className="cw7s-claim-text">{value.claim}</p></div>
+    <div className="cw7s-slips">
+      {evidence.map((e,i)=><article key={e.id} className="cw7s-slip" data-withheld={value.withheld===e.id}>
+        <div className="cw7s-slip-n ui-readout">{String(i+1).padStart(2,'0')}</div>
+        <div className="cw7s-slip-main">
+          <div className="cw7s-slip-meta"><span>{e.kind}</span>{value.withheld===e.id&&<b>Set aside for this test</b>}</div>
+          <h3>{e.title}</h3>
+          <p className="cw7s-evidence-text">{e.notes}</p>
+          <div className="cw7s-roles" role="group" aria-label={`Role of ${e.title}`}>
+            {ROLES.map(role=><ChoiceTile key={role} compact kind="toggle" label={role} chosen={value.roles[e.id]===role} onClick={()=>{const roles={...value.roles};if(roles[e.id]===role)delete roles[e.id];else roles[e.id]=role;patch({roles});}}/>)}
+            <ChoiceTile compact kind="toggle" label={value.withheld===e.id?'Restore':'Set aside'} chosen={value.withheld===e.id} onClick={()=>patch({withheld:value.withheld===e.id?'':e.id})}/>
+          </div>
+        </div>
+      </article>)}
+    </div>
+    {!evidence.length&&<p className="cw7s-empty">Capture evidence before revising this connection.</p>}
+    <div className="cw7s-stress"><div className="cw7s-stress-in">
+      <p className="t-label">{value.withheld?'With that note set aside':'Your evidence roles'}</p>
+      <h3>{remaining.length} assigned {remaining.length===1?'piece remains':'pieces remain'}.</h3>
+      <p>{remaining.filter(e=>value.roles[e.id]==='Supports').length} supports · {remaining.filter(e=>value.roles[e.id]==='Challenges').length} challenges · {remaining.filter(e=>value.roles[e.id]==='Context').length} context. These are your classifications, not a quality score.</p>
+      <p>Would the same claim still follow? What would you now need to find out?</p>
+    </div></div>
+    <div className="cw7s-rewrite">
+      <AreaField label="The claim I can defend, or question still open" rows={3} maxLength={4000} value={value.claim} onChange={e=>patch({claim:e.target.value})}/>
+      <AreaField label="How the evidence supports my thinking" rows={3} maxLength={8000} value={value.reasoning} onChange={e=>patch({reasoning:e.target.value})}/>
+      <AreaField label="The limit I would keep visible" rows={3} maxLength={5000} value={value.limitation} onChange={e=>patch({limitation:e.target.value})}/>
+      <Field label="One thing I would investigate next" value={value.next} maxLength={500} onChange={e=>patch({next:e.target.value})}/>
+      <p className="cw7s-muted">Saving updates this connection and retains its original claim. Setting evidence aside is only a thought experiment; it does not archive or delete a note.</p>
+      <Button kind="main" {...waitFor(!value.claim.trim()||!value.reasoning.trim()||!value.limitation.trim()||!value.next.trim()||!evidence.some(e=>value.roles[e.id]))} onClick={()=>void onSave(value)}><Glyph icon={Check} size={16}/>Save revised connection</Button>
+    </div>
+  </>;
 }
 function Practice({value,onChange,onSave}:{value:PracticeDraft;onChange:(v:PracticeDraft)=>void;onSave:(v:PracticeDraft)=>Promise<void>}) {
   const patch=(v:Partial<PracticeDraft>)=>onChange({...value,...v});const chosen=practiceEvidence.filter(e=>value.roles[e.id]).length;
-  return <><div className="ap-practice-label">Fictional example · digital scheduling · no material is copied into your Evidence or Connections</div><div className="ap-claim"><p>“Digital scheduling improves employee wellbeing.”</p></div><div className="ap-evidence-stack">{practiceEvidence.map(e=><article className="ap-evidence-slip" key={e.id} data-withheld={value.withheld&&e.id==='staff'}><div><FileText size={16}/></div><div><div className="ap-slip-meta">{e.origin}{value.withheld&&e.id==='staff'&&<b>Set aside for this test</b>}</div><h3>{e.title}</h3><p>{e.text}</p><div className="ap-role-choices" role="group" aria-label={`Practice role of ${e.title}`}>{(['Supports','Challenges','Context'] as EvidenceRole[]).map(role=><button disabled={value.withheld&&e.id==='staff'} key={role} aria-pressed={value.roles[e.id]===role} onClick={()=>patch({roles:{...value.roles,[e.id]:role}})}>{role}</button>)}</div>{value.revealed&&<div className="ap-reason"><span>{value.roles[e.id]===e.role?'A useful distinction':'Another way to read this'}</span><p>{e.reason}</p></div>}</div></article>)}</div><div className="ap-pressure-actions"><Button variant="outline" disabled={chosen<3} onClick={()=>patch({revealed:!value.revealed})}>{value.revealed?'Hide the reasoning':'Compare with a worked reading'}</Button><span>{chosen}/3 evidence roles chosen · no score</span></div>{value.revealed&&<div className="ap-stress"><div><h3>Take away the interview support.</h3><p>{value.withheld?'The remaining notes do not establish a general wellbeing benefit. What would you need before making that claim?':'If the strongest supporting note disappeared, would the conclusion still follow?'}</p></div><Button variant="outline" aria-pressed={value.withheld} onClick={()=>patch({withheld:!value.withheld})}>{value.withheld?<RotateCcw size={15}/>:<X size={15}/>} {value.withheld?'Restore the note':'Set the first note aside'}</Button></div>}<Field label="My practice claim or question"><Textarea maxLength={4000} value={value.claim} onChange={e=>patch({claim:e.target.value})}/></Field><Field label="My practice limitation"><Textarea maxLength={3000} value={value.limitation} onChange={e=>patch({limitation:e.target.value})}/></Field><Field label="What I would investigate next in this example"><Input maxLength={500} value={value.next} onChange={e=>patch({next:e.target.value})}/></Field><Button disabled={!value.claim.trim()||!value.limitation.trim()||!value.next.trim()} onClick={()=>void onSave(value)}>Save practice reflection</Button></>;
+  return <>
+    <div className="cw7s-practice-label">Fictional example · digital scheduling · no material is copied into your Evidence or Connections</div>
+    <div className="cw7s-claim"><p className="cw7s-claim-text">“Digital scheduling improves employee wellbeing.”</p></div>
+    <div className="cw7s-slips">
+      {practiceEvidence.map(e=><article className="cw7s-slip" key={e.id} data-withheld={value.withheld&&e.id==='staff'}>
+        <div className="cw7s-slip-n"><Glyph icon={FileText} size={16}/></div>
+        <div className="cw7s-slip-main">
+          <div className="cw7s-slip-meta">{e.origin}{value.withheld&&e.id==='staff'&&<b>Set aside for this test</b>}</div>
+          <h3>{e.title}</h3>
+          <p className="cw7s-slip-text">{e.text}</p>
+          <div className="cw7s-roles" role="group" aria-label={`Practice role of ${e.title}`}>
+            {ROLES.map(role=><ChoiceTile key={role} compact kind="toggle" disabled={value.withheld&&e.id==='staff'} label={role} chosen={value.roles[e.id]===role} onClick={()=>patch({roles:{...value.roles,[e.id]:role}})}/>)}
+          </div>
+          {value.revealed&&<div className="cw7s-reason"><span className="t-label">{value.roles[e.id]===e.role?'A useful distinction':'Another way to read this'}</span><p>{e.reason}</p></div>}
+        </div>
+      </article>)}
+    </div>
+    <div className="cw7s-compare"><Button {...waitFor(chosen<3)} onClick={()=>patch({revealed:!value.revealed})}>{value.revealed?'Hide the reasoning':'Compare with a worked reading'}</Button><span className="cw7s-meta">{chosen}/3 evidence roles chosen · no score</span></div>
+    {value.revealed&&<div className="cw7s-stress"><div className="cw7s-stress-in"><h3>Take away the interview support.</h3><p>{value.withheld?'The remaining notes do not establish a general wellbeing benefit. What would you need before making that claim?':'If the strongest supporting note disappeared, would the conclusion still follow?'}</p></div><Button aria-pressed={value.withheld} onClick={()=>patch({withheld:!value.withheld})}><Glyph icon={value.withheld?RotateCcw:X} size={16}/>{value.withheld?'Restore the note':'Set the first note aside'}</Button></div>}
+    <AreaField label="My practice claim or question" maxLength={4000} value={value.claim} onChange={e=>patch({claim:e.target.value})}/>
+    <AreaField label="My practice limitation" maxLength={3000} value={value.limitation} onChange={e=>patch({limitation:e.target.value})}/>
+    <Field label="What I would investigate next in this example" maxLength={500} value={value.next} onChange={e=>patch({next:e.target.value})}/>
+    <Button kind="main" {...waitFor(!value.claim.trim()||!value.limitation.trim()||!value.next.trim())} onClick={()=>void onSave(value)}>Save practice reflection</Button>
+  </>;
 }
 function Feedback({value,onChange,onNew,onSave}:{value:FeedbackDraft;onChange:(v:FeedbackDraft)=>void;onNew:()=>void;onSave:(v:FeedbackDraft)=>Promise<void>}) {
   const [example,setExample]=useState(false);const patch=(p:Partial<FeedbackDraft>)=>onChange({...value,...p});
-  return <><div className="ap-feedback-origin"><Field label="The feedback I received" hint="Keep your teacher’s wording. Your interpretation belongs below."><Textarea rows={3} maxLength={4000} value={value.comment} onChange={e=>patch({comment:e.target.value})} placeholder="Paste or record the actual comment."/></Field></div><div className="ap-feedback-mode" role="group" aria-label="How to handle feedback"><button aria-pressed={value.mode==='action'} onClick={()=>patch({mode:'action'})}>I can turn this into an action<ArrowRight size={15}/></button><button aria-pressed={value.mode==='question'} onClick={()=>patch({mode:'question'})}>I need to clarify it first<ArrowUpRight size={15}/></button></div>{value.mode==='action'?<div className="ap-feedback-flow">{[{key:'meaning',label:'What I think my teacher is asking for'},{key:'action',label:'One action I will take'},{key:'proof',label:'What I will be able to show afterwards'}].map((f,i)=><div className="ap-feedback-step" key={f.key}><span>0{i+1}</span><Field label={f.label}><Textarea rows={3} maxLength={3000} value={value[f.key as 'meaning'|'action'|'proof']} onChange={e=>patch({[f.key]:e.target.value})}/></Field></div>)}</div>:<div className="ap-clarify"><h3>A precise question is progress.</h3><Field label="The question I will bring to my teacher"><Textarea rows={4} maxLength={3000} value={value.question} onChange={e=>patch({question:e.target.value})} placeholder="When you said…, did you mean…? I was planning to…"/></Field></div>}<div className="ap-feedback-footer"><Button disabled={!value.comment.trim()||(value.mode==='action'?(!value.meaning.trim()||!value.action.trim()||!value.proof.trim()):!value.question.trim())} onClick={()=>void onSave(value)}><Plus size={15}/>{value.mode==='action'?'Save feedback and action':'Save feedback and teacher question'}</Button><Button variant="ghost" onClick={()=>setExample(v=>!v)}>{example?'Hide example':'See a worked example'}</Button></div><details className="cs-another"><summary>Start another feedback record</summary><p>Save this feedback into Evidence and Plan first if you want to keep it. A saved draft is replaced when you start and save another. Starting another clears these entry fields; previously saved Evidence and Plan records remain.</p><Button variant="outline" onClick={onNew}>Start another comment</Button></details>{example&&<div className="ap-worked-example"><p className="ap-small-label">Fictional example, not a suggested answer</p><dl><dt>Feedback</dt><dd>“Explain how the evidence supports your point.”</dd><dt>Interpretation</dt><dd>I included a statistic, but did not explain its connection to my claim.</dd><dt>Action</dt><dd>Return to one paragraph and explain what the statistic measures.</dd><dt>Finish line</dt><dd>I can identify the source, explain the connection, and name a limitation.</dd></dl></div>}</>;
+  return <>
+    <div className="cw7s-origin"><AreaField label="The feedback I received" help="Keep your teacher’s wording. Your interpretation belongs below." rows={3} maxLength={4000} value={value.comment} onChange={e=>patch({comment:e.target.value})} placeholder="Paste or record the actual comment."/></div>
+    <div className="cw7s-mode" role="group" aria-label="How to handle feedback">
+      <ChoiceTile kind="toggle" label="I can turn this into an action" chosen={value.mode==='action'} onClick={()=>patch({mode:'action'})}/>
+      <ChoiceTile kind="toggle" label="I need to clarify it first" chosen={value.mode==='question'} onClick={()=>patch({mode:'question'})}/>
+    </div>
+    {value.mode==='action'?<div className="cw7s-flow">{[{key:'meaning',label:'What I think my teacher is asking for'},{key:'action',label:'One action I will take'},{key:'proof',label:'What I will be able to show afterwards'}].map((f,i)=><div className="cw7s-step" key={f.key}><span className="cw7s-step-n ui-readout">0{i+1}</span><AreaField label={f.label} rows={3} maxLength={3000} value={value[f.key as 'meaning'|'action'|'proof']} onChange={e=>patch({[f.key]:e.target.value})}/></div>)}</div>
+      :<div className="cw7s-clarify"><h3>A precise question is progress.</h3><AreaField label="The question I will bring to my teacher" rows={4} maxLength={3000} value={value.question} onChange={e=>patch({question:e.target.value})} placeholder="When you said…, did you mean…? I was planning to…"/></div>}
+    <div className="cw7s-row">
+      <Button kind="main" {...waitFor(!value.comment.trim()||(value.mode==='action'?(!value.meaning.trim()||!value.action.trim()||!value.proof.trim()):!value.question.trim()))} onClick={()=>void onSave(value)}><Glyph icon={Plus} size={16}/>{value.mode==='action'?'Save feedback and action':'Save feedback and teacher question'}</Button>
+      <TextButton onClick={()=>setExample(v=>!v)}>{example?'Hide example':'See a worked example'}</TextButton>
+    </div>
+    <details className="cw7s-another"><summary>Start another feedback record</summary><p>Save this feedback into Evidence and Plan first if you want to keep it. A saved draft is replaced when you start and save another. Starting another clears these entry fields; previously saved Evidence and Plan records remain.</p><Button onClick={onNew}>Start another comment</Button></details>
+    {example&&<div className="cw7s-example"><p className="t-label">Fictional example, not a suggested answer</p><dl><dt>Feedback</dt><dd>“Explain how the evidence supports your point.”</dd><dt>Interpretation</dt><dd>I included a statistic, but did not explain its connection to my claim.</dd><dt>Action</dt><dd>Return to one paragraph and explain what the statistic measures.</dd><dt>Finish line</dt><dd>I can identify the source, explain the connection, and name a limitation.</dd></dl></div>}
+  </>;
 }

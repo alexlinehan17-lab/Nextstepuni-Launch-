@@ -1,5 +1,4 @@
 import { BrandedRecallChart } from './learning/WideFeatures';
-import { moduleFill,moduleText } from './learning/brandTokens';
 
 /**
  * @license
@@ -16,13 +15,15 @@ SlidersHorizontal,Thermometer
 } from 'lucide-react';
 import React,{ useState } from 'react';
 import { EFFECTIVE_STRUGGLE_REFERENCE_LIST } from '../data/references/effectiveStruggle';
-import { COLORS } from '../design/tokens';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { accentTheme } from '../moduleThemes';
 import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { AnswerGroup,AnswerLine,AnswerTick,ExerciseLabel,ExerciseRange,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = accentTheme;
 
@@ -34,117 +35,108 @@ const CognitiveLoadBalancer = () => {
     const germaneRoom = Math.max(0, 100 - loads.intrinsic - loads.extraneous);
     const healthy = total <= 85;
 
-    const loadTypes: { key: 'intrinsic' | 'extraneous' | 'germane'; label: string; plain: string; example: string; direction: string; color: string; barColor: string; fixed?: boolean }[] = [
-      { key: 'intrinsic', label: 'Intrinsic Load', plain: 'The difficulty of the topic itself', example: 'e.g., Probability is harder than basic addition', direction: 'Fixed — you can\'t change this, only manage around it', color: "var(--module-ink)", barColor: "var(--module-muted)", fixed: true },
-      { key: 'extraneous', label: 'Extraneous Load', plain: 'Waste from distractions & confusion', example: 'e.g., Phone buzzing, noisy room, unclear instructions', direction: 'Minimize this — it steals space from learning', color: "var(--module-ink)", barColor: "var(--module-ink)" },
-      { key: 'germane', label: 'Germane Load', plain: 'The productive effort that builds memory', example: 'e.g., Active recall, self-explanation, practice questions', direction: 'Maximize this — it\'s the only load that causes learning', color: moduleText(COLORS.success), barColor: COLORS.success },
+    const loadTypes: { key: 'intrinsic' | 'extraneous' | 'germane'; label: string; plain: string; example: string; direction: string; fixed?: boolean }[] = [
+      { key: 'intrinsic', label: 'Intrinsic Load', plain: 'The difficulty of the topic itself', example: 'e.g., Probability is harder than basic addition', direction: 'Fixed — you can\'t change this, only manage around it', fixed: true },
+      { key: 'extraneous', label: 'Extraneous Load', plain: 'Waste from distractions & confusion', example: 'e.g., Phone buzzing, noisy room, unclear instructions', direction: 'Minimize this — it steals space from learning' },
+      { key: 'germane', label: 'Germane Load', plain: 'The productive effort that builds memory', example: 'e.g., Active recall, self-explanation, practice questions', direction: 'Maximize this — it\'s the only load that causes learning' },
     ];
 
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-        {/* Section chip + title */}
-        <div className="text-center mb-8">
-          <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Interactive Simulation</span>
-          <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Cognitive Load Balancer</h4>
-          <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Your Working Memory is a small container. Three types of load compete for space inside it.</p>
-        </div>
-
-        {/* Stacked bar */}
-        <div className="mb-8">
-          <div className="flex items-center justify-between mb-2">
-            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Working Memory Capacity</span>
-            <span className="font-semibold" style={{ fontSize: 13, color: moduleText(overload ? "var(--module-ink)" : COLORS.success) }}>{total}% / 100%</span>
+      <ExerciseSheet label="Interactive Simulation" title="Cognitive Load Balancer" sub="Your Working Memory is a small container. Three types of load compete for space inside it." name="CognitiveLoadBalancer">
+        {/* Stacked bar: the drawing on the sheet, its parts in ink, ink-3 and the success green */}
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between gap-3">
+            <ExerciseLabel>Working Memory Capacity</ExerciseLabel>
+            <span className="ui-readout text-ink-primary">{total}% / 100%</span>
           </div>
-          <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 12, overflow: 'hidden', height: 28 }}>
+          <div style={{ backgroundColor: 'var(--surface-paper)', border: '1px solid var(--outline-soft)', borderRadius: 6, overflow: 'hidden', height: 20 }}>
             <div className="flex h-full">
-              <motion.div style={{ backgroundColor: "var(--module-surface)" }} animate={{ width: `${Math.min(loads.intrinsic, 100)}%` }} transition={{ duration: 0.3 }} />
-              <motion.div style={{ backgroundColor: "var(--module-solid)" }} animate={{ width: `${Math.min(loads.extraneous, 100 - loads.intrinsic > 0 ? loads.extraneous : 0)}%` }} transition={{ duration: 0.3 }} />
-              <motion.div style={{ backgroundColor: moduleFill(COLORS.success) }} animate={{ width: `${Math.min(loads.germane, germaneRoom > 0 ? loads.germane : 0)}%` }} transition={{ duration: 0.3 }} />
+              <motion.div style={{ backgroundColor: 'var(--outline-soft)' }} animate={{ width: `${Math.min(loads.intrinsic, 100)}%` }} transition={{ duration: 0.3 }} />
+              <motion.div style={{ backgroundColor: 'var(--ink-muted)' }} animate={{ width: `${Math.min(loads.extraneous, 100 - loads.intrinsic > 0 ? loads.extraneous : 0)}%` }} transition={{ duration: 0.3 }} />
+              <motion.div style={{ backgroundColor: 'var(--ink-primary)' }} animate={{ width: `${Math.min(loads.germane, germaneRoom > 0 ? loads.germane : 0)}%` }} transition={{ duration: 0.3 }} />
             </div>
           </div>
           {/* Legend */}
-          <div className="flex gap-5 mt-3 justify-center">
+          <div className="flex flex-wrap gap-x-5 gap-y-1">
             <div className="flex items-center gap-1.5">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "var(--module-surface)" }} />
-              <span style={{ fontSize: 12, color: "var(--module-muted)" }}>Intrinsic</span>
+              <div className="w-2 h-2 rounded-sm" style={{ backgroundColor: 'var(--outline-soft)' }} />
+              <span className="t-meta">Intrinsic</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "var(--module-solid)" }} />
-              <span style={{ fontSize: 12, color: "var(--module-muted)" }}>Extraneous</span>
+              <div className="w-2 h-2 rounded-sm" style={{ backgroundColor: 'var(--ink-muted)' }} />
+              <span className="t-meta">Extraneous</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: moduleFill(COLORS.success) }} />
-              <span style={{ fontSize: 12, color: "var(--module-muted)" }}>Germane</span>
+              <div className="w-2 h-2 rounded-sm" style={{ backgroundColor: 'var(--ink-primary)' }} />
+              <span className="t-meta">Germane</span>
             </div>
           </div>
         </div>
 
-        {/* Slider cards */}
-        <div className="space-y-3 mb-6">
+        {/* The three sliders, ruled on the sheet (no box round each) */}
+        <div className="ex-sliders">
           {loadTypes.map(l => (
-            <div key={l.key} className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: `2px solid ${l.color}`, borderRadius: 14, padding: '20px 22px' }}>
-              <div className="flex items-start justify-between mb-1">
-                <div>
+            <div key={l.key} className="ex-slider">
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex flex-col gap-1">
                   <div className="flex items-center gap-2">
-                    <p className="font-serif font-semibold" style={{ fontSize: 16, color: moduleText(l.color) }}>{l.label}</p>
+                    <p className="ex-slider-name">{l.label}</p>
                     {l.fixed && (
-                      <span style={{ backgroundColor: "var(--module-surface)", color: "var(--module-muted)", border: "1px solid var(--module-line)", borderRadius: 20, padding: '2px 8px', fontSize: 10, fontWeight: 700 }}>FIXED</span>
+                      <span className="ex-label">FIXED</span>
                     )}
                   </div>
-                  <p style={{ fontSize: 14, color: "var(--module-ink)" }}>{l.plain}</p>
+                  <p className="t-sub">{l.plain}</p>
                 </div>
-                <span className="font-serif font-bold ml-3" style={{ fontSize: 20, color: moduleText(l.color) }}>{loads[l.key]}%</span>
+                <span className="ui-readout text-ink-primary">{loads[l.key]}%</span>
               </div>
-              <p className="italic mb-2" style={{ fontSize: 13, color: "var(--module-muted)" }}>{l.example}</p>
-              <input
-                type="range" min="5" max="70"
+              <p className="t-meta">{l.example}</p>
+              <ExerciseRange
+                min="5" max="70"
                 value={loads[l.key]}
                 onChange={e => setLoads({ ...loads, [l.key]: parseInt(e.target.value) })}
-                className="chunky-slider chunky-slider-accent"
                 disabled={l.fixed}
+                aria-label={l.label}
                 style={l.fixed ? { opacity: 0.5 } : undefined}
               />
-              <p className="font-semibold mt-1" style={{ fontSize: 12, color: moduleText(l.color) }}>{l.direction}</p>
+              <p className="t-meta text-ink-secondary">{l.direction}</p>
             </div>
           ))}
         </div>
 
-        {/* Diagnosis callout */}
+        {/* Diagnosis: a line in ink (the tick when the balance is good) */}
         <AnimatePresence mode="wait">
           {overload ? (
-            <motion.div key="overload" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <p className="text-sm italic" style={{ color: "var(--module-ink)" }}>Working memory overloaded — learning becomes very difficult at this point.</p>
+            <motion.div key="overload" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
+              <AnswerLine tone="note">Working memory overloaded — learning becomes very difficult at this point.</AnswerLine>
             </motion.div>
           ) : healthy ? (
-            <motion.div key="healthy" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: `3px solid ${COLORS.success}`, backgroundColor: moduleFill(COLORS.successTint), borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <p className="text-sm italic" style={{ color: moduleText(COLORS.successDarkText) }}>Good balance — your working memory has space to form lasting memories.</p>
+            <motion.div key="healthy" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
+              <AnswerLine>Good balance — your working memory has space to form lasting memories.</AnswerLine>
             </motion.div>
           ) : (
-            <motion.div key="moderate" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <p className="text-sm italic" style={{ color: "var(--module-muted)" }}>Within capacity, but push Germane load higher or reduce Extraneous to optimise learning.</p>
+            <motion.div key="moderate" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
+              <AnswerLine tone="note">Within capacity, but push Germane load higher or reduce Extraneous to optimise learning.</AnswerLine>
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </ExerciseSheet>
     );
 }
 
 const StairsEscalator = () => {
     const [choice, setChoice] = useState<'stairs' | 'escalator' | null>(null);
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Stairs vs. Escalator</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Which path leads to real learning?</p>
-            <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setChoice('escalator')} className="p-4 rounded-xl text-center font-medium transition-all" style={choice === 'escalator' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(choice === 'escalator')} data-tone="coral" aria-pressed={!!(choice === 'escalator')}><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</button>
-                <button onClick={() => setChoice('stairs')} className="p-4 rounded-xl text-center font-medium transition-all" style={choice === 'stairs' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(choice === 'stairs')} data-tone="mint" aria-pressed={!!(choice === 'stairs')}><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
-            </div>
+        <ExerciseSheet title="Stairs vs. Escalator" sub="Which path leads to real learning?" name="StairsEscalator">
+            <AnswerGroup kind="one" columns={2}>
+                <ChoiceTile tile chosen={choice === 'escalator'} onClick={() => setChoice('escalator')} label={<><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</>} />
+                <ChoiceTile tile chosen={choice === 'stairs'} onClick={() => setChoice('stairs')} label={<><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</>} />
+            </AnswerGroup>
             {choice &&
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 rounded-xl text-sm" style={choice === 'stairs' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none', color: "var(--module-danger-text)" }}>
-                {choice === 'escalator' && <p><strong>You chose the escalator.</strong> It feels smooth and effortless. You arrive at the top (the answer) quickly. But your muscles (your brain) did no work. The feeling of fluency is high, but long-term learning is low.</p>}
-                {choice === 'stairs' && <p><strong>You chose the stairs.</strong> It's slow and feels hard. You might stumble (make mistakes). But this effort is what strengthens your cardiovascular system (your long-term memory). The feeling of learning is low, but the actual result is high.</p>}
+            <motion.div initial={{opacity:0}} animate={{opacity:1}}>
+                {choice === 'escalator' && <AnswerLine tone="note"><strong>You chose the escalator.</strong> It feels smooth and effortless. You arrive at the top (the answer) quickly. But your muscles (your brain) did no work. The feeling of fluency is high, but long-term learning is low.</AnswerLine>}
+                {choice === 'stairs' && <AnswerLine><strong>You chose the stairs.</strong> It's slow and feels hard. You might stumble (make mistakes). But this effort is what strengthens your cardiovascular system (your long-term memory). The feeling of learning is low, but the actual result is high.</AnswerLine>}
             </motion.div>}
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -185,10 +177,10 @@ const ScenarioDiagnosis = () => {
   ];
 
   const pillars = [
-    { key: 'zpd', label: 'Wrong Zone', desc: 'Too easy or too hard', color: "bg-[var(--module-solid)] text-[var(--module-ink)]", borderActive: "border-[var(--module-line)]" },
-    { key: 'extraneous', label: 'Too Much Noise', desc: 'Extraneous load is high', color: "bg-[var(--module-danger)] text-[var(--module-ink)]", borderActive: "border-[var(--module-line)]" },
-    { key: 'desirable', label: 'Fake Friction', desc: 'No desirable difficulties', color: "bg-[var(--module-surface)] text-[var(--module-ink)]", borderActive: "border-[var(--module-line)]" },
-    { key: 'optimal', label: 'Optimized', desc: 'All three pillars aligned', color: "bg-[var(--module-success)] text-[var(--module-ink)]", borderActive: "border-success" },
+    { key: 'zpd', label: 'Wrong Zone', desc: 'Too easy or too hard' },
+    { key: 'extraneous', label: 'Too Much Noise', desc: 'Extraneous load is high' },
+    { key: 'desirable', label: 'Fake Friction', desc: 'No desirable difficulties' },
+    { key: 'optimal', label: 'Optimized', desc: 'All three pillars aligned' },
   ];
 
   const [current, setCurrent] = useState(0);
@@ -204,22 +196,29 @@ const ScenarioDiagnosis = () => {
   const correct = Object.entries(answers).filter(([i, a]) => a === scenarios[parseInt(i)].answer).length;
   const allDone = revealed.size === scenarios.length;
 
-  return <div className="wr-skin" data-wide="ScenarioDiagnosis"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Unified Model: Diagnose the Study Session</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Read each scenario and identify the primary problem — or if the session is already optimized.</p>
-
-      {/* Progress */}
-      <div className="flex gap-1.5 mb-6">
+  return <ExerciseSheet title="The Unified Model: Diagnose the Study Session" sub="Read each scenario and identify the primary problem — or if the session is already optimized." name="ScenarioDiagnosis">
+      {/* Progress: a run of step marks, 44 tall to the finger; the current one ink, a right answer the success green */}
+      <div className="flex gap-1.5">
         {scenarios.map((_, i) => (
           <button
             key={i}
+            type="button"
             onClick={() => setCurrent(i)}
-            className={`flex-1 h-2 rounded-full transition-all ${
-              revealed.has(i)
-                ? answers[i] === scenarios[i].answer ? "bg-[var(--module-success)]" : "bg-[var(--module-danger)]"
-                : i === current ? "bg-[var(--module-danger)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
-            }`} data-wide-button="true" data-progress-step="true" data-current={i === current} data-result={revealed.has(i) ? (answers[i] === scenarios[i].answer ? "correct" : "incorrect") : undefined} aria-label={`Scenario ${i+1}`}
-          />
+            className="flex-1 flex items-center"
+            style={{ minHeight: 44, background: 'none', border: 0, padding: 0 }}
+            data-current={i === current} data-result={revealed.has(i) ? (answers[i] === scenarios[i].answer ? "correct" : "incorrect") : undefined} aria-label={`Scenario ${i+1}`}
+          >
+            <span
+              className="block w-full rounded-full transition-colors"
+              style={{
+                height: 6,
+                backgroundColor: revealed.has(i)
+                  ? answers[i] === scenarios[i].answer ? 'var(--success-hex)' : 'var(--ink-muted)'
+                  : i === current ? 'var(--ink-primary)' : 'var(--hairline)',
+              }}
+              aria-hidden="true"
+            />
+          </button>
         ))}
       </div>
 
@@ -230,78 +229,68 @@ const ScenarioDiagnosis = () => {
           initial={{ opacity: 0, x: 15 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -15 }}
+          className="ex-stack"
         >
-          <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] mb-5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Scenario {current + 1} of {scenarios.length}</p>
-            <p className="text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">{scenarios[current].situation}</p>
+          {/* The scenario: words you read, under their label (no box) */}
+          <div className="ex-thought">
+            <ExerciseLabel>Scenario {current + 1} of {scenarios.length}</ExerciseLabel>
+            <p className="ex-quote">{scenarios[current].situation}</p>
           </div>
 
-          {/* Diagnosis buttons */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-5">
+          {/* Diagnosis answers: locked once chosen; the right one shows the green tick */}
+          <AnswerGroup kind="one" columns={2} chooseOnArrow={false}>
             {pillars.map(p => {
               const isChosen = answers[current] === p.key;
               const isCorrect = scenarios[current].answer === p.key;
               const isRevealed = revealed.has(current);
 
-              let btnStyle: React.CSSProperties = { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' };
-              let btnTextColor = '';
-              if (isRevealed && isChosen && isCorrect) { btnStyle = { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }; btnTextColor = "var(--module-success-text)"; }
-              else if (isRevealed && isChosen && !isCorrect) { btnStyle = { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }; btnTextColor = "var(--module-danger-text)"; }
-              else if (isRevealed && isCorrect) { btnStyle = { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', opacity: 0.7 }; btnTextColor = "var(--module-success-text)"; }
-
               return (
-                <button
+                <ChoiceTile
                   key={p.key}
+                  tile
+                  chosen={isChosen}
                   onClick={() => handleAnswer(p.key)}
                   disabled={isRevealed}
-                  className="p-3 rounded-xl text-center transition-all"
-                  style={{ ...btnStyle, color: moduleText(btnTextColor || undefined) }} data-wide-button="true"
-                >
-                  <p className="text-xs font-bold">{p.label}</p>
-                  <p className="text-[9px] opacity-70 mt-0.5">{p.desc}</p>
-                </button>
+                  label={<span className="inline-flex items-start gap-1.5">{p.label}{isRevealed && isCorrect ? <AnswerTick /> : null}</span>}
+                  meta={p.desc}
+                />
               );
             })}
-          </div>
+          </AnswerGroup>
 
           {/* Feedback */}
           {revealed.has(current) && (
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`p-4 rounded-xl border ${
-                answers[current] === scenarios[current].answer
-                  ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border-success/30 dark:border-success/40"
-                  : "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"
-              }`}
             >
-              <p className={`text-xs font-bold mb-1 ${answers[current] === scenarios[current].answer ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
-                {answers[current] === scenarios[current].answer ? 'Correct' : 'Not quite'}
-              </p>
-              <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">{scenarios[current].explanation}</p>
+              <AnswerLine tone={answers[current] === scenarios[current].answer ? 'ok' : 'note'}>
+                <b className="block">{answers[current] === scenarios[current].answer ? 'Correct' : 'Not quite'}</b>
+                {scenarios[current].explanation}
+              </AnswerLine>
             </motion.div>
           )}
         </motion.div>
       </AnimatePresence>
 
       {/* Navigation */}
-      <div className="flex justify-between mt-6">
-        <button
+      <div className="flex items-center justify-between gap-3">
+        <TextButton
+          tone="quiet"
           onClick={() => setCurrent(c => Math.max(0, c - 1))}
-          disabled={current === 0}
-          className="px-4 py-2 text-xs font-bold text-[var(--module-muted)] dark:text-[var(--module-muted)] disabled:opacity-30" data-wide-button="true"
+          {...{ disabled: current === 0 }}
         >
           Previous
-        </button>
+        </TextButton>
         {current < scenarios.length - 1 ? (
-          <button
+          <Button
+            size="sm"
             onClick={() => setCurrent(c => c + 1)}
-            className="px-4 py-2 text-xs font-bold text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]" data-wide-button="true"
           >
             Next
-          </button>
+          </Button>
         ) : allDone ? (
-          <span className="px-4 py-2 text-xs font-bold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">
+          <span className="ui-readout text-ink-primary">
             {correct}/{scenarios.length} correct
           </span>
         ) : null}
@@ -312,17 +301,14 @@ const ScenarioDiagnosis = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-success)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] text-center"
         >
-          <p className="text-sm font-semibold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">
-            The formula: Right Zone + Low Noise + Real Friction = Optimized Learning.
-          </p>
-          <p className="text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mt-1">
-            Before every study session, run this quick diagnostic on your setup.
-          </p>
+          <AnswerLine>
+            <b>The formula: Right Zone + Low Noise + Real Friction = Optimized Learning.</b>
+            {' '}Before every study session, run this quick diagnostic on your setup.
+          </AnswerLine>
         </motion.div>
       )}
-    </div></div>;
+    </ExerciseSheet>;
 }
 
 
@@ -367,14 +353,14 @@ const ConfidenceRetentionParadox = () => {
     };
 
     const passivePhases = [
-        { label: 'Feels easy', x1: 0, x2: 0.33, color: "var(--module-ink)" },
-        { label: 'Still confident', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
-        { label: 'Exam shock', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
+        { label: 'Feels easy', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+        { label: 'Still confident', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+        { label: 'Exam shock', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
     ];
     const activePhases = [
-        { label: 'Feels hard', x1: 0, x2: 0.33, color: moduleText(COLORS.success) },
-        { label: 'Building', x1: 0.33, x2: 0.66, color: moduleText(COLORS.success) },
-        { label: 'Exam ready', x1: 0.66, x2: 1, color: moduleText(COLORS.success) },
+        { label: 'Feels hard', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+        { label: 'Building', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+        { label: 'Exam ready', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
     ];
 
     const Chart = ({ confidence, retention, phases, areaColor, areaId, areaData, label }: {
@@ -390,10 +376,10 @@ const ConfidenceRetentionParadox = () => {
             </defs>
             {/* Grid lines */}
             {[0.25, 0.5, 0.75, 1.0].map(v => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--ink-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
             ))}
             {/* Baseline */}
-            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--ink-muted)" strokeOpacity="0.3" />
             {/* Area fill */}
             <motion.path
                 d={buildArea(areaData)}
@@ -423,63 +409,56 @@ const ConfidenceRetentionParadox = () => {
                 />
             ))}
             {/* Y-axis labels */}
-            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
-            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
-            {/* Day labels */}
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>Low</text>
+            {/* Day labels (the first and last sit inside the drawing) */}
             {days.map((d, i) => (
-                <text key={d} x={toX(i / (days.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{d}</text>
+                <text key={d} x={toX(i / (days.length - 1))} y={toY(0) + 14} fontSize="11" fill="var(--ink-muted)" textAnchor={i === 0 ? 'start' : i === days.length - 1 ? 'end' : 'middle'} style={{ fontFamily: 'var(--font-ui)' }}>{d}</text>
             ))}
             {/* Phase labels */}
             {phases.map((p, i) => (
-                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 30} fontSize="11" fill={p.color} textAnchor="middle" style={{ fontFamily: 'var(--font-ui)' }}>{p.label}</text>
             ))}
             {/* Chart label */}
-            <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
+            <text x={padL} y={15} fontSize="12" fill="var(--ink-primary)" style={{ fontFamily: 'var(--font-ui)' }}>{label}</text>
             {/* Legend */}
-            <line x1={W - padR - 108} x2={W - padR - 92} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-            <text x={W - padR - 88} y={17} fontSize="8" fill="var(--module-surface)">Confidence</text>
-            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke={areaColor} strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Retention</text>
+            <line x1={W - padR - 161} x2={W - padR - 145} y1={11} y2={11} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 141} y={15} fontSize="11" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>Confidence</text>
+            <line x1={W - padR - 72} x2={W - padR - 56} y1={11} y2={11} stroke={areaColor} strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 52} y={15} fontSize="11" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>Retention</text>
         </svg>
     );
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Confidence Trap</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">What feels best works worst. What feels worst works best.</p>
-
+        <ExerciseSheet title="The Confidence Trap" sub="What feels best works worst. What feels worst works best." name="ConfidenceRetentionParadox">
             {!revealed ? (
-                <div className="text-center">
-                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Most students judge their learning by how confident they feel. What does that confidence actually track over time?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-danger)] text-[var(--module-ink)] hover:bg-[var(--module-danger)] transition-colors" data-wide-button="true">
-                        Reveal the Trap
-                    </button>
+                <div className="ex-stack">
+                    <p className="t-body text-ink-secondary">Most students judge their learning by how confident they feel. What does that confidence actually track over time?</p>
+                    <div className="ex-actions">
+                        <Button onClick={() => setRevealed(true)}>
+                            Reveal the Trap
+                        </Button>
+                    </div>
                 </div>
             ) : (
-                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-                    <div className="grid md:grid-cols-2 gap-4 mb-5">
-                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
-                            <Chart confidence={passiveConfidence} retention={passiveRetention} phases={passivePhases}
-                                areaColor="var(--module-danger-text)" areaId="passive-grad" areaData={passiveConfidence} label="Passive Re-reading" />
-                        </div>
-                        <div className="rounded-lg border border-success/30 dark:border-success/40 bg-[var(--module-success-soft)]/50 dark:bg-[var(--module-success)]/15 p-3">
-                            <Chart confidence={activeConfidence} retention={activeRetention} phases={activePhases}
-                                areaColor={COLORS.success} areaId="active-grad" areaData={activeRetention} label="Active Recall" />
-                        </div>
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+                    {/* The two charts, each on the sheet in ink (no coral or mint panel behind them) */}
+                    <div className="ex-figure">
+                        <Chart confidence={passiveConfidence} retention={passiveRetention} phases={passivePhases}
+                            areaColor="var(--ink-primary)" areaId="passive-grad" areaData={passiveConfidence} label="Passive Re-reading" />
                     </div>
-                    <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                            <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
-                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Re-reading</strong> creates fluency — the material feels familiar. But recognition isn't recall. When the exam asks you to produce answers, the knowledge isn't there.</p>
-                        </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                            <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
-                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Active recall</strong> feels effortful and uncertain. But that struggle is the learning happening. Each retrieval strengthens the memory trace.</p>
-                        </div>
+                    <div className="ex-figure">
+                        <Chart confidence={activeConfidence} retention={activeRetention} phases={activePhases}
+                            areaColor="var(--ink-primary)" areaId="active-grad" areaData={activeRetention} label="Active Recall" />
+                    </div>
+                    {/* What each one means: words you read, ruled like rows (no tinted boxes) */}
+                    <div className="ex-list">
+                        <div><p className="t-sub text-ink-primary"><strong>Re-reading</strong> creates fluency — the material feels familiar. But recognition isn't recall. When the exam asks you to produce answers, the knowledge isn't there.</p></div>
+                        <div><p className="t-sub text-ink-primary"><strong>Active recall</strong> feels effortful and uncertain. But that struggle is the learning happening. Each retrieval strengthens the memory trace.</p></div>
                     </div>
                 </motion.div>
             )}
-        </div>
+        </ExerciseSheet>
     );
 };
 

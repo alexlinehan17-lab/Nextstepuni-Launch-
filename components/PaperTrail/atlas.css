@@ -1,0 +1,172 @@
+/* Topic Atlas in the agreed look (area 6a, 27 Nov 2026; boards c-tools2-atlas, c-tools2-atlas-desk,
+   r5-topic-atlas). The tool's own sentence as the headline; each topic with its number, its count
+   said once and a small mark per year, inked when it came up; a topic's questions grouped by year
+   with the printed paper kept. On a laptop the list and the chosen topic's panel side by side. */
+.ta-map, .ta-feed { color: var(--ink-primary); font-family: var(--font-ui); }
+.ta-top { display: flex; flex-direction: column; gap: var(--space-2); padding-top: var(--space-2); }
+.ta-top :is(h2, p) { margin: 0; }
+.ta-record b { color: var(--ink-primary); font-weight: 400; }
+.ta-muted { color: var(--ink-muted); }
+.ta-note { padding-block: var(--space-3); }
+.ta-wide-only, .ta-topic .ta-wide-only { display: none; }
+
+/* The year marks: one per year, ink when the topic came up. */
+.ta-marks { display: grid; grid-template-columns: repeat(var(--ta-n), minmax(0, 1fr)); justify-items: center; width: 100%; max-width: 204px; height: 14px; }
+.ta-marks > i { display: block; width: 3px; height: 100%; border-radius: 2px; background: var(--outline-soft); }
+.ta-marks > i.on { background: var(--ink-primary); }
+.ta-marks--lg { max-width: none; height: 32px; }
+.ta-marks--lg > i { width: 6px; border-radius: 3px; }
+.ta-axis { display: flex; justify-content: space-between; color: var(--ink-muted); }
+.ta-head-years { display: flex; flex-direction: column; gap: 6px; margin-top: var(--space-2); }
+
+/* Subject; level and sort; search. */
+.ta-controls { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-6); }
+.ta-control-row { display: flex; gap: var(--space-3); }
+.ta-control-row > .ta-sort { flex: none; min-width: 132px; justify-content: space-between; margin-left: auto; }
+.ta-control-row .ta-seg { flex: 1; min-width: 0; }
+.ta-map .lp-button.secondary { justify-content: flex-start; gap: 10px; min-height: 44px; padding: 0 var(--space-3) 0 var(--space-2); border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary); box-shadow: none; font-family: var(--font-ui); font-size: 15px; font-weight: 700; }
+.ta-map .lp-button.secondary > span:not(.lp-subject-art) { flex: 1; text-align: left; }
+.ta-map .lp-button.secondary > svg { color: var(--ink-muted); }
+.lp-subject-art { display: block; flex: none; width: 30px; height: 30px; }
+.lp-subject-art > * { display: block; width: 100%; height: 100%; object-fit: contain; }
+.ta-subject-art { display: block; width: 30px; height: 30px; object-fit: contain; }
+
+/* The topics: one list under each heading. */
+.ta-strand { margin-top: var(--space-8); }
+.ta-listhead { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); padding-bottom: var(--space-2); border-bottom: 1px solid var(--hairline); }
+.ta-listhead > h3 { margin: 0; color: var(--ink-muted); }
+.ta-topics { margin: 0; padding: 0; list-style: none; }
+.ta-topic { display: grid; grid-template-columns: 28px minmax(0, 1fr) 20px; gap: 4px 10px; align-items: start; width: 100%; padding: 14px 0; border: 0; border-bottom: 1px solid var(--hairline); background: none; color: var(--ink-primary); text-align: left; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.ta-topic:active { background: var(--surface-soft); }
+.ta-num { color: var(--ink-muted); line-height: 22px; }
+.ta-topic-body { display: flex; min-width: 0; flex-direction: column; gap: 2px; }
+.ta-topic-title { font-size: 16px; line-height: 22px; letter-spacing: -0.015em; }
+.ta-topic-marks { display: block; margin-top: 6px; }
+.ta-chev { margin-top: 1px; color: var(--ink-muted); }
+.ta-foot { margin-top: var(--space-6); }
+.ta-panel { display: none; }
+
+/* One topic. */
+.ta-filterrow { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-top: var(--space-6); padding-bottom: var(--space-4); border-bottom: 1px solid var(--hairline); }
+.ta-filterrow > .ta-seg { flex: 1 1 auto; }
+.ta-filter-gap { flex: 1 1 0; }
+.ta-more { width: 44px; padding: 0; justify-content: center; }
+.ta-more > .ui-icon:last-child { display: none; }
+.ta-politics { margin-top: var(--space-4); }
+.ta-year { display: flex; flex-direction: column; gap: var(--space-2); padding-top: var(--space-4); padding-bottom: var(--space-2); border-bottom: 1px solid var(--hairline); }
+.ta-year-head { display: flex; align-items: baseline; gap: 10px; }
+.ta-year-head > p { margin: 0; }
+.ta-year-num.t-number { font-size: 30px; line-height: 32px; }
+.ta-year-body { display: flex; min-width: 0; flex-direction: column; gap: var(--space-3); }
+
+@media (min-width: 1024px) {
+  .ta-wide-only, .ta-topic .ta-wide-only { display: initial; }
+  .ta-topic .ta-wide-only.ta-topic-marks { display: block; }
+  .ta-phone-only, .ta-topic .ta-phone-only { display: none; }
+  .ta-map .ta-cols { display: grid; grid-template-columns: minmax(0, 1fr) 320px; column-gap: 56px; align-items: start; }
+  .ta-map > .ta-top { display: none; }
+  .ta-controls { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-top: var(--space-2); }
+  .ta-control-row { display: contents; }
+  .ta-subject { order: 1; }
+  .ta-control-row > .ta-level { order: 2; }
+  .ta-controls > .ta-search { order: 3; }
+  .ta-control-row > .ta-sort { order: 4; width: 100%; margin-left: 0; }
+  .ta-strand { margin-top: var(--space-8); }
+  .ta-listhead { padding: 0 12px var(--space-2); }
+  .ta-topic { grid-template-columns: 30px minmax(0, 1fr) 156px 32px; align-items: center; padding: 11px 12px; border: 1px solid transparent; border-bottom-color: var(--hairline); border-radius: 0; }
+  .ta-topic[data-on] { border-color: var(--outline-strong); border-radius: var(--r-ctl); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+  .ta-topic .ta-topic-marks { margin-top: 0; }
+  .ta-topic .ta-marks { max-width: none; width: 156px; height: 18px; }
+  .ta-count { text-align: right; color: var(--ink-secondary); }
+  .ta-panel { position: sticky; top: 96px; display: flex; flex-direction: column; gap: var(--space-2); padding-top: var(--space-2); }
+  .ta-panel > :is(h2, p) { margin: 0; }
+  .ta-panel .ta-head-years { margin-block: var(--space-3); }
+  .ta-panel .ui-btn { margin-top: var(--space-4); }
+  .ta-topic-head { display: grid; grid-template-columns: minmax(0, 1fr) 340px; column-gap: 48px; align-items: end; padding-top: 30px; }
+  .ta-topic-copy { display: flex; flex-direction: column; gap: var(--space-2); }
+  .ta-feed .ta-head-years { margin-top: 0; padding-bottom: 2px; }
+  .ta-filterrow > .ta-seg { flex: 0 0 auto; width: 240px; }
+  .ta-filterrow > .ta-seg[data-count='3'] { width: 320px; }
+  .ta-year { display: grid; grid-template-columns: 200px minmax(0, 1fr); column-gap: 32px; padding-top: 18px; padding-bottom: 14px; }
+  .ta-year-head { flex-direction: column; align-items: flex-start; gap: 6px; padding-top: 4px; }
+  .ta-year-num.t-number { font-size: 40px; line-height: 40px; }
+}
+
+/* A question on a topic: a row into the full paper, or the printed paper with two equal buttons. */
+.ta-card { display: flex; min-width: 0; flex-direction: column; gap: var(--space-2); }
+.ta-card-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 44px; }
+.ta-row-line { display: flex; align-items: center; gap: var(--space-2); }
+.ta-row-line > .ta-qrow { flex: 1; min-width: 0; }
+.ta-qrow .ui-row { min-height: 52px; padding-left: 0; }
+.ta-ib.ui-icon-btn { flex: none; border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); }
+.ta-ib.ui-icon-btn[aria-pressed='true'] { border-color: var(--outline-strong); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+.ta-ib--plain.ui-icon-btn { border-color: transparent; color: var(--ink-muted); }
+.ta-ib--plain.ui-icon-btn[aria-pressed='true'] { border-color: transparent; box-shadow: none; color: var(--ink-primary); }
+.ta-crop { overflow: hidden; padding: var(--space-3) var(--space-3) var(--space-1); border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); }
+.ta-crop-text { color: var(--ink-primary); }
+.ta-acts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+.ta-scheme { display: flex; flex-direction: column; gap: var(--space-2); }
+.ta-scheme > p { margin: 0; }
+.ta-skeleton { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-6) 0; }
+.ta-skeleton > i { display: block; height: 12px; border-radius: 6px; background: var(--surface-soft); }
+.ta-whole { align-self: flex-start; }
+/* The laptop panel's picture: the printed question, cut at a readable height, with its line under it. */
+.ta-panel-picture { display: flex; flex-direction: column; gap: var(--space-2); }
+.ta-card--picture { min-height: 1px; }
+.ta-crop.ta-crop--panel { max-height: 268px; padding: var(--space-2) var(--space-2) 0; }
+.ta-lens { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+.ta-lens-body { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; padding-block: var(--space-2); }
+.ta-lens-body p { margin: 0; }
+.ta-lens-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.ta-lens-parts { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.ta-lens-parts > li { display: flex; align-items: flex-start; gap: var(--space-3); padding-block: var(--space-3); border-top: 1px solid var(--hairline); }
+.ta-lens-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
+.ta-lens-task { font-size: 15px; line-height: 21px; }
+.ta-lens-marks { flex: none; font-size: 21px; line-height: 26px; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.ta-lens-pitfall { display: flex; flex-direction: column; gap: var(--space-1); padding-top: var(--space-3); border-top: 1px solid var(--hairline); }
+@media (min-width: 1024px) {
+  .ta-card-head { order: 0; }
+  .ta-card > .ta-acts { order: 1; display: flex; }
+  .ta-card > .ta-acts > .ui-btn { min-width: 150px; }
+  .ta-card > .ta-crop, .ta-card > .ta-skeleton { order: 2; }
+  .ta-card > .ta-scheme { order: 3; }
+  .ta-card > .ta-lens { order: 4; }
+}
+/* The parts of a printed question filed under this topic (area 6c): on the page, the system's type;
+   citations and marks in the mono; other topics as links; Practise as a box you press. */
+.ta-parts { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-2) 0 var(--space-3); }
+.ta-parts :is(p, ol) { margin: 0; }
+.ta-parts-label { color: var(--ink-muted); }
+.ta-parts-figure { display: block; max-width: min(100%, 320px); border: 1px solid var(--hairline); border-radius: var(--r-xs); }
+.ta-parts-list { display: flex; flex-direction: column; gap: var(--space-3); padding: 0; list-style: none; }
+.ta-parts-stem { margin-bottom: var(--space-1) !important; color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.ta-parts-row { display: flex; align-items: baseline; gap: var(--space-3); }
+.ta-parts-ref { flex: none; min-width: 64px; color: var(--ink-primary); }
+.ta-parts-text { flex: 1; min-width: 0; color: var(--ink-primary); font-size: 15px; line-height: 21px; }
+.ta-parts-marks { flex: none; color: var(--ink-secondary); }
+.ta-parts-skel { width: 70%; height: 12px; border-radius: var(--r-xs); background: var(--hairline); }
+.ta-parts-else { display: flex; flex-wrap: wrap; align-items: center; column-gap: var(--space-3); color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.ta-parts-else .ui-link[aria-disabled='true'] { color: var(--ink-muted); cursor: default; }
+.ta-parts-practise.ui-btn { align-self: flex-start; text-decoration: none; }
+/* Politics and Society's practice tasks (area 6c): the shared year menu, search field and buttons;
+   each task on the page under a hairline; marks in the mono; the source pages a ruled row. */
+.pt-politics-feed { display: flex; flex-direction: column; gap: var(--space-3); color: var(--ink-primary); font-family: var(--font-ui); }
+.pt-politics-feed p { margin: 0; }
+.pt-politics-count, .pt-politics-matching { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.pt-politics-filters { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+.pt-politics-filters > .ui-field--search { flex: 1 1 200px; }
+.pt-politics-task { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-5) 0; border-top: 1px solid var(--hairline); }
+.pt-politics-task-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); }
+.pt-politics-task-head h3 { margin: 0; font-size: 17px; font-weight: 400; line-height: 22px; letter-spacing: -0.015em; }
+.pt-politics-task-head .ui-readout { flex: none; color: var(--ink-secondary); }
+.pt-politics-stem { color: var(--ink-secondary); font-size: 15px; line-height: 21px; white-space: pre-line; }
+.pt-politics-question { font-size: 16px; line-height: 24px; }
+.pt-politics-guide.ui-btn, .pt-politics-more.ui-btn { align-self: flex-start; }
+.pt-politics-feed .mb-source-material-trigger { width: 100%; margin: 0; padding: 10px 0; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--space-3); border: 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); border-radius: 0; background: none; color: var(--ink-primary); }
+.pt-politics-feed .mb-source-material-trigger:focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; background: none; }
+.pt-politics-feed .mb-source-material-icon { width: 24px; height: 24px; border: 0; border-radius: 0; background: none; color: var(--ink-secondary); }
+.pt-politics-feed .mb-source-material-copy > span { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; }
+.pt-politics-feed .mb-source-material-copy strong { color: var(--ink-primary); font: 400 16px/21px var(--font-ui); letter-spacing: -0.015em; }
+.pt-politics-feed .mb-source-material-copy small { color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.pt-politics-feed .mb-source-material-open { width: 20px; height: 20px; border: 0; background: none; color: var(--ink-muted); }
+@media (hover: hover) and (pointer: fine) { .pt-politics-feed .mb-source-material-trigger:hover { background: var(--surface-soft); } }

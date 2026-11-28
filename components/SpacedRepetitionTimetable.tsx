@@ -14,7 +14,7 @@ import type { SchoolEvent } from './gc/GCKeyEvents';
 import CrewEmptyState from './CrewEmptyState';
 import PlannerExplanation from './launchpad/PlannerExplanation';
 import PlannerWorkbench from './launchpad/PlannerWorkbench';
-import { Button } from './approved-ui-runtime';
+import { TextButton } from './ui/Button';
 import { useDatedStudyPlan } from '../hooks/useDatedStudyPlan';
 import { retainPlannedTask, setTaskStatus } from '../services/studyPlanStore';
 import { studyPlanPriorities, type PlanTask } from '../services/studyPlanEngine';
@@ -141,7 +141,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     onSkip={onSkipBlock ? (entry, skipped) => onSkipBlock(entry.dateKey, entry.id, skipped) : undefined}
     onStudy={onStudyNow ? entry => { if (dated.enabled) retainPlannedTask(dated.scope, entry.block as PlanTask); onStudyNow({ subject: entry.block.subjectName, sessionType: entry.block.sessionType, durationMinutes: entry.block.durationMinutes, dateKey: entry.dateKey, blockId: entry.id }); } : undefined}
     schoolEvents={schoolEvents} hints={strategyHints} cues={planCues} onCueSave={setPlanCue}
-    explanation={<><p>{weeklyTarget.explanation}</p><p>Work is spread across your available days, with repeat sessions spaced apart and room for rest.</p><p>{isJunior ? 'Target bands, due reviews and recent subject contact guide the allocation. Topics are checked before assuming they need more practice.' : 'Targets, due reviews and recent subject contact guide the allocation. Confidence alone does not prove recall; a completed session does not postpone a review.'}</p>{!isJunior && <><Button variant="ghost" onClick={() => setShowExplainer(true)}>See the allocation in detail</Button><PlannerExplanation open={showExplainer} onClose={() => setShowExplainer(false)} priorities={priorities} allocations={allocations} totalSessions={totalSessions} totalMinutes={totalMinutes} workloadExplanation={weeklyTarget.explanation} /></>}</>}
+    explanation={<><p>{weeklyTarget.explanation}</p><p>Work is spread across your available days, with repeat sessions spaced apart and room for rest.</p><p>{isJunior ? 'Target bands, due reviews and recent subject contact guide the allocation. Topics are checked before assuming they need more practice.' : 'Targets, due reviews and recent subject contact guide the allocation. Confidence alone does not prove recall; a completed session does not postpone a review.'}</p>{!isJunior && <><TextButton arrow="forward" onClick={() => setShowExplainer(true)}>See the allocation in detail</TextButton><PlannerExplanation open={showExplainer} onClose={() => setShowExplainer(false)} priorities={priorities} allocations={allocations} totalSessions={totalSessions} totalMinutes={totalMinutes} workloadExplanation={weeklyTarget.explanation} /></>}</>}
   />;
 };
 export default SpacedRepetitionTimetable;

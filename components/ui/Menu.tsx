@@ -27,10 +27,11 @@
  * More than about seven options, options that need explaining, or several
  * filters together: a Sheet of choice tiles instead.
  */
-import { useState, type ReactNode } from 'react';
+import React, { useState, type ReactNode } from 'react';
 import { Menu as BaseMenu } from '@base-ui/react/menu';
-import { Check, ChevronDown } from 'lucide-react';
+import { ArrowUpRight, Check, ChevronDown, ChevronRight } from 'lucide-react';
 import { readSafeArea } from './Frame';
+import { SelectionMark } from './Choice';
 import './parts.css';
 
 export interface MenuOption<V extends string = string> {
@@ -47,12 +48,20 @@ export interface MenuProps<V extends string> {
   value: V;
   /** Called the moment an option is tapped; the menu closes itself. */
   onChange: (value: V) => void;
-  /** Show the position after the value: "Overview · 1 of 5" (moving between the parts of a screen). */
+  /** Show the position after the value: "Overview · 1 of 5" (moving between the parts of a screen).
+   *  In a full-width button the position sits at the trailing edge in the readout mono. */
   count?: boolean;
+  /** Number the options "01", "02" in the readout mono, before each name (the parts of a screen). */
+  numbered?: boolean;
+  /** A readout at the trailing edge of a full-width button, about the current value ("2 entries"). */
+  detail?: ReactNode;
   /** Full width, the chevron at the trailing edge. */
   block?: boolean;
   /** Which side of the button it prefers; it moves to the other when there is no room. */
   side?: 'bottom' | 'top';
+  /** The button shows this instead of the current value: a row that opens a menu of choices
+   *  ("Find a starting point" on Modules on a laptop). Its chevron-down stays at the trailing edge. */
+  face?: ReactNode;
   className?: string;
 }
 
@@ -73,18 +82,21 @@ export function menuCollisionPadding() {
   };
 }
 
-export function Menu<V extends string>({ label, options, value, onChange, count = false, block = false, side = 'bottom', className = '' }: MenuProps<V>) {
+export function Menu<V extends string>({ label, options, value, onChange, count = false, numbered = false, detail, block = false, side = 'bottom', face, className = '' }: MenuProps<V>) {
   const [open, setOpen] = useState(false);
   const index = options.findIndex(option => option.value === value);
   const current = options[index];
+  const position = count && index >= 0 ? `${index + 1} of ${options.length}` : null;
   return (
     <BaseMenu.Root open={open} onOpenChange={setOpen}>
       <BaseMenu.Trigger className={`ui-part ui-menu-btn${block ? ' ui-menu-btn--block' : ''} ${className}`.trim()}>
         <span className="ui-menu-btn-text">
-          <span className="sr-only">{label}: </span>
-          {current?.short ?? current?.label}
-          {count && index >= 0 ? <span className="ui-menu-btn-count">{` · ${index + 1} of ${options.length}`}</span> : null}
+          {face ? null : <span className="sr-only">{label}: </span>}
+          {face ?? current?.short ?? current?.label}
+          {position && !block ? <span className="ui-menu-btn-count">{` · ${position}`}</span> : null}
         </span>
+        {position && block ? <span className="ui-menu-btn-count ui-menu-btn-count--end ui-readout"><span className="sr-only"> · </span>{position}</span> : null}
+        {detail && !position ? <span className="ui-menu-btn-count ui-menu-btn-count--end ui-readout"><span className="sr-only"> · </span>{detail}</span> : null}
         <ChevronDown className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" focusable="false" />
       </BaseMenu.Trigger>
       <BaseMenu.Portal>
@@ -97,9 +109,12 @@ export function Menu<V extends string>({ label, options, value, onChange, count 
         >
           <BaseMenu.Popup className="ui-part ui-menu" aria-label={label}>
             <BaseMenu.RadioGroup value={value} onValueChange={next => onChange(next as V)}>
-              {options.map(option => (
+              {options.map((option, place) => (
                 <BaseMenu.RadioItem key={option.value} value={option.value} closeOnClick className="ui-menu-item">
-                  <span>{option.label}</span>
+                  <span className={numbered ? 'ui-menu-item-text' : undefined}>
+                    {numbered ? <i className="ui-menu-num ui-readout" aria-hidden="true">{String(place + 1).padStart(2, '0')}</i> : null}
+                    {numbered ? <span>{option.label}</span> : option.label}
+                  </span>
                   <Check className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
                 </BaseMenu.RadioItem>
               ))}
@@ -108,5 +123,154 @@ export function Menu<V extends string>({ label, options, value, onChange, count 
         </BaseMenu.Positioner>
       </BaseMenu.Portal>
     </BaseMenu.Root>
+  );
+}
+
+/** A menu of a screen's tools, under its button (the paper viewer's Tools on a laptop: the
+ *  phone's Tools sheet as a menu). Its rows are switches that apply at once and stay open
+ *  (MenuSwitch), rows that open something or leave the app (MenuAction), under small labels
+ *  (MenuLabel). The button shows a face (an icon and a word) and a chevron-down. */
+export interface MenuPanelProps {
+  /** The menu's accessible name ("Tools"). */
+  label: string;
+  /** The button's accessible name, when its face does not say it ("Study tools for this paper"). */
+  buttonLabel?: string;
+  /** What the button shows: an icon and a word. */
+  face: ReactNode;
+  /** A heading row at the top of the menu: the title at the left, a quiet word at the right ("2 on"). */
+  head?: ReactNode;
+  status?: ReactNode;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  /** Which edge of the button the menu lines up with. */
+  align?: 'start' | 'end';
+  /** The button is a screen's own box you press, not the small menu button (Mark Bank's subject
+   *  button on a laptop: its character, its name and level, a chevron-down): its class. */
+  buttonClassName?: string;
+  /** false: the button is only its face, with no chevron-down (a row's "…" actions button, area 8a). */
+  chevron?: boolean;
+  /** Which side of the button it prefers (a button in a pinned footer: top); it moves when there is no room. */
+  side?: 'bottom' | 'top';
+  children: ReactNode;
+  className?: string;
+}
+
+export function MenuPanel({ label, buttonLabel, face, head, status, open, onOpenChange, align = 'end', buttonClassName, chevron = true, side = 'bottom', children, className = '' }: MenuPanelProps) {
+  const [ownOpen, setOwnOpen] = useState(false);
+  const shown = open ?? ownOpen;
+  const setShown = (next: boolean) => { if (onOpenChange) onOpenChange(next); else setOwnOpen(next); };
+  return (
+    <BaseMenu.Root open={shown} onOpenChange={setShown}>
+      <BaseMenu.Trigger className={buttonClassName ? `ui-part ${buttonClassName}` : `ui-part ui-menu-btn ui-menu-btn--face ${className}`.trim()} aria-label={buttonLabel}>
+        <span className="ui-menu-btn-text">{face}</span>
+        {chevron ? <ChevronDown className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" focusable="false" /> : null}
+      </BaseMenu.Trigger>
+      <BaseMenu.Portal>
+        <BaseMenu.Positioner className="ui-menu-layer" side={side} align={align} sideOffset={6}
+          collisionPadding={shown ? menuCollisionPadding() : MENU_GAP}>
+          <BaseMenu.Popup className={`ui-part ui-menu ui-menu--panel${buttonClassName && className ? ` ${className}` : ''}`} aria-label={label}>
+            {head ? <div className="ui-menu-head"><span className="ui-menu-head-title">{head}</span>{status ? <span className="ui-menu-head-status">{status}</span> : null}</div> : null}
+            {children}
+          </BaseMenu.Popup>
+        </BaseMenu.Positioner>
+      </BaseMenu.Portal>
+    </BaseMenu.Root>
+  );
+}
+
+/** A small label over a group of a panel's rows ("Switch on", "Start"). */
+export function MenuLabel({ children }: { children: ReactNode }) {
+  return <p className="ui-menu-label" aria-hidden="true">{children}</p>;
+}
+
+/** A row that switches a thing on or off: it applies at once and the menu stays open. */
+export function MenuSwitch({ title, meta, checked, onChange, closeOnClick = false }: {
+  title: ReactNode; meta?: ReactNode; checked: boolean; onChange: (checked: boolean) => void;
+  /** The thing it switches on takes over the screen: close the menu as it applies. */
+  closeOnClick?: boolean;
+}) {
+  return (
+    <BaseMenu.CheckboxItem checked={checked} onCheckedChange={next => onChange(next)} closeOnClick={closeOnClick} className="ui-menu-item ui-menu-item--row">
+      <span className="ui-menu-item-copy"><span className="ui-menu-item-title">{title}</span>{meta ? <span className="ui-menu-item-meta">{meta}</span> : null}</span>
+      <span className="ui-switch" data-on={checked || undefined} aria-hidden="true"><span className="ui-switch-knob" /></span>
+    </BaseMenu.CheckboxItem>
+  );
+}
+
+/** A row that opens something (a chevron) or leaves the app for the browser (href: an arrow up-right).
+ *  `plain`: a row that does a thing where it is (a row's "Reset password" in a staff table, area 8a): no
+ *  glyph, and the menu closes as it applies. `tone="danger"`: a destructive row, its words in red. */
+export function MenuAction({ title, meta, onPress, href, plain = false, tone }: { title: ReactNode; meta?: ReactNode; onPress?: () => void; href?: string; plain?: boolean; tone?: 'danger' }) {
+  const content = (
+    <>
+      <span className="ui-menu-item-copy"><span className="ui-menu-item-title">{title}</span>{meta ? <span className="ui-menu-item-meta">{meta}</span> : null}</span>
+      {plain ? null : href ? <ArrowUpRight className="ui-icon ui-menu-item-glyph" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        : <ChevronRight className="ui-icon ui-menu-item-glyph" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />}
+    </>
+  );
+  const classes = `ui-menu-item ui-menu-item--row${plain ? ' ui-menu-item--plain' : ''}${tone === 'danger' ? ' ui-menu-item--danger' : ''}`;
+  return href
+    ? <BaseMenu.Item className={classes} render={<a href={href} target="_blank" rel="noopener noreferrer" />}>{content}</BaseMenu.Item>
+    : <BaseMenu.Item className={classes} onClick={onPress}>{content}</BaseMenu.Item>;
+}
+
+/** A hairline between two groups of a menu's rows (a staff row's flag choices, then its account actions). */
+export function MenuRule() {
+  return <BaseMenu.Separator className="ui-menu-rule" />;
+}
+
+/** Choices you may tick several of, each applying at once while the menu stays open, with the
+ *  pick-several mark (a rounded square that fills ink and draws a tick): a student's cohort tags in
+ *  the counsellor's Practice list on a phone (area 8a). */
+export function MenuCheckRows<V extends string>({ label, options, values, onToggle }: {
+  label: string; options: { value: V; label: ReactNode }[]; values: readonly V[]; onToggle: (value: V, checked: boolean) => void;
+}) {
+  return (
+    <BaseMenu.Group aria-label={label} className="ui-menu-rows">
+      {options.map(option => {
+        const on = values.includes(option.value);
+        return (
+          <BaseMenu.CheckboxItem key={option.value} checked={on} onCheckedChange={next => onToggle(option.value, next)} closeOnClick={false} className="ui-menu-item ui-menu-item--pick ui-menu-item--check">
+            <span className="ui-menu-item-title">{option.label}</span>
+            <SelectionMark on={on} shape="square" />
+          </BaseMenu.CheckboxItem>
+        );
+      })}
+    </BaseMenu.Group>
+  );
+}
+
+/** Two to four short choices inside a menu, drawn as the selection bar (Mark Bank's paper level
+ *  at the top of its subject menu on a laptop). Choosing applies at once. */
+export function MenuSegment<V extends string>({ label, options, value, onChange }: {
+  label: string; options: { value: V; label: ReactNode }[]; value: V; onChange: (value: V) => void;
+}) {
+  const current = Math.max(0, options.findIndex(option => option.value === value));
+  return (
+    <BaseMenu.RadioGroup value={value} onValueChange={next => onChange(next as V)} aria-label={label}
+      className="ui-seg ui-seg--md ui-menu-seg" style={{ '--seg-n': options.length, '--seg-i': current } as React.CSSProperties}>
+      <i className="ui-seg-pill" aria-hidden="true" />
+      {options.map(option => (
+        <BaseMenu.RadioItem key={option.value} value={option.value} closeOnClick className="ui-seg-item">{option.label}</BaseMenu.RadioItem>
+      ))}
+    </BaseMenu.RadioGroup>
+  );
+}
+
+/** A menu's choices as rows, each with its character at the left and a tick on the current one
+ *  (Mark Bank's subjects on a laptop). Choosing applies at once and closes the menu. */
+export function MenuRadioRows<V extends string>({ label, options, value, onChange }: {
+  label: string; options: { value: V; label: ReactNode; art?: ReactNode }[]; value: V; onChange: (value: V) => void;
+}) {
+  return (
+    <BaseMenu.RadioGroup value={value} onValueChange={next => onChange(next as V)} aria-label={label} className="ui-menu-rows">
+      {options.map(option => (
+        <BaseMenu.RadioItem key={option.value} value={option.value} closeOnClick className="ui-menu-item ui-menu-item--pick">
+          {option.art ? <span className="ui-menu-item-art" aria-hidden="true">{option.art}</span> : null}
+          <span className="ui-menu-item-title">{option.label}</span>
+          <Check className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        </BaseMenu.RadioItem>
+      ))}
+    </BaseMenu.RadioGroup>
   );
 }

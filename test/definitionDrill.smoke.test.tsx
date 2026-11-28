@@ -21,7 +21,8 @@ describe('Definition Drill', () => {
   test('renders the picker, then a subject’s drill with reveal + self-rate', () => {
     render(<DefinitionDrill studentSubjects={['Physics']} />);
     // Level 0 — the tool heading and the picker.
-    expect(screen.getByRole('heading', { name: /Definition Drill/i })).toBeInTheDocument();
+    // The tool's name is in the Launchpad's bar now (area 7b): the picker opens on its own words.
+    expect(screen.getByText(/Drill the exact wording the marking scheme awards/)).toBeInTheDocument();
     // Drill into Physics (a subject we know has definitions).
     fireEvent.click(screen.getByRole('button', { name: /^Physics/ }));
     // Level 1 — a prompt with a Reveal button.

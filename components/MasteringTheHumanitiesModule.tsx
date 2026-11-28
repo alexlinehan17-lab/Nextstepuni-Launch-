@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useId, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
@@ -14,6 +14,9 @@ import { pinkTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { AnswerLine, ExerciseRange, ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { Field } from './ui/Field';
 
 const theme = pinkTheme;
 
@@ -83,6 +86,7 @@ const SRPBuilder = () => {
   const [completed, setCompleted] = useState(false);
   const [srpCount, setSrpCount] = useState(0);
   const [allDone, setAllDone] = useState(false);
+  const promptId = useId();
 
   const topic = SRP_TOPICS[topicIdx];
 
@@ -121,47 +125,46 @@ const SRPBuilder = () => {
 
   if (allDone) {
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">SRP Builder — Complete</h4>
-        <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-8 text-center space-y-4">
-          <p className="text-5xl font-bold text-emerald-500">{srpCount} / 5</p>
-          <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400">SRPs Built</p>
-          <div className="mt-6 p-6 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border border-emerald-200 dark:border-emerald-800">
-            <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">Every 30-mark Geography answer needs <strong>~15 SRPs</strong>. If you can build them like this from keywords, you can engineer your grade.</p>
+      <ExerciseSheet title="SRP Builder — Complete" name="SRPBuilder">
+        <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+          {/* The count, in ink (was a green number), and the line that answers it with the tick (no mint box) */}
+          <div className="ex-result">
+            <p className="ex-result-name" style={{ fontSize: 48, lineHeight: '52px', letterSpacing: '-0.04em' }}>{srpCount} / 5</p>
+            <p className="t-sub">SRPs Built</p>
           </div>
+          <AnswerLine>Every 30-mark Geography answer needs <strong>~15 SRPs</strong>. If you can build them like this from keywords, you can engineer your grade.</AnswerLine>
         </MotionDiv>
-      </div>
+      </ExerciseSheet>
     );
   }
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">SRP Builder — From Keyword to Full Marks</h4>
-      <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-1">Topic {topicIdx + 1} of {SRP_TOPICS.length}</p>
+    <ExerciseSheet title="SRP Builder — From Keyword to Full Marks" name="SRPBuilder">
+      <p className="ex-count ui-readout">Topic {topicIdx + 1} of {SRP_TOPICS.length}</p>
 
-      {/* Keyword pill */}
-      <div className="flex justify-center mt-6">
-        <span className="inline-block px-5 py-2 rounded-full bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 font-bold text-lg tracking-wide">{topic.keyword}</span>
-      </div>
+      {/* The keyword: the word you build from, set large on the sheet (no pink pill) */}
+      <p className="ex-thought-words">{topic.keyword}</p>
 
-      {/* Steps */}
-      <div className="mt-8 space-y-6">
+      {/* Steps: ruled rows on the sheet, each with its number ring (ink for the step you are on) */}
+      <div className="ex-list">
         <AnimatePresence mode="wait">
           {topic.steps.map((step, i) => (
             i <= currentStep && (
-              <MotionDiv key={`${topicIdx}-${i}`} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: 0.05 }} className="space-y-3">
+              <MotionDiv key={`${topicIdx}-${i}`} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: 0.05 }}>
+                <div className="ex-stack">
                 {/* Step header */}
                 <div className="flex items-center gap-3">
-                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-pink-500 text-white text-xs font-bold flex items-center justify-center">{i + 1}</span>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">{STEP_LABELS[i]}</span>
+                  <span className={i === currentStep && !revealed[i] ? 'ex-badge ex-badge--on' : 'ex-badge'}>{i + 1}</span>
+                  <span className="ex-label">{STEP_LABELS[i]}</span>
                 </div>
-                <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{step.prompt}</p>
+                <p id={`${promptId}-${i}`} className="t-body text-ink-primary">{step.prompt}</p>
 
                 {/* Input area */}
                 {!revealed[i] ? (
-                  <div className="flex gap-2">
-                    <input
+                  <div className="flex gap-2 items-center">
+                    <Field
                       type="text"
+                      aria-labelledby={`${promptId}-${i}`}
                       value={inputs[i]}
                       onChange={e => {
                         const next = [...inputs];
@@ -169,63 +172,70 @@ const SRPBuilder = () => {
                         setInputs(next);
                       }}
                       placeholder="Type your answer..."
-                      className="flex-1 bg-white dark:bg-surface-soft rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }}
+                      className="flex-1 min-w-0"
                     />
-                    <button onClick={() => handleCheck(i)} className="px-4 py-2 rounded-lg bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold transition-colors">Check</button>
+                    <Button onClick={() => handleCheck(i)}>Check</Button>
                   </div>
                 ) : (
-                  <MotionDiv initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }} className={`p-3 rounded-lg text-sm ${checkKeyTerms(inputs[i], step.keyTerms) ? 'bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800' : 'bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800'}`}>
-                    <p className={`text-xs font-bold mb-1 ${checkKeyTerms(inputs[i], step.keyTerms) ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-600 dark:text-amber-400'}`}>
+                  <MotionDiv initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }} className="flex flex-col gap-1">
+                    {/* The check: a line in ink (the tick when the key terms are there), then the model answer (no mint or amber box) */}
+                    <AnswerLine tone={checkKeyTerms(inputs[i], step.keyTerms) ? 'ok' : 'note'}>
                       {checkKeyTerms(inputs[i], step.keyTerms) ? 'Good — you hit the key terms' : 'Compare with the model answer'}
-                    </p>
-                    <p className="text-zinc-700 dark:text-zinc-300">{step.expert}</p>
+                    </AnswerLine>
+                    <p className="ex-block-text">{step.expert}</p>
                   </MotionDiv>
                 )}
+                </div>
               </MotionDiv>
             )
           ))}
         </AnimatePresence>
       </div>
 
-      {/* Assembled SRP */}
+      {/* Assembled SRP: its label and words under a hairline (no green panel, side stripe or pill) */}
       {completed && (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }} className="mt-8 p-5 rounded-xl" style={{ backgroundColor: '#E8F2EC', borderLeft: '3px solid #3A8D5F' }}>
-          <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Assembled SRP</p>
-            <span className="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500 text-white">2 MARKS</span>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }} className="ex-stack">
+          <div className="ex-block">
+            <div className="flex items-center justify-between gap-3">
+              <p className="ex-label">Assembled SRP</p>
+              <span className="ui-readout text-ink-secondary">2 MARKS</span>
+            </div>
+            <p className="t-body text-ink-primary">{topic.fullSRP}</p>
           </div>
-          <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">{topic.fullSRP}</p>
-          <div className="mt-4 flex justify-end">
-            <button onClick={handleNext} className="px-5 py-2 rounded-lg bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold transition-colors">
+          <div className="ex-actions">
+            <Button onClick={handleNext}>
               {topicIdx < SRP_TOPICS.length - 1 ? 'Next Topic \u2192' : 'See Results \u2192'}
-            </button>
+            </Button>
           </div>
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
 const HistoryGrader = () => {
     const [cm, setCm] = useState(60);
     const [oe, setOe] = useState(15);
+    const cmId = useId();
+    const oeId = useId();
     const total = cm + oe;
     const grade = total >= 90 ? 'H1' : total >= 80 ? 'H2' : total >= 70 ? 'H3' : total >= 60 ? 'H4' : 'H5';
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">CM/OE Grader</h4>
+        <ExerciseSheet title="CM/OE Grader" name="HistoryGrader">
             <div className="grid grid-cols-2 gap-6 items-center">
-                <div className="space-y-4">
-                    <div><label className="text-xs font-bold">CM (Content): {cm}/60</label><input type="range" min="0" max="60" value={cm} onChange={e=>setCm(parseInt(e.target.value))} className="chunky-slider chunky-slider-sky"/></div>
-                    <div><label className="text-xs font-bold">OE (Argument): {oe}/40</label><input type="range" min="0" max="40" value={oe} onChange={e=>setOe(parseInt(e.target.value))} className="chunky-slider chunky-slider-sunshine"/></div>
+                {/* The two sliders: the shared slider (a hairline track, an ink fill), each named by its visible label */}
+                <div className="ex-sliders">
+                    <div className="ex-slider"><p id={cmId} className="ex-slider-name">CM (Content): {cm}/60</p><ExerciseRange min="0" max="60" value={cm} onChange={e=>setCm(parseInt(e.target.value))} aria-labelledby={cmId}/></div>
+                    <div className="ex-slider"><p id={oeId} className="ex-slider-name">OE (Argument): {oe}/40</p><ExerciseRange min="0" max="40" value={oe} onChange={e=>setOe(parseInt(e.target.value))} aria-labelledby={oeId}/></div>
                 </div>
+                {/* The grade it comes to: large, in ink (was pink) */}
                 <div className="text-center">
-                    <p className="text-sm">Final Grade:</p>
-                    <p className="text-6xl font-semibold text-pink-500">{grade}</p>
+                    <p className="t-sub">Final Grade:</p>
+                    <p className="text-ink-primary" style={{ fontSize: 60, lineHeight: '64px', letterSpacing: '-0.04em' }}>{grade}</p>
                 </div>
             </div>
-        </div>
+        </ExerciseSheet>
     );
 };
 

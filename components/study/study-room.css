@@ -1,0 +1,207 @@
+/* The study room, Pause and the breathing guide in the agreed look (c-study.html:
+   c-study-timer, c-study-pause; r5-b1.html: r5-study-running). The dark olive
+   room stays (a named surface, the same in both themes): one bar with Close
+   and sound, the subject in the one typeface, the countdown, the room's light
+   Pause, and the Rule along the bottom instead of the orange strip and dot.
+   Loaded after study-session.css, study-motion.css and study-crew.css. */
+
+/* ── the room's own values: the shared parts read these inside it ── */
+.ss-timer-content.ss-room-ink {
+  --surface-canvas: var(--surface-room);
+  --surface-paper: var(--room-raised);
+  --surface-raised: var(--room-raised);
+  --surface-soft: var(--room-sunken);
+  --ink-primary: var(--room-ink);
+  --ink-secondary: var(--room-ink-2);
+  --ink-muted: var(--room-ink-3);
+  --hairline: var(--room-line);
+  --outline-soft: var(--room-line-2);
+  --action: var(--room-action);
+  --action-ink: var(--room-action-ink);
+  --action-press: var(--room-action-press);
+  --ss-ink: var(--room-ink);
+  --ss-muted: var(--room-ink-2);
+  --ss-rule: var(--room-line-2);
+  color-scheme: dark;
+}
+/* "more colour": today's hills stay; it stays light in both themes */
+.ss-timer-content.ss-room-layers {
+  --surface-paper: var(--room-light-paper);
+  --surface-raised: var(--room-light-paper);
+  --ink-primary: var(--room-light-ink);
+  --ink-secondary: var(--room-light-ink-2);
+  --ink-muted: var(--room-light-ink-2);
+  --hairline: var(--room-light-line);
+  --outline-soft: var(--room-light-line);
+  --action: var(--room-light-action);
+  --action-ink: var(--room-light-action-ink);
+  --action-press: var(--room-light-action-press);
+  --ss-ink: var(--room-light-ink);
+  --ss-muted: var(--room-light-ink-2);
+  color-scheme: light;
+}
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--space-6) calc(var(--safe-bottom) + 18px);
+  color: var(--ink-primary);
+  font-family: var(--font-ui);
+}
+
+/* the one bar: it owns the status area */
+.ss-room-barwrap { margin: 0 calc(-1 * var(--space-6)); }
+.ss-timer-content .ui-bar.ss-room-bar { background: transparent; }
+.ss-room-ink .ui-bar.ss-room-bar { background: var(--surface-room); }
+.ss-room-bar .ui-bar-title { color: var(--ink-primary); }
+.ss-room-bar .study-sound-toggle,
+.study-room-stage .ui-bar .study-sound-toggle { min-width: 44px; min-height: 44px; padding: 0 10px; border: 0; border-radius: var(--r-ctl); background: none; color: var(--ink-primary); }
+.ss-room-ink .ss-room-bar .study-sound-toggle { color: var(--room-ink); }
+
+/* subject, countdown, one action */
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-main { flex: 1; min-height: 0; justify-content: center; padding: 0 0 56px; gap: 0; }
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-subject { display: block; margin: 0 0 2px; color: var(--ink-primary); font: 400 20px/24px var(--font-ui); letter-spacing: -0.04em; }
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-type { margin: 0; color: var(--ink-secondary); font-size: 13px; line-height: 18px; }
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers, .ss-room-coaching) .ss-timer-digits {
+  display: flex;
+  justify-content: center;
+  margin: 26px 0 14px;
+  color: var(--ink-primary);
+  /* The countdown is in the pixel-style numbers of the Rule Alex chose (24 Nov
+     2026), like every timer and counter. Never set it in the one typeface:
+     "I thought we were doing the kind of pixelated text for the study timer?
+     Why are we straying from what we chose" (Alex, 26 Nov 2026). */
+  font: 400 88px/96px "Departure Mono", "Apercu Mono Pro", ui-monospace, monospace;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+}
+.ss-timer-digits > span { display: block; }
+/* the figures sit in fixed cells; the colon alone keeps its own width */
+.ss-timer-digits > .ss-timer-colon { margin: 0 0.02em; font-variant-numeric: normal; transform: translateY(-0.05em); }
+.ss-room-ink.ss-room-paused .ss-timer-digits { color: var(--ink-secondary); }
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-status { margin: 0; color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.ss-timer-content .ss-timer-actions { margin-top: 30px; }
+.ss-timer-actions .ui-btn > span { display: inline-flex; align-items: center; gap: 10px; }
+.ss-timer-actions .ui-btn.ss-timer-pause { min-width: 140px; }
+.ss-timer-content .ss-timer-actions .ui-unavailable { align-items: center; }
+
+/* the Rule and the two times, along the bottom */
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-footer { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; max-width: none; margin: 0; }
+.ss-timer-content .ss-timer-track { height: auto; overflow: visible; background: none; }
+/* The Rule keeps its own height in the track. Today's progress line sized the
+   track's child to the track and painted it, which left the Rule with no height
+   of its own: its ticks rose out of an empty box and the Put it into practice
+   card sat on them. */
+.ss-timer-content .ss-timer-track > .study-rule { height: var(--rule-hn); background: none; }
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-footer > div:last-child { display: flex; justify-content: space-between; margin: 0; color: var(--ink-secondary); font-family: "Departure Mono", "Apercu Mono Pro", ui-monospace, monospace; font-size: 13px; line-height: 16px; letter-spacing: 0.02em; }
+.ss-room-layers .study-rule { --rule-quiet: var(--room-light-ink-2); }
+.ss-room-layers .ss-timer-footer > div:last-child { color: var(--ink-primary); }
+
+/* Notify me: an offer you read, so no box; a hairline above it */
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-notify { max-width: 480px; margin: 28px auto 0; padding: 18px 0 0; gap: var(--space-3); border: 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; }
+.ss-timer-content .ss-notify p { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.ss-timer-content .ss-notify-actions { gap: var(--space-4); }
+.ss-timer-content .ss-notify-actions .ui-btn > span { display: inline-flex; align-items: center; gap: var(--space-2); }
+.ss-timer-content .ss-notify-status { color: var(--ink-secondary); }
+.ss-timer-content .ss-notify-status svg { color: var(--success-hex); }
+
+/* Put it into practice: it comes up over the room for a while, so it floats;
+   Done and Skip are the same size */
+.ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-coaching {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 18px;
+  padding: 16px 18px 18px;
+  overflow: hidden;
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-box);
+  background: var(--surface-paper);
+  color: var(--ink-primary);
+  box-shadow: var(--float);
+}
+.ss-coaching .ss-coaching-heading { align-items: baseline; }
+.ss-timer-content .ss-coaching .ss-eyebrow { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; }
+.ss-timer-content .ss-coaching-heading > span { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ss-timer-content .ss-coaching-prompt { margin: 0; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; text-wrap: pretty; }
+.ss-timer-content .ss-coaching-actions { display: grid; grid-template-columns: repeat(2, 96px); gap: var(--space-3); margin-top: 2px; }
+.ss-timer-content .ss-coaching-actions .ui-btn { width: 100%; }
+.ss-timer-content .ss-prompt-countdown { background: var(--outline-soft); }
+.ss-room-coaching .ss-timer-main { padding-bottom: var(--space-6); }
+
+/* a laptop: the phone room with more room; it still fills the window */
+@media (min-width: 768px) {
+  .ss-timer-content:is(.ss-room-ink, .ss-room-layers) { padding: 0 28px 28px; }
+  .ss-room-barwrap { margin: 0; }
+  .ss-room-bar .ui-bar-row { height: 64px; }
+  .ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-main { flex: 0 0 auto; justify-content: flex-start; padding: 18px 0 0; }
+  .ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-subject { font-size: 28px; line-height: 32px; }
+  .ss-timer-content:is(.ss-room-ink, .ss-room-layers, .ss-room-coaching) .ss-timer-digits { margin: 12px 0 8px; font-size: 128px; line-height: 128px; }
+  .ss-timer-content .ss-timer-actions { margin-top: 18px; }
+  .ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-notify { max-width: 640px; margin-top: 20px; }
+  .ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-notify-actions { flex-wrap: nowrap; }
+  .ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-coaching { margin: 18px auto 0; box-shadow: none; }
+  .ss-timer-content:is(.ss-room-ink, .ss-room-layers) .ss-timer-footer { max-width: 640px; margin: auto auto 0; padding-top: 18px; }
+}
+
+/* ── Pause: the block centred between the bar and Back to study ── */
+.study-room-stage .study-room-page { background: var(--surface-canvas); }
+.study-room-stage .study-break-experience { background: var(--surface-canvas); color: var(--ink-primary); color-scheme: normal; }
+.study-room-stage .study-break-experience .study-break {
+  display: flex;
+  flex-direction: column;
+  max-width: none;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background: var(--surface-canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-ui);
+  text-align: center;
+}
+.study-break .ui-bar.study-break-bar { text-align: left; }
+.study-break-body { display: flex; flex: 1; min-height: 0; flex-direction: column; align-items: center; justify-content: center; padding: 0 var(--space-6); }
+.study-room-stage .study-break-body .study-break-art { width: 144px; height: 172px; margin: 0; }
+.study-room-stage .study-break-experience .study-break-body h1 { margin: 18px 0 0; color: var(--ink-primary); font: 400 29px/33px var(--font-ui); letter-spacing: -0.04em; }
+.study-room-stage .study-break-body .study-break-line { max-width: 300px; margin: 10px 0 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.study-room-stage .study-break-body .study-break-context { display: flex; flex-direction: column; gap: 6px; align-self: stretch; margin: 22px 0 18px; padding-top: 18px; border-top: 1px solid var(--hairline); }
+.study-room-stage .study-break-body .study-break-context strong { color: var(--ink-primary); font-size: 17px; font-weight: 400; line-height: 22px; }
+.study-room-stage .study-break-body .study-break-context span { color: var(--ink-secondary); font-family: "Departure Mono", "Apercu Mono Pro", ui-monospace, monospace; font-size: 13px; line-height: 16px; }
+.study-break-body .ui-btn.study-breathe-toggle { display: inline-flex; margin: 0; }
+.study-room-stage .ui-foot :is(.ui-btn.crew-primary, .ui-btn.crew-primary:hover) { min-width: 0; min-height: 52px; padding: 0 18px; border: 1px solid var(--action); background: var(--action); color: var(--action-ink); font: 400 16px/1 var(--font-ui); }
+.study-room-stage .ui-foot .ui-btn.crew-primary:active { background: var(--action-press); }
+.study-break-foot.ui-foot { align-items: stretch; }
+.study-room-stage .study-break-foot .ui-link.study-break-leave { align-self: center; margin: 0; color: var(--ink-secondary); font-size: 15px; }
+
+/* ── the breathing guide: today's slow breath, the Snoozer bare on the page ── */
+.study-room-stage .study-breathe-guide { display: flex; flex-direction: column; background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.study-breathe-bar .ui-bar-title { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.study-breathe-guide .study-breathe-content { flex: 1; min-height: 0; padding: 0 var(--space-6); }
+.study-breathe-guide .study-breathe-content h2 { margin: 0; font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+.study-breathe-figure { margin: 18px 0 22px; }
+.study-breathe-guide .study-breathe-character { width: 164px; height: 196px; transform: none; }
+.study-breathe-guide .study-breathe-core { position: static; width: 100%; height: 100%; border: 0; border-radius: 0; background: none; box-shadow: none; transform: none; }
+.study-breathe-guide .study-breathe-guidance { min-height: 88px; margin-top: 0; }
+.study-breathe-guide .study-breathe-phase { margin: 0; font: 400 35px/39px var(--font-ui); letter-spacing: -0.045em; }
+.study-breathe-guide .study-breathe-guidance > p:last-child { margin: 10px 0 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.study-breathe-guide .ui-foot.study-breathe-footer { position: sticky; bottom: 0; left: auto; right: auto; align-items: stretch; gap: var(--space-2); }
+@media (min-width: 768px) {
+  .study-break-foot.ui-foot, .study-breathe-guide .ui-foot.study-breathe-footer { width: min(420px, 100%); margin: 0 auto; }
+}
+
+/* ── Finish for now: the shared sheet, plain head ── */
+.ss-exit-sheet .ui-sheet-body .t-sub strong { color: var(--ink-primary); font-weight: 400; }
+.ss-exit-sheet .ui-link.ss-exit-discard { align-self: center; }
+
+/* today's room styled its own Pause, Finish and prompt buttons by class; the
+   shared buttons keep the system's look in both rooms */
+.ss-timer-content .ss-timer-actions .ui-btn.ui-btn--main.ss-timer-pause { min-height: 44px; padding: 0 var(--space-4); border: 1px solid var(--action); border-radius: var(--r-ctl); background: var(--action); color: var(--action-ink); font: 400 15px/1 var(--font-ui); }
+.ss-timer-content .ss-timer-actions .ui-btn.ui-btn--main.ss-timer-pause:active { background: var(--action-press); }
+.ss-timer-content .ss-timer-actions .ui-btn.ss-timer-finish:not(.ui-btn--unavailable),
+.ss-timer-content .ss-coaching-actions .ui-btn,
+.ss-timer-content .ss-notify-actions .ui-btn { min-height: 44px; padding: 0 var(--space-4); border: 1px solid var(--outline-soft); border-radius: var(--r-ctl); background: var(--surface-paper); color: var(--ink-primary); font: 400 15px/1 var(--font-ui); }
+.ss-timer-content .ss-notify-actions .ui-link.ss-notify-no { min-height: 44px; padding: 0; border: 0; background: none; color: var(--ink-secondary); font: 400 15px/21px var(--font-ui); text-decoration: none; }
+/* the guide comes up over the pause screen, its sticky bar and footer included */
+.study-room-stage .study-breathe-guide { z-index: calc(var(--z-sticky) + 1); }
+.study-room-stage .ui-foot .ui-btn.crew-primary { border-radius: var(--r-ctl); box-shadow: none; transform: none; justify-content: space-between; gap: 10px; }

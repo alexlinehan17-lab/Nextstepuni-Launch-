@@ -276,21 +276,23 @@ describe('year islands inside Journey (Demo Account, sample classmates)', () => 
 
   it('opens Your year from the island, visits a classmate, and comes home', async () => {
     render(<Journey />);
-    fireEvent.click(await screen.findByRole('button', { name: /^Your year: see your classmates' islands in 5th Year at Marino/ }));
+    // Your year is a word in the island's one selection bar (the agreed board), not a card on the map.
+    fireEvent.click(await screen.findByRole('radio', { name: 'Your year' }));
     fireEvent.click(await screen.findByRole('button', { name: /^Visit Aoife’s island/ }));
     expect(screen.getByText('Aoife’s island')).toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: 'Build your island' })).toBeNull();
+    expect(screen.getByRole('radio', { name: 'Island' })).toHaveAttribute('aria-checked', 'true');
+    expect(document.querySelector('.journey-paper.is-building')).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'Back to your island' }));
     expect(screen.queryByText('Visiting · look only')).toBeNull();
-    expect(screen.getByRole('button', { name: 'Build your island' })).toBeInTheDocument();
+    expect(screen.getByRole('radio', { name: 'Build' })).toBeInTheDocument();
   });
 
   it('ends the visit when the student starts building from their own fieldbook', async () => {
     render(<Journey />);
-    fireEvent.click(await screen.findByRole('button', { name: /^Your year:/ }));
+    fireEvent.click(await screen.findByRole('radio', { name: 'Your year' }));
     fireEvent.click(await screen.findByRole('button', { name: /^Visit Cian’s island/ }));
     expect(screen.getByText('Visiting · look only')).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'Your character · open fieldbook' }));
+    fireEvent.click(screen.getByRole('radio', { name: 'Fieldbook' }));
     fireEvent.click(screen.getAllByText('Show me the way')[0].closest('button')!);
     await waitFor(() => expect(screen.queryByText('Visiting · look only')).toBeNull());
     expect(document.querySelector('.journey-paper.is-building')).not.toBeNull();

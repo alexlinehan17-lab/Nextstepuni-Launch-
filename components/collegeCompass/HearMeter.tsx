@@ -7,8 +7,8 @@
  * Eligible (2.5) and Priority (5.5). Estimate only — always says so.
  */
 import React from 'react';
-import { Lock, Check } from 'lucide-react';
-import { COLORS } from '../../design/tokens';
+import { Check, Lock } from 'lucide-react';
+import { ChoiceTile } from '../ui/Choice';
 import {
   HEAR_INDICATORS,
   HEAR_THRESHOLDS,
@@ -21,6 +21,9 @@ interface HearMeterProps {
   onChange: (ids: string[]) => void;
 }
 
+/** The HEAR self-check on its own screen (area 7a; board c-tools1-compass): the meter pinned under
+ *  the title with Eligible and Priority marked and the score "3.5 / 7"; each indicator a choice row
+ *  with the drawn mark. The arithmetic is computeHearScore's, unchanged. */
 const HearMeter: React.FC<HearMeterProps> = ({ selected, onChange }) => {
   const { score, incomeGateMet, outcome } = computeHearScore(selected);
   const incomeInd = HEAR_INDICATORS.find(i => i.isIncomeGate)!;
@@ -33,7 +36,6 @@ const HearMeter: React.FC<HearMeterProps> = ({ selected, onChange }) => {
   const pct = Math.min(100, (score / HEAR_THRESHOLDS.max) * 100);
   const eligiblePct = (HEAR_THRESHOLDS.eligible / HEAR_THRESHOLDS.max) * 100;
   const priorityPct = (HEAR_THRESHOLDS.priority / HEAR_THRESHOLDS.max) * 100;
-  const fillColor = outcome === 'not-eligible' ? COLORS.accent : COLORS.success;
 
   const outcomeText =
     outcome === 'priority'
@@ -45,127 +47,34 @@ const HearMeter: React.FC<HearMeterProps> = ({ selected, onChange }) => {
           : 'Income is the key indicator — tick it to see your score';
 
   return (
-    <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
-      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500 mb-1">
-        Self-check
-      </p>
-      <h4 className="font-serif text-lg font-bold text-[#1A1A1A] dark:text-white mb-3">
-        Could I qualify for HEAR?
-      </h4>
-
-      {/* Income gate */}
-      <button
-        type="button"
-        onClick={() => toggle(incomeInd.id)}
-        className="w-full text-left rounded-xl border-2 p-3 mb-3 transition-colors"
-        style={{
-          borderColor: incomeGateMet ? COLORS.success : COLORS.border,
-          backgroundColor: incomeGateMet ? COLORS.successTint : '#FFFFFF',
-        }}
-      >
-        <div className="flex items-start gap-3">
-          <span
-            className="mt-0.5 inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0"
-            style={{ backgroundColor: incomeGateMet ? COLORS.success : 'var(--surface-soft)' }}
-          >
-            {incomeGateMet ? <Check size={13} className="text-white" /> : <Lock size={11} className="text-zinc-500" />}
-          </span>
-          <div className="min-w-0">
-            <p className="text-sm font-bold text-[#1A1A1A]">
-              {incomeInd.label} <span className="text-[10px] font-bold uppercase tracking-wide" style={{ color: COLORS.accentDarkText }}>· required</span>
-            </p>
-            <p className="text-xs text-[#7a7068] leading-relaxed mt-0.5">{incomeInd.detail}</p>
-          </div>
+    <div className="cc7-hear-body">
+      <div className="cc7-meter" aria-live="polite">
+        <div className="cc7-mrow">
+          <p className="t-label cc7-label">Indicator score</p>
+          <p className="cc7-mscore"><b>{score}</b><span className="cc7-of"> / {HEAR_THRESHOLDS.max}</span></p>
         </div>
-      </button>
-
-      {/* Scored indicators */}
-      <div className="space-y-2 mb-4">
-        {scored.map(ind => {
-          const on = selected.includes(ind.id);
-          return (
-            <button
-              key={ind.id}
-              type="button"
-              onClick={() => toggle(ind.id)}
-              className="w-full text-left rounded-xl border-2 p-3 transition-colors"
-              style={{
-                borderColor: on ? COLORS.accent : COLORS.border,
-                backgroundColor: on ? COLORS.accentTint : '#FFFFFF',
-              }}
-            >
-              <div className="flex items-start gap-3">
-                <span
-                  className="mt-0.5 inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0 text-[11px] font-bold"
-                  style={{ backgroundColor: on ? COLORS.accent : 'var(--surface-soft)', color: on ? '#FFFFFF' : '#9e9186' }}
-                >
-                  {on ? <Check size={13} /> : `+${ind.points}`}
-                </span>
-                <div className="min-w-0">
-                  <p className="text-sm font-semibold text-[#1A1A1A]">{ind.label}</p>
-                  <p className="text-xs text-[#7a7068] leading-relaxed mt-0.5">{ind.detail}</p>
-                </div>
-              </div>
-            </button>
-          );
-        })}
+        <div className="cc7-mtrack" data-ok={outcome !== 'not-eligible' || undefined}>
+          {incomeGateMet ? <i style={{ width: `${pct}%` }} /> : null}
+          <span className="cc7-mtick" style={{ left: `${eligiblePct}%` }} />
+          <span className="cc7-mtick" style={{ left: `${priorityPct}%` }} />
+        </div>
+        <div className="cc7-mkey t-meta"><span style={{ left: `${eligiblePct}%` }}>Eligible</span><span style={{ left: `${priorityPct}%` }}>Priority</span></div>
+        {incomeGateMet ? null : <p className="cc7-locked t-meta"><Lock size={12} aria-hidden="true" /> Locked until income is met</p>}
+        <p className="cc7-outcome" data-ok={outcome !== 'not-eligible' || undefined}>{outcome !== 'not-eligible' ? <Check size={16} aria-hidden="true" /> : null}<span>{outcomeText}</span></p>
       </div>
 
-      {/* Meter */}
-      <div className="mb-2 flex items-baseline justify-between">
-        <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400">Indicator score</span>
-        <span className="font-mono text-sm font-bold" style={{ color: incomeGateMet ? fillColor : '#9e9186' }}>
-          {score} / {HEAR_THRESHOLDS.max}
-        </span>
-      </div>
-      <div className="relative h-4 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--surface-soft)' }}>
-        {incomeGateMet ? (
-          <div
-            className="absolute inset-y-0 left-0 rounded-full transition-all duration-500 ease-out"
-            style={{ width: `${pct}%`, backgroundColor: fillColor }}
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center gap-1.5">
-            <Lock size={11} className="text-zinc-400" />
-            <span className="text-[10px] font-semibold text-zinc-400">Locked until income is met</span>
-          </div>
-        )}
-        {/* threshold markers */}
-        <div className="absolute inset-y-0 w-px bg-black/25" style={{ left: `${eligiblePct}%` }} />
-        <div className="absolute inset-y-0 w-px bg-black/25" style={{ left: `${priorityPct}%` }} />
-      </div>
-      <div className="relative h-4 mt-1 text-[9px] font-semibold text-zinc-400">
-        <span className="absolute -translate-x-1/2" style={{ left: `${eligiblePct}%` }}>Eligible</span>
-        <span className="absolute -translate-x-1/2" style={{ left: `${priorityPct}%` }}>Priority</span>
+      <div className="cc7-hlist" role="group" aria-label="HEAR indicators">
+        <ChoiceTile kind="several" className="cc7-hopt" chosen={incomeGateMet} onClick={() => toggle(incomeInd.id)}
+          label={<span className="cc7-hopt-in"><span className="cc7-hpts" aria-hidden="true"><Lock size={14} /></span><span className="cc7-hopt-copy"><span className="cc7-hopt-title">{incomeInd.label}</span><span className="t-meta">Required. {incomeInd.detail}</span></span></span>} />
+        {scored.map(ind => (
+          <ChoiceTile key={ind.id} kind="several" className="cc7-hopt" chosen={selected.includes(ind.id)} onClick={() => toggle(ind.id)}
+            label={<span className="cc7-hopt-in"><span className="cc7-hpts t-readout">+{ind.points}</span><span className="cc7-hopt-copy"><span className="cc7-hopt-title">{ind.label}</span><span className="t-meta">{ind.detail}</span></span></span>} />
+        ))}
       </div>
 
-      {/* Outcome */}
-      <div
-        className="mt-3 rounded-xl px-4 py-3 text-center"
-        style={{
-          backgroundColor: outcome === 'not-eligible' ? '#FFFFFF' : COLORS.successTint,
-        }}
-      >
-        <p
-          className="text-sm font-bold"
-          style={{ color: outcome === 'not-eligible' ? '#1A1A1A' : COLORS.successDarkText }}
-        >
-          {outcomeText}
-        </p>
-      </div>
-
-      {/* Priority groups note */}
-      <p className="text-[11px] text-[#7a7068] leading-relaxed mt-3">
-        <span className="font-semibold text-[#1A1A1A]">Automatic priority</span> if any apply: {HEAR_PRIORITY_GROUPS.join('; ')}.
-      </p>
-
-      {/* Verify callout — sanctioned left-border */}
-      <div className="mt-3 pl-3 py-1" style={{ borderLeft: `3px solid ${COLORS.accent}` }}>
-        <p className="text-xs italic leading-relaxed" style={{ color: COLORS.accentDarkText }}>
-          An estimate, not a decision. Point values and the income limit change yearly — confirm on{' '}
-          <a href="https://accesscollege.ie/hear/" target="_blank" rel="noreferrer" className="underline font-semibold">accesscollege.ie</a>.
-        </p>
-      </div>
+      <p className="t-meta"><b className="cc7-strong">Automatic priority</b> if any apply: {HEAR_PRIORITY_GROUPS.join('; ')}.</p>
+      <p className="t-meta">An estimate, not a decision. Point values and the income limit change yearly — confirm on{' '}
+        <a href="https://accesscollege.ie/hear/" target="_blank" rel="noreferrer" className="cc7-link">accesscollege.ie</a>.</p>
     </div>
   );
 };

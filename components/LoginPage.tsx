@@ -41,6 +41,7 @@ import { useModal } from '../hooks/useModal';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import AccountCard from './AccountCard';
 import AccountSchoolPicker from './AccountSchoolPicker';
+import { ChoiceGroup } from './ui/Choice';
 import SchoolCrest from './SchoolCrest';
 import AccountCrewPicker from './AccountCrewPicker';
 import { Checkbox } from './account-ui-runtime';
@@ -216,6 +217,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [gcSchool, setGcSchool] = useState('');
   // One school door, two shared logins: the counsellor's and the staff room's.
   const [schoolRole, setSchoolRole] = useState<'gc' | 'staff'>('gc');
+  // For schools has one Back, beside Sign in: it returns to the student
+  // sign-in the person came from (r5-sign-in, agreed 26 Nov 2026).
+  const [schoolFrom, setSchoolFrom] = useState<'welcome' | 'login' | 'register' | 'forgot'>('welcome');
   const [avatar, setAvatar] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   // Firebase pauses an account after repeated wrong passwords; trying again
@@ -835,6 +839,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const navigate = (next: typeof view) => {
     if (isLoading) return;
     if (view === 'gc' || next === 'gc') setPassword('');
+    if (next === 'gc' && view !== 'gc') setSchoolFrom(view);
     setShowPassword(false);
     setError(''); setFieldErrors({});
     setView(next);
@@ -1467,42 +1472,20 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 }}
               >
                 <fieldset className="auth-live-fields" disabled={isLoading}>
-                  <div
+                  <ChoiceGroup
                     className="auth-live-role"
-                    role="group"
-                    aria-label="School role"
-                  >
-                    <label htmlFor="school-role-gc">
-                      <input
-                        id="school-role-gc"
-                        type="radio"
-                        name="school-role"
-                        value="gc"
-                        checked={schoolRole === 'gc'}
-                        onChange={() => {
-                          setSchoolRole('gc');
-                          setError(''); setFieldErrors({});
-                          setPassword('');
-                        }}
-                      />
-                      Guidance counsellor
-                    </label>
-                    <label htmlFor="school-role-staff">
-                      <input
-                        id="school-role-staff"
-                        type="radio"
-                        name="school-role"
-                        value="staff"
-                        checked={schoolRole === 'staff'}
-                        onChange={() => {
-                          setSchoolRole('staff');
-                          setError(''); setFieldErrors({});
-                          setPassword('');
-                        }}
-                      />
-                      Staff room
-                    </label>
-                  </div>
+                    legend={<span className="sr-only">School role</span>}
+                    value={schoolRole}
+                    onChange={(role) => {
+                      setSchoolRole(role);
+                      setError(''); setFieldErrors({});
+                      setPassword('');
+                    }}
+                    options={[
+                      { value: 'gc', label: 'Guidance counsellor' },
+                      { value: 'staff', label: 'Staff room' },
+                    ]}
+                  />
                   <div className="auth-live-field">
                     <label htmlFor="gc-school">School</label>
                     <AccountSchoolPicker id="gc-school" value={gcSchool} disabled={isLoading} onChange={value => { setGcSchool(value); setError(''); setFieldErrors({}); }} />
@@ -1516,7 +1499,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     className="auth-live-quiet"
                     disabled={isLoading}
                     data-account-sound="skip"
-                    onClick={() => navigate('welcome')}
+                    onClick={() => navigate(schoolFrom)}
                   >
                     <ArrowLeft size={17} aria-hidden="true" />
                     Back

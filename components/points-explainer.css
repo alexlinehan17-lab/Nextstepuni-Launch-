@@ -1,0 +1,17 @@
+/* The Journey Points primer on a study first visit (r5-b1.css, "the first
+   visit"): hairline rows, the figures on one edge, the unit hanging after them;
+   the study rate keeps its one live orange. */
+.jp-sheet .ui-sheet-body { gap: 0; }
+.jp-sheet :where(h3, h4, p, dl, dd) { margin: 0; }
+.jp-sheet .jp-sheet-intro { margin-top: var(--space-2); }
+.jp-sheet .jp-sheet-label { margin: var(--space-6) 0 10px; color: var(--ink-muted); }
+.jp-sheet .jp-sheet-spend { margin-top: 6px; }
+.jp-sheet-rates { border-top: 1px solid var(--hairline); }
+.jp-sheet-rates > div { display: flex; align-items: center; gap: var(--space-3); min-height: 64px; padding: 10px 0; border-bottom: 1px solid var(--hairline); }
+.jp-sheet-rates dt { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
+.jp-sheet-rates dt .t-row { font-size: 16px; line-height: 21px; }
+.jp-sheet-rates dd { display: grid; grid-template-columns: auto 22px; align-items: baseline; column-gap: var(--space-1); }
+.jp-sheet-amount { color: var(--ink-primary); font-size: 30px; line-height: 32px; letter-spacing: -0.055em; font-variant-numeric: lining-nums tabular-nums; text-align: right; }
+.jp-sheet-amount--live { color: var(--accent-text); }
+.jp-sheet-varies { color: var(--ink-primary); font-size: 21px; line-height: 26px; letter-spacing: -0.03em; text-align: right; }
+.jp-sheet-unit { color: var(--ink-muted); font-size: 13px; line-height: 18px; }

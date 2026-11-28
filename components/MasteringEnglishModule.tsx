@@ -14,6 +14,9 @@ import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { ExerciseLabel, ExerciseSheet } from './learning/Exercise';
+import { Button, TextButton } from './ui/Button';
+import { AreaField } from './ui/Field';
 
 const theme = blueTheme;
 
@@ -85,31 +88,28 @@ const ShowDontTellConverter = () => {
   const pair = SHOW_DONT_TELL_PAIRS[currentIndex];
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
-        Show, Don't Tell Converter
-      </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-8">
-        Rewrite each flat sentence using sensory detail, then compare with an expert version.
-      </p>
-
-      {/* Progress indicator */}
-      <div className="flex items-center justify-center gap-2 mb-8">
-        {SHOW_DONT_TELL_PAIRS.map((_, i) => (
-          <div
-            key={i}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-              revealed[i]
-                ? 'bg-emerald-500'
-                : i === currentIndex
-                ? 'bg-blue-500'
-                : 'bg-zinc-200 dark:bg-zinc-600'
-            }`}
-          />
-        ))}
-        <span className="ml-3 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+    <ExerciseSheet title="Show, Don't Tell Converter" sub="Rewrite each flat sentence using sensory detail, then compare with an expert version." name="ShowDontTellConverter">
+      {/* Progress: a mark per sentence (converted ones green, the current one ink, the rest a hairline ring)
+          and the count in the readout */}
+      <div className="flex items-center gap-3">
+        <div className="ex-steps">
+          {SHOW_DONT_TELL_PAIRS.map((_, i) => (
+            <span
+              key={i}
+              className="block w-3 h-3 rounded-full transition-colors duration-300"
+              style={
+                revealed[i]
+                  ? { backgroundColor: 'var(--success-hex)' }
+                  : i === currentIndex
+                  ? { backgroundColor: 'var(--ink-primary)' }
+                  : { border: '1.5px solid var(--outline-soft)' }
+              }
+            />
+          ))}
+        </div>
+        <p className="ex-count ui-readout">
           {completedCount}/5 converted
-        </span>
+        </p>
       </div>
 
       <AnimatePresence mode="wait">
@@ -120,20 +120,19 @@ const ShowDontTellConverter = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
+            className="ex-stack"
           >
-            <div className="text-center space-y-6 py-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-900/30 mx-auto">
-                <PenSquare className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
-              </div>
-              <p className="text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed max-w-xl mx-auto">
-                <strong className="text-emerald-600 dark:text-emerald-400">Show Don't Tell</strong> is the single most powerful technique in Paper 1 creative writing. It transforms a H4 essay into H1 territory. The examiner doesn't want to be <em>told</em> how a character feels — they want to <em>feel it themselves</em>.
-              </p>
-              <button
-                onClick={handleStartOver}
-                className="mt-4 px-6 py-2.5 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-medium transition-colors duration-200"
-              >
+            {/* The summary: the bare glyph in ink-3, the words on the sheet, Start Over as a text button */}
+            <span className="ex-icon">
+              <PenSquare className="w-8 h-8" strokeWidth={1.75} />
+            </span>
+            <p className="t-body text-ink-primary">
+              <strong>Show Don't Tell</strong> is the single most powerful technique in Paper 1 creative writing. It transforms a H4 essay into H1 territory. The examiner doesn't want to be <em>told</em> how a character feels — they want to <em>feel it themselves</em>.
+            </p>
+            <div className="ex-actions">
+              <TextButton tone="quiet" onClick={handleStartOver}>
                 Start Over
-              </button>
+              </TextButton>
             </div>
           </MotionDiv>
         ) : (
@@ -143,89 +142,84 @@ const ShowDontTellConverter = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -40 }}
             transition={{ duration: 0.35 }}
+            className="ex-stack"
           >
-            {/* Telling card */}
-            <div className="rounded-xl border border-rose-200 dark:border-rose-800/50 bg-rose-50 dark:bg-rose-900/20 p-6 mb-6">
-              <span className="inline-block text-xs font-bold uppercase tracking-widest text-rose-500 dark:text-rose-400 mb-2">
+            {/* The telling sentence: words you read, so on the sheet under their label, not in a box */}
+            <div className="ex-thought">
+              <ExerciseLabel>
                 Telling
-              </span>
-              <p className="text-lg font-medium text-rose-900 dark:text-rose-100 italic">
+              </ExerciseLabel>
+              <p className="ex-thought-words">
                 "{pair.telling}"
               </p>
             </div>
 
             {/* User input area */}
             {!revealed[currentIndex] && (
-              <div className="space-y-4 mb-6">
-                <label className="block text-sm font-medium text-zinc-600 dark:text-zinc-400">
-                  Your "showing" version:
-                </label>
-                <textarea
+              <div className="ex-stack">
+                <AreaField
+                  label='Your "showing" version:'
                   value={userInputs[currentIndex]}
                   onChange={(e) => handleInputChange(e.target.value)}
                   placeholder="Rewrite the sentence using sensory details, actions, and specific imagery..."
                   rows={3}
-                  className="w-full bg-white dark:bg-surface-soft rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none resize-none" style={{ border: '1.5px solid #E7E5E4' }}
                 />
-                <button
-                  onClick={handleReveal}
-                  disabled={!userInputs[currentIndex].trim()}
-                  className={`w-full py-3 rounded-lg font-medium transition-all duration-200 ${
-                    userInputs[currentIndex].trim()
-                      ? 'bg-blue-500 hover:bg-blue-600 text-white'
-                      : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500 cursor-not-allowed'
-                  }`}
-                >
-                  Compare with Expert
-                </button>
+                <div className="ex-actions">
+                  <Button
+                    onClick={handleReveal}
+                    {...{ disabled: !userInputs[currentIndex].trim() }}
+                    className="disabled:opacity-40"
+                  >
+                    Compare with Expert
+                  </Button>
+                </div>
               </div>
             )}
 
-            {/* Comparison view */}
+            {/* Comparison view: the two versions on the sheet, each under its label and a hairline */}
             {revealed[currentIndex] && (
               <MotionDiv
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="space-y-4 mb-6"
+                className="ex-stack"
               >
                 <div className="grid md:grid-cols-2 gap-4">
                   {/* User's version */}
-                  <div className="rounded-xl border border-blue-200 dark:border-blue-800/50 bg-blue-50 dark:bg-blue-900/20 p-5">
-                    <span className="inline-block text-xs font-bold uppercase tracking-widest text-blue-500 dark:text-blue-400 mb-2">
+                  <div className="ex-block">
+                    <span className="ex-label">
                       Your Version
                     </span>
-                    <p className="text-sm text-blue-900 dark:text-blue-100 leading-relaxed">
+                    <p className="ex-block-text">
                       "{userInputs[currentIndex]}"
                     </p>
                   </div>
                   {/* Expert version */}
-                  <div className="rounded-xl border border-emerald-200 dark:border-emerald-800/50 bg-emerald-50 dark:bg-emerald-900/20 p-5">
-                    <span className="inline-block text-xs font-bold uppercase tracking-widest text-emerald-500 dark:text-emerald-400 mb-2">
+                  <div className="ex-block">
+                    <span className="ex-label">
                       Showing
                     </span>
-                    <p className="text-sm text-emerald-900 dark:text-emerald-100 leading-relaxed">
+                    <p className="ex-block-text">
                       "{pair.showing}"
                     </p>
                   </div>
                 </div>
                 {/* Tip */}
-                <p className="text-sm italic text-zinc-500 dark:text-zinc-400 text-center px-4">
+                <p className="t-sub">
                   Tip: {pair.tip}
                 </p>
                 {/* Next button */}
-                <button
-                  onClick={handleNext}
-                  className="w-full py-3 rounded-lg font-medium bg-emerald-500 hover:bg-emerald-600 text-white transition-colors duration-200"
-                >
-                  {currentIndex < 4 ? 'Next Sentence' : 'View Summary'}
-                </button>
+                <div className="ex-actions">
+                  <Button onClick={handleNext}>
+                    {currentIndex < 4 ? 'Next Sentence' : 'View Summary'}
+                  </Button>
+                </div>
               </MotionDiv>
             )}
           </MotionDiv>
         )}
       </AnimatePresence>
-    </div>
+    </ExerciseSheet>
   );
 };
 

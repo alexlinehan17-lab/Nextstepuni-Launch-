@@ -63,8 +63,8 @@ describe('native iOS module selection', () => {
       />,
     );
 
-    expect(screen.getByText('Choose a world')).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'Open Learn world' }));
+    expect(screen.getByRole('heading', { name: 'Five worlds' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /^Open Learn: 0 of 1 done$/ }));
     expect(onSelectCategory).toHaveBeenCalledWith('learning-cheat-codes');
   });
 
@@ -81,9 +81,9 @@ describe('native iOS module selection', () => {
       />,
     );
 
-    expect(screen.getByText('Choose a module')).toBeInTheDocument();
-    expect(screen.getByText('Continue · 50%')).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /Mind One/i }));
+    expect(screen.getByText('Up next · Module 01')).toBeInTheDocument();
+    expect(screen.getByText(/Section 3 of 4/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
     expect(onSelectCourse).toHaveBeenCalledWith('mind-one');
   });
 });

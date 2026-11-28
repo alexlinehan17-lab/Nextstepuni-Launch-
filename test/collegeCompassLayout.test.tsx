@@ -45,7 +45,11 @@ describe('College Compass horizontal timeline', () => {
     fireEvent.click(screen.getByRole('tab', { name: /The Access Window/ }));
     expect(screen.getByRole('tabpanel')).toHaveAccessibleName('The Access Window');
     expect(screen.queryByRole('heading', { name: 'Doors Open' })).not.toBeInTheDocument();
+    // Area 7a: the HEAR self-check has its own screen, opened from The Access Window (board c-tools1-compass).
+    expect(screen.queryByText('HEAR check')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Could I qualify for HEAR\?/ }));
     expect(screen.getByText('HEAR check')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1, name: 'Could I qualify for HEAR?' })).toBeInTheDocument();
   });
 
   test('supports arrow, Home and End keys with roving focus', async () => {

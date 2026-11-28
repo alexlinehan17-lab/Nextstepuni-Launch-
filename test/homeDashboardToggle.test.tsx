@@ -31,7 +31,7 @@ const HomeHarness = () => {
       user={{ uid: 'dashboard-toggle-test', name: 'Demo Student', avatar: '' }}
       settings={settings} updateSetting={updateSetting} onLogout={noop}
       onOpenSettings={noop} onOpenPassport={noop} onOpenSiteGuide={noop}
-      onOpenFeedback={noop} onUnreadCountChange={noop} completedCount={0}
+      onOpenFeedback={noop} onOpenDirection={noop} onUnreadCountChange={noop} completedCount={0}
       totalCount={0} unreadCount={0}
     ><KnowledgeTree
       onSelectCategory={noop}

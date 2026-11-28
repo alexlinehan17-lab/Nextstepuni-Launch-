@@ -2,7 +2,7 @@ import React from "react";
 import PointsGuide from "./PointsGuide";
 import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
-import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, X } from "lucide-react";
 import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
@@ -20,6 +20,9 @@ import GradeOptions from "./GradeOptions";
 import NorthStarArtwork from "./NorthStarArtwork";
 import SetupSelect from "./SetupSelect";
 import SetupSoundToggle from "./SetupSoundToggle";
+import { SelectionMark } from "../ui/Choice";
+import { useFlowDark } from "./useFlowDark";
+import { sentenceCase } from "../../utils/sentenceCase";
 
 export default function DesktopSetup(props: OnboardingProps) {
   const {
@@ -78,9 +81,13 @@ export default function DesktopSetup(props: OnboardingProps) {
     updateBulkGrade,
     deferUnfilledGrades,
   } = useSetupFlow(props, true);
+  // The white steps follow the device's dark setting; the review follows the
+  // appearance the student picks there; the orange pages stay orange.
+  const deviceDark = useFlowDark();
+  const dark = surface === "ink" || (surface === "paper" && draft.step !== "summary" && deviceDark);
   return (
     <div
-      className="setup-flow desk-flow"
+      className={`setup-flow desk-flow${dark ? " dark" : ""}`}
       data-step={draft.step}
       data-surface={surface}
       data-prevent-pull-to-refresh="true"
@@ -181,7 +188,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                             ? NORTH_STAR_CATEGORY_BLOBS[category.id].iconPath
                             : "/icons/onboarding/north-star.png"
                         }
-                        label={category?.label ?? "Find your direction"}
+                        label={sentenceCase(category?.label ?? "Find your direction")}
                         reduced={reduced}
                       />
                     </>
@@ -429,6 +436,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                                       ? "Leaving Cert Applied"
                                       : "Year"}
                                 </span>
+                                <SelectionMark on={draft.year === year} />
                               </button>
                             ))}
                           </div>
@@ -456,7 +464,8 @@ export default function DesktopSetup(props: OnboardingProps) {
                             >
                               {String(index + 1).padStart(2, "0")}
                             </span>
-                            <span>{item.label}</span>
+                            <span>{sentenceCase(item.label)}</span>
+                            <SelectionMark on={draft.category === item.id} />
                           </button>
                         ))}
                       </div>
@@ -520,6 +529,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                               >
                                 <img src={VISION_CARD_ART[item.id]} alt="" />
                                 <span>{item.label}</span>
+                                <SelectionMark on={selected} shape="square" />
                               </button>
                             );
                           })}
@@ -586,6 +596,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                               <span className="setup-subject-state" aria-hidden="true">
                                 {draft.subjects.includes(item.name) ? "Added" : "Add"}
                               </span>
+                              <SelectionMark on={draft.subjects.includes(item.name)} shape="square" />
                             </button>
                           ))}
                       </div>
@@ -628,6 +639,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                                   }
                                 >
                                   {LEVEL_LABELS[level]}
+                                  <SelectionMark on={config.level === level} />
                                 </button>
                               ),
                             )}
@@ -721,6 +733,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                                 <span className="setup-day-state">
                                   {selected ? "Study" : "Rest"}
                                 </span>
+                                <SelectionMark on={selected} shape="square" />
                               </button>
                             );
                           })}
@@ -882,11 +895,11 @@ export default function DesktopSetup(props: OnboardingProps) {
               {saving
                 ? "Saving your plan…"
                 : draft.step === "welcome"
-                  ? "Get Started"
+                  ? "Get started"
                   : draft.step === "summary"
                     ? guest
                       ? "Dive in"
-                      : "Start Learning"
+                      : "Start learning"
                     : editSnapshot
                       ? "Save and review"
                       : bulkGrades
@@ -901,7 +914,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                               : "Continue to schedule"
                           : "Continue"}
             </span>
-            <ArrowUpRight size={24} aria-hidden="true" />
+            <ArrowRight size={20} strokeWidth={1.75} aria-hidden="true" />
           </button>
           <div className="setup-footer-links">
             {(!transition || draft.step !== "subjects" || editSnapshot) && (

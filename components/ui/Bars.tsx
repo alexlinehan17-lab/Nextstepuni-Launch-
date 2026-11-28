@@ -15,22 +15,24 @@
  *     <Button kind="main" size="lg" block arrow="forward" missing={...}>Continue</Button>
  *   </PinnedFooter>
  *
- * These are parts only: the live tab bar (MobileBottomNav in App.tsx) and every
- * live header stay as they are until stage 3 moves navigation onto them.
+ * The phone's tab bar (MobileBottomNav in App.tsx) is the TabBar; the shared
+ * page headers are the TopBar (area 0, the frame).
  * Placement is the shell's: the top bar is sticky at the top of its scroll
  * area, the tab bar and the footer sticky at the bottom; a shell that fixes
  * them to the glass wraps them in its own frame layer.
  */
-import { type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { ChevronLeft, X, type LucideIcon } from 'lucide-react';
-import { IconButton } from './Button';
-import { useFrameTabBar } from './Frame';
+import { IconButton, TextButton } from './Button';
+import { useFrameTabBar, useFrameTaskActive } from './Frame';
 import ThemeArtwork from '../ThemeArtwork';
 import './parts.css';
 
 export interface LeaveControl {
-  /** back: a page you tapped into. close: something that came up over where you were. */
-  kind: 'back' | 'close';
+  /** back: a page you tapped into. close: something that came up over where you were.
+   *  cancel: a place that has become a task (study set-up once something is
+   *  chosen): the word, which clears what was chosen and gives the place back. */
+  kind: 'back' | 'close' | 'cancel';
   onPress: () => void;
   /** Accessible name (default "Back" / "Close"). */
   label?: string;
@@ -45,10 +47,23 @@ export interface TopBarProps {
   over?: ReactNode;
   /** A place's small capitals label at the left (the date on Home). */
   placeLabel?: ReactNode;
-  /** A Launchpad tool's own drawing, 36px at the right end: its only appearance on the screen. */
-  art?: string;
+  /** A Launchpad tool's own drawing, 36px at the right end of a phone's bar:
+   *  its only appearance there (a source, or a drawn element). A laptop bar
+   *  carries no drawing (Alex, 26 Nov 2026). */
+  art?: string | ReactNode;
   /** Or one action at the right (an IconButton or one text action). */
   action?: ReactNode;
+  /** A place on a laptop: one quiet action at the left end where a leave control would be
+   *  ("How it works" on the island). Ignored when there is a leave control or a place label. */
+  lead?: ReactNode;
+  /** A control centred in the bar instead of a title (the island's selection bar on a laptop):
+   *  midway between the bar's ends, with the lead and the action balancing it. Given with a
+   *  title, the name sits at the left beside the leave control and the control stays centred
+   *  between two equal zones (the paper viewer on a laptop: Paper or Scheme in the middle). */
+  center?: ReactNode;
+  /** A second row inside the bar, under the name (the paper viewer on a phone: Paper or
+   *  Scheme beside its Answers switch). */
+  below?: ReactNode;
   /** A tool's bar: 52px row, 19px name. */
   tool?: boolean;
   /** A hairline under the bar, once content has scrolled beneath it. */
@@ -56,27 +71,43 @@ export interface TopBarProps {
   className?: string;
 }
 
-export function TopBar({ leave, title, over, placeLabel, art, action, tool = false, ruled = false, className = '' }: TopBarProps) {
+export function TopBar({ leave, title, over, placeLabel, art, action, lead, center, below, tool = false, ruled = false, className = '', ...rest }: TopBarProps & { 'data-student-page-header'?: boolean }) {
   const LeaveGlyph = leave?.kind === 'close' ? X : ChevronLeft;
+  const split = Boolean(title && center);
+  const start = (
+    <span className="ui-bar-slot">
+      {leave?.kind === 'cancel'
+        ? <TextButton className="ui-bar-cancel" onClick={leave.onPress}>{leave.label ?? 'Cancel'}</TextButton>
+        : leave
+        ? <IconButton label={leave.label ?? (leave.kind === 'close' ? 'Close' : 'Back')} onClick={leave.onPress}
+            icon={<LeaveGlyph className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+        : placeLabel ? <span className="ui-bar-label">{placeLabel}</span> : lead ?? null}
+    </span>
+  );
+  const name = title ? (
+    <span className="ui-bar-mid">
+      {over ? <span className="ui-bar-over">{over}</span> : null}
+      <h1 className="ui-bar-title">{title}</h1>
+    </span>
+  ) : null;
+  const end = typeof art === 'string' ? <ThemeArtwork className="ui-bar-art" src={art} transparentBackground alt="" />
+    : art ? <span className="ui-bar-art" aria-hidden="true">{art}</span> : action ?? null;
   return (
-    <header className={`ui-part ui-bar frame-bar${tool ? ' ui-bar--tool' : ''}${ruled ? ' ui-bar--ruled' : ''} ${className}`.trim()}>
-      <div className="ui-bar-row">
-        <span className="ui-bar-slot">
-          {leave
-            ? <IconButton label={leave.label ?? (leave.kind === 'close' ? 'Close' : 'Back')} onClick={leave.onPress}
-                icon={<LeaveGlyph className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
-            : placeLabel ? <span className="ui-bar-label">{placeLabel}</span> : null}
-        </span>
-        {title ? (
-          <span className="ui-bar-mid">
-            {over ? <span className="ui-bar-over">{over}</span> : null}
-            <h1 className="ui-bar-title">{title}</h1>
-          </span>
-        ) : null}
-        <span className="ui-bar-slot ui-bar-slot--end">
-          {art ? <ThemeArtwork className="ui-bar-art" src={art} transparentBackground alt="" /> : action ?? null}
-        </span>
-      </div>
+    <header {...rest} className={`ui-part ui-bar frame-bar${tool ? ' ui-bar--tool' : ''}${ruled ? ' ui-bar--ruled' : ''}${art ? ' ui-bar--art' : ''}${split ? ' ui-bar--split' : ''}${below ? ' ui-bar--below' : ''} ${className}`.trim()}>
+      {split ? (
+        <div className="ui-bar-row">
+          <span className="ui-bar-zone">{start}{name}</span>
+          <span className="ui-bar-center">{center}</span>
+          <span className="ui-bar-zone ui-bar-zone--end">{end}</span>
+        </div>
+      ) : (
+        <div className="ui-bar-row">
+          {start}
+          {name ?? (center ? <span className="ui-bar-mid ui-bar-mid--control">{center}</span> : null)}
+          <span className="ui-bar-slot ui-bar-slot--end">{end}</span>
+        </div>
+      )}
+      {below ? <div className="ui-bar-below">{below}</div> : null}
     </header>
   );
 }
@@ -85,6 +116,8 @@ export interface TabBarItem<V extends string = string> {
   id: V;
   label: string;
   icon: LucideIcon;
+  /** A first-visit tour stop on this tab (data-coach). */
+  coach?: string;
 }
 
 export interface TabBarProps<V extends string> {
@@ -92,21 +125,57 @@ export interface TabBarProps<V extends string> {
   items: TabBarItem<V>[];
   current: V | null;
   onSelect: (id: V) => void;
+  /** The bar's accessible name (default "Places"). */
+  label?: string;
   className?: string;
 }
 
+/** A text field has focus on a touch screen: the keyboard is up. */
+function isTypingTarget(element: Element | null): boolean {
+  if (!element) return false;
+  if (element instanceof HTMLTextAreaElement) return true;
+  if (element instanceof HTMLInputElement) return !/^(checkbox|radio|range|button|submit|reset|file|color|image|hidden)$/.test(element.type);
+  return element instanceof HTMLElement && element.isContentEditable;
+}
+
+/** True while the on-screen keyboard is up (a touch screen with a text field
+ *  focused). The tab bar steps aside then (navigation.md, "Tab bar"). */
+export function useTouchKeyboardOpen(): boolean {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return undefined;
+    const touch = window.matchMedia('(pointer: coarse)');
+    const update = () => setOpen(touch.matches && isTypingTarget(document.activeElement));
+    // Moving from one field to the next blurs, then focuses: read the result
+    // once the focus has landed, so the bar does not flicker.
+    let pending = 0;
+    const later = () => { window.clearTimeout(pending); pending = window.setTimeout(update, 0); };
+    document.addEventListener('focusin', later);
+    document.addEventListener('focusout', later);
+    return () => {
+      window.clearTimeout(pending);
+      document.removeEventListener('focusin', later);
+      document.removeEventListener('focusout', later);
+    };
+  }, []);
+  return open;
+}
+
 /** Five places, outline icons over a 10.5px label; the current one is ink with
- *  a 2px ink marker above it. It never starts anything. */
-export function TabBar<V extends string>({ items, current, onSelect, className = '' }: TabBarProps<V>) {
-  // While it is mounted the frame knows there is a tab bar, so toasts and
+ *  a 2px ink marker above it. It never starts anything, and it steps aside
+ *  while the keyboard is up and while a screen is a task (useFrameTask). */
+export function TabBar<V extends string>({ items, current, onSelect, label = 'Places', className = '' }: TabBarProps<V>) {
+  const task = useFrameTaskActive();
+  // While it is shown the frame knows there is a tab bar, so toasts and
   // floating controls clear it (--edge-bottom).
-  useFrameTabBar();
+  useFrameTabBar(!task);
+  const typing = useTouchKeyboardOpen();
   return (
-    <nav aria-label="Places" className={`ui-part ui-tabbar frame-foot ${className}`.trim()}>
+    <nav aria-label={label} hidden={typing || task || undefined} className={`ui-part ui-tabbar frame-foot ${className}`.trim()}>
       {items.map(item => {
         const Icon = item.icon;
         return (
-          <button key={item.id} type="button" className="ui-tab" aria-current={item.id === current ? 'page' : undefined} onClick={() => onSelect(item.id)}>
+          <button key={item.id} type="button" className="ui-tab" data-coach={item.coach} aria-current={item.id === current ? 'page' : undefined} onClick={() => onSelect(item.id)}>
             <Icon className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
             <span>{item.label}</span>
           </button>
@@ -121,15 +190,18 @@ export interface PinnedFooterProps {
   children: ReactNode;
   /** An optional quiet line under it. */
   note?: ReactNode;
+  /** An optional line over it that says where it goes ("Next: Your New OS", reading a module). */
+  lead?: ReactNode;
   /** A hairline above it, when content scrolls under it. */
   ruled?: boolean;
   className?: string;
 }
 
 /** The pinned footer of a task screen. A screen has a tab bar or this, not both. */
-export function PinnedFooter({ children, note, ruled = false, className = '' }: PinnedFooterProps) {
+export function PinnedFooter({ children, note, lead, ruled = false, className = '' }: PinnedFooterProps) {
   return (
     <div className={`ui-part ui-foot frame-foot${ruled ? ' ui-foot--ruled' : ''} ${className}`.trim()}>
+      {lead ? <p className="ui-foot-lead">{lead}</p> : null}
       {children}
       {note ? <p className="ui-foot-note">{note}</p> : null}
     </div>

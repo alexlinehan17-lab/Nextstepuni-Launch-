@@ -4,7 +4,7 @@
  */
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Inbox, RefreshCw } from 'lucide-react';
+import { RefreshCw } from 'lucide-react';
 import {
   collection,
   doc,
@@ -32,6 +32,9 @@ import {
   type FeedbackPlatform,
   type FeedbackStatus,
 } from '../utils/anonymousFeedback';
+import { Button, TextButton } from './ui/Button';
+import { Menu } from './ui/Menu';
+import { EmptyState, LoadingShape } from './ui/States';
 
 interface FeedbackEntry {
   id: string;
@@ -45,6 +48,20 @@ interface FeedbackEntry {
 }
 
 const PAGE_SIZE = 50;
+
+/**
+ * How many messages are New, and when the newest New one arrived: the inbox's own two reads (its New
+ * count, and its New list newest first) with a limit of 1. For the Overview's third row. Read only.
+ */
+export async function loadNewFeedback(): Promise<{ count: number; newestAt: Date | null }> {
+  const feedbackCollection = collection(db, 'anonymousFeedback');
+  const [countSnapshot, newest] = await Promise.all([
+    getCountFromServer(query(feedbackCollection, where('status', '==', 'new'))),
+    getDocs(query(feedbackCollection, where('status', '==', 'new'), orderBy('createdAt', 'desc'), limit(1))),
+  ]);
+  const createdAt = newest.docs[0]?.data().createdAt as Timestamp | undefined;
+  return { count: countSnapshot.data().count, newestAt: createdAt?.toDate ? createdAt.toDate() : null };
+}
 
 function formatDate(createdAt?: Timestamp): string {
   if (!createdAt?.toDate) return 'Just now';
@@ -155,114 +172,65 @@ const AdminFeedbackInbox: React.FC = () => {
     );
   };
 
+  const refresh = () => {
+    if (isLoading) return;
+    lastDocument.current = null;
+    void Promise.all([loadFeedback(), loadCounts()]);
+  };
+
   return (
-    <section aria-labelledby="feedback-inbox-title">
-      <div className="mb-6 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-        <div>
-          <p className="mb-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--admin-muted)]">Anonymous student voice</p>
-          <h2 id="feedback-inbox-title" className="font-sans text-3xl font-semibold text-[var(--admin-ink)]">Feedback inbox</h2>
-          <p className="mt-1 max-w-2xl text-sm text-[var(--admin-muted)]">
-            Account details are not automatically attached. A message may still contain details a student typed themselves.
-          </p>
+    <section aria-labelledby="feedback-inbox-title" className="adm-feedback">
+      <header className="gc8-head adm-head">
+        <p className="gc8-label">Anonymous student voice</p>
+        <h1 id="feedback-inbox-title" className="gc8-name">Feedback inbox</h1>
+        <p className="gc8-sub">
+          Account details are not automatically attached. A message may still contain details a student typed themselves.
+        </p>
+        {/* The five statuses in one menu that says which is showing and how many (they ran off the edge as chips). */}
+        <div className="adm-asof">
+          <Menu
+            label="Feedback status"
+            value={statusFilter}
+            onChange={value => setStatusFilter(value as FeedbackStatus)}
+            options={FEEDBACK_STATUSES.map(status => ({ value: status, label: `${FEEDBACK_STATUS_LABELS[status]} · ${statusCounts[status]}` }))}
+          />
+          <TextButton tone="quiet" className="gc8-ib" aria-disabled={isLoading || undefined} onClick={refresh}>
+            <RefreshCw className={`ui-icon${isLoading ? ' adm-spin' : ''}`} width={16} height={16} strokeWidth={2} aria-hidden="true" />Refresh
+          </TextButton>
         </div>
-        <button
-          type="button"
-          onClick={() => {
-            lastDocument.current = null;
-            void Promise.all([loadFeedback(), loadCounts()]);
-          }}
-          disabled={isLoading}
-          className="flex items-center justify-center gap-2 self-start rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-sm font-bold text-[var(--admin-ink)] disabled:opacity-50 md:self-auto"
-        >
-          <RefreshCw size={15} className={isLoading ? 'animate-spin' : ''} />
-          Refresh
-        </button>
-      </div>
+      </header>
 
-      <div className="mb-6 flex gap-2 overflow-x-auto pb-2" role="tablist" aria-label="Feedback status">
-        {FEEDBACK_STATUSES.map(status => {
-          const selected = statusFilter === status;
-          return (
-            <button
-              key={status}
-              type="button"
-              role="tab"
-              aria-selected={selected}
-              onClick={() => setStatusFilter(status)}
-              className="flex shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-sm font-bold transition-colors"
-              style={{
-                borderColor: selected ? 'var(--admin-accent)' : 'var(--admin-rule)',
-                backgroundColor: selected ? 'var(--admin-accent)' : 'var(--admin-surface)',
-                color: selected ? 'var(--admin-action-ink)' : 'var(--admin-ink)',
-              }}
-            >
-              {FEEDBACK_STATUS_LABELS[status]}
-              <span
-                className="rounded-full px-2 py-0.5 text-[11px]"
-                style={{
-                  backgroundColor: selected ? 'var(--admin-action)' : 'var(--admin-raised)',
-                  color: selected ? 'var(--admin-action-ink)' : 'var(--admin-ink)',
-                }}
-              >
-                {statusCounts[status]}
-              </span>
-            </button>
-          );
-        })}
-      </div>
-
-      {error && <p className="mb-5 text-sm font-semibold text-[var(--admin-danger)]" role="alert">{error}</p>}
+      {error && <p className="adm-alert" role="alert">{error}</p>}
 
       {isLoading ? (
-        <p className="py-14 text-center text-[var(--admin-muted)]">Loading feedback…</p>
+        <LoadingShape rows={4} label="Loading feedback…" />
       ) : entries.length === 0 ? (
-        <div className="border-t border-[var(--admin-rule)] py-16 text-center">
-          <Inbox size={30} className="mx-auto mb-3 text-[var(--admin-muted)]" />
-          <p className="font-sans text-xl font-semibold text-[var(--admin-ink)]">Nothing here yet.</p>
-          <p className="mt-1 text-sm text-[var(--admin-muted)]">New submissions will appear here after students send them.</p>
-        </div>
+        <EmptyState className="adm-empty" title="Nothing here yet." line="New submissions will appear here after students send them." />
       ) : (
-        <div className="space-y-4">
+        <div className="adm-msgs">
           {entries.map(entry => (
-            <article key={entry.id} className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-6">
-              <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
-                <div className="min-w-0">
-                  <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[var(--admin-accent)]">
-                    {FEEDBACK_CATEGORY_LABELS[entry.category] || 'Feedback'}
-                  </p>
-                  <p className="mt-3 whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--admin-body)]">{entry.message}</p>
-                </div>
-                <label className="shrink-0 text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">
-                  Status
-                  <select
-                    value={entry.status}
-                    onChange={event => updateStatus(entry.id, event.target.value as FeedbackStatus)}
-                    className="mt-1 block min-w-32 rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-3 py-2 text-sm font-semibold normal-case tracking-normal text-[var(--admin-ink)]"
-                  >
-                    {FEEDBACK_STATUSES.map(status => (
-                      <option key={status} value={status}>{FEEDBACK_STATUS_LABELS[status]}</option>
-                    ))}
-                  </select>
-                </label>
-              </div>
-              <div className="mt-5 flex flex-wrap gap-x-4 gap-y-1 border-t border-[var(--admin-rule)] pt-3 text-xs text-[var(--admin-muted)]">
-                <span>{formatDate(entry.createdAt)}</span>
-                <span>{entry.context?.moduleTitle || entry.context?.surface || 'Context not included'}</span>
-                <span>{entry.platform}</span>
-                <span>Version {entry.appVersion}</span>
+            <article key={entry.id} className="adm-msg">
+              <p className="gc8-label">{FEEDBACK_CATEGORY_LABELS[entry.category] || 'Feedback'}</p>
+              <p className="adm-msgtext">{entry.message}</p>
+              <div className="adm-msgfoot">
+                <span className="adm-msgmeta">
+                  <span className="gc8-meta">{formatDate(entry.createdAt)} · {entry.context?.moduleTitle || entry.context?.surface || 'Context not included'}</span>
+                  <span className="gc8-meta"><span>{entry.platform}</span> · <span>Version {entry.appVersion}</span></span>
+                </span>
+                <Menu
+                  label="Status"
+                  value={entry.status}
+                  onChange={next => updateStatus(entry.id, next as FeedbackStatus)}
+                  options={FEEDBACK_STATUSES.map(status => ({ value: status, label: FEEDBACK_STATUS_LABELS[status] }))}
+                />
               </div>
             </article>
           ))}
           {hasMore && (
-            <div className="pt-3 text-center">
-              <button
-                type="button"
-                onClick={() => void loadFeedback(true)}
-                disabled={isLoadingMore}
-                className="rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-5 py-2.5 text-sm font-bold text-[var(--admin-ink)] disabled:opacity-50"
-              >
+            <div className="adm-more">
+              <Button aria-disabled={isLoadingMore || undefined} onClick={() => { if (!isLoadingMore) void loadFeedback(true); }}>
                 {isLoadingMore ? 'Loading…' : 'Load more'}
-              </button>
+              </Button>
             </div>
           )}
         </div>

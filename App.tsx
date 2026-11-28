@@ -7,7 +7,7 @@ import { preparePlannedStudy } from './services/plannedStudyLaunch';
 
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { Home, Compass, ChartNoAxesCombined, Timer, Mountain } from 'lucide-react';
+import { House, Compass, ChartNoAxesColumn, Timer, Map as MapIcon } from 'lucide-react';
 import { MobileProfileSheet } from './components/UserProfileMenu';
 import NextStepUniSidebar from './components/navigation/NextStepUniSidebar';
 import { type CategoryType } from './components/KnowledgeTree';
@@ -51,7 +51,7 @@ import { isSchoolStaff } from './utils/authUtils';
 import { useNavigation } from './contexts/NavigationContext';
 import { useProgress } from './contexts/ProgressContext';
 import { saveModuleProgress } from './services/progressRepository';
-import { shouldShowStudentChrome } from './utils/studentChrome';
+import { shouldShowStudentChrome, shouldShowStudentSidebar } from './utils/studentChrome';
 import { isRankBaselineReady, observeRankForSession, type RankUpTracker } from './utils/rankUpTransition';
 import { isProgressReadyForUser } from './utils/progressHydration';
 import { DEMO_STUDENT_UID } from './data/devStudent';
@@ -64,11 +64,13 @@ import { StudySessionProvider } from './contexts/StudySessionContext';
 import StudyMiniTimer from './components/study/StudyMiniTimer';
 import { onNotificationOpen } from './services/notifications';
 import './services/studyTimerDemo'; // inert unless a DEBUG native build asks (simulator checks)
-import { useFrameTabBar } from './components/ui/Frame';
+import { TabBar, type TabBarItem } from './components/ui/Bars';
+import { placeOf, type PlaceId } from './utils/places';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
   viewState: string;
+  activeTool: string | null;
   onGoHome: () => void;
   onGoToProgress: () => void;
   onGoToStudy: () => void;
@@ -76,47 +78,32 @@ interface MobileBottomNavProps {
   onGoToInnovationZone: () => void;
 }
 
-const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToProgress, onGoToStudy, onGoToJourney, onGoToInnovationZone }) => {
+/** The phone's five places, drawn by the shared tab bar (navigation.md, "Tab
+ *  bar"): outline icons, the current place in ink with its short ink mark.
+ *  Which place is current comes from utils/places.ts, the one answer the
+ *  sidebar and the top bar also use. */
+const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, activeTool, onGoHome, onGoToProgress, onGoToStudy, onGoToJourney, onGoToInnovationZone }) => {
   const mobileAppDesign = useMobileAppDesign();
-  useFrameTabBar();
-  const tabs = [
-    { id: 'tree', label: 'Home', icon: Home, action: onGoHome },
-    { id: 'dashboard', label: 'Progress', icon: ChartNoAxesCombined, action: onGoToProgress },
-    { id: 'study-session', label: 'Study', icon: Timer, action: onGoToStudy },
-    { id: 'my-journey', label: 'Journey', icon: Mountain, action: onGoToJourney },
-    { id: 'innovation-zone', label: 'Launch', icon: Compass, action: onGoToInnovationZone },
+  const places: TabBarItem<PlaceId>[] = [
+    { id: 'tree', label: 'Home', icon: House },
+    { id: 'dashboard', label: 'Progress', icon: ChartNoAxesColumn },
+    { id: 'study-session', label: 'Study', icon: Timer },
+    { id: 'my-journey', label: 'Journey', icon: MapIcon },
+    { id: 'innovation-zone', label: 'Launch', icon: Compass, coach: mobileAppDesign ? 'launchpad' : undefined },
   ];
+  const go: Record<PlaceId, () => void> = {
+    tree: onGoHome, dashboard: onGoToProgress, 'study-session': onGoToStudy,
+    'my-journey': onGoToJourney, 'innovation-zone': onGoToInnovationZone,
+  };
 
   // Portaled to document.body so the nav stays viewport-anchored even when an
   // ancestor (e.g. PullToRefresh) applies a transform, which would otherwise
-  // re-anchor position: fixed to the transformed wrapper.
+  // re-anchor position: fixed to the transformed wrapper. The wrapper pins it
+  // to the glass; the bar itself owns the home-indicator space (frame-foot).
   return createPortal(
-    <nav
-      aria-label={mobileAppDesign ? 'Main navigation' : undefined}
-      className="editorial-bottom-nav frame-foot fixed bottom-0 left-0 right-0 z-[var(--z-tabbar)] md:hidden bg-white dark:bg-surface-paper border-t-[1.5px] border-[#383838] dark:border-zinc-700"
-    >
-      <div className="mx-auto flex h-16 max-w-md items-center justify-around px-1">
-        {tabs.map((tab) => {
-          const isActive = tab.id === viewState || (tab.id === 'dashboard' && viewState === 'insights') || (tab.id === 'tree' && (mobileAppDesign ? ['category', 'modules', 'module', 'learning-paths'].includes(viewState) : viewState === 'category'));
-          return (
-            <button
-              key={tab.id}
-              type="button"
-              aria-current={isActive ? 'page' : undefined}
-              data-coach={mobileAppDesign && tab.id === 'innovation-zone' ? 'launchpad' : undefined}
-              onClick={tab.action}
-              className={`relative flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[rgba(var(--accent),0.45)] ${isActive ? 'text-zinc-900 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}
-            >
-              {isActive && <span className="editorial-nav-rule" aria-hidden="true" />}
-              <span className="flex h-8 w-11 items-center justify-center">
-                <tab.icon size={20} strokeWidth={isActive ? 2 : 1.6} />
-              </span>
-              <span className="text-[10px] font-semibold tracking-tight">{tab.label}</span>
-            </button>
-          );
-        })}
-      </div>
-    </nav>,
+    <div className="editorial-bottom-nav fixed bottom-0 left-0 right-0 z-[var(--z-tabbar)] md:hidden">
+      <TabBar label="Main navigation" items={places} current={placeOf({ viewState, activeTool })} onSelect={id => go[id]()} />
+    </div>,
     document.body
   );
 };
@@ -181,7 +168,10 @@ const App: React.FC = () => {
     }
   }, [updateDemoProgress, user?.uid]);
 
-  const [settingsOpen, setSettingsOpen] = useState(false);
+  // Settings is a page now (agreed 26 Nov 2026), with its own place in the
+  // navigation (?view=settings): opening it navigates there, and its Back
+  // returns to where the student came from.
+  const setSettingsOpen = useCallback((open: boolean) => { if (open) nav.navigateToSettings(); }, [nav]);
   const [siteGuideOpen, setSiteGuideOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
@@ -925,6 +915,24 @@ const App: React.FC = () => {
     onOpenFeedback: () => setFeedbackOpen(true),
     onOpenMobileProfile: () => setMobileProfileOpen(true),
     hasUnreadNotifications: unreadNotificationCount > 0,
+    settingsPage: user ? (
+      <SettingsModal
+        isOpen
+        onClose={nav.goBack}
+        settings={settings}
+        updateSetting={updateSetting}
+        userName={user.name}
+        userSchool={user.school}
+        userYearGroup={user.yearGroup ?? studentProfile?.yearGroup}
+        hasStudyProfile={studentProfile !== null}
+        hasNorthStar={northStar !== null}
+        onStartProfileSetup={() => nav.navigateToOnboarding()}
+        onChangeSubjects={studentProfile ? () => setChangeSubjectsOpen(true) : undefined}
+        onResetNorthStar={() => setNorthStarEditOpen(true)}
+        onAdvanceYear={() => setYearTransitionOpen(true)}
+        onLogout={handleLogout}
+      />
+    ) : null,
   };
 
   // One study session for the whole app, so the timer keeps counting while a
@@ -948,11 +956,12 @@ const App: React.FC = () => {
         </div>
       )}
 
-      {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin ? (
+      {user && userProgressReady && shouldShowStudentSidebar(viewState) && !isSchoolStaff(user.role) && !user.isAdmin ? (
         <NextStepUniSidebar user={user} settings={settings} updateSetting={updateSetting}
           onLogout={handleLogout} onOpenSettings={() => setSettingsOpen(true)}
           onOpenPassport={() => setPassportOpen(true)} onOpenSiteGuide={() => setSiteGuideOpen(true)}
           onOpenFeedback={() => setFeedbackOpen(true)} onUnreadCountChange={setUnreadNotificationCount}
+          onOpenDirection={() => (northStar ? nav.navigateToDirection() : setNorthStarEditOpen(true))}
           completedCount={completedCount} totalCount={studentCourses.length} unreadCount={unreadNotificationCount}>
           <AppRouter {...routerProps} />
         </NextStepUniSidebar>
@@ -976,6 +985,7 @@ const App: React.FC = () => {
       {user && userProgressReady && shouldShowStudentChrome(viewState) && !user.isAdmin && !isSchoolStaff(user.role) && (
         <MobileBottomNav
           viewState={viewState}
+          activeTool={activeTool}
           onGoHome={handleGoHome}
           onGoToProgress={handleGoToDashboard}
           onGoToStudy={handleGoToStudy}
@@ -1016,22 +1026,6 @@ const App: React.FC = () => {
 
       {user && userProgressReady && (
         <>
-          <SettingsModal
-            isOpen={settingsOpen}
-            onClose={() => setSettingsOpen(false)}
-            settings={settings}
-            updateSetting={updateSetting}
-            userName={user?.name}
-            userSchool={user?.school}
-            userYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
-            hasStudyProfile={studentProfile !== null}
-            hasNorthStar={northStar !== null}
-            onStartProfileSetup={() => { setSettingsOpen(false); nav.navigateToOnboarding(); }}
-            onChangeSubjects={studentProfile ? () => { setSettingsOpen(false); setChangeSubjectsOpen(true); } : undefined}
-            onResetNorthStar={() => { setSettingsOpen(false); setNorthStarEditOpen(true); }}
-            onAdvanceYear={() => { setSettingsOpen(false); setYearTransitionOpen(true); }}
-            onLogout={handleLogout}
-          />
           <YearTransitionFlow
             isOpen={yearTransitionOpen}
             onClose={() => setYearTransitionOpen(false)}

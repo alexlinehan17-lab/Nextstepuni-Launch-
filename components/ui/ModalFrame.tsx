@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { useModal } from '../../hooks/useModal';
+import './parts.css';
 
 interface ModalFrameProps {
   open: boolean;
@@ -92,8 +93,8 @@ const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, 
             initial={{ opacity: 0, y: reduceMotion ? 0 : 24, scale: reduceMotion ? 1 : 0.985 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: reduceMotion ? 0 : 16, scale: reduceMotion ? 1 : 0.99 }}
-            transition={reduceMotion ? { duration: 0 } : { type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-            className={isListeningRoom ? 'feedback-listening-room' : `frame-sheet [--frame-card-max:92dvh] flex w-full flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-white dark:bg-surface-paper shadow-[5px_5px_0_0_#383838] sm:rounded-[24px] dark:border-zinc-600 dark:bg-surface-paper ${widths[width]}`}
+            transition={reduceMotion ? { duration: 0 } : { duration: 0.24, ease: [0.2, 0, 0, 1] }}
+            className={isListeningRoom ? 'feedback-listening-room' : `frame-sheet [--frame-card-max:92dvh] flex w-full flex-col overflow-hidden rounded-t-[20px] border border-[var(--outline-soft)] bg-[var(--surface-raised)] shadow-[var(--float)] sm:rounded-[20px] ${widths[width]}`}
           >
             {isListeningRoom ? (
               <header className="feedback-brand-header">
@@ -104,18 +105,19 @@ const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, 
                   <X size={19} aria-hidden="true" />
                 </button>
               </header>
-            ) : <div className="frame-dialog-head flex shrink-0 items-start justify-between gap-4 border-b border-[var(--outline-soft)] px-5 py-4 sm:px-6 sm:py-5 dark:border-zinc-700">
-              <div>
-                {eyebrow && <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#8D857E] dark:text-zinc-500">{eyebrow}</p>}
-                <h2 id={labelId} className="font-serif text-2xl font-semibold leading-tight text-[#1A1A1A] dark:text-white">{title}</h2>
-                {description && <p className="mt-1 text-sm leading-relaxed text-[#706A64] dark:text-zinc-400">{description}</p>}
-              </div>
-              <button type="button" onClick={requestClose} disabled={closeDisabled} aria-label="Close" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-white text-[#59534D] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-surface-soft dark:text-zinc-300">
-                <X size={18} />
+            ) : <div className="frame-dialog-head flex shrink-0 items-start gap-2 border-b border-[var(--hairline)] py-2 pl-2 pr-5 sm:pr-6">
+              {/* The shared sheet's head (area 9): Close at the top left, the small label over the title. */}
+              <button type="button" onClick={requestClose} disabled={closeDisabled} aria-label="Close" className="ui-part ui-icon-btn shrink-0">
+                <X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
               </button>
+              <div className="min-w-0 pt-2">
+                {eyebrow && <p className="t-label mb-1 text-[var(--ink-muted)]">{eyebrow}</p>}
+                <h2 id={labelId} className="t-heading text-[var(--ink-primary)]">{title}</h2>
+                {description && <p className="t-sub mt-1">{description}</p>}
+              </div>
             </div>}
             <div data-lenis-prevent className={isListeningRoom ? 'feedback-scroll' : 'min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 py-5 sm:px-6'}>{children}</div>
-            {footer && <div className="border-t border-[var(--outline-soft)] bg-white/60 px-5 py-4 sm:px-6 dark:border-zinc-700 dark:bg-zinc-950/30">{footer}</div>}
+            {footer && <div className="border-t border-[var(--hairline)] px-5 py-4 sm:px-6">{footer}</div>}
           </motion.section>
         </motion.div>
       )}

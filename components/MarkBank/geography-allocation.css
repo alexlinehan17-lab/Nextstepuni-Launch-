@@ -1,32 +1,26 @@
 /* Geography allocation: the parts of the reveal that are Geography's own. The
-   rows, chips, part headings and directions come from claim-rows.css. */
-.mb-geo-alloc { display: grid; gap: 14px; }
-.mb-geo-group { display: grid; gap: 7px; }
-.mb-geo-unit { display: grid; gap: 7px; }
-.mb-geo-unit-label { font: 700 9.5px/1.5 'DM Sans', system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--mb-label); margin-top: 4px; }
+   rows, counts, part headings and directions come from claim-rows.css. Each
+   part sits on the page, apart by space and one hairline. */
+.mb-geo-alloc { display: grid; gap: var(--space-4); }
+.mb-geo-group { display: grid; gap: var(--space-2); }
+.mb-geo-group + .mb-geo-group { padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
+.mb-geo-unit { display: grid; gap: var(--space-2); }
+.mb-geo-unit-label { margin-top: 4px; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
 
-/* An SRP counter sits in the same frame as a row: minus, count, plus, and the
-   marks those SRPs are worth. */
+/* An SRP counter is a row that is not pressed itself, like a stepped row
+   (claim-rows.css): its words on the page, minus, count, plus, and the marks
+   those SRPs are worth, ruled by a hairline. */
 .mb-geo-srp {
-  width: 100%; text-align: left; display: grid; gap: 10px; align-items: center;
+  width: 100%; text-align: left; display: grid; gap: var(--space-3); align-items: center;
   grid-template-columns: minmax(0, 1fr) auto auto;
-  padding: 11px 12px; border-radius: 12px;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 500 13.5px/1.42 'DM Sans', system-ui, sans-serif;
-  transition: background 160ms, border-color 160ms;
+  padding: 12px 0; border-top: 1px solid var(--hairline); color: var(--ink-primary);
+  font: 400 15px/21px var(--font-ui);
 }
-.mb-geo-srp[data-claimed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
-.mb-geo-srp[data-claimed="true"] .mb-geo-counter output { color: var(--mb-on-claim); }
-.mb-geo-counter { display: inline-flex; align-items: center; gap: 4px; }
-.mb-geo-counter button {
-  min-width: 32px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 700 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
-}
-.mb-geo-counter button:disabled { opacity: .4; cursor: default; }
-.mb-geo-counter output { min-width: 26px; text-align: center; font: 750 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; color: var(--mb-ink); }
+/* Minus and plus are the shared stepper buttons (claim-rows.css, .mb-mark-btn--step). */
+.mb-geo-counter { display: inline-flex; align-items: center; gap: var(--space-2); }
+.mb-geo-counter output { min-width: 26px; text-align: center; color: var(--ink-primary); font: 400 15px/1 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 
-.mb-geo-pool { margin: 0; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-geo-pool { margin: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 
 @media (max-width: 480px) {
   .mb-geo-srp { grid-template-columns: minmax(0, 1fr) auto; }

@@ -1,5 +1,4 @@
 import { BrandedBridge,InstructionList } from './learning/BrandedFeatures';
-import { moduleFill } from './learning/brandTokens';
 
 
 /**
@@ -7,7 +6,7 @@ import { moduleFill } from './learning/brandTokens';
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import { AnimatePresence,motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
 Book,
 Brain,Link,
@@ -22,6 +21,9 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { AnswerLine,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { ChoiceTile } from './ui/Choice';
+import { Field } from './ui/Field';
 
 const theme = yellowTheme;
 
@@ -54,95 +56,52 @@ const YetReframe = () => {
 
     const engagementPct = Math.round((reframed.size / statements.length) * 100);
 
-    return <div className="wr-skin" data-wide="YetReframe"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The "Yet" Reframe</h4>
-        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Click each fixed statement to add "yet" and watch the cognitive shift.</p>
-
-        {/* Engagement meter */}
-        <div className="mb-6">
-          <div className="flex items-center justify-between mb-1.5">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)]">Brain Engagement</span>
-            <span className="text-[10px] font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{engagementPct}%</span>
+    return <ExerciseSheet title={'The "Yet" Reframe'} sub={'Click each fixed statement to add "yet" and watch the cognitive shift.'} name="YetReframe">
+        {/* Engagement meter: its label in small capitals, the percentage in the readout, an ink line on a hairline */}
+        <div className="flex flex-col gap-2">
+          <div className="flex items-baseline justify-between gap-3">
+            <ExerciseLabel>Brain Engagement</ExerciseLabel>
+            <span className="ex-count ui-readout">{engagementPct}%</span>
           </div>
-          <div className="w-full h-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
+          <div className="w-full h-1 rounded-sm overflow-hidden" style={{ backgroundColor: 'var(--hairline)' }}>
             <motion.div
-              className="h-full rounded-full bg-[var(--module-orange)] from-[var(--module-orange)] via-[var(--module-orange)] to-[var(--module-orange)]"
+              className="h-full rounded-sm"
+              style={{ backgroundColor: 'var(--ink-primary)' }}
               animate={{ width: `${engagementPct}%` }}
               transition={{ type: 'spring', stiffness: 80, damping: 15 }}
             />
           </div>
         </div>
 
-        <div className="space-y-3">
+        {/* Each statement is a button that stays pressed once reframed (its mark fills ink and the tick draws) */}
+        <div className="ex-cards">
           {statements.map((s, i) => {
             const isReframed = reframed.has(i);
             const isAnimating = activeIndex === i && !isReframed;
 
+            // Reframed and locked: shown at full strength, as today, not in the reader's dimmed disabled look.
             return (
-              <motion.button
-                key={i}
-                onClick={() => handleClick(i)}
-                disabled={isReframed}
-                className="w-full text-left p-4 rounded-xl transition-all"
-                style={isReframed ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }}
-                layout data-wide-button="true" data-selected={!!(isReframed)} data-tone="mint" aria-pressed={!!(isReframed)}
-              >
-                <div className="flex items-start gap-3">
-                  {/* Status indicator */}
-                  <motion.div
-                    animate={{
-                      backgroundColor: moduleFill(isReframed ? "var(--module-success)" : "var(--module-surface)"),
-                      scale: isAnimating ? [1, 1.3, 1] : 1,
-                    }}
-                    className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                  >
-                    {isReframed && (
-                      <motion.svg
-                        initial={{ pathLength: 0 }}
-                        animate={{ pathLength: 1 }}
-                        transition={{ duration: 0.3 }}
-                        viewBox="0 0 16 16"
-                        className="w-3.5 h-3.5"
-                      >
-                        <motion.path
-                          d="M3 8 L6.5 11.5 L13 5"
-                          fill="none"
-                          stroke="white"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          initial={{ pathLength: 0 }}
-                          animate={{ pathLength: 1 }}
-                        />
-                      </motion.svg>
-                    )}
-                  </motion.div>
-
-                  <div className="flex-1 min-w-0">
-                    <AnimatePresence mode="wait">
-                      {isReframed ? (
-                        <motion.div
-                          key="reframed"
-                          initial={{ opacity: 0, y: 4 }}
-                          animate={{ opacity: 1, y: 0 }}
-                        >
-                          <p className="font-semibold text-sm text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">{s.yet}</p>
-                          <p className="text-[11px] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mt-1">{s.shift}</p>
-                        </motion.div>
-                      ) : (
-                        <motion.div key="fixed">
-                          <p className={`font-semibold text-sm ${isAnimating ? "text-[var(--module-danger-text)] line-through" : "text-[var(--module-ink)] dark:text-[var(--module-muted)]"}`}>
-                            {s.fixed}
-                          </p>
-                          {!isAnimating && (
-                            <p className="text-[11px] text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Tap to reframe</p>
-                          )}
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </div>
-              </motion.button>
+              <motion.div key={i} layout>
+                <ChoiceTile
+                  kind="toggle"
+                  chosen={isReframed}
+                  onClick={() => handleClick(i)}
+                  disabled={isReframed}
+                  style={{ opacity: 1 }}
+                  label={isReframed ? (
+                    <motion.span className="block" initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}>
+                      {s.yet}
+                    </motion.span>
+                  ) : (
+                    <span className={isAnimating ? 'line-through text-ink-muted' : undefined}>
+                      {s.fixed}
+                    </span>
+                  )}
+                  meta={!isReframed && !isAnimating ? 'Tap to reframe' : undefined}
+                  note={isReframed ? s.shift : undefined}
+                  noteTone="plain"
+                />
+              </motion.div>
             );
           })}
         </div>
@@ -151,17 +110,15 @@ const YetReframe = () => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-6 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] text-center"
           >
-            <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Every "I can't" is just an "I can't yet" waiting to be unlocked.</p>
-            <p className="text-xs text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-1">That single word keeps your brain engaged with the error instead of shutting down.</p>
+            <AnswerLine><b>Every "I can't" is just an "I can't yet" waiting to be unlocked.</b> That single word keeps your brain engaged with the error instead of shutting down.</AnswerLine>
           </motion.div>
         )}
 
         {reframed.size > 0 && reframed.size < statements.length && (
-          <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-4">{statements.length - reframed.size} more to go...</p>
+          <p className="ex-count ui-readout">{statements.length - reframed.size} more to go...</p>
         )}
-      </div></div>;
+      </ExerciseSheet>;
 };
 
 const BRIDGE_SCENARIOS = [
@@ -215,26 +172,25 @@ const YetAudit = () => {
     const [block, setBlock] = useState('');
     const [action, setAction] = useState('');
 
-    return <div className="wr-skin" data-wide="YetAudit"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your "Yet" Audit</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Run your own block through the Identify-Append-Bridge protocol.</p>
-            <div className="space-y-6 max-w-xl mx-auto">
-                <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">1. Identify the Block</p>
-                    <input aria-label="Identify the block" value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all" style={{ border: "1.5px solid var(--module-line)" }}/>
+    return <ExerciseSheet title={'Your "Yet" Audit'} sub="Run your own block through the Identify-Append-Bridge protocol." name="YetAudit">
+            <div className="ex-questions">
+                <div className="flex flex-col gap-2">
+                    <ExerciseLabel>1. Identify the Block</ExerciseLabel>
+                    <Field aria-label="Identify the block" value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" />
                 </div>
-                <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">2. Add "Yet"</p>
-                    <div role="status" aria-live="polite" data-filled={!!block} className="p-3 rounded-lg text-sm min-h-[44px]" style={block ? { backgroundColor: "var(--module-success-soft)", border: "2px solid var(--module-line)", color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", color: "var(--module-muted)" }}>
+                {/* The block with "yet" added: words that answer what the student typed, on the sheet, not in a box */}
+                <div className="flex flex-col gap-2">
+                    <ExerciseLabel>2. Add "Yet"</ExerciseLabel>
+                    <div role="status" aria-live="polite" data-filled={!!block} className={block ? 'ex-quote' : 'ex-quote text-ink-muted'}>
                         {block ? `${block}... yet.` : '...'}
                     </div>
                 </div>
-                <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">3. Bridge to Action</p>
-                    <input aria-label="Bridge to action" value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all" style={{ border: "1.5px solid var(--module-line)" }}/>
+                <div className="flex flex-col gap-2">
+                    <ExerciseLabel>3. Bridge to Action</ExerciseLabel>
+                    <Field aria-label="Bridge to action" value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." />
                 </div>
             </div>
-        </div></div>;
+        </ExerciseSheet>;
 }
 
 // --- MODULE COMPONENT ---

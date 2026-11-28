@@ -28,7 +28,7 @@
 
 /* Every part: the typeface, no tap flash, no text selection on a control. */
 .ui-part { font-family: var(--font-ui); -webkit-font-smoothing: antialiased; }
-:is(.ui-btn, .ui-link, .ui-icon-btn, .ui-choice, .ui-switch, .ui-seg-item, .ui-menu-btn, .ui-menu-item, .ui-row, .ui-press, .ui-need, .ui-tab) {
+:is(.ui-btn, .ui-link, .ui-icon-btn, .ui-choice, .ui-switch, .ui-seg-item, .ui-menu-btn, .ui-menu-item, .ui-row, .ui-press, .ui-need, .ui-tab, .ui-checkrow) {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
   user-select: none;
@@ -72,9 +72,15 @@
 /* Truly unavailable (locked, not for this plan): a well, a quiet label, no lift. */
 .ui-btn--unavailable,
 .ui-btn--unavailable:active { background: var(--surface-soft); color: var(--ink-muted); border-color: var(--hairline); box-shadow: none; transform: none; cursor: default; }
+/* Waiting for a missing step (`missing`): still pressable (it takes the
+   student to the step), drawn in the well until the step is done, when it
+   turns charcoal (c-study, the pinned Start session: kit .btn[aria-disabled]). */
+.ui-btn--waiting,
+.ui-btn--main.ui-btn--waiting:active { background: var(--surface-soft); color: var(--ink-muted); border-color: var(--hairline); box-shadow: none; }
 @media (hover: hover) and (pointer: fine) {
   .ui-btn:not(.ui-btn--main, .ui-btn--unavailable):hover { background: var(--surface-soft); }
   .ui-btn--main:hover { background: var(--action-press); }
+  .ui-btn--main.ui-btn--waiting:hover { background: var(--surface-soft); }
 }
 
 /* The text button: no box. Ink; quiet in ink-2; danger in red text. */
@@ -179,16 +185,29 @@
   transition: opacity var(--t-press) var(--ease-out);
 }
 .ui-choice:active { transform: scale(0.98); }
-.ui-choice[aria-checked='true'] { border-color: var(--ink-primary); }
-.ui-choice[aria-checked='true']::before { opacity: 1; transition-duration: var(--t-ui); }
+.ui-choice:is([aria-checked='true'], [aria-pressed='true']) { border-color: var(--ink-primary); }
+.ui-choice:is([aria-checked='true'], [aria-pressed='true'])::before { opacity: 1; transition-duration: var(--t-ui); }
 .ui-choice-body { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 2px; }
 .ui-choice-label { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
 .ui-choice-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+/* The answer line under a chosen answer: ink words, the green tick beside them (never a
+   green sentence, never a mint or coral fill); `plain` is quieter and has no tick. */
+.ui-choice-note { display: flex; align-items: flex-start; gap: 5px; margin-top: 2px; color: var(--ink-secondary); font-size: 13px; line-height: 18px; letter-spacing: 0; animation: ui-rise var(--t-ui) var(--ease-out) both; }
+.ui-choice-note--ok { color: var(--ink-primary); }
+.ui-tick { display: block; flex: none; width: 15px; height: 15px; margin-top: 1.5px; fill: none; stroke: var(--success-hex); stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+@keyframes ui-rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 .ui-choice-art { width: 40px; height: 40px; flex: none; object-fit: contain; }
 /* The grid tile: two columns on a phone at most, at least 88px tall. */
 .ui-choice--tile { flex-direction: column; align-items: flex-start; gap: 6px; min-height: 88px; padding: 14px; }
 .ui-choice--tile > .ui-mark { position: absolute; top: 14px; right: 14px; }
 .ui-choice--tile .ui-choice-body { padding-right: 30px; }
+/* Short choices in a row (ChoiceTile compact: self-mark's Blank to Full): 44px, the words
+   centred; chosen, the same ink outline and the tick drawn before the words, with no ring. */
+.ui-choice--compact { justify-content: center; gap: var(--space-1); min-width: 0; min-height: 44px; padding: 0 var(--space-1); text-align: center; }
+.ui-choice--compact > .ui-choice-label { overflow: hidden; font-size: 14px; line-height: 18px; letter-spacing: 0; text-overflow: ellipsis; white-space: nowrap; }
+.ui-choice--compact > .ui-mark { display: none; width: 14px; height: 14px; margin: 0; border: 0; border-radius: 0; background: none; }
+.ui-choice--compact > .ui-mark--on { display: grid; }
+.ui-choice--compact > .ui-mark svg { width: 14px; height: 14px; stroke: var(--ink-primary); stroke-width: 2.2; }
 .ui-choices-group { display: flex; flex-direction: column; gap: var(--space-3); }
 .ui-choices { display: flex; flex-direction: column; gap: var(--space-2); }
 .ui-choices--tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
@@ -286,6 +305,37 @@
 }
 .ui-seg-item[aria-checked='true'] { color: var(--ink-primary); font-weight: 700; }
 .ui-seg--md .ui-seg-item { height: 44px; font-size: 15px; }
+/* Choices as words (Week / Month / Year; the Fieldbook's Stories, Visitors, Wonder tiles):
+   the current word in ink with a short ink line under it, the others quieter. No tray. */
+.ui-words { display: flex; align-items: center; }
+.ui-word {
+  position: relative;
+  height: 44px;
+  padding: 0 var(--space-2);
+  border: 0;
+  background: none;
+  color: var(--ink-secondary);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: color var(--t-ui) var(--ease-out);
+}
+.ui-word::after {
+  content: "";
+  position: absolute;
+  left: var(--space-2);
+  right: var(--space-2);
+  bottom: 6px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--ink-primary);
+  transform: scaleX(0);
+  transition: transform var(--t-ui) var(--ease-out);
+}
+.ui-word[aria-checked='true'] { color: var(--ink-primary); }
+.ui-word[aria-checked='true']::after { transform: none; }
+.ui-word:active { color: var(--ink-primary); }
 
 /* ── 3. The menu button and its menu ─────────────────────────────────────── */
 
@@ -311,7 +361,14 @@
 .ui-menu-btn-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .ui-menu-btn-count { font-weight: inherit; }
 .ui-menu-btn--block { display: flex; width: 100%; justify-content: space-between; }
+/* In a full-width button the position stands at the trailing edge, in the mono ("1 of 5"). */
+.ui-menu-btn--block > .ui-menu-btn-text { flex: 1 1 auto; text-align: left; }
+.ui-menu-btn-count--end { flex: none; margin-right: 2px; color: var(--ink-muted); font-weight: 400; }
 .ui-menu-btn:active { transform: scale(0.98); background: var(--surface-soft); }
+/* Open: the button takes the ink edge and its chevron turns up, as the menu grows from it. */
+.ui-menu-btn[data-popup-open] { border-color: var(--outline-strong); }
+.ui-menu-btn > .ui-icon { transition: transform var(--t-ui) var(--ease-out); }
+.ui-menu-btn[data-popup-open] > .ui-icon { transform: rotate(180deg); }
 .ui-menu-layer { z-index: var(--z-dialog); outline: none; }
 .ui-menu {
   min-width: max(220px, var(--anchor-width, 0px));
@@ -347,13 +404,55 @@
 }
 .ui-menu-item[data-highlighted] { background: var(--surface-soft); }
 .ui-menu-item[aria-checked='true'] { font-weight: 700; }
+.ui-menu-item-text { display: flex; align-items: baseline; gap: var(--space-3); min-width: 0; }
+/* A panel of a screen's tools (MenuPanel: the paper viewer's Tools on a laptop): a head, small
+   labels over groups, rows with a second line, a switch or a glyph at the trailing edge. */
+.ui-menu-btn--face .ui-menu-btn-text { display: inline-flex; align-items: center; gap: var(--space-2); }
+.ui-menu-btn--face .ui-menu-btn-text .ui-icon { color: var(--ink-primary); }
+.ui-menu.ui-menu--panel { width: 380px; max-width: var(--available-width, 100vw); padding: 4px 6px 8px; }
+.ui-menu-head { display: flex; align-items: center; justify-content: space-between; min-height: 48px; margin: -4px -6px 4px; padding: 0 18px; border-bottom: 1px solid var(--hairline); }
+.ui-menu-head-title { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.ui-menu-head-status { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.ui-menu-label { margin: 0; padding: 12px 12px 4px; color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.ui-menu-item.ui-menu-item--row { justify-content: flex-start; min-height: 52px; padding: 5px 12px; color: var(--ink-primary); text-align: left; text-decoration: none; }
+.ui-menu-item--row[aria-checked='true'] { font-weight: inherit; }
+.ui-menu-item-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+.ui-menu-item-title { font-size: 16px; line-height: 21px; }
+.ui-menu-item-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+.ui-menu-item-glyph { color: var(--ink-muted); }
+.ui-menu-item .ui-switch[data-on] { background: var(--ink-primary); }
+.ui-menu-item .ui-switch[data-on] .ui-switch-knob { transform: translateX(20px); }
+.dark .ui-menu-item .ui-switch[data-on] .ui-switch-knob { background: var(--action-ink); }
+.ui-menu-num { flex: none; color: var(--ink-muted); font-style: normal; font-weight: 400; }
 .ui-menu-item .ui-icon { visibility: hidden; }
 .ui-menu-item[aria-checked='true'] .ui-icon { visibility: visible; }
+/* A row's own glyph (MenuAction: the chevron, or the arrow up-right) always shows; it comes after
+   the rule above that hides an unticked tick, so the order cannot hide it (area 9). */
+.ui-menu-item--row .ui-icon { visibility: visible; }
+/* Inside a menu: the selection bar (MenuSegment) and rows with a character (MenuRadioRows). */
+.ui-seg.ui-menu-seg { margin: 0 6px; }
+.ui-menu-seg .ui-seg-item { display: flex; align-items: center; justify-content: center; outline: none; cursor: default; }
+.ui-menu-seg .ui-seg-item[data-highlighted] { color: var(--ink-primary); }
+.ui-menu-rows { display: flex; flex-direction: column; }
+.ui-menu-item.ui-menu-item--pick { justify-content: flex-start; gap: var(--space-3); padding: 0 10px; font-size: 15px; }
+.ui-menu-item--pick > .ui-menu-item-title { flex: 1; min-width: 0; font-size: 15px; line-height: 20px; }
+.ui-menu-item--pick > .ui-icon { color: var(--ink-primary); }
+.ui-menu-item-art { display: block; width: 32px; height: 32px; flex: none; }
+.ui-menu-item-art > * { display: block; width: 100%; height: 100%; }
+/* A row that does a thing where it is (no glyph), a destructive row in red, a hairline between
+   groups, and a row you tick with the pick-several mark (area 8a: a staff row's menu). */
+.ui-menu-item.ui-menu-item--plain { min-height: 44px; }
+.ui-menu-item--danger .ui-menu-item-title { color: var(--danger-tint-ink); }
+.ui-menu-rule { height: 1px; margin: 6px 0; background: var(--hairline); }
+.ui-menu-item.ui-menu-item--check { min-height: 48px; padding: 0 12px; }
+.ui-menu-item--check > .ui-mark { visibility: visible; }
 
 /* ── 4. Things that come up over the screen ──────────────────────────────── */
 
 /* The sheet: a bottom sheet below 640px, a centred dialog from 640px (the frame
    does the inset maths: frame-sheet-backdrop / frame-sheet). */
+/* An over-screen (OverScreen): a task over where you were, the whole window on a phone. */
+.ui-over { z-index: var(--z-takeover); display: flex; flex-direction: column; background: var(--surface-canvas); color: var(--ink-primary); outline: none; }
 .ui-layer { z-index: var(--z-dialog); display: flex; flex-direction: column; justify-content: flex-end; }
 .ui-scrim {
   position: absolute;
@@ -395,8 +494,26 @@
 .ui-sheet-head > :last-child { justify-self: end; }
 .ui-sheet-title { margin: 0; padding: 0 var(--space-1); font-size: 21px; font-weight: 400; line-height: 26px; letter-spacing: -0.03em; text-align: center; }
 .ui-sheet-title--small { font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+/* A sheet about someone: Close, their character bare, the name at the left
+   with a small line under it, a hairline below (the account sheet). */
+.ui-sheet-head--lead { display: flex; justify-content: flex-start; gap: 10px; min-height: 60px; padding: 0 var(--space-6) var(--space-2) var(--space-2); border-bottom: 1px solid var(--hairline); }
+.ui-sheet-head--lead > :last-child { justify-self: auto; }
+.ui-sheet-art { display: block; flex: none; width: 40px; height: 40px; }
+.ui-sheet-art > * { display: block; width: 100%; height: 100%; }
+.ui-sheet-who { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+.ui-sheet-head--lead .ui-sheet-title { padding: 0; text-align: left; }
+.ui-sheet-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+/* A plain sheet: the title at the left under the handle, no Close. */
+.ui-sheet .ui-sheet-head.ui-sheet-head--plain { display: block; min-height: 0; padding: var(--space-3) var(--space-6) var(--space-1); }
+.ui-sheet .ui-sheet-head--plain > .ui-sheet-title { justify-self: start; padding: 0; text-align: left; }
 .ui-sheet-text { min-height: 44px; padding: 0 var(--space-3); border: 0; background: none; color: var(--ink-primary); font-size: 17px; }
 .ui-sheet-text--strong { font-weight: 700; }
+/* A quiet word at the right of the head ("Saved"), and a head whose title sits at the left beside Close. */
+.ui-sheet-status { padding: 0 var(--space-3); color: var(--ink-muted); font-size: 15px; line-height: 21px; white-space: nowrap; }
+.ui-sheet-head--start { grid-template-columns: 44px minmax(0, 1fr) auto; column-gap: var(--space-1); }
+/* Controls at the right of the head (the marking scheme's previous and next question). */
+.ui-sheet-actions { display: flex; align-items: center; }
+.ui-sheet-head--start > .ui-sheet-title { justify-self: start; text-align: left; }
 .ui-sheet-body {
   display: flex;
   flex: 1 1 auto;
@@ -408,6 +525,30 @@
   overscroll-behavior: contain;
 }
 .ui-sheet-foot { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-4) var(--space-6) 0; }
+/* A bare sheet carries its own words and way out (the quick tour): no handle,
+   no header; its words start 24px down, its buttons 20px under them. */
+.ui-sheet--bare { --frame-pad-bottom: var(--space-3); padding-top: var(--space-6); }
+.ui-sheet--bare .ui-sheet-body { gap: var(--space-2); padding-top: 0; }
+.ui-sheet--bare .ui-sheet-foot { padding-top: var(--space-5); }
+/* A pair of buttons the same size side by side (Skip and Next). */
+.ui-pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+.ui-pair > .ui-btn { width: 100%; }
+/* The popover: on a laptop, the same content as a sheet, beside what it is
+   about (components.md, "Sheets, dialogs, toasts"). The caller places it. */
+.ui-pop {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  width: 360px;
+  max-width: calc(100vw - 2 * var(--space-4));
+  padding: 22px;
+  border: 1px solid var(--outline-soft);
+  border-radius: var(--r-card);
+  background: var(--surface-raised);
+  color: var(--ink-primary);
+  box-shadow: var(--float);
+  font-family: var(--font-ui);
+}
 @media (min-width: 640px) {
   .ui-layer { justify-content: center; align-items: center; }
   .ui-sheet { width: min(100%, 520px); border-radius: var(--r-card); transform: translateY(0) scale(0.97); opacity: 0; transition: opacity var(--t-move) var(--ease-out), transform var(--t-move) var(--ease-out); }
@@ -442,6 +583,8 @@
 .ui-confirm-text { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
 .ui-confirm .ui-btn { margin-top: var(--space-2); }
 .ui-confirm .ui-link { align-self: center; }
+/* A typed check under the words (a password to confirm a delete, area 8b). */
+.ui-confirm-check { display: flex; flex-direction: column; gap: var(--space-2); }
 
 /* The toast: one line, charcoal, above the tab bar, one at a time. Placed by
    the frame (frame-float-bottom clears the tab bar and the home indicator). */
@@ -471,7 +614,18 @@
 .ui-toast[data-state='open'] { opacity: 1; transform: none; }
 .ui-toast[data-state='leaving'] { opacity: 0; transform: none; transition-duration: var(--t-draw); }
 .ui-toast-text { min-width: 0; }
+/* A standing message (offline) sits under a passing one in the same place: one shows at a time. */
+.ui-toast.ui-toast--standing { z-index: calc(var(--z-toast) - 1); }
 .ui-toast .ui-link { min-height: 21px; color: inherit; }
+
+/* The ruler: short choices of one kind in one row (grades), one box divided by hairlines; the
+   chosen one gains the ink outline; a dot under a marked one (today's grade). */
+.ui-ruler { display: grid; grid-template-columns: repeat(var(--ruler-n, 8), minmax(0, 1fr)); border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); }
+.ui-ruler-item { position: relative; display: flex; min-width: 0; min-height: 44px; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 0; border: 0; border-left: 1px solid var(--hairline); background: none; color: var(--ink-secondary); font-size: 15px; line-height: 20px; font-variant-numeric: tabular-nums; transition: color var(--t-press) var(--ease-out); }
+.ui-ruler-item:first-child { border-left: 0; }
+.ui-ruler-item[aria-checked='true'] { z-index: 1; border-radius: var(--r-sm); color: var(--ink-primary); font-weight: 700; box-shadow: 0 0 0 1px var(--outline-strong), inset 0 0 0 1px var(--outline-strong); }
+.ui-ruler-item:active { background: var(--surface-soft); }
+.ui-ruler-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--ink-muted); }
 
 /* ── 5. Bars ─────────────────────────────────────────────────────────────── */
 
@@ -497,11 +651,56 @@
   text-align: center;
   white-space: nowrap;
 }
-.ui-bar-title { max-width: 100%; margin: 0; overflow: hidden; text-overflow: ellipsis; font-size: 17px; font-weight: 400; line-height: 21px; letter-spacing: -0.02em; }
+/* Two classes deep, so a screen's own h1 rules (mobile-editorial's bold DM
+   Sans headings) cannot restyle the bar's name. */
+/* A control in the middle of the bar (a selection bar), centred between the bar's ends. */
+.ui-bar-mid.ui-bar-mid--control { display: flex; align-items: center; justify-content: center; pointer-events: none; }
+.ui-bar-mid--control > * { pointer-events: auto; }
+.ui-bar .ui-bar-title { max-width: 100%; margin: 0; overflow: hidden; text-overflow: ellipsis; color: var(--ink-primary); font-family: var(--font-ui); font-size: 17px; font-weight: 400; line-height: 21px; letter-spacing: -0.02em; white-space: nowrap; }
 .ui-bar--tool .ui-bar-title { font-size: 19px; line-height: 23px; }
-.ui-bar-over { color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.08em; }
+.ui-bar .ui-bar-over { color: var(--ink-muted); font-family: var(--font-ui); font-size: 11px; font-weight: 400; line-height: 14px; letter-spacing: 0.08em; }
+.ui-place-head .ui-place-name { font-family: var(--font-ui); font-weight: 400; }
 .ui-bar-label { padding: 0 var(--space-4); color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+/* Cancel, where a place that has become a task keeps its leave control. */
+.ui-bar .ui-bar-cancel { padding: 0 var(--space-4); font-size: 17px; line-height: 22px; }
 .ui-bar-art { display: block; width: 36px; height: 36px; margin-right: 6px; object-fit: contain; }
+.ui-bar-art > :is(svg, img) { display: block; width: 100%; height: 100%; }
+/* A bar with a second row under the name, inside the same bar (the paper
+   viewer on a phone: Paper or Scheme beside its Answers switch). */
+.ui-bar-below { display: flex; align-items: center; gap: var(--space-4); padding: var(--space-1) var(--space-6) var(--space-3); }
+/* A bar with the name at the left beside the leave control, a control in the
+   middle and actions at the right (the paper viewer on a laptop): the middle
+   stays centred between two equal zones. */
+.ui-bar--split .ui-bar-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); column-gap: var(--space-4); }
+.ui-bar-zone { display: flex; min-width: 0; align-items: center; gap: var(--space-1); }
+.ui-bar-zone--end { justify-content: flex-end; gap: var(--space-3); }
+.ui-bar--split .ui-bar-mid { position: static; flex: 1; min-width: 0; align-items: flex-start; text-align: left; }
+.ui-bar-center { display: flex; align-items: center; justify-content: center; min-width: 0; }
+/* A page's one-line explanation under its bar (Year Plans), when it has one. */
+.ui-bar-sub { margin: 0; padding: var(--space-2) var(--space-6) 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+/* A place's opening, where its bar would be: no leave control, its small label
+   8px over its name (navigation.md: "A place opens with its small capitals
+   label ... and its opening line as a large headline"). */
+.ui-place-head { display: flex; flex-direction: column; gap: var(--space-2); background: var(--surface-canvas); color: var(--ink-primary); }
+.ui-place-label { margin: 0; color: var(--ink-muted); font-size: 11px; line-height: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+.ui-place-row { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: 32px; }
+.ui-place-name { margin: 0; font-size: 28px; font-weight: 400; line-height: 32px; letter-spacing: -0.04em; }
+.ui-place-actions { display: flex; flex: none; align-items: center; gap: var(--space-2); }
+.ui-place-sub { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+/* On a laptop (from 768px) the bar sits at the top of the page's column: a
+   72px row; a tool's name at the left beside its Back, with no drawing in the
+   bar (Alex, 26 Nov 2026: "not sure do we really need the icon up the top
+   right"); a page's name centred. The place's label keeps its slot. */
+@media (min-width: 768px) {
+  .ui-bar-row { height: 72px; padding: 0; }
+  .ui-bar--tool .ui-bar-row { height: 72px; justify-content: flex-start; gap: var(--space-2); }
+  .ui-bar-row > .ui-bar-slot:first-child { margin-left: -10px; }
+  /* A place's bar on a laptop (the Launchpad): no leave control, so its name starts at the column's edge. */
+  .ui-bar--tool .ui-bar-row > .ui-bar-slot:first-child:empty { display: none; }
+  .ui-bar--tool .ui-bar-mid { position: static; flex: 1; align-items: flex-start; text-align: left; }
+  .ui-bar-art { display: none; }
+  .ui-bar-label { padding: 0; }
+}
 
 /* The tab bar: five places, outline icons over a 10.5px label; the current one
    is ink with a 2px ink marker above it. */
@@ -531,6 +730,7 @@
   font-weight: 400;
   line-height: 12px;
 }
+.ui-tabbar[hidden] { display: none; }
 .ui-tab[aria-current='page'] { color: var(--ink-primary); font-weight: 700; }
 .ui-tab[aria-current='page']::before { content: ''; position: absolute; top: -1px; left: 50%; width: 22px; height: 2px; margin-left: -11px; background: var(--ink-primary); }
 
@@ -551,6 +751,7 @@
 }
 .ui-foot--ruled { border-top: 1px solid var(--hairline); }
 .ui-foot-note { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; text-align: center; }
+.ui-foot-lead { margin: 0; color: var(--ink-muted); font-size: 15px; line-height: 21px; }
 
 /* ── 6. Field, rows, the sheet of paper, the pressable box ───────────────── */
 
@@ -575,6 +776,24 @@
 }
 .ui-field-input::placeholder { color: var(--ink-muted); opacity: 1; }
 .ui-field--search .ui-field-input { height: 44px; padding-left: 44px; }
+/* A field with a control at its trailing edge (Field `end`): the control sits inside the field's
+   48px row, the text stops short of it. */
+.ui-field-wrap:has(> .ui-field-end) .ui-field-input { padding-right: 52px; }
+.ui-field-end { position: absolute; top: 2px; right: 2px; bottom: 2px; display: flex; align-items: center; }
+/* The browser's own clear button once something is typed (a blue x in Chrome): the system's X, in
+   ink-3, the same glyph as Close. It still clears the field, as the browser's does. */
+.ui-field--search .ui-field-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-left: var(--space-2);
+  background-color: var(--ink-muted);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E") center / 20px 20px no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E") center / 20px 20px no-repeat;
+  cursor: pointer;
+}
+.ui-field-input--area { display: block; height: auto; min-height: 104px; padding: 12px 14px; font-size: 17px; line-height: 26px; resize: vertical; }
 .ui-field-glyph { position: absolute; top: 50%; left: 15px; color: var(--ink-muted); pointer-events: none; transform: translateY(-50%); }
 .ui-field-help { margin: 0; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
 .ui-field-error { margin: 0; color: var(--ink-primary); font-size: 13px; line-height: 18px; }
@@ -583,6 +802,9 @@
 .ui-list { display: flex; flex-direction: column; margin: 0; padding: 0; border-top: 1px solid var(--hairline); list-style: none; }
 .ui-list--boxed { overflow: hidden; border: 1px solid var(--outline-soft); border-radius: var(--r-box); background: var(--surface-paper); box-shadow: var(--lift-ctl); }
 .ui-row-item { display: block; margin: 0; padding: 0; }
+/* A row you tick: the row is the checkbox, its mark the screen's own. */
+.ui-checkrow { display: flex; align-items: center; gap: var(--space-3); width: 100%; min-height: 44px; padding: 0; border: 0; border-radius: var(--r-sm); background: none; color: var(--ink-primary); font-size: 16px; line-height: 22px; text-align: left; transition: transform var(--t-press) var(--ease-out); }
+.ui-checkrow:active { transform: scale(0.99); }
 .ui-list--boxed > li > .ui-row { padding-left: var(--space-4); padding-right: var(--space-4); }
 .ui-list--boxed > li:last-child > .ui-row { border-bottom: 0; }
 .ui-row {
@@ -605,12 +827,32 @@
   :is(button, a).ui-row:hover { background: var(--surface-soft); }
 }
 .ui-row-art { width: 40px; height: 40px; flex: none; object-fit: contain; }
+span.ui-row-art { display: block; }
+span.ui-row-art > * { display: block; width: 100%; height: 100%; }
 .ui-row-body { display: flex; flex: 1; min-width: 0; flex-direction: column; }
 .ui-row-title { font-size: 16px; line-height: 21px; letter-spacing: -0.015em; }
 .ui-row-meta { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
 .ui-row-over { color: var(--ink-muted); font-size: 13px; line-height: 18px; }
 .ui-row-value { flex: none; color: var(--ink-primary); white-space: nowrap; }
 .ui-row-chev { color: var(--ink-muted); }
+.ui-row-chev--down { transition: transform var(--t-ui) var(--ease-out); }
+.ui-row-chev--down[data-open] { transform: rotate(180deg); }
+/* A short readout at the leading edge (a topic's number), a thin bar under the title (a share
+   done: ink on a hairline track, 3px), and a row chosen in place (a laptop list with its
+   detail beside it): an ink outline, nothing moves. */
+.ui-row-lead { flex: none; width: 30px; color: var(--ink-muted); }
+.ui-row-bar { display: block; height: 3px; margin: 8px 0 2px; overflow: hidden; border-radius: 2px; background: var(--hairline); }
+.ui-row-bar > i { display: block; height: 100%; border-radius: inherit; background: var(--ink-primary); }
+.ui-row-bar + .ui-row-meta { margin-top: 4px; }
+.ui-row.ui-row--select { padding: 10px var(--space-3); border: 1px solid transparent; border-bottom-color: var(--hairline); border-radius: 0; }
+.ui-row.ui-row--select[aria-pressed='true'] { border-color: var(--ink-primary); border-radius: var(--r-ctl); box-shadow: inset 0 0 0 1px var(--ink-primary), var(--lift-ctl); }
+.ui-row-icon { display: flex; flex: none; color: var(--ink-secondary); }
+/* A control beside a row that opens something (Row `end`): one ruled line, two targets. */
+.ui-row-item--end { display: flex; align-items: center; gap: var(--space-1); border-bottom: 1px solid var(--hairline); }
+.ui-row-item--end > .ui-row { flex: 1; min-width: 0; border-bottom: 0; }
+.ui-row-end { display: flex; flex: none; align-items: center; }
+.ui-row-icon > svg { width: 20px; height: 20px; }
+.ui-row--danger, .ui-row--danger .ui-row-icon { color: var(--danger-tint-ink); }
 
 /* The sheet of paper: the one raised sheet, with two tilted sheets behind it.
    The face is its own layer so a wrapper's background can never hide the two
@@ -625,9 +867,9 @@
   border: 1px solid var(--outline-soft);
   border-radius: var(--r-card);
   background: var(--surface-paper);
-  transform: rotate(-1.3deg);
+  transform: rotate(calc(-1 * var(--paper-tilt, 1.3deg)));
 }
-.ui-paper::after { transform: rotate(1.3deg); }
+.ui-paper::after { transform: rotate(var(--paper-tilt, 1.3deg)); }
 .ui-paper-face {
   position: relative;
   z-index: 1;
@@ -655,6 +897,8 @@
   transition: transform var(--t-press) var(--ease-out), background-color var(--t-press) var(--ease-out);
 }
 .ui-press:active { transform: scale(0.98); background: var(--surface-soft); }
+.ui-press:disabled { cursor: default; }
+.ui-press:disabled:active { transform: none; background: var(--surface-paper); }
 
 /* ── 7. States ───────────────────────────────────────────────────────────── */
 
@@ -673,11 +917,15 @@
 
 /* ── Reduced motion: fades and colour stay; travel, scale and drawing go ──── */
 @media (prefers-reduced-motion: reduce) {
-  .ui-btn:active, .ui-icon-btn:active, .ui-choice:active, .ui-menu-btn:active, .ui-press:active { transform: none; }
+  .ui-btn:active, .ui-icon-btn:active, .ui-choice:active, .ui-menu-btn:active, .ui-press:active, .ui-checkrow:active { transform: none; }
   .ui-link:active .ui-icon { transform: none; }
   .ui-mark--on path { transition: none; }
+  .ui-choice-note { animation: none; }
   .ui-switch-knob { transition: none; }
   .ui-seg-pill { transition: none; }
+  .ui-word::after { transition: none; }
+  .ui-menu-btn > .ui-icon { transition: none; }
+  .ui-row-chev--down { transition: none; }
   .ui-menu[data-starting-style], .ui-menu[data-ending-style] { transform: none; }
   /* A sheet fades in place; while a finger drags it, it still follows. */
   .ui-sheet { transform: none; opacity: 0; transition: opacity var(--t-ui) var(--ease-out); }

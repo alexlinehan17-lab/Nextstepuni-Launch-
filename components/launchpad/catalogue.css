@@ -1,0 +1,146 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The Launchpad's list of tools (area 7a; boards c-launch-header on a phone, r5-launchpad on a laptop).
+ * Every drawing, name and line stays, in today's order. On a phone: rows on the page, a hairline
+ * between them, the drawing at 58px, the name, its own line and a chevron. On a laptop: the opening
+ * words with the card dealer beside them at a real size, the search, the categories in one menu and
+ * How points work in one line, then the tools as boxes you press, three a row.
+ * New class names (lp7-) so today's lp-tool-card rules in launchpad.css and mobile-editorial.css
+ * cannot reach the new markup.
+ */
+
+/* The phone keeps the system's one page margin: the shell's 16px plus 8. */
+.lp7-catalogue { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-2) var(--space-2) 0; }
+.lp7-intro { display: flex; flex-direction: column; gap: var(--space-1); }
+.lp7-intro-copy { display: flex; flex-direction: column; gap: var(--space-1); min-width: 0; }
+.lp7-lead { margin: 0; color: var(--ink-secondary); font-family: var(--font-ui); font-size: 15px; font-weight: 400; line-height: 21px; }
+.lp7-dealer { display: none; }
+.lp7-find { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.lp7-find > .ui-field--search { flex: 1 1 100%; }
+.lp7-find .ui-menu-btn.lp7-cat { min-width: 156px; justify-content: space-between; }
+.lp7-points.ui-link > span { display: inline-flex; align-items: center; gap: 6px; }
+.lp7-points.ui-link .ui-icon { color: var(--ink-secondary); }
+.lp7-status { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+
+/* The two guide links: text buttons, side by side. */
+.lp7-guide { display: flex; flex-wrap: wrap; align-items: center; gap: 0 var(--space-6); }
+
+/* No tool matches: a heading, a line and a way back to every tool, on the page. */
+.lp7-empty { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); padding: var(--space-6) 0; border-top: 1px solid var(--hairline); }
+.lp7-empty p { margin: 0; }
+
+/* ── The tools: rows on a phone ─────────────────────────────────────────── */
+.lp7-tools { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--hairline); }
+.lp7-tools > li { display: block; }
+.lp7-tool.ui-press {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) 20px;
+  grid-template-rows: auto;
+  align-items: center;
+  column-gap: var(--space-4);
+  row-gap: var(--space-1);
+  min-height: 104px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid var(--hairline);
+  border-radius: 0;
+  background: transparent;
+}
+.lp7-tool.ui-press:active { background: var(--surface-soft); }
+.lp7-tool .lp7-tool-art { grid-column: 1; grid-row: 1 / span 4; align-self: center; width: 58px; height: 58px; margin: 0; }
+.lp7-tool-name { display: contents; }
+.lp7-tool-title { grid-column: 2; grid-row: 1; margin: 0; color: var(--ink-primary); font-family: var(--font-ui); font-size: 21px; font-weight: 400; line-height: 26px; letter-spacing: -0.03em; }
+.lp7-tool-chev { grid-column: 3; grid-row: 1 / span 4; align-self: center; color: var(--ink-muted); }
+.lp7-tool-line { grid-column: 2; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.lp7-tool-meta { grid-column: 2; display: inline-flex; align-items: center; gap: 6px; color: var(--ink-muted); font-size: 13px; line-height: 18px; }
+
+/* ── On a laptop: the opening words beside the card dealer, one line of controls, three boxes a row ── */
+@media (min-width: 768px) {
+  .lp7-catalogue { gap: var(--space-8); padding: var(--space-6) 0 0; }
+  .lp7-intro { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 56px; }
+  .lp7-intro-copy { gap: var(--space-4); }
+  .lp7-lead { font-size: 18px; line-height: 27px; }
+  .lp7-dealer { display: block; width: 124px; height: 124px; margin: -6px 8px -6px 0; object-fit: contain; }
+  .lp7-find { flex-wrap: nowrap; justify-content: flex-start; }
+  .lp7-find > .ui-field--search { flex: 1 1 auto; }
+  .lp7-find .ui-menu-btn.lp7-cat { width: 180px; flex: none; }
+  .lp7-find .lp7-points { flex: none; }
+  .lp7-tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); border-top: 0; }
+  .lp7-tool.ui-press {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    height: 100%;
+    min-height: 216px;
+    padding: 22px 20px 24px 22px;
+    border: 1px solid var(--outline-soft);
+    border-radius: var(--r-card);
+    background: var(--surface-paper);
+  }
+  .lp7-tool.ui-press:active { transform: scale(0.99); }
+  .lp7-tool .lp7-tool-art { align-self: flex-start; width: 64px; height: 64px; margin-bottom: 14px; }
+  .lp7-tool-name { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); width: 100%; }
+  .lp7-tool-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}
+@media (min-width: 1024px) {
+  .lp7-tools { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+/* The catalogue's column on a laptop: 904px of content, the bar's hairline the same width. */
+@media (min-width: 768px) {
+  .lp7-host .lp-navigation-column,
+  .lp7-host > main.launchpad-approved { max-width: 952px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lp7-tool.ui-press:active { transform: none; }
+}
+
+/* ── The guide: Meet the tools and Help me choose, in the shared sheet ──── */
+.lp7-inline { display: inline-flex; align-items: center; gap: 6px; }
+.lp7-guide-body { display: flex; flex-direction: column; gap: var(--space-4); padding-bottom: var(--space-4); }
+.lp7-guide-explain { display: grid; gap: var(--space-6); }
+.lp7-guide-list { display: none; }
+.lp7-guide-tool { display: flex; flex-direction: column; gap: var(--space-4); min-width: 0; }
+.lp7-guide-step { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: var(--space-2); }
+.lp7-guide-step .ui-icon-btn[aria-disabled='true'] { color: var(--ink-muted); opacity: 0.5; }
+.lp7-guide-head { display: flex; align-items: center; gap: var(--space-4); }
+.lp7-guide-head .lp7-guide-art { flex: none; width: 64px; height: 64px; }
+.lp7-guide-head .lp7-guide-art--lg { width: 80px; height: 80px; }
+.lp7-guide-name { display: flex; min-width: 0; flex-direction: column; gap: var(--space-1); }
+.lp7-guide-name > * { margin: 0; }
+.lp7-guide-name .t-label { color: var(--ink-muted); }
+.lp7-guide-when { margin: 0; }
+.lp7-guide-facts { display: flex; flex-direction: column; margin: 0; border-top: 1px solid var(--hairline); }
+.lp7-guide-facts > div { display: flex; flex-direction: column; gap: var(--space-1); padding: var(--space-3) 0; border-bottom: 1px solid var(--hairline); }
+.lp7-guide-facts dt { color: var(--ink-muted); }
+.lp7-guide-facts dd { margin: 0; }
+.lp7-guide-foot { display: flex; flex-direction: column-reverse; gap: var(--space-2); }
+.lp7-guide-foot > .ui-link { align-self: center; }
+.lp7-guide-ask { display: flex; flex-direction: column; gap: var(--space-3); }
+.lp7-guide-ask > * { margin: 0; }
+.lp7-guide-ask > .ui-link { align-self: flex-start; }
+.lp7-guide-clear { display: inline-flex; align-items: center; gap: 6px; }
+@media (min-width: 640px) {
+  .lp7-guide-foot { flex-direction: row; align-items: center; justify-content: space-between; }
+  .lp7-guide-foot > .ui-btn { width: auto; min-width: 280px; }
+}
+@media (min-width: 768px) {
+  .lp7-guide-sheet.ui-sheet { width: min(100%, 880px); }
+  .lp7-guide-explain { grid-template-columns: 240px minmax(0, 1fr); align-items: start; }
+  .lp7-guide-list { display: block; }
+  .lp7-guide-step { display: none; }
+}
+
+/* How points work, opened on the Launchpad (PointsPanel's .jp-reference only; the study session's primer
+   is another area's): on the page under a hairline, not in a box; the one typeface; Close at the left. */
+.lp7-catalogue .jp-guide.jp-reference { background: transparent; font-family: var(--font-ui); border: 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); border-radius: 0; }
+.lp7-catalogue .jp-reference .jp-guide-header { flex-direction: row-reverse; justify-content: flex-end; padding-left: 0; padding-right: 0; }
+.lp7-catalogue .jp-reference .jp-guide-close { margin: -8px 0 0 -10px; }
+.lp7-catalogue .jp-reference .jp-guide-body { padding-left: 0; padding-right: 0; }
+.lp7-catalogue .jp-reference :is(.jp-guide-header h2, .jp-guide-rate dd, .jp-guide-shop-title) { font-family: var(--font-ui); font-weight: 400; }
+.lp7-catalogue .jp-reference .jp-guide-header .jp-guide-eyebrow,
+.lp7-catalogue .jp-reference .jp-guide-eyebrow { font-family: var(--font-ui); font-weight: 400; color: var(--ink-muted); }
+/* Every rate in ink: orange belongs to the artwork and the student's own value in a graph (area 9). */
+.lp7-catalogue .jp-reference .jp-guide-rate[data-featured] dd { color: var(--ink-primary); }

@@ -38,7 +38,7 @@ describe('mobile onboarding interaction', () => {
     const scrollRegion = screen.getByTestId('onboarding-scroll-region');
     scrollRegion.scrollTop = 240;
 
-    fireEvent.click(screen.getByRole('button', { name: 'Get Started' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Get started' }));
 
     expect(scrollRegion.scrollTop).toBe(0);
     expect(JSON.parse(localStorage.getItem(draftKey) ?? '{}')).toMatchObject({

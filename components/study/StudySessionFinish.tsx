@@ -2,24 +2,28 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * The debrief after a session, beside the study receipt. The debrief is a
- * Kobra paper card (approved review, 25 Oct 2026): Tabs for the mode, the
- * confidence scale as hairline options with an ink ring when chosen, the
- * runtime's Textarea and Buttons (study-post-session.css). The receipt is
- * unchanged, markup and study-crew.css rules alike (Alex, 25 Oct: "this is
- * really cool and we can't lose it").
+ * The debrief after a session, then the study receipt (r5-post-session,
+ * agreed 26 Nov 2026). The debrief lies on the page in the one typeface:
+ * Quick debrief or Write a reflection in the selection bar, the feelings as
+ * choices with the ink outline, and Save session pinned at the bottom saying
+ * what is still to choose. The receipt is unchanged, markup and study-crew.css
+ * rules alike (Alex, 25 Oct: "this is really cool and we can't lose it").
  */
-import React, { useId, useRef, useState } from 'react';
-import { ArrowUpRight } from 'lucide-react';
-import KobraScope, { Alert, AlertDescription, Button, Tabs, TabsList, TabsTrigger, Textarea } from '../approved-ui-runtime';
+import React, { useEffect, useId, useRef, useState } from 'react';
+import KobraScope from '../approved-ui-runtime';
 import CrewIllustration from '../CrewIllustration';
 import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
 import type { StudyTopicAllocation, StudyTopicSelection } from '../../types/studyTopics';
 import { equalTopicAllocations } from '../../services/studyTopicHistory';
 import { CURRICULUM_SPECIFICATIONS } from '../../curriculumRegistry';
+import { PinnedFooter, TopBar } from '../ui/Bars';
+import { Button, TextButton, type MissingStep } from '../ui/Button';
+import { ChoiceTile, SelectionBar, useRovingRadios } from '../ui/Choice';
+import { useFrameTask } from '../ui/Frame';
 import TopicTimeCard from './TopicTimeCard';
 import './study-crew.css';
 import './study-post-session.css';
+import './study-after.css';
 
 export { formatStudyTime } from '../../utils/studyTime';
 import { formatStudyTime } from '../../utils/studyTime';
@@ -38,6 +42,13 @@ const CONFIDENCE = ['Lost', 'Shaky', 'Okay', 'Good', 'Confident'];
 
 export default function StudySessionFinish({ subject, elapsedSeconds, plannedSeconds, practice, character, strategies, basePoints, extensionBonus = 0, isSaving, mode, onModeChange, onSave, onSkip, topicSelection }: Props) {
   const id = useId();
+  const formId = useId();
+  const feelRef = useRef<HTMLDivElement>(null);
+  const reflectionRef = useRef<HTMLTextAreaElement>(null);
+  // A task: the tab bar steps aside; and it opens at the top, on its headline.
+  useFrameTask(true);
+  useEffect(() => { try { window.scrollTo({ top: 0 }); } catch { /* no window to scroll */ } }, []);
+
   const [topicTimeOpen, setTopicTimeOpen] = useState(false);
   const [allocations, setAllocations] = useState(() => equalTopicAllocations(topicSelection?.topicIds ?? [], elapsedSeconds));
   const spec = CURRICULUM_SPECIFICATIONS.find(item => item.id === topicSelection?.specificationId);
@@ -63,36 +74,39 @@ export default function StudySessionFinish({ subject, elapsedSeconds, plannedSec
     catch { setError('Your session couldn’t be saved. Please try again. Your debrief is still here.'); }
     finally { inFlight.current = false; setSubmitting(false); }
   };
-  return <KobraScope className="nsu-post-session"><div className="sps-page"><section className="sps-finish" aria-labelledby="study-finish-title">
-    <div className="sps-card sps-debrief nsu-paper-card">
-      <p className="sps-kicker">{early ? 'Session ended early' : 'Session complete'}</p>
-      <h1 id="study-finish-title" className="sps-title">You showed up.<br />That counts.</h1>
-      <p className="sps-lede">{early ? 'The work still counts. ' : ''}A little record of the work you put in. And a clear place to pick up next time.</p>
-      <form className="sps-form" onSubmit={event => { event.preventDefault(); void submit(false); }}>
+  const feelings = useRovingRadios(CONFIDENCE.length, CONFIDENCE.findIndex(label => label.toLowerCase() === confidence), index => setConfidence(CONFIDENCE[index].toLowerCase()));
+  const missing: MissingStep | undefined = !confidence
+    ? { sentence: `Still to choose: how ${subject} feels.`, goTo: feelRef }
+    : !valid ? { sentence: 'Still to write: a sentence or two for your reflection.', goTo: reflectionRef } : undefined;
+  const chosen = CONFIDENCE.find(label => label.toLowerCase() === confidence);
+  return <KobraScope className="nsu-post-session"><div className="sps-page sps-flow">
+    <TopBar className="sps-bar" placeLabel={early ? 'Session ended early' : 'Session complete'} />
+    <section className="sps-finish sps-finish-flow" aria-labelledby="study-finish-title">
+    <div className="sps-debrief-flow">
+      <h1 id="study-finish-title" className="t-display">You showed up.<br />That counts.</h1>
+      <p className="t-sub">{early ? 'The work still counts. ' : ''}A little record of the work you put in. And a clear place to pick up next time.</p>
+      <form id={formId} className="sps-form" onSubmit={event => { event.preventDefault(); void submit(false); }}>
         <fieldset className="sps-fieldset" disabled={busy}>
-          <legend id={`${id}-look-back`} className="sps-legend">A moment to look back</legend>
-          <Tabs className="sps-modes" value={mode} onValueChange={value => onModeChange(value === 'full' ? 'full' : 'quick')}>
-            <TabsList aria-labelledby={`${id}-look-back`}>
-              <TabsTrigger value="quick">Quick debrief <small>+{QUICK_DEBRIEF_POINTS} JP</small></TabsTrigger>
-              <TabsTrigger value="full">Write a reflection <small>+{FULL_REFLECTION_POINTS} JP</small></TabsTrigger>
-            </TabsList>
-          </Tabs>
-          <p id="confidence-question" className="sps-question">How does {subject} feel after this session?</p>
-          <div className="sps-feel" role="group" aria-labelledby="confidence-question">
-            {CONFIDENCE.map(label => <button type="button" key={label} className="sps-feel-option" aria-pressed={confidence === label.toLowerCase()} onClick={() => setConfidence(label.toLowerCase())}><span className="sps-feel-mark" aria-hidden="true" />{label}</button>)}
+          <legend id={`${id}-look-back`} className="t-heading sps-legend">A moment to look back</legend>
+          <SelectionBar label="A moment to look back" size="md" className="sps-modes-bar" value={mode} onChange={value => onModeChange(value === 'full' ? 'full' : 'quick')}
+            options={[
+              { value: 'quick', label: <><span>Quick debrief</span><small>+{QUICK_DEBRIEF_POINTS} JP</small></> },
+              { value: 'full', label: <><span>Write a reflection</span><small>+{FULL_REFLECTION_POINTS} JP</small></> },
+            ]} />
+          <p id="confidence-question" className="t-row sps-question">How does {subject} feel after this session?</p>
+          <div ref={feelRef} className="sps-feelings" role="radiogroup" aria-labelledby="confidence-question">
+            {CONFIDENCE.map((label, index) => <ChoiceTile key={label} chosen={confidence === label.toLowerCase()} label={label}
+              ref={element => { feelings.refs.current[index] = element; }} tabIndex={feelings.tabIndexOf(index)} onKeyDown={event => feelings.onKeyDown(event, index)}
+              onClick={() => setConfidence(label.toLowerCase())} />)}
           </div>
           {mode === 'full' && <div className="sps-field">
-            <label htmlFor={`${id}-reflection`}>What worked, and what will you try next time?</label>
-            <Textarea id={`${id}-reflection`} className="sps-textarea" value={reflection} onChange={event => setReflection(event.target.value)} minLength={15} maxLength={2000} rows={3} placeholder="A thought worth keeping…" aria-describedby="reflection-help" />
-            <p id="reflection-help" className="sps-help">At least 15 characters. A sentence or two is enough.</p>
+            <label htmlFor={`${id}-reflection`} className="t-row">What worked, and what will you try next time?</label>
+            <textarea ref={reflectionRef} id={`${id}-reflection`} className="sps-area" value={reflection} onChange={event => setReflection(event.target.value)} minLength={15} maxLength={2000} rows={3} placeholder="A thought worth keeping…" aria-describedby="reflection-help" />
+            <p id="reflection-help" className="t-meta">At least 15 characters. A sentence or two is enough.</p>
           </div>}
         </fieldset>
-        {error && <Alert variant="error" className="sps-alert"><AlertDescription>{error}</AlertDescription></Alert>}
-        <div className="sps-actions">
-          <Button type="submit" className="sps-primary" disabled={busy || !valid}>{busy ? 'Saving your session…' : 'Save session'}<ArrowUpRight aria-hidden="true" /></Button>
-          <Button type="button" variant="ghost" className="sps-quiet" disabled={busy} onClick={() => void submit(true)}>Save without a debrief</Button>
-          <p className="sps-note">Saved sessions appear in your progress. Your debrief stays in your study journal.</p>
-        </div>
+        {error && <p className="sps-error" role="alert">{error}</p>}
+        <p className="t-meta sps-note">Saved sessions appear in your progress. Your debrief stays in your study journal.</p>
       </form>
     </div>
     <article className="study-receipt" aria-label="Your study receipt">
@@ -103,5 +117,11 @@ export default function StudySessionFinish({ subject, elapsedSeconds, plannedSec
       <footer><span>One step taken.</span><span>Your step.</span></footer><p className="study-receipt-signoff">Small steps, on the record.</p>
     </article>
     {topicTimeOpen && topicSelection && <TopicTimeCard selection={topicSelection} seconds={elapsedSeconds} allocations={allocations} onClose={() => setTopicTimeOpen(false)} onApply={value => { setAllocations(value); setTopicTimeOpen(false); }} />}
-  </section></div></KobraScope>;
+    </section>
+    <PinnedFooter ruled className="sps-foot">
+      {!missing && chosen && <p className="sps-ready">{chosen} · +{bonus} JP for your debrief</p>}
+      <Button kind="main" size="lg" block arrow="forward" type="submit" form={formId} className="sps-main" missing={busy ? undefined : missing} aria-disabled={busy || undefined}>{busy ? 'Saving your session…' : 'Save session'}</Button>
+      <TextButton tone="quiet" className="sps-quiet" aria-disabled={busy || undefined} onClick={() => void submit(true)}>Save without a debrief</TextButton>
+    </PinnedFooter>
+  </div></KobraScope>;
 }

@@ -106,6 +106,6 @@ describe('approved Star Crew', () => {
     expect(onBlock).toHaveBeenCalledWith(block);
     expect(view.container.querySelectorAll('[role="radiogroup"][aria-label="Your subject"] [role="radio"]')).toHaveLength(2);
     expect(screen.getByRole('radio', { name: 'Irish' })).toHaveAttribute('aria-checked', 'true');
-    expect(screen.getByRole('button', { name: 'Start Session' })).toBeEnabled();
+    expect(screen.getByRole('button', { name: 'Start session' })).toBeEnabled();
   });
 });

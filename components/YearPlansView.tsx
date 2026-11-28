@@ -4,21 +4,20 @@
  *
  * YearPlansView — the year-by-year curriculum, 1st through 6th.
  *
- * Deliberately the same editorial card language as LearningPathsView:
- * eyebrow → serif title → italic subtitle → muted description → thin
- * progress line → text CTA → quiet expand toggle revealing the ordered
- * module list. In place of the hand-drawn PNGs, each card carries a large
- * ghost serif year numeral.
+ * The look (r5-year-plans, agreed 26 Nov 2026): each year lies on the page
+ * between thin rules with its drawn year number; the bars are ink; your
+ * current year is the screen's one sheet with the one charcoal Continue.
+ * The same language as LearningPathsView (plans-paths.css).
  */
 
 import React, { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { Check, ChevronDown } from 'lucide-react';
+import { Check } from 'lucide-react';
 import PageHeader from './ui/PageHeader';
+import { Button, TextButton } from './ui/Button';
+import { List, PaperSheet, Row } from './ui/List';
+import './plans-paths.css';
 import { type CourseData } from './Library';
 import { YEAR_PLANS, type YearPlan } from '../yearPlans';
-import { useSettingsContext } from '../contexts/SettingsContext';
 import { type YearGroup } from './subjectData';
 
 type UserProgress = {
@@ -35,27 +34,12 @@ interface YearPlansViewProps {
   currentYearGroup?: YearGroup;
 }
 
-// Muted per-cycle accents in the LearningPathsView register — tiny details
-// only (progress fill, CTA arrow, ghost numeral).
-//
-// `accent` is a FILL. As TEXT it fails in both themes (2.49-3.68:1 on the light
-// canvas, 3.88-4.38:1 on a dark card), so each cycle carries its own ink pair.
-// Use cycleInk() for anything that renders as text; `accent` stays for fills.
-const CYCLE_META: Record<YearPlan['cycle'], { eyebrow: string; accent: string; inkLight: string; inkDark: string }> = {
-  junior: { eyebrow: 'Junior Cycle', accent: '#5B7DB0', inkLight: '#4C6D9F', inkDark: '#7E9BC4' },
-  ty: { eyebrow: 'Transition Year', accent: '#8B82B8', inkLight: '#6E63A6', inkDark: '#A79FCB' },
-  senior: { eyebrow: 'Senior Cycle', accent: '#D85F47', inkLight: '#BF4129', inkDark: '#E8836E' },
-  lca: { eyebrow: 'Leaving Cert Applied', accent: '#7DA37A', inkLight: '#537450', inkDark: '#96B893' },
+const CYCLE_EYEBROW: Record<YearPlan['cycle'], string> = {
+  junior: 'Junior Cycle',
+  ty: 'Transition Year',
+  senior: 'Senior Cycle',
+  lca: 'Leaving Cert Applied',
 };
-
-/** Text ink for a cycle, flipped for the theme. `accent` is fill-only. */
-const useCycleInk = (): ((m: { inkLight: string; inkDark: string }) => string) => {
-  const darkMode = useSettingsContext()?.settings.darkMode ?? false;
-  return React.useCallback((m: { inkLight: string; inkDark: string }) => (darkMode ? m.inkDark : m.inkLight), [darkMode]);
-};
-
-const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
-const SANS: React.CSSProperties = { fontFamily: "'DM Sans', system-ui, sans-serif" };
 
 const YearPlansView: React.FC<YearPlansViewProps> = ({
   allCourses,
@@ -65,7 +49,6 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   isLca = false,
   currentYearGroup,
 }) => {
-  const cycleInk = useCycleInk();
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const plans = YEAR_PLANS.filter(p => (isLca ? p.cycle === 'lca' : p.cycle !== 'lca'));
   const currentPlanId = currentYearGroup === 'LCA1' ? 'lca-year-1'
@@ -95,21 +78,17 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   };
 
   return (
-    <div className="frame-page [--frame-pad-top:4rem] md:[--frame-pad-top:5rem] min-h-screen theme-compat bg-white dark:bg-surface-canvas pb-32 px-4 sm:px-6 transition-colors duration-500">
-      <div className="max-w-5xl mx-auto">
-        <PageHeader onBack={onBack} eyebrow="Plan ahead" title="Year Plans" className="mb-4" />
-        <p
-          className="mb-12"
-          style={{ ...SANS, fontSize: 14.5, lineHeight: 1.6, color: 'rgba(0,0,0,0.55)', maxWidth: '56ch' }}
-        >
+    <div className="theme-compat pp-page min-h-screen">
+      <div className="pp-bar"><div className="pp-width"><PageHeader onBack={onBack} eyebrow="Plan ahead" title="Year Plans" /></div></div>
+      <div className="pp-width pp-body">
+        <p className="t-sub pp-intro">
           A curated set of modules for every year of secondary school — in the order they teach best. Pick your
           year and work through it; subject-specific modules live in Decoding the Subjects.
         </p>
 
-        {/* ── Card grid ── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {plans.map((plan, i) => {
-            const meta = CYCLE_META[plan.cycle];
+        <div className="pp-grid">
+          {plans.map(plan => {
+            const eyebrow = CYCLE_EYEBROW[plan.cycle];
             const completed = plan.moduleIds.filter(id => isModuleComplete(id)).length;
             const total = plan.moduleIds.length;
             const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
@@ -117,229 +96,53 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
             const firstIncomplete = getFirstIncomplete(plan);
             const isComplete = total > 0 && !firstIncomplete;
             const isCurrent = plan.id === currentPlanId;
-
-            return (
-              <MotionDiv
-                key={plan.id}
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] as number[] }}
-                className="overflow-hidden relative"
-                style={{
-                  background: '#FFFFFF',
-                  border: isCurrent ? '2px solid var(--nsu-orange)' : '1px solid #E8E2D8',
-                  borderRadius: 22,
-                  boxShadow: isCurrent ? '4px 4px 0 #1A1A1A' : '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)',
-                }}
-              >
-                {/* Hand-drawn year numeral — upper right, marker-style PNG */}
-                <img
-                  src={`/assets/year-plans/${plan.year}.png`}
-                  alt=""
-                  aria-hidden
-                  draggable={false}
-                  className="absolute pointer-events-none select-none"
-                  style={{ top: 14, right: 20, height: 76, width: 'auto' }}
-                />
-
-                <div className="p-7 md:p-8">
-                  {/* Eyebrow */}
-                  <div className="flex items-center gap-2">
-                  <p
-                    className="uppercase"
-                    style={{
-                      ...SANS,
-                      fontSize: 11,
-                      fontWeight: 500,
-                      letterSpacing: '1.6px',
-                      color: 'rgba(0,0,0,0.45)',
-                      margin: 0,
-                    }}
-                  >
-                    {meta.eyebrow}
-                  </p>
-                  {isCurrent && <span className="rounded-full bg-[#FDEBDD] px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-[#9A3B0E]">Your current plan</span>}
+            const body = (
+              <>
+                <div className="pp-top">
+                  <div className="pp-names">
+                    <p className="t-label pp-label">{eyebrow}</p>
+                    {isCurrent && <p className="t-label pp-live">Your current plan</p>}
+                    <h2 className="pp-title">{plan.title}</h2>
+                    <p className="t-sub">{plan.subtitle}</p>
                   </div>
-
-                  {/* Title */}
-                  <h3
-                    style={{
-                      ...SERIF,
-                      fontSize: 24,
-                      fontWeight: 500,
-                      letterSpacing: '-0.4px',
-                      color: '#1a1a1a',
-                      margin: 0,
-                      marginTop: 8,
-                      lineHeight: 1.15,
-                    }}
-                  >
-                    {plan.title}
-                  </h3>
-
-                  {/* Subtitle (italic) */}
-                  <p
-                    style={{
-                      ...SERIF,
-                      fontStyle: 'italic',
-                      fontSize: 14,
-                      color: 'rgba(0,0,0,0.55)',
-                      margin: 0,
-                      marginTop: 6,
-                    }}
-                  >
-                    {plan.subtitle}
-                  </p>
-
-                  {/* Description */}
-                  <p
-                    style={{
-                      ...SANS,
-                      fontSize: 14,
-                      lineHeight: 1.55,
-                      color: 'rgba(0,0,0,0.6)',
-                      margin: 0,
-                      marginTop: 14,
-                    }}
-                  >
-                    {plan.description}
-                  </p>
-
-                  {/* Progress — thin muted track + restrained accent fill */}
-                  <div className="flex items-center gap-3" style={{ marginTop: 22 }}>
-                    <div
-                      className="flex-1 overflow-hidden"
-                      style={{ height: 2, borderRadius: 999, background: 'rgba(0,0,0,0.08)' }}
-                    >
-                      <MotionDiv
-                        style={{ height: '100%', borderRadius: 999, background: meta.accent, opacity: 0.85 }}
-                        initial={{ width: 0 }}
-                        animate={{ width: `${pct}%` }}
-                        transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
-                      />
-                    </div>
-                    <span
-                      style={{
-                        ...SANS,
-                        fontSize: 12,
-                        color: 'rgba(0,0,0,0.5)',
-                        whiteSpace: 'nowrap',
-                      }}
-                    >
-                      {completed} / {total} complete
-                    </span>
-                  </div>
-
-                  {/* CTA row — text-style continue/start + subtle expand */}
-                  <div className="flex items-center justify-between" style={{ marginTop: 22 }}>
-                    {isComplete ? (
-                      <span
-                        className="inline-flex items-center gap-1.5"
-                        style={{ ...SANS, fontSize: 13, fontWeight: 500, color: cycleInk(meta) }}
-                      >
-                        <Check size={14} strokeWidth={2} />
-                        Year complete
-                      </span>
-                    ) : (
-                      <button
-                        onClick={() => firstIncomplete && onSelectModule(firstIncomplete)}
-                        aria-label={`${completed > 0 ? 'Continue' : 'Start'} ${plan.title}`}
-                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
-                        style={{ ...SANS, fontSize: 14, fontWeight: 500, color: '#1a1a1a' }}
-                      >
-                        {completed > 0 ? 'Continue' : 'Start'}
-                        <span
-                          className="transition-transform group-hover:translate-x-0.5"
-                          style={{ color: cycleInk(meta), fontSize: 16, lineHeight: 1 }}
-                        >
-                          →
-                        </span>
-                      </button>
-                    )}
-
-                    <button
-                      onClick={() => setExpandedId(isExpanded ? null : plan.id)}
-                      aria-label={`${isExpanded ? 'Hide' : 'View'} modules in ${plan.title}`}
-                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35 rounded-md"
-                      style={{ ...SANS, fontSize: 12, color: 'rgba(0,0,0,0.5)' }}
-                      aria-expanded={isExpanded}
-                    >
-                      {isExpanded ? 'Hide modules' : `View modules (${total})`}
-                      <ChevronDown
-                        size={14}
-                        strokeWidth={1.6}
-                        className={`transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}
-                      />
-                    </button>
-                  </div>
+                  <img src={`/assets/year-plans/${plan.year}.png`} alt="" aria-hidden draggable={false} className="pp-number" />
                 </div>
-
-                {/* Expanded module list — quiet hairline divider, plain rows */}
-                <AnimatePresence>
-                  {isExpanded && (
-                    <MotionDiv
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
-                      className="overflow-hidden"
-                    >
-                      <div
-                        className="px-7 md:px-8 py-5"
-                        style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}
-                      >
-                        <ul className="space-y-1">
-                          {plan.moduleIds.map((moduleId, idx) => {
-                            const done = isModuleComplete(moduleId);
-                            return (
-                              <li key={moduleId}>
-                                <button
-                                  onClick={() => onSelectModule(moduleId)}
-                                  className="w-full flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-surface-soft transition-colors text-left group"
-                                >
-                                  <span
-                                    className="shrink-0 inline-flex items-center justify-center"
-                                    style={{
-                                      width: 18,
-                                      height: 18,
-                                      borderRadius: 999,
-                                      background: done ? meta.accent : 'transparent',
-                                      border: done ? 'none' : '1px solid rgba(0,0,0,0.18)',
-                                      color: done ? '#fff' : 'rgba(0,0,0,0.4)',
-                                      fontSize: 10,
-                                      fontWeight: 600,
-                                      ...SANS,
-                                    }}
-                                  >
-                                    {done ? <Check size={11} strokeWidth={2.5} /> : idx + 1}
-                                  </span>
-                                  <span
-                                    style={{
-                                      ...SANS,
-                                      fontSize: 14,
-                                      color: done ? 'rgba(0,0,0,0.4)' : 'rgba(0,0,0,0.78)',
-                                      textDecoration: done ? 'line-through' : 'none',
-                                    }}
-                                  >
-                                    {getModuleTitle(moduleId)}
-                                  </span>
-                                  <span
-                                    className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"
-                                    style={{ ...SANS, fontSize: 14, color: cycleInk(meta) }}
-                                  >
-                                    →
-                                  </span>
-                                </button>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-                    </MotionDiv>
+                <p className="pp-desc">{plan.description}</p>
+                <div className="pp-prog">
+                  <span className="pp-bar-track" aria-hidden="true"><i style={{ width: `${pct}%` }} /></span>
+                  <span className="t-meta">{completed} / {total} complete</span>
+                </div>
+                <div className="pp-acts">
+                  {isComplete ? (
+                    <span className="pp-done"><Check size={16} strokeWidth={2} aria-hidden="true" />Year complete</span>
+                  ) : (
+                    <Button kind={isCurrent ? 'main' : 'second'} arrow="forward" className="pp-go"
+                      aria-label={`${completed > 0 ? 'Continue' : 'Start'} ${plan.title}`}
+                      onClick={() => firstIncomplete && onSelectModule(firstIncomplete)}>
+                      {completed > 0 ? 'Continue' : 'Start'}
+                    </Button>
                   )}
-                </AnimatePresence>
-              </MotionDiv>
+                  <TextButton tone="quiet" arrow="menu" className="pp-toggle" aria-expanded={isExpanded}
+                    aria-label={`${isExpanded ? 'Hide' : 'View'} modules in ${plan.title}`}
+                    onClick={() => setExpandedId(isExpanded ? null : plan.id)}>
+                    {isExpanded ? 'Hide modules' : `View modules (${total})`}
+                  </TextButton>
+                </div>
+                {isExpanded && (
+                  <List className="pp-modules" label={`Modules in ${plan.title}`}>
+                    {plan.moduleIds.map((moduleId, idx) => {
+                      const done = isModuleComplete(moduleId);
+                      return <Row key={moduleId} className={done ? 'pp-module pp-module--done' : 'pp-module'}
+                        icon={done ? <Check size={18} strokeWidth={2} /> : <span className="pp-module-n">{idx + 1}</span>}
+                        title={getModuleTitle(moduleId)} meta={done ? 'Read' : undefined} onPress={() => onSelectModule(moduleId)} />;
+                    })}
+                  </List>
+                )}
+              </>
             );
+            return isCurrent
+              ? <PaperSheet key={plan.id} className="pp-item pp-item--current" label={plan.title}>{body}</PaperSheet>
+              : <section key={plan.id} className="pp-item" aria-label={plan.title}>{body}</section>;
           })}
         </div>
       </div>

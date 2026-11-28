@@ -11,7 +11,7 @@ Eye,
 Lightbulb,SlidersHorizontal,
 Wrench
 } from 'lucide-react';
-import React,{ useState } from 'react';
+import React,{ useId,useState } from 'react';
 import { ILLUSION_OF_COMPETENCE_REFERENCE_LIST } from '../data/references/illusionOfCompetence';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { accentTheme } from '../moduleThemes';
@@ -19,6 +19,9 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { AnswerLine,ExerciseSheet } from './learning/Exercise';
+import { TextButton } from './ui/Button';
+import { AreaField } from './ui/Field';
 
 const theme = accentTheme;
 
@@ -86,31 +89,29 @@ const ForgettingCurveSimulator = () => {
     const dayLabels = ['Learn', '1', '2', '3', '4', '5', '6', '7'];
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Forgetting Curve</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Click on days to place review sessions and see how spacing fights forgetting.</p>
-            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">You have 3 reviews to place. Where will you put them?</p>
+        <ExerciseSheet title="The Forgetting Curve" sub="Click on days to place review sessions and see how spacing fights forgetting." name="ForgettingCurveSimulator">
+            <p className="ex-sub">You have 3 reviews to place. Where will you put them?</p>
 
-            {/* Chart */}
-            <div className="w-full overflow-visible">
-              <svg viewBox="0 0 400 220" className="w-full h-auto">
+            {/* Chart: the drawing on the sheet; the student's own curve and reviews in orange, the rest in ink */}
+            <div className="ex-figure">
+              <svg viewBox="0 0 400 220" className="ex-figure-art w-full h-auto">
                 {/* Y-axis gridlines and labels */}
                 {[0, 25, 50, 75, 100].map(pct => (
                   <g key={pct}>
-                    <line x1={chartLeft} y1={toY(pct)} x2={chartRight} y2={toY(pct)} stroke="var(--module-on-fill)" strokeWidth="0.5" className="dark:opacity-20" />
-                    <text x={chartLeft - 6} y={toY(pct) + 4} textAnchor="end" fontSize="9" fill="var(--module-surface)">{pct}%</text>
+                    <line x1={chartLeft} y1={toY(pct)} x2={chartRight} y2={toY(pct)} stroke="var(--hairline)" strokeWidth="0.5" />
+                    <text x={chartLeft - 6} y={toY(pct) + 4} textAnchor="end" fontSize="11" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>{pct}%</text>
                   </g>
                 ))}
 
                 {/* Baseline curve (no reviews) - dashed */}
-                <path d={buildPath(baselineCurve)} fill="none" stroke="var(--module-muted)" strokeWidth="2" strokeDasharray="6 4" className="dark:opacity-40" />
+                <path d={buildPath(baselineCurve)} fill="none" stroke="var(--ink-muted)" strokeWidth="2" strokeDasharray="6 4" />
 
                 {/* Active curve with reviews */}
                 <motion.path
                   key={pins.join(',')}
                   d={buildPath(activeCurve)}
                   fill="none"
-                  stroke="var(--module-success-text)"
+                  stroke="var(--nsu-orange)"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   initial={{ pathLength: 0 }}
@@ -129,8 +130,8 @@ const ForgettingCurveSimulator = () => {
                 />
                 <defs>
                   <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="var(--module-success)" />
-                    <stop offset="100%" stopColor="var(--module-success)" stopOpacity="0" />
+                    <stop offset="0%" stopColor="var(--nsu-orange)" />
+                    <stop offset="100%" stopColor="var(--nsu-orange)" stopOpacity="0" />
                   </linearGradient>
                 </defs>
 
@@ -144,7 +145,7 @@ const ForgettingCurveSimulator = () => {
                       {isPin && (
                         <motion.line
                           x1={toX(i)} y1={toY(activeCurve[i])} x2={toX(i)} y2={chartBottom}
-                          stroke="var(--module-success-text)" strokeWidth="1" strokeDasharray="3 3"
+                          stroke="var(--nsu-orange)" strokeWidth="1" strokeDasharray="3 3"
                           initial={{ opacity: 0 }} animate={{ opacity: 0.5 }}
                         />
                       )}
@@ -152,33 +153,35 @@ const ForgettingCurveSimulator = () => {
                       {isPin && (
                         <motion.circle
                           cx={toX(i)} cy={toY(activeCurve[i])} r="4"
-                          fill="var(--module-success)"
+                          fill="var(--nsu-orange)"
                           initial={{ scale: 0 }} animate={{ scale: 1 }}
                           transition={{ type: 'spring', stiffness: 300, damping: 15 }}
                         />
                       )}
-                      {/* Clickable day button area */}
+                      {/* Clickable day button area: a white box with a line; a review day is ink */}
                       <g
                         onClick={() => isClickable ? togglePin(i) : undefined}
                         style={{ cursor: isClickable ? 'pointer' : i === 0 ? 'default' : 'not-allowed' }}
                       >
+                        {/* 44 wide and tall to the finger */}
+                        <rect x={toX(i) - 22} y={chartBottom + 2} width="44" height="44" fill="transparent" />
                         <rect
                           x={toX(i) - 16} y={chartBottom + 6} width="32" height="28" rx="6"
-                          fill={isPin ? "var(--module-success)" : i === 0 ? "var(--module-surface)" : "var(--module-surface)"}
-                          stroke={isPin ? "var(--module-success-text)" : "var(--module-on-fill)"}
+                          fill={isPin ? "var(--ink-primary)" : "var(--surface-paper)"}
+                          stroke={isPin ? "var(--ink-primary)" : i === 0 ? "var(--hairline)" : "var(--outline-soft)"}
                           strokeWidth="1"
-                          className={isPin ? '' : 'dark:fill-zinc-700 dark:stroke-zinc-600'}
                         />
                         <text
                           x={toX(i)} y={chartBottom + 24}
-                          textAnchor="middle" fontSize="9"
+                          textAnchor="middle" fontSize="11"
                           fontWeight={isPin || i === 0 ? 'bold' : 'normal'}
-                          fill={isPin ? 'white' : "var(--module-muted)"}
+                          fill={isPin ? "var(--surface-paper)" : i === 0 ? "var(--ink-primary)" : "var(--ink-secondary)"}
+                          style={{ fontFamily: 'var(--font-ui)' }}
                         >
                           {i === 0 ? label : `Day ${label}`}
                         </text>
                         {isPin && (
-                          <text x={toX(i)} y={chartBottom + 48} textAnchor="middle" fontSize="8" fill="var(--module-success)" fontWeight="bold">Review</text>
+                          <text x={toX(i)} y={chartBottom + 48} textAnchor="middle" fontSize="11" fill="var(--ink-primary)" fontWeight="bold" style={{ fontFamily: 'var(--font-ui)' }}>Review</text>
                         )}
                       </g>
                     </g>
@@ -186,45 +189,41 @@ const ForgettingCurveSimulator = () => {
                 })}
 
                 {/* Axis labels */}
-                <text x={(chartLeft + chartRight) / 2} y={chartBottom + 60} textAnchor="middle" fontSize="10" fill="var(--module-surface)" fontWeight="bold">Time (Days)</text>
+                <text x={(chartLeft + chartRight) / 2} y={chartBottom + 60} textAnchor="middle" fontSize="11" fill="var(--ink-muted)" fontWeight="bold" style={{ fontFamily: 'var(--font-ui)' }}>Time (Days)</text>
               </svg>
             </div>
 
-            {/* Result + controls */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
-              <div className="text-center sm:text-left">
-                <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)]">Retention after 7 days:</p>
-                <p className="text-3xl font-bold text-[var(--module-danger-text)]">{finalRetention}%
-                  <span className="text-sm font-normal text-[var(--module-muted)] ml-2">
-                    {pins.length === 0 ? '(no reviews)' : `(${pins.length} review${pins.length > 1 ? 's' : ''})`}
-                  </span>
-                </p>
+            {/* Result + controls: the readout in ink under a hairline, Reset as a quiet text button */}
+            <div className="ex-result">
+              <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+                <div>
+                  <p className="ex-sub">Retention after 7 days:</p>
+                  <p className="ex-result-name">{finalRetention}%
+                    <span className="t-meta ml-2">
+                      {pins.length === 0 ? '(no reviews)' : `(${pins.length} review${pins.length > 1 ? 's' : ''})`}
+                    </span>
+                  </p>
+                </div>
+                <TextButton tone="quiet" onClick={() => setPins([])}>
+                  Reset
+                </TextButton>
               </div>
-              <button
-                onClick={() => setPins([])}
-                className="px-4 py-2 text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] rounded-lg hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] transition-colors" data-wide-button="true"
-              >
-                Reset
-              </button>
             </div>
 
-            {/* Insight message */}
+            {/* Insight message: a line in ink, the tick when the reviews are well spaced */}
             {pins.length === 3 && (
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                className={`mt-4 p-4 rounded-xl text-sm font-medium ${
-                  finalRetention >= 70
-                    ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] border border-[var(--module-line)] dark:border-[var(--module-line)]"
-                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)]"
-                }`}
               >
+                <AnswerLine tone={finalRetention >= 70 ? 'ok' : 'note'}>
                 {finalRetention >= 70
                   ? 'Well spaced! Spreading reviews over the week keeps your retention high. This is the power of spaced repetition.'
                   : 'Try spacing your reviews further apart. Bunching them together wastes their power — your brain needs time between reviews to consolidate.'}
+                </AnswerLine>
               </motion.div>
             )}
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -233,19 +232,19 @@ const FeynmanExplainer = () => {
     const [explanation, setExplanation] = useState('');
     const jargon = ['molecules', 'selectively', 'permeable', 'concentration'];
     const jargonCount = jargon.filter(word => explanation.toLowerCase().includes(word)).length;
+    const titleId = useId();
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Explain-It Challenge</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Task: Explain this definition of Osmosis in simple terms, as if to a 12-year-old.</p>
-             <p className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-xl text-xs text-center mb-4">{concept}</p>
-             <textarea value={explanation} onChange={e => setExplanation(e.target.value)} className="w-full h-32 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} placeholder="Your simple explanation..."></textarea>
+        <ExerciseSheet title="The Explain-It Challenge" sub="Task: Explain this definition of Osmosis in simple terms, as if to a 12-year-old." name="FeynmanExplainer" id={titleId}>
+             {/* The definition: words you read, on the sheet under a hairline, not in a box */}
+             <div className="ex-block"><p className="ex-quote">{concept}</p></div>
+             <AreaField aria-labelledby={titleId} value={explanation} onChange={e => setExplanation(e.target.value)} rows={5} placeholder="Your simple explanation..." />
              {explanation.length > 0 &&
-                <div className={`mt-4 text-center text-xs p-2 rounded-lg ${jargonCount > 0 ? "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)]" : "bg-[var(--module-success-soft)] text-[var(--module-success-text)]"}`}>
+                <AnswerLine tone={jargonCount > 0 ? 'note' : 'ok'}>
                     {jargonCount > 0 ? `Warning: You're using ${jargonCount} jargon word(s). Simplify further!` : 'Great! This is a simple, clear explanation.'}
-                </div>
+                </AnswerLine>
              }
-        </div>
+        </ExerciseSheet>
     );
 };
 

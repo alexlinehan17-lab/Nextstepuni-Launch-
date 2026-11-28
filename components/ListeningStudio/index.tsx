@@ -16,14 +16,18 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { createPortal } from 'react-dom';
-import { ArrowRight, X } from 'lucide-react';
+import { ArrowRight, ChevronLeft } from 'lucide-react';
 import { LEVEL_LABEL, levelsFor, type Level } from '../MarkBank/deck';
 import type { CardMemory } from '../MarkBank/scheduler';
 import type { SessionCardResult } from '../MarkBank/SessionScreen';
 import type { SecCard } from '../../types/markBank';
-import { useModal } from '../../hooks/useModal';
 import { useNativeStatusBarAppearance } from '../../hooks/useNativeStatusBarAppearance';
+import { useBackStep, useOptionalNavigation } from '../../contexts/NavigationContext';
+import { Button, IconButton, TextButton } from '../ui/Button';
+import { SelectionBar, SelectionMark } from '../ui/Choice';
+import { List, PressBox, Row } from '../ui/List';
+import { Menu } from '../ui/Menu';
+import SubjectAvatar from '../SubjectAvatar';
 import {
   hostedRecordingCount, listeningSittings, type StudioSection, type StudioSitting as Sitting,
 } from './model';
@@ -80,7 +84,22 @@ const writeLeftOff = (uid: string | undefined, value: LeftOff) => {
   }
 };
 
-const noop = () => {};
+/** The laptop layout from 1024px (boards r5-listening-studio and c-tools2-listening; below that the sidebar
+ *  leaves too little room for two panels). Without
+ *  matchMedia (a test, an old browser) the page is the wide one, as a laptop browser would be. */
+function useBeside() {
+  const query = '(min-width: 1024px)';
+  const [beside, setBeside] = useState(() => typeof window === 'undefined' || typeof window.matchMedia !== 'function' || window.matchMedia(query).matches);
+  useEffect(() => {
+    if (typeof window.matchMedia !== 'function') return undefined;
+    const media = window.matchMedia(query);
+    const update = () => setBeside(media.matches);
+    media.addEventListener?.('change', update);
+    return () => media.removeEventListener?.('change', update);
+  }, []);
+  return beside;
+}
+
 const plural = (count: number, one: string, many: string) => `${count} ${count === 1 ? one : many}`;
 const recordingLine = (sitting: Sitting) =>
   sitting.recordings.held === sitting.recordings.total ? 'Recording plays here'
@@ -92,7 +111,8 @@ const ListeningStudio: React.FC<ListeningStudioProps> = ({
   cards, memories, loading, error, onRetry, onGrade, onLeave,
 }) => {
   useNativeStatusBarAppearance('dark');
-  const dialogRef = useRef<HTMLDivElement | null>(null);
+  const beside = useBeside();
+  const nav = useOptionalNavigation();
   const returnTo = useRef<HTMLElement | null>(null);
   const paperRef = useRef<HTMLElement | null>(null);
   const sittings = useMemo(() => listeningSittings(cards), [cards]);
@@ -101,7 +121,11 @@ const ListeningStudio: React.FC<ListeningStudioProps> = ({
   const [open, setOpen] = useState<{ sitting: string; section: string } | null>(null);
   const [leftOff, setLeftOff] = useState<LeftOff | null>(() => readLeftOff(uid));
   const [carrying, setCarrying] = useState<LeftOff | null>(null);
-  useModal(true, onLeave ?? noop, dialogRef, { initialFocus: 'dialog' });
+  // The Studio is a page of the Launchpad now (sidebar B beside it on a laptop, the tab bar under it
+  // on a phone): its one Back is the bar's on a phone and the panel's on a laptop, and it returns to
+  // where the student came from, as the app's Back does; the subject screen steps back to the papers.
+  const leave = () => { if (nav) nav.goBack(); else onLeave?.(); };
+  useBackStep(view === 'subjects', () => setView('wall'));
 
   // A new subject or level has its own papers.
   useEffect(() => { setOpen(null); setSelected(null); }, [subjectId, level]);
@@ -169,155 +193,161 @@ const ListeningStudio: React.FC<ListeningStudioProps> = ({
     if (leftOff.subjectId !== subjectId) chooseSubject(leftOff.subjectId);
   };
 
-  const wall = (
-    <div className="ls-col ls-front-col">
-      <div className="ls-tabs" role="group" aria-label="Subject">
-        {tabs.map(subject => (
-          <button type="button" className="ls-tab" key={subject.id} aria-pressed={subject.id === subjectId}
-            onClick={() => chooseSubject(subject.id)}>{subject.title}</button>
-        ))}
-        {subjects.length > tabs.length && (
-          <button type="button" className="ls-btn" onClick={() => setView('subjects')}>All {subjects.length} subjects</button>
-        )}
-      </div>
+  const barNote = held === total ? `Every ${subjectLabel} recording plays here`
+    : held === 0 ? 'Recordings open on the SEC site for now' : `${held} of ${total} recordings play here`;
+  const ALL = '__all__';
 
-      <div className="ls-bar">
-        {levels.length > 1 ? (
-          <div className="ls-levels" role="group" aria-label="Paper level">
-            {levels.map(value => (
-              <button type="button" key={value} aria-pressed={value === level} onClick={() => chooseLevel(value)}>{LEVEL_LABEL[value]}</button>
-            ))}
-          </div>
-        ) : <span />}
-        {!loading && !error && total > 0 && (
-          <span className="ls-bar-note">
-            {held === total ? 'Every recording plays here' : held === 0 ? 'Recordings open on the SEC site for now' : `${held} of ${total} recordings play here`}
-          </span>
-        )}
+  // The subjects: on a laptop today's words in a row (the one chosen in ink, with its character) and
+  // All N subjects; on a phone one menu with the character, whose last line opens All N subjects
+  // (boards r5-listening-studio and c-tools2-listening).
+  const subjectControls = beside ? (
+    <div className="ls7-subjects-row">
+      <div className="ls7-tabs" role="group" aria-label="Subject">
+        {tabs.map(subject => (
+          <TextButton key={subject.id} className="ls7-tab" aria-pressed={subject.id === subjectId} onClick={() => chooseSubject(subject.id)}>
+            <span className="ls7-tab-art" aria-hidden="true"><SubjectAvatar subject={subject.title} bare /></span>{subject.title}
+          </TextButton>
+        ))}
+      </div>
+      {subjects.length > tabs.length && <Button onClick={() => setView('subjects')}>All {subjects.length} subjects</Button>}
+    </div>
+  ) : (
+    <Menu label="Subject" className="ls7-subject-menu" value={subjectId}
+      face={<span className="ls7-menu-face"><span className="ls7-tab-art" aria-hidden="true"><SubjectAvatar subject={subjectLabel} bare /></span>{subjectLabel}</span>}
+      options={[...tabs.map(subject => ({ value: subject.id, label: subject.title })), ...(subjects.length > tabs.length ? [{ value: ALL, label: `All ${subjects.length} subjects` }] : [])]}
+      onChange={value => { if (value === ALL) setView('subjects'); else chooseSubject(value); }} />
+  );
+
+  const levelControl = levels.length > 1
+    ? <SelectionBar label="Paper level" size="md" className="ls7-levels" value={level} onChange={value => chooseLevel(value)} options={levels.map(value => ({ value, label: LEVEL_LABEL[value] }))} />
+    : null;
+
+  const wall = (
+    <div className="ls7-col">
+      <div className="ls7-controls">
+        {subjectControls}
+        <div className="ls7-level-row">
+          {levelControl}
+          {beside && !loading && !error && total > 0 && <span className="t-meta">{barNote}</span>}
+        </div>
       </div>
 
       {error ? (
-        <div className="ls-state" role="alert">
-          <p>These papers could not be loaded.</p>
-          <button type="button" className="ls-btn" onClick={onRetry}>Try again</button>
+        <div className="ls7-state" role="alert">
+          <p className="t-body">These papers could not be loaded.</p>
+          <Button onClick={onRetry}>Try again</Button>
         </div>
       ) : loading ? (
-        <p className="ls-state" role="status">Loading the {subjectLabel} papers…</p>
+        <p className="ls7-state t-sub" role="status">Loading the {subjectLabel} papers…</p>
       ) : sittings.length === 0 ? (
-        <p className="ls-state">There are no {subjectLabel} {LEVEL_LABEL[level]} listening papers here yet.</p>
+        <p className="ls7-state t-sub">There are no {subjectLabel} {LEVEL_LABEL[level]} listening papers here yet.</p>
       ) : (
         <>
-          <div className="ls-wall" role="group" aria-label={`${subjectLabel} ${LEVEL_LABEL[level]} papers`}>
+          <div className="ls7-wall" role="group" aria-label={`${subjectLabel} ${LEVEL_LABEL[level]} papers`}>
             {sittings.map(sitting => {
               const done = satCount(sitting);
               const here = leftOffHere?.key === sitting.key;
+              const chosen = sitting.key === current?.key;
               return (
-                <button type="button" className="ls-year" key={sitting.key} aria-pressed={sitting.key === current?.key}
-                  onClick={() => choose(sitting)}>
-                  <b className={here ? 'ls-here' : undefined}>{sitting.year}</b>
-                  {sitting.deferred && <em>Deferred sitting</em>}
-                  <span className="ls-ticks" aria-hidden="true">
-                    {sitting.sections.map(section => <span key={section.key} className={sat(section) ? 'is-on' : undefined} />)}
+                <PressBox key={sitting.key} className="ls7-year" pressed={chosen} onPress={() => choose(sitting)}>
+                  <span className="ls7-year-top">
+                    <span className="ls7-year-n">{here ? <i className="ls7-here" aria-hidden="true" /> : null}{sitting.year}</span>
+                    {beside && chosen ? <SelectionMark on /> : null}
                   </span>
-                  <small>
+                  {sitting.deferred && <span className="t-meta">Deferred sitting</span>}
+                  <span className="ls7-strokes" aria-hidden="true">
+                    {sitting.sections.map(section => <i key={section.key} data-on={sat(section) || undefined} />)}
+                  </span>
+                  <span className="t-meta">
                     {done > 0 ? `${done} of ${sitting.sections.length} sat`
                       : sitting.recordings.held === sitting.recordings.total ? 'Plays here'
                       : sitting.recordings.held === 0 ? 'SEC site' : 'Part plays here'}
-                  </small>
-                </button>
+                  </span>
+                </PressBox>
               );
             })}
           </div>
-          <p className="ls-note">A stroke is a section of the paper. A filled stroke is one you have sat.</p>
+          <p className="t-meta ls7-note">{beside ? 'A stroke is a section of the paper. A filled stroke is one you have sat.'
+            : `${barNote}. A stroke is a section of the paper; a filled stroke is one you have sat.`}</p>
         </>
       )}
     </div>
   );
 
   const subjectScreen = (
-    <div className="ls-col ls-front-col">
-      <header className="ls-sh-head">
-        <h2>Choose a subject</h2>
-        <p>{plural(subjects.length, 'subject has', 'subjects have')} a listening. Each shows how many of its recordings play inside the app.</p>
+    <div className="ls7-col">
+      <header className="ls7-sh-head">
+        <h2 className="t-heading">Choose a subject</h2>
+        <p className="t-sub">{plural(subjects.length, 'subject has', 'subjects have')} a listening. Each shows how many of its recordings play inside the app.</p>
       </header>
-      <div className="ls-subjects">
+      <List className="ls7-subject-list">
         {subjects.map(subject => {
           const count = hostedRecordingCount(subject.id);
           return (
-            <button type="button" className="ls-subject" key={subject.id} aria-pressed={subject.id === subjectId}
-              onClick={() => { chooseSubject(subject.id); setView('wall'); }}>
-              <b>{subject.title}</b>
-              <span>{mySubjectIds.includes(subject.id) ? 'One of your subjects' : ''}</span>
-              <span className="ls-subject-rec">
-                {count > 0 ? `${plural(count, 'recording plays', 'recordings play')} here` : 'Recordings open on the SEC site for now'}
-              </span>
-            </button>
+            <Row key={subject.id} art={<SubjectAvatar subject={subject.title} bare />} title={subject.title}
+              selected={subject.id === subjectId}
+              meta={<>{mySubjectIds.includes(subject.id) ? <span className="ls7-mine">One of your subjects</span> : null}
+                <span>{count > 0 ? `${plural(count, 'recording plays', 'recordings play')} here` : 'Recordings open on the SEC site for now'}</span></>}
+              onPress={() => { chooseSubject(subject.id); setView('wall'); }} />
           );
         })}
-      </div>
-      <div className="ls-nav">
-        <button type="button" className="ls-btn" onClick={() => setView('wall')}>Back to {subjectLabel}</button>
-      </div>
+      </List>
     </div>
   );
 
-  const paper = current && !loading && !error ? (
-    <div className="ls-sleeve">
-      <div>
-        <p className="ls-sleeve-sub">{subjectLabel}</p>
-        <h1>{current.year}<br />{LEVEL_LABEL[current.level]}</h1>
-        {current.deferred && <p className="ls-sleeve-sub">Deferred sitting</p>}
-      </div>
-      <p className="ls-sleeve-meta">
-        {plural(current.sections.reduce((sum, section) => sum + section.cards.length, 0), 'part', 'parts')}
-        {' · '}{plural(current.sections.reduce((sum, section) => sum + section.marks, 0), 'mark', 'marks')}
-        {' · '}{recordingLine(current)}.
-      </p>
-      <div className="ls-srows">
-        {current.sections.map(section => (
-          <button type="button" className="ls-srow" key={section.key}
-            onClick={event => sit(current, section, event.currentTarget)}>
-            <span className={`ls-srow-t${leftOffHere?.key === current.key && leftOff?.section === section.key ? ' ls-here' : ''}`}>{section.title}</span>
-            <span className="ls-srow-d">
-              {section.extracts.length > 1 && `${plural(section.extracts.length, 'extract', 'extracts')} · `}
-              {plural(section.cards.length, 'part', 'parts')}
-              {section.marks > 0 && ` · ${plural(section.marks, 'mark', 'marks')}`}
-              {sat(section) && ' · sat'}
-            </span>
-            <span className="ls-go">Sit <ArrowRight aria-hidden="true" /></span>
-          </button>
-        ))}
-      </div>
-      <button type="button" className="ls-btn-primary" onClick={event => sit(current, current.sections[0], event.currentTarget)}>
-        Sit the whole paper
-      </button>
+  const resume = leftOff ? (
+    <div className="ls7-resume">
+      <span className="t-label">Where you left off</span>
+      <strong className="ls7-resume-what"><i className="ls7-here" aria-hidden="true" />{leftOff.subjectLabel} · {leftOff.sittingTitle} · {leftOff.sectionTitle}</strong>
+      <Button size="sm" arrow="forward" onClick={carryOn}>Carry on</Button>
     </div>
-  ) : <div className="ls-sleeve" />;
+  ) : null;
 
-  return createPortal(
-    <div className="ls-root ls-front" role="dialog" aria-modal="true" aria-label="Listening Studio" tabIndex={-1} ref={dialogRef}>
-      <header className="ls-front-top">
-        <h1>Listening Studio</h1>
-        {onLeave && (
-          <button type="button" className="ls-btn ls-btn-icon" aria-label="Leave Listening Studio" onClick={onLeave}>
-            <X aria-hidden="true" />
-          </button>
+  return (
+    <section className="ls7" aria-label="Listening Studio" data-view={view}>
+      <section className="ls7-paper" aria-label="The paper you have chosen" ref={paperRef}>
+        {beside && (
+          <header className="ls7-panel-top">
+            <IconButton label="Back" onClick={leave} icon={<ChevronLeft className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
+            <span className="ls7-panel-name">Listening Studio</span>
+          </header>
         )}
-      </header>
-
-      <section className="ls-sheet ls-front-sheet mark-bank-theme" aria-label={view === 'wall' ? 'Choose a paper' : 'Choose a subject'}>
-        {view === 'wall' ? wall : subjectScreen}
+        {current && !loading && !error ? (
+          <>
+            <div className="ls7-sleeve">
+              <p className="ls7-subj">{subjectLabel}{beside ? null : ' · the paper you will sit'}</p>
+              <h2 className="ls7-big">{current.year}<span className="ls7-break"> </span>{LEVEL_LABEL[current.level]}</h2>
+              {current.deferred && <p className="ls7-subj">Deferred sitting</p>}
+              <p className="ls7-meta">{beside ? <>
+                {plural(current.sections.reduce((sum, section) => sum + section.cards.length, 0), 'part', 'parts')}
+                {' · '}{plural(current.sections.reduce((sum, section) => sum + section.marks, 0), 'mark', 'marks')}
+                {' · '}{recordingLine(current)}.
+              </> : <>{plural(current.sections.length, 'section', 'sections')} · {recordingLine(current).replace(/^Recording/, 'the recording').replace(/^Part of/, 'part of')}</>}</p>
+            </div>
+            <div className="ls7-whole">
+              <Button kind="main" size="lg" block arrow="forward" onClick={event => sit(current, current.sections[0], event.currentTarget)}>Sit the whole paper</Button>
+            </div>
+            <div className="ls7-sections">
+              {!beside && <h3 className="t-heading">Or one section</h3>}
+              <List className="ls7-srows">
+                {current.sections.map(section => (
+                  <SectionRow key={section.key} title={section.title}
+                    here={leftOffHere?.key === current.key && leftOff?.section === section.key}
+                    detail={<>{section.extracts.length > 1 && `${plural(section.extracts.length, 'extract', 'extracts')} · `}
+                      {plural(section.cards.length, 'part', 'parts')}
+                      {section.marks > 0 && ` · ${plural(section.marks, 'mark', 'marks')}`}
+                      {sat(section) && ' · sat'}</>}
+                    onSit={from => sit(current, section, from)} />
+                ))}
+              </List>
+            </div>
+          </>
+        ) : null}
+        {resume}
       </section>
 
-      <section className="ls-front-paper" aria-label="The paper you have chosen" ref={paperRef}>
-        {paper}
-        {leftOff && (
-          <div className="ls-resume">
-            <span>Where you left off</span>
-            <strong className="ls-here">{leftOff.subjectLabel} · {leftOff.sittingTitle} · {leftOff.sectionTitle}</strong>
-            <button type="button" className="ls-btn" onClick={carryOn}>Carry on <ArrowRight aria-hidden="true" /></button>
-          </div>
-        )}
+      <section className="ls7-sheet" aria-label={view === 'wall' ? 'Choose a paper' : 'Choose a subject'}>
+        {view === 'wall' ? wall : subjectScreen}
       </section>
 
       {openSitting && openSection && (
@@ -332,9 +362,21 @@ const ListeningStudio: React.FC<ListeningStudioProps> = ({
           onClose={close}
         />
       )}
-    </div>,
-    document.body,
+    </section>
   );
 };
+
+/** One section of the paper: the whole row sits it, its "Sit" drawn as the row's own button (board). */
+const SectionRow: React.FC<{ title: string; detail: React.ReactNode; here: boolean; onSit: (from: HTMLElement) => void }> = ({ title, detail, here, onSit }) => (
+  <li className="ui-row-item">
+    <button type="button" className="ui-part ui-row ls7-srow" onClick={event => onSit(event.currentTarget)}>
+      <span className="ui-row-body">
+        <span className="ui-row-title">{here ? <i className="ls7-here" aria-hidden="true" /> : null}{title}</span>
+        <span className="ui-row-meta">{detail}</span>
+      </span>
+      <span className="ls7-sit-pill">Sit <ArrowRight width={16} height={16} strokeWidth={2} aria-hidden="true" /></span>
+    </button>
+  </li>
+);
 
 export default ListeningStudio;

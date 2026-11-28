@@ -1,11 +1,11 @@
-import { BrandedBackwardSorter,ConceptSequence } from './learning/WideFeatures';
+import { BrandedBackwardSorter } from './learning/WideFeatures';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
 import { motion } from 'framer-motion';
-import { BrainCircuit,CheckCircle2,ClipboardList,DraftingCompass,History,Layers,Shield } from 'lucide-react';
+import { BrainCircuit,ClipboardList,DraftingCompass,History,Layers,Shield } from 'lucide-react';
 import React,{ useState } from 'react';
 import { REVERSE_ENGINEERING_REFERENCE_LIST } from '../data/references/reverseEngineering';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
@@ -14,6 +14,9 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
+import { AnswerGroup,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = skyTheme;
 
@@ -60,33 +63,33 @@ const PlanningParadoxVisualizer = () => {
     };
 
     const fwdPhases = [
-        { label: 'Procrastinate', x1: 0, x2: 0.33, color: "var(--module-ink)" },
-        { label: 'Catch up', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
-        { label: 'Cram & panic', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
+        { label: 'Procrastinate', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+        { label: 'Catch up', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+        { label: 'Cram & panic', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
     ];
     const revPhases = [
-        { label: 'Set targets & past papers', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
-        { label: 'Fill gaps & refine', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
-        { label: 'Taper & rest', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
+        { label: 'Set targets & past papers', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+        { label: 'Fill gaps & refine', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+        { label: 'Taper & rest', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
     ];
 
     const Chart = ({ effort, stress, phases, areaColor, areaId, stressColor, label }: {
         effort: number[]; stress: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
         areaColor: string; areaId: string; stressColor: string; label: string;
     }) => (
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full ex-figure-art" style={{ fontFamily: 'var(--font-ui)' }}>
             <defs>
                 <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
-                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
+                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.12" />
+                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.02" />
                 </linearGradient>
             </defs>
             {/* Grid lines */}
             {[0.25, 0.5, 0.75, 1.0].map(v => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--hairline)" strokeDasharray="3 3" />
             ))}
             {/* Baseline */}
-            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--outline-soft)" />
             {/* Effort area */}
             <motion.path
                 d={buildArea(effort)}
@@ -116,63 +119,62 @@ const PlanningParadoxVisualizer = () => {
                 />
             ))}
             {/* Y-axis labels */}
-            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
-            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--ink-muted)">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--ink-muted)">Low</text>
             {/* Month labels */}
             {months.map((m, i) => (
-                <text key={m} x={toX(i / (months.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
+                <text key={m} x={toX(i / (months.length - 1))} y={toY(0) + 14} fontSize="11" fill="var(--ink-muted)" textAnchor="middle">{m}</text>
             ))}
             {/* Phase labels */}
             {phases.map((p, i) => (
-                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 30} fontSize="11" fill={p.color} textAnchor="middle">{p.label}</text>
             ))}
             {/* Chart label */}
-            <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
+            <text x={W / 2} y={14} fontSize="12" fill="var(--ink-primary)" textAnchor="middle">{label}</text>
             {/* Legend */}
-            <line x1={W - padR - 88} x2={W - padR - 72} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-            <text x={W - padR - 68} y={17} fontSize="8" fill="var(--module-surface)">Effort</text>
-            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke={stressColor} strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Stress</text>
+            <line x1={W - padR - 136} x2={W - padR - 120} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 116} y={18} fontSize="11" fill="var(--ink-muted)">Effort</text>
+            <line x1={W - padR - 70} x2={W - padR - 54} y1={14} y2={14} stroke={stressColor} strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 50} y={18} fontSize="11" fill="var(--ink-muted)">Stress</text>
         </svg>
     );
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Planning Paradox</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Two students. Same 6 months. Opposite strategies.</p>
-
+        <ExerciseSheet title="The Planning Paradox" sub="Two students. Same 6 months. Opposite strategies." name="PlanningParadoxVisualizer">
             {!revealed ? (
-                <div className="text-center">
-                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Most students start at the beginning and plan forward. What does that effort curve actually look like?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-surface)] text-[var(--module-ink)] hover:bg-[var(--module-surface)] transition-colors" data-wide-button="true">
-                        Reveal the Paradox
-                    </button>
+                <div className="ex-stack">
+                    <p className="t-sub">Most students start at the beginning and plan forward. What does that effort curve actually look like?</p>
+                    <div className="ex-actions">
+                        <Button onClick={() => setRevealed(true)}>
+                            Reveal the Paradox
+                        </Button>
+                    </div>
                 </div>
             ) : (
-                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-                    <div className="grid md:grid-cols-2 gap-4 mb-5">
-                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+                    {/* The two graphs, on the sheet, not in tinted boxes */}
+                    <div className="ex-stack">
+                        <div className="ex-figure">
                             <Chart effort={fwdEffort} stress={fwdStress} phases={fwdPhases}
-                                areaColor="var(--module-danger-text)" areaId="fwd-grad" stressColor="var(--module-ink)" label="Forward Planner" />
+                                areaColor="var(--ink-primary)" areaId="fwd-grad" stressColor="var(--ink-muted)" label="Forward Planner" />
                         </div>
-                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
+                        <div className="ex-figure">
                             <Chart effort={revEffort} stress={revStress} phases={revPhases}
-                                areaColor="var(--module-success-text)" areaId="rev-grad" stressColor="var(--module-ink)" label="Reverse Planner" />
+                                areaColor="var(--ink-primary)" areaId="rev-grad" stressColor="var(--ink-muted)" label="Reverse Planner" />
                         </div>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                            <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
-                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Low effort early</strong> feels comfortable but creates a debt. Stress explodes in the final weeks when it's too late to fill gaps.</p>
+                    {/* What each graph means: words you read, held by a hairline */}
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div className="ex-block">
+                            <p className="ex-block-text text-ink-primary"><strong>Low effort early</strong> feels comfortable but creates a debt. Stress explodes in the final weeks when it's too late to fill gaps.</p>
                         </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                            <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
-                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Front-loaded effort</strong> feels harder at first, but stress decreases over time. You arrive at the exam rested and confident.</p>
+                        <div className="ex-block">
+                            <p className="ex-block-text text-ink-primary"><strong>Front-loaded effort</strong> feels harder at first, but stress decreases over time. You arrive at the exam rested and confident.</p>
                         </div>
                     </div>
                 </motion.div>
             )}
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -193,21 +195,21 @@ const ImplementationChecklist = () => {
     const progress = (items.filter(i => i.checked).length / items.length) * 100;
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Schedule Checklist</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Follow these steps to build your own backwards study schedule.</p>
-             <div className="space-y-3 mb-6">
+        <ExerciseSheet title="Your Schedule Checklist" sub="Follow these steps to build your own backwards study schedule." name="ImplementationChecklist">
+             <AnswerGroup kind="several">
                 {items.map(item => (
-                    <div key={item.id} onClick={() => toggleCheck(item.id)} className={`p-4 rounded-xl flex items-center gap-4 cursor-pointer border transition-all ${item.checked ? "bg-[var(--module-surface)] border-[var(--module-line)]" : "bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}>
-                        <div className={`w-6 h-6 rounded-md flex items-center justify-center ${item.checked ? "bg-[var(--module-surface)] text-[var(--module-ink)]" : "bg-[var(--module-surface)]"}`}>
-                            {item.checked && <CheckCircle2 size={14}/>}
-                        </div>
-                        <span className={`font-bold text-sm ${item.checked ? "text-[var(--module-muted)] dark:text-[var(--module-muted)] line-through" : "text-[var(--module-ink)] dark:text-[var(--module-muted)]"}`}>{item.text}</span>
-                    </div>
+                    <ChoiceTile
+                        key={item.id}
+                        kind="several"
+                        chosen={item.checked}
+                        onClick={() => toggleCheck(item.id)}
+                        label={item.text}
+                    />
                 ))}
-             </div>
-             <div className="w-full h-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full"><motion.div className="h-full bg-[var(--module-surface)] rounded-full" animate={{width: `${progress}%`}} /></div>
-        </div>
+             </AnswerGroup>
+             {/* How far through the list: a hairline track with an ink fill */}
+             <div className="w-full h-1 rounded-sm overflow-hidden" style={{ backgroundColor: "var(--hairline)" }} aria-hidden="true"><motion.div className="h-full" style={{ backgroundColor: "var(--ink-primary)" }} animate={{width: `${progress}%`}} /></div>
+        </ExerciseSheet>
     );
 }
 
@@ -295,40 +297,36 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
                 ) : (
                   <p>A good backwards schedule is not just one big block of "study." It is split into four clear phases, each with its own job. Working backwards from the exam, here is what it looks like:</p>
                 )}
-                <ConceptSequence kind="roadmap">
-                  {/* Card 1 — Sky */}
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
-                    <div>
-                      <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Phase 4: Wind Down (Final 2 Weeks)</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>No new material. Light review, plenty of sleep, and keeping your nerves in check.</p>
+                <ol className="ex-nums">
+                  <li>
+                    <span className="ex-num">1</span>
+                    <div className="ex-num-copy">
+                      <p className="ex-num-title">Phase 4: Wind Down (Final 2 Weeks)</p>
+                      <p className="ex-num-sub">No new material. Light review, plenty of sleep, and keeping your nerves in check.</p>
                     </div>
-                  </div>
-                  {/* Card 2 — Sunshine */}
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
-                    <div>
-                      <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 3: Practice Exams (Months 1-2 Before the Exam)</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Full mock papers under timed conditions to build stamina and sharpen your technique.</p>
+                  </li>
+                  <li>
+                    <span className="ex-num">2</span>
+                    <div className="ex-num-copy">
+                      <p className="ex-num-title">Phase 3: Practice Exams (Months 1-2 Before the Exam)</p>
+                      <p className="ex-num-sub">Full mock papers under timed conditions to build stamina and sharpen your technique.</p>
                     </div>
-                  </div>
-                  {/* Card 3 — Peach */}
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
-                    <div>
-                      <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 2: Mix and Deepen (Months 3-4 Before the Exam)</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Start mixing topics together instead of studying one at a time -- this builds the flexible thinking the exam demands.</p>
+                  </li>
+                  <li>
+                    <span className="ex-num">3</span>
+                    <div className="ex-num-copy">
+                      <p className="ex-num-title">Phase 2: Mix and Deepen (Months 3-4 Before the Exam)</p>
+                      <p className="ex-num-sub">Start mixing topics together instead of studying one at a time -- this builds the flexible thinking the exam demands.</p>
                     </div>
-                  </div>
-                  {/* Card 4 — Mint */}
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>4</div>
-                    <div>
-                      <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Phase 1: Learn the Basics (Months 5-6 Before the Exam)</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>First-pass learning and making your revision materials (flashcards, summaries, whatever works for you).</p>
+                  </li>
+                  <li>
+                    <span className="ex-num">4</span>
+                    <div className="ex-num-copy">
+                      <p className="ex-num-title">Phase 1: Learn the Basics (Months 5-6 Before the Exam)</p>
+                      <p className="ex-num-sub">First-pass learning and making your revision materials (flashcards, summaries, whatever works for you).</p>
                     </div>
-                  </div>
-                </ConceptSequence>
+                  </li>
+                </ol>
             </ReadingSection>
           )}
            {activeSection === 4 && (

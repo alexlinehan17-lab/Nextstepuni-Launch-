@@ -2,7 +2,6 @@ import { markBankCurriculumMenu, cardsForMenuTopic } from './curriculumMenu';
 import { consumeInitialPracticeLink } from './markBankDeepLink';
 import { loadAtlasModel } from '../PaperTrail/atlasModel';
 import { resolveSubjectId } from '../../curriculumRegistry';
-import { COLORS } from '../../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -25,7 +24,7 @@ import { COLORS } from '../../design/tokens';
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import MarkBankLibrary from './MarkBankLibrary';
+import MarkBankLibrary, { type LibraryPage } from './MarkBankLibrary';
 import ListeningStudio from '../ListeningStudio';
 import { LISTENING_SUBJECT_IDS } from '../ListeningStudio/model';
 import StartingPointCheck from './StartingPointCheck';
@@ -47,26 +46,10 @@ import {
 } from './store';
 import { MARK_BANK_LEVEL_LABELS, isConfidenceReviewCard, isUnpricedSectionCard, type SecCard } from '../../types/markBank';
 
-import PrimaryActionButton from '../ui/PrimaryActionButton';
-import { ResultStatGrid } from '../ui/ProductPatterns';
+import { Button } from '../ui/Button';
+import { AnswerTick } from '../ui/Choice';
 import { trackProgrammeEvent } from '../../utils/programmeAnalytics';
 import { DEMO_STUDENT_UID } from '../../data/devStudent';
-
-const INK = 'var(--mb-ink)';
-const INK_2 = 'var(--mb-ink-2)';
-const MUTED = 'var(--mb-muted)';
-const LABEL = 'var(--mb-label)';
-const MUTED_BORDER = 'var(--mb-border)';
-const SUCCESS = 'var(--mb-success)';
-const SUCCESS_TINT = 'var(--mb-success-tint)';
-const SUCCESS_TEXT = 'var(--mb-success-text)';
-
-const SERIF = "'Source Serif 4', Georgia, serif";
-const SANS = "'DM Sans', system-ui, sans-serif";
-
-/** Accent means "this is the action / do this now". Never "correct". */
-const ACCENT = COLORS.accent;
-const HAIRLINE = 'var(--mb-hairline)';
 
 type Screen =
   | { name: 'board' }
@@ -95,13 +78,6 @@ export interface MarkBankProps {
 const isListeningSubject = (subjectId: string) => (LISTENING_SUBJECT_IDS as readonly string[]).includes(subjectId);
 
 /* ------------------------------------------------------------------ bits ---- */
-
-const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <span style={{
-    font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.13em',
-    textTransform: 'uppercase', color: LABEL,
-  }}>{children}</span>
-);
 
 /**
  * A compact group of mutually exclusive choices using the platform selection
@@ -191,6 +167,17 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
     }
     return [...ids];
   }, [studentSubjects, canSelectSubject]);
+  // The subjects the student takes (Your setup, the same list study set-up reads), as Mark Bank
+  // subjects with questions: the only ones its subject button offers (Alex, 26 Nov 2026: "it should
+  // only show you your subjects, not every subject"). A student with none set is offered every subject.
+  const mySubjectIds = useMemo(() => {
+    const ids: string[] = [];
+    for (const profileSubject of studentSubjects ?? []) {
+      const choice = canSelectSubject(profileSubject.subjectName) ? profileDeckChoice([profileSubject]) : null;
+      if (choice && !ids.includes(choice.subjectId)) ids.push(choice.subjectId);
+    }
+    return ids;
+  }, [studentSubjects, canSelectSubject]);
   const firstStudioSubject = studioSubjects[0];
   const fallbackChoice = studio && firstStudioSubject
     ? { subjectId: firstStudioSubject.id, level: levelsFor(firstStudioSubject.id).find(l => deckSize(firstStudioSubject.id, l) > 0) ?? ('higher' as Level) }
@@ -219,6 +206,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
   const deckId = `${subjectId}-${level}`;
   const [deck, setDeck] = useState<DeckState>(() => readLocal(uid, deckId));
   const [screen, setScreen] = useState<Screen>({ name: 'board' });
+  // The library's page (a strand, a topic), held here so a practice run returns
+  // the student to where they started it; a new subject or level opens on its home.
+  const [libraryPlace, setLibraryPlace] = useState<{ deckId: string; pages: LibraryPage[] }>({ deckId, pages: [{ at: 'home' }] });
+  const libraryPages = libraryPlace.deckId === deckId ? libraryPlace.pages : undefined;
+  const setLibraryPages = useCallback((pages: LibraryPage[]) => setLibraryPlace({ deckId, pages }), [deckId]);
   const [loaded, setLoaded] = useState(false);
   const [online, setOnline] = useState(() => typeof navigator === 'undefined' ? true : navigator.onLine);
 
@@ -405,75 +397,67 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
       subject.title,
     );
 
+    // The end of a run, in the agreed look (mark-bank-library.css, "The end of a practice
+    // run"): a light headline on the white page, the three figures in one line, the next
+    // review under a rule, and two buttons of one height (the charcoal one goes back).
+    const figures = [
+      { label: 'Marks banked', value: claimed, success: true },
+      { label: 'Available', value: available, success: false },
+      { label: 'To revisit', value: Math.max(0, left), success: false },
+    ];
     return (
-      <div className="mark-bank-theme" style={{ minHeight: '100dvh', fontFamily: SANS, padding: '56px 16px 72px', background: 'var(--mb-canvas)' }}>
-        <div style={{ maxWidth: 620, margin: '0 auto', textAlign: 'center' }}>
-          <div style={{
-            width: 76, height: 76, margin: '0 auto 20px', borderRadius: 24,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            background: reviewOnly ? 'var(--mb-raised)' : left === 0 ? SUCCESS_TINT : '#FFF0E6',
-            color: reviewOnly ? INK_2 : left === 0 ? SUCCESS : ACCENT,
-          }}>
-            <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-              {left === 0 ? (
-                <path d="M10 20.5l6.5 6.5L30.5 13" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-              ) : (
-                <>
-                  <path d="M11 11.5h18v21H11z" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
-                  <path d="M15 8h10v7H15zM16 21h8M16 26h5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                </>
-              )}
-            </svg>
-          </div>
-          <Eyebrow>Session complete</Eyebrow>
-          <h2 style={{ font: `700 32px/1.15 ${SERIF}`, color: INK, margin: '7px 0 8px' }}>
+      <div className="mark-bank-theme mb-close">
+        <div className="mb-close-col">
+          <span className="t-label mb-close-label">Session complete</span>
+          <h2 className="t-title mb-close-title">
             {reviewOnly ? 'Your review is complete.' : left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
           </h2>
-          <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 28px' }}>
+          <p className="t-sub mb-close-sub">
             {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {MARK_BANK_LEVEL_LABELS[level]} level
           </p>
 
-          {!reviewOnly && <ResultStatGrid items={[
-            { label: 'Marks banked', value: claimed, tone: 'success' },
-            { label: 'Available', value: available },
-            { label: 'To revisit', value: Math.max(0, left) },
-          ]} />}
-          {unscoredCount > 0 && <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED }}>
+          {!reviewOnly && (
+            <dl className="mb-close-figures">
+              {figures.map(figure => (
+                <div key={figure.label} className="mb-close-fig">
+                  <dt className="t-label mb-close-fig-name">
+                    {figure.success && figure.value > 0 ? <AnswerTick className="mb-close-tick" /> : null}
+                    {figure.label}
+                  </dt>
+                  <dd className="mb-close-fig-value">{figure.value}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
+          {unscoredCount > 0 && <p className="t-meta mb-close-note">
             {unscoredCount} {unscoredCount === 1 ? 'answer review had' : 'answer reviews had'} no calculated marks
             {reviewOnly ? '.' : unscoredCount === 1 ? ' and is excluded from these totals.' : ' and are excluded from these totals.'}
           </p>}
 
-          {!reviewOnly && <div style={{ marginTop: 14, background: 'var(--mb-paper)', border: `1px solid ${HAIRLINE}`, borderRadius: 16, padding: '17px 19px', textAlign: 'left' }}>
+          {!reviewOnly && ((left > 0 && worstCard) || left === 0) && <section className="mb-close-next">
             {left > 0 && worstCard && (
               <>
-                <Eyebrow>Best next review</Eyebrow>
-                <p style={{ font: `600 14px/1.5 ${SANS}`, color: INK, margin: '7px 0 2px' }}>
+                <span className="t-label mb-close-label">Best next review</span>
+                <p className="t-row mb-close-next-title">
                   {worstCard.questionRef} · {worstGap} {worstGap === 1 ? 'mark' : 'marks'} to recover
                 </p>
-                <p style={{ font: `400 13px/1.5 ${SANS}`, color: MUTED, margin: 0 }}>{worstCard.questionText}</p>
+                <p className="t-meta mb-close-next-text">{worstCard.questionText}</p>
               </>
             )}
             {left === 0 && (
-              <p style={{ font: `500 14px/1.55 ${SANS}`, color: SUCCESS_TEXT, margin: 0 }}>
-                Nothing left behind. The scheduler will bring these marks back before they fade.
+              <p className="t-body mb-close-next-done">
+                <AnswerTick className="mb-close-tick" />
+                <span>Nothing left behind. The scheduler will bring these marks back before they fade.</span>
               </p>
             )}
-          </div>}
+          </section>}
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 22, textAlign: 'left' }}>
-            <PrimaryActionButton label="Back to Mark Bank" onClick={() => setScreen({ name: 'board' })} className="w-full" />
+          <div className="mb-close-acts">
+            <Button kind="main" size="lg" block onClick={() => setScreen({ name: 'board' })}>Back to Mark Bank</Button>
             {nextQueue.length > 0 && (
-              <button
-                type="button"
-                onClick={() => startSession(screen.topicId, nextQueue)}
-                style={{
-                  padding: '13px 20px', borderRadius: 12, cursor: 'pointer',
-                  background: 'var(--mb-paper)', color: INK_2, border: `1px solid ${MUTED_BORDER}`,
-                  font: `600 14px/1 ${SANS}`,
-                }}
-              >
+              <Button size="lg" block onClick={() => startSession(screen.topicId, nextQueue)}>
                 {nextAction}
-              </button>
+              </Button>
             )}
           </div>
         </div>
@@ -491,6 +475,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, stu
 
   return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={reviewCards} state={deck} now={now}
     listeningCount={listeningCount} onOpenListeningStudio={onOpenListeningStudio}
+    pages={libraryPages} onPagesChange={setLibraryPages} mySubjectIds={mySubjectIds}
     chooseSubject={chooseSubject} chooseLevel={chooseLevel} canSelectSubject={canSelectSubject}
     onStartingPoint={() => setScreen({ name: 'starting-point' })}
     onStart={startSession} busy={launchingTopicId!==null} ready={loaded&&!cardsLoading&&!cardsError}

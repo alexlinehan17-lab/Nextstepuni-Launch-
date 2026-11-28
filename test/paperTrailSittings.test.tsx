@@ -12,6 +12,7 @@ import React from 'react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import PaperTrail from '../components/PaperTrail';
+import { NavigationProvider, useNavigation } from '../contexts/NavigationContext';
 import type { PaperEntry } from '../types/paperTrail';
 
 interface ReaderProps {
@@ -30,6 +31,7 @@ vi.mock('../components/PaperTrail/Viewer', () => ({ default: (props: ReaderProps
 } }));
 vi.mock('../components/PaperTrail/PaperCover', () => ({ default: () => <span>Cover</span> }));
 vi.mock('../components/PaperTrail/archiveHealth', () => ({ archiveHealth: () => Promise.resolve('ok') }));
+vi.mock('../contexts/AuthContext', () => ({ useAuth: () => ({ user: { uid: 'student-1' }, authResolved: true }) }));
 vi.mock('../firebase', () => ({ db: {} }));
 vi.mock('../contexts/ProgressContext', () => ({ useProgress: () => ({ updateDemoProgress: () => {} }) }));
 vi.mock('../hooks/useFreshProgress', () => ({ useFreshProgress: () => ({ loaded: true, doc: null }) }));
@@ -66,17 +68,22 @@ vi.mock('../paperTrailData', () => {
   };
 });
 
-const start = () => render(<PaperTrail studentSubjects={['Accounting', 'Biology', 'Climate Action and Sustainable Development']} />);
+// The top bar's one Back (area 0, the frame) replaces Paper Trail's own
+// "← Paper Trail" crumb: a step inside the archive registers with the app's
+// navigation, and Back goes back through it first.
+const FrameBack = () => { const nav = useNavigation(); return <button onClick={nav.goBack}>Back</button>; };
+const start = () => render(<NavigationProvider><FrameBack /><PaperTrail studentSubjects={['Accounting', 'Biology', 'Climate Action and Sustainable Development']} /></NavigationProvider>);
 const click = (name: string | RegExp) => fireEvent.click(screen.getByRole('button', {
   name: typeof name === 'string' ? new RegExp('^' + name.replaceAll(' ', '\\s*') + '$') : name,
 }));
+// The year is a selection bar (area 6a, the agreed design; it was a dropdown and a grid of year tiles).
+const year = (name: string) => within(screen.getByRole('radiogroup', { name: 'Year' })).getByRole('radio', { name });
 
 describe('Paper Trail sittings and syllabus eras', () => {
   beforeEach(() => { localStorage.clear(); reader.props = null; });
 
   it('lists the deferred sitting under its own heading with its own scheme', () => {
-    start(); click(/^Accounting/); click('All years');
-    click('2023, With deferred');
+    start(); click(/^Accounting/); fireEvent.click(year('2023'));
     expect(screen.getByRole('heading', { name: '2023 · Deferred sitting' })).toBeInTheDocument();
     const deferred = within(screen.getByRole('article', { name: 'Deferred · Paper 1' }));
     fireEvent.click(deferred.getByRole('button', { name: /Open marking scheme/ }));
@@ -92,26 +99,30 @@ describe('Paper Trail sittings and syllabus eras', () => {
     expect(reader.props?.answersUrl).toBeTruthy();
   });
 
-  it('names the deferred sitting in the paper-and-scheme dialog', async () => {
-    start(); click(/^Accounting/); click('All years'); click('2023, With deferred');
-    fireEvent.click(within(screen.getByRole('article', { name: 'Deferred · Paper 1' }))
-      .getByRole('button', { name: 'Paper & marking scheme' }));
-    const dialog = within(await screen.findByRole('dialog'));
-    expect(dialog.getByText('Accounting · 2023 · Deferred sitting · Higher level · English')).toBeInTheDocument();
+  // The paper-and-scheme dialog is gone with the agreed page (its covers and Open
+  // buttons are on the page); All years names the deferred sitting's paper instead.
+  it('names the deferred sitting in All years and opens it as itself', () => {
+    start(); click(/^Accounting/); fireEvent.click(year('All years'));
+    const list = within(screen.getByRole('list', { name: 'Every paper' }));
+    expect(list.getByText('2023 · Deferred · Paper 1')).toBeInTheDocument();
+    fireEvent.click(list.getByRole('button', { name: 'Open the 2023 Deferred · Paper 1' }));
+    expect(reader.props?.paper.url).toContain(encodeURIComponent('papers/lc/accounting/2023/paper/one-deferred.pdf'));
+    expect(reader.props?.scheme?.url).toContain(encodeURIComponent('papers/lc/accounting/2023/scheme/one-deferred.pdf'));
   });
 
   it('saves and reopens a deferred paper as itself, not as the June paper', () => {
-    start(); click(/^Accounting/); click('All years'); click('2023, With deferred');
+    start(); click(/^Accounting/); fireEvent.click(year('2023'));
     click('Save Deferred · Paper 1');
-    click('Paper Trail'); click('Saved');
+    click('Back'); click('Saved');
     click(/Accounting · Deferred · Paper 1\s*2023/);
     expect(reader.props?.paper.url).toContain(encodeURIComponent('/2023/paper/one-deferred.pdf'));
   });
 
   it('tags and explains a paper set on an earlier syllabus', () => {
-    start(); click(/^Accounting/); click('All years');
+    start(); click(/^Accounting/); fireEvent.click(year('All years'));
     expect(screen.getByText('Years marked “Earlier syllabus” were set before the 1997 syllabus change.')).toBeInTheDocument();
-    click('1996, Earlier syllabus');
+    expect(within(screen.getByRole('list', { name: 'Every paper' })).getByText('Paper and marking scheme · Earlier syllabus')).toBeInTheDocument();
+    fireEvent.click(year('1996'));
     expect(screen.getByText('Earlier syllabus. The current Accounting syllabus was first examined in 1997.')).toBeInTheDocument();
     fireEvent.click(within(screen.getByRole('article', { name: 'Paper 1' })).getByRole('button', { name: 'Open paper' }));
     expect(reader.props?.subtitle).toBe('Paper 1 · Higher · Earlier syllabus');
@@ -120,14 +131,14 @@ describe('Paper Trail sittings and syllabus eras', () => {
 
   it('keeps the newest June sitting as the default when sample papers exist', () => {
     start(); click(/^Biology/);
-    expect(screen.getByRole('combobox', { name: 'Choose a year' })).toHaveTextContent('2026');
+    expect(year('2026')).toHaveAttribute('aria-checked', 'true');
     expect(screen.getByText('Earlier syllabus. A new Biology specification is first examined in 2027.')).toBeInTheDocument();
   });
 
   it('shows a new subject’s official sample papers as samples, without a scheme', () => {
     start(); click(/^Climate Action and Sustainable Development/);
     expect(screen.getByRole('heading', { name: 'Sample papers' })).toBeInTheDocument();
-    expect(screen.getByRole('combobox', { name: 'Choose a year' })).toHaveTextContent('2027 · Sample');
+    expect(year('2027')).toHaveAttribute('aria-checked', 'true');
     expect(screen.getByText(/No marking schemes were published with them/)).toBeInTheDocument();
     const card = within(screen.getByRole('article', { name: 'Sample Paper 1' }));
     expect(card.getByText('Marking scheme not published')).toBeInTheDocument();

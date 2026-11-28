@@ -586,13 +586,13 @@ describe('Where it is offered', () => {
     native.display = 'denied';
     const view = render(<SettingsHost preferences={{ studyTimer: true }}><YourSetupView {...props} /></SettingsHost>);
     await flush();
-    expect(screen.getByRole('tablist', { name: 'Study timer notifications' })).toBeInTheDocument();
+    expect(screen.getByRole('radiogroup', { name: 'Study timer notifications' })).toBeInTheDocument();
     expect(screen.getByText(/open Settings, then Notifications, then NextStepUni/)).toBeInTheDocument();
     view.unmount();
 
     native.platform = 'web';
     resetNotificationsForTests();
     render(<SettingsHost><YourSetupView {...props} /></SettingsHost>);
-    expect(screen.queryByRole('tablist', { name: 'Study timer notifications' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('radiogroup', { name: 'Study timer notifications' })).not.toBeInTheDocument();
   });
 });

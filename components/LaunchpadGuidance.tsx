@@ -4,13 +4,15 @@
  * claim a false match score.
  */
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { createPortal } from 'react-dom';
-import { AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Check, ChevronLeft, ChevronRight, RotateCcw, X } from 'lucide-react';
-import { MotionDiv } from './Motion';
+import { ArrowLeft, ArrowRight, Check, ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
-import { useModal } from '../hooks/useModal';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import { Sheet } from './ui/Sheet';
+import { Button, Glyph, IconButton, TextButton } from './ui/Button';
+import { List, Row } from './ui/List';
+import { Menu } from './ui/Menu';
+import { ToolArtwork } from './launchpad/ToolMasthead';
+import './launchpad/catalogue.css';
 import {
   TOOL_GUIDANCE,
   availableRecommendationGoals,
@@ -18,7 +20,6 @@ import {
   type RecommendationGoalId,
   type ToolRecommendation,
 } from './launchpadGuidanceData';
-import { COLORS } from '../design/tokens';
 
 export interface LaunchpadToolSummary {
   id: string;
@@ -42,7 +43,6 @@ interface LaunchpadGuidanceProps {
 
 type GuidanceMode = 'explain' | 'recommend';
 
-const ACCENT = COLORS.accent;
 
 const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
   tools,
@@ -55,9 +55,8 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
   const [mode, setMode] = useState<GuidanceMode | null>(null);
   const [toolIndex, setToolIndex] = useState(0);
   const [goalId, setGoalId] = useState<RecommendationGoalId | null>(null);
-  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const guideBodyRef = useRef<HTMLDivElement>(null);
-  const guideTitleRef = useRef<HTMLHeadingElement>(null);
+  const guideTitleRef = useRef<HTMLSpanElement>(null);
   const availableIds = useMemo(
     () => availableToolIds ?? tools.map(tool => tool.id),
     [availableToolIds, tools],
@@ -76,22 +75,15 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
 
   const mobileAppDesign = useMobileAppDesign();
   const close = () => setMode(null);
-  useModal(mobileAppDesign && Boolean(mode), close);
 
+  // Moving to another tool or question starts at the top of the sheet; on a phone the
+  // sheet's title takes focus so a screen reader hears where it is (the shared Sheet
+  // holds focus inside, locks the page and closes on Escape).
   useEffect(() => {
     if (!mode) return;
-    closeButtonRef.current?.focus();
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') close();
-    };
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, [mode]);
-
-  useEffect(() => {
-    if (!mobileAppDesign || !mode) return;
-    if (guideBodyRef.current) guideBodyRef.current.scrollTop = 0;
-    guideTitleRef.current?.focus({ preventScroll: true });
+    const scroller = guideBodyRef.current?.closest('.ui-sheet-body') as HTMLElement | null;
+    if (scroller) scroller.scrollTop = 0;
+    if (mobileAppDesign) guideTitleRef.current?.focus({ preventScroll: true });
   }, [mobileAppDesign, mode, toolIndex, goalId, recommendation?.toolId]);
 
   const selectAnswer = (answerId: string) => {
@@ -107,9 +99,9 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
 
   return (
     <>
-      {compact ? <div className="lp-guide-actions">
-        <button type="button" onClick={() => open('explain')}>Meet the tools <ArrowRight size={15} /></button>
-        <button type="button" onClick={() => open('recommend')}>Help me choose <ArrowRight size={15} /></button>
+      {compact ? <div className="lp7-guide">
+        <TextButton arrow="forward" onClick={() => open('explain')}>Meet the tools</TextButton>
+        <TextButton arrow="forward" onClick={() => open('recommend')}>Help me choose</TextButton>
       </div> : <>
       <section aria-labelledby="launchpad-help-heading" className={`mb-6 sm:mb-8 ${mobileAppDesign ? '[&_button]:min-h-11' : ''}`}>
         <div className="mb-3 sm:mb-4">
@@ -162,149 +154,87 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
       </section>
       </>}
 
-      {createPortal(<AnimatePresence>
-        {mode && (
-          <div className={`frame-sheet-backdrop [--frame-gap:1.25rem] z-[220] flex items-end justify-center sm:items-center ${mobileAppDesign ? '[&_button]:min-h-11 [&_button]:shrink-0' : ''}`} role="dialog" aria-modal="true" aria-labelledby="launchpad-guidance-title">
-            <div aria-hidden="true" onClick={close} className="absolute inset-0 bg-[#1A1A1A]/60" />
-            <MotionDiv
-              initial={{ opacity: 0, y: 24, scale: 0.99 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 18, scale: 0.99 }}
-              transition={{ duration: 0.22 }}
-              className="frame-sheet [--frame-card-max:92dvh] relative flex w-full max-w-4xl flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-canvas)] shadow-2xl sm:rounded-[24px]"
-            >
-              <header className={`flex items-start justify-between gap-4 border-b border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 py-4 sm:px-7 ${mobileAppDesign ? 'shrink-0' : ''}`}>
-                <div>
-                  <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Launchpad guide</p>
-                  <h2 ref={guideTitleRef} tabIndex={mobileAppDesign ? -1 : undefined} id="launchpad-guidance-title" className="mt-1 text-xl font-semibold text-[var(--ink-primary)]">
-                    {mode === 'explain'
-                      ? 'Meet the tools'
-                      : recommendation
-                        ? 'Your recommendation'
-                        : goalId
-                          ? 'One more question'
-                          : 'What would help right now?'}
-                  </h2>
+      {/* The guide: the shared sheet (a bottom sheet on a phone, a dialog on a laptop), Close at
+          its top left, the one main action pinned at its foot in charcoal. */}
+      <Sheet open={Boolean(mode)} onClose={close} closeLabel="Close Launchpad guide" className="lp7-guide-sheet"
+        title={<span ref={guideTitleRef} tabIndex={-1} id="launchpad-guidance-title">{mode === 'explain'
+          ? 'Meet the tools'
+          : recommendation
+            ? 'Your recommendation'
+            : goalId
+              ? 'One more question'
+              : 'What would help right now?'}</span>}
+        footer={mode === 'explain' && explainedTool
+          ? <div className="lp7-guide-foot"><TextButton tone="quiet" onClick={() => open('recommend')}>Still unsure? Get a recommendation</TextButton><Button kind="main" size="lg" block arrow="forward" onClick={() => launch(explainedTool)}>{`Open ${explainedTool.title}`}</Button></div>
+          : mode === 'recommend' && recommendation && recommendedTool
+            ? <div className="lp7-guide-foot"><TextButton tone="quiet" onClick={() => { onRecommendationChange(null); setGoalId(null); }}><span className="lp7-inline"><Glyph icon={RotateCcw} size={16} />Start again</span></TextButton><Button kind="main" size="lg" block arrow="forward" onClick={() => launch(recommendedTool)}>{`Open ${recommendedTool.title}`}</Button></div>
+            : undefined}>
+        <div ref={guideBodyRef} className="lp7-guide-body">
+          {mode === 'explain' && explainedTool && (
+            <div className="lp7-guide-explain">
+              <List className="lp7-guide-list" label="Tools in this guide">
+                {tools.map((tool, index) => <Row key={tool.id} title={tool.title} selected={index === toolIndex} onPress={() => setToolIndex(index)} />)}
+              </List>
+              <div className="lp7-guide-tool">
+                <div className="lp7-guide-step">
+                  <IconButton label="Previous tool" icon={<Glyph icon={ChevronLeft} />} aria-disabled={toolIndex === 0 || undefined} onClick={() => setToolIndex(index => Math.max(0, index - 1))} />
+                  <Menu label="Choose a tool" block count value={explainedTool.id} options={tools.map(tool => ({ value: tool.id, label: tool.title }))} onChange={id => setToolIndex(tools.findIndex(tool => tool.id === id))} />
+                  <IconButton label="Next tool" icon={<Glyph icon={ChevronRight} />} aria-disabled={toolIndex === tools.length - 1 || undefined} onClick={() => setToolIndex(index => Math.min(tools.length - 1, index + 1))} />
                 </div>
-              <button ref={closeButtonRef} type="button" onClick={close} aria-label="Close Launchpad guide" className="flex h-11 w-11 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)]">
-                  <X size={18} />
-                </button>
-              </header>
-
-              {mode === 'explain' && explainedTool && (
-                <div ref={guideBodyRef} className="grid min-h-0 flex-1 overflow-y-auto md:grid-cols-[240px_1fr]">
-                  <nav aria-label="Tools in this guide" className="hidden overflow-y-auto border-r border-[var(--outline-soft)] bg-[var(--surface-soft)] p-3 md:block">
-                    {tools.map((tool, index) => (
-                      <button
-                        type="button"
-                        key={tool.id}
-                        onClick={() => setToolIndex(index)}
-                        aria-current={index === toolIndex ? 'true' : undefined}
-                        className={`mb-1 w-full rounded-lg px-3 py-2.5 text-left text-sm transition-colors ${index === toolIndex ? 'bg-[var(--surface-paper)] font-semibold text-[var(--ink-primary)] border border-[var(--outline-strong)]' : 'text-[var(--ink-secondary)] hover:bg-[var(--surface-paper)]'}`}
-                      >
-                        {tool.title}
-                      </button>
-                    ))}
-                  </nav>
-
-                  <div className="flex min-h-[560px] flex-col p-6 sm:p-8">
-                    {mobileAppDesign && <label className="mb-4 block text-sm font-semibold md:hidden">Choose a tool<select className="mt-2 min-h-12 w-full rounded-lg border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-3 text-base font-normal" value={explainedTool.id} onChange={event => setToolIndex(tools.findIndex(tool => tool.id === event.target.value))}>{tools.map(tool => <option key={tool.id} value={tool.id}>{tool.title}</option>)}</select></label>}
-                    <div className="mb-5 flex items-center justify-between md:hidden">
-                      <button type="button" onClick={() => setToolIndex(index => Math.max(0, index - 1))} disabled={toolIndex === 0} aria-label="Previous tool" className="flex h-11 w-11 items-center justify-center rounded-xl border border-[var(--outline-soft)] disabled:opacity-30"><ChevronLeft size={18} /></button>
-                      <span className="text-xs tabular-nums text-[var(--ink-muted)]">{toolIndex + 1} of {tools.length}</span>
-                      <button type="button" onClick={() => setToolIndex(index => Math.min(tools.length - 1, index + 1))} disabled={toolIndex === tools.length - 1} aria-label="Next tool" className="flex h-11 w-11 items-center justify-center rounded-xl border border-[var(--outline-soft)] disabled:opacity-30"><ChevronRight size={18} /></button>
-                    </div>
-
-                    <div className="flex items-start gap-5">
-                      <ToolIconBlob toolId={explainedTool.id as ToolIconKey} size={78} />
-                      <div className="min-w-0 pt-1">
-                        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">{explainedTool.tag}</p>
-                        <h3 className="mt-1 text-2xl font-semibold text-[var(--ink-primary)]">{explainedTool.title}</h3>
-                      </div>
-                    </div>
-
-                    <p className="mt-6 text-lg leading-relaxed text-[var(--ink-primary)]">
-                      <strong>Use this when:</strong> {TOOL_GUIDANCE[explainedTool.id]?.useWhen ?? explainedTool.description}
-                    </p>
-
-                    <dl className="mt-7 divide-y divide-[var(--outline-soft)] border-y border-[var(--outline-soft)]">
-                      <div className="py-4 sm:grid sm:grid-cols-[130px_1fr] sm:gap-5">
-                        <dt className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--ink-muted)]">What it does</dt>
-                        <dd className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)] sm:mt-0">{TOOL_GUIDANCE[explainedTool.id]?.whatItDoes ?? explainedTool.description}</dd>
-                      </div>
-                      <div className="py-4 sm:grid sm:grid-cols-[130px_1fr] sm:gap-5">
-                        <dt className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--ink-muted)]">You’ll leave with</dt>
-                        <dd className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)] sm:mt-0">{TOOL_GUIDANCE[explainedTool.id]?.outcome ?? 'A clearer next step and a useful piece of work completed.'}</dd>
-                      </div>
-                    </dl>
-
-                    <div className="mt-auto flex flex-col-reverse gap-3 pt-7 sm:flex-row sm:items-center sm:justify-between">
-                      <button type="button" onClick={() => open('recommend')} className="text-sm font-medium text-[var(--ink-secondary)] underline decoration-[var(--outline-soft)] underline-offset-4">Still unsure? Get a recommendation</button>
-                      <button type="button" onClick={() => launch(explainedTool)} className="rounded-xl border-[1.5px] border-[var(--outline-strong)] px-5 py-3 text-sm font-semibold text-white shadow-[3px_3px_0_0_var(--outline-strong)]" style={{ background: ACCENT }}>Open {explainedTool.title} <ArrowRight size={15} className="ml-1 inline" /></button>
-                    </div>
+                <div className="lp7-guide-head">
+                  <ToolArtwork tool={explainedTool.id as ToolIconKey} className="lp7-guide-art" />
+                  <div className="lp7-guide-name">
+                    <p className="t-label">{explainedTool.tag}</p>
+                    <h3 className="t-name-sm">{explainedTool.title}</h3>
                   </div>
                 </div>
-              )}
+                <p className="t-body lp7-guide-when">Use this when: {TOOL_GUIDANCE[explainedTool.id]?.useWhen ?? explainedTool.description}</p>
+                <dl className="lp7-guide-facts">
+                  <div><dt className="t-label">What it does</dt><dd className="t-sub">{TOOL_GUIDANCE[explainedTool.id]?.whatItDoes ?? explainedTool.description}</dd></div>
+                  <div><dt className="t-label">You’ll leave with</dt><dd className="t-sub">{TOOL_GUIDANCE[explainedTool.id]?.outcome ?? 'A clearer next step and a useful piece of work completed.'}</dd></div>
+                </dl>
+              </div>
+            </div>
+          )}
 
-              {mode === 'recommend' && (
-                <div ref={guideBodyRef} className={mobileAppDesign ? "min-h-0 flex-1 overflow-y-auto p-5 sm:p-8" : "min-h-[560px] flex-1 overflow-y-auto p-5 sm:p-8"}>
-                  {!goalId && !recommendation && (
-                    <div className="mx-auto max-w-2xl">
-                      <p className="mb-5 text-sm text-[var(--ink-secondary)]">Choose the thought closest to yours. There is no score and no wrong answer.</p>
-                      <div className="grid gap-2 sm:grid-cols-2">
-                        {goals.map(goal => (
-                          <button key={goal.id} type="button" onClick={() => setGoalId(goal.id)} className="flex min-h-[74px] items-center justify-between gap-3 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-4 py-3 text-left text-sm font-medium text-[var(--ink-primary)] transition-colors hover:border-[var(--outline-strong)]">
-                            {goal.label}<ChevronRight size={17} className="shrink-0 text-[var(--ink-muted)]" />
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+          {mode === 'recommend' && !goalId && !recommendation && (
+            <div className="lp7-guide-ask">
+              <p className="t-sub">Choose the thought closest to yours. There is no score and no wrong answer.</p>
+              <List boxed label="What would help right now?">
+                {goals.map(goal => <Row key={goal.id} title={goal.label} onPress={() => setGoalId(goal.id)} />)}
+              </List>
+            </div>
+          )}
 
-                  {goalId && activeGoal && !recommendation && (
-                    <div className="mx-auto max-w-2xl">
-                      <button type="button" onClick={() => setGoalId(null)} className="mb-6 inline-flex items-center gap-1.5 text-xs font-medium text-[var(--ink-secondary)]"><ArrowLeft size={14} /> Back</button>
-                      <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Question 2 of 2</p>
-                      <h3 className="mt-2 text-2xl font-semibold text-[var(--ink-primary)]">{activeGoal.question}</h3>
-                      <div className="mt-6 space-y-2">
-                        {activeGoal.options.map(answer => (
-                          <button key={answer.id} type="button" onClick={() => selectAnswer(answer.id)} className="flex w-full items-center justify-between gap-3 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-4 py-4 text-left text-sm font-medium text-[var(--ink-primary)] transition-colors hover:border-[var(--outline-strong)]">
-                            {answer.label}<ChevronRight size={17} className="shrink-0 text-[var(--ink-muted)]" />
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+          {mode === 'recommend' && goalId && activeGoal && !recommendation && (
+            <div className="lp7-guide-ask">
+              <TextButton tone="quiet" onClick={() => setGoalId(null)}><span className="lp7-inline"><Glyph icon={ArrowLeft} size={16} />Back</span></TextButton>
+              <p className="t-label">Question 2 of 2</p>
+              <h3 className="t-title">{activeGoal.question}</h3>
+              <List boxed label={activeGoal.question}>
+                {activeGoal.options.map(answer => <Row key={answer.id} title={answer.label} onPress={() => selectAnswer(answer.id)} />)}
+              </List>
+            </div>
+          )}
 
-                  {recommendation && recommendedTool && (
-                    <div className="mx-auto max-w-2xl">
-                      <div className="flex items-center gap-2 text-xs font-semibold text-[var(--ink-secondary)]"><Check size={15} color={ACCENT} /> A clear place to start</div>
-                      <div className="mt-6 flex items-start gap-5">
-                        <ToolIconBlob toolId={recommendedTool.id as ToolIconKey} size={88} />
-                        <div className="min-w-0 pt-1">
-                          <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Start with</p>
-                          <h3 className="mt-1 text-3xl font-semibold text-[var(--ink-primary)]">{recommendedTool.title}</h3>
-                        </div>
-                      </div>
-                      <p className="mt-7 text-base leading-relaxed text-[var(--ink-primary)]">
-                        You said <strong>“{recommendation.answerLabel}”</strong>. {TOOL_GUIDANCE[recommendedTool.id]?.whatItDoes ?? recommendedTool.description}
-                      </p>
-                      <div className="mt-6 border-y border-[var(--outline-soft)] py-4">
-                        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">You’ll leave with</p>
-                        <p className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)]">{TOOL_GUIDANCE[recommendedTool.id]?.outcome ?? 'A clearer next step.'}</p>
-                      </div>
-                      <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                        <button type="button" onClick={() => { onRecommendationChange(null); setGoalId(null); }} className="inline-flex items-center justify-center gap-1.5 text-sm font-medium text-[var(--ink-secondary)]"><RotateCcw size={15} /> Start again</button>
-                        <button type="button" onClick={() => launch(recommendedTool)} className="rounded-xl border-[1.5px] border-[var(--outline-strong)] px-6 py-3 text-sm font-semibold text-white shadow-[3px_3px_0_0_var(--outline-strong)]" style={{ background: ACCENT }}>Open {recommendedTool.title} <ArrowRight size={15} className="ml-1 inline" /></button>
-                      </div>
-                    </div>
-                  )}
+          {mode === 'recommend' && recommendation && recommendedTool && (
+            <div className="lp7-guide-ask">
+              <p className="lp7-guide-clear t-sub"><Check width={16} height={16} strokeWidth={2} aria-hidden="true" /> A clear place to start</p>
+              <div className="lp7-guide-head">
+                <ToolArtwork tool={recommendedTool.id as ToolIconKey} className="lp7-guide-art lp7-guide-art--lg" />
+                <div className="lp7-guide-name">
+                  <p className="t-label">Start with</p>
+                  <h3 className="t-name">{recommendedTool.title}</h3>
                 </div>
-              )}
-            </MotionDiv>
-          </div>
-        )}
-      </AnimatePresence>, document.body)}
+              </div>
+              <p className="t-body">You said “{recommendation.answerLabel}”. {TOOL_GUIDANCE[recommendedTool.id]?.whatItDoes ?? recommendedTool.description}</p>
+              <dl className="lp7-guide-facts">
+                <div><dt className="t-label">You’ll leave with</dt><dd className="t-sub">{TOOL_GUIDANCE[recommendedTool.id]?.outcome ?? 'A clearer next step.'}</dd></div>
+              </dl>
+            </div>
+          )}
+        </div>
+      </Sheet>
     </>
   );
 };

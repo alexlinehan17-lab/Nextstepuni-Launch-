@@ -1,6 +1,4 @@
 import { BrandedLocationScore } from './learning/WideFeatures';
-import { moduleFill,moduleText } from './learning/brandTokens';
-import { accentRgba } from '../design/tokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -17,6 +15,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,ExerciseLabel,ExercisePart,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = purpleTheme;
 
@@ -67,94 +68,85 @@ const ContextMemoryComparison = () => {
   };
 
   const samePhases = [
-    { label: 'Building', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
-    { label: 'Strengthening', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
-    { label: 'Accessible', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
+    { label: 'Building', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+    { label: 'Strengthening', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+    { label: 'Accessible', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
   ];
   const diffPhases = [
-    { label: 'Building', x1: 0, x2: 0.33, color: "var(--module-ink)" },
-    { label: 'Cues missing', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
-    { label: 'Inaccessible', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
+    { label: 'Building', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+    { label: 'Cues missing', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+    { label: 'Inaccessible', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
   ];
 
-  const Chart = ({ encoding, retrieval, phases, areaColor, areaId, label }: {
+  // Learning strength solid ink, recall a dashed ink-2 line, a flat fill under learning strength (no
+  // gradient); text in the one typeface, 11 or more.
+  const font = { fontFamily: 'var(--font-ui)' };
+  const Chart = ({ encoding, retrieval, phases, areaColor, label }: {
     encoding: number[]; retrieval: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
-    areaColor: string; areaId: string; label: string;
+    areaColor: string; label: string;
   }) => (
     <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
-      <defs>
-        <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
-          <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
-        </linearGradient>
-      </defs>
       {[0.25, 0.5, 0.75, 1.0].map((v) => (
-        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
+        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--ink-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
       ))}
-      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
+      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--ink-muted)" strokeOpacity="0.3" />
 
       {/* Encoding area */}
-      <motion.path d={buildArea(encoding)} fill={`url(#${areaId})`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
+      <motion.path d={buildArea(encoding)} fill={areaColor} fillOpacity="0.08" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
       {/* Encoding line (solid) */}
       <motion.path d={buildLine(encoding)} fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut' }} />
       {/* Retrieval line (dashed) */}
-      <motion.path d={buildLine(retrieval)} fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }} />
+      <motion.path d={buildLine(retrieval)} fill="none" stroke="var(--ink-secondary)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }} />
       {/* Encoding dots */}
       {encoding.map((v, i) => (
         <motion.circle key={i} cx={toX(i / (encoding.length - 1))} cy={toY(v)} r="3.5" fill={areaColor} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }} />
       ))}
 
-      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
-      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
+      <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>High</text>
+      <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>Low</text>
+      {/* Day labels (the first and last sit inside the drawing) */}
       {xLabels.map((m, i) => (
-        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
+        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="11" fill="var(--ink-muted)" textAnchor={i === 0 ? 'start' : i === xLabels.length - 1 ? 'end' : 'middle'} style={font}>{m}</text>
       ))}
       {phases.map((p, i) => (
-        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 30} fontSize="11" fill={p.color} textAnchor="middle" style={font}>{p.label}</text>
       ))}
-      <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
-      <line x1={W - padR - 120} x2={W - padR - 104} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-      <text x={W - padR - 100} y={17} fontSize="8" fill="var(--module-surface)">Learning Strength</text>
-      <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
-      <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Recall</text>
+      <text x={padL} y={15} fontSize="11" fill="var(--ink-primary)" style={font}>{label}</text>
+      <line x1={W - padR - 198} x2={W - padR - 182} y1={11} y2={11} stroke={areaColor} strokeWidth="2" />
+      <text x={W - padR - 178} y={15} fontSize="11" fill="var(--ink-muted)" style={font}>Learning Strength</text>
+      <line x1={W - padR - 60} x2={W - padR - 44} y1={11} y2={11} stroke="var(--ink-secondary)" strokeWidth="1.5" strokeDasharray="4 2" />
+      <text x={W - padR} y={15} fontSize="11" fill="var(--ink-muted)" textAnchor="end" style={font}>Recall</text>
     </svg>
   );
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">How Your Study Spot Affects Your Memory</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">What happens to your memory when the environment changes?</p>
-
+    <ExercisePart title="How Your Study Spot Affects Your Memory" sub="What happens to your memory when the environment changes?">
       {!revealed ? (
-        <div className="text-center">
-          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">You study perfectly in your bedroom. But what happens when you sit down in the exam hall?</p>
-          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
-            See the Context Effect
-          </button>
+        <div className="ex-stack">
+          <p className="t-body text-ink-secondary">You study perfectly in your bedroom. But what happens when you sit down in the exam hall?</p>
+          <div className="ex-actions">
+            <Button onClick={() => setRevealed(true)}>
+              See the Context Effect
+            </Button>
+          </div>
         </div>
       ) : (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-          <div className="grid md:grid-cols-2 gap-4 mb-5">
-            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
-              <Chart encoding={encodingStrength} retrieval={sameRetrieval} phases={samePhases} areaColor="var(--module-success-text)" areaId="same-ctx-grad" label="Same Context (Study & Test)" />
-            </div>
-            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
-              <Chart encoding={encodingStrength} retrieval={diffRetrieval} phases={diffPhases} areaColor="var(--module-danger-text)" areaId="diff-ctx-grad" label="Different Context (Study vs Test)" />
-            </div>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+          {/* The two charts, each on the sheet in ink (no coral or mint panel behind them) */}
+          <div className="ex-figure">
+            <Chart encoding={encodingStrength} retrieval={sameRetrieval} phases={samePhases} areaColor="var(--ink-primary)" label="Same Context (Study & Test)" />
           </div>
-          <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
-              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Same-place recall</strong> works because familiar surroundings help your brain find what it learned. But exams are in a DIFFERENT place. If your memories depend on your study spot, they become fragile.</p>
-            </div>
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
-              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">When the exam hall strips away all your familiar clues</strong>, place-dependent memories become unreachable. You need knowledge that works anywhere, not just in your bedroom.</p>
-            </div>
+          <div className="ex-figure">
+            <Chart encoding={encodingStrength} retrieval={diffRetrieval} phases={diffPhases} areaColor="var(--ink-primary)" label="Different Context (Study vs Test)" />
+          </div>
+          {/* What each one means: words you read, ruled like rows (no tinted boxes) */}
+          <div className="ex-list">
+            <div><p className="t-sub"><strong className="text-ink-primary">Same-place recall</strong> works because familiar surroundings help your brain find what it learned. But exams are in a DIFFERENT place. If your memories depend on your study spot, they become fragile.</p></div>
+            <div><p className="t-sub"><strong className="text-ink-primary">When the exam hall strips away all your familiar clues</strong>, place-dependent memories become unreachable. You need knowledge that works anywhere, not just in your bedroom.</p></div>
           </div>
         </MotionDiv>
       )}
-    </div>
+    </ExercisePart>
   );
 };
 
@@ -208,103 +200,92 @@ const ContextCueExplorer = () => {
   const lostPercent = selectedCount > 0 ? Math.round(((selectedCount - survivingCount) / selectedCount) * 100) : 0;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Study Environment Audit</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Pick the things that are around you when you study, then see how many of them will be there in the exam hall.</p>
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 mb-6">
+    <ExercisePart title="Your Study Environment Audit" sub="Pick the things that are around you when you study, then see how many of them will be there in the exam hall.">
+      {/* The cues: answers you can choose several of, each with its bare glyph */}
+      <AnswerGroup kind="several" columns={2}>
         {STUDY_CUES.map((cue) => {
           const isSelected = selectedCues.has(cue.id);
           return (
-            <button
+            <ChoiceTile
               key={cue.id}
+              kind="several"
+              chosen={isSelected}
               onClick={() => toggleCue(cue.id)}
-              className="flex items-center gap-3 text-left transition-all duration-200"
-              style={{
-                backgroundColor: moduleFill(isSelected ? "var(--module-surface)" : "var(--module-surface)"),
-                border: isSelected ? "2px solid var(--module-line)" : "2px solid var(--module-line)",
-                borderRadius: 14,
-                padding: '14px 18px',
-                color: moduleText(isSelected ? "var(--module-danger-text)" : "var(--module-muted)"),
-                cursor: revealed ? 'default' : 'pointer',
-              }} data-wide-button="true" data-selected={!!(isSelected)} data-tone="coral" aria-pressed={!!(isSelected)}
-            >
-              <span style={{ flexShrink: 0, color: moduleText(isSelected ? "var(--module-danger-text)" : "var(--module-muted)") }}>{CUE_ICONS[cue.id]}</span>
-              <span style={{ fontSize: 14, fontWeight: isSelected ? 600 : 500, color: moduleText(isSelected ? "var(--module-danger-text)" : "var(--module-ink)") }}>{cue.label}</span>
-            </button>
+              className={revealed ? 'cursor-default' : undefined}
+              label={<span className="inline-flex items-center gap-2"><span className="ex-icon">{CUE_ICONS[cue.id]}</span>{cue.label}</span>}
+            />
           );
         })}
-      </div>
+      </AnswerGroup>
 
       {selectedCount > 0 && !revealed && (
-        <div className="text-center">
-          <p className="text-sm mb-3" style={{ color: "var(--module-muted)" }}>{selectedCount} cue{selectedCount !== 1 ? 's' : ''} selected</p>
-          <button onClick={() => setRevealed(true)} style={{ backgroundColor: "var(--module-danger)", borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">
+        <div className="ex-stack items-center">
+          <p className="ex-count t-readout">{selectedCount} cue{selectedCount !== 1 ? 's' : ''} selected</p>
+          <Button onClick={() => setRevealed(true)}>
             See the Exam Hall
-          </button>
+          </Button>
         </div>
       )}
 
       <AnimatePresence>
         {revealed && (
-          <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
+          <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className="ex-stack">
+            {/* The two places, each under a hairline with its cues as plain words (no boxes, no chips) */}
+            <div className="grid md:grid-cols-2 gap-4">
               {/* Study room */}
-              <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '16px 20px' }}>
-                <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: "var(--module-ink)" }}>Your Study Room — {selectedCount} cues</p>
-                <div className="flex flex-wrap gap-1.5">
+              <div className="ex-block">
+                <p className="ex-block-title">Your Study Room — {selectedCount} cues</p>
+                <ul className="flex flex-wrap gap-x-4 gap-y-1.5">
                   {STUDY_CUES.filter((c) => selectedCues.has(c.id)).map((c) => (
-                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: "var(--module-surface)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: "var(--module-danger-text)" }}>
-                      <span style={{ color: "var(--module-danger-text)" }}>{CUE_ICONS[c.id]}</span> {c.label}
-                    </span>
+                    <li key={c.id} className="inline-flex items-center gap-1.5 t-sub">
+                      <span className="ex-icon">{CUE_ICONS[c.id]}</span> {c.label}
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
               {/* Exam hall */}
-              <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '16px 20px' }}>
-                <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: "var(--module-ink)" }}>The Exam Hall — {survivingCount} cue{survivingCount !== 1 ? 's' : ''} remain</p>
-                <div className="flex flex-wrap gap-1.5">
+              <div className="ex-block">
+                <p className="ex-block-title">The Exam Hall — {survivingCount} cue{survivingCount !== 1 ? 's' : ''} remain</p>
+                <ul className="flex flex-wrap gap-x-4 gap-y-1.5">
                   {STUDY_CUES.filter((c) => selectedCues.has(c.id) && c.survivesExam).map((c) => (
-                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: "var(--module-surface)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: "var(--module-danger-text)" }}>
-                      <span style={{ color: "var(--module-danger-text)" }}>{CUE_ICONS[c.id]}</span> {c.label}
-                    </span>
+                    <li key={c.id} className="inline-flex items-center gap-1.5 t-sub">
+                      <span className="ex-icon">{CUE_ICONS[c.id]}</span> {c.label}
+                    </li>
                   ))}
                   {survivingCount === 0 && (
-                    <span className="italic" style={{ fontSize: 12, color: "var(--module-ink)" }}>Nothing matches — your brain has zero familiar clues to help you remember</span>
+                    <li className="t-sub">Nothing matches — your brain has zero familiar clues to help you remember</li>
                   )}
-                </div>
+                </ul>
               </div>
             </div>
 
-            {/* Stacked bar */}
-            <div className="mb-4">
-              <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 6, textTransform: 'uppercase' as const }}>Memory clues that survive</p>
-              <div className="flex" style={{ border: "2px solid var(--module-line)", borderRadius: 100, height: 28, overflow: 'hidden' }}>
+            {/* Stacked bar: what survives in ink, what is lost a hairline tone */}
+            <div className="flex flex-col gap-1.5">
+              <ExerciseLabel>Memory clues that survive</ExerciseLabel>
+              <div className="flex" style={{ border: "1px solid var(--outline-soft)", borderRadius: 100, height: 28, overflow: 'hidden' }}>
                 {survivingCount > 0 && (
-                  <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--module-danger)" }} initial={{ width: 0 }} animate={{ width: `${100 - lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut' }}>
-                    {(100 - lostPercent) > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: "var(--module-on-fill)" }}>{100 - lostPercent}% survive</span>}
+                  <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--ink-primary)" }} initial={{ width: 0 }} animate={{ width: `${100 - lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut' }}>
+                    {(100 - lostPercent) > 15 && <span className="t-meta" style={{ color: "var(--surface-paper)" }}>{100 - lostPercent}% survive</span>}
                   </MotionDiv>
                 )}
-                <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--module-surface)" }} initial={{ width: 0 }} animate={{ width: `${lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}>
-                  {lostPercent > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: "var(--module-ink)" }}>{lostPercent}% lost</span>}
+                <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--hairline)" }} initial={{ width: 0 }} animate={{ width: `${lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}>
+                  {lostPercent > 15 && <span className="t-meta" style={{ color: "var(--ink-primary)" }}>{lostPercent}% lost</span>}
                 </MotionDiv>
               </div>
             </div>
 
-            <div style={{ border: "1px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: 10, padding: '12px 16px' }}>
-              <p className="text-sm" style={{ color: "var(--module-muted)" }}>
+            <AnswerLine tone="note">
                 <strong>You lost {lostPercent}% of the clues your brain uses to remember.</strong>{' '}
                 {lostPercent >= 75
                   ? 'Your memories are tied tightly to your study spot. Studying in different places would help your brain remember without needing those clues.'
                   : lostPercent >= 50
                   ? 'More than half your clues disappear in the exam hall. Switching up your study spots would make a big difference.'
                   : 'Some clues still survive, but mixing up where you study would make your knowledge even stronger.'}
-              </p>
-            </div>
+            </AnswerLine>
           </MotionDiv>
         )}
       </AnimatePresence>
-    </div>
+    </ExercisePart>
   );
 };
 
@@ -359,92 +340,92 @@ const NoiseLevelCurve = () => {
   const creativePeakX = 0.50;
   const creativePeakY = 0.97;
 
-  return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <div className="text-center mb-6">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
-        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>The Noise-Performance Curve</h4>
-        <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>How noise level affects how well your brain performs.</p>
-      </div>
+  // The curve in ink: the sweet spot a faint ink band under a dashed line, its label at the foot of the band
+  // beside the other zones'; the two markers' labels are plain text (no pills), inside the drawing. Text in
+  // the one typeface, 11 or more.
+  const font = { fontFamily: 'var(--font-ui)' };
 
+  return (
+    <ExercisePart label="Research Evidence" title="The Noise-Performance Curve" sub="How noise level affects how well your brain performs.">
       {!revealed ? (
-        <div className="text-center">
-          <p className="text-sm mb-4" style={{ color: "var(--module-muted)" }}>Is silence always best for studying? Or does a little noise actually help?</p>
-          <button onClick={() => setRevealed(true)} style={{ backgroundColor: "var(--module-danger)", borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">
-            See the Noise Curve
-          </button>
+        <div className="ex-stack">
+          <p className="t-body text-ink-secondary">Is silence always best for studying? Or does a little noise actually help?</p>
+          <div className="ex-actions">
+            <Button onClick={() => setRevealed(true)}>
+              See the Noise Curve
+            </Button>
+          </div>
         </div>
       ) : (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-          <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: '28px 24px' }}>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+          {/* The curve, on the sheet (no box of its own) */}
+          <div className="ex-figure">
             <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
               {/* Grid lines */}
               {[0.25, 0.5, 0.75, 1.0].map((v) => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-on-fill)" strokeWidth="1" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--hairline)" strokeWidth="1" />
               ))}
-              <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeWidth="1.5" />
-              <line x1={padL} y1={padT} x2={padL} y2={toY(0)} stroke="var(--module-muted)" strokeWidth="1.5" />
+              <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--ink-muted)" strokeWidth="1.5" />
+              <line x1={padL} y1={padT} x2={padL} y2={toY(0)} stroke="var(--ink-muted)" strokeWidth="1.5" />
 
               {/* Sweet spot zone */}
-              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill={accentRgba(0.06)} rx="4" />
-              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="none" stroke={accentRgba(0.15)} strokeWidth="1" strokeDasharray="4 3" rx="4" />
+              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="var(--ink-primary)" fillOpacity="0.04" rx="4" />
+              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="none" stroke="var(--outline-soft)" strokeWidth="1" strokeDasharray="4 3" rx="4" />
 
               {/* Zone labels */}
-              <text x={toX(0.08)} y={toY(0.05)} fontSize="10" fill="var(--module-muted)" textAnchor="middle" fontWeight="600">Too quiet</text>
-              <text x={toX(0.88)} y={toY(0.05)} fontSize="10" fill="var(--module-muted)" textAnchor="middle" fontWeight="600">Too loud</text>
+              <text x={toX(0.08)} y={toY(0.05)} fontSize="11" fill="var(--ink-muted)" textAnchor="middle" style={font}>Too quiet</text>
+              <text x={toX(0.88)} y={toY(0.05)} fontSize="11" fill="var(--ink-muted)" textAnchor="middle" style={font}>Too loud</text>
 
-              {/* Sweet spot label — positioned above chart to avoid overlap */}
-              <rect x={toX(0.42) - 32} y={padT - 20} width="64" height="16" rx="8" fill="white" stroke={accentRgba(0.2)} strokeWidth="1" />
-              <text x={toX(0.42)} y={padT - 9} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="700">Sweet spot</text>
+              {/* Sweet spot label — at the foot of the band, clear of the curve */}
+              <text x={toX(0.42)} y={toY(0.05)} fontSize="11" fill="var(--ink-primary)" textAnchor="middle" style={font}>Sweet spot</text>
 
               {/* Area fill */}
-              <motion.path d={buildArea(curvePoints)} fill={accentRgba(0.08)} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
+              <motion.path d={buildArea(curvePoints)} fill="var(--ink-primary)" fillOpacity="0.05" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
 
               {/* Curve line */}
-              <motion.path d={buildCurve(curvePoints)} fill="none" stroke="var(--module-danger-text)" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
+              <motion.path d={buildCurve(curvePoints)} fill="none" stroke="var(--ink-primary)" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
 
               {/* Focused/Analytical marker — offset left to avoid overlap */}
-              <motion.circle cx={toX(focusedPeakX)} cy={toY(focusedPeakY)} r="6" fill="var(--module-danger)" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.0 }} />
+              <motion.circle cx={toX(focusedPeakX)} cy={toY(focusedPeakY)} r="6" fill="var(--ink-primary)" stroke="var(--surface-paper)" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.0 }} />
               <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
-                <line x1={toX(focusedPeakX)} y1={toY(focusedPeakY) - 8} x2={toX(focusedPeakX) - 30} y2={toY(focusedPeakY) - 35} stroke="var(--module-muted)" strokeWidth="1" />
-                <rect x={toX(focusedPeakX) - 72} y={toY(focusedPeakY) - 47} width="84" height="18" rx="9" fill="white" stroke={accentRgba(0.2)} strokeWidth="1" />
-                <text x={toX(focusedPeakX) - 30} y={toY(focusedPeakY) - 34} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="600">Focused tasks</text>
+                <line x1={toX(focusedPeakX)} y1={toY(focusedPeakY) - 8} x2={toX(focusedPeakX) - 30} y2={toY(focusedPeakY) - 30} stroke="var(--ink-muted)" strokeWidth="1" />
+                <text x={toX(focusedPeakX) - 30} y={toY(focusedPeakY) - 34} fontSize="11" fill="var(--ink-primary)" textAnchor="middle" style={font}>Focused tasks</text>
               </motion.g>
 
-              {/* Creative/Conceptual marker — offset right */}
-              <motion.circle cx={toX(creativePeakX)} cy={toY(creativePeakY)} r="6" fill="var(--module-danger)" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.3 }} />
+              {/* Creative/Conceptual marker — offset right, its label kept inside the top of the drawing */}
+              <motion.circle cx={toX(creativePeakX)} cy={toY(creativePeakY)} r="6" fill="var(--ink-primary)" stroke="var(--surface-paper)" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.3 }} />
               <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>
-                <line x1={toX(creativePeakX)} y1={toY(creativePeakY) - 8} x2={toX(creativePeakX) + 30} y2={toY(creativePeakY) - 35} stroke="var(--module-muted)" strokeWidth="1" />
-                <rect x={toX(creativePeakX) - 12} y={toY(creativePeakY) - 47} width="84" height="18" rx="9" fill="white" stroke={accentRgba(0.2)} strokeWidth="1" />
-                <text x={toX(creativePeakX) + 30} y={toY(creativePeakY) - 34} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="600">Creative tasks</text>
+                <line x1={toX(creativePeakX) + 6} y1={toY(creativePeakY) - 7} x2={toX(creativePeakX) + 22} y2={toY(creativePeakY) - 16} stroke="var(--ink-muted)" strokeWidth="1" />
+                <text x={toX(creativePeakX) + 26} y={toY(creativePeakY) - 14} fontSize="11" fill="var(--ink-primary)" textAnchor="start" style={font}>Creative tasks</text>
               </motion.g>
 
-              {/* X-axis labels */}
+              {/* X-axis labels (the last ends inside the drawing) */}
               {noiseLabels.map((label, i) => (
-                <text key={label} x={toX(i / (noiseLabels.length - 1))} y={toY(0) + 16} fontSize="11" fill="var(--module-surface)" textAnchor="middle">{label}</text>
+                <text key={label} x={i === noiseLabels.length - 1 ? toX(1) + 12 : toX(i / (noiseLabels.length - 1))} y={toY(0) + 16} fontSize="11" fill="var(--ink-muted)" textAnchor={i === noiseLabels.length - 1 ? 'end' : 'middle'} style={font}>{label}</text>
               ))}
 
               {/* Axis labels */}
-              <text x={W / 2} y={H - 4} fontSize="11" fill="var(--module-muted)" textAnchor="middle" letterSpacing="0.05em">Noise Level →</text>
-              <text x={12} y={H / 2} fontSize="11" fill="var(--module-muted)" textAnchor="middle" letterSpacing="0.05em" transform={`rotate(-90, 12, ${H / 2})`}>Performance →</text>
-              <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--module-surface)">High</text>
-              <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--module-surface)">Low</text>
+              <text x={W / 2} y={H - 4} fontSize="11" fill="var(--ink-muted)" textAnchor="middle" letterSpacing="0.05em" style={font}>Noise Level →</text>
+              <text x={12} y={H / 2} fontSize="11" fill="var(--ink-muted)" textAnchor="middle" letterSpacing="0.05em" transform={`rotate(-90, 12, ${H / 2})`} style={font}>Performance →</text>
+              <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>High</text>
+              <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>Low</text>
             </svg>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-3 mt-4">
-            <div className="flex items-start gap-3" style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--module-danger-text)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
-              <p style={{ fontSize: 14, color: "var(--module-danger-text)" }}><strong>Focused tasks</strong> (maths problems, memorisation) work best in quiet spots. Silence lets you concentrate without distraction.</p>
+          {/* The two kinds of task: words you read, ruled like rows, each with its bare glyph (no side stripe) */}
+          <div className="ex-list">
+            <div className="!flex-row items-start gap-3">
+              <span className="ex-icon mt-0.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg></span>
+              <p className="t-sub"><strong className="text-ink-primary">Focused tasks</strong> (maths problems, memorisation) work best in quiet spots. Silence lets you concentrate without distraction.</p>
             </div>
-            <div className="flex items-start gap-3" style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--module-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/></svg>
-              <p style={{ fontSize: 14, color: "var(--module-muted)" }}><strong style={{ color: "var(--module-ink)" }}>Creative tasks</strong> (understanding concepts, making connections) benefit from a bit of background noise. The buzz of a cafe nudges your brain into bigger-picture thinking.</p>
+            <div className="!flex-row items-start gap-3">
+              <span className="ex-icon mt-0.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/></svg></span>
+              <p className="t-sub"><strong className="text-ink-primary">Creative tasks</strong> (understanding concepts, making connections) benefit from a bit of background noise. The buzz of a cafe nudges your brain into bigger-picture thinking.</p>
             </div>
           </div>
         </MotionDiv>
       )}
-    </div>
+    </ExercisePart>
   );
 };
 
@@ -471,60 +452,37 @@ const TaskEnvironmentMatcher = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Match the Task to the Environment</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">For each study task, decide: quiet or moderate noise?</p>
-
-      <div className="space-y-3 mb-6">
+    <ExercisePart title="Match the Task to the Environment" sub="For each study task, decide: quiet or moderate noise?">
+      <div className="ex-questions">
         {TASK_ITEMS.map((task) => {
           const answer = answers[task.id];
           const isCorrect = submitted && answer === task.correct;
           const _isWrong = submitted && answer !== task.correct;
           return (
-            <div key={task.id} className="rounded-xl p-3 transition-colors" style={{
-              backgroundColor: moduleFill(submitted ? (isCorrect ? "var(--module-success-soft)" : "var(--module-surface)") : "var(--module-surface)"),
-              border: submitted ? `2.5px solid ${isCorrect ? "var(--module-line)" : "var(--module-line)"}` : "1.5px solid var(--module-line)",
-              boxShadow: 'none',
-            }}>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] flex-1">{task.label}</p>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => setAnswer(task.id, 'quiet')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold ${submitted ? 'cursor-default' : 'cursor-pointer'}`}
-                    style={{
-                      backgroundColor: moduleFill(answer === 'quiet' ? "var(--module-surface)" : "var(--module-surface)"),
-                      border: `2px solid ${answer === 'quiet' ? "var(--module-line)" : "var(--module-line)"}`,
-                      borderRadius: 10,
-                      boxShadow: 'none',
-                      color: moduleText(answer === 'quiet' ? "var(--module-ink)" : "var(--module-ink)"),
-                    }} data-wide-button="true" data-selected={!!(answer === 'quiet')} data-tone="orange" aria-pressed={!!(answer === 'quiet')}
-                  >
-                    Quiet
-                  </button>
-                  <button
-                    onClick={() => setAnswer(task.id, 'moderate')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold ${submitted ? 'cursor-default' : 'cursor-pointer'}`}
-                    style={{
-                      backgroundColor: moduleFill(answer === 'moderate' ? "var(--module-surface)" : "var(--module-surface)"),
-                      border: `2px solid ${answer === 'moderate' ? "var(--module-line)" : "var(--module-line)"}`,
-                      borderRadius: 10,
-                      boxShadow: 'none',
-                      color: moduleText(answer === 'moderate' ? "var(--module-danger-text)" : "var(--module-ink)"),
-                    }} data-wide-button="true" data-selected={!!(answer === 'moderate')} data-tone="coral" aria-pressed={!!(answer === 'moderate')}
-                  >
-                    Moderate Noise
-                  </button>
-                </div>
-              </div>
+            <div key={task.id} className="ex-stack">
+              <AnswerGroup kind="one" legend={task.label} columns={2}>
+                <ChoiceTile
+                  chosen={answer === 'quiet'}
+                  onClick={() => setAnswer(task.id, 'quiet')}
+                  className={submitted ? 'cursor-default' : 'cursor-pointer'}
+                  label="Quiet"
+                />
+                <ChoiceTile
+                  chosen={answer === 'moderate'}
+                  onClick={() => setAnswer(task.id, 'moderate')}
+                  className={submitted ? 'cursor-default' : 'cursor-pointer'}
+                  label="Moderate Noise"
+                />
+              </AnswerGroup>
               {submitted && (
                 <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} transition={{ duration: 0.3 }}>
-                  <div className="mt-2 flex items-start gap-2">
-                    <span className={`text-sm mt-0.5 ${isCorrect ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>
+                  {/* The mark and the reason, in ink (the tick green, the cross quiet) */}
+                  <div className="flex items-start gap-2">
+                    <span className="t-sub" style={{ color: isCorrect ? "var(--success-hex)" : "var(--ink-muted)" }}>
                       {isCorrect ? '✓' : '✗'}
                     </span>
-                    <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">
-                      <strong className={isCorrect ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}>
+                    <p className="t-sub">
+                      <strong className="text-ink-primary">
                         {isCorrect ? 'Correct' : `Correct answer: ${task.correct === 'quiet' ? 'Quiet' : 'Moderate Noise'}`}
                       </strong>{' — '}
                       {task.reason}
@@ -538,34 +496,28 @@ const TaskEnvironmentMatcher = () => {
       </div>
 
       {!submitted && allAnswered && (
-        <div className="text-center">
-          <button onClick={() => setSubmitted(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
+        <div className="ex-actions">
+          <Button onClick={() => setSubmitted(true)}>
             Check My Answers
-          </button>
+          </Button>
         </div>
       )}
 
       <AnimatePresence>
         {submitted && (
-          <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
-            <div className="p-4 rounded-xl text-center" style={{
-              backgroundColor: moduleFill(score >= 5 ? "var(--module-success-soft)" : score >= 3 ? "var(--module-surface)" : "var(--module-surface)"),
-              border: `2.5px solid ${score >= 5 ? "var(--module-line)" : score >= 3 ? "var(--module-line)" : "var(--module-line)"}`,
-              boxShadow: 'none',
-            }}>
-              <p className="text-3xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-1">{score}/{TASK_ITEMS.length}</p>
-              <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)]">
+          <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }} className="ex-result">
+            <p className="ex-result-name">{score}/{TASK_ITEMS.length}</p>
+            <AnswerLine tone={score >= 5 ? 'ok' : 'note'}>
                 {score === 6
                   ? 'Perfect! You understand exactly how to match tasks to environments.'
                   : score >= 4
                   ? 'Strong intuition — the key principle is: focused/precise tasks need quiet, creative/conceptual tasks benefit from moderate noise.'
                   : 'The rule of thumb: if a task needs precise, step-by-step processing, choose quiet. If it involves making connections or creative thinking, moderate noise helps.'}
-              </p>
-            </div>
+            </AnswerLine>
           </MotionDiv>
         )}
       </AnimatePresence>
-    </div>
+    </ExercisePart>
   );
 };
 
@@ -573,12 +525,12 @@ const TaskEnvironmentMatcher = () => {
 const PLANNER_SUBJECTS = ['Biology', 'Maths', 'English', 'History'];
 const PLANNER_DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 const PLANNER_LOCATIONS = [
-  { id: 'none', label: '—', bgClass: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", textClass: "text-[var(--module-muted)] dark:text-[var(--module-muted)]" },
-  { id: 'bedroom', label: 'Bedroom', bgClass: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", textClass: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" },
-  { id: 'kitchen', label: 'Kitchen', bgClass: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", textClass: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" },
-  { id: 'library', label: 'Library', bgClass: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", textClass: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" },
-  { id: 'cafe', label: 'Cafe', bgClass: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", textClass: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" },
-  { id: 'school', label: 'School', bgClass: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", textClass: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]" },
+  { id: 'none', label: '—' },
+  { id: 'bedroom', label: 'Bedroom' },
+  { id: 'kitchen', label: 'Kitchen' },
+  { id: 'library', label: 'Library' },
+  { id: 'cafe', label: 'Cafe' },
+  { id: 'school', label: 'School' },
 ];
 
 const StudyLocationPlanner = () => {
@@ -609,38 +561,44 @@ const StudyLocationPlanner = () => {
   const hasAnyFilled = grid.some((row) => row.some((v) => v > 0));
   const overallScore = Math.round(subjectScores.reduce((a, b) => a + b, 0) / PLANNER_SUBJECTS.length);
 
-  const getVerdict = (score: number): { label: string; colorClass: string } => {
-    if (score >= 80) return { label: 'Great variety (strong)', colorClass: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" };
-    if (score >= 50) return { label: 'Some variety', colorClass: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" };
-    return { label: 'Stuck in one spot (risky)', colorClass: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]" };
+  const getVerdict = (score: number): { label: string } => {
+    if (score >= 80) return { label: 'Great variety (strong)' };
+    if (score >= 50) return { label: 'Some variety' };
+    return { label: 'Stuck in one spot (risky)' };
   };
 
-  return <div className="wr-skin" data-wide="StudyLocationPlanner"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Weekly Location Planner</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Click each cell to assign a study location. Mix up your spots across the week so your knowledge works anywhere.</p>
-
-      {/* Planner grid */}
-      <div className="overflow-x-auto mb-6">
+  return <ExerciseSheet title="Your Weekly Location Planner" sub="Click each cell to assign a study location. Mix up your spots across the week so your knowledge works anywhere." name="StudyLocationPlanner">
+      {/* Planner grid: each cell a white box with a line you press; a planned cell an ink outline */}
+      <div className="overflow-x-auto">
         <table className="w-full border-collapse text-center">
           <thead>
             <tr>
-              <th className="p-2 text-xs font-bold text-[var(--module-muted)] dark:text-[var(--module-muted)] text-left w-24"></th>
+              <th className="p-2 text-left w-24"></th>
               {PLANNER_DAYS.map((day) => (
-                <th key={day} className="p-2 text-xs font-bold text-[var(--module-muted)] dark:text-[var(--module-muted)] uppercase tracking-wider">{day}</th>
+                <th key={day} className="p-2 t-label text-ink-muted">{day}</th>
               ))}
             </tr>
           </thead>
           <tbody>
             {PLANNER_SUBJECTS.map((subject, si) => (
               <tr key={subject}>
-                <td className="p-2 text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] text-left">{subject}</td>
+                <td className="p-2 t-sub text-left" style={{ color: "var(--ink-primary)" }}>{subject}</td>
                 {PLANNER_DAYS.map((_, di) => {
                   const loc = PLANNER_LOCATIONS[grid[si][di]];
+                  const planned = grid[si][di] > 0;
                   return (
                     <td key={di} className="p-1">
                       <button
+                        type="button"
                         onClick={() => cycleCell(si, di)}
-                        className={`w-full py-2 px-1 rounded-md text-[11px] font-bold border border-transparent transition-all duration-150 ${loc.bgClass} ${loc.textClass} ${scored ? 'cursor-default' : 'cursor-pointer hover:scale-105 active:scale-95'}`} data-wide-button="true" data-selected={grid[si][di] > 0} aria-label={PLANNER_SUBJECTS[si] + ', ' + PLANNER_DAYS[di] + ': ' + loc.label} disabled={scored}
+                        className={`w-full min-h-[44px] min-w-[44px] px-1 text-[11px] leading-[14px] ${scored ? 'cursor-default' : 'cursor-pointer'}`}
+                        style={{
+                          minHeight: 44,
+                          backgroundColor: "var(--surface-paper)",
+                          border: planned ? "1.5px solid var(--ink-primary)" : "1px solid var(--outline-soft)",
+                          borderRadius: 'var(--r-sm)',
+                          color: planned ? "var(--ink-primary)" : "var(--ink-muted)",
+                        }} aria-label={PLANNER_SUBJECTS[si] + ', ' + PLANNER_DAYS[di] + ': ' + loc.label} disabled={scored}
                       >
                         {loc.label}
                       </button>
@@ -653,46 +611,48 @@ const StudyLocationPlanner = () => {
         </table>
       </div>
 
-      {/* Legend */}
-      <div className="flex flex-wrap justify-center gap-2 mb-6">
+      {/* Legend: the places a cell cycles through, as plain words */}
+      <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 t-meta">
         {PLANNER_LOCATIONS.slice(1).map((loc) => (
-          <span key={loc.id} className={`inline-flex items-center px-2 py-1 rounded-md text-[10px] font-bold ${loc.bgClass} ${loc.textClass}`}>
+          <span key={loc.id}>
             {loc.label}
           </span>
         ))}
       </div>
 
       {hasAnyFilled && !scored && (
-        <div className="text-center">
-          <button onClick={() => setScored(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
+        <div className="ex-actions">
+          <Button onClick={() => setScored(true)}>
             See My Score
-          </button>
+          </Button>
         </div>
       )}
 
       <AnimatePresence>
         {scored && (
-          <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+          <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className="ex-stack">
             <BrandedLocationScore score={overallScore}/>
 
-            <div className="space-y-2">
+            {/* One row per subject, ruled by hairlines: its bar (green once the variety is strong), score and verdict */}
+            <div className="ex-list">
               {PLANNER_SUBJECTS.map((subject, si) => {
                 const s = subjectScores[si];
                 const v = getVerdict(s);
                 const filledDays = grid[si].filter((val) => val > 0).length;
                 return (
-                  <div key={subject} className="flex items-center gap-3 p-2.5 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                    <span className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] w-20">{subject}</span>
-                    <div className="flex-1 h-2 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] overflow-hidden">
+                  <div key={subject} className="!flex-row items-center gap-3">
+                    <span className="t-sub w-20" style={{ color: "var(--ink-primary)" }}>{subject}</span>
+                    <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: "var(--hairline)" }}>
                       <MotionDiv
-                        className={`h-full rounded-full ${s >= 80 ? "bg-[var(--module-success)]" : s >= 50 ? "bg-[var(--module-surface)]" : "bg-[var(--module-danger)]"}`}
+                        className="h-full rounded-full"
+                        style={{ backgroundColor: s >= 80 ? "var(--success-hex)" : "var(--ink-primary)" }}
                         initial={{ width: 0 }}
                         animate={{ width: `${s}%` }}
                         transition={{ duration: 0.6, ease: 'easeOut' }}
                       />
                     </div>
-                    <span className="text-xs font-bold w-8 text-right text-[var(--module-muted)] dark:text-[var(--module-muted)]">{s}%</span>
-                    <span className={`text-xs font-bold w-44 text-right ${v.colorClass}`}>
+                    <span className="t-readout w-8 text-right text-ink-muted">{s}%</span>
+                    <span className="t-meta w-44 text-right" style={{ color: filledDays === 0 ? "var(--ink-muted)" : "var(--ink-primary)" }}>
                       {filledDays === 0 ? 'No sessions planned' : v.label}
                     </span>
                   </div>
@@ -700,20 +660,18 @@ const StudyLocationPlanner = () => {
               })}
             </div>
 
-            <div className="mt-4 p-3 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">
+            <AnswerLine tone={overallScore >= 70 ? 'ok' : 'note'}>
                 {overallScore >= 70
-                  ? <><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Excellent variety!</strong> Your study plan means your knowledge will work anywhere, including the exam hall.</>
+                  ? <><strong>Excellent variety!</strong> Your study plan means your knowledge will work anywhere, including the exam hall.</>
                   : overallScore >= 40
-                  ? <><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Good start, but more variety would help.</strong> Try adding a second or third spot for each subject so your memories are not tied to one place.</>
-                  : <><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Your knowledge is stuck in one spot.</strong> Each subject should be studied in at least 2 different places across the week so you can remember it anywhere.</>
+                  ? <><strong>Good start, but more variety would help.</strong> Try adding a second or third spot for each subject so your memories are not tied to one place.</>
+                  : <><strong>Your knowledge is stuck in one spot.</strong> Each subject should be studied in at least 2 different places across the week so you can remember it anywhere.</>
                 }
-              </p>
-            </div>
+            </AnswerLine>
           </MotionDiv>
         )}
       </AnimatePresence>
-    </div></div>;
+    </ExerciseSheet>;
 };
 
 // --- MODULE COMPONENT ---
@@ -762,8 +720,10 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
                   <p>If you only ever study in one place, your memories become <Highlight description="When a memory is strongly linked to one specific place, you can only pull it back reliably in that place. The knowledge is still in your brain, but without the right surroundings your brain can't find it. It's not that you didn't learn it — your brain just lost the path to it." theme={theme}>stuck to that spot</Highlight> — deeply tied to that specific environment. They feel solid and easy to access in your bedroom. But move to an unfamiliar exam hall with fluorescent lights and rows of desks, and those same memories can suddenly feel unreachable. The knowledge is still there; your brain just can't find the path to it without its usual signposts.</p>
                 </>
               )}
-              <ContextMemoryComparison />
-              <ContextCueExplorer />
+              <ExerciseSheet name="ContextMemoryComparison">
+                <ContextMemoryComparison />
+                <ContextCueExplorer />
+              </ExerciseSheet>
             </ReadingSection>
           )}
           {activeSection === 1 && (
@@ -796,8 +756,10 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
                   <p>This means your study environment should match your task. Reading a history chapter to understand the big picture? A cafe might actually help your thinking. Drilling past paper questions in maths or memorising vocabulary? You need silence. The environment isn't just a backdrop — it's an active ingredient in how well your brain works. Planning your study sessions around this means deliberately choosing where you work based on what you're working on.</p>
                 </>
               )}
-              <NoiseLevelCurve />
-              <TaskEnvironmentMatcher />
+              <ExerciseSheet name="NoiseLevelCurve">
+                <NoiseLevelCurve />
+                <TaskEnvironmentMatcher />
+              </ExerciseSheet>
             </ReadingSection>
           )}
           {activeSection === 3 && (

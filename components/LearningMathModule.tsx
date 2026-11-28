@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useRef } from 'react';
+import React, { useId, useState, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
@@ -15,6 +15,10 @@ import { grayTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { AnswerGroup, AnswerLine, AnswerTick, ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { AreaField } from './ui/Field';
 
 const theme = grayTheme;
 
@@ -29,19 +33,21 @@ const PartialCreditCalculator = () => {
     else if(steps.formula) marks = 5;
 
     return (
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Partial Credit Calculator</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: 10-mark Scale D Question. How many marks do you get?</p>
-             <div className="grid grid-cols-2 gap-3">
-                <button onClick={() => setSteps(s => ({...s, formula: !s.formula}))} className="p-4 font-medium text-sm transition-all" style={steps.formula ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Wrote correct formula</button>
-                <button onClick={() => setSteps(s => ({...s, sub: !s.sub}))} className="p-4 font-medium text-sm transition-all" style={steps.sub ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Substituted a value</button>
-                <button onClick={() => setSteps(s => ({...s, slip: !s.slip, blunder: false}))} className="p-4 font-medium text-sm transition-all" style={steps.slip ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', borderRadius: 14, boxShadow: '3px 3px 0px 0px #D97706', color: '#78350F' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Made a minor calculation 'Slip'</button>
-                <button onClick={() => setSteps(s => ({...s, blunder: !s.blunder, slip: false}))} className="p-4 font-medium text-sm transition-all" style={steps.blunder ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Made a major concept 'Blunder'</button>
-             </div>
-             <div className="mt-8 p-4 rounded-xl text-center" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>
-                You get <span className="font-bold text-2xl">{marks}/10</span> marks.
+        <ExerciseSheet title="Partial Credit Calculator" sub="Scenario: 10-mark Scale D Question. How many marks do you get?" name="PartialCreditCalculator">
+             {/* What you did on the question: several may be chosen (a slip and a blunder replace each other) */}
+             <AnswerGroup kind="several" columns={2}>
+                <ChoiceTile kind="several" tile chosen={steps.formula} onClick={() => setSteps(s => ({...s, formula: !s.formula}))} label="Wrote correct formula" />
+                <ChoiceTile kind="several" tile chosen={steps.sub} onClick={() => setSteps(s => ({...s, sub: !s.sub}))} label="Substituted a value" />
+                <ChoiceTile kind="several" tile chosen={steps.slip} onClick={() => setSteps(s => ({...s, slip: !s.slip, blunder: false}))} label="Made a minor calculation 'Slip'" />
+                <ChoiceTile kind="several" tile chosen={steps.blunder} onClick={() => setSteps(s => ({...s, blunder: !s.blunder, slip: false}))} label="Made a major concept 'Blunder'" />
+             </AnswerGroup>
+             {/* The marks it comes to: said under a hairline, the figure in ink (no green panel) */}
+             <div className="ex-result">
+                <p className="ex-sub">
+                    You get <span className="ex-result-name">{marks}/10</span> marks.
+                </p>
             </div>
-        </div>
+        </ExerciseSheet>
     );
 };
 
@@ -57,19 +63,17 @@ const ProblemSorter = () => {
     };
 
     return(
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Problem Sorter</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Train your discriminative skills: Is it a Permutation (order matters) or a Combination (order doesn't)?</p>
+        <ExerciseSheet title="Problem Sorter" sub="Train your discriminative skills: Is it a Permutation (order matters) or a Combination (order doesn't)?" name="ProblemSorter">
+            {/* Each problem is its question; the right answer, once chosen, carries the green tick (no mint or coral fill) */}
+            <div className="ex-questions">
             {problems.map(p => (
-                <div key={p.id} className="mb-4">
-                    <p className="p-4 rounded-xl text-center font-bold text-sm" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4', color: '#1C1917' }}>{p.text}</p>
-                    <div className="grid grid-cols-2 gap-2 mt-2">
-                        <button onClick={() => handleChoice(p.id, 'p')} className="p-2 font-medium text-sm transition-all" style={choice[p.id] ? (choice[p.id] === 'p' && p.type === 'p' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : choice[p.id] === 'p' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }) : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Permutation</button>
-                        <button onClick={() => handleChoice(p.id, 'c')} className="p-2 font-medium text-sm transition-all" style={choice[p.id] ? (choice[p.id] === 'c' && p.type === 'c' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : choice[p.id] === 'c' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }) : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Combination</button>
-                    </div>
-                </div>
+                <AnswerGroup key={p.id} kind="one" columns={2} chooseOnArrow={false} legend={p.text}>
+                    <ChoiceTile tile chosen={choice[p.id] === 'p'} onClick={() => handleChoice(p.id, 'p')} label={<span className="inline-flex items-center gap-2">Permutation{choice[p.id] === 'p' && p.type === 'p' ? <AnswerTick /> : null}</span>} />
+                    <ChoiceTile tile chosen={choice[p.id] === 'c'} onClick={() => handleChoice(p.id, 'c')} label={<span className="inline-flex items-center gap-2">Combination{choice[p.id] === 'c' && p.type === 'c' ? <AnswerTick /> : null}</span>} />
+                </AnswerGroup>
             ))}
-        </div>
+            </div>
+        </ExerciseSheet>
     );
 }
 
@@ -169,45 +173,47 @@ const PaperPredictorGame = () => {
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
+  // The paper the student pressed, read back from the feedback while it shows (a right answer is the
+  // question's paper, a wrong one the other), so the pressed answer carries the ink outline.
+  const pressed = (paper: 'paper1' | 'paper2') =>
+    feedback !== null && questions.length > 0 && (feedback.correct ? questions[currentIndex].answer === paper : questions[currentIndex].answer !== paper);
+
   return (
-    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Paper Predictor</h4>
+    <ExerciseSheet title="Paper Predictor" name="PaperPredictorGame">
 
       {phase === 'intro' && (
-        <div className="text-center mt-6">
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">
+        <div className="ex-stack">
+          <p className="ex-sub">
             <strong>Paper 1</strong> = Pure / Technical. <strong>Paper 2</strong> = Context / Applied.
           </p>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">Can you sort 12 question stems as fast as possible?</p>
-          <button
-            onClick={startGame}
-            className="px-8 py-3 font-semibold text-sm transition-all"
-            style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
-          >
-            Start Game
-          </button>
+          <p className="ex-sub">Can you sort 12 question stems as fast as possible?</p>
+          <div className="ex-actions">
+            <Button onClick={startGame}>
+              Start Game
+            </Button>
+          </div>
         </div>
       )}
 
       {phase === 'playing' && questions.length > 0 && (
-        <div className="mt-6">
-          {/* Stats pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
-            <span className="px-3 py-1 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300">
+        <div className="ex-stack">
+          {/* Where you are, the score, the streak and the clock, in the readout (no pills) */}
+          <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+            <span className="ex-count ui-readout">
               {currentIndex + 1} / {questions.length}
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300">
+            <span className="ui-readout text-ink-primary">
               Score: {score}
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-medium bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300">
+            <span className="ui-readout text-ink-primary">
               Streak: {streak}
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300">
+            <span className="ui-readout text-ink-muted">
               {formatTime(elapsedTime)}
             </span>
           </div>
 
-          {/* Question card */}
+          {/* The question: words you read, on the sheet under a hairline (no tinted card) */}
           <AnimatePresence mode="wait">
             <MotionDiv
               key={questions[currentIndex].id}
@@ -215,105 +221,94 @@ const PaperPredictorGame = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.25 }}
-              className={`p-6 md:p-8 rounded-xl border-2 transition-colors duration-200 ${
-                feedback === null
-                  ? 'border-zinc-200 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-900/50'
-                  : feedback.correct
-                  ? 'border-emerald-400 bg-emerald-50 dark:bg-emerald-900/20'
-                  : 'border-rose-400 bg-rose-50 dark:bg-rose-900/20'
-              }`}
+              className="ex-block min-h-[96px]"
             >
-              <p className="text-center text-lg md:text-xl font-medium text-zinc-800 dark:text-white leading-relaxed">
+              <p className="t-heading text-ink-primary">
                 {questions[currentIndex].text}
               </p>
               {feedback && !feedback.correct && (
-                <p className="text-center text-sm text-rose-600 dark:text-rose-400 mt-4 font-medium">
+                <AnswerLine tone="note">
                   {feedback.explanation}
-                </p>
+                </AnswerLine>
               )}
             </MotionDiv>
           </AnimatePresence>
 
-          {/* Answer buttons */}
-          <div className="grid grid-cols-2 gap-3 mt-6">
-            <button
+          {/* The two answers: pressing one marks it and moves on (the right one carries the green tick) */}
+          <AnswerGroup kind="one" columns={2} chooseOnArrow={false}>
+            <ChoiceTile
+              tile
+              chosen={pressed('paper1')}
               onClick={() => handleAnswer('paper1')}
               disabled={feedback !== null}
-              className="p-4 font-semibold text-base transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-              style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
-            >
-              Paper 1
-            </button>
-            <button
+              label={<span className="inline-flex items-center gap-2">Paper 1{pressed('paper1') && feedback?.correct ? <AnswerTick /> : null}</span>}
+            />
+            <ChoiceTile
+              tile
+              chosen={pressed('paper2')}
               onClick={() => handleAnswer('paper2')}
               disabled={feedback !== null}
-              className="p-4 font-semibold text-base transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-              style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
-            >
-              Paper 2
-            </button>
-          </div>
+              label={<span className="inline-flex items-center gap-2">Paper 2{pressed('paper2') && feedback?.correct ? <AnswerTick /> : null}</span>}
+            />
+          </AnswerGroup>
         </div>
       )}
 
       {phase === 'results' && (
-        <div className="mt-6 text-center">
-          {/* Score display */}
-          <div className="mb-6">
-            <p className="text-5xl font-bold text-zinc-800 dark:text-white">{score}<span className="text-2xl text-zinc-400 dark:text-zinc-500">/{questions.length}</span></p>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
+        <div className="ex-stack">
+          {/* Score display: the figure in ink, said in words under it */}
+          <div className="ex-result">
+            <p className="ex-result-name">{score}<span className="text-ink-muted">/{questions.length}</span></p>
+            <p className="ex-sub">
               {Math.round((score / questions.length) * 100)}% accuracy in {formatTime(elapsedTime)}
             </p>
           </div>
 
-          {/* Result stats */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
-            <span className="px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300">
+          {/* Result stats, in the readout (no pills) */}
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span className="ui-readout text-ink-primary">
               Best streak: {bestStreak}
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300">
+            <span className="ui-readout text-ink-muted">
               Time: {formatTime(elapsedTime)}
             </span>
           </div>
 
-          {/* Summary insight */}
-          <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 mb-6">
-            <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+          {/* Summary insight: words you read, under a hairline (no box) */}
+          <div className="ex-block">
+            <p className="ex-block-text">
               <strong>Paper 1</strong> = pure maths (algebra, calculus, proofs). <strong>Paper 2</strong> = maths in context (statistics, applied problems, modelling).
             </p>
           </div>
 
-          <button
-            onClick={startGame}
-            className="px-8 py-3 font-semibold text-sm transition-all"
-            style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
-          >
-            Play Again
-          </button>
+          <div className="ex-actions">
+            <Button onClick={startGame}>
+              Play Again
+            </Button>
+          </div>
         </div>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 
 const ErrorLog = () => {
     const [error, setError] = useState('');
     const [type, setType] = useState<string | null>(null);
+    const titleId = useId();
 
     return(
-         <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My Error Log</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Log a mistake from a practice question to turn it into a learning opportunity.</p>
-             <div className="space-y-4">
-                <textarea value={error} onChange={e => setError(e.target.value)} placeholder="Describe the mistake..." className="w-full h-24 bg-white dark:bg-surface-soft rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all" style={{ border: '1.5px solid #E7E5E4' }}></textarea>
-                <div className="grid grid-cols-3 gap-2">
-                    <button onClick={() => setType('Concept')} className="p-2 text-xs font-bold transition-all" style={type === 'Concept' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Concept Error</button>
-                    <button onClick={() => setType('Procedural')} className="p-2 text-xs font-bold transition-all" style={type === 'Procedural' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Procedural Error</button>
-                    <button onClick={() => setType('Reading')} className="p-2 text-xs font-bold transition-all" style={type === 'Reading' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Reading Error</button>
-                </div>
-             </div>
-             {error && type && <p className="text-center mt-4 text-sm font-bold text-emerald-600">Error logged. Now you won't make it again.</p>}
-        </div>
+         <ExerciseSheet id={titleId} title="My Error Log" sub="Log a mistake from a practice question to turn it into a learning opportunity." name="ErrorLog">
+                {/* The written answer, named by the exercise's title */}
+                <AreaField aria-labelledby={titleId} value={error} onChange={e => setError(e.target.value)} placeholder="Describe the mistake..." rows={3} />
+                {/* The kind of error: one answer */}
+                <AnswerGroup kind="one">
+                    <ChoiceTile chosen={type === 'Concept'} onClick={() => setType('Concept')} label="Concept Error" />
+                    <ChoiceTile chosen={type === 'Procedural'} onClick={() => setType('Procedural')} label="Procedural Error" />
+                    <ChoiceTile chosen={type === 'Reading'} onClick={() => setType('Reading')} label="Reading Error" />
+                </AnswerGroup>
+             {error && type && <AnswerLine>Error logged. Now you won't make it again.</AnswerLine>}
+        </ExerciseSheet>
     );
 };
 

@@ -19,6 +19,9 @@ import { reportSaveError } from '../utils/logError';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { COLORS } from '../design/tokens';
 import HorizontalTabs from './ui/HorizontalTabs';
+import { Button, TextButton } from './ui/Button';
+import { ChoiceRuler } from './ui/Choice';
+import './points-passport-7.css';
 import { computeBestSixBreakdown } from './pointsScenarioStore';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
@@ -50,6 +53,9 @@ interface CAOPointsSimulatorProps {
   onOpenSettings: () => void;
   initialTab?: 'overview' | 'what-if';
   overviewLocked?: boolean;
+  /** Inside Points Passport (area 7a): What if? as the board draws it, one big number pinned
+   *  under the bar while grades are tapped, no second tab bar. The arithmetic is the same. */
+  passport?: boolean;
 }
 
 export interface WhatIfScenario {
@@ -129,7 +135,7 @@ const PointsCard: React.FC<{
 
 // ─── CAOPointsSimulator ──────────────────────────────────────────────────────
 
-const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, onOpenSettings, initialTab = 'overview', overviewLocked = false }) => {
+const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, onOpenSettings, initialTab = 'overview', overviewLocked = false, passport = false }) => {
   const { updateDemoProgress } = useProgress();
   const isDemo = uid === DEMO_STUDENT_UID;
   const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>(overviewLocked ? 'what-if' : initialTab);
@@ -301,6 +307,74 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
         >
           Set up subjects
         </button>
+      </div>
+    );
+  }
+
+  if (passport) {
+    const whatIf = whatIfAnalysis.total;
+    const now = currentAnalysis.total;
+    const target = targetAnalysis.total;
+    const delta = whatIf - now;
+    const at = (points: number) => `${Math.min(99, Math.max(1, points / 625 * 100))}%`;
+    return (
+      <div className="pp7-whatif">
+        {/* One big number, pinned under the bar while grades are tapped (board c-tools1-passport). */}
+        <div className="pp7-wi" aria-live="polite">
+          <p className="t-label pp7-label">What if</p>
+          <div className="pp7-wi-row">
+            <p className="pp7-total pp7-total--wi"><span>{whatIf}</span><span className="pp7-of"> / 625</span></p>
+            <div className="pp7-wi-side">{delta !== 0 ? <span>{delta > 0 ? '+' : ''}{delta} on your grades now</span> : null}<span className="t-meta">Gap to target {Math.max(0, target - whatIf)}</span></div>
+          </div>
+          <div className="pp7-bar"><span style={{ width: `${Math.min(100, whatIf / 625 * 100)}%` }} /><i className="pp7-now" style={{ left: at(now) }} aria-label={`Now ${now}`} /><i style={{ left: at(target) }} aria-label={`Target ${target}`} /></div>
+          <div className="pp7-wi-key t-meta"><span>Now {now}</span><span>Target {target}</span></div>
+        </div>
+
+        {mockUpdatesAvailable.length > 0 && (
+          <section className="pp7-section" aria-label="Mock results available">
+            <div className="pp7-head"><p className="t-label pp7-label">Mock results available</p><TextButton tone="quiet" onClick={() => setMockBannerDismissed(true)}>Dismiss</TextButton></div>
+            <p className="t-sub">Your latest mock shows different grades for {mockUpdatesAvailable.length} subject{mockUpdatesAvailable.length > 1 ? 's' : ''}. Update your what-if explorer to match?</p>
+            {mockUpdatesAvailable.slice(0, 3).map(u => <p key={u.subjectName} className="t-meta">{u.subjectName}: {u.currentGrade} → {u.mockGrade} (mock)</p>)}
+            <Button onClick={() => { for (const u of mockUpdatesAvailable) handleWhatIfGradeChange(u.subjectName, u.mockGrade); setMockBannerDismissed(true); }}>Apply mock grades to What-If</Button>
+          </section>
+        )}
+
+        <div className="pp7-head"><p className="t-label pp7-label">Tap a grade to try it</p><TextButton onClick={handleResetAll}>Reset all</TextButton></div>
+        {simSubjects.map(sub => {
+          const grades = getGradesForLevel(sub.level);
+          const subjectPoints = getPointsForGrade(sub.whatIfGrade, sub.isMaths);
+          const isInBestSix = whatIfBestSixNames.has(sub.subjectName);
+          const mathsBonus = sub.isMaths && sub.whatIfGrade.startsWith('H') && getPointsForGrade(sub.whatIfGrade, false) >= 46;
+          return (
+            <section key={sub.subjectName} className="pp7-wsub" aria-label={sub.subjectName}>
+              <div className="pp7-wsub-head"><span className="pp7-wsub-name">{sub.subjectName}{isInBestSix ? <Star size={14} className="pp7-star" aria-label="In your best six" /> : null}</span><span className="t-meta"><b>{subjectPoints}</b> points{mathsBonus ? ' with the maths bonus' : ''}</span></div>
+              <ChoiceRuler label={`${sub.subjectName} grade`} value={sub.whatIfGrade} onChange={grade => handleWhatIfGradeChange(sub.subjectName, grade)}
+                options={grades.map(grade => ({ value: grade, label: grade, name: `${sub.subjectName} ${grade}`, marked: sub.currentGrade === grade }))} />
+            </section>
+          );
+        })}
+
+        {biggestGains.length > 0 && (
+          <section className="pp7-section" aria-label="Biggest gains available">
+            <TextButton className="pp7-disclose" aria-expanded={showGains} onClick={() => setShowGains(!showGains)}><span className="pp7-inline">Biggest gains available{showGains ? <ChevronUp size={16} aria-hidden="true" /> : <ChevronDown size={16} aria-hidden="true" />}</span></TextButton>
+            {showGains && <>
+              <p className="t-meta">Top improvements ranked by net {bestSixLabel} total gain from one grade up.</p>
+              <ol className="pp7-rows">{biggestGains.map((gain, idx) => <li key={gain.subjectName}><span className="t-readout pp7-rank">{idx === 0 ? 'Best' : idx + 1}</span><span className="pp7-row-name">{gain.subjectName}</span><span className="t-meta">{gain.fromGrade} → {gain.toGrade}</span><span className="t-readout">+{gain.netGain}</span></li>)}</ol>
+            </>}
+          </section>
+        )}
+
+        {ffPicks.length > 0 && (
+          <section className="pp7-section" aria-label="Your Future Finder picks">
+            <p className="t-label pp7-label">Your Future Finder picks</p>
+            <ul className="pp7-rows">{ffPicks.map(course => {
+              const gap = Math.max(0, course.typicalPoints - whatIfAnalysis.total);
+              return <li key={course.code}><span className="pp7-row-name">{course.title}<small className="t-meta">{course.institution} · {course.typicalPoints} points</small></span><span className="t-sub">{gap === 0 ? 'On track' : `${gap} points to go`}</span></li>;
+            })}</ul>
+            {biggestGains.length > 0 && ffPicks.some(c => c.typicalPoints > whatIfAnalysis.total) && <p className="t-meta">Quick win: upgrade {biggestGains[0].subjectName} from {biggestGains[0].fromGrade} to {biggestGains[0].toGrade} for +{biggestGains[0].netGain} points</p>}
+          </section>
+        )}
+        <TextButton arrow="forward" onClick={onOpenSettings}>Edit subjects</TextButton>
       </div>
     );
   }

@@ -2,17 +2,23 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * The first step after a session: which strategies helped. A Kobra paper card
- * (approved review, 25 Oct 2026): Checkbox rows grouped by category, the
- * auto-tracked ones checked and locked, and the session in a hairline strip of
- * serif numerals. Styles: study-post-session.css.
+ * The first step after a session: which strategies helped (r5-post-session,
+ * agreed 26 Nov 2026). On the page, not in a card: the subject with its
+ * character, the three figures in a line, pick-several tiles with a square mark
+ * (the auto-tracked ones checked and locked), and Continue pinned at the bottom
+ * saying what it needs. A task: the tab bar steps aside.
  */
 
-import React, { useState, type CSSProperties } from 'react';
-import KobraScope, { Button, Checkbox } from '../approved-ui-runtime';
+import React, { useEffect, useRef, useState } from 'react';
+import KobraScope from '../approved-ui-runtime';
 import { STRATEGY_REGISTRY } from '../../utils/strategyRegistry';
-import { getSubjectFill } from '../../utils/subjectColors';
+import SubjectAvatar from '../SubjectAvatar';
+import { PinnedFooter, TopBar } from '../ui/Bars';
+import { Button, TextButton } from '../ui/Button';
+import { ChoiceTile } from '../ui/Choice';
+import { useFrameTask } from '../ui/Frame';
 import './study-post-session.css';
+import './study-after.css';
 
 // ── Strategy categories ─────────────────────────────────────
 
@@ -55,6 +61,8 @@ interface StrategyPickerStepProps {
   pointsEarned?: number;
 }
 
+const ALL_IDS = CATEGORIES.flatMap(category => category.ids).filter(id => strategyMap[id]);
+
 const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
   learnedStrategyIds: _learnedStrategyIds,
   autoTrackedIds,
@@ -66,6 +74,10 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
 }) => {
   const autoSet = new Set(autoTrackedIds);
   const [selected, setSelected] = useState<Set<string>>(new Set(autoTrackedIds));
+  const firstGroup = useRef<HTMLDivElement>(null);
+  // A task: the tab bar steps aside; and it opens at the top, on its headline.
+  useFrameTask(true);
+  useEffect(() => { try { window.scrollTo({ top: 0 }); } catch { /* no window to scroll */ } }, []);
 
   const toggle = (moduleId: string) => {
     if (autoSet.has(moduleId)) return;
@@ -82,59 +94,45 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
 
   return (
     <KobraScope className="nsu-post-session">
-      <div className="sps-page sps-solo">
-        <section className="sps-card sps-strategies nsu-paper-card" aria-labelledby="study-strategies-title">
-          {subject && (
-            <header className="sps-head">
-              <span className="sps-subject" style={{ '--sps-subject': getSubjectFill(subject) } as CSSProperties}>
-                <span className="sps-subject-dot" aria-hidden="true" />
-                {subject}
-              </span>
-            </header>
-          )}
-          <p className="sps-kicker">Before your results</p>
-          <h2 id="study-strategies-title" className="sps-title">What helped you focus?</h2>
-          <p className="sps-lede">Select the strategies you used.</p>
+      <div className="sps-page sps-flow">
+        <TopBar className="sps-bar" placeLabel="Before your results" />
+        <section className="sps-step" aria-labelledby="study-strategies-title">
+          {subject && <p className="sps-subject-line"><SubjectAvatar subject={subject} bare /><span className="t-row">{subject}</span></p>}
+          <h1 id="study-strategies-title" className="t-display">What helped you focus?</h1>
+          <p className="t-sub">Select the strategies you used.</p>
 
-          <dl className="sps-stats">
-            <div><dt>Duration</dt><dd>{durationMin}m</dd></div>
+          <dl className="sps-figures">
+            <div><dt>Duration</dt><dd>{durationMin}<small>m</small></dd></div>
             <div><dt>Tracked</dt><dd>{autoTrackedIds.length}</dd></div>
-            <div><dt>JP earned</dt><dd className="sps-accent">+{pointsEarned}</dd></div>
+            <div><dt>JP earned</dt><dd>+{pointsEarned}</dd></div>
           </dl>
 
-          {CATEGORIES.map(cat => (
-            <fieldset key={cat.label} className="sps-group">
-              <legend className="sps-group-label">{cat.label}</legend>
-              <div className="sps-choices">
+          {CATEGORIES.map((cat, index) => (
+            <div key={cat.label} ref={index === 0 ? firstGroup : undefined} role="group" aria-labelledby={`sps-group-${index}`} className="sps-group-flow">
+              <p id={`sps-group-${index}`} className="t-label">{cat.label}</p>
+              <div className="sps-tiles">
                 {cat.ids.map(id => {
                   const strategy = strategyMap[id];
                   if (!strategy) return null;
-                  const isSelected = selected.has(id);
                   const isAuto = autoSet.has(id);
                   return (
-                    <label key={id} className="sps-choice" data-checked={isSelected || undefined} data-locked={isAuto || undefined}>
-                      <Checkbox checked={isSelected} disabled={isAuto} onCheckedChange={() => toggle(id)} />
-                      <span className="sps-choice-label">{strategy.strategyName}</span>
-                      {isAuto && <span className="sps-tracked">Tracked</span>}
-                    </label>
+                    <ChoiceTile key={id} kind="several" chosen={selected.has(id)} label={strategy.strategyName}
+                      meta={isAuto ? 'Tracked' : undefined} aria-disabled={isAuto || undefined} onClick={() => toggle(id)} />
                   );
                 })}
               </div>
-            </fieldset>
+            </div>
           ))}
-
-          <div className="sps-actions">
-            <Button className="sps-primary" disabled={count === 0} onClick={() => onContinue([...selected])}>
-              {count > 0
-                ? `Continue with ${count} ${count === 1 ? 'strategy' : 'strategies'}`
-                : 'Select strategies to continue'}
-            </Button>
-            {count > 0 && <p className="sps-bonus"><em>+5</em> bonus JP for reflecting</p>}
-            <Button variant="ghost" className="sps-quiet" onClick={() => onSkip ? onSkip() : onContinue([])}>
-              Skip this step
-            </Button>
-          </div>
         </section>
+        <PinnedFooter ruled className="sps-foot">
+          {count > 0 && <p className="sps-ready">{count} of {ALL_IDS.length} chosen · +5 bonus JP for reflecting</p>}
+          <Button kind="main" size="lg" block arrow="forward" className="sps-main"
+            missing={count === 0 ? { sentence: 'Select strategies to continue.', goTo: firstGroup } : undefined}
+            onClick={() => onContinue([...selected])}>
+            {count > 0 ? `Continue with ${count} ${count === 1 ? 'strategy' : 'strategies'}` : 'Continue'}
+          </Button>
+          <TextButton tone="quiet" className="sps-quiet" onClick={() => onSkip ? onSkip() : onContinue([])}>Skip this step</TextButton>
+        </PinnedFooter>
       </div>
     </KobraScope>
   );

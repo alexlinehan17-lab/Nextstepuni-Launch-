@@ -12,7 +12,7 @@ import type { ModuleProgress, ModuleTheme } from '@/types';
 
 const reading = vi.hoisted(() => ({ essentials: false }));
 vi.mock('@/hooks/useEssentialsMode', () => ({ useEssentialsMode: () => reading.essentials }));
-vi.mock('@/contexts/NavigationContext', () => ({ useNavigation: () => ({ state: { currentModuleId: 'test-module' }, navigateToStudySession: vi.fn() }) }));
+vi.mock('@/contexts/NavigationContext', () => ({ useNavigation: () => ({ state: { currentModuleId: 'test-module' }, navigateToStudySession: vi.fn() }), useOptionalNavigation: () => null, useBackStep: () => {} }));
 afterEach(cleanup);
 beforeEach(() => { window.scrollTo = vi.fn(); reading.essentials = false; });
 const icon = () => <svg />;

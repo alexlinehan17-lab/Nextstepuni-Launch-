@@ -81,7 +81,7 @@ const SubjectModule: React.FC<SubjectModuleProps> = ({ subjectId, onBack, progre
                 {section.bullets && (
                   <ul className="list-disc list-inside space-y-2 my-4">
                     {section.bullets.map((bullet, bIdx) => (
-                      <li key={bIdx} className="text-zinc-600 dark:text-zinc-300">{renderParagraph(bullet, section.highlights, theme)}</li>
+                      <li key={bIdx} className="text-ink-secondary">{renderParagraph(bullet, section.highlights, theme)}</li>
                     ))}
                   </ul>
                 )}

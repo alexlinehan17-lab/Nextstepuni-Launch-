@@ -1,80 +1,126 @@
+/* Paper Trail in the agreed look (area 6a, 27 Nov 2026; boards c-papers-pick, c-papers-controls,
+   r5-paper-trail). The frame is the system's; the character, the big title and the real covers of the
+   paper and its marking scheme are Paper Trail's own. On a phone one column; from 1024px the subject
+   block (character, title, level, years) sits at the left, centred in the height of the page, and
+   the papers or the subjects beside it ("it shouldn't move left or right, just down a bit"). */
 .pt-kobra { width: 100%; }
-.pt-kobra .pt-archive { background: var(--background); color: var(--foreground); font-size: 16px; line-height: 1.55; }
-.pt-kobra .pt-master-detail { max-width: 1220px; }
-.pt-kobra .pt-master-grid { grid-template-columns: 290px minmax(0, 1fr); gap: 48px; }
-.pt-kobra .pt-title { font-size: clamp(32px, 4vw, 44px); line-height: 1.12; font-weight: 500; }
-.pt-kobra .pt-eyebrow { font-family: 'Departure Mono', monospace; color: var(--muted-foreground); font-weight: 400; letter-spacing: .13em; font-size: 12px; }
-.pt-kobra .pt-subject-heading { padding-bottom: 30px; }
-.pt-subject-art { display: block; width: 155px; height: 155px; object-fit: contain; margin: 0 auto 25px; }
-.pt-find-heading { margin: 20px 0 28px; }
-.pt-kobra .pt-home { max-width: 700px; }
-.pt-control-label { display: block; color: var(--foreground); font-size: 14px; margin-bottom: 10px; }
-.pt-subject-picker [data-slot='input-group'] { min-height: 46px; }
-.pt-subject-picker input { font-size: 15px; }
-.pt-subject-scope { margin: 20px 0; }
-.pt-subject-shortlist { display: grid; gap: 8px; }
-.pt-kobra .pt-subject-choice { width: 100%; min-height: 70px; height: auto; padding: 12px; display: flex; gap: 14px; white-space: normal; justify-content: flex-start; text-align: left; border: 1px solid var(--border); border-radius: 14px; }
-.pt-subject-choice .pt-subject-art { width: 42px; height: 50px; margin: 0; flex-shrink: 0; }
-.pt-subject-choice-copy { flex: 1; min-width: 0; }
-.pt-subject-choice-copy strong { display: block; font-weight: 500; font-size: 15px; }
-.pt-subject-choice-copy > span { display: block; margin-top: 4px; color: var(--muted-foreground); font-size: 12px; font-weight: 400; }
-.pt-kobra .pt-subject-choice[aria-pressed='true'] { background: var(--muted); border-color: var(--foreground); }
-.pt-selected-label { color: var(--muted-foreground); font-size: 12px; font-weight: 400; }
-.pt-approved-filters { display: grid; gap: 22px; margin-bottom: 26px; }
-.pt-level-field [data-slot='toggle-group'] { flex-wrap: wrap; }
-.pt-kobra [data-slot='toggle-group-item'] { min-height: 42px; }
-.pt-two-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-.pt-two-fields [data-slot='select-trigger'] { width: 100%; min-height: 44px; }
-.pt-paper-selection-heading { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border); padding-top: 24px; margin: 20px 0; gap: 16px; }
-.pt-paper-selection-heading h2 { font: 500 28px/1.2 'Source Serif 4', serif; margin: 0; }
-.pt-kobra .pt-paper-list { border: 0; border-radius: 0; overflow: visible; display: grid; gap: 30px; }
-.pt-kobra .pt-paper-card { border: 0; min-height: 0; padding: 0; display: block; }
-.pt-paper-pair-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
-.pt-paper-pair-heading h3 { font-size: 15px; font-weight: 500; }
-.pt-paper-cover-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-.pt-paper-cover-card { min-width: 0; overflow: hidden; border: 1px solid var(--nsu-edge); border-radius: 18px; background: var(--nsu-surface); }
-.pt-large-cover-button { display: grid; place-items: center; width: 100%; padding: 24px; background: color-mix(in srgb, var(--foreground) 3%, var(--background)); border-bottom: 1px solid var(--border); }
-.pt-large-cover-button .pt-cover { width: 100%; max-width: 205px; height: auto; aspect-ratio: 210/297; border: 1px solid #00000012; background: #fff; box-shadow: 0 2px 5px #0000000c; transition: transform 220ms ease; }
-.pt-large-cover-button:hover .pt-cover { transform: translateY(-4px); }
-.pt-paper-cover-details { padding: 18px; }
-.pt-paper-cover-details h4 { font: 500 24px/1.2 'Source Serif 4', serif; margin: 0; }
-.pt-paper-cover-details p { color: var(--muted-foreground); font-size: 13px; margin: 9px 0 18px; }
-.pt-paper-cover-details [data-slot='button'] { width: 100%; }
-.pt-kobra .pt-paper-files-button { margin: 12px 0; }
-.pt-kobra .pt-source-note { margin-top: 20px; color: var(--muted-foreground); }
-.nsu-kobra .pt-documents-dialog { width: min(94vw, 620px); max-width: 620px; font-family: 'DM Sans', sans-serif; }
-.nsu-kobra .pt-documents-pair { width: min(94vw, 960px); max-width: 960px; }
-.pt-documents-title { font: 500 30px/1.15 'Source Serif 4', serif; max-width: 90%; }
-.pt-document-attachments { display: grid; gap: 14px; margin-block: 14px; }
-.pt-document-attachment[data-slot='attachment'] { width: 100%; padding: 16px; gap: 20px; border-radius: 18px; }
-.pt-document-thumbnail[data-slot='attachment-media'] { width: 76px; height: auto; aspect-ratio: 210/297; overflow: visible; background: transparent; border-radius: 2px; }
-.pt-document-thumbnail .pt-cover { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; background: white; color: #5f5a55; font-size: 12px; }
-.pt-document-thumbnail .pt-cover img { width: 100%; height: 100%; object-fit: contain; }
-.pt-document-attachment [data-slot='attachment-title'] { font-size: 18px; white-space: normal; }
-.pt-document-attachment [data-slot='attachment-description'] { font-size: 13px; margin-top: 7px; white-space: normal; }
-.pt-back-to-files { justify-self: start; }
-.pt-document-preview-pages { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,270px),1fr)); gap: 24px; }
-.pt-document-preview-pages figure { min-width: 0; margin: 0; }
-.pt-document-preview-cover { display: flex; width: 100%; align-items: center; justify-content: center; background: var(--muted); padding: 18px; border: 1px solid var(--border); border-radius: 12px; }
-.pt-document-preview-cover .pt-cover { display: flex; align-items: center; justify-content: center; width: min(100%, 354px); height: auto; max-height: 50vh; aspect-ratio: 210/297; background: white; color: #5f5a55; border: 1px solid #00000012; }
-.pt-document-preview-cover img { width: 100%; height: 100%; object-fit: contain; }
-.pt-document-preview-pages figcaption { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding-top: 16px; }
-.pt-document-preview-pages figcaption strong { display: block; font-weight: 500; }
-.pt-document-preview-pages figcaption span { display: block; color: var(--muted-foreground); font-size: 13px; margin-top: 4px; }
-@media (max-width: 899px) {
-  .pt-kobra .pt-master-grid { display: block; }
-  .pt-kobra .pt-subject-rail { display: none; }
+.pt-archive.pt-home, .pt-archive.pt-selection {
+  max-width: none;
+  padding: 0 var(--space-6) var(--space-8);
+  background: var(--surface-canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 24px;
 }
-@media (max-width: 430px) {
-  .pt-paper-cover-grid { gap: 12px; }
-  .pt-large-cover-button { padding: 14px; }
-  .pt-paper-cover-details { padding: 14px 12px; }
-  .pt-paper-cover-details h4 { font-size: 20px; }
-  .pt-document-attachment[data-slot='attachment'] { gap: 12px; }
-  .pt-document-thumbnail[data-slot='attachment-media'] { width: 62px; }
+
+/* The opening: the big title beside its character (Option B's top). */
+.pt-top { display: flex; align-items: center; gap: var(--space-3); min-height: 144px; padding-top: var(--space-1); margin-right: calc(-1 * var(--space-2)); }
+.pt-top-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: var(--space-1); }
+.pt-top-copy > :is(h1, p) { margin: 0; }
+/* The phone shell's editorial headings (bold DM Sans) do not reach the system's headline. */
+.pt-archive h1.t-display { font-family: var(--font-ui); font-weight: 400; letter-spacing: -0.045em; }
+.pt-top-art { display: block; flex: none; width: 140px; height: 140px; object-fit: contain; }
+
+/* Search, Saved and which subjects; level, language and the years. */
+.pt-finder, .pt-pickers { display: flex; flex-direction: column; gap: var(--space-3); padding-top: var(--space-3); }
+.pt-find-row, .pt-filter-row { display: flex; gap: var(--space-3); }
+.pt-filter-row > .pt-level { flex: 1; min-width: 0; }
+.pt-filter-row > .pt-lang { flex: none; height: 44px; }
+.pt-icon-btn > span { display: inline-flex; align-items: center; gap: var(--space-2); }
+.pt-find-row > .pt-icon-btn { flex: none; }
+/* The subject search is today's combobox, drawn as the system's search field: white, a line, the glyph in front. */
+.pt-find { position: relative; flex: 1; min-width: 0; }
+.pt-find-glyph { position: absolute; z-index: 1; left: 14px; top: 12px; color: var(--ink-muted); pointer-events: none; }
+.pt-find [data-slot='input-group'] { height: 44px; min-height: 44px; padding-left: 36px; border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); box-shadow: none; }
+.pt-find [data-slot='input-group']:focus-within { border-color: var(--outline-strong); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+.pt-find [data-slot='input-group-control'] { font-family: var(--font-ui); font-size: 16px; color: var(--ink-primary); }
+.pt-find [data-slot='input-group-control']::placeholder { color: var(--ink-muted); opacity: 1; }
+
+/* Choosing a subject: one boxed list, each subject with its character, bare, at the left. */
+.pt-subject-picker { margin-top: 20px; }
+.pt-subject-list .ui-row { min-height: 64px; }
+.pt-row-art { display: block; width: 40px; height: 40px; object-fit: contain; }
+.pt-empty-subjects { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3); padding-block: var(--space-6); }
+.pt-empty-subjects > p { margin: 0; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.pt-lastopened { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-top: 20px; padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
+.pt-lastopened > div { min-width: 0; }
+.pt-lastopened p { margin: 0; }
+
+/* The papers of a year: the real covers of the paper and its scheme, at today's size. */
+.pt-papers { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid var(--hairline); }
+.pt-papers p { margin: 0; }
+.pt-sec-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.pt-sec-head > :is(h2, h3) { margin: 0; outline: none; }
+.pt-paper-stack { display: flex; flex-direction: column; gap: var(--space-6); }
+.pt-paper { display: flex; flex-direction: column; gap: var(--space-3); }
+.pt-paper-head { margin-top: var(--space-1); }
+.pt-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); margin-top: var(--space-1); }
+.pt-doc { display: flex; min-width: 0; flex-direction: column; }
+.pt-doc-title { margin-top: var(--space-3); overflow: hidden; font-size: 17px; line-height: 22px; letter-spacing: -0.015em; text-overflow: ellipsis; white-space: nowrap; }
+.pt-doc .pt-open { margin-top: var(--space-3); }
+/* A picture of a real thing you can open: the document's own first page. A box you press: a line, no lift. */
+.ui-press.pt-cover-btn { display: block; position: relative; width: 100%; padding: 0; overflow: hidden; border: 1px solid var(--outline-soft); border-radius: 6px; background: #fff; aspect-ratio: 400 / 566; transition: transform var(--t-press, 120ms) var(--ease-out, ease-out); }
+.ui-press.pt-cover-btn:active { transform: scale(0.98); }
+.pt-cover-btn .pt-cover { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 0; border-radius: 0; background: #fff; color: #5f5a55; font-size: 12px; }
+.pt-cover-btn .pt-cover img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.pt-sitting { display: flex; flex-direction: column; gap: var(--space-1); padding-top: var(--space-6); border-top: 1px solid var(--hairline); }
+.pt-sitting > * { margin: 0; }
+.pt-accessible-link { align-self: flex-start; }
+
+/* Every paper, newest first: two small covers beside each row. */
+.pt-shelf .ui-row { min-height: 72px; gap: 14px; }
+.pt-shelf .ui-row-art { width: 76px; height: 51px; }
+.pt-shelf .ui-row-art.pt-minis, .pt-shelf .pt-minis { display: flex; gap: var(--space-1); width: 76px; height: 51px; }
+.pt-minis .pt-cover { display: flex; align-items: center; justify-content: center; width: 36px; height: 51px; overflow: hidden; border: 0; border-radius: 3px; background: #fff; box-shadow: 0 0 0 1px var(--outline-soft); color: #5f5a55; font-size: 9px; }
+.pt-minis .pt-cover img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+
+/* The foot of a Paper Trail page. */
+.pt-end { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--hairline); }
+.pt-end > :is(h2, p) { margin: 0; }
+.pt-end > .t-meta { padding-top: var(--space-3); }
+.pt-home .pt-end { margin-top: var(--space-6); }
+
+/* The archive-outage notice: a small label and its sentences under a hairline, on the page. */
+.pt-archive .pt-archive-alert { margin: var(--space-3) 0 0; padding: var(--space-3) 0 0; border: 0; border-top: 1px solid var(--hairline); border-radius: 0; background: none; color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.pt-archive .pt-archive-alert p { margin: 0; }
+.pt-archive .pt-archive-alert-title { margin-bottom: var(--space-1); color: var(--ink-primary); font-weight: 400; }
+
+/* Saved papers: the system's type on the white page. */
+.pt-archive.pt-saved { max-width: 620px; padding: var(--space-6); background: var(--surface-canvas); font-family: var(--font-ui); }
+.pt-saved .pt-title { font-family: var(--font-ui); font-size: 29px; font-weight: 400; line-height: 33px; letter-spacing: -0.04em; }
+.pt-saved .pt-page-intro { color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.pt-saved .pt-section-heading { font-family: var(--font-ui); font-size: 21px; font-weight: 400; line-height: 26px; letter-spacing: -0.03em; }
+/* Saved papers: the shared rows (each opens its paper), the bookmark beside each row (area 6c). */
+.pt-saved .ui-list { margin-top: var(--space-2); }
+
+/* A laptop: the block at the left, centred in the height of the page; the papers or the subjects beside it. */
+@media (min-width: 1024px) {
+  .pt-archive.pt-home, .pt-archive.pt-selection { padding: 0 0 var(--space-12); }
+  .pt-cols { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 444px); column-gap: 64px; justify-content: center; align-items: start; }
+  .pt-lead { display: flex; min-height: calc(100dvh - var(--pt-shell-top, 73px)); flex-direction: column; justify-content: center; gap: 6px; padding-block: var(--space-6); }
+  .pt-lead .pt-top { flex-direction: column-reverse; align-items: flex-start; gap: 6px; min-height: 0; padding: 0; margin: 0; }
+  .pt-lead .pt-top-copy { gap: 6px; }
+  .pt-lead .pt-top-art { width: 168px; height: 168px; margin: -8px 0 4px -14px; }
+  .pt-lead :is(.pt-finder, .pt-pickers) { padding-top: var(--space-6); }
+  .pt-side { padding-top: 36px; }
+  .pt-side .pt-papers { margin-top: 0; padding-top: 0; border-top: 0; }
+  .pt-side .pt-subject-picker { margin-top: 0; }
+  .pt-side .pt-pair { grid-template-columns: repeat(2, minmax(0, 212px)); gap: 20px; }
+  .pt-side .pt-end { margin-top: 28px; padding-top: 20px; }
+  .pt-side .pt-end > .t-meta { padding-top: var(--space-1); }
+  .pt-home .pt-side .pt-end { margin-top: 38px; }
+  /* The bar lines up with the two columns' outer edges. */
+  .paper-trail-host .lp-navigation-column { max-width: calc(868px + 2 * var(--space-6)); }
 }
-@media (max-width: 340px) { .pt-paper-cover-grid, .pt-two-fields { grid-template-columns: 1fr; } }
+
 @media (prefers-reduced-motion: reduce) {
-  .pt-large-cover-button .pt-cover { transition: none; }
-  .pt-large-cover-button:hover .pt-cover { transform: none; }
+  .ui-press.pt-cover-btn { transition: none; }
 }
+/* A paper's recording (FrenchPaperAudio): Mark Bank's player on the page's own surface (area 6c). */
+.pt-recording { padding: 0 var(--space-3) var(--space-3); color: var(--ink-primary); }
+/* The milestone celebration (area 6c): the shared Sheet; the burst falls once over the top. */
+.pt-milestone-burst { z-index: calc(var(--z-dialog) + 1); width: 100%; height: 100%; pointer-events: none; }
+.pt-milestone .ui-sheet-body > :is(p, h2) { margin: 0; }
+.pt-milestone-label { color: var(--ink-muted); }
+.pt-milestone-title { color: var(--ink-primary); }

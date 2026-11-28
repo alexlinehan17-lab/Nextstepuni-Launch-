@@ -19,8 +19,8 @@
  * level-1 lift, which is empty since the owner chose "a line only" over "a line
  * with a hair of lift" (26 Nov 2026). Read-only content is not boxed.
  */
-import { type ReactNode } from 'react';
-import { ChevronRight } from 'lucide-react';
+import { useEffect, useRef, useState, type ButtonHTMLAttributes, type CSSProperties, type ReactNode } from 'react';
+import { ArrowRight, ArrowUpRight, ChevronDown, ChevronRight } from 'lucide-react';
 import ThemeArtwork from '../ThemeArtwork';
 import './parts.css';
 
@@ -38,49 +38,131 @@ export interface RowProps {
   over?: ReactNode;
   /** A second line in meta. */
   meta?: ReactNode;
-  /** A subject's character, bare, 40px at the left. */
-  art?: string;
+  /** A subject's character, bare, 40px at the left: its source, or a drawn
+   *  element that already picks its own artwork (SubjectAvatar). */
+  art?: string | ReactNode;
+  /** The row's accessible name, when its visible words do not say what
+   *  pressing it does ("Study Irish: Revision, 25 minutes"). */
+  label?: string;
+  /** A first-visit tour stop on this row (data-coach). */
+  coach?: string;
   /** A value or readout at the trailing edge (a row that shows something). */
   value?: ReactNode;
   /** A switch or other control at the trailing edge (no chevron). */
   trailing?: ReactNode;
+  /** A bare 20px glyph at the left, in ink-2 (the account sheet's rows). */
+  icon?: ReactNode;
+  /** A destructive action (Log out): red words, no arrow. */
+  tone?: 'danger';
   /** The row opens something: it is a button with a chevron and a pressed state. */
   onPress?: () => void;
+  /** The row moves forward to the next part of the same screen ("Next · 2 of 5, Study"):
+   *  an arrow-right in place of the chevron. */
+  forward?: boolean;
+  /** The row opens in place, under itself (a mock's subjects): aria-expanded, and a
+   *  chevron-down that turns up while it is open. */
+  expanded?: boolean;
   /** Or a link. */
   href?: string;
+  /** The link leaves the app for the browser (a document to download): it opens there, and
+   *  carries the arrow up-right in place of the chevron. */
+  external?: boolean;
+  /** A short readout at the leading edge, in its own column (a topic's number, "2.1"). */
+  lead?: ReactNode;
+  /** A thin bar under the title: a share done, 0 to 1 (a topic's questions tried). Ink on a
+   *  hairline track, 3px (components.md, "Data": 3px for meta). */
+  progress?: number;
+  /** One row of a list chosen in place, its detail beside the list (a laptop's topics with the
+   *  chosen topic at the right): aria-pressed, an ink outline when chosen, no chevron. */
+  selected?: boolean;
+  /** A separate control beside a row that opens something (Saved papers' bookmark): drawn
+   *  after the row inside the same ruled line, never inside the row's own button. */
+  end?: ReactNode;
   className?: string;
 }
 
-export function Row({ title, over, meta, art, value, trailing, onPress, href, className = '' }: RowProps) {
+export function Row({ title, over, meta, art, label, coach, icon, tone, value, trailing, onPress, href, external = false, forward = false, expanded, lead, progress, selected, end, className = '' }: RowProps) {
   const pressable = Boolean(onPress || href);
+  const share = progress === undefined ? null : Math.max(0, Math.min(1, progress));
   const content = (
     <>
-      {art ? <ThemeArtwork className="ui-row-art" src={art} transparentBackground alt="" /> : null}
+      {lead !== undefined && lead !== null ? <span className="ui-row-lead ui-readout">{lead}</span> : null}
+      {icon ? <span className="ui-row-icon" aria-hidden="true">{icon}</span> : null}
+      {typeof art === 'string' ? <ThemeArtwork className="ui-row-art" src={art} transparentBackground alt="" />
+        : art ? <span className="ui-row-art" aria-hidden="true">{art}</span> : null}
       <span className="ui-row-body">
         {over ? <span className="ui-row-over">{over}</span> : null}
         <span className="ui-row-title">{title}</span>
+        {share !== null ? <span className="ui-row-bar" aria-hidden="true"><i style={{ width: `${share * 100}%` }} /></span> : null}
         {meta ? <span className="ui-row-meta">{meta}</span> : null}
       </span>
       {value !== undefined && value !== null ? <span className="ui-row-value ui-readout">{value}</span> : null}
       {trailing ?? null}
-      {pressable && !trailing ? <ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" /> : null}
+      {pressable && !trailing && tone !== 'danger' && selected === undefined
+        ? href && external ? <ArrowUpRight className="ui-icon ui-row-chev ui-row-chev--leaves" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        : forward ? <ArrowRight className="ui-icon ui-row-chev" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+          : expanded !== undefined ? <ChevronDown className="ui-icon ui-row-chev ui-row-chev--down" data-open={expanded || undefined} width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+            : <ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+        : null}
     </>
   );
-  const classes = `ui-part ui-row ${className}`.trim();
+  const classes = `ui-part ui-row${tone === 'danger' ? ' ui-row--danger' : ''}${selected !== undefined ? ' ui-row--select' : ''} ${className}`.trim();
   return (
-    <li className="ui-row-item">
-      {href ? <a className={classes} href={href}>{content}</a>
-        : onPress ? <button type="button" className={classes} onClick={onPress}>{content}</button>
+    <li className={`ui-row-item${end ? ' ui-row-item--end' : ''}`}>
+      {href ? <a className={classes} href={href} aria-label={label} data-coach={coach} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{content}</a>
+        : onPress ? <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded} aria-pressed={selected} data-coach={coach}>{content}</button>
           : <div className={classes}>{content}</div>}
+      {end ? <span className="ui-row-end">{end}</span> : null}
     </li>
   );
 }
 
-/** The one raised sheet of a screen: white, a line, the soft lift, and two
- *  more sheets tilted 1.3 degrees behind it, as on sign-in. */
-export function PaperSheet({ children, className = '', label }: { children: ReactNode; className?: string; label?: string }) {
+export interface CheckRowProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'role' | 'onChange'> {
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+  /** The mark the screen draws for this row (the session's dotted ring). */
+  mark: ReactNode;
+}
+
+/** A row you tick (Time's up: "tap one you finished to fill it"): the whole row
+ *  is the checkbox, with no box round it; its mark is the screen's own. */
+export function CheckRow({ checked, onChange, mark, children, className = '', type = 'button', ...props }: CheckRowProps) {
   return (
-    <section aria-label={label} className={`ui-part ui-paper ${className}`.trim()}>
+    <button {...props} type={type} role="checkbox" aria-checked={checked}
+      className={`ui-part ui-checkrow ${className}`.trim()} onClick={() => onChange(!checked)}>
+      {mark}<span className="ui-checkrow-label">{children}</span>
+    </button>
+  );
+}
+
+/** How far a back sheet's corner may stand out past the face, in px, when `fitTilt` is on. */
+const PAPER_TILT_REACH = 5;
+const PAPER_TILT_MAX = 1.3;
+
+/** The one raised sheet of a screen: white, a line, the soft lift, and two
+ *  more sheets tilted 1.3 degrees behind it, as on sign-in.
+ *  `fitTilt` (area 7a): for a sheet that can grow very tall (a College Compass stage), the tilt
+ *  shrinks with the sheet's height so the back sheets' corners stand at most 5px past the face, as
+ *  on a short sheet, and never run into the page margin. Off by default: every other sheet is as it was. */
+export function PaperSheet({ children, className = '', label, fitTilt = false }: { children: ReactNode; className?: string; label?: string; fitTilt?: boolean }) {
+  const ref = useRef<HTMLElement>(null);
+  const [tilt, setTilt] = useState<number | null>(null);
+  useEffect(() => {
+    const node = ref.current;
+    if (!fitTilt || !node || typeof ResizeObserver === 'undefined') return undefined;
+    const measure = () => {
+      const half = node.offsetHeight / 2;
+      const fit = half > 0 ? (Math.asin(Math.min(1, PAPER_TILT_REACH / half)) * 180) / Math.PI : PAPER_TILT_MAX;
+      setTilt(Math.min(PAPER_TILT_MAX, Number(fit.toFixed(2))));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [fitTilt]);
+  return (
+    <section ref={ref} aria-label={label} className={`ui-part ui-paper ${className}`.trim()}
+      style={fitTilt && tilt !== null ? ({ '--paper-tilt': `${tilt}deg` } as CSSProperties) : undefined}>
       <div className="ui-paper-face">{children}</div>
     </section>
   );
@@ -92,12 +174,19 @@ export interface PressBoxProps {
   href?: string;
   /** The accessible name, if the box's own text does not say what pressing it does. */
   label?: string;
+  /** The box opens a list in place under itself (a world's finished modules): aria-expanded. */
+  expanded?: boolean;
+  /** The box turns something over in place (a module's "Tap to reframe" card): aria-pressed. */
+  pressed?: boolean;
+  /** Not pressable for a moment, with its reason shown inside it (a Launchpad tool while the
+   *  student's profile loads: "Checking your profile…"). Never silent. */
+  disabled?: boolean;
   className?: string;
 }
 
 /** A box you press (level 1): a line; it looks pressed when pressed. */
-export function PressBox({ children, onPress, href, label, className = '' }: PressBoxProps) {
+export function PressBox({ children, onPress, href, label, expanded, pressed, disabled, className = '' }: PressBoxProps) {
   const classes = `ui-part ui-press ${className}`.trim();
   if (href) return <a className={classes} href={href} aria-label={label}>{children}</a>;
-  return <button type="button" className={classes} onClick={onPress} aria-label={label}>{children}</button>;
+  return <button type="button" className={classes} onClick={onPress} aria-label={label} aria-expanded={expanded} aria-pressed={pressed} disabled={disabled}>{children}</button>;
 }

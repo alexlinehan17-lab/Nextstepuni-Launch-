@@ -46,7 +46,7 @@
 .nsu-module-reader :is([style*="background-color: var(--module-success)"],[class~="bg-[var(--module-success)]"],[style*="background-color: var(--module-danger)"],[class~="bg-[var(--module-danger)]"]){--module-ink:#202020;--module-muted:#383b35;--module-success-text:#202020;--module-danger-text:#202020;--module-on-fill:#202020;color:#202020}
 .nsu-module-reader .bf-templates button,.nsu-module-reader .bf-practice-list button,.nsu-module-reader .bf-bridge-options button{white-space:normal;height:auto!important}
 .nsu-module-reader .bf-primary{background:var(--module-orange)!important;color:#202020!important;min-height:44px;padding:12px 17px;gap:18px;border:1px solid var(--module-orange);font-size:12px}.nsu-module-reader .bf-primary::before{background:var(--module-orange)!important;border-color:var(--module-orange)!important}.nsu-module-reader .bf-primary:disabled{background:var(--module-soft)!important;color:var(--module-muted)!important;border-color:var(--module-line)}.nsu-module-reader .bf-primary:disabled::before{background:var(--module-soft)!important;border-color:var(--module-line)!important}
-.nsu-module-reader button{transition:transform 140ms ease,background-color 140ms ease,border-color 140ms ease}.nsu-module-reader button:active:not(:disabled):not([role=switch]):not(.bf-flip-card){transform:translateY(1.5px) scale(.987)}
+.nsu-module-reader button{transition:transform 140ms ease,background-color 140ms ease,border-color 140ms ease}.nsu-module-reader button:active:not(:disabled):not([role=switch]):not(.bf-flip-card):not(.ui-part){transform:translateY(1.5px) scale(.987)}
 .nsu-module-reader .bf-instructions{display:grid;gap:14px}.nsu-module-reader .bf-instructions li{position:relative;display:grid;grid-template-columns:48px minmax(0,1fr) 76px;align-items:center;gap:18px;border:1.5px solid var(--module-ink);border-radius:12px;padding:23px 22px!important;background:var(--module-surface);transition:border-color 150ms ease}.nsu-module-reader .bf-instructions li:hover{border-color:var(--module-orange)}
 .nsu-module-reader .bf-instructions .bf-index{height:48px;width:48px;border:1.5px solid var(--module-ink);border-radius:10px;font-size:27px}.nsu-module-reader .bf-instructions h4{font-size:23px!important;margin-bottom:8px!important}.nsu-module-reader .bf-instructions p{font-size:13px;line-height:1.75}.bf-lever-sketch{width:72px;height:42px;justify-self:end}.bf-yet-cards .bf-index{border-color:var(--module-orange)!important}.nsu-module-reader .bf-yet-cards li{grid-template-columns:48px minmax(0,1fr)}.bf-step-word{grid-column:2;font:italic 24px/1.2 'Source Serif 4',Georgia,serif;color:var(--module-accent-text);padding-top:5px}.bf-yet-cards li:not(:last-child)::after{content:'';position:absolute;left:46px;height:15px;bottom:-16px;border-left:1.5px solid var(--module-ink)}
 .nsu-module-reader .bf-levers{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.nsu-module-reader .bf-lever{border:1px solid var(--module-ink);border-radius:10px;padding:18px 17px 16px;background:var(--module-surface)}.bf-lever .bf-letter{font-size:31px}.bf-lever-meter{display:flex;align-items:center;justify-content:center;gap:13px;height:102px;margin-block:8px 10px}.bf-meter-track{width:25px;height:88px;border:1px solid var(--module-line);border-radius:30px;overflow:hidden;display:flex;align-items:flex-end;background:var(--module-soft)}.bf-meter-track>div{width:100%;background:var(--module-orange);border-radius:30px}.bf-lever-meter>span{font:20px 'Source Serif 4',Georgia,serif;color:var(--module-muted)}.bf-lever label{font-size:14px}.bf-lever>p{min-height:33px;font-size:11px}.bf-lever .bf-direction{display:block;text-align:center;font-size:11px}
@@ -201,14 +201,18 @@ html[data-version=after] .mr-definition p{font:inherit!important;margin:0!import
 /* Revision 06: markers retain their own colour and an outline on filled answers. */
 .nsu-module-reader [data-triage-choice]:disabled{opacity:1!important}
 .nsu-module-reader [data-triage-choice-marker]{display:block;width:12px;height:12px;margin:0 auto 7px;border:1px solid var(--module-base-ink);border-radius:50%;box-sizing:border-box}
-.nsu-module-reader [data-triage-choice-marker=green],.nsu-module-reader [data-triage-progress=correct]{background:var(--module-success)}
-.nsu-module-reader [data-triage-choice-marker=amber],.nsu-module-reader [data-triage-progress=current]{background:var(--module-orange)}
-.nsu-module-reader [data-triage-choice-marker=red],.nsu-module-reader [data-triage-progress=incorrect]{background:var(--module-danger)}
-.nsu-module-reader [data-triage-choice][data-selected=true] [data-triage-choice-marker]{border:2px solid #202020}
-.nsu-module-reader [data-triage-progress]{display:block;width:10px;height:10px;flex-shrink:0;border:1px solid var(--module-control-line);border-radius:50%;box-sizing:border-box}
-.nsu-module-reader [data-triage-progress=current]{border-color:var(--module-base-ink)}
+/* area 5b: a triage category keeps its traffic-light colour (the exercise's own meaning; amber off the brand orange);
+   the progress marks are the system's step marks: right = green, the one you are on = ink, wrong = an empty ink ring */
+.nsu-module-reader [data-triage-choice-marker=green]{background:var(--success-hex)}
+.nsu-module-reader [data-triage-choice-marker=amber]{background:var(--warning-text)}
+.nsu-module-reader [data-triage-choice-marker=red]{background:var(--danger-tint-ink)}
+.nsu-module-reader [data-triage-progress=correct]{background:var(--success-hex);border-color:var(--success-hex)}
+.nsu-module-reader [data-triage-progress=current]{background:var(--ink-primary)}
+.nsu-module-reader [data-triage-progress=incorrect]{background:transparent;border:1.5px solid var(--outline-strong)}
+.nsu-module-reader [data-triage-choice][data-selected=true] [data-triage-choice-marker]{border:2px solid var(--ink-primary)}
+.nsu-module-reader [data-triage-progress]{display:block;width:10px;height:10px;flex-shrink:0;border:1px solid var(--outline-soft);border-radius:50%;box-sizing:border-box}
+.nsu-module-reader [data-triage-progress=current]{border-color:var(--ink-primary)}
 .nsu-module-reader [data-triage-progress=pending]{background:transparent}
-@media(max-width:400px){.nsu-module-reader [data-triage-choice]{padding-inline:4px!important;min-width:0}}
 .wr-recall-condition,.wr-recall-unit{display:block;color:var(--module-base-muted);font:12px/1.5 'DM Sans',sans-serif}
 .wr-recall-condition{margin:0;max-width:210px}.wr-recall-unit{margin:0}.wr-retention-bars{grid-template-rows:repeat(5,auto)}.wr-retention-bars>div{grid-row:span 5;grid-template-rows:subgrid}
 
@@ -219,3 +223,11 @@ html[data-version=after] .mr-definition p{font:inherit!important;margin:0!import
 .cn-input-otp [data-slot=input-otp-group]{max-width:100%}.cn-input-otp [data-slot=input-otp-slot]{width:46px;flex:0 1 46px}.cn-input-otp [data-slot=input-otp-slot]>span:last-child{font-size:clamp(14px,43cqi,24px)!important}
 
 .mr-definition-anchor{display:inline;position:relative}.mr-definition{z-index:1000;display:block;padding:14px 16px;border:1px solid var(--module-control-line);background:var(--module-surface);color:var(--module-base-ink);border-radius:8px;font:12px/1.65 "DM Sans",sans-serif;max-width:calc(100vw - 32px);max-height:min(260px,calc(100vh - 32px));overflow:auto;box-sizing:border-box}.mr-definition p{margin:0}.nsu-module-reader .wr-focus-companion .rs-art{display:block;width:100%;height:100%;object-fit:contain}
+/* Area 9: a citation as the agreed reading board draws it (site c-read.css, .c-read-cite): a small
+   readout in the muted ink after the claim; no pill, no fill, no icon; the tap area is grown by an
+   invisible pad. Only the look changes: its words and its popover are Cite's own. */
+.nsu-kobra .mr-citation.mr-citation{position:relative;margin-left:2px;padding:0 3px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:var(--module-muted)!important;font-family:'Departure Mono','Apercu Mono Pro',ui-monospace,monospace!important;font-size:12px!important;line-height:1!important;letter-spacing:.02em;vertical-align:baseline}
+.nsu-kobra .mr-citation.mr-citation>span{color:inherit!important}
+.nsu-kobra .mr-citation.mr-citation svg,.nsu-kobra .mr-citation.mr-citation>span[aria-hidden=true]{display:none!important}
+.nsu-kobra .mr-citation.mr-citation::after{content:"";position:absolute;inset:-14px -12px}
+.nsu-kobra .mr-citation.mr-citation:is(:hover,[data-popup-open]){background:transparent!important;color:var(--module-ink)!important;text-decoration:underline;text-underline-offset:3px}

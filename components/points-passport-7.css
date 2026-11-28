@@ -1,0 +1,107 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Points Passport in the agreed look (area 7a; boards c-tools1-passport on a phone, r5-points-passport
+ * on a laptop): one white sheet with the total written "465 / 625", the target, the gap and the bar
+ * with its tick; the five parts in one menu; What if? with one big number pinned under the bar while
+ * grades are tapped. New class names (pp7-) so launchpad.css's lp-points rules cannot reach them.
+ */
+.pp7 { display: flex; flex-direction: column; gap: var(--space-6); padding: 0 var(--space-2) var(--space-6); color: var(--ink-primary); font-family: var(--font-ui); }
+.pp7 h2, .pp7 h3 { margin: 0; font-family: var(--font-ui); font-weight: 400; }
+.pp7-label { margin: 0; color: var(--ink-muted); }
+.pp7-inline { display: inline-flex; align-items: center; gap: 6px; }
+
+/* The sheet. */
+.pp7-hero .ui-paper-face { display: flex; flex-direction: column; gap: var(--space-2); }
+.pp7-hero-total, .pp7-hero-side { display: flex; flex-direction: column; gap: var(--space-2); }
+.pp7-hero p { margin: 0; }
+.pp7-total { display: block; margin: 0; font-size: 56px; line-height: 56px; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; }
+.pp7-of { color: var(--ink-muted); font-size: 0.5em; letter-spacing: -0.02em; font-variant-numeric: normal; white-space: nowrap; }
+.pp7-target { display: flex; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-2); color: var(--ink-secondary); font-size: 15px; line-height: 21px; }
+.pp7-target b { color: var(--ink-primary); font-weight: 400; }
+.pp7-bar { position: relative; height: 10px; margin: var(--space-2) 0 var(--space-1); border-radius: 5px; background: var(--surface-soft); }
+.pp7-bar > span { position: absolute; inset: 0 auto 0 0; border-radius: 5px; background: var(--nsu-orange); transition: width var(--t-move) var(--ease-out); }
+.pp7-bar > i { position: absolute; top: -5px; bottom: -5px; width: 2px; margin-left: -1px; border-radius: 1px; background: var(--ink-primary); }
+.pp7-bar > i.pp7-now { background: var(--ink-muted); }
+
+/* The five parts. */
+.pp7-parts.ui-menu-btn { font-weight: 400; }
+
+/* My subjects: the table, and Try a possibility. */
+.pp7-split { display: flex; flex-direction: column; gap: var(--space-8); }
+.pp7-subjects { display: flex; flex-direction: column; gap: var(--space-3); }
+.pp7-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.pp7-head > * { margin: 0; }
+.pp7-grades { display: flex; flex-direction: column; }
+.pp7-grade { display: grid; grid-template-columns: minmax(0, 1fr) 84px 84px 36px; align-items: center; gap: var(--space-2); min-height: 72px; border-bottom: 1px solid var(--hairline); }
+.pp7-grade--head { min-height: 32px; color: var(--ink-muted); }
+.pp7-grade--head span:last-child, .pp7-gain { text-align: right; }
+.pp7-grade-name { display: flex; min-width: 0; flex-direction: column; gap: var(--space-2); font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.pp7-grade-bar { height: 3px; border-radius: 2px; background: var(--hairline); }
+.pp7-grade-bar span { display: block; height: 100%; border-radius: inherit; background: var(--ink-primary); }
+.pp7 .lp-select { width: 100%; }
+.pp7 .lp-select select { width: 100%; min-height: 44px; padding: 0 30px 0 14px; border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background-color: var(--surface-paper); color: var(--ink-primary); font-family: var(--font-ui); font-size: 16px; font-weight: 400; }
+.pp7-note { margin: 0; }
+.pp7-try { display: flex; flex-direction: column; gap: var(--space-3); padding-top: var(--space-5); border-top: 1px solid var(--hairline); }
+.pp7-try > p { margin: 0; }
+.pp7-try .ui-btn { margin-top: var(--space-2); }
+.pp7-section { display: flex; flex-direction: column; gap: var(--space-2); padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
+.pp7-section > p { margin: 0; }
+.pp7-section > .ui-btn { align-self: flex-start; }
+
+/* What if?: one big number pinned under the bar while grades are tapped. */
+.pp7-whatif { display: flex; flex-direction: column; gap: var(--space-4); }
+.pp7-wi { position: sticky; top: calc(53px + var(--safe-top, 0px)); z-index: var(--z-sticky); display: flex; flex-direction: column; gap: var(--space-1); margin: 0 calc(-1 * var(--space-6)); padding: var(--space-3) var(--space-6); border-bottom: 1px solid var(--hairline); background: var(--surface-canvas); }
+.pp7-wi-row { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-3); }
+.pp7-total--wi { font-size: 56px; line-height: 56px; }
+.pp7-wi-side { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; font-size: 15px; line-height: 21px; text-align: right; }
+.pp7-wi-key { display: flex; justify-content: space-between; gap: var(--space-3); }
+.pp7-wsub { display: flex; flex-direction: column; gap: var(--space-2); padding-bottom: var(--space-2); }
+.pp7-wsub-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.pp7-wsub-name { display: inline-flex; align-items: center; gap: 6px; font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.pp7-wsub-head b { color: var(--ink-primary); font-weight: 400; }
+.pp7-star { color: var(--ink-muted); }
+.pp7-disclose { align-self: flex-start; }
+.pp7-rows { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.pp7-rows li { display: flex; align-items: center; gap: var(--space-3); min-height: 48px; border-bottom: 1px solid var(--hairline); font-size: 15px; }
+.pp7-row-name { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+.pp7-rank { width: 40px; color: var(--ink-muted); }
+
+/* Mock Tracker, Scenarios and Best Moves: on the page, in ink. */
+.pp7-chart { display: flex; align-items: flex-end; gap: var(--space-2); height: 160px; padding: var(--space-3) 0; border-bottom: 1px solid var(--hairline); }
+.pp7-chart > div { display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; height: 100%; }
+.pp7-chart-bar { width: 100%; min-height: 4px; border-radius: 4px 4px 0 0; background: var(--nsu-orange); }
+.pp7-chart-bar--now { background: none; border: 1.5px dashed var(--ink-primary); border-bottom: 0; }
+/* Today's labels: the words wrap at their spaces and a column is as wide as its longest word (as in f8c75990). */
+.pp7-chart .t-meta { font-size: 11px; line-height: 14px; text-align: center; }
+.pp7-presets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+.pp7-mock-row { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; border-bottom: 1px solid var(--hairline); }
+.pp7-mock-row > div { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+.pp7-form { display: flex; flex-direction: column; gap: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--hairline); }
+.pp7-form > p, .pp7-form > div > p { margin: 0; }
+.pp7-actions { display: flex; flex-direction: column; gap: var(--space-2); }
+.pp7-actions > .ui-link { align-self: center; }
+.pp7-slots { display: flex; flex-direction: column; }
+.pp7-slot { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-4) 0; border-bottom: 1px solid var(--hairline); }
+.pp7-slot-head { display: flex; align-items: center; gap: var(--space-2); }
+.pp7-slot-head > .t-label { flex: 1; color: var(--ink-muted); }
+.pp7-slot p { margin: 0; }
+.pp7-slot-total { font-size: 40px; line-height: 40px; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; }
+.pp7-move { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; border-bottom: 1px solid var(--hairline); }
+.pp7-move > div { display: flex; flex: 1; min-width: 0; flex-direction: column; }
+
+@media (min-width: 768px) {
+  .pp7 { padding: var(--space-2) 0 var(--space-8); }
+  .pp7-hero .ui-paper-face { display: grid; grid-template-columns: minmax(0, 1fr) 400px; align-items: center; gap: 48px; padding: 28px 32px; }
+  .pp7-hero .pp7-total { font-size: 76px; line-height: 76px; }
+  .pp7-hero-side .pp7-target { margin-top: 0; }
+  .pp7-parts.ui-menu-btn { width: 300px; }
+  .pp7-split { display: grid; grid-template-columns: minmax(0, 1fr) 270px; align-items: start; gap: 56px; }
+  .pp7-try .pp7-try-title { font-size: 34px; line-height: 38px; }
+  .pp7-wi { top: 73px; margin: 0; padding: var(--space-3) 0; }
+  .pp7-slots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pp7-bar > span { transition: none; }
+}

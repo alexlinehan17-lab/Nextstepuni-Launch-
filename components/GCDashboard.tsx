@@ -2,14 +2,10 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import { lockBodyScroll } from '../utils/bodyScrollLock';
-import Avatar from './Avatar';
-import React, { useState, useEffect, useMemo } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { type CourseData } from './Library';
 import { type SessionUser, yearGroupToCurriculumLevel } from '../utils/authUtils';
-import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks, KeyRound, RefreshCw } from 'lucide-react';
+import { LogOut, House, Users, ChartNoAxesColumn, LayoutGrid, CalendarDays, Lock, RefreshCw, User } from 'lucide-react';
 import app, { auth, db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
@@ -37,7 +33,17 @@ import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './g
 import { useGCFlags } from '../hooks/useGCFlags';
 import { logError } from '../utils/logError';
 import { reauthenticateCurrentUser } from '../utils/reauthenticate';
-import { COLORS } from '../design/tokens';
+import { TopBar, TabBar, type TabBarItem } from './ui/Bars';
+import { Button, IconButton, TextButton } from './ui/Button';
+import { Sheet } from './ui/Sheet';
+import { Field } from './ui/Field';
+import { List, Row } from './ui/List';
+import { MenuAction, MenuPanel } from './ui/Menu';
+import { LoadingShape } from './ui/States';
+import { OverScreen } from './ui/OverScreen';
+import { FramePortal } from './ui/Frame';
+import { MessageHost, showMessage } from './ui/Message';
+import { useWide } from './gc/gcView';
 
 interface GCDashboardProps {
   school: string;
@@ -47,49 +53,6 @@ interface GCDashboardProps {
   gcUid?: string;
   role?: SessionUser['role'];
 }
-
-// ─── Shimmer skeleton ────────────────────────────────────────────────────────
-
-const SkeletonPulse: React.FC<{ className?: string; style?: React.CSSProperties }> = ({ className = '', style }) => (
-  <div className={`rounded-xl bg-zinc-200 dark:bg-surface-soft animate-[shine_1.5s_ease-in-out_infinite] ${className}`} style={style} />
-);
-
-const LoadingSkeleton: React.FC = () => (
-  <div className="space-y-6 p-8">
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-      {Array.from({ length: 3 }).map((_, i) => (
-        <div key={i} className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5 space-y-3">
-          <SkeletonPulse className="h-3 w-20" />
-          <SkeletonPulse className="h-12 w-24" />
-          <SkeletonPulse className="h-3 w-32" />
-        </div>
-      ))}
-    </div>
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-      <div className="lg:col-span-2 space-y-5">
-        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5 space-y-4">
-          <SkeletonPulse className="h-4 w-40" />
-          <div className="flex items-end gap-4 h-32">
-            {[60, 40, 80, 50].map((h, i) => (
-              <SkeletonPulse key={i} className="flex-1 rounded-lg" style={{ height: `${h}%` }} />
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="space-y-5">
-        <div className="rounded-xl bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline p-5 space-y-3">
-          <SkeletonPulse className="h-4 w-28" />
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <SkeletonPulse className="w-8 h-8 rounded-full" />
-              <SkeletonPulse className="h-3 flex-1" />
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-);
 
 // ─── Progress-doc → GC record ───────────────────────────────────────────────
 
@@ -249,7 +212,6 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStudentUid, setSelectedStudentUid] = useState<string | null>(null);
   const [activeNav, setActiveNav] = useState<string>('gc-overview');
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   // The dashboard is a one-shot snapshot (the /progress read rule authorises
   // get()-shaped reads only, so onSnapshot is not available here). Make the
   // staleness visible instead of silent, and give the GC a way to re-pull.
@@ -257,11 +219,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [reloadVersion, setReloadVersion] = useState(0);
   const [truncated, setTruncated] = useState(false);
 
-  // GC dashboard is always dark mode
-  useEffect(() => {
-    document.documentElement.classList.add('dark');
-    return () => { document.documentElement.classList.remove('dark'); };
-  }, []);
+  // The dashboard no longer forces dark: it sits on the white page, and goes dark only where this
+  // browser's own theme setting says so (Alex, 24 Nov 2026: every part "restyled in the new system").
 
   const gcFlags = useGCFlags(gcUid);
 
@@ -289,7 +248,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       if (selectedStudentUid === user.uid) setSelectedStudentUid(null);
     } catch (err) {
       console.error('Error deleting student:', err);
-      alert('Failed to delete student. You may not have permission.');
+      showMessage('Failed to delete student. You may not have permission.');
     }
     setIsDeleting(false);
     setDeleteVerificationPassword('');
@@ -316,7 +275,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       setResetResult({ name: result.data.studentName, password: result.data.tempPassword });
     } catch (err) {
       console.error('Failed to reset password:', err);
-      alert('Failed to reset password. Please try again.');
+      showMessage('Failed to reset password. Please try again.');
     }
     setIsResettingPassword(false);
     setResetVerificationPassword('');
@@ -345,26 +304,38 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   // ── Alerts for a specific student (used in detail tray) ──
   const getStudentAlerts = (uid: string) => alerts.filter(a => a.studentUid === uid);
 
-  // Stable random avatar seed per school
-  const avatarSeed = useMemo(() => `gc-${school}-${school.length}`, [school]);
-
+  // The places. On a laptop the staff sidebar lists them as today (Notes, which went nowhere, is left out
+  // as the agreed board shows); on a phone the four along the bottom (Practice and Key dates were out of
+  // reach on a phone before). School access stays a counsellor's page only, as today.
+  const wide = useWide();
   const sidebarItems = [
-    { id: 'gc-overview', label: 'Overview', icon: LayoutDashboard, active: activeNav === 'gc-overview' },
-    { id: 'gc-handin', label: 'Practice', icon: ListChecks, active: activeNav === 'gc-handin' },
-    { id: 'gc-events', label: 'Key Dates', icon: CalendarDays, active: activeNav === 'gc-events' },
-    { id: 'gc-analytics', label: 'Analytics', icon: BarChart3, active: activeNav === 'gc-analytics' },
-    { id: 'gc-students', label: 'Students', icon: Users, active: activeNav === 'gc-students' },
-    { id: 'gc-notes', label: 'Notes', icon: StickyNote, active: activeNav === 'gc-notes' },
-    ...(role === 'gc'
-      ? [{ id: 'gc-staff-access', label: 'School access', icon: KeyRound, active: activeNav === 'gc-staff-access' }]
-      : []),
+    { id: 'gc-overview', label: 'Overview', icon: House },
+    { id: 'gc-handin', label: 'Practice', icon: LayoutGrid },
+    { id: 'gc-events', label: 'Key dates', icon: CalendarDays },
+    { id: 'gc-analytics', label: 'Analytics', icon: ChartNoAxesColumn },
+    { id: 'gc-students', label: 'Students', icon: Users },
+    ...(role === 'gc' ? [{ id: 'gc-staff-access', label: 'School access', icon: Lock }] : []),
   ];
-
-  // Body scroll lock when tray is open
+  const tabItems: TabBarItem<string>[] = [
+    { id: 'gc-overview', label: 'Overview', icon: House },
+    { id: 'gc-students', label: 'Students', icon: Users },
+    { id: 'gc-handin', label: 'Practice', icon: LayoutGrid },
+    { id: 'gc-events', label: 'Key dates', icon: CalendarDays },
+  ];
+  const [accountOpen, setAccountOpen] = useState(false);
+  // The phone's bar gains its hairline once the page has scrolled under it (tokens.md, "Bars").
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
-    if (!selectedStudentUid) return;
-    return lockBodyScroll();
-  }, [selectedStudentUid]);
+    if (wide) return undefined;
+    const update = () => setScrolled(window.scrollY > 4);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    return () => window.removeEventListener('scroll', update);
+  }, [wide]);
+  const resetFieldRef = useRef<HTMLInputElement>(null);
+  const deleteFieldRef = useRef<HTMLInputElement>(null);
+  const roleWords = role === 'gc' ? 'Guidance counsellor' : 'Staff';
+  const youName = gcName || getSchoolName(school);
 
   // On opening a student's tray, re-pull their progress doc so the GC sees the
   // most recent committed state.
@@ -457,291 +428,273 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     ? studentData.find(s => s.user.uid === selectedStudentUid) ?? null
     : null;
 
+  // A place on a phone, or a part of the page on a laptop (Overview, Analytics and Students are the one
+  // Overview, scrolled to; Practice, Key dates and School access are pages, as today).
   const handleNavClick = (sectionId: string) => {
     setActiveNav(sectionId);
-    const el = document.getElementById(sectionId);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (!wide) {
+      window.scrollTo(0, 0);
+      return;
+    }
+    // After the page under it has drawn (from Practice, Analytics lands on the Overview first).
+    window.setTimeout(() => {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      else window.scrollTo(0, 0);
+    }, 0);
   };
 
-  return (
-    <div className="min-h-screen bg-white dark:bg-surface-canvas relative overflow-x-hidden">
-      {/* ─── Sidebar (exact student dashboard replica) ───────────────────── */}
-      <aside
-        className={`frame-page frame-foot hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-hairline overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
-      >
-        {/* Avatar row — click to toggle */}
-        <button
-          onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-3 px-3 py-4 w-full hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
-        >
-          <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
-            <Avatar seed={avatarSeed} alt="Avatar" className="w-full h-full object-cover" />
-          </div>
-          <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-            {getSchoolName(school)}
-          </span>
-        </button>
+  const dataAsOf = lastLoadedAt ? lastLoadedAt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : null;
+  const truncatedLine = truncated ? 'Showing the first 1000 accounts — some students may be missing.' : null;
+  const currentTab = activeNav === 'gc-analytics' || activeNav === 'gc-staff-access' ? 'gc-overview' : activeNav;
+  const studentsPlace = !wide && activeNav === 'gc-students';
 
-        {/* Nav items */}
-        <nav className="flex-1 flex flex-col gap-1 px-2 mt-2">
-          {sidebarItems.map((item) => (
+  const page = isLoading ? (
+    <LoadingShape rows={6} label="Opening your school dashboard" />
+  ) : activeNav === 'gc-events' ? (
+    <GCKeyEvents school={school} layout="page" />
+  ) : activeNav === 'gc-staff-access' && role === 'gc' ? (
+    <StaffAccessPanel school={school} />
+  ) : activeNav === 'gc-handin' ? (
+    <>
+      <GCAssignPanel school={school} gcName={gcName} />
+      <GCHandInGrid
+        students={studentData}
+        allCourses={allCourses}
+        school={school}
+        onSelectStudent={(uid) => setSelectedStudentUid(uid)}
+      />
+    </>
+  ) : (
+    <GCOverview
+      studentData={studentData}
+      allCourses={allCourses}
+      school={school}
+      onSelectStudent={(uid) => setSelectedStudentUid(prev => prev === uid ? null : uid)}
+      onDeleteStudent={role === 'gc' ? setDeleteTarget : undefined}
+      onResetPassword={role === 'gc' ? setResetTargetUid : undefined}
+      alerts={alerts}
+      onDismissAlert={handleDismissAlert}
+      gcFlags={gcFlags}
+      place={studentsPlace ? 'students' : 'overview'}
+      onOpenStudents={() => handleNavClick('gc-students')}
+      dataAsOf={dataAsOf}
+      notice={truncatedLine}
+    />
+  );
+
+  const closeStudent = () => setSelectedStudentUid(null);
+
+  return (
+    <div className="gc8">
+      {/* ─── Laptop: the staff sidebar ───────────────────────────────── */}
+      {wide && <aside className="gc8-side frame-page frame-foot" aria-label="Staff dashboard">
+        <div className="gc8-brand">
+          <p className="gc8-wordmark">nextstepuni<i aria-hidden="true">.</i></p>
+          <p className="gc8-label">{getSchoolName(school)}</p>
+        </div>
+        <nav className="gc8-nav" aria-label="Staff dashboard">
+          {sidebarItems.map(item => (
             <button
               key={item.id}
+              type="button"
+              className="gc8-nav-item"
+              aria-current={activeNav === item.id ? 'page' : undefined}
               onClick={() => handleNavClick(item.id)}
-              className={`flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors ${item.active ? 'bg-zinc-100 dark:bg-surface-soft' : 'hover:bg-zinc-100 dark:hover:bg-surface-soft'}`}
             >
-              <div className="shrink-0 flex items-center justify-center w-[18px]">
-                <item.icon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
-              </div>
-              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-                {item.label}
-              </span>
+              <item.icon className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />
+              {item.label}
             </button>
           ))}
         </nav>
-
-        {/* Bottom section */}
-        <div className="border-t border-zinc-200 dark:border-hairline mx-2 pt-2 flex flex-col gap-1">
-          {/* Log Out */}
-          <button
-            onClick={onLogout}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
-          >
-            <div className="shrink-0 flex items-center justify-center w-[18px]">
-              <LogOut size={18} strokeWidth={1.5} className="text-rose-500" />
-            </div>
-            <span className={`text-sm font-medium text-rose-500 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              Log Out
-            </span>
-          </button>
-        </div>
-
-        {/* Collapse toggle */}
-        <button
-          onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
+        <MenuPanel
+          label="Your account"
+          buttonLabel={`Your account: ${youName}`}
+          buttonClassName="gc8-user"
+          className="gc8-usermenu"
+          align="start"
+          side="top"
+          face={<>
+            <span className="gc8-user-box"><User className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" /></span>
+            <span className="gc8-user-copy"><span>{youName}</span><span className="gc8-meta">{roleWords}</span></span>
+          </>}
         >
-          <div className={`shrink-0 flex items-center justify-center w-[18px] transition-transform duration-300 ${sidebarOpen ? '' : 'rotate-180'}`}>
-            <PanelLeft size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
-          </div>
-          <span className={`text-sm font-medium text-zinc-400 dark:text-zinc-500 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-            Collapse
-          </span>
-        </button>
-      </aside>
+          <MenuAction title="Log out" plain tone="danger" onPress={onLogout} />
+        </MenuPanel>
+      </aside>}
 
-      {/* ─── Mobile Header ───────────────────────────────────────────── */}
-      <div className="frame-bar [--frame-pad-top:0.75rem] md:hidden flex items-center justify-between px-4 pb-3 border-b border-zinc-200 dark:border-hairline bg-white dark:bg-surface-paper">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-700">
-            <Avatar seed={avatarSeed} alt="Avatar" className="w-full h-full object-cover" />
-          </div>
-          <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{getSchoolName(school)}</span>
-        </div>
-        <button onClick={onLogout} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-colors">
-          <LogOut size={14} />
-          Log Out
-        </button>
-      </div>
+      <div className="gc8-col">
+        {/* ─── Laptop: the bar along the top (the snapshot says when it was taken) ─── */}
+        {wide && <div className="gc8-dbar">
+          <p className="gc8-label">Staff dashboard</p>
+          {!isLoading && (
+            <div className="gc8-dbar-end">
+              {truncatedLine && <span className="gc8-meta gc8-strong">{truncatedLine}</span>}
+              {dataAsOf && <span className="gc8-meta">Data as of {dataAsOf}</span>}
+              <TextButton tone="quiet" className="gc8-ib" onClick={() => setReloadVersion(v => v + 1)}>
+                <RefreshCw className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" />Refresh
+              </TextButton>
+            </div>
+          )}
+        </div>}
 
-      {/* ─── Main Content ─────────────────────────────────────────────── */}
-      <main className={`flex-1 flex flex-col transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
-        {/* Freshness strip — this dashboard is a snapshot, not a live feed.
-            Saying so beats a GC quietly reading yesterday's numbers. */}
-        {!isLoading && (
-          <div className="flex items-center justify-end gap-3 px-6 pt-4 pb-1">
-            {truncated && (
-              <span className="text-[11px] font-medium text-amber-600 dark:text-amber-500">
-                Showing the first 1000 accounts — some students may be missing.
-              </span>
-            )}
-            {lastLoadedAt && (
-              <span className="text-[11px] text-zinc-400 dark:text-zinc-500">
-                Data as of {lastLoadedAt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-              </span>
-            )}
-            <button
-              onClick={() => setReloadVersion(v => v + 1)}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
-            >
-              <RefreshCw size={12} />
-              Refresh
-            </button>
-          </div>
-        )}
-        {isLoading ? (
-          <LoadingSkeleton />
-        ) : activeNav === 'gc-events' ? (
-          <div className="p-6 max-w-4xl mx-auto w-full">
-            <GCKeyEvents school={school} />
-          </div>
-        ) : activeNav === 'gc-staff-access' ? (
-          <StaffAccessPanel school={school} />
-        ) : activeNav === 'gc-handin' ? (
-          <>
-            <GCAssignPanel school={school} gcName={gcName} />
-            <GCHandInGrid
-              students={studentData}
-              allCourses={allCourses}
-              school={school}
-              onSelectStudent={(uid) => setSelectedStudentUid(uid)}
-            />
-          </>
-        ) : (
-          <GCOverview
-            studentData={studentData}
-            allCourses={allCourses}
-            school={school}
-            onSelectStudent={(uid) => setSelectedStudentUid(prev => prev === uid ? null : uid)}
-            onDeleteStudent={role === 'gc' ? setDeleteTarget : undefined}
-            onResetPassword={role === 'gc' ? setResetTargetUid : undefined}
-            alerts={alerts}
-            onDismissAlert={handleDismissAlert}
-            gcFlags={gcFlags}
+        {/* ─── Phone: the place's bar, your account at the top right ─── */}
+        {!wide && (
+          <TopBar
+            className="gc8-placebar"
+            ruled={scrolled}
+            placeLabel={getSchoolName(school)}
+            action={
+              <IconButton className="gc8-me" label="Your account" onClick={() => setAccountOpen(true)}
+                icon={<span><User className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" /></span>} />
+            }
           />
         )}
-      </main>
 
-      {/* ─── Side Tray Overlay ────────────────────────────────────────── */}
-      <AnimatePresence>
-        {selectedStudent && (
-          <>
-            {/* Backdrop */}
-            <MotionDiv
-              key="backdrop"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-0 z-40 bg-black/30"
-              onClick={() => setSelectedStudentUid(null)}
+        <main className="gc8-main">{page}</main>
+
+        {!wide && <TabBar className="gc8-tabbar" label="Staff dashboard" items={tabItems} current={currentTab} onSelect={handleNavClick} />}
+      </div>
+
+      {/* ─── Phone: your account (Refresh and Log out, which sat in the status band) ─── */}
+      <Sheet
+        open={accountOpen && !wide}
+        onClose={() => setAccountOpen(false)}
+        title={youName}
+        meta={roleWords}
+        art={<span className="gc8-user-box"><User className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" /></span>}
+      >
+        <List>
+          <Row
+            icon={<RefreshCw />}
+            title="Refresh"
+            trailing={<span aria-hidden="true" />}
+            meta={[dataAsOf ? `Data as of ${dataAsOf}` : null, truncatedLine].filter(Boolean).join(' · ') || undefined}
+            onPress={() => { setReloadVersion(v => v + 1); setAccountOpen(false); }}
+          />
+          <Row icon={<LogOut />} title="Log out" tone="danger" trailing={<span aria-hidden="true" />} onPress={onLogout} />
+        </List>
+      </Sheet>
+
+      {/* ─── One student: a page with Back on a phone, the side tray on a laptop ─── */}
+      {selectedStudent && (
+        <>
+          {wide && <FramePortal><div className="frame-takeover gc8-scrim" aria-hidden="true" onClick={closeStudent} /></FramePortal>}
+          <OverScreen
+            label={`Student profile: ${selectedStudent.user.name}`}
+            // Escape belongs to a menu open on the student first (sheets take it themselves).
+            onEscape={() => { if (!document.querySelector('.ui-menu')) closeStudent(); }}
+            className={wide ? 'gc8-over gc8-tray' : 'gc8-over'}
+          >
+            {/* Keyed by uid so switching students remounts the tray. Without
+                it React reuses the instance and the previous student's local
+                state (unsent kudos/recommend drafts, the status-change badge)
+                bleeds into the next student's profile. */}
+            <GCStudentDetail
+              key={selectedStudent.user.uid}
+              student={selectedStudent}
+              allCourses={allCourses}
+              onBack={closeStudent}
+              school={school}
+              isTrayMode
+              alerts={getStudentAlerts(selectedStudent.user.uid)}
+              gcFlags={gcFlags}
+              onDismissAlert={handleDismissAlert}
+              onResetPassword={role === 'gc' ? setResetTargetUid : undefined}
+              onDeleteStudent={role === 'gc' ? setDeleteTarget : undefined}
+              wide={wide}
             />
+          </OverScreen>
+        </>
+      )}
 
-            {/* Panel */}
-            <MotionDiv
-              key="tray"
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="frame-foot fixed top-0 right-0 z-50 h-[100dvh] w-full max-w-2xl bg-white dark:bg-surface-paper shadow-2xl overflow-y-auto border-l border-zinc-200 dark:border-hairline"
+      {/* Delete confirmation: the safe choice is the main button, the destructive one red text. */}
+      <Sheet
+        open={!!deleteTarget}
+        plain
+        title="Delete student"
+        onClose={() => { if (!isDeleting) closeDeleteDialog(); }}
+        footer={
+          <div className="gc8-sheet-foot">
+            <Button kind="main" size="lg" block onClick={closeDeleteDialog}>Cancel</Button>
+            <TextButton
+              tone="danger"
+              aria-disabled={isDeleting || !deleteVerificationPassword || undefined}
+              onClick={() => {
+                if (isDeleting) return;
+                if (!deleteVerificationPassword) { deleteFieldRef.current?.focus(); return; }
+                if (deleteTarget) void handleDeleteStudent(deleteTarget);
+              }}
             >
-              {/* Keyed by uid so switching students remounts the tray. Without
-                  it React reuses the instance and the previous student's local
-                  state (unsent kudos/recommend drafts, the status-change badge)
-                  bleeds into the next student's profile. */}
-              <GCStudentDetail
-                key={selectedStudent.user.uid}
-                student={selectedStudent}
-                allCourses={allCourses}
-                onBack={() => setSelectedStudentUid(null)}
-                school={school}
-                isTrayMode
-                alerts={getStudentAlerts(selectedStudent.user.uid)}
-                gcFlags={gcFlags}
-              />
-            </MotionDiv>
-          </>
-        )}
-      </AnimatePresence>
-
-      {/* Delete confirmation modal */}
-      {deleteTarget && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isDeleting && closeDeleteDialog()}>
-          <div className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-500/10 flex items-center justify-center text-red-500">
-                <AlertTriangle size={20} />
-              </div>
-              <h3 className="font-semibold text-zinc-900 dark:text-white">Delete Student</h3>
-            </div>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">
-              Are you sure you want to delete <span className="font-semibold text-zinc-900 dark:text-white">{deleteTarget.name}</span>?
-            </p>
-            <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
-              This will permanently remove all their progress and profile. This action cannot be undone.
-            </p>
-            <label className="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2" htmlFor="delete-verification-password">
-              Re-enter your password to continue
-            </label>
-            <input
-              id="delete-verification-password"
-              type="password"
-              value={deleteVerificationPassword}
-              onChange={event => setDeleteVerificationPassword(event.target.value)}
-              autoComplete="current-password"
-              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-soft px-4 py-3 text-sm text-zinc-900 dark:text-white mb-5 outline-none focus:border-red-400"
-            />
-            <div className="flex gap-3">
-              <button
-                onClick={closeDeleteDialog}
-                disabled={isDeleting}
-                className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-surface-soft transition-colors disabled:opacity-50"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={() => handleDeleteStudent(deleteTarget)}
-                disabled={isDeleting || !deleteVerificationPassword}
-                className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl bg-red-500 text-white hover:bg-red-600 transition-colors disabled:opacity-50"
-              >
-                {isDeleting ? 'Deleting...' : 'Delete'}
-              </button>
-            </div>
+              {isDeleting ? 'Deleting...' : 'Delete'}
+            </TextButton>
           </div>
-        </div>
-      )}
-
-      {/* Password reset verification modal */}
-      {resetTargetUid && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isResettingPassword && closeResetDialog()}>
-          <div role="dialog" aria-modal="true" aria-labelledby="reset-student-title" className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl" onClick={event => event.stopPropagation()}>
-            <h3 id="reset-student-title" className="font-semibold text-zinc-900 dark:text-white">Reset student password?</h3>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 mb-4">This ends the student's other sessions and creates a temporary password that expires after 24 hours.</p>
-            <label className="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2" htmlFor="reset-verification-password">Re-enter your password</label>
-            <input
-              id="reset-verification-password"
-              type="password"
-              value={resetVerificationPassword}
-              onChange={event => setResetVerificationPassword(event.target.value)}
-              autoFocus
-              autoComplete="current-password"
-              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-surface-soft px-4 py-3 text-sm text-zinc-900 dark:text-white outline-none focus:border-accent"
-            />
-            <div className="flex gap-3 mt-5">
-              <button type="button" disabled={isResettingPassword} onClick={closeResetDialog} className="flex-1 px-4 py-2.5 text-sm rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300">Cancel</button>
-              <button type="button" disabled={isResettingPassword || !resetVerificationPassword} onClick={() => void handleResetPassword(resetTargetUid)} className="flex-1 px-4 py-2.5 text-sm font-semibold rounded-xl bg-orange-600 text-white disabled:opacity-50">
-                {isResettingPassword ? 'Resetting…' : 'Reset password'}
-              </button>
-            </div>
+        }
+      >
+        <div className="gc8-sheet-body">
+          <div className="gc8-reading">
+            <p>Are you sure you want to delete <b>{deleteTarget?.name}</b>?</p>
+            <p className="gc8-meta">This will permanently remove all their progress and profile. This action cannot be undone.</p>
           </div>
+          <Field
+            ref={deleteFieldRef}
+            id="delete-verification-password"
+            type="password"
+            label="Re-enter your password to continue"
+            value={deleteVerificationPassword}
+            onChange={event => setDeleteVerificationPassword(event.target.value)}
+            autoComplete="current-password"
+          />
         </div>
-      )}
+      </Sheet>
 
-      {/* Password reset result modal */}
-      {resetResult && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => setResetResult(null)}>
-          <div className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
-            <h3 className="font-semibold text-zinc-900 dark:text-white mb-2">Password Reset</h3>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
-              Temporary password for <span className="font-semibold text-zinc-900 dark:text-white">{resetResult.name}</span>:
-            </p>
-            <div className="bg-zinc-50 dark:bg-surface-soft rounded-xl p-4 mb-4 text-center">
-              <code className="text-lg font-mono font-bold tracking-widest text-zinc-900 dark:text-white select-all">{resetResult.password}</code>
-            </div>
-            <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
-              Share this with the student. They should change it after logging in.
-            </p>
-            <button
-              onClick={() => setResetResult(null)}
-              className="w-full px-4 py-2.5 text-sm font-medium rounded-xl text-white transition-colors"
-              style={{ backgroundColor: COLORS.accent }}
-            >
-              Done
-            </button>
-          </div>
+      {/* Password reset: verify, then the temporary password */}
+      <Sheet
+        open={!!resetTargetUid}
+        title="Reset student password?"
+        onClose={() => { if (!isResettingPassword) closeResetDialog(); }}
+        footer={
+          <Button
+            kind="main"
+            size="lg"
+            block
+            missing={!resetVerificationPassword ? { sentence: 'Re-enter your password to continue.', goTo: resetFieldRef } : undefined}
+            onClick={() => { if (!isResettingPassword && resetTargetUid) void handleResetPassword(resetTargetUid); }}
+          >
+            {isResettingPassword ? 'Resetting…' : 'Reset password'}
+          </Button>
+        }
+      >
+        <div className="gc8-sheet-body">
+          <p className="gc8-sub">This ends the student's other sessions and creates a temporary password that expires after 24 hours.</p>
+          <Field
+            ref={resetFieldRef}
+            id="reset-verification-password"
+            type="password"
+            label="Re-enter your password"
+            value={resetVerificationPassword}
+            onChange={event => setResetVerificationPassword(event.target.value)}
+            autoComplete="current-password"
+          />
         </div>
-      )}
+      </Sheet>
+
+      <Sheet
+        open={!!resetResult}
+        plain
+        title="Password reset"
+        onClose={() => setResetResult(null)}
+        footer={<Button kind="main" size="lg" block onClick={() => setResetResult(null)}>Done</Button>}
+      >
+        <div className="gc8-sheet-body">
+          <p className="gc8-sub">Temporary password for <span className="gc8-strong">{resetResult?.name}</span>:</p>
+          <div className="gc8-secret"><code className="gc8-code-value">{resetResult?.password}</code></div>
+          <p className="gc8-meta">Share this with the student. They should change it after logging in.</p>
+        </div>
+      </Sheet>
+
+      {/* A failed delete or reset says so here (it was a browser alert). */}
+      <MessageHost />
     </div>
   );
 };

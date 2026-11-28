@@ -2,12 +2,8 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import Avatar from '../Avatar';
-
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from '../Motion';
-import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound, type LucideIcon } from 'lucide-react';
+import { TrendingUp, TrendingDown, ChevronRight, Flame, Flag, ArrowUp, ArrowDown, CircleHelp, MoreHorizontal } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
 import { type CurriculumLevel } from '../../utils/authUtils';
@@ -15,7 +11,7 @@ import { type YearGroup } from '../subjectData';
 import { getSchoolName } from '../../schoolData';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
-import { type SchoolEvent } from './GCKeyEvents';
+import { type SchoolEvent, GCCalendar, getLCExamDate } from './GCKeyEvents';
 import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import {
   getOverallProgress,
@@ -35,46 +31,23 @@ import {
   getVisibleCourses,
   hasCAOGrades,
 } from './gcUtils';
-import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
+import { type EarlyWarningAlert } from './gcAlerts';
 import { GCKeyEvents } from './GCKeyEvents';
 import { SubjectHealthPanel } from './SubjectHealthPanel';
 import GCExportModal from './GCExportModal';
-import HorizontalTabs from '../ui/HorizontalTabs';
-import { STATUS_CONFIG } from '../../utils/studentStatus';
 import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
 import { logError } from '../../utils/logError';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import app from '../../firebase';
 import { STAFF_BROADCASTS } from '../../data/staffEncouragement';
-import { COLORS } from '../../design/tokens';
-
-const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
-
-// ─── Design tokens ──────────────────────────────────────────────────────────
-
-const CARD_STYLE: React.CSSProperties = {
-  backgroundColor: '#FFFFFF',
-  border: '0.5px solid rgba(0,0,0,0.07)',
-  borderRadius: 12,
-  padding: 20,
-};
-
-const CARD_STYLE_DARK_CLASS = 'dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]';
-
-const ACCENT = COLORS.accent;
-const _ACCENT_DARK = COLORS.accentDark;
-const SAGE = '#6B8F71';
-const WARM_AMBER = '#C4873B';
-const NEUTRAL_GREY = '#9A9590';
-const TRACK_BG = '#EDEAE6';
-
-// Dark mode badge/surface overrides (used via Tailwind dark: classes)
-const _BADGE_SAGE_DARK = 'dark:!bg-[rgba(107,143,113,0.15)] dark:!text-[#8AB592]';
-const _BADGE_AMBER_DARK = 'dark:!bg-[rgba(196,135,59,0.15)] dark:!text-[#D4A95C]';
-const _BADGE_CLAY_DARK = 'dark:!bg-accent/15 dark:!text-[#FDEEDF]';
-const TEXT_ACCENT_DARK = 'dark:!text-accent';
-const TEXT_NEUTRAL_DARK = 'dark:!text-zinc-400';
-const TRACK_BG_DARK = 'dark:!bg-surface-soft';
+import SubjectAvatar from '../SubjectAvatar';
+import { Button, TextButton } from '../ui/Button';
+import { ChoiceTile, SelectionBar } from '../ui/Choice';
+import { Menu, MenuAction, MenuPanel, MenuRadioRows, MenuRule } from '../ui/Menu';
+import { Sheet } from '../ui/Sheet';
+import { SearchField } from '../ui/Field';
+import { List, Row } from '../ui/List';
+import { useWide, STATUS_WORDS, StatusDot, StatusWords, SeverityDot, SEVERITY_WORDS, Fig, Pct, StudentArt, daysWords, daysSinceBlock } from './gcView';
 
 // ─── Categories ─────────────────────────────────────────────────────────────
 
@@ -109,43 +82,39 @@ function isJuniorYear(yg: YearGroup | undefined): boolean {
   return yg === '1st' || yg === '2nd' || yg === '3rd';
 }
 
-// ─── Calendar helpers ────────────────────────────────────────────────────────
+// ─── The nine status filters and the status guide (today's words, sentence case) ──
 
-function getCalendarDays(year: number, month: number): { day: number; isCurrentMonth: boolean }[] {
-  const firstDay = new Date(year, month, 1).getDay();
-  const daysInMonth = new Date(year, month + 1, 0).getDate();
-  const offset = firstDay === 0 ? 6 : firstDay - 1; // Monday-start
+const STATUS_FILTERS: { key: StatusFilter; label: string }[] = [
+  { key: 'all', label: 'All' },
+  { key: 'needs-attention', label: 'Needs attention' },
+  { key: 'thriving', label: 'Thriving' },
+  { key: 'active', label: 'Active' },
+  { key: 'new', label: 'New' },
+  { key: 'drifting', label: 'Drifting' },
+  { key: 'at-risk', label: 'At risk' },
+  { key: 'inactive', label: 'Inactive' },
+  { key: 'flagged', label: 'Flagged' },
+];
 
-  const days: { day: number; isCurrentMonth: boolean }[] = [];
-  // Leading blanks
-  for (let i = 0; i < offset; i++) {
-    days.push({ day: 0, isCurrentMonth: false });
-  }
-  for (let d = 1; d <= daysInMonth; d++) {
-    days.push({ day: d, isCurrentMonth: true });
-  }
-  return days;
+/** Every status getStudentStatus can produce, in the guide's order, with today's explanation. */
+export const STATUS_GUIDE: { status: StudentStatus; desc: string }[] = [
+  { status: 'new', desc: 'Signed up within the last 7 days. Give them time to explore.' },
+  { status: 'active', desc: 'Logged a study session in the past 7 days. On track.' },
+  { status: 'thriving', desc: 'Active with a 5+ day streak, 3+ modules completed, or 3+ consecutive active weeks.' },
+  { status: 'drifting', desc: '8\u201314 days since last session, or lost a strong streak recently. May need a nudge.' },
+  { status: 'at-risk', desc: '15+ days inactive, lost a 7+ day streak, or 3+ weeks with zero sessions. Needs attention.' },
+  { status: 'inactive', desc: 'Past the 7-day new window but has never logged a single study session.' },
+];
+
+/** Which students a status filter keeps: the table's filter, and the count the phone's filter sheet
+ *  shows on its button before it is applied (one rule, so the two can never disagree). */
+function statusMatch(s: { status: StudentStatus; student: GCStudentFullData }, filter: StatusFilter, flags?: GCFlagsAPI): boolean {
+  if (filter === 'flagged') return !!flags?.isFlagged(s.student.user.uid);
+  if (filter === 'needs-attention') return s.status === 'drifting' || s.status === 'at-risk' || !!flags?.isFlagged(s.student.user.uid);
+  if (filter !== 'all') return s.status === filter;
+  return true;
 }
 
-function getLCExamDate(): Date {
-  const now = new Date();
-  const year = now.getFullYear();
-  const june1 = new Date(year, 5, 1);
-  let firstWed = new Date(june1);
-  const dow = june1.getDay();
-  const daysUntilWed = (3 - dow + 7) % 7;
-  firstWed.setDate(june1.getDate() + daysUntilWed);
-  if (firstWed.getTime() < now.getTime()) {
-    const nextJune1 = new Date(year + 1, 5, 1);
-    const nextDow = nextJune1.getDay();
-    const nextDays = (3 - nextDow + 7) % 7;
-    firstWed = new Date(nextJune1);
-    firstWed.setDate(nextJune1.getDate() + nextDays);
-  }
-  return firstWed;
-}
-
-const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
@@ -169,9 +138,17 @@ interface GCOverviewProps {
   alerts?: EarlyWarningAlert[];
   onDismissAlert?: (alert: EarlyWarningAlert) => void;
   gcFlags?: GCFlagsAPI;
+  /** On a phone the Overview and the Students list are two places of the bottom bar (area 8a). */
+  place?: 'overview' | 'students';
+  /** "See all N students" on a phone's Overview opens the Students place. */
+  onOpenStudents?: () => void;
+  /** When the snapshot was taken ("14:37"), said on a phone under the greeting. */
+  dataAsOf?: string | null;
+  /** A notice about the snapshot (the 1000-account cap), said under the greeting on a phone. */
+  notice?: string | null;
 }
 
-export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, onSelectStudent, onDeleteStudent, onResetPassword, alerts = [], onDismissAlert, gcFlags }) => {
+export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, onSelectStudent, onDeleteStudent, onResetPassword, alerts = [], onDismissAlert, gcFlags, place = 'overview', onOpenStudents, dataAsOf, notice }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showStatusGuide, setShowStatusGuide] = useState(false);
   const [showBroadcastModal, setShowBroadcastModal] = useState(false);
@@ -201,9 +178,15 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   };
   const [sortKey, setSortKey] = useState<SortKey>('name');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
-  const [flagPopoverUid, setFlagPopoverUid] = useState<string | null>(null);
-  const [flagPriority, setFlagPriority] = useState<FlagPriority>('normal');
-  const flagPopoverRef = useRef<HTMLDivElement>(null);
+  // Area 8a: the phone's sheets and lists (how things are shown; nothing here is read or written).
+  const wide = useWide();
+  const twoMonths = useWide(1200);
+  const [allList, setAllList] = useState<null | 'warnings' | 'attention' | 'recent' | 'gaps'>(null);
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [draftStatus, setDraftStatus] = useState<StatusFilter>('all');
+  const [draftSortKey, setDraftSortKey] = useState<SortKey>('name');
+  const [draftSortDir, setDraftSortDir] = useState<SortDir>('asc');
+  const broadcastMessagesRef = useRef<HTMLDivElement>(null);
 
   // ─── Computed stats ─────────────────────────────────────────────────────
 
@@ -528,13 +511,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       const q = searchQuery.toLowerCase();
       result = result.filter(s => s.student.user.name.toLowerCase().includes(q));
     }
-    if (statusFilter === 'flagged') {
-      result = result.filter(s => gcFlags?.isFlagged(s.student.user.uid));
-    } else if (statusFilter === 'needs-attention') {
-      result = result.filter(s => s.status === 'drifting' || s.status === 'at-risk' || gcFlags?.isFlagged(s.student.user.uid));
-    } else if (statusFilter !== 'all') {
-      result = result.filter(s => s.status === statusFilter);
-    }
+    result = result.filter(s => statusMatch(s, statusFilter, gcFlags));
     // Copy before sorting — Array.prototype.sort mutates in place, and when no
     // filter is active `result` IS the memoised array, so this was quietly
     // reordering shared state that other panels read.
@@ -578,50 +555,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     }
   };
 
-  const sortIndicator = (key: SortKey) => {
-    if (sortKey !== key) return null;
-    return sortDir === 'asc' ? ' \u2191' : ' \u2193';
-  };
-
-  // ─── Status pill helper ─────────────────────────────────────────────────
-
-  const STATUS_ICONS: Record<StudentStatus, LucideIcon> = {
-    'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
-    'thriving': TrendingUp, 'active': CheckCircle, 'inactive': MinusCircle,
-  };
-
-  const statusPill = (status: StudentStatus) => {
-    const cfg = STATUS_CONFIG[status];
-    const Icon = STATUS_ICONS[status];
-    return (
-      <span
-        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium ${cfg.darkBgClass} ${cfg.darkTextClass}`}
-        style={{ backgroundColor: cfg.bg, color: cfg.text }}
-        aria-label={`Status: ${cfg.label}`}
-      >
-        <Icon size={12} aria-hidden="true" />
-        {cfg.label}
-      </span>
-    );
-  };
-
-  // ─── CAO gap pill ─────────────────────────────────────────────────────
-
-  const gapPill = (gap: number) => {
-    const absGap = Math.abs(gap);
-    let pillClass = 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400';
-    if (absGap > 100) {
-      pillClass = 'bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400';
-    } else if (absGap > 50) {
-      pillClass = 'bg-amber-50 text-amber-700 dark:bg-amber-900/20 dark:text-amber-400';
-    }
-    return (
-      <span className={`inline-flex px-2 py-0.5 rounded-md text-xs font-semibold ${pillClass}`}>
-        {gap > 0 ? '+' : ''}{gap}
-      </span>
-    );
-  };
-
   // ─── Subject Gaps ──────────────────────────────────────────────────────
 
   // Uses cohortScopedStudents so the gaps panel narrows when the GC picks
@@ -651,28 +584,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     URL.revokeObjectURL(url);
   };
 
-  // ─── Calendar widget data ─────────────────────────────────────────────
-
-  const now = new Date();
-  const [calMonth, setCalMonth] = useState(now.getMonth());
-  const [calYear, setCalYear] = useState(now.getFullYear());
-  const calendarDays = getCalendarDays(calYear, calMonth);
-  const todayDate = now.getDate();
-  const isCurrentMonth = calYear === now.getFullYear() && calMonth === now.getMonth();
-  const lcExamDate = getLCExamDate();
-  const lcDay = lcExamDate.getMonth() === calMonth && lcExamDate.getFullYear() === calYear
-    ? lcExamDate.getDate()
-    : null;
-
-  const handleCalPrev = () => {
-    if (calMonth === 0) { setCalMonth(11); setCalYear(y => y - 1); }
-    else setCalMonth(m => m - 1);
-  };
-  const handleCalNext = () => {
-    if (calMonth === 11) { setCalMonth(0); setCalYear(y => y + 1); }
-    else setCalMonth(m => m + 1);
-  };
-
   // ─── Load school events for calendar ─────────────────────────────────────
   const [schoolEvents, setSchoolEvents] = useState<SchoolEvent[]>([]);
   useEffect(() => {
@@ -686,1114 +597,392 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     return () => { cancelled = true; };
   }, [school]);
 
-  // Map events to calendar days for the current month
-  const eventsByDay = useMemo(() => {
-    const map: Record<number, SchoolEvent[]> = {};
-    for (const ev of schoolEvents) {
-      const d = new Date(ev.date);
-      if (d.getMonth() === calMonth && d.getFullYear() === calYear) {
-        const day = d.getDate();
-        if (!map[day]) map[day] = [];
-        map[day].push(ev);
-      }
-    }
-    return map;
-  }, [schoolEvents, calMonth, calYear]);
-
-  const EVENT_DOT_COLORS: Record<string, string> = {
-    exams: '#EF4444',
-    deadlines: '#F59E0B',
-    school: '#3B82F6',
-    other: '#8B5CF6',
-  };
-
-  // ─── Flag popover helpers ────────────────────────────────────────────────
-
-  const openFlagPopover = (uid: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    const existing = gcFlags?.getFlagData(uid);
-    setFlagPriority(existing?.priority ?? 'normal');
-    setFlagPopoverUid(uid);
-  };
-
-  // Close flag popover on outside click or Escape
-  React.useEffect(() => {
-    if (!flagPopoverUid) return;
-    const handleClick = (e: MouseEvent) => {
-      if (flagPopoverRef.current && !flagPopoverRef.current.contains(e.target as Node)) {
-        setFlagPopoverUid(null);
-      }
-    };
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setFlagPopoverUid(null);
-    };
-    document.addEventListener('mousedown', handleClick);
-    document.addEventListener('keydown', handleKey);
-    return () => {
-      document.removeEventListener('mousedown', handleClick);
-      document.removeEventListener('keydown', handleKey);
-    };
-  }, [flagPopoverUid]);
-
   // ─── Render ─────────────────────────────────────────────────────────────
+
+  const lcDateWords = getLCExamDate().toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).replace(/,/g, '');
 
   const hour = new Date().getHours();
   const greeting = hour < 12 ? 'Good morning.' : hour < 18 ? 'Good afternoon.' : 'Good evening.';
 
-  return (
-    // overflow-x-hidden contains any wide grandchild (tables, charts, etc.)
-    // so the page itself stays at the iPhone viewport width and "Guidance
-    // Dashboard" / school name don't slide off the screen edges.
-    <div className="p-6 lg:p-8 space-y-5 overflow-x-hidden">
-      {/* ═══════════════════════════════════════════════════════════════════
-          ROW 0 — Header (full width)
-          ═══════════════════════════════════════════════════════════════════ */}
-      <div id="gc-overview" className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-        <div>
-          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Staff Dashboard</p>
-          <h1 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white tracking-tight">{greeting}</h1>
-          <p className={`text-sm mt-0.5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{getSchoolName(school)}</p>
-        </div>
-        {/* flex-1 + basis-0 on each pill gives all 3 the same width regardless
-            of label length. justify-center keeps content centred inside. */}
-        <div className="flex items-stretch gap-3">
-          <div className="flex-1 basis-0 flex items-center justify-center gap-2 px-3 py-2 rounded-xl dark:!bg-accent/10 dark:!border-accent/25" style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.08)', border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)' }}>
-            <span className={`text-lg font-bold ${TEXT_ACCENT_DARK}`} style={{ color: ACCENT }}>{daysUntilLC}</span>
-            <span className="text-[10px] font-bold uppercase tracking-wider dark:!text-accent/70" style={{ color: 'rgba(var(--nsu-orange-rgb), 0.7)' }}>days to LC</span>
-          </div>
-          <button
-            onClick={() => setShowExportModal(true)}
-            className={`flex-1 basis-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-accent/30`}
-            style={{ color: ACCENT, border: '1px solid rgba(var(--nsu-orange-rgb), 0.3)', backgroundColor: 'transparent' }}
-          >
-            <FileDown size={14} />
-            Export
-          </button>
-          <button
-            onClick={() => setShowBroadcastModal(true)}
-            className={`flex-1 basis-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-colors text-center ${TEXT_ACCENT_DARK} dark:!border-accent/30`}
-            style={{ color: ACCENT, border: '1px solid rgba(var(--nsu-orange-rgb), 0.3)', backgroundColor: 'transparent' }}
-          >
-            <Megaphone size={14} />
-            Broadcast
-          </button>
-        </div>
-      </div>
+  const urgentCount = alerts.filter(a => a.severity === 'urgent').length;
+  const watchCount = alerts.filter(a => a.severity === 'watch').length;
+  const nudgeCount = alerts.filter(a => a.severity === 'nudge').length;
+  const alertCounts = [
+    urgentCount > 0 && `${urgentCount} urgent`,
+    watchCount > 0 && `${watchCount} ${wide ? 'to watch' : 'watch'}`,
+    nudgeCount > 0 && `${nudgeCount} nudge`,
+  ].filter(Boolean).join(' · ');
+  const attentionParts = [
+    driftingCount > 0 && `${driftingCount} drifting`,
+    atRiskCount > 0 && `${atRiskCount} at risk`,
+    flaggedOnlyCount > 0 && `${flaggedOnlyCount} flagged`,
+  ].filter(Boolean);
+  const attentionMeta = wide ? `${needsAttentionCount} · ${attentionParts.join(', ')}` : attentionParts.join(' · ');
+  const firstFew = wide ? 6 : 3;
+  const trend = weeklyTrends.blocksTrend;
+  const trendWords = trend < 0 ? `${Math.abs(trend)}% fewer than last week` : trend > 0 ? `${trend}% more than last week` : `${trend}% vs last week`;
+  const TrendGlyph = trend >= 0 ? TrendingUp : TrendingDown;
+  const countLine = `${filtered.length === cohortCurriculumCounts.total
+    ? `${cohortCurriculumCounts.total} students`
+    : `${filtered.length} of ${cohortCurriculumCounts.total}`}${cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 && curriculumFilter === 'all'
+    ? ` · ${cohortCurriculumCounts.junior} Junior Cycle · ${cohortCurriculumCounts.senior} Senior Cycle`
+    : ''}`;
+  const yearOptions: readonly YearGroup[] =
+    curriculumFilter === 'junior' ? ['1st', '2nd', '3rd'] as const
+    : curriculumFilter === 'senior' ? ['TY', '5th', '6th'] as const
+    : ['1st', '2nd', '3rd', 'TY', '5th', '6th'] as const;
+  const yearWords = (yg: YearGroup) => (yg === 'TY' ? 'TY' : `${yg} Year`);
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          ROW 0.5 — Global cohort filter (Phase 6)
-          Sits right under the header so it's always visible. Cascades to
-          all panels below: Progress Breakdown, Subject-Level Gaps, Subject
-          Health, and the student table. Always rendered; curriculum toggle
-          + year dropdown both always show all options (not just years
-          actually present in the cohort) so a GC can scope to a year that
-          doesn't have students yet — useful for planning, and necessary
-          for surfacing the "No JC students yet" empty state in localhost
-          before any JC students have onboarded.
-          ═══════════════════════════════════════════════════════════════════ */}
-      <div
-        className={`flex flex-wrap items-center gap-3 px-4 py-3 rounded-xl ${CARD_STYLE_DARK_CLASS}`}
-        style={CARD_STYLE}
+  const cohortMenus = (
+    <>
+      <Menu
+        label="Students shown"
+        value={curriculumFilter}
+        onChange={handleCurriculumChange}
+        options={[{ value: 'all', label: 'All students' }, { value: 'junior', label: 'Junior Cycle' }, { value: 'senior', label: 'Senior Cycle' }]}
+      />
+      <Menu
+        label="Year"
+        value={yearGroupFilter}
+        onChange={value => setYearGroupFilter(value as YearGroupFilter)}
+        options={[{ value: 'all', label: 'All years' }, ...yearOptions.map(yg => ({
+          value: yg,
+          label: `${yearWords(yg)}${availableYearGroups.includes(yg) ? '' : ' (none yet)'}`,
+          short: yearWords(yg),
+        }))]}
+      />
+    </>
+  );
+  const resetCohort = (curriculumFilter !== 'all' || yearGroupFilter !== 'all') ? (
+    <TextButton tone="quiet" onClick={() => { setCurriculumFilter('all'); setYearGroupFilter('all'); }}>Reset</TextButton>
+  ) : null;
+
+  const blocksFigure = (
+    <span className="gc8-trend"><TrendGlyph className={`ui-icon ${trend >= 0 ? 'gc8-up' : 'gc8-down'}`} width={16} height={16} strokeWidth={2} aria-hidden="true" />{trendWords}</span>
+  );
+
+  // One early warning, as a row that opens the student (phone) or a laptop row with Dismiss.
+  const warningRow = (alert: EarlyWarningAlert, withDismiss: boolean) => (
+    <Row
+      key={alert.id}
+      art={<StudentArt seed={alert.studentAvatar} />}
+      title={alert.studentName}
+      label={`View ${alert.studentName}: ${SEVERITY_WORDS[alert.severity]}, ${alert.title}`}
+      meta={<span className="gc8-why"><SeverityDot severity={alert.severity} /><b>{SEVERITY_WORDS[alert.severity]}</b> · {alert.title}</span>}
+      onPress={() => { setAllList(null); onSelectStudent(alert.studentUid); }}
+      end={withDismiss && onDismissAlert ? <TextButton tone="quiet" onClick={() => onDismissAlert(alert)}>Dismiss</TextButton> : undefined}
+    />
+  );
+  const warningLaptopRow = (alert: EarlyWarningAlert) => (
+    <div key={alert.id} className="gc8-warn">
+      <span className="gc8-sev"><SeverityDot severity={alert.severity} />{SEVERITY_WORDS[alert.severity]}</span>
+      <StudentArt seed={alert.studentAvatar} size={32} />
+      <button type="button" className="gc8-warn-open" onClick={() => onSelectStudent(alert.studentUid)} aria-label={`View ${alert.studentName}: ${alert.title}`}>
+        <span className="gc8-person">{alert.studentName} <span>· {alert.title}</span></span>
+        <span className="gc8-meta">{alert.description}</span>
+      </button>
+      {onDismissAlert ? <TextButton tone="quiet" title="Dismiss (will resurface if situation worsens)" onClick={() => onDismissAlert(alert)}>Dismiss</TextButton> : <span />}
+      <ChevronRight className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />
+    </div>
+  );
+  const attentionRow = ({ student, status, flag, daysSince }: typeof attentionStudents[number]) => (
+    <Row
+      key={student.user.uid}
+      art={<StudentArt seed={student.user.avatar} size={wide ? 32 : 40} />}
+      title={student.user.name}
+      label={`View ${student.user.name}, status: ${STATUS_WORDS[status]}${flag ? ', flagged' : ''}`}
+      meta={wide
+        ? <StatusWords status={status} />
+        : <StatusWords status={status}>{flag ? ' · flagged' : ''} · {daysWords(daysSince)}</StatusWords>}
+      trailing={wide ? <>
+        {flag ? <Flag className="ui-icon gc8-flag" width={16} height={16} strokeWidth={2} aria-label={`Flagged: ${flag.priority} priority`} /> : null}
+        <span className="gc8-ago">{Number.isFinite(daysSince) && daysSince > 0
+          ? <><b>{daysSince}</b>{daysSince === 1 ? ' day' : ' days'}</>
+          : daysWords(daysSince)}</span>
+      </> : undefined}
+      onPress={() => { setAllList(null); onSelectStudent(student.user.uid); }}
+    />
+  );
+  const recentRow = (s: typeof recentlyActive[number]) => (
+    <Row
+      key={s.uid}
+      art={<StudentArt seed={s.avatar} />}
+      title={s.name}
+      meta={s.blocksCompletedToday > 0 ? `${s.blocksCompletedToday} ${s.blocksCompletedToday === 1 ? 'block' : 'blocks'} today` : 'None today'}
+      value={s.timeAgo}
+      onPress={() => { setAllList(null); onSelectStudent(s.uid); }}
+    />
+  );
+  const gapRowPhone = (gap: typeof topGaps[number]) => (
+    <div key={gap.subjectName} className="gc8-pgap">
+      <SubjectAvatar subject={gap.subjectName} className="gc8-art gc8-art--32" />
+      <div className="gc8-pgap-body">
+        <div className="gc8-who">
+          <span className="gc8-person">{gap.subjectName} <span className="gc8-meta">· {gap.studentCount} {gap.studentCount === 1 ? 'student' : 'students'}</span></span>
+          <span className="gc8-gpts"><span className="gc8-strong">{gap.avgGap}</span><small className="gc8-unit">pts</small></span>
+        </div>
+        <span className="gc8-bar"><i style={{ width: `${(gap.avgGap / maxAvgGap) * 100}%` }} /></span>
+      </div>
+    </div>
+  );
+
+  const allListSheet = allList ? (() => {
+    const lists = {
+      warnings: { title: 'Early warning signals', rows: alerts.map(alert => warningRow(alert, true)), className: 'gc8-list gc8-warnlist' },
+      attention: { title: 'Attention', rows: attentionStudents.map(attentionRow) },
+      recent: { title: 'Recently active', rows: recentlyActive.map(recentRow) },
+      gaps: { title: 'Subject-level gaps', rows: null },
+    } as const;
+    return lists[allList];
+  })() : null;
+
+  // ─── The students: search, the nine statuses, the sort ─────────────────
+  const sortOptions: { value: SortKey; label: string }[] = [
+    { value: 'name', label: 'Name' },
+    { value: 'progress', label: 'Progress' },
+    { value: 'cao-current', label: attainmentHeadings.current },
+    { value: 'cao-target', label: attainmentHeadings.target },
+    { value: 'gap', label: attainmentHeadings.gap },
+    { value: 'streak', label: 'Streak' },
+  ];
+  const openFilterSheet = () => { setDraftStatus(statusFilter); setDraftSortKey(sortKey); setDraftSortDir(sortDir); setFilterOpen(true); };
+  const draftCount = cohortScopedStats.filter(s => (!searchQuery || s.student.user.name.toLowerCase().includes(searchQuery.toLowerCase())) && statusMatch(s, draftStatus, gcFlags)).length;
+  const statusFilterLabel = STATUS_FILTERS.find(f => f.key === statusFilter)?.label ?? 'All';
+  const sortWords = `${sortOptions.find(o => o.value === sortKey)?.label ?? 'Name'}, ${sortKey === 'name'
+    ? (sortDir === 'asc' ? 'A to Z' : 'Z to A')
+    : (sortDir === 'desc' ? 'highest first' : 'lowest first')}`;
+
+  const studentRowPhone = (row: typeof filtered[number]) => {
+    const uid = row.student.user.uid;
+    const flag = gcFlags?.getFlagData(uid);
+    const days = daysSinceBlock(row.student);
+    const detail = row.streak > 0 ? ` · ${row.streak}-day streak` : Number.isFinite(days) ? ` · ${daysWords(days)}` : '';
+    return (
+      <Row
+        key={uid}
+        art={<StudentArt seed={row.student.user.avatar} />}
+        title={row.student.user.name}
+        label={`View ${row.student.user.name}, status: ${STATUS_WORDS[row.status]}${flag ? ', flagged' : ''}`}
+        meta={<StatusWords status={row.status}>{flag ? ' · flagged' : ''}{detail}</StatusWords>}
+        trailing={<><Pct value={row.progress} className="ui-row-value" /><ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" /></>}
+        onPress={() => onSelectStudent(uid)}
+      />
+    );
+  };
+
+  const rowMenu = (row: typeof filtered[number]) => {
+    const uid = row.student.user.uid;
+    const rowFlag = gcFlags?.getFlagData(uid) ?? null;
+    if (!gcFlags && !onResetPassword && !onDeleteStudent) return <span />;
+    return (
+      <MenuPanel
+        label={row.student.user.name}
+        buttonLabel={`Actions for ${row.student.user.name}`}
+        buttonClassName="gc8-acts"
+        className="gc8-rowmenu"
+        chevron={false}
+        face={<MoreHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />}
       >
-        <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">Cohort filter</span>
-        {/* Curriculum toggle — always visible */}
-        <HorizontalTabs
-          variant="pill"
-          size="sm"
-          label="Curriculum"
-          value={curriculumFilter}
-          onChange={handleCurriculumChange}
-          options={[{ value: 'all', label: 'All' }, { value: 'junior', label: 'Junior Cycle' }, { value: 'senior', label: 'Senior Cycle' }]}
-        />
-        {/* Year-group select — scoped by the active curriculum toggle so
-            the JC view never offers 5th/6th and the senior view never
-            offers 1st/2nd/3rd. TY rides senior content per Phase 1, so
-            it appears under Senior Cycle. */}
-        {(() => {
-          const yearOptions: readonly YearGroup[] =
-            curriculumFilter === 'junior' ? ['1st', '2nd', '3rd'] as const
-            : curriculumFilter === 'senior' ? ['TY', '5th', '6th'] as const
-            : ['1st', '2nd', '3rd', 'TY', '5th', '6th'] as const;
-          return (
-            <select
-              value={yearGroupFilter}
-              onChange={e => setYearGroupFilter(e.target.value as YearGroupFilter)}
-              className="px-2 py-1 rounded-md text-[11px] font-bold bg-zinc-100 dark:bg-surface-soft text-zinc-700 dark:text-zinc-200 border-0"
-            >
-              <option value="all">All years</option>
-              {yearOptions.map(yg => (
-                <option key={yg} value={yg}>
-                  {yg === 'TY' ? 'TY' : `${yg} Year`}
-                  {availableYearGroups.includes(yg) ? '' : ' (none yet)'}
-                </option>
-              ))}
-            </select>
-          );
-        })()}
-          {/* Filtered count + breakdown — auto-pushed to the right */}
-          <div className="ml-auto flex items-center gap-2">
-            {cohortScopeLabel && (
-              <span className="text-[11px] font-semibold text-zinc-700 dark:text-zinc-300">
-                Showing: {cohortScopeLabel}
-              </span>
-            )}
-            <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
-              {filtered.length === cohortCurriculumCounts.total
-                ? `${cohortCurriculumCounts.total} students`
-                : `${filtered.length} of ${cohortCurriculumCounts.total}`}
-              {cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 && curriculumFilter === 'all' && (
-                <span className="text-zinc-400 dark:text-zinc-500 ml-1">
-                  · {cohortCurriculumCounts.junior} JC · {cohortCurriculumCounts.senior} senior
-                </span>
-              )}
-            </span>
-            {(curriculumFilter !== 'all' || yearGroupFilter !== 'all') && (
-              <button
-                onClick={() => { setCurriculumFilter('all'); setYearGroupFilter('all'); }}
-                className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 underline"
-              >
-                Reset
-              </button>
-            )}
-          </div>
-      </div>
+        {gcFlags && (
+          <MenuRadioRows<FlagPriority>
+            label={rowFlag ? 'Edit student flag' : 'Flag student'}
+            value={(rowFlag?.priority ?? '') as FlagPriority}
+            onChange={priority => { void (rowFlag ? gcFlags.updateFlagPriority(uid, priority) : gcFlags.flagStudent(uid, priority)); }}
+            options={[{ value: 'high', label: 'Flagged, high priority' }, { value: 'normal', label: 'Flagged, normal priority' }]}
+          />
+        )}
+        {gcFlags && rowFlag && <MenuAction plain title="Remove flag" onPress={() => { void gcFlags.unflagStudent(uid); }} />}
+        {gcFlags && (onResetPassword || onDeleteStudent) && <MenuRule />}
+        {onResetPassword && <MenuAction plain title="Reset password" onPress={() => onResetPassword(uid)} />}
+        {onDeleteStudent && <MenuAction plain tone="danger" title="Delete account" onPress={() => onDeleteStudent(row.student.user)} />}
+      </MenuPanel>
+    );
+  };
 
-      {/* Broadcast Modal */}
-      <AnimatePresence>
-        {showBroadcastModal && (() => {
-          // Year options scoped by the active broadcast curriculum, same
-          // pattern as the dashboard cohort filter.
-          const broadcastYearOptions: readonly YearGroup[] =
-            broadcastCurriculum === 'junior' ? ['1st', '2nd', '3rd'] as const
-            : broadcastCurriculum === 'senior' ? ['TY', '5th', '6th'] as const
-            : ['1st', '2nd', '3rd', 'TY', '5th', '6th'] as const;
+  const sortHead = (key: SortKey, label: string, numeric = false, hint?: string) => (
+    <button
+      type="button"
+      className={`gc8-th${numeric ? ' gc8-th--n' : ''}`}
+      aria-sort={sortKey === key ? (sortDir === 'asc' ? 'ascending' : 'descending') : undefined}
+      title={hint}
+      onClick={() => handleSort(key)}
+    >
+      {label}
+      {sortKey === key ? (sortDir === 'asc'
+        ? <ArrowUp className="ui-icon" width={14} height={14} strokeWidth={2} aria-hidden="true" />
+        : <ArrowDown className="ui-icon" width={14} height={14} strokeWidth={2} aria-hidden="true" />) : null}
+    </button>
+  );
 
-          // Compute recipients based on the modal's own audience scope.
-          // Empty set = "all years in scope" (whole-curriculum broadcast).
-          const broadcastRecipients = studentData.filter(s => {
-            if (broadcastCurriculum !== 'all') {
-              const lvl: CurriculumLevel | undefined =
-                s.curriculumLevel ?? (s.yearGroup ? (isJuniorYear(s.yearGroup) ? 'junior' : 'senior') : undefined);
-              if (lvl !== broadcastCurriculum) return false;
-            }
-            if (broadcastYearGroups.size > 0) {
-              if (!s.yearGroup || !broadcastYearGroups.has(s.yearGroup)) return false;
-            }
-            return true;
+  const emptyStudents = filtered.length === 0 ? (
+    <div className="gc8-empty" role="status">
+      <b>
+        {studentData.length === 0
+          ? 'No students have signed up yet.'
+          : curriculumFilter === 'junior' && cohortCurriculumCounts.junior === 0
+            ? 'No Junior Cycle students yet.'
+            : curriculumFilter === 'senior' && cohortCurriculumCounts.senior === 0
+              ? 'No Senior Cycle students yet.'
+              : 'No students match your filters.'}
+      </b>
+      {studentData.length === 0
+        ? 'Students will appear here once they register.'
+        : curriculumFilter === 'junior' && cohortCurriculumCounts.junior === 0
+          ? 'Junior Cycle support is new — when 1st/2nd/3rd-year students sign up they\'ll appear here.'
+          : curriculumFilter === 'senior' && cohortCurriculumCounts.senior === 0
+            ? 'When 5th/6th-year students sign up they\'ll appear here.'
+            : 'Try adjusting your search or filter criteria.'}
+    </div>
+  ) : null;
+
+  const searchField = (
+    <SearchField
+      label="Search students"
+      placeholder="Search students"
+      value={searchQuery}
+      onChange={(e) => setSearchQuery(e.target.value)}
+      className={wide ? 'gc8-find' : undefined}
+    />
+  );
+  const statusGuideLink = (
+    <TextButton tone="quiet" className="gc8-ib" onClick={() => setShowStatusGuide(true)}>
+      <CircleHelp className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" />Status guide
+    </TextButton>
+  );
+
+  // ─── The sheets every place shares ──────────────────────────────────────
+  const sheets = (
+    <>
+      {/* Broadcast: who it goes to, one preset message, one Send */}
+      {(() => {
+        // Year options scoped by the active broadcast curriculum, same
+        // pattern as the dashboard cohort filter.
+        const broadcastYearOptions: readonly YearGroup[] =
+          broadcastCurriculum === 'junior' ? ['1st', '2nd', '3rd'] as const
+          : broadcastCurriculum === 'senior' ? ['TY', '5th', '6th'] as const
+          : ['1st', '2nd', '3rd', 'TY', '5th', '6th'] as const;
+
+        // Compute recipients based on the modal's own audience scope.
+        // Empty set = "all years in scope" (whole-curriculum broadcast).
+        const broadcastRecipients = studentData.filter(s => {
+          if (broadcastCurriculum !== 'all') {
+            const lvl: CurriculumLevel | undefined =
+              s.curriculumLevel ?? (s.yearGroup ? (isJuniorYear(s.yearGroup) ? 'junior' : 'senior') : undefined);
+            if (lvl !== broadcastCurriculum) return false;
+          }
+          if (broadcastYearGroups.size > 0) {
+            if (!s.yearGroup || !broadcastYearGroups.has(s.yearGroup)) return false;
+          }
+          return true;
+        });
+
+        const toggleYear = (yg: YearGroup) => {
+          setBroadcastYearGroups(prev => {
+            const next = new Set(prev);
+            if (next.has(yg)) next.delete(yg); else next.add(yg);
+            return next;
           });
+        };
+        const selectAllYears = () => setBroadcastYearGroups(new Set());
 
-          const toggleYear = (yg: YearGroup) => {
-            setBroadcastYearGroups(prev => {
-              const next = new Set(prev);
-              if (next.has(yg)) next.delete(yg); else next.add(yg);
-              return next;
+        // Build a human-readable audience label for the button + subtitle.
+        const audienceLabel = (() => {
+          const parts: string[] = [];
+          if (broadcastCurriculum === 'junior') parts.push('Junior Cycle');
+          else if (broadcastCurriculum === 'senior') parts.push('Senior Cycle');
+          if (broadcastYearGroups.size > 0) {
+            const sortedYears = broadcastYearOptions.filter(y => broadcastYearGroups.has(y));
+            parts.push(sortedYears.map(y => y === 'TY' ? 'TY' : `${y} Year`).join(', '));
+          }
+          return parts.length === 0 ? 'all students' : parts.join(' · ');
+        })();
+
+        const send = async () => {
+          if (!broadcastMessageId || broadcastRecipients.length === 0) return;
+          setIsBroadcasting(true);
+          // Server-composed, preset-only. See functions/src/staffMessagePolicy.
+          try {
+            const fn = httpsCallable<
+              { studentUids: string[]; kind: string; messageId: string },
+              { success: true; delivered: number }
+            >(getFunctions(app), 'sendStaffNotification');
+            await fn({
+              studentUids: broadcastRecipients.map(s => s.user.uid),
+              kind: 'broadcast',
+              messageId: broadcastMessageId,
             });
-          };
-          const selectAllYears = () => setBroadcastYearGroups(new Set());
-          const isYearActive = (yg: YearGroup) => broadcastYearGroups.size === 0 || broadcastYearGroups.has(yg);
+          } catch (err) {
+            logError('GCOverview.broadcast', err);
+          }
+          setIsBroadcasting(false);
+          setShowBroadcastModal(false);
+          setBroadcastMessageId('');
+          // Reset audience to default for the next broadcast
+          setBroadcastCurriculum('all');
+          setBroadcastYearGroups(new Set());
+        };
 
-          // Build a human-readable audience label for the button + subtitle.
-          const audienceLabel = (() => {
-            const parts: string[] = [];
-            if (broadcastCurriculum === 'junior') parts.push('Junior Cycle');
-            else if (broadcastCurriculum === 'senior') parts.push('Senior Cycle');
-            if (broadcastYearGroups.size > 0) {
-              const sortedYears = broadcastYearOptions.filter(y => broadcastYearGroups.has(y));
-              parts.push(sortedYears.map(y => y === 'TY' ? 'TY' : `${y} Year`).join(', '));
-            }
-            return parts.length === 0 ? 'all students' : parts.join(' · ');
-          })();
-          return (
-          <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isBroadcasting && setShowBroadcastModal(false)}>
-            <MotionDiv
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white dark:bg-surface-paper rounded-2xl border border-zinc-200 dark:border-hairline p-6 max-w-sm w-full shadow-2xl"
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center dark:!bg-accent/10" style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.1)' }}>
-                  <Megaphone size={20} style={{ color: ACCENT }} className={TEXT_ACCENT_DARK} />
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Broadcast Message</h3>
-                  <p className="text-xs text-zinc-500">
-                    Sending to <span className="font-semibold text-zinc-700 dark:text-zinc-300">{broadcastRecipients.length}</span> {broadcastRecipients.length === 1 ? 'student' : 'students'}
-                    {broadcastCurriculum !== 'all' || broadcastYearGroups.size > 0 ? ` · ${audienceLabel}` : ''}
-                  </p>
-                </div>
-              </div>
-
-              {/* Audience picker — curriculum toggle + multi-select year chips */}
-              <div className="mb-3 space-y-2">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">Audience</p>
-                {/* Curriculum toggle — exclusive (one of three) */}
-                <div className="flex w-full items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
-                  {(['all', 'junior', 'senior'] as const).map(lvl => (
-                    <button
-                      key={lvl}
-                      onClick={() => { setBroadcastCurriculum(lvl); setBroadcastYearGroups(new Set()); }}
-                      className={`flex-1 min-h-9 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors ${
-                        broadcastCurriculum === lvl
-                          ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
-                          : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
-                      }`}
-                    >
-                      {lvl === 'all' ? 'Everyone' : lvl === 'junior' ? 'Junior Cycle' : 'Senior Cycle'}
-                    </button>
-                  ))}
-                </div>
-                {/* Year chips — multi-select. Empty set = "all years in
-                    curriculum". Tap to toggle individual years; "All years"
-                    chip resets to the whole-curriculum default. */}
-                <div className="flex flex-wrap gap-1.5">
-                  <button
-                    onClick={selectAllYears}
-                    className={`px-2.5 py-1 rounded-md text-[11px] font-bold border transition-all ${
-                      broadcastYearGroups.size === 0
-                        ? 'bg-accent/8 border-accent/30 text-accent'
-                        : 'bg-zinc-100 dark:bg-surface-soft border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
-                    }`}
-                  >
-                    All years
-                  </button>
-                  {broadcastYearOptions.map(yg => {
-                    const count = studentData.filter(s => s.yearGroup === yg).length;
-                    const active = broadcastYearGroups.has(yg);
-                    return (
-                      <button
-                        key={yg}
-                        onClick={() => toggleYear(yg)}
-                        className={`px-2.5 py-1 rounded-md text-[11px] font-bold border transition-all ${
-                          active
-                            ? 'bg-accent/8 border-accent/30 text-accent'
-                            : isYearActive(yg) && broadcastYearGroups.size === 0
-                              ? 'bg-zinc-50 dark:bg-zinc-800/60 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300'
-                              : 'bg-zinc-100 dark:bg-surface-soft border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-200'
-                        }`}
-                      >
-                        {yg === 'TY' ? 'TY' : `${yg} Year`} <span className="opacity-60 font-normal">· {count}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-400 mb-1.5">
-                Choose a message for {audienceLabel}
+        return (
+          <Sheet
+            open={showBroadcastModal}
+            title="Broadcast message"
+            onClose={() => { if (!isBroadcasting) setShowBroadcastModal(false); }}
+            footer={broadcastRecipients.length === 0
+              ? <Button kind="main" size="lg" block unavailable="No students are in this audience.">No recipients</Button>
+              : <Button
+                  kind="main"
+                  size="lg"
+                  block
+                  arrow="forward"
+                  missing={!broadcastMessageId ? { sentence: `Choose a message for ${audienceLabel}.`, goTo: broadcastMessagesRef } : undefined}
+                  onClick={() => { if (!isBroadcasting) void send(); }}
+                >
+                  {isBroadcasting ? 'Sending...' : `Send to ${broadcastRecipients.length}`}
+                </Button>}
+          >
+            <div className="gc8-sheet-body">
+              <p className="gc8-sub">
+                Sending to <span className="gc8-strong">{broadcastRecipients.length}</span> {broadcastRecipients.length === 1 ? 'student' : 'students'}
+                {broadcastCurriculum !== 'all' || broadcastYearGroups.size > 0 ? ` · ${audienceLabel}` : ''}
               </p>
-              <div className="space-y-1 mb-3 max-h-56 overflow-y-auto">
-                {STAFF_BROADCASTS.map(message => (
-                  <button
-                    key={message.id}
-                    type="button"
-                    aria-pressed={broadcastMessageId === message.id}
-                    onClick={() => setBroadcastMessageId(message.id)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${broadcastMessageId === message.id ? 'bg-[#FDEEDF] text-accentDarkText font-medium' : 'hover:bg-zinc-50 dark:hover:bg-surface-soft text-zinc-700 dark:text-zinc-300'}`}
-                  >
-                    {message.text}
-                  </button>
-                ))}
-              </div>
-              <div className="flex gap-2">
-                <button onClick={() => setShowBroadcastModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
-                  Cancel
-                </button>
-                <button
-                  onClick={async () => {
-                    if (!broadcastMessageId || broadcastRecipients.length === 0) return;
-                    setIsBroadcasting(true);
-                    // Server-composed, preset-only. See functions/src/staffMessagePolicy.
-                    try {
-                      const fn = httpsCallable<
-                        { studentUids: string[]; kind: string; messageId: string },
-                        { success: true; delivered: number }
-                      >(getFunctions(app), 'sendStaffNotification');
-                      await fn({
-                        studentUids: broadcastRecipients.map(s => s.user.uid),
-                        kind: 'broadcast',
-                        messageId: broadcastMessageId,
-                      });
-                    } catch (err) {
-                      logError('GCOverview.broadcast', err);
-                    }
-                    setIsBroadcasting(false);
-                    setShowBroadcastModal(false);
-                    setBroadcastMessageId('');
-                    // Reset audience to default for the next broadcast
-                    setBroadcastCurriculum('all');
-                    setBroadcastYearGroups(new Set());
-                  }}
-                  disabled={!broadcastMessageId || isBroadcasting || broadcastRecipients.length === 0}
-                  className="flex-1 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors dark:!bg-accent"
-                  style={{ backgroundColor: ACCENT }}
-                >
-                  {isBroadcasting
-                    ? 'Sending...'
-                    : broadcastRecipients.length === 0
-                      ? 'No recipients'
-                      : `Send to ${broadcastRecipients.length}`}
-                </button>
-              </div>
-            </MotionDiv>
-          </div>
-          );
-        })()}
-      </AnimatePresence>
-
-      {/* ─── Early Warning Alerts ──────────────────────────────────────── */}
-      {alerts.length > 0 && (
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: CUSTOM_EASE }}
-          className="rounded-2xl bg-white dark:bg-surface-paper border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] overflow-hidden"
-        >
-          {/* Alert header */}
-          <div className="flex items-center justify-between px-5 py-3.5 border-b border-zinc-100 dark:border-zinc-800/60">
-            <div className="flex items-center gap-2.5">
-              <AlertCircle size={16} className="text-rose-500" />
-              <span className="text-sm font-semibold text-zinc-800 dark:text-white">Early Warning Signals</span>
-            </div>
-            <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-wider">
-              {(() => {
-                const urgent = alerts.filter(a => a.severity === 'urgent').length;
-                const watch = alerts.filter(a => a.severity === 'watch').length;
-                const nudge = alerts.filter(a => a.severity === 'nudge').length;
-                return (
-                  <>
-                    {urgent > 0 && <span className="text-rose-500">{urgent} Urgent</span>}
-                    {watch > 0 && <span className="text-amber-500">{watch} Watch</span>}
-                    {nudge > 0 && <span className="text-blue-500">{nudge} Nudge</span>}
-                  </>
-                );
-              })()}
-            </div>
-          </div>
-
-          {/* Alert cards */}
-          <div className="divide-y divide-zinc-100 dark:divide-zinc-800/40">
-            {alerts.map((alert) => {
-              const severityConfig: Record<AlertSeverity, { dot: string; bg: string }> = {
-                urgent: { dot: 'bg-rose-500', bg: 'bg-rose-50/50 dark:bg-rose-500/5' },
-                watch: { dot: 'bg-amber-500', bg: 'bg-amber-50/50 dark:bg-amber-500/5' },
-                nudge: { dot: 'bg-blue-500', bg: 'bg-blue-50/50 dark:bg-blue-500/5' },
-              };
-              const cfg = severityConfig[alert.severity];
-
-              return (
-                <div
-                  key={alert.id}
-                  className={`flex items-center gap-4 px-5 py-3 ${cfg.bg} transition-colors`}
-                >
-                  {/* Severity dot + Avatar */}
-                  <div className={`w-2 h-2 rounded-full shrink-0 ${cfg.dot}`} />
-                  <Avatar
-                    seed={alert.studentAvatar}
-                    alt=""
-                    className="w-8 h-8 rounded-lg bg-zinc-200 dark:bg-zinc-700 shrink-0"
-                  />
-
-                  {/* Info */}
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-zinc-800 dark:text-white truncate">{alert.studentName}</span>
-                      <span className="text-zinc-300 dark:text-zinc-600">&middot;</span>
-                      <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400 truncate">{alert.title}</span>
-                    </div>
-                    <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5 truncate">{alert.description}</p>
-                  </div>
-
-                  {/* Actions */}
-                  <div className="flex items-center gap-1.5 shrink-0">
-                    <button
-                      onClick={() => onSelectStudent(alert.studentUid)}
-                      className="px-2.5 py-1.5 rounded-lg text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
-                    >
-                      <Eye size={12} className="inline mr-1" />
-                      View
-                    </button>
-                    {onDismissAlert && (
-                      <button
-                        onClick={() => onDismissAlert(alert)}
-                        className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
-                        title="Dismiss (will resurface if situation worsens)"
-                      >
-                        <X size={12} />
-                      </button>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </MotionDiv>
-      )}
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          ROW 1 — 4 Stat Cards (full width, 4 equal columns)
-          ═══════════════════════════════════════════════════════════════════ */}
-      <div className="grid grid-cols-3 gap-4">
-        {[
-          // Cohort-scoped like the two cards beside it — a school-wide count
-          // under a cohort-scoped heading is exactly the inconsistency this
-          // dashboard was reported for.
-          { label: 'Total Students', value: String(cohortScopedStudents.length), trend: null as number | null },
-          { label: 'Avg Progress', value: `${avgProgress.toFixed(0)}%`, trend: null },
-          { label: 'Blocks This Week', value: String(weeklyTrends.blocksThisWeek), trend: weeklyTrends.blocksTrend },
-        ].map((kpi, i) => (
-          <MotionDiv
-            key={kpi.label}
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: i * 0.04, ease: CUSTOM_EASE }}
-            className={CARD_STYLE_DARK_CLASS}
-            style={CARD_STYLE}
-          >
-            <p className={`text-[11px] font-medium uppercase tracking-widest mb-2 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{kpi.label}</p>
-            <p className="text-3xl font-medium text-zinc-900 dark:text-white">{kpi.value}</p>
-            {kpi.trend !== null ? (
-              <div className={`flex items-center gap-1 mt-2 text-xs font-medium ${kpi.trend >= 0 ? 'dark:!text-[#8AB592]' : 'dark:!text-[#D4A95C]'}`} style={{ color: kpi.trend >= 0 ? SAGE : WARM_AMBER }}>
-                {kpi.trend >= 0 ? <TrendingUp size={12} /> : <TrendingDown size={12} />}
-                <span>{kpi.trend > 0 ? '+' : ''}{kpi.trend}% vs last week</span>
-              </div>
-            ) : (
-              <div className="mt-2 h-4" />
-            )}
-          </MotionDiv>
-        ))}
-      </div>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          Unified Attention Section
-          ═══════════════════════════════════════════════════════════════════ */}
-      <MotionDiv
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.14, ease: CUSTOM_EASE }}
-        className={CARD_STYLE_DARK_CLASS}
-        style={CARD_STYLE}
-      >
-        <div className="flex items-start justify-between mb-1">
-          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Attention</p>
-          {needsAttentionCount > 0 && (
-            <p className={`text-3xl font-medium dark:!text-[#D4A95C]`} style={{ color: WARM_AMBER }}>{needsAttentionCount}</p>
-          )}
-        </div>
-
-        {needsAttentionCount === 0 ? (
-          <div className="text-center py-8">
-            <Sparkles size={24} className="mx-auto mb-2" style={{ color: ACCENT }} />
-            <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300">All students are engaged</p>
-            <p className={`text-xs mt-0.5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>No students drifting, at risk, or flagged</p>
-          </div>
-        ) : (
-          <>
-            <p className={`text-xs mb-5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
-              {[
-                driftingCount > 0 && `${driftingCount} drifting`,
-                atRiskCount > 0 && `${atRiskCount} at risk`,
-                flaggedOnlyCount > 0 && `${flaggedOnlyCount} flagged`,
-              ].filter(Boolean).join(' · ')}
-            </p>
-            <div className="space-y-1">
-              {attentionStudents.map(({ student, status, flag, daysSince }) => {
-                const stCfg = STATUS_CONFIG[status];
-                const StatusIcon = STATUS_ICONS[status];
-                return (
-                  <button
-                    key={student.user.uid}
-                    onClick={() => onSelectStudent(student.user.uid)}
-                    className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors text-left"
-                    aria-label={`View ${student.user.name}, status: ${stCfg.label}${flag ? ', flagged' : ''}`}
-                  >
-                    <Avatar seed={student.user.avatar} alt="" className="w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700 shrink-0" />
-                    <span className="text-sm font-medium text-zinc-800 dark:text-white truncate flex-1">{student.user.name}</span>
-                    <span
-                      className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0 ${stCfg.darkBgClass} ${stCfg.darkTextClass}`}
-                      style={{ backgroundColor: stCfg.bg, color: stCfg.text }}
-                      aria-label={`Status: ${stCfg.label}`}
-                    >
-                      <StatusIcon size={10} />
-                      {stCfg.label}
-                    </span>
-                    {flag && (
-                      <Flag
-                        size={12}
-                        fill={flag.priority === 'high' ? '#D97706' : ACCENT}
-                        style={{ color: flag.priority === 'high' ? '#D97706' : ACCENT }}
-                        className="shrink-0"
-                        aria-label={`Flagged: ${flag.priority} priority`}
-                      />
-                    )}
-                    <span className={`text-[10px] shrink-0 whitespace-nowrap ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
-                      {daysSince === Infinity ? 'No sessions' : daysSince === 0 ? 'Today' : daysSince === 1 ? '1 day ago' : `${daysSince}d ago`}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </>
-        )}
-      </MotionDiv>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          ROW 2+ — 2-column 1fr 1fr grid
-          ═══════════════════════════════════════════════════════════════════ */}
-      <div id="gc-analytics" className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-
-        {/* ─── ROW 2 LEFT: Daily Activity ──────────────────────────────── */}
-        <DailyActivityChart
-          aggregatedActivity={aggregatedActivity}
-          activityRange={activityRange}
-          onRangeChange={setActivityRange}
-        />
-
-        {/* ─── ROW 2 RIGHT: Key Dates & Events ───────────────────────── */}
-        <GCKeyEvents school={school} />
-
-        {/* ─── Recently Active (full width) ──── */}
-        <div className={CARD_STYLE_DARK_CLASS} style={{ ...CARD_STYLE, gridColumn: '1 / -1' }}>
-          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Activity</p>
-          <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Recently Active</p>
-          {recentlyActive.length === 0 ? (
-            <p className="text-sm text-zinc-400 italic">No recent activity.</p>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-              {recentlyActive.map(s => (
-                <button
-                  key={s.uid}
-                  onClick={() => onSelectStudent(s.uid)}
-                  className="flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors text-left"
-                >
-                  <Avatar seed={s.avatar} alt="" className="w-8 h-8 rounded-full bg-zinc-200 shrink-0" />
-                  <div className="min-w-0 flex-1">
-                    <p className="text-sm font-medium text-zinc-800 dark:text-white truncate">{s.name}</p>
-                    <p className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
-                      {s.blocksCompletedToday > 0 ? `${s.blocksCompletedToday} blocks today` : 'No blocks today'}
-                    </p>
-                  </div>
-                  <span className={`text-[10px] shrink-0 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{s.timeAgo}</span>
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* ─── Exam Calendar (left) ────────────────────────────── */}
-        <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
-          <div className="flex items-start justify-between mb-5">
-            <div>
-              <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Countdown</p>
-              <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Exam Calendar</p>
-            </div>
-            <div className="text-right">
-              <p className={`text-3xl font-bold ${TEXT_ACCENT_DARK}`} style={{ color: ACCENT }}>{daysUntilLC}</p>
-              <p className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>days</p>
-            </div>
-          </div>
-          {/* Month navigation */}
-          <div className="flex items-center justify-between mb-3">
-            <button onClick={handleCalPrev} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
-              <ChevronLeft size={16} style={{ color: NEUTRAL_GREY }} className={TEXT_NEUTRAL_DARK} />
-            </button>
-            <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400">{MONTH_NAMES[calMonth]} {calYear}</span>
-            <button onClick={handleCalNext} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors">
-              <ChevronRight size={16} style={{ color: NEUTRAL_GREY }} className={TEXT_NEUTRAL_DARK} />
-            </button>
-          </div>
-          {/* Day-of-week headers */}
-          <div className="grid grid-cols-7 gap-1 mb-1">
-            {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((d, i) => (
-              <span key={i} className={`text-center text-[9px] font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{d}</span>
-            ))}
-          </div>
-          {/* Calendar grid */}
-          <div className="grid grid-cols-7 gap-1">
-            {calendarDays.map((cell, i) => {
-              if (!cell.isCurrentMonth) {
-                return <div key={i} className="aspect-square" />;
-              }
-              const isToday = isCurrentMonth && cell.day === todayDate;
-              const isLC = lcDay !== null && cell.day === lcDay;
-              const dayEvents = eventsByDay[cell.day] || [];
-
-              return (
-                <div
-                  key={i}
-                  tabIndex={dayEvents.length > 0 ? -1 : undefined}
-                  className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative group outline-none ${
-                    !isToday && !isLC ? 'text-zinc-600 dark:text-zinc-400' : 'text-white rounded-lg'
-                  } ${dayEvents.length > 0 ? 'cursor-pointer' : ''}`}
-                  style={isToday ? { backgroundColor: ACCENT } : isLC ? { backgroundColor: '#DC2626' } : undefined}
-                >
-                  {cell.day}
-                  {dayEvents.length > 0 && (
-                    <>
-                      <div className="flex gap-0.5 absolute bottom-1">
-                        {dayEvents.slice(0, 3).map((ev, j) => (
-                          <div key={j} className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
-                        ))}
-                      </div>
-                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block group-focus:block z-50">
-                        <div className="bg-zinc-800 text-white text-[10px] font-medium rounded-lg px-2.5 py-1.5 whitespace-nowrap shadow-lg border border-zinc-700">
-                          {dayEvents.map((ev, j) => (
-                            <div key={j} className="flex items-center gap-1.5">
-                              <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
-                              {ev.title}
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-          {/* Legend */}
-          <div className={`flex flex-wrap gap-3 mt-3 text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
-            <div className="flex items-center gap-1.5">
-              <div className="w-3 h-3 rounded" style={{ backgroundColor: ACCENT }} />
-              <span>Today</span>
-            </div>
-            {lcDay !== null && (
-              <div className="flex items-center gap-1.5">
-                <div className="w-3 h-3 rounded bg-red-600" />
-                <span>LC Exam</span>
-              </div>
-            )}
-            {schoolEvents.length > 0 && (
-              <>
-                <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#EF4444' }} /><span>Exams</span></div>
-                <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#F59E0B' }} /><span>Deadlines</span></div>
-                <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#3B82F6' }} /><span>School</span></div>
-                <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#8B5CF6' }} /><span>Other</span></div>
-              </>
-            )}
-          </div>
-        </div>
-
-        {/* ─── Progress Breakdown (right, same row as calendar) ────── */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
-          className={CARD_STYLE_DARK_CLASS}
-          style={{ ...CARD_STYLE, display: 'flex', flexDirection: 'column' }}
-        >
-          <div className="flex items-baseline justify-between mb-5">
-            <div>
-              <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Distribution{cohortScopeLabel ? ` · ${cohortScopeLabel}` : ''}</p>
-              <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
-            </div>
-            <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
-          </div>
-          <div className="flex gap-4 flex-1 items-end">
-            {distribution.map((count, i) => {
-              const heightPct = (count / distributionMax) * 100;
-              const bucketLabels = ['0-25%', '25-50%', '50-75%', '75-100%'];
-              return (
-                <div key={i} className="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
-                  <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{count}</span>
-                  <div className="w-full relative flex-1 min-h-[200px]">
-                    {count > 0 ? (
-                      <MotionDiv
-                        className="absolute bottom-0 left-1 right-1 rounded-lg"
-                        style={{ backgroundColor: ACCENT }}
-                        initial={{ height: 0 }}
-                        animate={{ height: `${Math.max(heightPct, 8)}%` }}
-                        transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
-                      />
-                    ) : (
-                      <div className="absolute bottom-0 left-1 right-1 h-[2px] rounded-full bg-zinc-200 dark:bg-zinc-700" />
-                    )}
-                  </div>
-                  <span className={`text-xs ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{bucketLabels[i]}</span>
-                </div>
-              );
-            })}
-          </div>
-        </MotionDiv>
-
-        {/* ─── Subject-Level Gaps (full width span) ───────────── */}
-        {topGaps.length > 0 && (
-          <MotionDiv
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3, ease: CUSTOM_EASE }}
-            className={CARD_STYLE_DARK_CLASS}
-            style={{ ...CARD_STYLE, gridColumn: '1 / -1' }}
-          >
-            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Subject Analysis{cohortScopeLabel ? ` · ${cohortScopeLabel}` : ''}</p>
-            <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Subject-Level Gaps</p>
-            <div className="space-y-2.5">
-              {topGaps.map((gap, i) => {
-                const barPct = (gap.avgGap / maxAvgGap) * 100;
-                return (
-                  <div key={gap.subjectName} className="flex items-center gap-3">
-                    <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300 w-32 truncate shrink-0">{gap.subjectName}</span>
-                    <div className={`flex-1 h-4 rounded-full overflow-hidden ${TRACK_BG_DARK}`} style={{ backgroundColor: TRACK_BG }}>
-                      <MotionDiv
-                        className="h-full rounded-full"
-                        style={{ backgroundColor: ACCENT }}
-                        initial={{ width: 0 }}
-                        animate={{ width: `${barPct}%` }}
-                        transition={{ duration: 0.5, delay: 0.35 + i * 0.05, ease: CUSTOM_EASE }}
-                      />
-                    </div>
-                    <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300 w-20 text-right shrink-0">
-                      {gap.avgGap} pts <span className={`font-normal ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>({gap.studentCount})</span>
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-          </MotionDiv>
-        )}
-      </div>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          Subject Health (full width)
-          ═══════════════════════════════════════════════════════════════════ */}
-      <SubjectHealthPanel studentData={cohortScopedStudents} />
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          Student Table — DO NOT CHANGE
-          ═══════════════════════════════════════════════════════════════════ */}
-      <div id="gc-students" className="rounded-2xl bg-white dark:bg-surface-paper border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden">
-        {/* Table Controls */}
-        <div className="p-5 border-b border-zinc-100 dark:border-hairline space-y-3">
-          <div className="flex flex-col sm:flex-row gap-3">
-            <div className="relative flex-1">
-              <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search students..."
-                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-10 pr-4 text-zinc-900 dark:text-white text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-accent/50 transition-colors"
-              />
-            </div>
-            <button
-              onClick={() => setShowStatusGuide(prev => !prev)}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 border border-zinc-200 dark:border-zinc-700"
-            >
-              <AlertCircle size={16} />
-              Status Guide
-            </button>
-            <button
-              onClick={handleExportCSV}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${TEXT_ACCENT_DARK}`}
-              style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.08)', color: ACCENT }}
-            >
-              <Download size={16} />
-              Export CSV
-            </button>
-          </div>
-          {/* Cohort filter for this section lives at the top of the
-              dashboard (Row 0.5) so it's discoverable from any panel. */}
-
-          {/* Filter pills */}
-          <div className="flex flex-wrap gap-1.5">
-            {([
-              { key: 'all' as StatusFilter, label: 'All' },
-              { key: 'needs-attention' as StatusFilter, label: 'Needs Attention' },
-              { key: 'thriving' as StatusFilter, label: 'Thriving' },
-              { key: 'active' as StatusFilter, label: 'Active' },
-              { key: 'new' as StatusFilter, label: 'New' },
-              { key: 'drifting' as StatusFilter, label: 'Drifting' },
-              { key: 'at-risk' as StatusFilter, label: 'At Risk' },
-              { key: 'inactive' as StatusFilter, label: 'Inactive' },
-              { key: 'flagged' as StatusFilter, label: 'Flagged' },
-            ] as { key: StatusFilter; label: string }[]).map(f => {
-              const count = statusCounts[f.key] ?? 0;
-              const isActive = statusFilter === f.key;
-              return (
-                <button
-                  key={f.key}
-                  onClick={() => setStatusFilter(f.key)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
-                    isActive
-                      ? 'text-white'
-                      : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-surface-soft'
-                  }`}
-                  style={isActive ? { backgroundColor: ACCENT } : { backgroundColor: 'transparent' }}
-                >
-                  {f.label}{f.key !== 'all' ? ` (${count})` : ''}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Status Guide (collapsible) */}
-        <AnimatePresence>
-          {showStatusGuide && (
-            <MotionDiv
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="overflow-hidden"
-            >
-              <div className="rounded-xl border border-zinc-200 dark:border-zinc-700 p-5 mb-4 bg-zinc-50 dark:bg-zinc-800/30">
-                <p className="text-sm font-semibold text-zinc-800 dark:text-white mb-3">What do the statuses mean?</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {[
-                    { status: 'New', color: COLORS.accent, desc: 'Signed up within the last 7 days. Give them time to explore.' },
-                    { status: 'Active', color: '#3B82F6', desc: 'Logged a study session in the past 7 days. On track.' },
-                    { status: 'Thriving', color: '#3A8D5F', desc: 'Active with a 5+ day streak, 3+ modules completed, or 3+ consecutive active weeks.' },
-                    { status: 'Drifting', color: '#F59E0B', desc: '8\u201314 days since last session, or lost a strong streak recently. May need a nudge.' },
-                    { status: 'At Risk', color: '#EF4444', desc: '15+ days inactive, lost a 7+ day streak, or 3+ weeks with zero sessions. Needs attention.' },
-                    { status: 'Inactive', color: '#71717A', desc: 'Past the 7-day new window but has never logged a single study session.' },
-                  ].map(s => (
-                    <div key={s.status} className="flex gap-3 items-start">
-                      <div className="w-2.5 h-2.5 rounded-full mt-1 shrink-0" style={{ backgroundColor: s.color }} />
-                      <div>
-                        <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">{s.status}</p>
-                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-relaxed">{s.desc}</p>
-                      </div>
-                    </div>
+              <div className="gc8-sheet-group">
+                <p className="gc8-label">Audience</p>
+                <SelectionBar
+                  label="Audience"
+                  size="md"
+                  value={broadcastCurriculum}
+                  onChange={lvl => { setBroadcastCurriculum(lvl); setBroadcastYearGroups(new Set()); }}
+                  options={[{ value: 'all', label: 'Everyone' }, { value: 'junior', label: 'Junior Cycle' }, { value: 'senior', label: 'Senior Cycle' }]}
+                />
+                <div className="gc8-yearbtns">
+                  <Button size="sm" aria-pressed={broadcastYearGroups.size === 0} onClick={selectAllYears}>All years</Button>
+                  {broadcastYearOptions.map(yg => (
+                    <Button key={yg} size="sm" aria-pressed={broadcastYearGroups.has(yg)} onClick={() => toggleYear(yg)}>
+                      {yearWords(yg)} <span className="gc8-count">{studentData.filter(s => s.yearGroup === yg).length}</span>
+                    </Button>
                   ))}
                 </div>
               </div>
-            </MotionDiv>
-          )}
-        </AnimatePresence>
+              <div className="gc8-sheet-group" ref={broadcastMessagesRef}>
+                <p className="gc8-label">Choose a message for {audienceLabel}</p>
+                <div className="gc8-msgs" role="radiogroup" aria-label="Message">
+                  {STAFF_BROADCASTS.map(message => (
+                    <ChoiceTile
+                      key={message.id}
+                      kind="one"
+                      chosen={broadcastMessageId === message.id}
+                      label={message.text}
+                      onClick={() => setBroadcastMessageId(message.id)}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </Sheet>
+        );
+      })()}
 
-        {/* Table \u2014 Phase 6 makes the middle columns curriculum-aware:
-             - senior view: existing CAO Current / Target / Gap
-             - junior view: Subjects covered / At Merit+ / Target Merit+
-             - mixed (curriculumFilter='all') with mixed cohort: drop the
-               curriculum-specific columns entirely; show only universals.
-            Outer columns (Student, Progress, Streak, Status) stay constant. */}
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-zinc-200 dark:border-hairline text-left bg-zinc-50/50 dark:bg-zinc-800/20">
-                {[
-                  { key: 'name' as SortKey, label: 'Student' },
-                  { key: 'progress' as SortKey, label: 'Progress' },
-                ].map(col => (
-                  <th
-                    key={col.key}
-                    onClick={() => handleSort(col.key)}
-                    className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap"
-                  >
-                    {col.label}{sortIndicator(col.key)}
-                  </th>
-                ))}
-                {/* Attainment columns.
-                    These used to be dropped ENTIRELY whenever the curriculum
-                    filter was 'all' — which is the default on every page load —
-                    so the most common view of the dashboard had no points column
-                    anywhere, even in an all-senior school. That is the literal
-                    "it says they have no points" complaint.
-                    Now they always render, with headings that match whoever is
-                    actually in the cohort and per-row values underneath. */}
-                <th onClick={() => handleSort('cao-current')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap" title={attainmentHeadings.hint}>{attainmentHeadings.current}{sortIndicator('cao-current')}</th>
-                <th onClick={() => handleSort('cao-target')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap" title={attainmentHeadings.hint}>{attainmentHeadings.target}{sortIndicator('cao-target')}</th>
-                <th onClick={() => handleSort('gap')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap" title={attainmentHeadings.hint}>{attainmentHeadings.gap}{sortIndicator('gap')}</th>
-                <th onClick={() => handleSort('streak')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">Streak{sortIndicator('streak')}</th>
-                <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Status</th>
-                {gcFlags && <th className="px-2 py-3 w-10"></th>}
-                {onDeleteStudent && <th className="px-3 py-3 w-10"></th>}
-              </tr>
-            </thead>
-            <tbody>
-              {filtered.map((row, i) => {
-                const gap = row.targetCAO - row.currentCAO;
-                const uid = row.student.user.uid;
-                const rowFlag = gcFlags?.getFlagData(uid);
-                const rowFlagged = !!rowFlag;
-                return (
-                  <MotionDiv
-                    key={uid}
-                    as="tr"
-                    initial={{ opacity: 0, y: 4 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.2, delay: i * 0.02 }}
-                    onClick={() => onSelectStudent(uid)}
-                    className="border-b border-zinc-100 dark:border-zinc-800/50 cursor-pointer hover:bg-zinc-50 dark:hover:bg-zinc-800/30 transition-colors group"
-                    style={{ display: 'table-row' }}
-                  >
-                    <td className="px-5 py-4 align-middle">
-                      <div className="flex items-center gap-3">
-                        <Avatar seed={row.student.user.avatar} alt="" className="w-8 h-8 rounded-full bg-zinc-200 ring-2 ring-zinc-100 dark:ring-zinc-800 hover:ring-[rgba(var(--accent),0.6)] hover:scale-110 transition-all cursor-pointer" />
-                        <span className="font-medium text-zinc-800 dark:text-white whitespace-nowrap">{row.student.user.name}</span>
-                      </div>
-                    </td>
-                    <td className="px-5 py-4 align-middle">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium text-zinc-700 dark:text-zinc-200">{row.progress.toFixed(0)}%</span>
-                        <div className="w-16 h-1.5 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
-                          <div
-                            className="h-full bg-[var(--accent-hex)] rounded-full transition-all"
-                            style={{ width: `${row.progress}%` }}
-                          />
-                        </div>
-                      </div>
-                    </td>
-                    {/* Per-row, not per-filter: a mixed school shows each
-                        student in their own terms \u2014 CAO points for senior,
-                        Merit+ counts for JC \u2014 instead of hiding the column or
-                        printing a JC student's non-existent CAO as 0. */}
-                    {row.isJunior ? (
-                      <>
-                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered ? `${row.topBandsCount}/${row.subjectsCovered}` : '\u2014'}</td>
-                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered ? `${row.targetTopBandsCount}/${row.subjectsCovered}` : '\u2014'}</td>
-                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered ? `+${Math.max(0, row.targetTopBandsCount - row.topBandsCount)}` : '\u2014'}</td>
-                      </>
-                    ) : (
-                      <>
-                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.hasGrades ? row.currentCAO : '\u2014'}</td>
-                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.hasGrades ? row.targetCAO : '\u2014'}</td>
-                        <td className="px-5 py-4 align-middle">
-                          {row.hasGrades ? gapPill(gap) : '\u2014'}
-                        </td>
-                      </>
-                    )}
-                    <td className="px-5 py-4 align-middle">
-                      <div className="flex items-center gap-1">
-                        <Flame size={14} className={row.streak > 0 ? 'text-accent' : 'text-zinc-300 dark:text-zinc-600'} />
-                        <span className="text-zinc-600 dark:text-zinc-300">{row.streak}</span>
-                      </div>
-                    </td>
-                    <td className="px-5 py-4 align-middle">{statusPill(row.status)}</td>
-                    {gcFlags && (
-                      <td className="px-2 py-4 align-middle relative">
-                        <button
-                          onClick={(e) => openFlagPopover(uid, e)}
-                          className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all ${
-                            rowFlagged
-                              ? ''
-                              : 'frame-reveal text-zinc-300 dark:text-zinc-600 hover:text-zinc-500 dark:hover:text-zinc-400'
-                          }`}
-                          aria-label={rowFlagged ? `Edit flag for ${row.student.user.name}` : `Flag ${row.student.user.name}`}
-                          title={rowFlagged ? 'Edit flag' : 'Flag student'}
-                        >
-                          <Flag
-                            size={14}
-                            fill={rowFlagged ? (rowFlag!.priority === 'high' ? '#D97706' : ACCENT) : 'none'}
-                            style={rowFlagged ? { color: rowFlag!.priority === 'high' ? '#D97706' : ACCENT } : undefined}
-                          />
-                        </button>
-                        {/* Flag popover */}
-                        <AnimatePresence>
-                          {flagPopoverUid === uid && (
-                            <MotionDiv
-                              ref={flagPopoverRef}
-                              initial={{ opacity: 0, scale: 0.95, y: -4 }}
-                              animate={{ opacity: 1, scale: 1, y: 0 }}
-                              exit={{ opacity: 0, scale: 0.95, y: -4 }}
-                              transition={{ duration: 0.15 }}
-                              className="absolute right-0 top-full mt-1 z-50 w-72 bg-white dark:bg-surface-paper rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-xl p-4"
-                              role="dialog"
-                              aria-label={rowFlagged ? 'Edit student flag' : 'Flag student'}
-                              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-                            >
-                              <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-3">
-                                {rowFlagged ? 'Edit Flag' : 'Flag Student'}
-                              </p>
-                              <div className="flex items-center gap-2 mb-3">
-                                <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Priority:</span>
-                                <HorizontalTabs
-                                  variant="pill"
-                                  size="sm"
-                                  label="Flag priority"
-                                  value={flagPriority}
-                                  onChange={next => setFlagPriority(next as FlagPriority)}
-                                  options={[{ value: 'normal', label: 'Normal' }, { value: 'high', label: 'High' }]}
-                                />
-                              </div>
-                              <div className="flex gap-2">
-                                {rowFlagged && (
-                                  <button
-                                    onClick={async (e) => { e.stopPropagation(); await gcFlags.unflagStudent(uid); setFlagPopoverUid(null); }}
-                                    className="px-3 py-1.5 rounded-lg text-xs font-medium text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
-                                  >
-                                    Remove Flag
-                                  </button>
-                                )}
-                                <button
-                                  onClick={async (e) => {
-                                    e.stopPropagation();
-                                    if (rowFlagged) {
-                                      await gcFlags.updateFlagPriority(uid, flagPriority);
-                                    } else {
-                                      await gcFlags.flagStudent(uid, flagPriority);
-                                    }
-                                    setFlagPopoverUid(null);
-                                  }}
-                                  className="ml-auto px-3 py-1.5 rounded-lg text-xs font-semibold text-white transition-colors"
-                                  style={{ backgroundColor: ACCENT }}
-                                >
-                                  {rowFlagged ? 'Update' : 'Flag Student'}
-                                </button>
-                              </div>
-                            </MotionDiv>
-                          )}
-                        </AnimatePresence>
-                      </td>
-                    )}
-                    {(onDeleteStudent || onResetPassword) && (
-                      <td className="px-3 py-4 align-middle">
-                        <div className="flex items-center gap-1">
-                          {onResetPassword && (
-                            <button
-                              onClick={(e) => { e.stopPropagation(); onResetPassword(row.student.user.uid); }}
-                              className="w-7 h-7 rounded-lg flex items-center justify-center text-zinc-300 dark:text-zinc-600 hover:text-accent dark:hover:text-accent hover:bg-[#FDEEDF] dark:hover:bg-accent/10 transition-colors"
-                              title="Reset password"
-                            >
-                              <KeyRound size={14} />
-                            </button>
-                          )}
-                          {onDeleteStudent && (
-                            <button
-                              onClick={(e) => { e.stopPropagation(); onDeleteStudent(row.student.user); }}
-                              className="w-7 h-7 rounded-lg flex items-center justify-center text-zinc-300 dark:text-zinc-600 hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
-                              title="Delete student"
-                            >
-                              <Trash2 size={14} />
-                            </button>
-                          )}
-                        </div>
-                      </td>
-                    )}
-                  </MotionDiv>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-
-        {filtered.length === 0 && (
-          <div className="text-center py-16">
-            <UserX size={32} className="mx-auto text-zinc-300 dark:text-zinc-600 mb-3" />
-            <p className="text-zinc-500 dark:text-zinc-400 text-sm font-medium">
-              {studentData.length === 0
-                ? 'No students have signed up yet.'
-                : curriculumFilter === 'junior' && cohortCurriculumCounts.junior === 0
-                  ? 'No Junior Cycle students yet.'
-                  : curriculumFilter === 'senior' && cohortCurriculumCounts.senior === 0
-                    ? 'No Senior Cycle students yet.'
-                    : 'No students match your filters.'}
-            </p>
-            <p className="text-zinc-400 dark:text-zinc-500 text-xs mt-1">
-              {studentData.length === 0
-                ? 'Students will appear here once they register.'
-                : curriculumFilter === 'junior' && cohortCurriculumCounts.junior === 0
-                  ? 'Junior Cycle support is new — when 1st/2nd/3rd-year students sign up they\'ll appear here.'
-                  : curriculumFilter === 'senior' && cohortCurriculumCounts.senior === 0
-                    ? 'When 5th/6th-year students sign up they\'ll appear here.'
-                    : 'Try adjusting your search or filter criteria.'}
-            </p>
-          </div>
-        )}
-      </div>
-
-      {/* Export Modal */}
+      {/* Export: the four parts, CSV or PDF */}
       <GCExportModal
         isOpen={showExportModal}
         onClose={() => setShowExportModal(false)}
@@ -1801,39 +990,440 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         allCourses={allCourses}
         school={school}
       />
-    </div>
+
+      {/* The status guide: each status in its own words, marked in ink */}
+      <Sheet open={showStatusGuide} title="Status guide" onClose={() => setShowStatusGuide(false)}>
+        <div className="gc8-sheet-body">
+          <h3 className="gc8-h">What do the statuses mean?</h3>
+          <div className="gc8-guide">
+            {STATUS_GUIDE.map(s => (
+              <div key={s.status}>
+                <StatusDot status={s.status} />
+                <span className="gc8-guide-copy"><span className="gc8-person">{STATUS_WORDS[s.status]}</span><span className="gc8-sub">{s.desc}</span></span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Sheet>
+
+      {/* Filter students: the nine statuses and the sort, and how many you will see */}
+      <Sheet
+        open={filterOpen}
+        title="Filter students"
+        titleSize="small"
+        onClose={() => setFilterOpen(false)}
+        actions={<TextButton tone="quiet" onClick={() => { setDraftStatus('all'); setDraftSortKey('name'); setDraftSortDir('asc'); }}>Reset</TextButton>}
+        footer={
+          <Button kind="main" size="lg" block onClick={() => {
+            setStatusFilter(draftStatus);
+            setSortKey(draftSortKey);
+            setSortDir(draftSortDir);
+            setFilterOpen(false);
+          }}>
+            {`Show ${draftCount} ${draftCount === 1 ? 'student' : 'students'}`}
+          </Button>
+        }
+      >
+        <div className="gc8-sheet-body">
+          <div className="gc8-sheet-group">
+            <p className="gc8-label">Status</p>
+            <div className="gc8-grid2" role="radiogroup" aria-label="Status">
+              {STATUS_FILTERS.map(f => {
+                const count = statusCounts[f.key] ?? 0;
+                return (
+                  <ChoiceTile
+                    key={f.key}
+                    kind="one"
+                    chosen={draftStatus === f.key}
+                    label={f.label}
+                    meta={count === 0 ? 'None' : `${count} ${count === 1 ? 'student' : 'students'}`}
+                    onClick={() => setDraftStatus(f.key)}
+                  />
+                );
+              })}
+            </div>
+          </div>
+          <div className="gc8-sheet-group">
+            <p className="gc8-label">Sort by</p>
+            <Menu block label="Sort by" value={draftSortKey} onChange={value => setDraftSortKey(value as SortKey)} options={sortOptions} />
+            <SelectionBar
+              label="Order"
+              value={draftSortDir}
+              onChange={value => setDraftSortDir(value as SortDir)}
+              options={draftSortKey === 'name'
+                ? [{ value: 'asc', label: 'A to Z' }, { value: 'desc', label: 'Z to A' }]
+                : [{ value: 'desc', label: 'Highest first' }, { value: 'asc', label: 'Lowest first' }]}
+            />
+          </div>
+        </div>
+      </Sheet>
+
+      {/* "All …": the whole of a list the page shows the first few of */}
+      <Sheet open={!!allListSheet} title={allListSheet?.title ?? ''} onClose={() => setAllList(null)}>
+        {allList === 'gaps'
+          ? <div className="gc8-pgaps">{topGaps.map(gapRowPhone)}</div>
+          : <List className={(allListSheet && 'className' in allListSheet ? allListSheet.className : undefined) ?? 'gc8-list'}>{allListSheet?.rows}</List>}
+      </Sheet>
+    </>
+  );
+
+  // ─── Students, a place of its own on a phone ────────────────────────────
+  if (place === 'students' && !wide) {
+    return (
+      <>
+        <section className="gc8-head" aria-labelledby="gc8-students-title">
+          <div className="gc8-head-row">
+            <h1 id="gc8-students-title" className="gc8-name">Students</h1>
+            {statusGuideLink}
+          </div>
+          {cohortScopeLabel && <p className="gc8-sub">Showing: {cohortScopeLabel}</p>}
+        </section>
+        <section className="gc8-sec">
+          {searchField}
+          <Button block arrow="menu" className="gc8-filterbtn" aria-label={`Filter and sort students: ${statusFilterLabel}, ${sortWords}`} onClick={openFilterSheet}>
+            {statusFilterLabel} · {sortWords}
+          </Button>
+          <ul className="ui-list gc8-list">{filtered.map(studentRowPhone)}</ul>
+          {emptyStudents}
+          <div className="gc8-best">
+            <Button onClick={handleExportCSV}>Export list</Button>
+          </div>
+        </section>
+        {sheets}
+      </>
+    );
+  }
+
+  // ─── The Overview: every part of today's page, in today's order ──────────
+  const warningsSection = alerts.length > 0 ? (
+    <section className="gc8-sec" aria-labelledby="gc8-warnings">
+      <div className="gc8-sechead"><h2 id="gc8-warnings" className="gc8-h">Early warning signals</h2><span className="gc8-meta">{alertCounts}</span></div>
+      {wide
+        ? <div className="gc8-warns">{alerts.slice(0, firstFew).map(warningLaptopRow)}</div>
+        : <List className="gc8-list">{alerts.slice(0, firstFew).map(alert => warningRow(alert, false))}</List>}
+      {alerts.length > firstFew && (
+        <TextButton className="gc8-more" arrow="forward" onClick={() => setAllList('warnings')}>{`All ${alerts.length} warnings`}</TextButton>
+      )}
+    </section>
+  ) : null;
+
+  const attentionSection = (
+    <section className="gc8-sec" aria-labelledby="gc8-attention">
+      <div className="gc8-sechead"><h2 id="gc8-attention" className="gc8-h">Attention</h2>{needsAttentionCount > 0 && <span className="gc8-meta">{attentionMeta}</span>}</div>
+      {needsAttentionCount === 0 ? (
+        <div className="gc8-empty"><b>All students are engaged</b>No students drifting, at risk, or flagged</div>
+      ) : (
+        <>
+          <List className={`gc8-list${wide ? ' gc8-att' : ''}`}>{attentionStudents.slice(0, firstFew).map(attentionRow)}</List>
+          {attentionStudents.length > firstFew && (
+            <TextButton className="gc8-more" arrow="forward" onClick={() => setAllList('attention')}>{`All ${attentionStudents.length}`}</TextButton>
+          )}
+        </>
+      )}
+    </section>
+  );
+
+  const activitySection = (
+    <section id="gc-analytics" className="gc8-sec">
+      <DailyActivityChart aggregatedActivity={aggregatedActivity} activityRange={activityRange} onRangeChange={setActivityRange} wide={wide} />
+    </section>
+  );
+
+  const recentSection = (
+    <section className="gc8-sec" aria-labelledby="gc8-recent">
+      <div className="gc8-sechead">
+        <div className="gc8-sechead-col"><p className="gc8-label">Activity</p><h2 id="gc8-recent" className="gc8-h">Recently active</h2></div>
+        {wide && recentlyActive.length > 0 && <span className="gc8-meta">{`The last ${recentlyActive.length} ${recentlyActive.length === 1 ? 'student' : 'students'} to study`}</span>}
+      </div>
+      {recentlyActive.length === 0 ? (
+        <p className="gc8-empty">No recent activity.</p>
+      ) : wide ? (
+        <div className="gc8-recent">
+          {recentlyActive.map(s => (
+            <button key={s.uid} type="button" className="ui-part gc8-ra" onClick={() => onSelectStudent(s.uid)}>
+              <StudentArt seed={s.avatar} size={32} />
+              <span className="gc8-ra-copy">
+                <span className="gc8-person" title={s.name}>{s.name}</span>
+                <span className="gc8-meta">{s.blocksCompletedToday > 0 ? `${s.blocksCompletedToday} ${s.blocksCompletedToday === 1 ? 'block' : 'blocks'} today` : 'None today'}</span>
+              </span>
+              <span className="gc8-meta">{s.timeAgo}</span>
+            </button>
+          ))}
+        </div>
+      ) : (
+        <>
+          <List className="gc8-list">{recentlyActive.slice(0, firstFew).map(recentRow)}</List>
+          {recentlyActive.length > firstFew && <TextButton className="gc8-more" arrow="forward" onClick={() => setAllList('recent')}>{`All ${recentlyActive.length}`}</TextButton>}
+        </>
+      )}
+    </section>
+  );
+
+  // The one live orange figure is the countdown beside the Exam calendar (board); the one at the top of
+  // a laptop's page is ink.
+  const countdown = (big: boolean, live = true) => (
+    <p className={`gc8-countdown${big ? ' gc8-countdown--big' : ''}`}>
+      <span className={`gc8-num${live ? ' gc8-live' : ''}`}>{daysUntilLC}</span>
+      <span className="gc8-meta">days to the{big ? ' ' : <br />}Leaving Cert{big ? <><br />{lcDateWords}</> : null}</span>
+    </p>
+  );
+  const calendarSection = (
+    <section className="gc8-sec" aria-labelledby="gc8-cal">
+      <div className="gc8-sechead">
+        <div className="gc8-sechead-col"><p className="gc8-label">Countdown</p><h2 id="gc8-cal" className="gc8-h">Exam calendar</h2></div>
+        {wide ? <span className="gc8-meta">Choose a day to see what is on</span> : countdown(false)}
+      </div>
+      <GCCalendar events={schoolEvents} months={twoMonths ? 2 : 1} beside={wide} countdown={wide ? countdown(true) : undefined} />
+    </section>
+  );
+
+  const distributionSection = (
+    <section className="gc8-sec" aria-labelledby="gc8-dist">
+      <div className="gc8-sechead">
+        <div className="gc8-sechead-col"><p className="gc8-label">Distribution{cohortScopeLabel ? ` · ${cohortScopeLabel}` : ''}</p><h2 id="gc8-dist" className="gc8-h">Progress breakdown</h2></div>
+        <span className="gc8-meta">{distributionTotal} students</span>
+      </div>
+      <div className="gc8-dist" role="img" aria-label={`Students by progress: ${['0–25%', '25–50%', '50–75%', '75–100%'].map((b, i) => `${b} ${distribution[i]}`).join(', ')}`}>
+        {distribution.map((count, i) => (
+          <div key={i}>
+            <span className="gc8-readout">{count}</span>
+            <i style={{ height: count > 0 ? `${Math.max((count / distributionMax) * 80, 6)}%` : 0 }} />
+          </div>
+        ))}
+      </div>
+      <div className="gc8-distx" aria-hidden="true">{['0–25%', '25–50%', '50–75%', '75–100%'].map(b => <span key={b}>{b}</span>)}</div>
+    </section>
+  );
+
+  const gapsSection = topGaps.length > 0 ? (
+    <section className="gc8-sec" aria-labelledby="gc8-gaps">
+      <div className="gc8-sechead">
+        <div className="gc8-sechead-col"><p className="gc8-label">Subject analysis{cohortScopeLabel ? ` · ${cohortScopeLabel}` : ''}</p><h2 id="gc8-gaps" className="gc8-h">Subject-level gaps</h2></div>
+        <span className="gc8-meta">{wide ? 'Points to target · students' : 'Points to target'}</span>
+      </div>
+      {wide ? (
+        <div className="gc8-gaps">
+          {topGaps.map(gap => (
+            <div key={gap.subjectName} className="gc8-gaprow">
+              <SubjectAvatar subject={gap.subjectName} className="gc8-art gc8-art--28" />
+              <span>{gap.subjectName}</span>
+              <span className="gc8-bar"><i style={{ width: `${(gap.avgGap / maxAvgGap) * 100}%` }} /></span>
+              <span className="gc8-gpts"><span className="gc8-strong">{gap.avgGap}</span><small className="gc8-unit">pts</small></span>
+              <span className="gc8-meta gc8-n">{gap.studentCount}</span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <>
+          <div className="gc8-pgaps">{topGaps.slice(0, 4).map(gapRowPhone)}</div>
+          {topGaps.length > 4 && <TextButton className="gc8-more" arrow="forward" onClick={() => setAllList('gaps')}>{`All ${topGaps.length} subjects`}</TextButton>}
+        </>
+      )}
+    </section>
+  ) : null;
+
+  const studentsLaptop = (
+    <section id="gc-students" className="gc8-sec" aria-labelledby="gc8-all">
+      <div className="gc8-sechead">
+        <h2 id="gc8-all" className="gc8-h">All students</h2>
+        <div className="gc8-row-x">{searchField}{statusGuideLink}<Button onClick={handleExportCSV}>Export list</Button></div>
+      </div>
+      <div className="gc8-filts" role="group" aria-label="Status">
+        {STATUS_FILTERS.map(f => (
+          <Button key={f.key} size="sm" aria-pressed={statusFilter === f.key} onClick={() => setStatusFilter(f.key)}>
+            {f.label} <span className="gc8-count">{statusCounts[f.key] ?? 0}</span>
+          </Button>
+        ))}
+      </div>
+      {/* The full table from 1200px; beside the sidebar on a narrower screen its nine columns do not fit,
+          so the students are the phone's rows there (each opens the student, whose page has flag,
+          reset and delete). */}
+      {!twoMonths ? <ul className="ui-list gc8-list">{filtered.map(studentRowPhone)}</ul> : (
+      <div className="gc8-tablewrap">
+        <div className="gc8-table" role="table" aria-label="All students">
+          <div className="gc8-tr gc8-tr--head" role="row">
+            <span role="columnheader">{sortHead('name', 'Student')}</span>
+            <span role="columnheader">{sortHead('progress', 'Progress')}</span>
+            <span role="columnheader">{sortHead('cao-current', attainmentHeadings.current, true, attainmentHeadings.hint)}</span>
+            <span role="columnheader">{sortHead('cao-target', attainmentHeadings.target, true, attainmentHeadings.hint)}</span>
+            <span role="columnheader">{sortHead('gap', attainmentHeadings.gap, true, attainmentHeadings.hint)}</span>
+            <span role="columnheader">{sortHead('streak', 'Streak', true)}</span>
+            <span role="columnheader" className="gc8-label">Status</span>
+            <span role="columnheader"><span className="sr-only">Flag</span></span>
+            <span role="columnheader"><span className="sr-only">Actions</span></span>
+          </div>
+          {filtered.map(row => {
+            const gap = row.targetCAO - row.currentCAO;
+            const uid = row.student.user.uid;
+            const rowFlag = gcFlags?.getFlagData(uid);
+            const dash = <span className="gc8-dim">–</span>;
+            return (
+              <div key={uid} className="gc8-tr" role="row">
+                <span role="cell">
+                  <button type="button" className="ui-part gc8-stu" onClick={() => onSelectStudent(uid)}>
+                    <StudentArt seed={row.student.user.avatar} size={32} /><span title={row.student.user.name}>{row.student.user.name}</span>
+                  </button>
+                </span>
+                <span role="cell" className="gc8-prog"><Pct value={row.progress} /><span className="gc8-bar gc8-bar--thin"><i style={{ width: `${row.progress}%` }} /></span></span>
+                {/* Per-row, not per-filter: a mixed school shows each
+                    student in their own terms — CAO points for senior,
+                    Merit+ counts for JC — instead of hiding the column or
+                    printing a JC student's non-existent CAO as 0. */}
+                {row.isJunior ? (
+                  <>
+                    <span role="cell" className="gc8-n">{row.subjectsCovered ? `${row.topBandsCount} / ${row.subjectsCovered}` : dash}</span>
+                    <span role="cell" className="gc8-n">{row.subjectsCovered ? `${row.targetTopBandsCount} / ${row.subjectsCovered}` : dash}</span>
+                    <span role="cell" className="gc8-n">{row.subjectsCovered ? `+${Math.max(0, row.targetTopBandsCount - row.topBandsCount)}` : dash}</span>
+                  </>
+                ) : (
+                  <>
+                    <span role="cell" className="gc8-n">{row.hasGrades ? row.currentCAO : dash}</span>
+                    <span role="cell" className="gc8-n">{row.hasGrades ? row.targetCAO : dash}</span>
+                    <span role="cell" className="gc8-n">{row.hasGrades ? `${gap > 0 ? '+' : ''}${gap}` : dash}</span>
+                  </>
+                )}
+                <span role="cell" className="gc8-n">
+                  {row.streak > 0
+                    ? <span className="gc8-streak"><Flame className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" />{row.streak}</span>
+                    : <span className="gc8-dim">{row.streak}</span>}
+                </span>
+                <span role="cell"><StatusWords status={row.status} /></span>
+                <span role="cell">{rowFlag ? <Flag className="ui-icon gc8-flag" width={16} height={16} strokeWidth={2} aria-label={`Flagged: ${rowFlag.priority} priority`} /> : null}</span>
+                <span role="cell">{rowMenu(row)}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      )}
+      {emptyStudents}
+    </section>
+  );
+
+  const studentsPhone = (
+    <section className="gc8-sec" aria-labelledby="gc8-all">
+      <div className="gc8-sechead"><h2 id="gc8-all" className="gc8-h">All students</h2></div>
+      <List boxed>
+        <Row
+          title={`See all ${cohortScopedStats.length} ${cohortScopedStats.length === 1 ? 'student' : 'students'}`}
+          meta="Search, filter by status, sort"
+          onPress={onOpenStudents}
+        />
+      </List>
+      <div className="gc8-best">
+        <p className="gc8-label">Best on a laptop</p>
+        <p className="gc8-sub">The full table with points, targets and gaps side by side, and exporting it.</p>
+      </div>
+    </section>
+  );
+
+  return (
+    <>
+      <section id="gc-overview" className="gc8-hero" aria-labelledby="gc8-greeting">
+        <div className="gc8-head">
+          <h1 id="gc8-greeting" className="gc8-title">{greeting}</h1>
+          {wide
+            ? <p className="gc8-sub">{getSchoolName(school)}.{needsAttentionCount > 0 ? ` ${needsAttentionCount} ${needsAttentionCount === 1 ? 'student' : 'students'} could do with a look today.` : ''}</p>
+            : <p className="gc8-sub">{daysUntilLC} days to the Leaving Cert.{dataAsOf ? ` Data as of ${dataAsOf}.` : ''}</p>}
+          {!wide && notice && <p className="gc8-sub gc8-strong">{notice}</p>}
+        </div>
+        {wide && (
+          <div className="gc8-hero-end">
+            {countdown(false, false)}
+            <div className="gc8-row-x">
+              <Button onClick={() => setShowExportModal(true)}>Export</Button>
+              <Button onClick={() => setShowBroadcastModal(true)}>Broadcast</Button>
+            </div>
+          </div>
+        )}
+      </section>
+
+      {wide ? (
+        <div className="gc8-filter">
+          <span className="gc8-label">Showing</span>
+          {cohortMenus}
+          {resetCohort}
+          <span className="gc8-meta">{countLine}</span>
+        </div>
+      ) : (
+        <section className="gc8-sec">
+          <div className="gc8-row-x">{cohortMenus}{resetCohort}</div>
+          <p className="gc8-meta">{countLine}</p>
+          <div className="gc8-pair">
+            <Button onClick={() => setShowBroadcastModal(true)}>Broadcast</Button>
+            <Button onClick={() => setShowExportModal(true)}>Export</Button>
+          </div>
+        </section>
+      )}
+
+      {wide ? (
+        <div className="gc8-figs">
+          <div><p className="gc8-label">Total students</p><p className="gc8-num">{cohortScopedStudents.length}</p><p className="gc8-meta">In this view</p></div>
+          <div><p className="gc8-label">Average progress</p><p className="gc8-num"><Fig value={avgProgress.toFixed(0)} unit="%" /></p><p className="gc8-meta">Through their modules</p></div>
+          <div><p className="gc8-label">Blocks this week</p><p className="gc8-num">{weeklyTrends.blocksThisWeek}</p><p className="gc8-meta">{blocksFigure}</p></div>
+        </div>
+      ) : (
+        <div className="gc8-figrows">
+          <div><span className="gc8-sub">Students</span><span className="gc8-num">{cohortScopedStudents.length}</span></div>
+          <div><span className="gc8-sub">Average progress</span><span className="gc8-num"><Fig value={avgProgress.toFixed(0)} unit="%" /></span></div>
+          <div><span className="gc8-figrows-col"><span className="gc8-sub">Blocks this week</span><span className="gc8-meta">{blocksFigure}</span></span><span className="gc8-num">{weeklyTrends.blocksThisWeek}</span></div>
+        </div>
+      )}
+
+      {wide ? <div className="gc8-two">{warningsSection ?? <span />}{attentionSection}</div> : <>{warningsSection}{attentionSection}</>}
+
+      {wide
+        ? <div className="gc8-two gc8-two--wide">{activitySection}<GCKeyEvents school={school} /></div>
+        : <>{activitySection}<GCKeyEvents school={school} /></>}
+
+      {recentSection}
+      {calendarSection}
+
+      {wide ? <div className="gc8-two gc8-two--even">{distributionSection}{gapsSection ?? <span />}</div> : <>{distributionSection}{gapsSection}</>}
+
+      <SubjectHealthPanel studentData={cohortScopedStudents} wide={wide} />
+
+      {wide ? studentsLaptop : studentsPhone}
+      {sheets}
+    </>
   );
 };
 
 // ─── Daily Activity Line Chart ──────────────────────────────────────────────
+// One series drawn in ink with a flat fill, a scale, and a reading for the day you point at or tap
+// (today's until you choose). The numbers are today's: the same 7 or 30 days, totals and average.
+
+const CHART = { w: 560, h: 204, left: 44, right: 556, top: 16, base: 176, xlab: 200 };
+const CHART_PHONE = { w: 342, h: 178, left: 36, right: 338, top: 14, base: 150, xlab: 172 };
+const WEEKDAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const MONTH_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 function DailyActivityChart({
   aggregatedActivity,
   activityRange,
   onRangeChange,
+  wide = true,
 }: {
   aggregatedActivity: { date: string; count: number }[];
   activityRange: '7d' | '30d';
   onRangeChange: (range: '7d' | '30d') => void;
+  wide?: boolean;
 }) {
-  const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
-  const chartRef = useRef<HTMLDivElement>(null);
+  const [chosenIdx, setChosenIdx] = useState<number | null>(null);
+  const hitRef = useRef<HTMLDivElement>(null);
 
   const maxCount = Math.max(1, ...aggregatedActivity.map(d => d.count));
   const totalBlocks = aggregatedActivity.reduce((s, d) => s + d.count, 0);
   const activeDays = aggregatedActivity.filter(d => d.count > 0).length;
   const avgPerDay = activeDays > 0 ? (totalBlocks / aggregatedActivity.length).toFixed(1) : '0';
   const n = aggregatedActivity.length;
-  const chartH = 160;
+  const g = wide ? CHART : CHART_PHONE;
 
-  const fmtDate = (d: string) => {
-    const parts = d.split('-');
-    if (parts.length === 3) {
-      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-      return `${months[parseInt(parts[1], 10) - 1]} ${parseInt(parts[2], 10)}`;
-    }
-    return d;
-  };
+  // A scale with four lines: 0 and three steps of a round number.
+  const step = Math.max(1, Math.ceil(maxCount / 3 / (maxCount > 30 ? 10 : maxCount > 6 ? 5 : 1)) * (maxCount > 30 ? 10 : maxCount > 6 ? 5 : 1));
+  const top = step * 3;
+  const yOf = (v: number) => g.base - (v / top) * (g.base - g.top);
+  const xOf = (i: number) => (n > 1 ? g.left + (i / (n - 1)) * (g.right - 8 - g.left) : (g.left + g.right) / 2);
 
   // Monotone cubic interpolation (Fritsch-Carlson) — no overshoot, flat between equal values
   const buildMonotonePath = (pts: { x: number; y: number }[]): string => {
@@ -1843,7 +1433,6 @@ function DailyActivityChart({
     const len = pts.length;
     // Step 1: compute slopes between consecutive points
     const deltas: number[] = [];
-    const _slopes: number[] = [];
     for (let i = 0; i < len - 1; i++) {
       const dx = pts[i + 1].x - pts[i].x;
       deltas.push(dx === 0 ? 0 : (pts[i + 1].y - pts[i].y) / dx);
@@ -1892,146 +1481,89 @@ function DailyActivityChart({
     return d;
   };
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!chartRef.current || n <= 1) return;
-    const rect = chartRef.current.getBoundingClientRect();
-    const relX = (e.clientX - rect.left) / rect.width;
-    const idx = Math.round(relX * (n - 1));
-    setHoveredIdx(Math.max(0, Math.min(n - 1, idx)));
-  };
-
-  // Compute pixel positions based on actual container width
-  const containerWidth = chartRef.current?.getBoundingClientRect().width ?? 500;
-  const padLeft = 0;
-  const padRight = 0;
-  const usableW = containerWidth - padLeft - padRight;
-  const padTop = 20;
-  const padBottom = 10;
-  const usableH = chartH - padTop - padBottom;
-
-  const points = aggregatedActivity.map((d, i) => ({
-    x: n > 1 ? padLeft + (i / (n - 1)) * usableW : containerWidth / 2,
-    y: padTop + usableH - (d.count / maxCount) * usableH,
-    date: d.date,
-    count: d.count,
-  }));
-
+  const points = aggregatedActivity.map((d, i) => ({ x: xOf(i), y: yOf(d.count), date: d.date, count: d.count }));
   const linePath = buildMonotonePath(points);
-  const lastPt = points[points.length - 1];
-  const firstPt = points[0];
-  const areaPath = linePath ? `${linePath} L${lastPt?.x ?? containerWidth},${chartH} L${firstPt?.x ?? 0},${chartH} Z` : '';
+  const areaPath = linePath && points.length ? `${linePath} L${points[points.length - 1].x},${g.base} L${points[0].x},${g.base} Z` : '';
 
-  const hovered = hoveredIdx !== null ? points[hoveredIdx] : null;
+  const dateOf = (key: string) => new Date(`${key}T00:00:00`);
+  const dayWords = (key: string, i: number) => {
+    if (i === n - 1) return 'Today';
+    const d = dateOf(key);
+    return `${WEEKDAY[d.getDay()]} ${d.getDate()}${n > 7 ? ` ${MONTH_SHORT[d.getMonth()]}` : ''}`;
+  };
+  const shown = chosenIdx !== null && chosenIdx < n ? chosenIdx : n - 1;
+  const pick = points[shown];
+  const pickFromPointer = (clientX: number) => {
+    const box = hitRef.current?.getBoundingClientRect();
+    if (!box || n <= 1) return;
+    const x = ((clientX - box.left) / box.width) * g.w;
+    const idx = Math.round(((x - g.left) / (g.right - 8 - g.left)) * (n - 1));
+    setChosenIdx(Math.max(0, Math.min(n - 1, idx)));
+  };
+  // Which days carry a label under the axis: every day for a week, about six for a month.
+  const labelEvery = n > 7 ? Math.ceil(n / 6) : 1;
+  const readW = wide ? 100 : 86;
+  const readX = pick ? Math.max(g.left, Math.min(pick.x - readW - 12, g.right - readW)) : 0;
+  const readText = pick ? (shown === n - 1 ? 'Today' : (() => { const d = dateOf(pick.date); return `${WEEKDAY[d.getDay()]} ${d.getDate()} ${MONTH_SHORT[d.getMonth()]}`; })()) : '';
 
   return (
-    <MotionDiv
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
-      className={CARD_STYLE_DARK_CLASS}
-      style={CARD_STYLE}
-    >
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Engagement</p>
-          <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Daily Activity</p>
-        </div>
-        <HorizontalTabs
-          variant="pill"
-          size="sm"
+    <>
+      <div className="gc8-sechead">
+        <div className="gc8-sechead-col"><p className="gc8-label">Engagement</p><h2 className="gc8-h">Daily activity</h2></div>
+        <Menu
           label="Activity range"
           value={activityRange}
-          onChange={onRangeChange}
-          options={[{ value: '7d', label: '7d' }, { value: '30d', label: '30d' }]}
+          onChange={next => { setChosenIdx(null); onRangeChange(next); }}
+          options={[{ value: '7d', label: wide ? 'Last 7 days' : '7 days' }, { value: '30d', label: wide ? 'Last 30 days' : '30 days' }]}
         />
       </div>
-
-      {/* Chart */}
-      <div
-        ref={chartRef}
-        className="relative"
-        style={{ height: chartH, cursor: 'crosshair' }}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={() => setHoveredIdx(null)}
-      >
-        <svg
-          width="100%"
-          height={chartH}
-          viewBox={`0 0 ${containerWidth} ${chartH}`}
-          style={{ overflow: 'visible' }}
-        >
-          <defs>
-            <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor={ACCENT} stopOpacity={0.15} />
-              <stop offset="100%" stopColor={ACCENT} stopOpacity={0} />
-            </linearGradient>
-          </defs>
-
-          {/* Area fill with gradient */}
-          {areaPath && <path d={areaPath} fill="url(#areaGradient)" />}
-
-          {/* Smooth line */}
-          {linePath && (
-            <path d={linePath} fill="none" stroke={ACCENT} strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" opacity={0.7} />
+      <figure className="gc8-chart">
+        <svg viewBox={`0 0 ${g.w} ${g.h}`} role="img" aria-label={`Study blocks a day, ${aggregatedActivity.map(d => d.count).join(', ')}`}>
+          <g className="gc8-grid">{[0, 1, 2, 3].map(k => <line key={k} x1={g.left} x2={g.right} y1={yOf(step * k)} y2={yOf(step * k)} />)}</g>
+          <g className="gc8-ylab">{[0, 1, 2, 3].map(k => <text key={k} x={g.left - 14} y={yOf(step * k) + 4}>{step * k}</text>)}</g>
+          {areaPath && <path className="gc8-area" d={areaPath} />}
+          {linePath && <path className="gc8-line" d={linePath} />}
+          {pick && <line className="gc8-cross" x1={pick.x} x2={pick.x} y1={g.top} y2={g.base} />}
+          {pick && (
+            <g className="gc8-read">
+              <rect x={readX} y={Math.max(g.top, Math.min(pick.y - 58, g.base - 44))} width={readW} height={wide ? 42 : 38} rx={8} />
+              <text x={readX + 12} y={Math.max(g.top, Math.min(pick.y - 58, g.base - 44)) + 17} className="gc8-k">{readText}</text>
+              <text x={readX + 12} y={Math.max(g.top, Math.min(pick.y - 58, g.base - 44)) + (wide ? 34 : 32)} className="gc8-v">{`${pick.count} ${pick.count === 1 ? 'block' : 'blocks'}`}</text>
+            </g>
           )}
-
-          {/* Hover vertical line */}
-          {hovered && (
-            <line x1={hovered.x} y1={0} x2={hovered.x} y2={chartH} stroke={ACCENT} strokeWidth={1} opacity={0.15} />
-          )}
+          {pick && <circle className="gc8-pt" cx={pick.x} cy={pick.y} r={4.5} />}
+          <g className="gc8-xlab">
+            {points.map((p, i) => ((n - 1 - i) % labelEvery === 0 ? (
+              <text key={p.date} x={p.x} y={g.xlab} className={i === shown ? 'gc8-now' : undefined}>
+                {wide || n > 7 ? dayWords(p.date, i) : WEEKDAY[dateOf(p.date).getDay()].charAt(0)}
+              </text>
+            ) : null))}
+          </g>
         </svg>
-
-        {/* Hover dot + tooltip as HTML */}
-        {hovered && (
-          <>
-            <div
-              className="absolute pointer-events-none transition-all duration-75 dark:!bg-surface-paper"
-              style={{
-                left: hovered.x - 4.5,
-                top: hovered.y - 4.5,
-                width: 9,
-                height: 9,
-                borderRadius: '50%',
-                backgroundColor: '#FFFFFF',
-                border: `2px solid ${ACCENT}`,
-                boxShadow: '0 0 0 3px rgba(var(--nsu-orange-rgb), 0.1)',
-              }}
-            />
-            <div
-              className="absolute pointer-events-none z-10 transition-all duration-75"
-              style={{
-                left: Math.max(0, Math.min(hovered.x - 50, containerWidth - 100)),
-                top: hovered.y - 40,
-              }}
-            >
-              <div
-                className="text-[11px] font-medium text-center shadow-lg"
-                style={{
-                  backgroundColor: 'rgba(30,30,30,0.9)',
-                  color: 'white',
-                  borderRadius: 8,
-                  padding: '5px 12px',
-                  backdropFilter: 'blur(8px)',
-                  whiteSpace: 'nowrap',
-                }}
-              >
-                {fmtDate(hovered.date)} &middot; <span className="font-bold">{aggregatedActivity[hoveredIdx!]?.count ?? 0}</span> block{(aggregatedActivity[hoveredIdx!]?.count ?? 0) !== 1 ? 's' : ''}
-              </div>
-            </div>
-          </>
-        )}
-      </div>
-
-      <div className="flex justify-between mt-3">
-        <span className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{fmtDate(aggregatedActivity[0]?.date || '')}</span>
-        <span className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{fmtDate(aggregatedActivity[aggregatedActivity.length - 1]?.date || '')}</span>
-      </div>
-
-      <div className="flex gap-4 mt-3 text-xs text-zinc-500 dark:text-zinc-400">
-        <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{totalBlocks}</span> blocks total</span>
-        <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{activeDays}</span> active days</span>
-        <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{avgPerDay}</span> avg/day</span>
-      </div>
-    </MotionDiv>
+        <div
+          ref={hitRef}
+          className="gc8-chart-hit"
+          role="slider"
+          tabIndex={0}
+          aria-label="Day to read"
+          aria-valuemin={1}
+          aria-valuemax={n}
+          aria-valuenow={shown + 1}
+          aria-valuetext={`${readText}: ${pick?.count ?? 0} ${pick?.count === 1 ? 'block' : 'blocks'}`}
+          onPointerDown={event => pickFromPointer(event.clientX)}
+          onPointerMove={event => { if (event.pointerType === 'mouse' || event.buttons) pickFromPointer(event.clientX); }}
+          onKeyDown={event => {
+            if (event.key === 'ArrowLeft') setChosenIdx(Math.max(0, shown - 1));
+            if (event.key === 'ArrowRight') setChosenIdx(Math.min(n - 1, shown + 1));
+          }}
+        />
+      </figure>
+      <p className="gc8-totals">
+        <span><b>{totalBlocks}</b> {wide ? 'blocks in all' : 'blocks'}</span>
+        <span><b>{activeDays}</b> active days</span>
+        <span><b>{avgPerDay}</b> {wide ? 'a day on average' : 'a day'}</span>
+        {wide && <span className="gc8-hint">Tap or point at any day to read it</span>}
+      </p>
+    </>
   );
 }

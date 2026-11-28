@@ -22,7 +22,7 @@ import {
   type HistoryCoreStatementCm, type HistoryEssayRubric, type HistoryParagraphCm, type SecRubricCard,
 } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
-import { ClaimDirections, ClaimRow, marksChip } from './ClaimRows';
+import { ClaimDirections, ClaimRow, marksChip, marksLabel } from './ClaimRows';
 import {
   bandOf,
   historyAddParagraph,
@@ -149,13 +149,13 @@ const CoreStatementMarking: React.FC<{
           <small>Count the Core Statements you completed.</small>
         </span>
         <span className="mb-hist-counter" role="group" aria-label="Completed Core Statements">
-          <button type="button" aria-label="One fewer Core Statement" disabled={completed <= 0}
+          <button type="button" className="mb-mark-btn mb-mark-btn--step" aria-label="One fewer Core Statement" disabled={completed <= 0}
             onClick={() => onScore(...historySetStatements(completed - 1))}>−</button>
           <output aria-live="polite">{completed}</output>
-          <button type="button" aria-label="One more Core Statement"
+          <button type="button" className="mb-mark-btn mb-mark-btn--step" aria-label="One more Core Statement"
             onClick={() => onScore(...historySetStatements(completed + 1))}>+</button>
         </span>
-        <span className="mb-claim-chip">{marksChip(statements.completedMarks)}</span>
+        <span className="mb-claim-chip">{marksLabel(statements.completedMarks)}</span>
       </div>
       <div className="mb-hist-ladder">
         <ClaimRow

@@ -1,4 +1,3 @@
-import { moduleBorder,moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -19,6 +18,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = redTheme;
 
@@ -26,34 +28,35 @@ const theme = redTheme;
 const BrainSignalVisualizer = () => {
     const [active, setActive] = useState(false);
     return(
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Brain's Two Signals</h4>
-             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">When you make a mistake, your brain sends two distinct signals in less than half a second.</p>
+        <ExerciseSheet title="The Brain's Two Signals" sub="When you make a mistake, your brain sends two distinct signals in less than half a second." name="BrainSignalVisualizer">
+             {/* The two signals, drawn in ink on the sheet */}
+             <div className="ex-figure">
              <div className="w-full max-w-lg mx-auto h-32 relative">
                 <svg viewBox="0 0 300 100" className="w-full h-full absolute inset-0">
-                    <path d="M0 50 L 300 50" stroke="var(--module-on-fill)" strokeWidth="1" />
+                    <path d="M0 50 L 300 50" stroke="var(--outline-soft)" strokeWidth="1" />
                     <AnimatePresence>
                     {active && <>
-                        <motion.path initial={{pathLength:0}} animate={{pathLength:1}} transition={{duration:0.2, delay: 0.1}} d="M 50 50 C 60 50 65 20 75 20 S 90 50 100 50" stroke="var(--module-danger-text)" strokeWidth="2" fill="none" />
-                        <motion.path initial={{pathLength:0}} animate={{pathLength:1}} transition={{duration:0.5, delay: 0.3}} d="M 150 50 C 160 50 175 80 190 80 S 210 50 220 50" stroke="var(--module-success-text)" strokeWidth="2" fill="none" />
+                        <motion.path initial={{pathLength:0}} animate={{pathLength:1}} transition={{duration:0.2, delay: 0.1}} d="M 50 50 C 60 50 65 20 75 20 S 90 50 100 50" stroke="var(--ink-primary)" strokeWidth="2" fill="none" />
+                        <motion.path initial={{pathLength:0}} animate={{pathLength:1}} transition={{duration:0.5, delay: 0.3}} d="M 150 50 C 160 50 175 80 190 80 S 210 50 220 50" stroke="var(--ink-primary)" strokeWidth="2" fill="none" />
                     </>}
                     </AnimatePresence>
                 </svg>
                 {active && <>
                     <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:0.2}}} className="absolute top-0 left-[75px] -translate-x-1/2 text-center text-xs">
-                        <p className="font-bold text-[var(--module-danger-text)]">ERN Signal</p>
-                        <p className="text-[var(--module-muted)] dark:text-[var(--module-muted)]">The "Alarm"</p>
+                        <p className="font-semibold text-ink-primary">ERN Signal</p>
+                        <p className="text-ink-muted">The "Alarm"</p>
                     </motion.div>
                     <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:0.5}}} className="absolute bottom-0 left-[190px] -translate-x-1/2 text-center text-xs">
-                        <p className="font-bold text-[var(--module-success-text)]">Pe Signal</p>
-                        <p className="text-[var(--module-muted)] dark:text-[var(--module-muted)]">The "Analysis"</p>
+                        <p className="font-semibold text-ink-primary">Pe Signal</p>
+                        <p className="text-ink-muted">The "Analysis"</p>
                     </motion.div>
                 </>}
              </div>
-             <div className="text-center mt-8">
-                <button onClick={() => setActive(!active)} className="px-5 py-3 bg-[var(--module-surface)] text-[var(--module-ink)] font-bold rounded-lg text-sm" data-wide-button="true">{active ? "Reset" : "Make a Mistake"}</button>
              </div>
-        </div>
+             <div className="ex-actions">
+                <Button onClick={() => setActive(!active)}>{active ? "Reset" : "Make a Mistake"}</Button>
+             </div>
+        </ExerciseSheet>
     );
 };
 
@@ -242,38 +245,35 @@ const AmygdalaHijackSimulator = () => {
 
 
 
-  return <div className="wr-skin" data-wide="AmygdalaHijackSimulator"><div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Amygdala Hijack Simulator</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-8">See how stress hijacks your brain — then use recovery techniques to take control back.</p>
+  return <ExerciseSheet title="Amygdala Hijack Simulator" sub="See how stress hijacks your brain — then use recovery techniques to take control back." name="AmygdalaHijackSimulator">
 
-      {/* Two-panel brain dashboard */}
-      <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-4 sm:gap-0 items-stretch max-w-2xl mx-auto mb-6">
-        {/* Prefrontal Cortex Card */}
+      {/* Two-panel brain dashboard: the two parts of the brain laid on the sheet under a hairline (no boxes) */}
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-4 sm:gap-0 items-stretch">
+        {/* Prefrontal Cortex */}
         <div
-          className="rounded-xl p-6 border text-center transition-all duration-500"
+          className="flex flex-col gap-1 pt-3 transition-all duration-500"
           style={{
-            borderColor: moduleBorder(stressLevel > 0.6 ? "var(--module-line)" : "var(--module-line)"),
-            backgroundColor: moduleFill(stressLevel > 0.6 ? "var(--module-surface)" : "var(--module-surface)"),
+            borderTop: '1px solid var(--hairline)',
             opacity: Math.max(0.4, 1 - stressLevel * 0.6),
           }}
         >
 
-          <p className="text-sm font-bold transition-colors duration-500" style={{ color: moduleText(stressLevel > 0.6 ? "var(--module-muted)" : "var(--module-ink)") }}>
+          <p className="t-row transition-colors duration-500" style={{ color: stressLevel > 0.6 ? 'var(--ink-muted)' : 'var(--ink-primary)' }}>
             Prefrontal Cortex
           </p>
-          <p className="text-xs mt-1 transition-colors duration-500" style={{ color: moduleText(stressLevel > 0.6 ? "var(--module-muted)" : "var(--module-ink)") }}>
+          <p className="t-meta transition-colors duration-500" style={{ color: stressLevel > 0.6 ? 'var(--ink-muted)' : 'var(--ink-secondary)' }}>
             Rational Thinking
           </p>
-          <div className="mt-4 h-2 w-full rounded-full overflow-hidden" style={{ backgroundColor: moduleFill(stressLevel > 0.6 ? "var(--module-surface)" : "var(--module-surface)") }}>
+          <div className="mt-3 h-2 w-full rounded overflow-hidden" style={{ backgroundColor: 'var(--hairline)' }}>
             <div
-              className="h-full rounded-full transition-all duration-500"
+              className="h-full rounded transition-all duration-500"
               style={{
                 width: `${Math.max(5, (1 - stressLevel) * 100)}%`,
-                backgroundColor: moduleFill(stressLevel > 0.6 ? "var(--module-surface)" : "var(--module-solid)"),
+                backgroundColor: stressLevel > 0.6 ? 'var(--ink-muted)' : 'var(--ink-primary)',
               }}
             />
           </div>
-          <p className="text-[10px] mt-2 font-semibold uppercase tracking-widest transition-colors duration-500" style={{ color: moduleText(stressLevel > 0.6 ? "var(--module-muted)" : "var(--module-ink)") }}>
+          <p className="ex-label mt-1 transition-colors duration-500" style={{ color: stressLevel > 0.6 ? 'var(--ink-muted)' : 'var(--ink-primary)' }}>
             {stressLevel < 0.3 ? 'Online' : stressLevel < 0.6 ? 'Weakening' : 'Offline'}
           </p>
         </div>
@@ -285,69 +285,63 @@ const AmygdalaHijackSimulator = () => {
               key={i}
               className="w-2 h-2 rounded-full transition-all duration-500"
               style={{
-                backgroundColor: moduleFill(stressLevel > (i * 0.2 + 0.1) ? "var(--module-surface)" : "var(--module-surface)"),
+                backgroundColor: 'var(--ink-primary)',
                 opacity: stressLevel > (i * 0.2 + 0.1) ? 0.3 : 1,
               }}
             />
           ))}
-          <p className="text-[9px] text-[var(--module-muted)] dark:text-[var(--module-muted)] font-medium mt-1 writing-mode-vertical" style={{ writingMode: 'vertical-rl' as any }}>
+          <p className="t-label text-ink-muted mt-1" style={{ writingMode: 'vertical-rl' as any }}>
             {stressLevel < 0.3 ? 'CONNECTED' : stressLevel < 0.7 ? 'WEAKENING' : 'SEVERED'}
           </p>
         </div>
 
-        {/* Amygdala Card */}
+        {/* Amygdala */}
         <div
-          className="rounded-xl p-6 border text-center transition-all duration-500"
-          style={{
-            borderColor: moduleBorder(stressLevel > 0.5 ? "var(--module-line)" : "var(--module-line)"),
-            backgroundColor: moduleFill(stressLevel > 0.5 ? "var(--module-surface)" : "var(--module-surface)"),
-            boxShadow: 'none',
-          }}
+          className="flex flex-col gap-1 pt-3 transition-all duration-500"
+          style={{ borderTop: '1px solid var(--hairline)' }}
         >
 
-          <p className="text-sm font-bold transition-colors duration-500" style={{ color: moduleText(stressLevel > 0.5 ? "var(--module-danger-text)" : "var(--module-muted)") }}>
+          <p className="t-row transition-colors duration-500" style={{ color: stressLevel > 0.5 ? 'var(--ink-primary)' : 'var(--ink-muted)' }}>
             Amygdala
           </p>
-          <p className="text-xs mt-1 transition-colors duration-500" style={{ color: moduleText(stressLevel > 0.5 ? "var(--module-danger-text)" : "var(--module-muted)") }}>
+          <p className="t-meta transition-colors duration-500" style={{ color: stressLevel > 0.5 ? 'var(--ink-secondary)' : 'var(--ink-muted)' }}>
             Threat Response
           </p>
-          <div className="mt-4 h-2 w-full rounded-full overflow-hidden" style={{ backgroundColor: moduleFill(stressLevel > 0.5 ? "var(--module-surface)" : "var(--module-surface)") }}>
+          <div className="mt-3 h-2 w-full rounded overflow-hidden" style={{ backgroundColor: 'var(--hairline)' }}>
             <div
-              className="h-full rounded-full transition-all duration-500"
+              className="h-full rounded transition-all duration-500"
               style={{
                 width: `${Math.max(5, stressLevel * 100)}%`,
-                backgroundColor: moduleFill(stressLevel > 0.7 ? "var(--module-danger)" : stressLevel > 0.4 ? "var(--module-solid)" : "var(--module-surface)"),
+                backgroundColor: stressLevel > 0.7 ? 'var(--ink-primary)' : stressLevel > 0.4 ? 'var(--ink-secondary)' : 'var(--ink-muted)',
               }}
             />
           </div>
-          <p className="text-[10px] mt-2 font-semibold uppercase tracking-widest transition-colors duration-500" style={{ color: moduleText(stressLevel > 0.5 ? "var(--module-danger-text)" : "var(--module-muted)") }}>
+          <p className="ex-label mt-1 transition-colors duration-500" style={{ color: stressLevel > 0.5 ? 'var(--ink-primary)' : 'var(--ink-muted)' }}>
             {stressLevel < 0.3 ? 'Dormant' : stressLevel < 0.6 ? 'Alert' : 'Hijacking'}
           </p>
         </div>
       </div>
 
       {/* Cortisol bar + status */}
-      <div className="max-w-2xl mx-auto mb-2">
-        <div className="flex items-center justify-between mb-1.5">
-          <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--module-muted)] dark:text-[var(--module-muted)]">Cortisol Level</span>
-          <span className="text-[10px] font-bold uppercase tracking-widest" style={{
-            color: moduleText(stressLevel > 0.7 ? "var(--module-danger-text)" : stressLevel > 0.4 ? "var(--module-ink)" : "var(--module-success-text)"),
-          }}>
+      <div className="flex flex-col gap-1.5">
+        <div className="flex items-center justify-between gap-3">
+          <span className="ex-label">Cortisol Level</span>
+          <span className="ex-label" style={{ color: 'var(--ink-primary)' }}>
             {stressLevel < 0.15 ? 'Low' : stressLevel < 0.5 ? 'Moderate' : stressLevel < 0.8 ? 'High' : 'Extreme'}
           </span>
         </div>
-        <div className="h-3 w-full rounded-full overflow-hidden bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+        <div className="h-2 w-full rounded overflow-hidden" style={{ backgroundColor: 'var(--hairline)' }}>
           <div
-            className="h-full rounded-full transition-all duration-300"
+            className="h-full rounded transition-all duration-300"
             style={{
               width: `${cortisolHeight}%`,
-              backgroundColor: moduleFill(stressLevel > 0.7 ? "var(--module-danger)" : stressLevel > 0.4 ? "var(--module-solid)" : "var(--module-success)"),
+              backgroundColor: stressLevel > 0.7 ? 'var(--ink-primary)' : stressLevel > 0.4 ? 'var(--ink-secondary)' : 'var(--ink-muted)',
             }}
           />
         </div>
       </div>
 
-      {/* Status label */}
+      {/* Status label: small capitals in ink (no tinted pill) */}
       <AnimatePresence mode="wait">
         {hijackLabel && !balanced && (
           <MotionDiv
@@ -355,11 +349,10 @@ const AmygdalaHijackSimulator = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="text-center mt-4"
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] text-xs font-bold uppercase tracking-widest">
+            <p className="ex-label" style={{ color: 'var(--ink-primary)' }}>
               Amygdala Hijack
-            </span>
+            </p>
           </MotionDiv>
         )}
         {balanced && (
@@ -368,45 +361,35 @@ const AmygdalaHijackSimulator = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="text-center mt-4"
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] text-xs font-bold uppercase tracking-widest">
+            <p className="ex-label" style={{ color: 'var(--ink-primary)' }}>
               Balanced
-            </span>
+            </p>
           </MotionDiv>
         )}
       </AnimatePresence>
 
-      {/* Scenario Buttons */}
-      <div className="mt-10">
-        <p className="text-center text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-4">Choose a scenario:</p>
-        <div className="flex flex-wrap justify-center gap-3">
-          <button
-            onClick={() => handleScenario('low')}
-            disabled={isAnimating}
-            className="px-5 py-2.5 text-sm font-bold transition-all duration-200 disabled:opacity-50"
-            style={scenario === 'low' ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true" data-selected={!!(scenario === 'low')} data-tone="mint" aria-pressed={!!(scenario === 'low')}
-          >
-            Low Stakes — Homework Quiz
-          </button>
-          <button
-            onClick={() => handleScenario('medium')}
-            disabled={isAnimating}
-            className="px-5 py-2.5 text-sm font-bold transition-all duration-200 disabled:opacity-50"
-            style={scenario === 'medium' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true" data-selected={!!(scenario === 'medium')} data-tone="coral" aria-pressed={!!(scenario === 'medium')}
-          >
-            Medium Stakes — Class Test
-          </button>
-          <button
-            onClick={() => handleScenario('high')}
-            disabled={isAnimating}
-            className="px-5 py-2.5 text-sm font-bold transition-all duration-200 disabled:opacity-50"
-            style={scenario === 'high' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true" data-selected={!!(scenario === 'high')} data-tone="coral" aria-pressed={!!(scenario === 'high')}
-          >
-            High Stakes — Big Exam
-          </button>
-        </div>
-      </div>
+      {/* Scenario answers: disabled while the stress rises, as before */}
+      <AnswerGroup kind="one" legend="Choose a scenario:" chooseOnArrow={false}>
+        <ChoiceTile
+          chosen={scenario === 'low'}
+          onClick={() => handleScenario('low')}
+          disabled={isAnimating}
+          label="Low Stakes — Homework Quiz"
+        />
+        <ChoiceTile
+          chosen={scenario === 'medium'}
+          onClick={() => handleScenario('medium')}
+          disabled={isAnimating}
+          label="Medium Stakes — Class Test"
+        />
+        <ChoiceTile
+          chosen={scenario === 'high'}
+          onClick={() => handleScenario('high')}
+          disabled={isAnimating}
+          label="High Stakes — Big Exam"
+        />
+      </AnswerGroup>
 
       {/* Recovery Techniques */}
       <AnimatePresence>
@@ -415,41 +398,25 @@ const AmygdalaHijackSimulator = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            className="mt-10"
+            className="ex-stack"
           >
-            <p className="text-center text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-4">Choose a recovery technique:</p>
-            <div className="flex flex-wrap justify-center gap-3 mb-6">
-              <button
+            <AnswerGroup kind="one" legend="Choose a recovery technique:">
+              <ChoiceTile
+                chosen={recoveryActive === 'breathing'}
                 onClick={() => { setRecoveryActive('breathing'); setBreathPhase(0); setBreathCount(0); }}
-                className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 ${
-                  recoveryActive === 'breathing'
-                    ? "bg-[var(--module-surface)] text-[var(--module-ink)] shadow-none shadow-none"
-                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)]"
-                }`} data-wide-button="true" data-selected={!!(recoveryActive === 'breathing')} data-tone="orange" aria-pressed={!!(recoveryActive === 'breathing')}
-              >
-                Box Breathing
-              </button>
-              <button
+                label="Box Breathing"
+              />
+              <ChoiceTile
+                chosen={recoveryActive === 'grounding'}
                 onClick={() => { setRecoveryActive('grounding'); setGroundingStep(0); setGroundingClicks(0); }}
-                className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 ${
-                  recoveryActive === 'grounding'
-                    ? "bg-[var(--module-success)] text-[var(--module-ink)] shadow-none shadow-none"
-                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:bg-[var(--module-success-soft)] dark:hover:bg-[var(--module-success-soft)]"
-                }`} data-wide-button="true" data-selected={!!(recoveryActive === 'grounding')} data-tone="mint" aria-pressed={!!(recoveryActive === 'grounding')}
-              >
-                5-4-3-2-1 Grounding
-              </button>
-              <button
+                label="5-4-3-2-1 Grounding"
+              />
+              <ChoiceTile
+                chosen={recoveryActive === 'reframe'}
                 onClick={() => { setRecoveryActive('reframe'); setReframeStep(0); }}
-                className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 ${
-                  recoveryActive === 'reframe'
-                    ? "bg-[var(--module-solid)] text-[var(--module-ink)] shadow-none shadow-none"
-                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)]"
-                }`} data-wide-button="true" data-selected={!!(recoveryActive === 'reframe')} data-tone="orange" aria-pressed={!!(recoveryActive === 'reframe')}
-              >
-                Cognitive Reframe
-              </button>
-            </div>
+                label="Cognitive Reframe"
+              />
+            </AnswerGroup>
 
             {/* Box Breathing Panel */}
             <AnimatePresence mode="wait">
@@ -461,31 +428,32 @@ const AmygdalaHijackSimulator = () => {
                   exit={{ opacity: 0, height: 0 }}
                   className="overflow-hidden"
                 >
-                  <div className="flex flex-col items-center gap-4 p-6 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                    <p className="text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">Follow the breathing square. 4 seconds each side.</p>
+                  {/* On the sheet under a hairline (no box); the breathing square is the drawing */}
+                  <div className="flex flex-col items-center gap-4 pt-4" style={{ borderTop: '1px solid var(--hairline)' }}>
+                    <p className="t-body text-ink-primary">Follow the breathing square. 4 seconds each side.</p>
                     <div className="relative w-32 h-32">
                       {/* Square outline */}
-                      <div className="absolute inset-0 border-2 border-[var(--module-line)] dark:border-[var(--module-line)] rounded-lg" />
+                      <div className="absolute inset-0 rounded-lg" style={{ border: '2px solid var(--outline-soft)' }} />
                       {/* Animated highlight edge */}
                       <motion.div
-                        className="absolute w-4 h-4 bg-[var(--module-surface)] rounded-full shadow-none shadow-none"
+                        className="absolute w-4 h-4 rounded-full"
                         animate={{
                           top: breathPhase === 0 ? ['100%', '0%'] : breathPhase === 1 ? '0%' : breathPhase === 2 ? ['0%', '100%'] : '100%',
                           left: breathPhase === 0 ? '0%' : breathPhase === 1 ? ['0%', '100%'] : breathPhase === 2 ? '100%' : ['100%', '0%'],
                         }}
                         transition={{ duration: 1.2, ease: 'linear' }}
-                        style={{ marginTop: -8, marginLeft: -8 }}
+                        style={{ marginTop: -8, marginLeft: -8, backgroundColor: 'var(--ink-primary)' }}
                       />
                     </div>
                     <motion.p
                       key={breathPhase}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      className="text-lg font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]"
+                      className="ex-thought-words"
                     >
                       {breathLabels[breathPhase]}
                     </motion.p>
-                    <p className="text-xs text-[var(--module-ink)] dark:text-[var(--module-ink)]">Cycle {breathCount + 1} of 3</p>
+                    <p className="ex-count ui-readout">Cycle {breathCount + 1} of 3</p>
                   </div>
                 </motion.div>
               )}
@@ -499,29 +467,26 @@ const AmygdalaHijackSimulator = () => {
                   exit={{ opacity: 0, height: 0 }}
                   className="overflow-hidden"
                 >
-                  <div className="flex flex-col items-center gap-4 p-6 bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                    <p className="text-sm font-medium text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">
+                  <div className="flex flex-col items-center gap-4 pt-4" style={{ borderTop: '1px solid var(--hairline)' }}>
+                    <p className="t-body text-ink-primary">
                       Tap the button for {groundingSenses[groundingStep]?.count} {groundingSenses[groundingStep]?.sense}.
                     </p>
                     <div className="flex gap-2">
                       {Array.from({ length: groundingSenses[groundingStep]?.count || 0 }).map((_, i) => (
                         <div
                           key={i}
-                          className="w-6 h-6 rounded-full border-2 transition-all duration-300"
+                          className="w-6 h-6 rounded-full transition-all duration-300"
                           style={{
-                            borderColor: moduleBorder(i < groundingClicks ? "var(--module-line)" : "var(--module-line)"),
-                            backgroundColor: moduleFill(i < groundingClicks ? "var(--module-success)" : 'transparent'),
+                            border: `1.5px solid ${i < groundingClicks ? 'var(--ink-primary)' : 'var(--outline-soft)'}`,
+                            backgroundColor: i < groundingClicks ? 'var(--ink-primary)' : 'transparent',
                           }}
                         />
                       ))}
                     </div>
-                    <button
-                      onClick={handleGroundingClick}
-                      className="px-6 py-3 bg-[var(--module-success)] text-[var(--module-ink)] font-bold rounded-lg text-sm hover:bg-[var(--module-success)] transition-colors active:scale-95" data-wide-button="true"
-                    >
+                    <Button onClick={handleGroundingClick}>
                       I notice one ({groundingClicks}/{groundingSenses[groundingStep]?.count})
-                    </button>
-                    <p className="text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">
+                    </Button>
+                    <p className="ex-count ui-readout">
                       Step {groundingStep + 1} of 5
                     </p>
                   </div>
@@ -537,26 +502,30 @@ const AmygdalaHijackSimulator = () => {
                   exit={{ opacity: 0, height: 0 }}
                   className="overflow-hidden"
                 >
-                  <div className="flex flex-col items-center gap-4 p-6 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
-                    <p className="text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">Replace the threat with a realistic thought.</p>
-                    <div className="text-center space-y-3 max-w-sm">
-                      <div className="p-3 bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] rounded-lg">
-                        <p className="text-xs font-bold uppercase tracking-wider text-[var(--module-danger-text)] mb-1">Threat Thought</p>
-                        <p className="text-sm font-medium text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">{reframes[reframeStep].threat}</p>
+                  <div className="flex flex-col gap-4 pt-4" style={{ borderTop: '1px solid var(--hairline)' }}>
+                    <p className="t-body text-ink-primary">Replace the threat with a realistic thought.</p>
+                    {/* The two thoughts under their labels, with a step between them (no tinted boxes) */}
+                    <div className="ex-stack">
+                      <div className="ex-thought">
+                        <ExerciseLabel>Threat Thought</ExerciseLabel>
+                        <p className="ex-quote">{reframes[reframeStep].threat}</p>
                       </div>
-                      <div className="text-[var(--module-muted)] text-lg font-bold">&darr;</div>
-                      <div className="p-3 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg">
-                        <p className="text-xs font-bold uppercase tracking-wider text-[var(--module-ink)] mb-1">Reframed Thought</p>
-                        <p className="text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">{reframes[reframeStep].reframe}</p>
+                      <div className="ex-connector">
+                        <i aria-hidden="true" />
+                        <span className="t-row text-ink-muted">&darr;</span>
+                        <i aria-hidden="true" />
+                      </div>
+                      <div className="ex-thought">
+                        <ExerciseLabel>Reframed Thought</ExerciseLabel>
+                        <p className="ex-quote">{reframes[reframeStep].reframe}</p>
                       </div>
                     </div>
-                    <button
-                      onClick={handleReframe}
-                      className="px-6 py-3 bg-[var(--module-solid)] text-[var(--module-ink)] font-bold rounded-lg text-sm hover:bg-[var(--module-solid)] transition-colors active:scale-95" data-wide-button="true"
-                    >
-                      I believe this reframe
-                    </button>
-                    <p className="text-xs text-[var(--module-ink)] dark:text-[var(--module-ink)]">
+                    <div className="ex-actions">
+                      <Button onClick={handleReframe}>
+                        I believe this reframe
+                      </Button>
+                    </div>
+                    <p className="ex-count ui-readout text-center">
                       Reframe {reframeStep + 1} of 3
                     </p>
                   </div>
@@ -574,27 +543,23 @@ const AmygdalaHijackSimulator = () => {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="mt-4 text-center"
           >
-            <p className="text-sm font-semibold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">
+            <AnswerLine>
               You restored the connection. Rational thinking is back online.
-            </p>
+            </AnswerLine>
           </MotionDiv>
         )}
       </AnimatePresence>
 
       {/* Reset */}
       {scenario && !isAnimating && (
-        <div className="mt-6 text-center">
-          <button
-            onClick={handleReset}
-            className="px-4 py-2 text-xs font-medium text-[var(--module-muted)] dark:text-[var(--module-muted)] hover:text-[var(--module-ink)] dark:hover:text-[var(--module-ink)] transition-colors underline" data-wide-button="true"
-          >
+        <div className="ex-actions">
+          <TextButton tone="quiet" onClick={handleReset}>
             Reset Simulator
-          </button>
+          </TextButton>
         </div>
       )}
-    </div></div>;
+    </ExerciseSheet>;
 };
 
 // --- MODULE COMPONENT ---

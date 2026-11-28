@@ -1,11 +1,8 @@
-import { ConceptSequence } from './learning/WideFeatures';
-import { moduleBorder,moduleFill } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import { AnimatePresence,motion } from 'framer-motion';
 import {
 Code,
 Flag,
@@ -22,6 +19,8 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,ExercisePart,ExerciseRange,ExerciseSheet,RevealCard } from './learning/Exercise';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = amberTheme;
 
@@ -85,18 +84,6 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
 
   const label = getLabel();
 
-  const labelBgClass = label.color === 'emerald'
-    ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 text-[var(--module-success-text)] dark:text-[var(--module-success-text)]"
-    : label.color === 'rose'
-    ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"
-    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)]";
-
-  const borderClass = label.color === 'emerald'
-    ? "border-success/30 dark:border-success/40"
-    : label.color === 'rose'
-    ? "border-[var(--module-line)] dark:border-[var(--module-line)]"
-    : "border-[var(--module-line)] dark:border-[var(--module-line)]";
-
   const handleSliderChange = (dimension: 'locus' | 'stability' | 'controllability', value: number) => {
     const setters = { locus: setLocus, stability: setStability, controllability: setControllability };
     setters[dimension](value);
@@ -134,36 +121,22 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
     },
   ];
 
-  const SLIDER_COLORS = ['chunky-slider-sky', 'chunky-slider-sunshine', 'chunky-slider-mint'];
-
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Attribution Mapper</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-10">
-        Think of a recent setback or bad result. Map how you interpreted it:
-      </p>
-
-      <div className="space-y-8">
-        {sliders.map((s, index) => (
-          <div key={s.label}>
-            <p className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-1 text-center">{s.label}</p>
-            <div className="flex items-center gap-3">
-              <div className="flex flex-col items-end w-28 shrink-0">
-                <span className="text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{s.leftLabel}</span>
-                <span className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] italic text-right">{s.leftExample}</span>
-              </div>
-              <input
-                type="range"
-                min={0}
-                max={100}
-                value={s.value}
-                onChange={(e) => handleSliderChange(s.dimension, Number(e.target.value))}
-                className={`chunky-slider ${SLIDER_COLORS[index % 3]}`}
-              />
-              <div className="flex flex-col items-start w-28 shrink-0">
-                <span className="text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{s.rightLabel}</span>
-                <span className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] italic text-left">{s.rightExample}</span>
-              </div>
+    <ExercisePart title="Attribution Mapper" sub="Think of a recent setback or bad result. Map how you interpreted it:">
+      <div className="ex-sliders">
+        {sliders.map((s) => (
+          <div key={s.label} className="ex-slider">
+            <p className="ex-slider-name">{s.label}</p>
+            <ExerciseRange
+              min={0}
+              max={100}
+              value={s.value}
+              onChange={(e) => handleSliderChange(s.dimension, Number(e.target.value))}
+              aria-label={s.label}
+            />
+            <div className="ex-slider-ends">
+              <span>{s.leftLabel}<small>{s.leftExample}</small></span>
+              <span>{s.rightLabel}<small>{s.rightExample}</small></span>
             </div>
           </div>
         ))}
@@ -174,16 +147,12 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.35 }}
-        className={`mt-10 p-6 rounded-xl border ${borderClass} text-center`}
+        className="ex-result"
       >
-        <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${labelBgClass}`}>
-          {label.text}
-        </span>
-        <p className="mt-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">
-          {getExplanation()}
-        </p>
+        <p className="ex-result-name">{label.text}</p>
+        <p className="ex-sub">{getExplanation()}</p>
       </MotionDiv>
-    </div>
+    </ExercisePart>
   );
 };
 
@@ -200,19 +169,25 @@ const AttributionSorter = ({ savedChoices, onSave }: { savedChoices?: { [key: st
       if (savedChoices) setChoice(savedChoices);
     }, [savedChoices]);
 
-    return<div className="wr-skin" data-wide="AttributionSorter"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Control Panel</h4>
-            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Scenario: You fail a test. Which of these reasons are actually within your control?</p>
-            <div className="space-y-3">
+    return <ExercisePart title="Control Panel" sub="Scenario: You fail a test. Which of these reasons are actually within your control?">
+            <AnswerGroup kind="several" count>
                 {reasons.map(reason => (
-                    <button key={reason.text} onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }} className={`w-full p-4 rounded-xl text-left font-bold text-sm transition-all`} style={choice[reason.text] ? (reason.control ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }) : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!choice[reason.text]} data-tone={reason.control ? 'mint' : 'coral'} aria-pressed={!!choice[reason.text]}>
-                        {reason.text}
-                        {choice[reason.text] && <span className={`ml-2 font-semibold text-xs ${reason.control ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>{reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)'}</span>}
-                    </button>
+                    <ChoiceTile
+                        key={reason.text}
+                        kind="several"
+                        chosen={!!choice[reason.text]}
+                        label={reason.text}
+                        note={choice[reason.text] ? (reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)') : undefined}
+                        noteTone={reason.control ? 'ok' : 'plain'}
+                        onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }}
+                    />
                 ))}
-            </div>
-        </div></div>;
+            </AnswerGroup>
+        </ExercisePart>;
 };
+
+/** A thought in its quotation marks, as the drill has always shown it. */
+const quoted = (thought: string) => <>"{thought}"</>;
 
 const AttributionReframeDrill = () => {
   const examples = [
@@ -232,42 +207,21 @@ const AttributionReframeDrill = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Attribution Reframe Drill</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Click on a self-defeating thought to transform it into an empowering one.</p>
-      <div className="space-y-3">
+    <ExerciseSheet title="Attribution Reframe Drill" sub="Click on a self-defeating thought to transform it into an empowering one." name="AttributionReframeDrill">
+      <div className="ex-cards">
         {examples.map((ex) => (
-          <motion.button
+          <RevealCard
             key={ex.id}
-            type="button"
-            aria-pressed={flipped.includes(ex.id)}
-            onClick={() => handleFlip(ex.id)}
-            className="module-reframe-card w-full p-6 rounded-xl cursor-pointer border relative min-h-[100px] flex items-center justify-center transition-colors"
-            data-reframed={flipped.includes(ex.id)}
-            animate={{
-              backgroundColor: moduleFill(flipped.includes(ex.id) ? 'var(--module-surface)' : 'var(--module-surface)'),
-              borderColor: moduleBorder(flipped.includes(ex.id) ? 'rgb(58 141 95)' : 'rgb(229 228 223)')
-            }} data-wide-button="true"
-          >
-            <AnimatePresence mode="wait">
-              <motion.p
-                key={flipped.includes(ex.id) ? ex.adaptive : ex.maladaptive}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3 }}
-                className={`text-sm text-center font-medium ${flipped.includes(ex.id) ? "text-[var(--module-success-text)]" : "text-[var(--module-ink)] dark:text-[var(--module-muted)]"}`}
-              >
-                "{flipped.includes(ex.id) ? ex.adaptive : ex.maladaptive}"
-              </motion.p>
-            </AnimatePresence>
-            <p className="absolute bottom-2.5 right-4 text-[9px] font-medium tracking-wider text-[var(--module-muted)] dark:text-[var(--module-ink)] uppercase">
-              {flipped.includes(ex.id) ? 'Reframed' : 'Tap to reframe'}
-            </p>
-          </motion.button>
+            revealed={flipped.includes(ex.id)}
+            onPress={() => handleFlip(ex.id)}
+            before={quoted(ex.maladaptive)}
+            after={quoted(ex.adaptive)}
+            hint="Tap to reframe"
+            done="Reframed"
+          />
         ))}
       </div>
-    </div>
+    </ExerciseSheet>
   );
 };
 
@@ -323,34 +277,33 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
           {activeSection === 1 && (
             <ReadingSection title="The Three Dimensions." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
               <p>{essentials ? 'Your failure story has three parts. Each one changes how you feel.' : 'Every story you tell yourself about a failure can be broken down along three dimensions.'}<Cite n={1} /></p>
-              <ConceptSequence kind="dimensions">
-                {/* Card 1 — Sky */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Locus of Control</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Is the cause <Highlight description="You're saying the cause is something about you — like how much effort you put in or how you prepared." theme={theme}>Internal</Highlight> (about you) or <Highlight description="You're saying the cause is something outside of you — like the teacher, the exam, or bad luck." theme={theme}>External</Highlight> (about the world)?</p>
+              <ol className="ex-nums">
+                <li>
+                  <span className="ex-num">1</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Locus of Control</p>
+                    <p className="ex-num-sub">Is the cause <Highlight description="You're saying the cause is something about you — like how much effort you put in or how you prepared." theme={theme}>Internal</Highlight> (about you) or <Highlight description="You're saying the cause is something outside of you — like the teacher, the exam, or bad luck." theme={theme}>External</Highlight> (about the world)?</p>
                   </div>
-                </div>
-                {/* Card 2 — Sunshine */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Stability</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Is the cause <Highlight description="You're saying this is permanent — it's always been this way and always will be. Like thinking 'I'm just not a maths person.'" theme={theme}>Stable</Highlight> (permanent) or <Highlight description="You're saying this is temporary — it happened this time but it's not a forever thing. Like thinking 'I didn't study enough for this specific test.'" theme={theme}>Unstable</Highlight> (temporary)?</p>
+                </li>
+                <li>
+                  <span className="ex-num">2</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Stability</p>
+                    <p className="ex-num-sub">Is the cause <Highlight description="You're saying this is permanent — it's always been this way and always will be. Like thinking 'I'm just not a maths person.'" theme={theme}>Stable</Highlight> (permanent) or <Highlight description="You're saying this is temporary — it happened this time but it's not a forever thing. Like thinking 'I didn't study enough for this specific test.'" theme={theme}>Unstable</Highlight> (temporary)?</p>
                   </div>
-                </div>
-                {/* Card 3 — Peach */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Controllability</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Is the cause something you can change, or not?</p>
+                </li>
+                <li>
+                  <span className="ex-num">3</span>
+                  <div className="ex-num-copy">
+                    <p className="ex-num-title">Controllability</p>
+                    <p className="ex-num-sub">Is the cause something you can change, or not?</p>
                   </div>
-                </div>
-              </ConceptSequence>
-              <AttributionMapper savedValues={responses['attribution-mapper']} onSave={(v) => saveResponse('attribution-mapper', v)} />
-              <AttributionSorter savedChoices={responses['attribution-sorter']} onSave={(c) => saveResponse('attribution-sorter', c)} />
+                </li>
+              </ol>
+              <ExerciseSheet name="AttributionMapper">
+                <AttributionMapper savedValues={responses['attribution-mapper']} onSave={(v) => saveResponse('attribution-mapper', v)} />
+                <AttributionSorter savedChoices={responses['attribution-sorter']} onSave={(c) => saveResponse('attribution-sorter', c)} />
+              </ExerciseSheet>
             </ReadingSection>
           )}
           {activeSection === 2 && (

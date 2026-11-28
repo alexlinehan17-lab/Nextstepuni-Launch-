@@ -1,79 +1,167 @@
-/* Claimable scheme rows — the recipe a science card's marking points use
-   (SessionScreen MarkRowView), shared by every rubric subject whose scheme is
-   cut into rows: a full-width button, a square check, the scheme's answer, a
-   marks chip. Charcoal means claimed; nothing is filled before the student
-   touches it. */
-.mb-claim-row {
-  width: 100%; text-align: left; display: grid; gap: 10px; align-items: center;
-  padding: 11px 12px; border-radius: 12px;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 500 13.5px/1.42 'DM Sans', system-ui, sans-serif;
-  transition: background 160ms, border-color 160ms;
-}
-button.mb-claim-row { grid-template-columns: 20px minmax(0, 1fr) auto; cursor: pointer; }
-button.mb-claim-row:disabled { cursor: default; opacity: .55; }
-/* A stepped row keeps at least 9em for its words, so a row with many mark
-   buttons never squeezes its text to one letter per line (Geography #271). */
-.mb-claim-row--stepped { grid-template-columns: minmax(9em, 1fr) auto; }
-.mb-claim-row[data-claimed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
-.mb-claim-row[data-tone="partial"] .mb-claim-text > span:first-child { color: var(--mb-ink-2); }
-.mb-claim-row[data-claimed="true"] .mb-claim-text > span,
-.mb-claim-row[data-claimed="true"] .mb-claim-text small { color: inherit; }
-.mb-claim-row[data-tone="deduction"] { border-style: dashed; }
-.mb-claim-row[data-tone="deduction"][data-claimed="true"] { border-style: solid; border-color: var(--mb-ink); background: var(--mb-raised); color: var(--mb-ink); }
+/* Claimable scheme rows: the board's claim row (r5-c2, a .choice with a square .pick), shared by
+   the science rows (SessionScreen MarkRowView, also in Listening Studio and the study quiz) and by
+   every rubric subject whose scheme is cut into rows.
 
-.mb-claim-check {
-  width: 18px; height: 18px; border-radius: 5px; flex: none;
-  border: 1.5px solid var(--mb-border); display: inline-flex; align-items: center; justify-content: center; color: #fff;
+   A row you press is the shared choice (components/ui/parts.css, .ui-choice): white, a thin line,
+   the selection mark at the left (a square, because each point is claimed on its own; a ring
+   where only one of several can be), the scheme's words in ink, and its marks at the right in the
+   readout, "3 marks" (ClaimRows marksLabel). Claimed: the ink outline, the tick draws in the
+   square, the marks turn ink. Nothing is ever filled charcoal, in either theme. A deduction keeps
+   its dashed line. */
+button.mb-claim-row {
+  display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: var(--space-3); align-items: start;
+  width: 100%; min-width: 0; min-height: 56px; padding: 13px 14px; cursor: pointer;
+  color: var(--ink-primary); font: 400 15px/21px var(--font-ui); letter-spacing: 0; text-align: left;
 }
-.mb-claim-row[data-claimed="true"] .mb-claim-check { border-color: var(--mb-on-claim); background: var(--mb-on-claim); color: var(--mb-claim); }
-.mb-claim-row[data-tone="deduction"][data-claimed="true"] .mb-claim-check { border-color: var(--mb-ink); background: var(--mb-ink); color: var(--mb-paper); }
+button.mb-claim-row > .ui-mark { margin-left: 0; }
+button.mb-claim-row:disabled { cursor: default; opacity: .5; }
+button.mb-claim-row:disabled:active { transform: none; }
+.mb-claim-row[data-tone="deduction"] { border-style: dashed; }
+.mb-claim-row[data-tone="deduction"][data-claimed="true"] { border-color: var(--ink-primary); }
+/* A claimed deduction keeps its dashed line: no solid inner line over it. */
+.mb-claim-row[data-tone="deduction"][data-claimed="true"]::before { opacity: 0; }
+
+/* A stepped row is not pressed itself: its words, and the printed marks it can take as buttons. */
+/* It is not a box: its words on the page, the rows ruled by a hairline. */
+.mb-claim-row--stepped {
+  display: grid; grid-template-columns: minmax(9em, 1fr) auto; gap: var(--space-3); align-items: center;
+  width: 100%; min-width: 0; padding: 12px 0; border-top: 1px solid var(--hairline);
+  color: var(--ink-primary); font: 400 15px/21px var(--font-ui); text-align: left;
+}
 
 .mb-claim-text { min-width: 0; overflow-wrap: anywhere; display: grid; gap: 3px; }
-.mb-claim-text small { font: 400 11.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
-.mb-claim-tag { font: 700 9.5px/1.5 'DM Sans', system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--mb-label); }
+.mb-claim-text > span { color: var(--ink-primary); }
+.mb-claim-row[data-tone="partial"] .mb-claim-text > span:not(.mb-claim-tag) { color: var(--ink-secondary); }
+.mb-claim-text small, .mb-claim-text .mb-claim-note, .mb-claim-note { color: var(--ink-muted); font: 400 13px/18px var(--font-ui); font-style: normal; }
+.mb-claim-text .mb-claim-note { display: block; margin-top: 2px; }
+.mb-claim-alt { color: var(--ink-muted); }
+.mb-claim-tag { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
 
-.mb-claim-chip {
-  font: 700 10.5px/1.7 'Roboto Mono', ui-monospace, monospace; border-radius: 6px; padding: 0 6px; white-space: nowrap;
-  font-variant-numeric: tabular-nums; background: var(--mb-raised); color: var(--mb-muted); align-self: center;
+/* A row's marks, and the counts and tags elsewhere: plain readout text, never a pill. */
+.mb-claim-chip, .mb-claim-count {
+  color: var(--ink-secondary); white-space: nowrap; letter-spacing: .02em; font-variant-numeric: tabular-nums;
+  font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace;
 }
-[data-claimed="true"] > .mb-claim-chip { background: var(--mb-claim); color: var(--mb-on-claim); }
-[data-tone="deduction"][data-claimed="true"] > .mb-claim-chip { background: var(--mb-paper); color: var(--mb-ink); }
+.mb-claim-row > .mb-claim-chip { padding-top: 3px; }
+.mb-claim-row--stepped > .mb-claim-chip { padding-top: 0; }
+[data-claimed="true"] > .mb-claim-chip, .mb-claim-count[data-on="true"] { color: var(--ink-primary); }
 
-.mb-claim-steps { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
-.mb-claim-steps button,
-.mb-claim-marks button {
-  min-width: 34px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 700 11px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
+/* Under a science row: a lock's reason, the synonym link and its note, lined up with the words. */
+.mb-pt-aside { display: block; margin: 4px 0 0 48px; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-pt-synonym {
+  display: inline-flex; align-items: center; min-height: 32px; margin: 2px 0 0 48px; padding: 0; border: 0; background: none;
+  color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
 }
-.mb-claim-steps button { display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
-.mb-claim-steps button[aria-pressed="true"] { border-color: var(--mb-on-claim); background: var(--mb-on-claim); color: var(--mb-claim); }
-/* On a claimed (charcoal) row the chosen mark is the one filled face; the
-   marks not chosen go hollow. Both used to draw as paper buttons, so on
-   Politics, Geography and PE bands the chosen mark looked like its
-   neighbours. In dark mode the row inverts and so does this. */
-.mb-claim-row { --mb-step-off-line: rgba(255, 255, 255, .5); }
-.dark .mb-claim-row { --mb-step-off-line: rgba(41, 41, 37, .45); }
-.mb-claim-row[data-claimed="true"]:not([data-tone="deduction"]) .mb-claim-steps button:not([aria-pressed="true"]) {
-  border-color: var(--mb-step-off-line); background: transparent; color: var(--mb-on-claim); font-weight: 500;
-}
-.mb-claim-row[data-claimed="true"]:not([data-tone="deduction"]) .mb-claim-steps button[aria-pressed="true"] {
-  box-shadow: 0 0 0 2px var(--mb-claim), 0 0 0 3.5px var(--mb-on-claim);
-}
-/* A claimed deduction row is a raised paper face, so its chosen mark is charcoal. */
-.mb-claim-row[data-tone="deduction"][data-claimed="true"] .mb-claim-steps button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
-.mb-claim-marks { display: flex; gap: 5px; flex-wrap: wrap; }
-.mb-claim-marks button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
-.mb-claim-marks button:disabled { cursor: default; opacity: .45; }
+.mb-step-rows { display: grid; gap: var(--space-3); margin-top: var(--space-2); }
+.mb-step-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); }
+.mb-step-part { min-width: 96px; color: var(--ink-secondary); font: 400 14px/20px var(--font-ui); }
+.mb-step-part[data-on="true"] { color: var(--ink-primary); }
 
-.mb-claim-part { margin: 6px 0 0; font: 600 13px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); display: flex; gap: 8px; align-items: baseline; min-width: 0; }
-.mb-claim-part-label { flex: none; font: 700 11px/1.4 'Roboto Mono', ui-monospace, monospace; color: var(--mb-label); }
+/* ---- Mark buttons: the printed marks a row or criterion can take -----------------------------
+   White with a thin line; chosen, the ink outline and the tick beside the number (no charcoal
+   fill). Drawn 36px high and at least 40px wide, 8px apart, each with an invisible 4px hit area
+   all round, so every target is at least 44 x 44 and no two overlap. */
+.mb-claim-steps, .mb-claim-marks, .mb-mark-buttons { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.mb-claim-steps { justify-content: flex-end; }
+.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+  min-width: 40px; height: 36px; padding: 0 10px; border-radius: var(--r-sm); cursor: pointer;
+  border: 1px solid var(--outline-soft); background: var(--surface-paper); color: var(--ink-primary);
+  font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; letter-spacing: .02em; font-variant-numeric: tabular-nums;
+  transition: border-color var(--t-ui) var(--ease-out), transform var(--t-press) var(--ease-out);
+}
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn)::after { content: ''; position: absolute; inset: -4px; }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn)::before {
+  content: ''; position: absolute; inset: -1px; border-radius: inherit; box-shadow: inset 0 0 0 2px var(--ink-primary);
+  opacity: 0; pointer-events: none; transition: opacity var(--t-press) var(--ease-out);
+}
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn)[aria-pressed="true"] { border-color: var(--ink-primary); }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn)[aria-pressed="true"]::before { opacity: 1; transition-duration: var(--t-ui); }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn):active:not(:disabled) { transform: scale(.96); }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn):disabled { cursor: default; opacity: .4; }
+:is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn):focus-visible { outline: 2px solid var(--outline-strong); outline-offset: 2px; }
+/* A stepper's minus and plus: the same box, 44 x 44 drawn. */
+.mb-mark-btn--step { width: 44px; height: 44px; padding: 0; font: 400 20px/1 var(--font-ui); }
+.mb-mark-btn--step::after { inset: 0; }
+/* A typed mark between a stepper's minus and plus: the shared field, white with a line. */
+.mb-mark-field {
+  width: 100px; min-height: 44px; padding: 10px 12px; text-align: center;
+  border: 1px solid var(--outline-soft); border-radius: var(--r-sm); background: var(--surface-paper); color: var(--ink-primary);
+  font: 400 17px/22px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums;
+}
+.mb-mark-field:focus { outline: none; border-color: var(--outline-strong); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+/* The tick draws once when a mark is chosen. */
+.mb-mark-tick { flex: none; }
+.mb-mark-tick path { stroke-dasharray: 22; stroke-dashoffset: 22; animation: mb-mark-tick-draw var(--t-draw) var(--ease-out) var(--t-draw-wait) forwards; }
+@keyframes mb-mark-tick-draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .mb-mark-tick path { animation: none; stroke-dashoffset: 0; }
+  :is(.mb-claim-steps button, .mb-claim-marks button, .mb-mark-btn):active:not(:disabled) { transform: none; }
+}
+/* A slider's readout and its ends, and the quick marks under it. */
+.mb-mark-readout { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+.mb-mark-readout strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-mark-range { width: 100%; margin: 9px 0 5px; accent-color: var(--ink-primary); }
+.mb-mark-ends { display: flex; justify-content: space-between; gap: 4px; color: var(--ink-muted); font: 400 11px/14px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
+.mb-mark-ends button { min-height: 44px; min-width: 44px; padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.mb-mark-ends button:first-child { text-align: left; }
+.mb-mark-ends button:last-child { text-align: right; }
+
+/* ---- The scheme's groups: on the page, never a box round a group of rows ---------------------
+   A group's name and its count sit on the page above its rows; groups are apart by space and one
+   hairline; only the rows and the mark buttons are boxes. Counts and tags are plain readout or
+   small-capitals text. Notes and directions sit under a small label and a hairline. */
+.mb-claim-part { margin: 6px 0 0; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); display: flex; gap: var(--space-2); align-items: baseline; min-width: 0; }
+.mb-claim-part-label { flex: none; color: var(--ink-muted); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
 .mb-claim-part-prompt { min-width: 0; overflow-wrap: anywhere; }
 
-.mb-claim-directions { padding: 11px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); }
-.mb-claim-directions strong { display: block; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--mb-ink-2); }
-.mb-claim-directions ul { margin: 6px 0 0; padding-left: 17px; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); display: grid; gap: 3px; }
+.mb-scheme-label { display: block; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
+legend.mb-scheme-label { padding: 0; margin-bottom: 6px; }
+.mb-scheme-title { margin: 6px 0 12px; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
+.mb-scheme-title + .mb-scheme-sub { margin-top: -6px; }
+.mb-scheme-sub { margin: 0 0 var(--space-3); color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-scheme-groups { display: grid; }
+.mb-scheme-group { display: grid; gap: var(--space-2); min-width: 0; padding: var(--space-4) 0; border-top: 1px solid var(--hairline); }
+.mb-scheme-group-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); min-width: 0; }
+.mb-scheme-group-name, .mb-criterion-name { min-width: 0; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); overflow-wrap: anywhere; }
+.mb-scheme-group .mb-scheme-sub { margin: 0; }
+.mb-scheme-notes { margin: 0; padding-left: 18px; display: grid; gap: 3px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-scheme-notes--lines { padding-left: 0; }
+.mb-scheme-notes--lines > p { margin: 0; }
+.mb-scheme-sub-groups { display: grid; }
+.mb-scheme-sub-group { display: grid; gap: var(--space-2); padding: var(--space-3) 0; border-top: 1px solid var(--hairline); }
+.mb-scheme-bands { display: grid; gap: var(--space-2); }
+.mb-scheme-band { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: var(--space-3); align-items: center; }
+.mb-scheme-band > strong { color: var(--ink-secondary); font: 400 13px/16px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
+.mb-scheme-unprinted { margin: 0 0 var(--space-4); }
+.mb-scheme-unprinted > p:first-child { margin: 0 0 4px; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-criterion { padding: var(--space-4) 0; border-bottom: 1px solid var(--hairline); }
+.mb-criterion > [role="group"] { margin-top: var(--space-2); }
+.mb-task-head { margin: var(--space-6) 0 var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--hairline); color: var(--ink-primary); font: 400 17px/22px var(--font-ui); letter-spacing: -0.015em; }
+
+/* The placement: one ruled line, the words and the figure, never a grey bar. */
+.mb-scheme-total { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); margin-top: var(--space-4); padding-top: 14px; border-top: 2px solid var(--ink-primary); }
+.mb-scheme-total > span { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-scheme-total > strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.mb-claim-directions, .mb-scheme-aside { margin-top: var(--space-2); padding: 12px 0 0; border-top: 1px solid var(--hairline); }
+.mb-claim-directions strong, .mb-scheme-aside > strong { display: block; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
+.mb-claim-directions ul, .mb-scheme-aside ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 3px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-scheme-aside p { margin: 6px 0 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-label-key-list { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-label-key-list strong { color: var(--ink-primary); font: 400 13px/18px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; }
+.mb-scheme-cite { margin: 14px 0 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+
+/* "Any N of these": the menu's label and its count on the page, then its answers as claim rows. */
+.mb-anyn { margin-bottom: var(--space-2); }
+.mb-anyn-label { margin: 0 0 4px; color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-anyn-head { margin-bottom: var(--space-2); }
+.mb-anyn-heading { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
+.mb-anyn-options { display: flex; flex-direction: column; gap: var(--space-2); }
+.mb-anyn-note { margin: var(--space-2) 0 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }
+
+/* Match the route you answered: a label, a line, and the tray of routes; no box round it. */
+.mb-route-chooser { min-width: 0; margin: 18px 0 0; padding: 0; border: 0; }
 
 @media (max-width: 480px) {
   .mb-claim-row--stepped { grid-template-columns: 1fr; }

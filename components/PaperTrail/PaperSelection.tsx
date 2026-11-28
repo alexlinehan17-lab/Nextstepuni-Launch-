@@ -1,15 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, Bookmark, ChevronDown, ArrowUpRight } from 'lucide-react';
+import { useBackStep } from '../../contexts/NavigationContext';
+import { Bookmark } from 'lucide-react';
 import type { PaperEntry, PaperItem, PaperLang, PaperLevel, PaperTrailSubject } from '../../types/paperTrail';
 import { recentKey } from '../../types/paperTrail';
 import { isPinned, type PaperRef } from './recentsStore';
 import { prettyBytes } from './storage';
 import PaperCover from './PaperCover';
-import { PaperDocuments, documentUrl, type DocumentSide } from './PaperDocuments';
+import { documentUrl, type DocumentSide } from './PaperDocuments';
 import { PaperSubjectArtwork } from './PaperSubjects';
-import { Button } from '../approved-ui-runtime';
-import { ToggleGroup, ToggleGroupItem } from '../approved-ui-runtime';
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '../approved-ui-runtime';
+import { Button, TextButton } from '../ui/Button';
+import { SelectionBar } from '../ui/Choice';
+import { Menu } from '../ui/Menu';
+import { List, PressBox, Row } from '../ui/List';
 
 export const LEVEL_LABEL: Record<PaperLevel, string> = {
   higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common',
@@ -33,11 +35,6 @@ export interface YearCell {
 export const yearCellLabel = (cell: Pick<YearCell, 'year' | 'sample'>) =>
   cell.sample ? `${cell.year} · Sample` : String(cell.year);
 
-const yearCellTags = (cell: YearCell, earlierTag: string) => cell.gap
-  ? ['Unavailable']
-  : [cell.sample && 'Sample papers', cell.earlier && earlierTag, cell.deferred && 'With deferred']
-    .filter((tag): tag is string => Boolean(tag));
-
 const DEFERRED_INTRO = 'A separate set of papers the SEC set for candidates who could not sit the June exams. Each opens beside its own deferred marking scheme where the SEC published one.';
 
 interface Props {
@@ -50,6 +47,8 @@ interface Props {
   year?: number;
   years: YearCell[];
   entry?: PaperEntry;
+  /** Every year's papers at this level and language, newest first (All years). */
+  everyYear?: PaperEntry[];
   notice?: string;
   /** Earlier-syllabus sentence for the selected year (syllabusChanges.ts). */
   syllabusNote?: string;
@@ -59,6 +58,9 @@ interface Props {
   earlierTag?: string;
   /** Page-level alert (the archive-outage notice), shown under the heading. */
   banner?: React.ReactNode;
+  /** All years is showing (held by the parent so it survives a trip to the reader). */
+  allYears?: boolean;
+  onAllYears?: (on: boolean) => void;
   onLevel: (level: PaperLevel) => void;
   onLang: (lang: PaperLang) => void;
   onYear: (year: number) => void;
@@ -68,129 +70,159 @@ interface Props {
   onTopics: () => void;
 }
 
+const isImage = (f: string) => /\.(jpg|jpeg|png)$/i.test(f);
+/** The main papers of a year (accessible-format copies are offered beside them). */
+const mainPapers = (entry?: PaperEntry) => {
+  const mains = entry?.papers.filter(p => !p.modified) ?? [];
+  return mains.length ? mains : entry?.papers ?? [];
+};
+
 export default function PaperSelection(props: Props) {
-  const { uid, subject, label, level, lang, langs, year, years, entry, notice, syllabusNote, gridNote, earlierTag = 'Earlier syllabus', banner, onLevel, onLang, onYear, onOpen, onSave, onBack, onTopics } = props;
-  const [allYears, setAllYears] = useState(false);
-  const [preview, setPreview] = useState<{ entry: PaperEntry; item: PaperItem; mode: DocumentSide | 'files' } | null>(null);
-  const [gap, setGap] = useState<string | null>(null);
+  const { uid, subject, label, level, lang, langs, year, years, entry, everyYear = [], notice, syllabusNote, gridNote, earlierTag = 'Earlier syllabus', banner, onLevel, onLang, onYear, onOpen, onSave, onBack: _onBack, onTopics } = props;
+  const [ownAllYears, setOwnAllYears] = useState(false);
+  const allYears = props.allYears ?? ownAllYears;
+  const setAllYears = (on: boolean) => { if (props.onAllYears) props.onAllYears(on); else setOwnAllYears(on); };
+  // Every year is a step of the subject: Back returns to the year first.
+  useBackStep(allYears, () => setAllYears(false));
   const heading = useRef<HTMLHeadingElement>(null);
-  const allYearsButton = useRef<HTMLButtonElement>(null);
-  const previous = useRef(false);
+  const papersHeading = useRef<HTMLHeadingElement>(null);
+  const previous = useRef(allYears);
   useEffect(() => {
-    if (allYears) heading.current?.focus();
-    else if (previous.current) allYearsButton.current?.focus();
+    if (previous.current !== allYears) papersHeading.current?.focus();
     previous.current = allYears;
   }, [allYears]);
-  const recentYears = years.filter(y => !y.gap).slice(0, 3);
 
-  const decades = [...new Set(years.map(y => Math.floor(y.year / 10) * 10))];
-  const mains = entry?.papers.filter(p => !p.modified) ?? [];
-  const papers = mains.length ? mains : entry?.papers ?? [];
+  const published = years.filter(y => !y.gap);
+  // The year bar: All years and the three newest years. A year chosen from
+  // further back (search, a saved paper) takes the place of the oldest of them.
+  const recent = published.slice(0, 3).map(y => y.year);
+  const barYears = year && !recent.includes(year) && published.some(y => y.year === year) ? [...recent.slice(0, 2), year] : recent;
+  const papers = mainPapers(entry);
   const juneItems = papers.filter(p => p.sitting !== 'deferred');
   const deferredItems = papers.filter(p => p.sitting === 'deferred');
   const sampleOnly = papers.length > 0 && papers.every(p => p.sitting === 'sample');
-  const selectedCell = years.find(y => y.year === year);
+  const single = papers.length === 1;
+
+  const saveRef = (item: PaperItem, e: PaperEntry): Omit<PaperRef, 'at'> => ({
+    key: recentKey(subject.id, e.year, e.level, e.lang, item.doc.f), subjectId: subject.id, year: e.year, level: e.level, lang: e.lang,
+    fileid: item.doc.f, label: paperLabel(item.label), kind: 'paper',
+  });
+  const saveButton = (item: PaperItem, e: PaperEntry) => {
+    const ref = saveRef(item, e);
+    const saved = isPinned(uid, ref.key);
+    return <Button size="sm" className="pt-icon-btn pt-save-btn" aria-label={`${saved ? 'Remove saved' : 'Save'} ${ref.label}`} aria-pressed={saved} onClick={() => onSave(ref)}>
+      <Bookmark width={18} height={18} strokeWidth={1.75} fill={saved ? 'currentColor' : 'none'} aria-hidden="true" />{saved ? 'Saved' : 'Save'}
+    </Button>;
+  };
+
+  const yearPapers = entry ? <>
+    <div className="pt-sec-head">
+      <h2 ref={papersHeading} tabIndex={-1} className="t-heading">{sampleOnly ? 'Sample papers' : year ? `${year} papers` : 'Your papers'}</h2>
+      {single && saveButton(papers[0], entry)}
+    </div>
+    {notice && <p role="status" className="t-meta">{notice}</p>}
+    {entry.note && <p className="t-meta">{entry.note}</p>}
+    {syllabusNote && <p className="t-meta pt-syllabus-note">{syllabusNote}</p>}
+    <div className="pt-paper-stack" aria-label={sampleOnly ? 'Sample papers' : `${year} papers`}>
+      {[...juneItems, ...deferredItems].map(item => {
+        const name = paperLabel(item.label);
+        const image = isImage(item.doc.f);
+        const card = <article key={item.doc.f} className="pt-paper" aria-label={name}>
+          {!single && <div className="pt-sec-head pt-paper-head"><h3 className="t-row">{name}</h3>{saveButton(item, entry)}</div>}
+          <div className="pt-pair">
+            {(['paper', ...(item.scheme ? ['scheme'] : [])] as DocumentSide[]).map(side => {
+              const document = side === 'paper' ? item.doc : item.scheme!;
+              const title = side === 'paper' ? name : 'Marking scheme';
+              return <div className="pt-doc" key={side}>
+                <PressBox className="pt-cover-btn" label={side === 'scheme' ? `Open the ${entry.year} marking scheme for ${name}` : `Open the ${entry.year} ${name}`} onPress={() => onOpen(entry, item, side)}>
+                  <PaperCover url={documentUrl(subject, entry, item, side)} image={side === 'paper' && image} renderWidth={600} />
+                </PressBox>
+                <span className="pt-doc-title">{title}</span>
+                <span className="t-meta">{side === 'paper' && image ? 'Image' : 'PDF'}{document.b > 0 ? ` · ${prettyBytes(document.b)}` : ''}</span>
+                <Button block className="pt-open" aria-label={side === 'scheme' ? `Open marking scheme for ${name}` : undefined} onClick={() => onOpen(entry, item, side)}>{side === 'scheme' ? 'Open scheme' : image ? 'Open image' : 'Open paper'}</Button>
+              </div>;
+            })}
+          </div>
+          {!item.scheme && !image && <p className="t-meta">Marking scheme not published</p>}
+          {item.modified && <p className="t-meta">Accessible format</p>}
+          {papers.some(p => !p.modified) && entry.papers.filter(p => p.modified && paperLabel(p.label).startsWith(name)).map(mod =>
+            <TextButton key={mod.doc.f} className="pt-accessible-link" onClick={() => onOpen(entry, mod, 'paper')}>{paperLabel(mod.label)} · accessible format</TextButton>)}
+        </article>;
+        // The deferred sitting follows the June papers under its own heading.
+        return item === deferredItems[0]
+          ? <React.Fragment key={item.doc.f}>
+              <div className="pt-sitting"><h3 className="t-heading">{entry.year} · Deferred sitting</h3><p className="t-meta">{DEFERRED_INTRO}</p></div>
+              {card}
+            </React.Fragment>
+          : card;
+      })}
+      {!papers.length && <p className="t-meta">Nothing published for this year and level.</p>}
+    </div>
+  </> : <p className="t-meta">Nothing is published at {LEVEL_LABEL[level]} level for this subject{subject.levels.length > 1 ? ' — try another level above.' : ' yet.'}</p>;
+
+  // Every paper, newest first, each beside its cover and its scheme's. A year
+  // the SEC did not publish says why, in place.
+  const everyEntry = new Map(everyYear.map(e => [e.year, e]));
+  const allPapers = <>
+    <div className="pt-sec-head">
+      <h2 ref={papersHeading} tabIndex={-1} className="t-heading">Every paper</h2>
+      <span className="t-meta">Newest first</span>
+    </div>
+    {gridNote && <p className="t-meta pt-syllabus-note">{gridNote}</p>}
+    {years.length ? <List className="pt-shelf" label="Every paper">
+      {years.flatMap(cell => {
+        if (cell.gap) return [<Row key={`gap-${cell.year}`} title={`${cell.year} · Unavailable`} meta={cell.gap} />];
+        const e = everyEntry.get(cell.year);
+        if (!e) return [];
+        return mainPapers(e).map(item => {
+          const name = paperLabel(item.label);
+          const tags = [cell.earlier && earlierTag].filter((tag): tag is string => Boolean(tag));
+          return <Row key={`${cell.year}-${item.doc.f}`} title={`${cell.year} · ${name}`}
+            meta={[item.scheme ? 'Paper and marking scheme' : isImage(item.doc.f) ? 'Image' : 'No marking scheme published', ...tags].join(' · ')}
+            label={`Open the ${cell.year} ${name}`}
+            art={<span className="pt-minis">
+              <PaperCover url={documentUrl(subject, e, item, 'paper')} image={isImage(item.doc.f)} renderWidth={120} />
+              {item.scheme && <PaperCover url={documentUrl(subject, e, item, 'scheme')} renderWidth={120} />}
+            </span>}
+            onPress={() => onOpen(e, item, 'paper')} />;
+        });
+      })}
+    </List> : <p className="t-meta">No papers have been published at this level yet.</p>}
+  </>;
 
   return <section className="pt-archive pt-selection" aria-label={`${label} exam papers`}>
-    <nav className="pt-toolbar" aria-label="Paper Trail">
-      <button className="pt-text-button" onClick={allYears ? () => setAllYears(false) : onBack}>
-        <ArrowLeft size={20} aria-hidden /> {allYears ? label : 'Paper Trail'}
-      </button>
-    </nav>
-    <header className="pt-subject-heading">
-      {!allYears && <PaperSubjectArtwork label={label} />}
-      <p className="pt-eyebrow">{allYears ? label : 'Your exam archive'}{subject.cycle === 'lca' ? ' · LCA' : ''}</p>
-      <h1 ref={heading} tabIndex={-1} className="pt-title">{allYears ? 'Choose a year' : label}</h1>
-    </header>
-    {banner}
-    <div className="pt-approved-filters">
-      <div className="pt-level-field"><span className="pt-control-label">Level</span>
-        <ToggleGroup aria-label="Level" variant="outline" value={[level]} onValueChange={values => { if (values.length) { setGap(null); onLevel(values[0] as PaperLevel); } }}>
-          {subject.levels.map(lv => <ToggleGroupItem key={lv} value={lv}>{LEVEL_LABEL[lv]} level</ToggleGroupItem>)}
-        </ToggleGroup>
+    {/* No "← Paper Trail" here: the top bar's one Back returns to the year,
+        then to the archive's front page (useBackStep above and in index.tsx). */}
+    <div className="pt-cols">
+      <div className="pt-lead">
+        <header className="pt-top">
+          <div className="pt-top-copy">
+            <h1 ref={heading} tabIndex={-1} className="t-display">{label}{subject.cycle === 'lca' ? <span className="t-meta"> · LCA</span> : null}</h1>
+            <p className="t-sub">Which paper today?</p>
+          </div>
+          <PaperSubjectArtwork label={label} className="pt-top-art" />
+        </header>
+        {banner}
+        <div className="pt-pickers">
+          <div className="pt-filter-row">
+            <SelectionBar label="Level" size="md" className="pt-level" value={level}
+              onChange={lv => onLevel(lv)} options={subject.levels.map(lv => ({ value: lv, label: LEVEL_LABEL[lv] }))} />
+            <Menu label="Paper language" className="pt-lang" value={lang} onChange={value => onLang(value)}
+              options={(langs.length ? langs : [lang]).map(lg => ({ value: lg, label: lg === 'ev' ? 'English' : 'Gaeilge' }))} />
+          </div>
+          <SelectionBar label="Year" size="md" className="pt-years" value={allYears ? 'all' : year ? String(year) : ''}
+            onChange={value => { if (value === 'all') setAllYears(true); else { onYear(Number(value)); setAllYears(false); } }}
+            options={[{ value: 'all', label: 'All years' }, ...barYears.map(y => ({ value: String(y), label: String(y) }))]} />
+        </div>
       </div>
-      <div className="pt-two-fields">
-        <div><span className="pt-control-label">Paper language</span>
-          <Select value={lang} onValueChange={value => { if (value) { setGap(null); onLang(value as PaperLang); } }}>
-            <SelectTrigger aria-label="Paper language"><SelectValue>{lang === 'ev' ? 'English' : 'Gaeilge'}</SelectValue></SelectTrigger>
-            <SelectContent>{(langs.length ? langs : [lang]).map(lg => <SelectItem key={lg} value={lg}>{lg === 'ev' ? 'English' : 'Gaeilge'}</SelectItem>)}</SelectContent>
-          </Select>
-        </div>
-        <div><span className="pt-control-label">Choose a year</span>
-          <Select value={allYears ? 'all' : String(year ?? '')} onValueChange={value => { if (value === 'all') setAllYears(true); else if (value) { onYear(Number(value)); setAllYears(false); setGap(null); } }}>
-            <SelectTrigger aria-label="Choose a year"><SelectValue>{allYears ? 'All years' : year ? yearCellLabel(selectedCell ?? { year }) : 'No published years'}</SelectValue></SelectTrigger>
-            <SelectContent>{[...new Set([...recentYears.map(y => y.year), ...(year ? [year] : [])])].map(y => <SelectItem key={y} value={String(y)}>{yearCellLabel(years.find(cell => cell.year === y) ?? { year: y })}</SelectItem>)}<SelectItem value="all">All years</SelectItem></SelectContent>
-          </Select>
-        </div>
+      <div className="pt-side">
+        <section className="pt-papers">{allYears ? allPapers : yearPapers}</section>
+        <section className="pt-end">
+          <h2 className="t-heading">Prefer to practise by topic?</h2>
+          <TextButton arrow="forward" onClick={onTopics}>Open Topic Atlas</TextButton>
+          <p className="t-meta">Examination material © State Examinations Commission.</p>
+        </section>
       </div>
     </div>
-    {allYears ? <>
-      <p className="pt-year-intro">Every available paper, newest first.</p>
-      {gridNote && <p className="pt-year-intro pt-syllabus-note">{gridNote}</p>}
-      {gap && <p role="status" className="pt-notice">{gap}</p>}
-      {decades.map(decade => <section className="pt-decade" key={decade}>
-        <h2 className="pt-eyebrow">{decade}–{Math.min(decade + 9, years[0].year)}</h2>
-        <div className="pt-year-grid">{years.filter(y => Math.floor(y.year / 10) * 10 === decade).map(y => {
-          const tags = yearCellTags(y, earlierTag);
-          return <button key={y.year} className={y.gap ? 'pt-year-gap' : ''} aria-pressed={!y.gap && y.year === year}
-            aria-label={y.gap ? `${y.year} unavailable — ${y.gap}` : [String(y.year), ...tags].join(', ')}
-            onClick={() => { if (y.gap) setGap(`${y.year}: ${y.gap}`); else { onYear(y.year); setGap(null); setAllYears(false); } }}>
-            {y.year}{tags.map(tag => <span key={tag}>{tag}</span>)}
-          </button>;
-        })}</div>
-      </section>)}
-      {!years.length && <p className="pt-notice">No papers have been published at this level yet.</p>}
-    </> : <>
-      <div className="pt-paper-selection-heading"><h2>{sampleOnly ? 'Sample papers' : year ? `${year} papers` : 'Your papers'}</h2><Button ref={allYearsButton} variant="ghost" onClick={() => setAllYears(true)}>All years<ChevronDown size={14} /></Button></div>
-      {notice && <p role="status" className="pt-notice">{notice}</p>}
-      {entry?.note && <p className="pt-notice">{entry.note}</p>}
-      {syllabusNote && <p className="pt-notice pt-syllabus-note">{syllabusNote}</p>}
-      {entry ? <div className="pt-paper-list" aria-label={sampleOnly ? 'Sample papers' : `${year} papers`}>
-        {[...juneItems, ...deferredItems].map(item => {
-          const name = paperLabel(item.label);
-          const ref: Omit<PaperRef, 'at'> = { key: recentKey(subject.id, entry.year, entry.level, entry.lang, item.doc.f), subjectId: subject.id, year: entry.year, level: entry.level, lang: entry.lang, fileid: item.doc.f, label: name, kind: 'paper' };
-          const saved = isPinned(uid, ref.key);
-          const image = /\.(jpg|jpeg|png)$/i.test(item.doc.f);
-          const card = <article key={item.doc.f} className="pt-paper-card" aria-label={name}>
-            <div className="pt-paper-pair-heading">
-              <h3>{name}</h3>
-              <Button variant="ghost" size="icon" className="pt-save" aria-label={`${saved ? 'Remove saved' : 'Save'} ${name}`} aria-pressed={saved} onClick={() => onSave(ref)}>
-                <Bookmark size={20} fill={saved ? 'currentColor' : 'none'} aria-hidden />
-              </Button>
-            </div>
-            <div className="pt-paper-cover-grid">
-              {(['paper', ...(item.scheme ? ['scheme'] : [])] as DocumentSide[]).map(side => {
-                const document = side === 'paper' ? item.doc : item.scheme!;
-                const title = side === 'paper' ? name : 'Marking scheme';
-                return <div className="pt-paper-cover-card" key={side}>
-                  <button className="pt-large-cover-button" aria-label={`Preview ${title}`} onClick={() => setPreview({ entry, item, mode: side })}>
-                    <PaperCover url={documentUrl(subject, entry, item, side)} image={side === 'paper' && image} renderWidth={600} />
-                  </button>
-                  <div className="pt-paper-cover-details"><h4>{title}</h4><p>{side === 'paper' && image ? 'Image' : 'PDF'}{document.b > 0 ? ` · ${prettyBytes(document.b)}` : ''}</p>
-                    <Button variant="outline" className="nsu-ink-outline" aria-label={side === 'scheme' ? `Open marking scheme for ${name}` : undefined} onClick={() => onOpen(entry, item, side)}>{side === 'scheme' ? 'Open scheme' : image ? 'Open image' : 'Open paper'}<ArrowUpRight /></Button>
-                  </div>
-                </div>;
-              })}
-            </div>
-            {!item.scheme && !image && <p className="pt-scheme-unavailable">Marking scheme not published</p>}
-            <Button variant="ghost" className="pt-paper-files-button" onClick={() => setPreview({ entry, item, mode: 'files' })}>{item.scheme ? 'Paper & marking scheme' : 'File details'}<ArrowUpRight /></Button>
-            {item.modified && <p className="pt-format-note">Accessible format</p>}
-            {mains.length > 0 && entry.papers.filter(p => p.modified && paperLabel(p.label).startsWith(name)).map(mod =>
-              <button key={mod.doc.f} className="pt-accessible" onClick={() => onOpen(entry, mod, 'paper')}>{paperLabel(mod.label)} · accessible format</button>)}
-          </article>;
-          // The deferred sitting follows the June papers under its own heading.
-          return item === deferredItems[0]
-            ? <React.Fragment key={item.doc.f}>
-                <div className="pt-sitting-heading"><h3>{entry.year} · Deferred sitting</h3><p>{DEFERRED_INTRO}</p></div>
-                {card}
-              </React.Fragment>
-            : card;
-        })}
-        {!papers.length && <p className="pt-notice">Nothing published for this year and level.</p>}
-      </div> : <p className="pt-notice">Nothing is published at {LEVEL_LABEL[level]} level for this subject{subject.levels.length > 1 ? ' — try another level above.' : ' yet.'}</p>}
-      <button className="pt-topic-link" onClick={onTopics}><span>Prefer to practise by topic?</span><ArrowRight size={18} aria-hidden /></button>
-      <p className="pt-source-note">Examination material © State Examinations Commission.</p>
-    </>}
-    {preview && preview.entry === entry && <PaperDocuments key={`${preview.item.doc.f}-${preview.mode}`} subject={subject} label={label} entry={preview.entry} item={preview.item} initial={preview.mode} onClose={() => setPreview(null)} onRead={side => { const selected = preview; setPreview(null); onOpen(selected.entry, selected.item, side); }} />}
   </section>;
 }

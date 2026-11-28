@@ -70,7 +70,7 @@
   --z-system: 9999;    /* offline notice */
 }
 @media (max-width: 767px) {
-  html[data-tabbar] { --tabbar-h: 64px; }
+  html[data-tabbar] { --tabbar-h: 50px; }
 }
 
 /* ── 2. Bars and pages ──────────────────────────────────────────────────── */
@@ -80,6 +80,12 @@
    Its own top padding goes in --frame-pad-top. Controls inside get a 44px hit
    area (section 6). */
 .frame-bar { padding-top: calc(var(--frame-pad-top, 0px) + var(--safe-top)); }
+
+/* A page's bar pinned to the top of the glass over a page that scrolls under
+   it (Modules, Learning Paths, a module world, the Launchpad). The bar inside
+   it (frame-bar) pads itself below the status bar. The stacking level stays
+   with the component. */
+.frame-top { position: fixed; top: 0; left: 0; right: 0; }
 
 /* A page with no bar of its own: same maths, the page's own top padding in
    --frame-pad-top. */
@@ -246,7 +252,10 @@ html {
    marks <body>; a mounted dialog or sheet primitive locks by being there. The
    page then neither scrolls nor rubber-bands behind it, whoever else writes
    overflow (the Kobra dialog does). */
-body[data-scroll-lock] { overflow: hidden; }
+/* clip, not hidden: a clipped body is not a scroll container, so a sticky bar
+   inside it (Home's top bar) stays at the top while a sheet is open. Browsers
+   without clip keep hidden. */
+body[data-scroll-lock] { overflow: hidden; overflow: clip; }
 html:has(body[data-scroll-lock], body .frame-dialog, body .frame-sheet-backdrop) {
   overflow: hidden;
   overscroll-behavior: none;

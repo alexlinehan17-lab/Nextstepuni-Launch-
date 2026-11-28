@@ -1,5 +1,4 @@
 import { BrandedPracticeSorter } from './learning/BrandedFeatures';
-import { moduleFill,moduleText } from './learning/brandTokens';
 
 /**
  * @license
@@ -23,6 +22,8 @@ import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { AnswerLine,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
 
 const theme = amberTheme;
 
@@ -36,21 +37,14 @@ const MyelinWrapper = () => {
     const milestone = wraps === 1 ? 'First layer of myelin forming.' : wraps === 4 ? 'Halfway there — signal noticeably faster.' : wraps >= 8 ? 'Fully myelinated. Skill becoming automatic.' : null;
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            {/* Section chip + title */}
-            <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 26, color: "var(--module-ink)" }}>The Myelin Wrapper</h4>
-                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
-            </div>
+        <ExerciseSheet label="Neuroscience Simulation" title="The Myelin Wrapper" sub="Each time you practice a skill, you add a layer of myelin, making the signal faster." name="MyelinWrapper">
+            {/* The nerve cross-section, on the sheet under its label (no box of its own) */}
+            <div className="ex-figure">
+                <ExerciseLabel>Nerve Cross-Section</ExerciseLabel>
 
-            {/* Nerve cross-section card */}
-            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 28, maxWidth: 320, margin: '0 auto' }}>
-                <p className="text-center mb-4" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Nerve Cross-Section</p>
-
-                <svg viewBox="0 0 220 220" width="220" height="220" style={{ display: 'block', margin: '0 auto' }}>
+                <svg viewBox="0 0 220 220" width="220" height="220" className="ex-figure-art">
                     {/* Outer boundary */}
-                    <circle cx="110" cy="110" r="100" fill="var(--module-surface)" stroke="var(--module-muted)" strokeWidth="1.5"/>
+                    <circle cx="110" cy="110" r="100" fill="var(--surface-paper)" stroke="var(--ink-muted)" strokeWidth="1.5"/>
 
                     {/* Myelin rings — outside in */}
                     {Array.from({ length: ringCount }).map((_, i) => {
@@ -73,13 +67,13 @@ const MyelinWrapper = () => {
                                 ) : (
                                     <circle cx="110" cy="110" r={outerR} fill={i % 2 === 0 ? COLORS.accent : COLORS.accentDark} opacity={opacity} />
                                 )}
-                                <circle cx="110" cy="110" r={innerR} fill="var(--module-surface)" />
+                                <circle cx="110" cy="110" r={innerR} fill="var(--surface-paper)" />
                             </g>
                         );
                     })}
 
                     {/* Central axon */}
-                    <circle cx="110" cy="110" r={axonR} fill={COLORS.accentTint} stroke={COLORS.accent} strokeWidth="2" />
+                    <circle cx="110" cy="110" r={axonR} fill="var(--surface-paper)" stroke={COLORS.accent} strokeWidth="2" />
 
                     {/* Speed pulse dot */}
                     {wraps > 0 && (
@@ -88,59 +82,44 @@ const MyelinWrapper = () => {
 
                     {/* Zero state label */}
                     {wraps === 0 && (
-                        <text x="110" y="115" textAnchor="middle" fontSize="11" fill="var(--module-muted)" fontFamily="DM Sans, sans-serif">no myelin yet</text>
+                        <text x="110" y="115" textAnchor="middle" fontSize="11" fill="var(--ink-muted)" style={{ fontFamily: 'var(--font-ui)' }}>no myelin yet</text>
                     )}
                 </svg>
 
                 {/* Layer count */}
-                <p className="text-center mt-3" style={{ fontSize: 12, color: "var(--module-muted)" }}>{ringCount} / 8 myelin layers</p>
+                <p className="ex-figure-count">{ringCount} / 8 myelin layers</p>
 
-                {/* Signal speed stat */}
-                <div className="text-center mt-4 pt-4" style={{ borderTop: "1px solid var(--module-line)" }}>
-                    <p style={{ lineHeight: 1 }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 40, color: 'var(--module-accent-text)' }}>{speed}</span>
-                        <span className="font-sans" style={{ fontSize: 16, color: "var(--module-muted)", marginLeft: 4 }}>m/s</span>
+                {/* Signal speed: the number in ink and its label, not a box */}
+                <div className="flex flex-col items-center gap-1 text-center">
+                    <p className="m-0" style={{ lineHeight: 1 }}>
+                        <span className="text-ink-primary" style={{ fontSize: 40, letterSpacing: '-0.04em' }}>{speed}</span>
+                        <span className="text-ink-muted" style={{ fontSize: 16, marginLeft: 4 }}>m/s</span>
                     </p>
-                    <p className="mt-1" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Signal Speed</p>
+                    <ExerciseLabel>Signal Speed</ExerciseLabel>
                 </div>
             </div>
 
-            {/* Milestone callout */}
+            {/* Milestone: a line in ink (the tick once fully myelinated) */}
             {milestone && (
                 <motion.div
                     key={milestone}
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="mt-4 max-w-xs mx-auto"
-                    style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: moduleFill(COLORS.accentTint), borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
                 >
-                    <p className="text-sm italic" style={{ color: moduleText(COLORS.accentDarkText) }}>{milestone}</p>
+                    <AnswerLine tone={wraps >= 8 ? 'ok' : 'note'}>{milestone}</AnswerLine>
                 </motion.div>
             )}
 
             {/* Buttons */}
-            <div className="flex items-center justify-center gap-5 mt-6">
-                <motion.button
-                    onClick={() => setWraps(w => Math.min(w + 1, maxWraps))}
-                    whileTap={{ scale: 0.97 }}
-                    className="text-[var(--module-ink)] font-semibold"
-                    style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 100, padding: '14px 32px', fontSize: 15, border: 'none' }}
-                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = COLORS.accentDark; }}
-                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = COLORS.accent; }} data-wide-button="true"
-                >
+            <div className="ex-actions">
+                <Button onClick={() => setWraps(w => Math.min(w + 1, maxWraps))}>
                     Practice Skill
-                </motion.button>
-                <button
-                    onClick={() => setWraps(0)}
-                    className="font-medium"
-                    style={{ fontSize: 13, color: "var(--module-muted)", background: 'none', border: 'none' }}
-                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = "var(--module-ink)"; }}
-                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = "var(--module-muted)"; }} data-wide-button="true"
-                >
+                </Button>
+                <TextButton tone="quiet" onClick={() => setWraps(0)}>
                     Reset
-                </button>
+                </TextButton>
             </div>
-        </div>
+        </ExerciseSheet>
     )
 }
 

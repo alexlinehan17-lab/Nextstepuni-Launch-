@@ -116,6 +116,24 @@ test('the confirm puts focus on the safe choice; Escape and the dimmed page choo
   expect(danger).toHaveBeenCalledTimes(1);
 });
 
+test('the confirm can carry a typed check under its words; a blocked danger says so and stays pressable', async () => {
+  const danger = vi.fn();
+  render(<Confirm open sentence="Delete student account" detail="This action cannot be undone."
+    keepLabel="Cancel" onKeep={vi.fn()} dangerLabel="Delete account" onDanger={danger} dangerBlocked>
+    <label htmlFor="check">Re-enter your password</label><input id="check" type="password" />
+  </Confirm>);
+  const dialog = await screen.findByRole('alertdialog', { name: 'Delete student account' });
+  const check = dialog.querySelector('.ui-confirm-check') as Element;
+  expect(check.querySelector('input[type=password]')).not.toBeNull();
+  // The field sits between the words and the two choices.
+  expect(dialog.querySelector('.ui-confirm-text')!.compareDocumentPosition(check) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  expect(check.compareDocumentPosition(screen.getByRole('button', { name: 'Cancel' })) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  const remove = screen.getByRole('button', { name: 'Delete account' });
+  expect(remove).toHaveAttribute('aria-disabled', 'true');
+  fireEvent.click(remove);
+  expect(danger).toHaveBeenCalledTimes(1);
+});
+
 test('the toast stack clears the tab bar edge: it is placed by the frame from --edge-bottom, which includes the tab bar', () => {
   render(<MessageHost />);
   act(() => { showMessage('Saved to your plan'); });
@@ -125,7 +143,7 @@ test('the toast stack clears the tab bar edge: it is placed by the frame from --
   const frame = readFileSync(join(process.cwd(), 'components/ui/frame.css'), 'utf8');
   expect(frame).toMatch(/\.frame-float-bottom\s*\{\s*bottom:\s*calc\(var\(--frame-float-gap, 16px\) \+ var\(--edge-bottom\)\);/);
   expect(frame).toMatch(/--edge-bottom:\s*calc\(var\(--safe-bottom\) \+ var\(--tabbar-h\)\);/);
-  expect(frame).toMatch(/html\[data-tabbar\]\s*\{\s*--tabbar-h:\s*64px;/);
+  expect(frame).toMatch(/html\[data-tabbar\]\s*\{\s*--tabbar-h:\s*50px;/);
   // Above every page layer, and read out politely.
   const parts = readFileSync(join(process.cwd(), 'components/ui/parts.css'), 'utf8');
   expect(parts).toMatch(/\.ui-toast\s*\{[^}]*z-index:\s*var\(--z-toast\)/);
@@ -147,4 +165,12 @@ test('one message at a time: a new one replaces the one showing, and each goes a
   expect(document.querySelector('.ui-toast')).toHaveAttribute('data-state', 'leaving');
   act(() => { vi.advanceTimersByTime(200); });   // it has faded and gone
   expect(document.querySelector('.ui-toast')).toBeNull();
+});
+
+test('a sheet can carry its title at the left and a quiet status word at the right (a module’s Notes)', () => {
+  render(<Sheet open titleAlign="start" titleSize="small" status="Saved" title="Notes" onClose={() => {}}><p>Body</p></Sheet>);
+  const head = document.querySelector('.ui-sheet-head');
+  expect(head).toHaveClass('ui-sheet-head--start');
+  expect(screen.getByText('Saved')).toHaveClass('ui-sheet-status');
+  expect(screen.getByRole('dialog', { name: 'Notes' })).toBeInTheDocument();
 });

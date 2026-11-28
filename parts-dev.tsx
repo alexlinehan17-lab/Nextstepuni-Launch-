@@ -22,17 +22,22 @@ import React, { useRef, useState, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 // The app loads its global stylesheet first and the parts after it; so does this page.
 import './index.css';
-import { ChartNoAxesColumn, ChevronLeft, Compass, Ellipsis, House, Map, Search, Timer } from 'lucide-react';
+import { Bookmark, ChartNoAxesColumn, ChevronLeft, ChevronRight, Compass, Ellipsis, House, Map, MoreHorizontal, Search, SlidersHorizontal, Timer } from 'lucide-react';
 import IllustrationTheme from './components/IllustrationTheme';
 import { Arrow, Button, Glyph, IconButton, TextButton } from './components/ui/Button';
-import { ChoiceGroup, SelectionBar, Switch } from './components/ui/Choice';
-import { Menu } from './components/ui/Menu';
+import { ChoiceGroup, ChoiceRuler, SelectionBar, SelectionMark, SelectionWords, Switch } from './components/ui/Choice';
+import { Menu, MenuAction, MenuCheckRows, MenuLabel, MenuPanel, MenuRadioRows, MenuRule, MenuSegment, MenuSwitch } from './components/ui/Menu';
+// The subject button's own look (Mark Bank), shown as the menu's button on the sheet.
+import './components/MarkBank/mark-bank-library.css';
 import { Confirm, Sheet } from './components/ui/Sheet';
 import { MessageHost, showMessage } from './components/ui/Message';
 import { PinnedFooter, TabBar, TopBar } from './components/ui/Bars';
 import { Field, SearchField } from './components/ui/Field';
-import { List, PaperSheet, PressBox, Row } from './components/ui/List';
+import { CheckRow, List, PaperSheet, PressBox, Row } from './components/ui/List';
 import { EmptyState, ErrorState, LoadingShape } from './components/ui/States';
+import { ChoiceTile } from './components/ui/Choice';
+import { AreaField } from './components/ui/Field';
+import { AnswerGroup, AnswerLine, ExercisePart, ExerciseSheet, RevealCard } from './components/learning/Exercise';
 
 const params = new URLSearchParams(window.location.search);
 if (params.get('theme') === 'dark') document.documentElement.classList.add('dark');
@@ -172,6 +177,8 @@ function ChoosingSection() {
   const [show, setShow] = useState('paper');
   const [goal, setGoal] = useState('10');
   const [section, setSection] = useState('overview');
+  const [period, setPeriod] = useState('week');
+  const [grade, setGrade] = useState('H3');
   return (
     <Section id="part-choosing" title="Choosing">
       <Spec label="One answer" caption="An outlined tile; chosen, it keeps its white face and gains an ink outline. Its round mark fills ink and the tick draws.">
@@ -199,8 +206,15 @@ function ChoosingSection() {
         <SelectionBar label="Sessions this week" value={goal} onChange={setGoal}
           options={[{ value: '6', label: '6' }, { value: '8', label: '8' }, { value: '10', label: '10' }, { value: '12', label: '12' }]} />
       </Spec>
-      <Spec label="Moving between the parts of a screen" caption="A menu button with a count, never a bar.">
+      <Spec label="Moving between the parts of a screen" caption="A menu button with a count, never a bar. Full width, the count stands at the end in the mono and the parts are numbered.">
         <Line><Menu label="Progress section" count value={section} onChange={setSection} options={SECTIONS} /></Line>
+        <Menu label="Progress section" count numbered block value={section} onChange={setSection} options={SECTIONS} />
+      </Spec>
+      <Spec label="Choices as words" caption="Week, Month and Year; the Fieldbook's pages. The current word is ink with a short ink line under it; no tray.">
+        <SelectionWords label="Period" value={period} onChange={setPeriod} options={[{ value: 'week', label: 'Week' }, { value: 'month', label: 'Month' }, { value: 'year', label: 'Year' }]} />
+      </Spec>
+      <Spec label="A ruler of short choices" caption="Grades H1 to H8 on Points Passport's What if?: one box divided by hairlines, the chosen grade in the ink outline, a dot under today's grade (area 7a).">
+        <ChoiceRuler label="Geography grade" value={grade} onChange={setGrade} options={['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8'].map(g => ({ value: g, label: g, name: `Geography ${g}`, marked: g === 'H4' }))} />
       </Spec>
     </Section>
   );
@@ -214,7 +228,76 @@ function MenuSection() {
         <Line><span data-demo="menu"><Menu label="Subject" value={subject} onChange={setSubject} options={SUBJECTS} /></span><span className="t-meta" data-demo="menu-value">Now: {SUBJECTS.find(s => s.value === subject)?.label}</span></Line>
         <Menu label="Subject" block value={subject} onChange={setSubject} options={SUBJECTS} />
       </Spec>
+      <Spec label="A row that opens a menu" caption="face: the button shows its own words instead of the value (Find a starting point on Modules, on a laptop). Choosing still applies at once.">
+        <Menu label="Find a starting point" block value="none" onChange={() => {}} face={<span className="ui-row-body"><span className="ui-row-title">Find a starting point</span><span className="ui-row-meta">Start from what you need help with</span></span>}
+          options={[{ value: 'remember', label: 'I forget what I study' }, { value: 'start', label: 'I keep putting it off' }]} />
+      </Spec>
+      <Spec label="A menu of a screen's tools" caption="MenuPanel (the paper viewer's Tools on a laptop): the phone's Tools sheet as a menu under its button. A switch turns a thing on and the menu stays open; a row with a chevron opens it; up-right leaves the app.">
+        <Line><span data-demo="menu-panel"><MenuPanelDemo /></span></Line>
+      </Spec>
+      <Spec label="A screen over where you were" caption="OverScreen (Mark Bank's practice card): a task that fills the window on a phone, its bar with Close owning the top inset; on a laptop it may start at sidebar B's edge and is then not modal. The tab bar steps aside; Escape goes to the screen; focus comes back to what opened it. Shown on the Mark Bank screens rather than here, since it takes the whole window.">
+        <p className="t-meta">See Mark Bank: a practice question.</p>
+      </Spec>
+      <Spec label="A box that opens a menu of choices" caption="MenuPanel with the screen's own box as its button (Mark Bank's subject and level on a laptop): a selection bar (MenuSegment) and rows with a character (MenuRadioRows), the current one ticked. Choosing applies at once.">
+        <Line><span data-demo="menu-choices"><MenuChoicesDemo /></span></Line>
+      </Spec>
+      <Spec label="A row's actions" caption="MenuPanel with chevron={false} and a bare … button (a student's row on the counsellor's dashboard): choices that apply at once (MenuRadioRows), a hairline (MenuRule), plain rows that do a thing where they are (MenuAction plain), a destructive one in red (tone danger), and tags you tick several of with the square mark, the menu staying open (MenuCheckRows).">
+        <Line><span data-demo="menu-row"><RowActionsDemo /></span></Line>
+      </Spec>
     </Section>
+  );
+}
+
+function MenuChoicesDemo() {
+  const [level, setLevel] = useState<'higher' | 'ordinary'>('higher');
+  const [subject, setSubject] = useState('biology');
+  const names: Record<string, string> = { accounting: 'Accounting', biology: 'Biology', chemistry: 'Chemistry' };
+  return (
+    <MenuPanel label="Change subject or level" buttonLabel={`Change subject or level: ${names[subject]}`} align="start" buttonClassName="mb-subject" className="mb-subject-menu"
+      face={<><span className="mb-subject-art" aria-hidden="true"><img src={CREW.accounting} alt="" /></span><span className="mb-subject-copy"><span className="t-name-sm">{names[subject]}</span><span className="t-meta">{level === 'higher' ? 'Higher' : 'Ordinary'} level</span></span></>}>
+      <MenuLabel>Paper level</MenuLabel>
+      <MenuSegment label="Paper level" value={level} onChange={value => setLevel(value === 'ordinary' ? 'ordinary' : 'higher')} options={[{ value: 'higher', label: 'Higher' }, { value: 'ordinary', label: 'Ordinary' }]} />
+      <MenuLabel>Your subjects</MenuLabel>
+      <MenuRadioRows label="Your subjects" value={subject} onChange={setSubject}
+        options={Object.entries(names).map(([value, label]) => ({ value, label, art: <img src={CREW.accounting} alt="" /> }))} />
+    </MenuPanel>
+  );
+}
+
+function RowActionsDemo() {
+  const [flag, setFlag] = useState<'high' | 'normal' | ''>('high');
+  const [tags, setTags] = useState<string[]>(['Priority']);
+  return (
+    <MenuPanel label="Fionn M." buttonLabel="Actions for Fionn M." buttonClassName="ui-icon-btn" chevron={false}
+      face={<MoreHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />}>
+      <MenuRadioRows label="Flag" value={flag} onChange={value => setFlag(value as 'high' | 'normal')}
+        options={[{ value: 'high', label: 'Flagged, high priority' }, { value: 'normal', label: 'Flagged, normal priority' }]} />
+      <MenuAction plain title="Remove flag" onPress={() => setFlag('')} />
+      <MenuRule />
+      <MenuLabel>Cohort tags · private to you</MenuLabel>
+      <MenuCheckRows label="Cohort tags" options={['DEIS', 'At-risk', 'Priority'].map(t => ({ value: t, label: t }))} values={tags}
+        onToggle={(t, on) => setTags(prev => on ? [...prev, t] : prev.filter(x => x !== t))} />
+      <MenuRule />
+      <MenuAction plain title="Reset password" onPress={() => {}} />
+      <MenuAction plain tone="danger" title="Delete account" onPress={() => {}} />
+    </MenuPanel>
+  );
+}
+
+function MenuPanelDemo() {
+  const [self, setSelf] = useState(true);
+  const [words, setWords] = useState(true);
+  return (
+    <MenuPanel label="Tools" buttonLabel="Study tools for this paper" head="Tools" status={`${[self, words].filter(Boolean).length} on`}
+      face={<><SlidersHorizontal className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />Tools</>}>
+      <MenuSwitch title="Save this paper" meta="Keeps it in Saved papers" checked={false} onChange={() => {}} />
+      <MenuAction title="Download the paper" meta="Opens in your browser · PDF · 1.3 MB" href="#download" />
+      <MenuLabel>Switch on</MenuLabel>
+      <MenuSwitch title="Self-mark" meta="Score yourself against the scheme" checked={self} onChange={setSelf} />
+      <MenuSwitch title="Command words" meta="Decode what each question demands" checked={words} onChange={setWords} />
+      <MenuLabel>Start</MenuLabel>
+      <MenuAction title="Triage" meta="Rate each question before you start" onPress={() => {}} />
+    </MenuPanel>
   );
 }
 
@@ -230,9 +313,16 @@ function OverSection() {
         <Line>
           <Button onClick={() => setOpen('sheet')}>Bottom sheet</Button>
           <Button onClick={() => setOpen('save')}>Sheet with Save</Button>
+          <Button onClick={() => setOpen('who')}>Sheet about someone</Button>
         </Line>
         <Line>
+          <Button onClick={() => setOpen('bare')}>Bare sheet (the quick tour)</Button>
+          <Button onClick={() => setOpen('plain')}>Plain sheet (Finish for now)</Button>
+          <Button onClick={() => setOpen('card')}>Sheet with its own headline (a tile's card)</Button>
+          <Button onClick={() => setOpen('notes')}>Sheet with its title at the left and a status (a module's Notes)</Button>
+          <Button onClick={() => setOpen('steps')}>Sheet with controls in its head (a marking scheme)</Button>
           <Button onClick={() => setOpen('confirm')}>Confirm</Button>
+          <Button onClick={() => setOpen('confirm-check')}>Confirm with a typed check</Button>
           <Button onClick={() => showMessage('Saved to your plan', { action: { label: 'Undo', onPress: () => {} } })}>Toast</Button>
         </Line>
       </Spec>
@@ -246,21 +336,80 @@ function OverSection() {
             { value: 'mathematics', label: 'Mathematics', art: CREW.mathematics },
           ]} />
       </Sheet>
+      <Sheet open={open === 'who'} onClose={close} title="Demo Student" meta="Student" art={<img src={CREW.accounting} alt="" />}>
+        <List><Row icon={<Glyph icon={ChartNoAxesColumn} size={20} />} title="My Progress" onPress={close} /></List>
+      </Sheet>
       <Sheet open={open === 'save'} onClose={close} title="This week's goal" titleSize="small" save={{ label: 'Save', onPress: close }}>
         <h3 className="t-title text-ink-primary">How many sessions this week?</h3>
         <SelectionBar label="Sessions this week" size="md" value={goal} onChange={setGoal}
           options={[{ value: '6', label: '6' }, { value: '8', label: '8' }, { value: '10', label: '10' }, { value: '12', label: '12' }]} />
         <p className="t-meta">You have done 6 so far. Your goal was 8.</p>
       </Sheet>
+      <Sheet open={open === 'bare'} bare title="Quick tour" onClose={close}
+        footer={<div className="ui-pair"><Button size="lg" onClick={close}>Skip</Button><Button kind="main" size="lg" block arrow="forward" onClick={close}>Next</Button></div>}>
+        <p className="t-label text-ink-muted">Quick tour · 1 of 3</p>
+        <h3 className="t-heading text-ink-primary">Your lessons live here</h3>
+        <p className="t-sub">A bare sheet carries its own words and its own way out: no handle, no header. On a laptop the same words sit in a popover (.ui-pop) beside what they point at.</p>
+      </Sheet>
+      <Sheet open={open === 'plain'} plain title="Finish for now?" onClose={close}
+        footer={<><Button kind="main" size="lg" block arrow="forward" onClick={close}>End and keep 17 min</Button><Button size="lg" block onClick={close}>Keep studying</Button><TextButton tone="danger" onClick={close}>Discard without saving</TextButton></>}>
+        <p className="t-sub">A plain sheet: the handle and the title at the left, no Close; its own choices are the way out.</p>
+      </Sheet>
+      <Sheet open={open === 'card'} hideTitle title="The branch library" onClose={close}
+        footer={<Button kind="main" size="lg" block arrow="forward" onClick={close}>Build another · 180 JP</Button>}>
+        <p className="t-label text-ink-muted">Part of your world</p>
+        <h3 className="t-title text-ink-primary">The branch library</h3>
+        <p className="t-sub">hideTitle: the body opens with its own headline, so the head shows only Close; the title stays the sheet's name for screen readers.</p>
+      </Sheet>
+      <Sheet open={open === 'notes'} titleAlign="start" titleSize="small" status="Saved" title="Notes" onClose={close}>
+        <p className="t-sub">titleAlign start: the title sits at the left beside Close. status: a quiet word at the right of the head that says how things stand; notes save as you type, so there is no Done.</p>
+      </Sheet>
+      <Sheet open={open === 'steps'} titleAlign="start" title="Question 3 · marking scheme" onClose={close}
+        actions={<><IconButton label="Previous question’s marking scheme" icon={<Glyph icon={ChevronLeft} />} /><IconButton label="Next question’s marking scheme" icon={<Glyph icon={ChevronRight} />} /></>}>
+        <p className="t-sub">actions: controls at the right of the head that move through what the sheet shows (previous and next question). Close stays at the top left.</p>
+      </Sheet>
       <Confirm open={open === 'confirm'} sentence="Delete your account?"
         detail="Everything you have studied, planned and saved is erased and cannot be brought back."
         keepLabel="Keep my account" onKeep={close} dangerLabel="Delete account" onDanger={close} />
+      <Confirm open={open === 'confirm-check'} sentence="Delete student account"
+        detail="Delete Aoife T. and all associated progress and profile data? This action cannot be undone."
+        keepLabel="Cancel" onKeep={close} dangerLabel="Delete account" onDanger={close} dangerBlocked>
+        <Field id="parts-confirm-check" type="password" label="Re-enter your password" autoComplete="current-password" />
+      </Confirm>
     </Section>
   );
 }
 
+function RowEndDemo() {
+  const [saved, setSaved] = useState(true);
+  return <List label="Saved papers"><Row title="Accounting · Exam Paper" meta="2025 · Higher level · English" onPress={() => {}}
+    end={<IconButton label={`${saved ? 'Remove saved' : 'Save'} Accounting 2025 Exam Paper`} aria-pressed={saved} onClick={() => setSaved(v => !v)}
+      icon={<Bookmark className="ui-icon" width={20} height={20} strokeWidth={1.75} fill={saved ? 'currentColor' : 'none'} aria-hidden="true" focusable="false" />} />} /></List>;
+}
+
+function CompactChoiceDemo() {
+  const [score, setScore] = useState<number | null>(50);
+  const [gap, setGap] = useState<string | null>('process');
+  return <div className="flex flex-col gap-2" style={{ maxWidth: 342 }}>
+    <div className="grid grid-cols-5 gap-2" role="group" aria-label="How did you do against the scheme?">
+      {[{ v: 0, l: 'Blank' }, { v: 25, l: 'Some' }, { v: 50, l: 'Half' }, { v: 75, l: 'Most' }, { v: 100, l: 'Full' }].map(b =>
+        <ChoiceTile key={b.v} compact kind="toggle" chosen={score === b.v} label={b.l} onClick={() => setScore(b.v)} />)}
+    </div>
+    <div className="grid grid-cols-2 gap-2" role="group" aria-label="What went wrong?">
+      {[{ k: 'content', l: 'Didn’t know it' }, { k: 'process', l: 'Wrong method' }, { k: 'careless', l: 'Careless slip' }, { k: 'timing', l: 'Ran out of time' }].map(g =>
+        <ChoiceTile key={g.k} compact kind="toggle" chosen={gap === g.k} label={g.l} onClick={() => setGap(gap === g.k ? null : g.k)} />)}
+    </div>
+  </div>;
+}
+
+function CheckRowDemo() {
+  const [done, setDone] = useState(false);
+  return <CheckRow checked={done} onChange={setDone} mark={<SelectionMark on={done} shape="square" />}>2024 Paper 1, Question 6</CheckRow>;
+}
+
 function BarsSection() {
   const [need, setNeed] = useState(true);
+  const [island, setIsland] = useState('island');
   const answerRef = useRef<HTMLDivElement>(null);
   return (
     <Section id="part-bars" title="Bars">
@@ -273,17 +422,44 @@ function BarsSection() {
       <Spec label="A Launchpad tool" caption="Its family as a small line over its name; its own drawing at the right, once.">
         <div className="border border-dashed border-outline-soft"><TopBar tool leave={{ kind: 'back', onPress: () => {} }} over="Start with you" title="Future Finder" art={FUTURE_FINDER} /></div>
       </Spec>
+      <Spec label="A place that has become a task" caption="Study set-up once something is chosen: Cancel clears the choices and gives the place (and the tab bar, via useFrameTask) back.">
+        <div className="border border-dashed border-outline-soft"><TopBar leave={{ kind: 'cancel', onPress: () => {} }} placeLabel="The Study Room" /></div>
+      </Spec>
+      <Spec label="A place's bar on a laptop, with a control in the middle" caption="The island: one quiet action at the left end (lead), the selection bar midway between the bar's ends (center), the points at the right. Balanced neighbours make it read as centred.">
+        <div className="border border-dashed border-outline-soft"><TopBar lead={<TextButton tone="quiet">How it works</TextButton>}
+          center={<SelectionBar label="Journey sections" value={island} onChange={setIsland} options={[{ value: 'island', label: 'Island' }, { value: 'build', label: 'Build' }, { value: 'fieldbook', label: 'Fieldbook' }, { value: 'year', label: 'Your year' }]} />}
+          action={<Button size="sm"><span className="ui-readout">5,065 JP</span></Button>} /></div>
+      </Spec>
+      <Spec label="A row you tick" caption="CheckRow: the whole row is the checkbox, with the screen's own mark (Time's up: the session's dotted ring).">
+        <CheckRowDemo />
+      </Spec>
+      <Spec label="A row with a control beside it" caption="Row end: the row opens something (a saved paper), and a separate control sits beside it on the same ruled line, never inside the row's button (its bookmark).">
+        <RowEndDemo />
+      </Spec>
+      <Spec label="Short choices in a row" caption="ChoiceTile compact (self-mark in the paper viewer: Blank to Full, then why marks were lost): 44px, the words centred; chosen, the ink outline and the tick drawn before the words.">
+        <CompactChoiceDemo />
+      </Spec>
+      <Spec label="An over-screen with its own controls, on a phone" caption="below: a second row inside the bar, under the name (the paper viewer: Paper or Scheme beside its Answers switch).">
+        <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {}, label: 'Close viewer' }} over="2025 · Higher · Exam Paper" title="Physics"
+          action={<IconButton label="Study tools for this paper" icon={<Glyph icon={SlidersHorizontal} />} />}
+          below={<><SelectionBar label="Paper or marking scheme" size="md" className="flex-1" value="paper" onChange={() => {}} options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]} /><label className="ui-switch-row"><span>Answers</span><Switch checked onChange={() => {}} label="Answers" /></label></>} /></div>
+      </Spec>
+      <Spec label="The same over-screen on a laptop" caption="A title and a centre control together: the name at the left beside Close, the control centred between two equal zones, the actions at the right.">
+        <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {}, label: 'Close viewer' }} over="2025 · Higher · Exam Paper" title="Physics"
+          center={<SelectionBar label="Paper or marking scheme" size="md" value="paper" onChange={() => {}} options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]} />}
+          action={<IconButton label="Study tools for this paper" icon={<Glyph icon={SlidersHorizontal} />} />} /></div>
+      </Spec>
       <Spec label="Something over the top" caption="Close, an X, top left. A hairline once content scrolls under it.">
         <div className="border border-dashed border-outline-soft"><TopBar ruled leave={{ kind: 'close', onPress: () => {} }} title="Practice" /></div>
       </Spec>
-      <Spec label="The tab bar" caption="Five places. The current one is ink with a 2px ink marker above it.">
+      <Spec label="The tab bar" caption="Five places. The current one is ink with a 2px ink marker above it. It steps aside while the keyboard is up; a tab can carry a tour stop (coach).">
         <div className="border border-dashed border-outline-soft"><TabBar items={PLACES} current="launch" onSelect={() => {}} /></div>
       </Spec>
       <Spec label="The pinned footer" caption="The one main action of a task screen, the sentence naming what is missing directly above it.">
         <div ref={answerRef}><ChoiceGroup legend="Fixing something that has stopped working" value={need ? null : 'like'} onChange={() => setNeed(false)}
           options={[{ value: 'love', label: "I'd love it" }, { value: 'like', label: "I'd like it" }]} /></div>
         <div className="border border-dashed border-outline-soft">
-          <PinnedFooter ruled note="Your answers stay as you go back">
+          <PinnedFooter ruled lead={<>Next: <span className="text-ink-primary">Your New OS</span></>} note="Your answers stay as you go back">
             <Button kind="main" size="lg" block arrow="forward" missing={need ? { sentence: 'Choose an answer to go on.', goTo: answerRef } : undefined} onClick={() => setNeed(true)}>
               {need ? 'Choose an answer' : 'Continue'}
             </Button>
@@ -296,6 +472,7 @@ function BarsSection() {
 
 function FieldsSection() {
   const [on, setOn] = useState(true);
+  const [rowOpen, setRowOpen] = useState(false);
   return (
     <Section id="part-fields" title="Field, rows, the sheet, the box">
       <Spec label="A field">
@@ -304,11 +481,33 @@ function FieldsSection() {
         <Field label="School code" defaultValue="GLEN20" autoCapitalize="characters" error="That code is not one we know. Check it with your teacher and type it again." />
       </Spec>
       <Spec label="Search"><SearchField label="Search topics" placeholder="Search topics" /></Spec>
-      <Spec label="Rows" caption="At least 56 tall, kept apart by a hairline. A row that opens something ends in a chevron; one that shows something ends in its value; a row with a switch has no chevron.">
+      <Spec label="Rows" caption="At least 56 tall, kept apart by a hairline. A row that opens something ends in a chevron; one that shows something ends in its value; a row with a switch has no chevron. The art may be a drawn element (a subject's character), and a row may carry its own accessible name.">
         <List>
           <Row art={CREW.accounting} title="Accounting" meta={<>Practice · 45 min · <span className="text-accent-text">Up next</span></>} onPress={() => {}} />
           <Row title="Sessions this week" value="6 / 8" />
+          <Row external href="#download" title="Download the paper" meta="Opens in your browser · PDF · 1.3 MB" />
           <Row title="Offer me questions when I finish" trailing={<Switch checked={on} onChange={setOn} label="Offer me questions when I finish" />} />
+          <Row art={<img src={CREW.irish} alt="" />} title="Irish" meta="Practice · 45 min" label="Study Irish: Practice, 45 minutes" onPress={() => {}} />
+        </List>
+      </Spec>
+      <Spec label="Rows with a number, a bar and a count" caption="A topic in a list (Mark Bank): its number in the readout at the left, a 3px ink bar under the name for the share tried, the count at the right. Chosen in place, with its detail beside the list on a laptop: an ink outline and no chevron.">
+        <List>
+          <Row lead="2.1" title="Enzymes" progress={41 / 151} value="41 / 151" onPress={() => {}} />
+          <Row lead="02" title="Structures and Processes of Life" progress={104 / 2023} meta="19 topics · 104 of 2,023 tried" onPress={() => {}} />
+          <Row lead="2.2" title="Photosynthesis" progress={24 / 138} value="24 / 138" selected onPress={() => {}} />
+          <Row lead="2.2" title="Respiration" progress={9 / 129} value="9 / 129" selected={false} onPress={() => {}} />
+        </List>
+      </Spec>
+      <Spec label="Rows that move forward or open in place" caption="The next part of a screen ends in an arrow (it moves forward). A row that opens under itself ends in a chevron-down that turns up while it is open.">
+        <List>
+          <Row over="Next · 2 of 5" title="Study" forward onPress={() => {}} />
+          <Row title="Latest practice mock" meta="24 Nov · one sitting recorded so far" value="506 points" expanded={rowOpen} onPress={() => setRowOpen(open => !open)} />
+        </List>
+      </Spec>
+      <Spec label="Rows with an icon" caption="The account sheet's rows: a bare 20px glyph in ink-2 at the left. A destructive row is red words with no arrow.">
+        <List>
+          <Row icon={<Glyph icon={ChartNoAxesColumn} size={20} />} title="My Progress" onPress={() => {}} />
+          <Row icon={<Glyph icon={Timer} size={20} />} title="Log out" tone="danger" onPress={() => {}} />
         </List>
       </Spec>
       <Spec label="A group of rows that is one control" caption="Boxed only when the group as a whole is a control: a line, like every box you press.">
@@ -322,6 +521,7 @@ function FieldsSection() {
           <PressBox onPress={() => {}}><span className="t-row block">Exam paper</span><span className="t-meta">PDF · 2.4 MB</span></PressBox>
           <PressBox onPress={() => {}}><span className="t-row block">Marking scheme</span><span className="t-meta">PDF · 519 KB</span></PressBox>
         </div>
+        <PressBox expanded={false} onPress={() => {}}><span className="t-row block">9 modules finished</span><span className="t-meta">expanded: it opens a list in place under itself (a world's finished modules)</span></PressBox>
       </Spec>
       <Spec label="The raised sheet (level 2)" caption="At most one per screen, for the thing the screen is about.">
         <div className="px-1 pt-2 pb-1">
@@ -331,6 +531,60 @@ function FieldsSection() {
             <p className="t-meta mt-4">4 sessions of focused study</p>
           </PaperSheet>
         </div>
+      </Spec>
+    </Section>
+  );
+}
+
+/** Area 5b: the pieces an exercise in a module is made of (boards c-read-flow, c-read-choices, c-read-write). */
+const REASONS = [
+  { text: "I didn't use the right study method.", control: true },
+  { text: "I'm just naturally bad at this subject.", control: false },
+  { text: 'The test was unfairly hard.', control: false },
+  { text: "I didn't put in enough focused effort.", control: true },
+];
+function ExerciseSection() {
+  const [choice, setChoice] = useState<Record<string, boolean>>({ [REASONS[0].text]: true, [REASONS[2].text]: true });
+  const [pair, setPair] = useState<number | null>(1);
+  const [turned, setTurned] = useState<number[]>([1]);
+  const [text, setText] = useState("I'm not a maths person yet.");
+  const flip = (i: number) => setTurned(t => (t.includes(i) ? t.filter(x => x !== i) : [...t, i]));
+  return (
+    <Section id="part-exercise" title="An exercise in a module">
+      <Spec label="The sheet, answers you choose" caption="The page's one lifted sheet. A chosen answer has an ink outline and its tick draws; under it, the module's own words on an ink line, with a green tick where the answer is right. The count is read from the answers. Arrow keys move within the group.">
+        <ExerciseSheet title="Control Panel" sub="Scenario: You fail a test. Which of these reasons are actually within your control?">
+          <AnswerGroup kind="several" count>
+            {REASONS.map(r => (
+              <ChoiceTile key={r.text} kind="several" chosen={!!choice[r.text]} label={r.text}
+                note={choice[r.text] ? (r.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)') : undefined} noteTone={r.control ? 'ok' : 'plain'}
+                onClick={() => setChoice(c => ({ ...c, [r.text]: !c[r.text] }))} />
+            ))}
+          </AnswerGroup>
+          <ExercisePart label="Pick one" title="When I fail at something...">
+            <AnswerGroup kind="one" columns={2}>
+              {["A) I feel like I'm a failure.", 'B) I feel like I need to try a new strategy.'].map((t, i) => (
+                <ChoiceTile key={t} tile chosen={pair === i} label={t} onClick={() => setPair(i)} />
+              ))}
+            </AnswerGroup>
+          </ExercisePart>
+        </ExerciseSheet>
+      </Spec>
+      <Spec label="An answer you write" caption="The field takes the quiet ink edge while it is in use. The line under it is ink, with a green tick.">
+        <ExerciseSheet label="Growth Mindset Activity" title={'The "Yet" Reframe Challenge'} sub={'Upgrade this fixed thought into a growth mindset statement using the power of "yet".'}>
+          <AreaField label="Your Reframe" value={text} onChange={e => setText(e.target.value)} placeholder="Rewrite this using the word 'yet'..." data-force="focus" />
+          {text.toLowerCase().includes('yet') ? <AnswerLine><b>Reframe complete.</b> You've opened up the possibility of future growth.</AnswerLine> : null}
+        </ExerciseSheet>
+      </Spec>
+      <Spec label="A card you press to turn it over" caption="A white box with a line. Turned, the old words are struck through above the new ones, in ink, with a green tick: no orange or green panel.">
+        <div className="flex flex-col gap-2">
+          {[["I failed the test because I am stupid.", 'I failed the test because my study strategy for this topic was ineffective.'], ["I'm just naturally bad at Maths.", "I haven't found an effective way to learn Maths yet."]].map(([a, b], i) => (
+            <RevealCard key={a} revealed={turned.includes(i)} onPress={() => flip(i)} before={`"${a}"`} after={`"${b}"`} hint="Tap to reframe" done="Reframed" />
+          ))}
+        </div>
+      </Spec>
+      <Spec label="Lines that answer" caption="Ink words. The tick beside them is the only green; a note has no tick.">
+        <AnswerLine>You just turned a verdict into data.</AnswerLine>
+        <AnswerLine tone="note">Result: You're leaning towards Growth, with some Fixed-Mindset code still running.</AnswerLine>
       </Spec>
     </Section>
   );
@@ -370,6 +624,7 @@ function PartsSheet() {
       <OverSection />
       <BarsSection />
       <FieldsSection />
+      <ExerciseSection />
       <StatesSection />
       <MessageHost />
     </main>

@@ -4,14 +4,20 @@
  */
 
 import './admin/admin-dashboard.css';
-import { useSlidingNavIndicator } from './admin/useSlidingNavIndicator';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  AlertTriangle,
+  ChartNoAxesColumn,
+  ChevronLeft,
   ChevronRight,
+  House,
+  Inbox,
+  Landmark,
+  Lock,
   LogOut,
   RefreshCw,
   Trash2,
+  User,
+  Users,
 } from 'lucide-react';
 import {
   collection,
@@ -26,24 +32,30 @@ import {
   type QueryDocumentSnapshot,
 } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
-import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type CategoryType } from './KnowledgeTree';
-import {
-  type SessionUser,
-  getAvatarUrl,
-  handleAvatarError,
-} from '../utils/authUtils';
+import { type SessionUser } from '../utils/authUtils';
 import app, { auth, db } from '../firebase';
 import { SCHOOLS, getSchoolName } from '../schoolData';
 import { type StudentSubjectProfile, type YearGroup } from './subjectData';
 import { filterCoursesForStudent } from '../utils/courseVisibility';
-import AdminFeedbackInbox from './AdminFeedbackInbox';
-import AdminFunnelPanel from './AdminFunnelPanel';
+import AdminFeedbackInbox, { loadNewFeedback } from './AdminFeedbackInbox';
+import AdminFunnelPanel, { funnelSummary, loadFunnelCounts } from './AdminFunnelPanel';
 import AdminGcAccessPanel from './AdminGcAccessPanel';
 import AdminProgrammePanel from './AdminProgrammePanel';
 import { reauthMethodFor, reauthenticateCurrentUser } from '../utils/reauthenticate';
 import { yearGroupToCurriculumLevel } from '../utils/authUtils';
+import { TopBar, TabBar, type TabBarItem } from './ui/Bars';
+import { Button, IconButton, TextButton } from './ui/Button';
+import { Confirm } from './ui/Sheet';
+import { Field, SearchField } from './ui/Field';
+import { Row } from './ui/List';
+import { Menu, MenuAction, MenuPanel, MenuRule } from './ui/Menu';
+import { SelectionBar } from './ui/Choice';
+import { ErrorState, LoadingShape } from './ui/States';
+import { MessageHost, showMessage } from './ui/Message';
+import { logError } from '../utils/logError';
+import { Fig, Pct, StudentArt, useWide } from './gc/gcView';
 
 type ModuleProgress = {
   unlockedSection: number;
@@ -106,15 +118,20 @@ const CATEGORIES: { id: CategoryType; title: string }[] = [
   { id: 'exam-zone', title: 'Exam Strategy and Points Maximisation' },
 ];
 
-const NAV_ITEMS: { id: AdminView; label: string }[] = [
-  { id: 'overview', label: 'Overview' },
-  { id: 'programme', label: 'Programme' },
-  { id: 'students', label: 'Students' },
-  { id: 'schools', label: 'Schools' },
-  { id: 'years', label: 'Year groups' },
-  { id: 'funnel', label: 'First run' },
-  { id: 'feedback', label: 'Feedback' },
-  { id: 'gc-access', label: 'School access' },
+/** The five places along the bottom of a phone (the agreed board: eight tabs became five; Year groups
+ *  lives in Schools, First run opens from Overview, School access from the account menu). */
+type Place = 'overview' | 'students' | 'schools' | 'programme' | 'feedback';
+const PLACES: TabBarItem<Place>[] = [
+  { id: 'overview', label: 'Overview', icon: House },
+  { id: 'students', label: 'Students', icon: Users },
+  { id: 'schools', label: 'Schools', icon: Landmark },
+  { id: 'programme', label: 'Programme', icon: ChartNoAxesColumn },
+  { id: 'feedback', label: 'Feedback', icon: Inbox },
+];
+/** On a laptop the staff sidebar lists the same five and School access (the agreed laptop board). */
+const SIDEBAR: { id: AdminView; label: string; icon: typeof House }[] = [
+  ...PLACES.map(place => ({ id: place.id as AdminView, label: place.label, icon: place.icon })),
+  { id: 'gc-access', label: 'School access', icon: Lock },
 ];
 
 const YEAR_GROUPS = ['1st', '2nd', '3rd', 'TY', '5th', '6th', 'LCA1', 'LCA2', 'graduated'] as const;
@@ -178,170 +195,116 @@ function displayYear(yearGroup?: string): string {
   return YEAR_LABELS[yearGroup || NOT_SET] || yearGroup || YEAR_LABELS[NOT_SET];
 }
 
-function formatDate(): string {
-  return new Intl.DateTimeFormat('en-IE', {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-  }).format(new Date());
+/** "Tue 24 Nov": the day in the bar, as the agreed boards write it (never a machine date). */
+function formatShortDate(): string {
+  const today = new Date();
+  const part = (options: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat('en-IE', options).format(today);
+  return `${part({ weekday: 'short' })} ${part({ day: 'numeric' })} ${part({ month: 'short' })}`;
 }
 
-const FilterControls: React.FC<{
-  schoolFilter: string;
-  yearFilter: string;
-  schoolOptions: string[];
-  yearOptions: string[];
-  onSchoolChange: (value: string) => void;
-  onYearChange: (value: string) => void;
-}> = ({ schoolFilter, yearFilter, schoolOptions, yearOptions, onSchoolChange, onYearChange }) => (
-  <div className="flex flex-wrap items-end gap-3" aria-label="Dashboard filters">
-    <label className="min-w-[180px] flex-1 sm:flex-none">
-      <span className="mb-1.5 block text-xs font-bold uppercase tracking-[0.12em] text-[var(--admin-muted)]">School</span>
-      <select
-        value={schoolFilter}
-        onChange={event => onSchoolChange(event.target.value)}
-        className="w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-3 py-2.5 text-sm font-semibold text-[var(--admin-ink)] outline-none focus:border-[var(--admin-accent)] sm:w-[220px]"
-      >
-        <option value="all">All schools</option>
-        {schoolOptions.map(school => <option key={school} value={school}>{displaySchool(school)}</option>)}
-      </select>
-    </label>
-    <label className="min-w-[165px] flex-1 sm:flex-none">
-      <span className="mb-1.5 block text-xs font-bold uppercase tracking-[0.12em] text-[var(--admin-muted)]">Year group</span>
-      <select
-        value={yearFilter}
-        onChange={event => onYearChange(event.target.value)}
-        className="w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-3 py-2.5 text-sm font-semibold text-[var(--admin-ink)] outline-none focus:border-[var(--admin-accent)] sm:w-[190px]"
-      >
-        <option value="all">All year groups</option>
-        {yearOptions.map(year => <option key={year} value={year}>{displayYear(year)}</option>)}
-      </select>
-    </label>
-  </div>
+/** How long ago, in words ("20 minutes ago", "3 hours ago", "2 days ago"; a week or more: "on 24 Nov"). The
+ *  app has no shared helper in these words (the notification bell's own says "20m ago"). */
+export function sinceWords(at: Date, now: number = Date.now()): string {
+  const minutes = Math.floor((now - at.getTime()) / 60000);
+  if (minutes < 1) return 'just now';
+  if (minutes < 60) return `${minutes} minute${minutes === 1 ? '' : 's'} ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours} hour${hours === 1 ? '' : 's'} ago`;
+  const days = Math.floor(hours / 24);
+  if (days < 7) return `${days} day${days === 1 ? '' : 's'} ago`;
+  return `on ${new Intl.DateTimeFormat('en-IE', { day: 'numeric', month: 'short' }).format(at)}`;
+}
+
+/** One course area's share for one student (today's sum, unchanged). */
+function categoryProgressFor(record: EnrichedStudentRecord, category: CategoryType): number {
+  const categoryCourses = record.visibleCourses.filter(course => course.category === category);
+  if (categoryCourses.length === 0) return 0;
+  const totalProgress = categoryCourses.reduce((sum, course) => {
+    const courseProgress = record.progress[course.id];
+    if (!courseProgress || typeof courseProgress.unlockedSection !== 'number' || course.sectionsCount <= 0) return sum;
+    return sum + Math.min(100, (courseProgress.unlockedSection / course.sectionsCount) * 100);
+  }, 0);
+  return totalProgress / categoryCourses.length;
+}
+
+// ─── Dark by default ────────────────────────────────────────────────────────
+
+/**
+ * The Admin dashboard opens in dark (Alex, 24 Nov 2026: "have it auto set to dark mode though"), on the
+ * app's own four dark surfaces: its separate palette is gone. It holds the app's `dark` setting on
+ * whenever it is open, whatever the account's settings record says: the Admin account has no Light /
+ * Dark switch, and useSettings writes a default `darkMode: false` into `nextstep-settings:<uid>` whenever
+ * the account has a settings document online, so a saved false is not a choice anyone made. When it
+ * closes it gives the page back as it found it, so the sign-in page and a student who signs in next
+ * keep their own theme. Nothing is written.
+ */
+export function useAdminOpensDark() {
+  useEffect(() => {
+    if (typeof document === 'undefined') return undefined;
+    const root = document.documentElement;
+    const had = root.classList.contains('dark');
+    root.classList.add('dark');
+    // The app's own settings effect may set the class from its default after this runs: keep it on.
+    const keep = typeof MutationObserver === 'undefined' ? null : new MutationObserver(() => {
+      if (!root.classList.contains('dark')) root.classList.add('dark');
+    });
+    keep?.observe(root, { attributes: true, attributeFilter: ['class'] });
+    return () => {
+      keep?.disconnect();
+      if (!had) root.classList.remove('dark');
+    };
+  }, []);
+}
+
+// ─── Pieces ─────────────────────────────────────────────────────────────────
+
+/** A percent whose digits end on the column's edge, the % hanging past it. */
+const PctCell: React.FC<{ value: number }> = ({ value }) => (
+  <span className="adm-pct">{Math.round(value)}<small className="gc8-unit">%</small></span>
 );
 
-const StudentProgressCard: React.FC<{
-  record: EnrichedStudentRecord;
-  onDelete: (user: SessionUser) => void;
-}> = ({ record, onDelete }) => {
-  const { user, progress, metrics, resolvedYearGroup, visibleCourses } = record;
-
-  const calculateCategoryProgress = (category: CategoryType) => {
-    const categoryCourses = visibleCourses.filter(course => course.category === category);
-    if (categoryCourses.length === 0) return 0;
-    const totalProgress = categoryCourses.reduce((sum, course) => {
-      const courseProgress = progress[course.id];
-      if (!courseProgress || typeof courseProgress.unlockedSection !== 'number' || course.sectionsCount <= 0) return sum;
-      return sum + Math.min(100, (courseProgress.unlockedSection / course.sectionsCount) * 100);
-    }, 0);
-    return totalProgress / categoryCourses.length;
-  };
-
-  return (
-    <article className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5">
-      <div className="mb-5 flex items-center gap-3 border-b border-[var(--admin-rule)] pb-4">
-        <img
-          src={getAvatarUrl(user.avatar)}
-          onError={event => handleAvatarError(event, user.avatar || user.name)}
-          alt=""
-          className="h-11 w-11 rounded-full bg-[var(--admin-track)]"
-        />
-        <div className="min-w-0 flex-1">
-          <h3 className="truncate text-base font-bold text-[var(--admin-ink)]">{user.name}</h3>
-          <p className="mt-0.5 truncate text-xs text-[var(--admin-muted)]">
-            {displaySchool(user.school)} · {displayYear(resolvedYearGroup)}
-          </p>
-        </div>
-        <button
-          type="button"
-          onClick={() => onDelete(user)}
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-transparent text-[var(--admin-muted)] hover:border-[#B42318] hover:text-[var(--admin-danger)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B42318]"
-          aria-label={`Delete ${user.name}`}
-        >
-          <Trash2 size={16} />
-        </button>
+/** The four figures of the bigger picture: two by two, ruled, each over its small label. */
+const Figures: React.FC<{ items: { label: string; value: React.ReactNode; detail: string }[] }> = ({ items }) => (
+  <div className="adm-stats">
+    {items.map(item => (
+      <div key={item.label}>
+        <span className="gc8-label">{item.label}</span>
+        <span className="gc8-num adm-statnum">{item.value}</span>
+        <span className="gc8-meta">{item.detail}</span>
       </div>
-
-      <div className="mb-5 grid grid-cols-3 divide-x divide-[var(--admin-rule)] border-y border-[var(--admin-rule)] py-3 text-center">
-        <div>
-          <strong className="block font-sans text-2xl text-[var(--admin-ink)]">{metrics.overallProgress.toFixed(0)}%</strong>
-          <span className="text-xs text-[var(--admin-muted)]">Overall</span>
-        </div>
-        <div>
-          <strong className="block font-sans text-2xl text-[var(--admin-ink)]">{metrics.startedCourses}</strong>
-          <span className="text-xs text-[var(--admin-muted)]">Started</span>
-        </div>
-        <div>
-          <strong className="block font-sans text-2xl text-[var(--admin-ink)]">{metrics.completedCourses}</strong>
-          <span className="text-xs text-[var(--admin-muted)]">Complete</span>
-        </div>
-      </div>
-
-      <div className="space-y-3">
-        {CATEGORIES.map(category => {
-          const categoryProgress = calculateCategoryProgress(category.id);
-          return (
-            <div key={category.id}>
-              <div className="flex items-center justify-between gap-4">
-                <p className="truncate text-xs font-semibold text-[var(--admin-body)]">{category.title}</p>
-                <p className="text-xs font-bold tabular-nums text-[var(--admin-muted)]">{categoryProgress.toFixed(0)}%</p>
-              </div>
-              <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-[var(--admin-track)]">
-                <MotionDiv
-                  className={`h-full rounded-full ${categoryProgress >= 100 ? 'bg-[var(--admin-success)]' : 'bg-[var(--admin-accent)]'}`}
-                  initial={{ width: 0 }}
-                  animate={{ width: `${categoryProgress}%` }}
-                  transition={{ duration: 0.45, ease: 'easeOut' }}
-                />
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </article>
-  );
-};
-
-const MetricCard: React.FC<{
-  label: string;
-  value: string | number;
-  detail: string;
-  accent?: boolean;
-}> = ({ label, value, detail, accent = false }) => (
-  <article className={`admin-metric${accent ? ' admin-metric--accent' : ''}`}>
-    <span className="admin-eyebrow">{label}</span>
-    <strong>{value}</strong>
-    <p>{detail}</p>
-  </article>
+    ))}
+  </div>
 );
 
 const ProgressDistribution: React.FC<{ records: EnrichedStudentRecord[] }> = ({ records }) => {
   const groups = [
-    { label: 'Not started', count: records.filter(record => record.metrics.startedCourses === 0).length, colour: 'var(--admin-chart-idle)' },
-    { label: 'Getting started', count: records.filter(record => record.metrics.startedCourses > 0 && record.metrics.overallProgress < 25).length, colour: 'var(--admin-chart-started)' },
-    { label: 'Building progress', count: records.filter(record => record.metrics.overallProgress >= 25 && record.metrics.overallProgress < 75).length, colour: 'var(--admin-chart-building)' },
-    { label: 'Advanced', count: records.filter(record => record.metrics.overallProgress >= 75).length, colour: 'var(--admin-chart-advanced)' },
+    { label: 'Not started', count: records.filter(record => record.metrics.startedCourses === 0).length },
+    { label: 'Getting started', count: records.filter(record => record.metrics.startedCourses > 0 && record.metrics.overallProgress < 25).length },
+    { label: 'Building progress', count: records.filter(record => record.metrics.overallProgress >= 25 && record.metrics.overallProgress < 75).length },
+    { label: 'Advanced', count: records.filter(record => record.metrics.overallProgress >= 75).length },
   ];
 
   return (
-    <section className="admin-distribution admin-panel" aria-labelledby="progress-distribution-title">
-      <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Learning progress</p>
-      <h2 id="progress-distribution-title" className="mt-1 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Where students are</h2>
-      <div className="admin-distribution-stack" aria-hidden="true">
-        {groups.map(group => <span key={group.label} style={{ flex: group.count, background: group.colour }} />)}
+    <section className="gc8-sec adm-where" aria-labelledby="progress-distribution-title">
+      <div className="gc8-sechead">
+        <div className="gc8-sechead-col">
+          <p className="gc8-label">Learning progress</p>
+          <h2 id="progress-distribution-title" className="gc8-h">Where students are</h2>
+        </div>
       </div>
-      <div className="space-y-5">
-        {groups.map(group => {
+      <div className="adm-stack" aria-hidden="true">
+        {groups.map((group, index) => <i key={group.label} className={`adm-s${index}`} style={{ flex: group.count }} />)}
+      </div>
+      <div className="adm-dist">
+        {groups.map((group, index) => {
           const percentage = records.length > 0 ? Math.round((group.count / records.length) * 100) : 0;
           return (
             <div key={group.label}>
-              <div className="mb-2 flex items-baseline justify-between gap-4">
-                <span className="text-sm font-semibold text-[var(--admin-body)]">{group.label}</span>
-                <span className="text-sm font-bold tabular-nums text-[var(--admin-ink)]">{group.count} <span className="font-normal text-[var(--admin-muted)]">({percentage}%)</span></span>
+              <div className="adm-dhead">
+                <span>{group.label}</span>
+                <span className="adm-dn"><span>{group.count}</span><span className="adm-dp">{percentage}<small className="gc8-unit">%</small></span></span>
               </div>
-              <div className="h-2.5 overflow-hidden rounded-full bg-[var(--admin-track)]">
-                <div className="h-full rounded-full" style={{ width: `${percentage}%`, backgroundColor: group.colour }} />
-              </div>
+              <span className={`gc8-bar gc8-bar--thin adm-dbar adm-s${index}`} aria-hidden="true"><i style={{ width: `${percentage}%` }} /></span>
             </div>
           );
         })}
@@ -350,85 +313,144 @@ const ProgressDistribution: React.FC<{ records: EnrichedStudentRecord[] }> = ({ 
   );
 };
 
-const CohortTable: React.FC<{
-  title: string;
-  eyebrow: string;
-  rows: { key: string; label: string; stats: CohortStats }[];
-  emptyLabel: string;
-  onOpen: (key: string) => void;
-}> = ({ title, eyebrow, rows, emptyLabel, onOpen }) => (
-  <section className="admin-cohort admin-panel">
-    <div className="flex flex-wrap items-end justify-between gap-3 border-b border-[var(--admin-rule)] px-5 py-4 sm:px-6">
-      <div>
-        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">{eyebrow}</p>
-        <h2 className="mt-1 font-sans text-2xl font-semibold text-[var(--admin-ink)]">{title}</h2>
-      </div>
-      <span className="text-xs text-[var(--admin-muted)]">Existing student records</span>
-    </div>
-    <div className="overflow-x-auto">
-      <table className="admin-cohort-table w-full border-collapse text-left">
-        <thead className="bg-[var(--admin-raised)] text-xs uppercase tracking-[0.1em] text-[var(--admin-muted)]">
-          <tr>
-            <th className="px-5 py-3 font-bold">Cohort</th>
-            <th className="px-4 py-3 font-bold">Students</th>
-            <th className="px-4 py-3 font-bold">Started</th>
-            <th className="px-4 py-3 font-bold">Average progress</th>
-            <th className="px-4 py-3 font-bold">Completed a course</th>
-            <th className="px-5 py-3"><span className="sr-only">Open students</span></th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-[var(--admin-rule)]">
-          {rows.length > 0 ? rows.map(row => (
-            <tr key={row.key} className="text-sm text-[var(--admin-body)]">
-              <td className="px-5 py-4 font-bold text-[var(--admin-ink)]">{row.label}</td>
-              <td data-label="Students" className="px-4 py-4 tabular-nums">{row.stats.students}</td>
-              <td data-label="Started" className="px-4 py-4 tabular-nums">{row.stats.started} <span className="text-[var(--admin-muted)]">({row.stats.startRate}%)</span></td>
-              <td data-label="Average progress" className="px-4 py-4 font-semibold tabular-nums">
-                <span>{row.stats.averageProgress.toFixed(0)}%</span>
-                <span className="admin-table-track" aria-hidden="true"><span style={{ width: `${row.stats.averageProgress}%` }} /></span>
-              </td>
-              <td data-label="Completed a course" className="px-4 py-4 tabular-nums">{row.stats.completedOne}</td>
-              <td className="px-5 py-4 text-right">
-                <button
-                  type="button"
-                  onClick={() => onOpen(row.key)}
-                  aria-label={`Open students in ${row.label}`}
-                  className="inline-flex items-center gap-1 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-3 py-1.5 text-xs font-bold text-[var(--admin-ink)] hover:border-[var(--admin-accent)] hover:text-[var(--admin-accent)]"
-                >
-                  Students <ChevronRight size={13} />
-                </button>
-              </td>
-            </tr>
-          )) : (
-            <tr><td colSpan={6} className="px-5 py-10 text-center text-sm text-[var(--admin-muted)]">{emptyLabel}</td></tr>
-          )}
-        </tbody>
-      </table>
-    </div>
-  </section>
+type CohortRow = { key: string; label: string; stats: CohortStats };
+
+/** A cohort (a school or a year group) as a row: two facts and one number; the row opens its students. */
+const CohortRows: React.FC<{ rows: CohortRow[]; emptyLabel: string; onOpen: (key: string) => void }> = ({ rows, emptyLabel, onOpen }) => (
+  rows.length > 0 ? (
+    <ul className="ui-list gc8-list adm-rows">
+      {rows.map(row => (
+        <Row
+          key={row.key}
+          title={<span className="adm-one" title={row.label}>{row.label}</span>}
+          label={`Open students in ${row.label}`}
+          meta={`${row.stats.students} student${row.stats.students === 1 ? '' : 's'} · ${row.stats.startRate}% started`}
+          trailing={<><Pct value={row.stats.averageProgress} className="ui-row-value" /><ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" /></>}
+          onPress={() => onOpen(row.key)}
+        />
+      ))}
+    </ul>
+  ) : <p className="gc8-empty">{emptyLabel}</p>
 );
+
+/** The full comparison on a laptop: every column, the figures on their right edge, the % hanging. */
+const CohortTable: React.FC<{ rows: CohortRow[]; emptyLabel: string; onOpen: (key: string) => void }> = ({ rows, emptyLabel, onOpen }) => (
+  <div className="adm-tbl" role="table">
+    <div className="adm-tr adm-tr--head" role="row">
+      <span className="gc8-label" role="columnheader">Cohort</span>
+      <span className="gc8-label adm-n" role="columnheader">Students</span>
+      <span className="gc8-label adm-n" role="columnheader">Started</span>
+      <span className="gc8-label" role="columnheader">Average progress</span>
+      <span className="gc8-label adm-n" role="columnheader">Completed a course</span>
+      <span role="columnheader"><span className="sr-only">Open students</span></span>
+    </div>
+    {rows.length > 0 ? rows.map(row => (
+      <div key={row.key} className="adm-tr" role="row">
+        <b role="cell" title={row.label}>{row.label}</b>
+        <span role="cell" className="adm-n">{row.stats.students}</span>
+        <span role="cell" className="adm-split"><span>{row.stats.started}</span><PctCell value={row.stats.startRate} /></span>
+        <span role="cell" className="adm-prog"><PctCell value={row.stats.averageProgress} /><span className="gc8-bar gc8-bar--thin" aria-hidden="true"><i style={{ width: `${row.stats.averageProgress}%` }} /></span></span>
+        <span role="cell" className="adm-n">{row.stats.completedOne}</span>
+        <span role="cell" className="adm-open">
+          <Button size="sm" arrow="opens" className="adm-openbtn" onClick={() => onOpen(row.key)} aria-label={`Open students in ${row.label}`}>Students</Button>
+        </span>
+      </div>
+    )) : <p className="gc8-empty">{emptyLabel}</p>}
+  </div>
+);
+
+/** Three figures in a line, each centred over its small label (My Progress's agreed figures). */
+const StudentFigures: React.FC<{ metrics: StudentMetrics }> = ({ metrics }) => (
+  <div className="adm-fa">
+    <div><span className="gc8-meta">Overall</span><span className="gc8-num"><Fig value={metrics.overallProgress.toFixed(0)} unit="%" /></span></div>
+    <div><span className="gc8-meta">Started</span><span className="gc8-num">{metrics.startedCourses}</span></div>
+    <div><span className="gc8-meta">Complete</span><span className="gc8-num">{metrics.completedCourses}</span></div>
+  </div>
+);
+
+/** The five course areas, each with its figure and an ink bar (green once complete, as today). */
+const CourseAreas: React.FC<{ record: EnrichedStudentRecord; small?: boolean }> = ({ record, small = false }) => (
+  <div className={`adm-areas${small ? ' adm-areas--sm' : ''}`}>
+    {CATEGORIES.map(category => {
+      const share = categoryProgressFor(record, category.id);
+      return (
+        <div key={category.id} className="adm-area">
+          <div className="adm-ahead"><span title={category.title}>{category.title}</span><PctCell value={share} /></div>
+          <span className={`gc8-bar adm-abar${share >= 100 ? ' adm-abar--done' : ''}`} aria-hidden="true"><i style={{ width: `${share}%` }} /></span>
+        </div>
+      );
+    })}
+  </div>
+);
+
+/** One student on a laptop: today's card laid on the page (three across), the bin at the top right. */
+const StudentProgressCard: React.FC<{
+  record: EnrichedStudentRecord;
+  onDelete: (user: SessionUser) => void;
+}> = ({ record, onDelete }) => {
+  const { user, resolvedYearGroup, metrics } = record;
+  return (
+    <article className="adm-stu">
+      <div className="adm-shead">
+        <StudentArt seed={user.avatar || user.name} />
+        <span className="adm-shead-copy">
+          <h3 className="gc8-person adm-one" title={user.name}>{user.name}</h3>
+          <span className="gc8-meta adm-one">{displaySchool(user.school)} · {displayYear(resolvedYearGroup)}</span>
+        </span>
+        <IconButton className="adm-bin" label={`Delete ${user.name}`} onClick={() => onDelete(user)}
+          icon={<Trash2 className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />} />
+      </div>
+      <StudentFigures metrics={metrics} />
+      <CourseAreas record={record} small />
+    </article>
+  );
+};
+
+/** "Best on a laptop": the board's plain line. Its "Email me a link" button is not built (there is no
+ *  such feature: it would send something), so the line stands alone (FOR-ALEX, area 8b). */
+const BestOnLaptop: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <div className="gc8-best adm-best">
+    <p className="gc8-label">Best on a laptop</p>
+    <p className="gc8-sub">{children}</p>
+  </div>
+);
+
+// ─── The dashboard ──────────────────────────────────────────────────────────
 
 export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLogout }) => {
   const [studentData, setStudentData] = useState<StudentRecord[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState('');
   const [reloadToken, setReloadToken] = useState(0);
+  const [lastLoadedAt, setLastLoadedAt] = useState<Date | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
   const [deleteVerificationPassword, setDeleteVerificationPassword] = useState('');
   const [activeView, setActiveView] = useState<AdminView>('overview');
-  const navRef = useRef<HTMLElement>(null);
-  useSlidingNavIndicator(navRef, activeView);
+  // School access is a page you go back from (the account menu opens it on a phone).
+  const [returnView, setReturnView] = useState<AdminView>('overview');
+  // One student, opened from Students on a phone.
+  const [openStudentUid, setOpenStudentUid] = useState<string | null>(null);
+  const [studentSearch, setStudentSearch] = useState('');
   const [schoolFilter, setSchoolFilter] = useState('all');
   const [yearFilter, setYearFilter] = useState('all');
-  const deleteDialogRef = useRef<HTMLDivElement>(null);
-  const cancelDeleteButtonRef = useRef<HTMLButtonElement>(null);
-  const isDeletingRef = useRef(false);
+  const [accountOpen, setAccountOpen] = useState(false);
+  const deleteFieldRef = useRef<HTMLInputElement>(null);
+  const wide = useWide();
+  const tables = useWide(1200);
+  // The feature table's five columns and four figures across need about a laptop's width.
+  const roomy = useWide(1000);
+  useAdminOpensDark();
 
+  // The phone's bar gains its hairline once the page has scrolled under it (tokens.md, "Bars").
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
-    isDeletingRef.current = isDeleting;
-    if (isDeleting) deleteDialogRef.current?.focus();
-  }, [isDeleting]);
+    if (wide) return undefined;
+    const update = () => setScrolled(window.scrollY > 4);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    return () => window.removeEventListener('scroll', update);
+  }, [wide]);
 
   const closeDeleteDialog = () => {
     setDeleteVerificationPassword('');
@@ -444,56 +466,17 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
       const deleteFn = httpsCallable<{ uid: string }, { success: boolean }>(functions, 'requestAccountDeletion');
       await deleteFn({ uid: user.uid });
       setStudentData(previous => previous.filter(record => record.user.uid !== user.uid));
+      if (openStudentUid === user.uid) setOpenStudentUid(null);
     } catch (error) {
       console.error('Error deleting student:', error);
-      alert('Failed to delete student. You may not have permission.');
+      // Today's words, in the app's message (it was a browser alert).
+      showMessage('Failed to delete student. You may not have permission.');
     } finally {
       setIsDeleting(false);
       setDeleteVerificationPassword('');
       closeDeleteDialog();
     }
   };
-
-  useEffect(() => {
-    if (!deleteTarget) return;
-    const previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    const focusFrame = window.requestAnimationFrame(() => cancelDeleteButtonRef.current?.focus());
-    const handleDialogKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && !isDeletingRef.current) {
-        event.preventDefault();
-        setDeleteVerificationPassword('');
-        setDeleteTarget(null);
-        return;
-      }
-      if (event.key !== 'Tab' || !deleteDialogRef.current) return;
-      const focusable = [...deleteDialogRef.current.querySelectorAll<HTMLElement>(
-        'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
-      )];
-      if (focusable.length === 0) {
-        event.preventDefault();
-        deleteDialogRef.current.focus();
-        return;
-      }
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (!deleteDialogRef.current.contains(document.activeElement) || document.activeElement === deleteDialogRef.current) {
-        event.preventDefault();
-        (event.shiftKey ? last : first).focus();
-      } else if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    };
-    document.addEventListener('keydown', handleDialogKeyDown);
-    return () => {
-      window.cancelAnimationFrame(focusFrame);
-      document.removeEventListener('keydown', handleDialogKeyDown);
-      previousFocus?.focus();
-    };
-  }, [deleteTarget]);
 
   useEffect(() => {
     let cancelled = false;
@@ -530,6 +513,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
           const subjectProfile = (progress as unknown as { subjectProfile?: StudentSubjectProfile }).subjectProfile ?? null;
           return { user, progress, subjectProfile };
         }));
+        setLastLoadedAt(new Date());
       } catch (error) {
         console.error('Error fetching admin data:', error);
         if (!cancelled) setLoadError('Student records could not be loaded. Try refreshing this view.');
@@ -539,6 +523,24 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     };
 
     void fetchData();
+    return () => { cancelled = true; };
+  }, [reloadToken]);
+
+  // Overview's second and third rows: today's first-run counts (the First run page's own read and
+  // arithmetic) and the New feedback count with its newest message (the inbox's own reads, limit 1).
+  // Read only. While they load, or if a read fails, the rows keep their own words: no error is shown.
+  const [firstRun, setFirstRun] = useState<ReturnType<typeof funnelSummary> | null>(null);
+  const [newFeedback, setNewFeedback] = useState<{ count: number; newestAt: Date | null } | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    setFirstRun(null);
+    setNewFeedback(null);
+    loadFunnelCounts(1)
+      .then(counts => { if (!cancelled) setFirstRun(funnelSummary(counts)); })
+      .catch(error => logError('AdminDashboard.firstRunRow', error));
+    loadNewFeedback()
+      .then(summary => { if (!cancelled) setNewFeedback(summary); })
+      .catch(error => logError('AdminDashboard.feedbackRow', error));
     return () => { cancelled = true; };
   }, [reloadToken]);
 
@@ -578,6 +580,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     return schoolMatches && yearMatches;
   }), [enrichedData, schoolFilter, yearFilter]);
 
+  // The search box on Students narrows the list already loaded, by name: it makes no new read.
+  const searchedData = useMemo(() => {
+    const needle = studentSearch.trim().toLocaleLowerCase('en-IE');
+    if (!needle) return filteredData;
+    return filteredData.filter(record => (record.user.name || '').toLocaleLowerCase('en-IE').includes(needle));
+  }, [filteredData, studentSearch]);
+
   const selectedStats = useMemo(() => summariseCohort(filteredData), [filteredData]);
 
   const schoolRows = useMemo(() => {
@@ -589,7 +598,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         label: displaySchool(school),
         stats: summariseCohort(recordsInYear.filter(record => (record.user.school || NOT_SET) === school)),
       }))
-      .filter(row => row.stats.students > 0);
+      .filter(row => row.stats.students > 0)
+      // Largest first, as both agreed boards list them; ties by name. (The school menu stays A to Z.)
+      .sort((a, b) => b.stats.students - a.stats.students || a.label.localeCompare(b.label));
   }, [enrichedData, schoolFilter, schoolOptions, yearFilter]);
 
   const yearRows = useMemo(() => {
@@ -604,221 +615,457 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
       .filter(row => row.stats.students > 0);
   }, [enrichedData, schoolFilter, yearFilter, yearOptions]);
 
+  const go = (view: AdminView) => {
+    setAccountOpen(false);
+    setOpenStudentUid(null);
+    setActiveView(view);
+    if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') window.scrollTo(0, 0);
+  };
+
+  const openSchoolAccess = () => {
+    setReturnView(activeView === 'gc-access' ? returnView : activeView);
+    go('gc-access');
+  };
+
   const openSchoolStudents = (school: string) => {
     setSchoolFilter(school);
-    setActiveView('students');
+    go('students');
   };
 
   const openYearStudents = (year: string) => {
     setYearFilter(year);
-    setActiveView('students');
+    go('students');
   };
 
-  const showFilters = activeView === 'overview' || activeView === 'programme' || activeView === 'students' || activeView === 'schools' || activeView === 'years';
+  const refreshStudents = () => setReloadToken(value => value + 1);
   const notStarted = selectedStats.students - selectedStats.started;
+  const dataAsOf = lastLoadedAt ? lastLoadedAt.toLocaleTimeString('en-IE', { hour: '2-digit', minute: '2-digit' }) : null;
+  const filterWords = `${schoolFilter === 'all' ? 'All schools' : displaySchool(schoolFilter)} · ${yearFilter === 'all' ? 'All year groups' : displayYear(yearFilter)}`;
+  const shortDate = formatShortDate();
+  const placeLabel = `The programme desk · ${shortDate}`;
+  const openStudent = !wide && openStudentUid ? enrichedData.find(record => record.user.uid === openStudentUid) ?? null : null;
 
-  const renderStudentContent = () => {
-    if (isLoading) {
-      return (
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3" aria-label="Loading student records">
-          {[0, 1, 2].map(item => <div key={item} className="h-[360px] animate-pulse rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" />)}
+  const currentPlace: Place = activeView === 'years' ? 'schools'
+    : activeView === 'funnel' ? 'overview'
+      : activeView === 'gc-access' ? (returnView === 'years' ? 'schools' : returnView === 'funnel' || returnView === 'gc-access' ? 'overview' : returnView as Place)
+        : activeView as Place;
+  const sideCurrent: AdminView = activeView === 'years' ? 'schools' : activeView === 'funnel' ? 'overview' : activeView;
+
+  const filterMenus = (
+    <>
+      <Menu
+        label="School"
+        value={schoolFilter}
+        onChange={setSchoolFilter}
+        options={[{ value: 'all', label: 'All schools' }, ...schoolOptions.map(school => ({ value: school, label: displaySchool(school) }))]}
+      />
+      <Menu
+        label="Year group"
+        value={yearFilter}
+        onChange={setYearFilter}
+        options={[{ value: 'all', label: 'All year groups' }, ...yearOptions.map(year => ({ value: year, label: displayYear(year) }))]}
+      />
+    </>
+  );
+  const filters = <div className="adm-filters" aria-label="Dashboard filters">{filterMenus}</div>;
+
+  const studentsUnavailable = loadError ? <ErrorState sentence={loadError} onRetry={refreshStudents} /> : null;
+
+  // ── Overview ──
+  const attention = (
+    <ul className={`ui-list gc8-list adm-attn${wide ? ' adm-attn--wide' : ''}`} aria-label="What needs attention">
+      <Row
+        title={isLoading || loadError ? 'Students' : notStarted > 0 ? `${notStarted} student${notStarted === 1 ? ' is' : 's are'} yet to get started` : 'Every student in this view has started learning'}
+        meta={isLoading || loadError ? undefined : `Students · across ${schoolRows.length} school${schoolRows.length === 1 ? '' : 's'}`}
+        onPress={() => go('students')}
+      />
+      {firstRun && firstRun.started > 0
+        ? <Row
+            title={`${firstRun.completed} of ${firstRun.started} finished onboarding today`}
+            meta={firstRun.stoppedBeforeSubjects > 0 ? `First run · ${firstRun.stoppedBeforeSubjects} stopped before subjects` : 'First run'}
+            onPress={() => go('funnel')}
+          />
+        : <Row title="Are students getting in?" meta="First run" onPress={() => go('funnel')} />}
+      {newFeedback && newFeedback.count > 0
+        ? <Row
+            title={`${newFeedback.count} new feedback message${newFeedback.count === 1 ? '' : 's'}`}
+            meta={newFeedback.newestAt ? `Feedback · newest ${sinceWords(newFeedback.newestAt)}` : 'Feedback'}
+            onPress={() => go('feedback')}
+          />
+        : <Row title="Feedback inbox" meta="Anonymous student voice" onPress={() => go('feedback')} />}
+    </ul>
+  );
+
+  const figures = (
+    <Figures items={[
+      { label: 'Student accounts', value: isLoading || loadError ? '—' : selectedStats.students, detail: loadError ? 'Student data unavailable' : 'In the selected cohort' },
+      {
+        label: 'Started learning',
+        value: isLoading || loadError ? '—' : <Fig value={selectedStats.startRate} unit="%" />,
+        detail: loadError ? 'Student data unavailable' : isLoading ? 'Loading existing records' : wide ? `${selectedStats.started} students opened at least one course` : `${selectedStats.started} of ${selectedStats.students} students`,
+      },
+      { label: 'Average progress', value: isLoading || loadError ? '—' : <Fig value={selectedStats.averageProgress.toFixed(0)} unit="%" />, detail: loadError ? 'Student data unavailable' : wide ? 'Across courses available to each student' : 'Across available courses' },
+      { label: 'Completed a course', value: isLoading || loadError ? '—' : selectedStats.completedOne, detail: loadError ? 'Student data unavailable' : wide ? 'Students with at least one completion' : 'At least one completion' },
+    ]} />
+  );
+
+  const cohorts = (rows: CohortRow[], emptyLabel: string, onOpen: (key: string) => void) => (
+    tables ? <CohortTable rows={rows} emptyLabel={emptyLabel} onOpen={onOpen} /> : <CohortRows rows={rows} emptyLabel={emptyLabel} onOpen={onOpen} />
+  );
+
+  const overview = (
+    <>
+      {wide ? (
+        <div className="gc8-hero adm-hero">
+          <div className="gc8-head">
+            <h1 className="gc8-title">What needs attention today</h1>
+            <p className="gc8-sub">Participation, progress and the next conversation to have.</p>
+          </div>
+          {filters}
         </div>
-      );
-    }
-    if (loadError) {
-      return (
-        <div role="alert" className="rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-5 py-4 text-sm text-[var(--admin-accent)]">
-          <p className="font-bold not-italic">Student records are unavailable</p>
-          <p className="mt-1">{loadError}</p>
-          <button type="button" onClick={() => setReloadToken(value => value + 1)} className="mt-3 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold not-italic text-[var(--admin-ink)]">Try again</button>
-        </div>
-      );
-    }
-    if (filteredData.length === 0) {
-      return (
-        <div className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-5 py-12 text-center">
-          <h2 className="font-sans text-2xl font-semibold text-[var(--admin-ink)]">No matching students</h2>
-          <p className="mt-2 text-sm text-[var(--admin-muted)]">Change the school or year-group filter to widen this view.</p>
-        </div>
-      );
-    }
-    return (
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
-        {filteredData.map(record => (
-          <StudentProgressCard key={record.user.uid} record={record} onDelete={setDeleteTarget} />
-        ))}
+      ) : (
+        <header className="gc8-head adm-head">
+          <h1 className="gc8-title">What needs attention today</h1>
+          <p className="gc8-sub">Participation, progress and the next conversation to have.</p>
+          {filters}
+        </header>
+      )}
+      {attention}
+      <div className="gc8-two adm-two">
+        <section className="gc8-sec" aria-label="Cohort summary">
+          <div className="gc8-sechead">
+            <h2 className="gc8-h">The bigger picture</h2>
+            <span className="gc8-meta">{!wide && dataAsOf ? `Data as of ${dataAsOf}` : filterWords}</span>
+          </div>
+          {figures}
+        </section>
+        {isLoading ? <LoadingShape rows={4} label="Loading existing records" /> : loadError ? null : <ProgressDistribution records={filteredData} />}
       </div>
-    );
+      {isLoading ? <LoadingShape rows={5} label="Loading existing records" /> : loadError ? studentsUnavailable : (
+        <>
+          <section className="gc8-sec" aria-labelledby="adm-schools-glance">
+            <div className="gc8-sechead">
+              <div className="gc8-sechead-col"><p className="gc8-label">Your schools</p><h2 id="adm-schools-glance" className="gc8-h">Schools at a glance</h2></div>
+              <span className="gc8-meta">Existing student records</span>
+            </div>
+            {cohorts(schoolRows, 'No schools match the current filters.', openSchoolStudents)}
+          </section>
+          <section className="gc8-sec" aria-labelledby="adm-years-glance">
+            <div className="gc8-sechead">
+              <div className="gc8-sechead-col"><p className="gc8-label">Cohorts</p><h2 id="adm-years-glance" className="gc8-h">Year groups at a glance</h2></div>
+              <span className="gc8-meta">Existing student records</span>
+            </div>
+            {cohorts(yearRows, 'No year groups match the current filters.', openYearStudents)}
+          </section>
+        </>
+      )}
+    </>
+  );
+
+  // ── Schools, with Year groups behind the switch ──
+  const yearSide = activeView === 'years';
+  const cohortRows = yearSide ? yearRows : schoolRows;
+  const schools = (
+    <>
+      <header className="gc8-head adm-head">
+        <h1 className={wide ? 'gc8-title' : 'gc8-name'}>Schools</h1>
+        <SelectionBar
+          label="Compare"
+          size="md"
+          className="adm-switch"
+          options={[{ value: 'schools', label: 'Schools' }, { value: 'years', label: 'Year groups' }]}
+          value={yearSide ? 'years' : 'schools'}
+          onChange={value => setActiveView(value)}
+        />
+        {filters}
+      </header>
+      {isLoading ? <LoadingShape rows={5} label="Loading existing records" /> : loadError ? studentsUnavailable : (
+        <section className="gc8-sec" aria-label={yearSide ? 'Year groups' : 'Schools'}>
+          {tables ? (
+            <div className="gc8-sechead">
+              <div className="gc8-sechead-col">
+                <p className="gc8-label">{yearSide ? 'Year-group portfolio' : 'School portfolio'}</p>
+                <h2 className="gc8-h">{yearSide ? 'All year groups' : 'All participating schools'}</h2>
+              </div>
+              <span className="gc8-meta">Existing student records</span>
+            </div>
+          ) : (
+            <div className="adm-colhead">
+              <span className="gc8-label">{cohortRows.length} {yearSide ? `year group${cohortRows.length === 1 ? '' : 's'}` : `school${cohortRows.length === 1 ? '' : 's'} · largest first`}</span>
+              <span className="gc8-label">Avg progress</span>
+            </div>
+          )}
+          {cohorts(cohortRows, yearSide ? 'No year groups match the current filters.' : 'No schools match the current filters.', yearSide ? openYearStudents : openSchoolStudents)}
+          {!wide && <BestOnLaptop>Comparing every column side by side, and the feature table in Programme.</BestOnLaptop>}
+        </section>
+      )}
+    </>
+  );
+
+  // ── Students ──
+  const studentsHead = (
+    <>
+      <div className="gc8-head">
+        <h1 className={wide ? 'gc8-title' : 'gc8-name'}>Students</h1>
+        <p className="gc8-sub">{filteredData.length} student record{filteredData.length === 1 ? '' : 's'} in the current view.</p>
+      </div>
+      <SearchField
+        label="Search students"
+        placeholder="Search students"
+        className="adm-find"
+        value={studentSearch}
+        onChange={event => setStudentSearch(event.target.value)}
+        autoComplete="off"
+      />
+    </>
+  );
+  const noStudents = (
+    <div className="gc8-empty adm-none">
+      <b>No matching students</b>
+      Change the school or year-group filter to widen this view.
+    </div>
+  );
+  const students = (
+    <>
+      {wide ? (
+        <div className="gc8-hero adm-hero">
+          <div className="gc8-head">
+            <h1 className="gc8-title">Students</h1>
+            <p className="gc8-sub">{filteredData.length} student record{filteredData.length === 1 ? '' : 's'} in the current view.</p>
+          </div>
+          <div className="adm-filters" aria-label="Dashboard filters">
+            <SearchField
+              label="Search students"
+              placeholder="Search students"
+              className="adm-find"
+              value={studentSearch}
+              onChange={event => setStudentSearch(event.target.value)}
+              autoComplete="off"
+            />
+            {filterMenus}
+          </div>
+        </div>
+      ) : (
+        <header className="gc8-head adm-head">
+          {studentsHead}
+          {filters}
+        </header>
+      )}
+      {isLoading ? <LoadingShape rows={6} label="Loading student records" /> : loadError ? studentsUnavailable : searchedData.length === 0 ? noStudents : wide ? (
+        <div className="adm-sgrid">
+          {searchedData.map(record => (
+            <StudentProgressCard key={record.user.uid} record={record} onDelete={setDeleteTarget} />
+          ))}
+        </div>
+      ) : (
+        <section className="gc8-sec" aria-label="Students">
+          <div className="adm-colhead">
+            <span className="gc8-label">{searchedData.length} student{searchedData.length === 1 ? '' : 's'}</span>
+            <span className="gc8-label">Overall</span>
+          </div>
+          <ul className="ui-list gc8-list adm-rows">
+            {searchedData.map(record => (
+              <Row
+                key={record.user.uid}
+                art={<StudentArt seed={record.user.avatar || record.user.name} />}
+                title={<span className="adm-one" title={record.user.name}>{record.user.name}</span>}
+                label={`View ${record.user.name}`}
+                meta={`${displayYear(record.resolvedYearGroup)} · ${displaySchool(record.user.school)}`}
+                trailing={<><Pct value={record.metrics.overallProgress} className="ui-row-value" /><ChevronRight className="ui-icon ui-row-chev" width={20} height={20} strokeWidth={1.75} aria-hidden="true" /></>}
+                onPress={() => { setOpenStudentUid(record.user.uid); window.scrollTo?.(0, 0); }}
+              />
+            ))}
+          </ul>
+        </section>
+      )}
+    </>
+  );
+
+  // ── One student, on a phone: today's card on its own page ──
+  const studentPage = openStudent ? (
+    <>
+      <div className="adm-who">
+        <StudentArt seed={openStudent.user.avatar || openStudent.user.name} size={56} />
+        <div className="adm-who-copy">
+          <p className="gc8-label">{displayYear(openStudent.resolvedYearGroup)} · {displaySchool(openStudent.user.school)}</p>
+          <h1 className="gc8-name">{openStudent.user.name}</h1>
+        </div>
+      </div>
+      <StudentFigures metrics={openStudent.metrics} />
+      <CourseAreas record={openStudent} />
+      <BestOnLaptop>Deleting this student&apos;s account, with your password to confirm it.</BestOnLaptop>
+    </>
+  ) : null;
+
+  // ── What fills the page ──
+  const leaveTo: { view: AdminView; label: string } | null = openStudent ? { view: 'students', label: 'Students' }
+    : activeView === 'funnel' ? { view: 'overview', label: 'Overview' }
+      : activeView === 'gc-access' && !wide ? { view: returnView, label: 'Back' }
+        : null;
+  const leave = () => {
+    if (openStudent) { setOpenStudentUid(null); return; }
+    if (leaveTo) go(leaveTo.view);
   };
+
+  const page = openStudent ? studentPage
+    : activeView === 'overview' ? overview
+      : activeView === 'students' ? students
+        : activeView === 'schools' || activeView === 'years' ? schools
+          : activeView === 'programme' ? (
+            <>
+              {wide ? (
+                <div className="gc8-hero adm-hero">
+                  <div className="gc8-head">
+                    <h1 className="gc8-title">Programme evidence</h1>
+                    <p className="gc8-sub">Reach, participation, retention and feature evidence, with every percentage tied to its denominator.</p>
+                  </div>
+                  {filters}
+                </div>
+              ) : (
+                <header className="gc8-head adm-head">
+                  <h1 className="gc8-name">Programme evidence</h1>
+                  <p className="gc8-sub">Reach, participation, retention and feature evidence, with every percentage tied to its denominator.</p>
+                  {filters}
+                </header>
+              )}
+              <AdminProgrammePanel schoolFilter={schoolFilter} yearFilter={yearFilter} allCourses={allCourses} wide={roomy} />
+            </>
+          )
+            : activeView === 'funnel' ? <AdminFunnelPanel />
+              : activeView === 'feedback' ? <AdminFeedbackInbox />
+                : <AdminGcAccessPanel />;
+
+  const accountFace = <User className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />;
 
   return (
-    <div className="admin-workspace">
-      <a href="#admin-main" className="admin-skip-link">Skip to dashboard content</a>
-      <header className="admin-masthead frame-bar">
-        <div className="admin-masthead-inner">
-          <div className="admin-brand">
-            <span>nextstepuni</span>
-            <span className="admin-eyebrow">The programme desk</span>
-          </div>
-          <nav ref={navRef} className="admin-nav" aria-label="Admin dashboard">
-            {NAV_ITEMS.map((item, index) => (
-              <button
-                key={item.id}
-                type="button"
-                onClick={() => setActiveView(item.id)}
-                aria-current={activeView === item.id ? 'page' : undefined}
-              >
-                <span className="admin-nav-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-                <span className="admin-nav-label">{item.label}</span>
-              </button>
-            ))}
-          </nav>
-          <button type="button" onClick={onLogout} className="admin-logout">
-            <LogOut size={15} /> <span>Log out</span>
-          </button>
+    <div className="gc8 adm">
+      {/* ─── Laptop: the staff sidebar (Log out in the menu under your name) ─── */}
+      {wide && <aside className="gc8-side frame-page frame-foot" aria-label="Admin dashboard">
+        <div className="gc8-brand">
+          <p className="gc8-wordmark">nextstepuni<i aria-hidden="true">.</i></p>
         </div>
-      </header>
-
-      <main id="admin-main" tabIndex={-1} className="admin-main">
-        {(activeView === 'overview' || activeView === 'programme' || activeView === 'students' || activeView === 'schools' || activeView === 'years') && (
-          <div className="admin-page-heading">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-accent)]">{formatDate()}</p>
-              <h1 className="mt-2 font-sans text-3xl font-semibold leading-tight text-[var(--admin-ink)] sm:text-4xl">
-                {activeView === 'overview' ? 'What needs attention today' : activeView === 'programme' ? 'Programme evidence' : NAV_ITEMS.find(item => item.id === activeView)?.label}
-              </h1>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--admin-muted)]">
-                {activeView === 'overview' && 'Participation, progress and the next conversation to have.'}
-                {activeView === 'programme' && 'Reach, participation, retention and feature evidence — with every percentage tied to its denominator.'}
-                {activeView === 'students' && `${filteredData.length} student record${filteredData.length === 1 ? '' : 's'} in the current view.`}
-                {activeView === 'schools' && 'Compare participation and learning progress across participating schools.'}
-                {activeView === 'years' && 'Compare participation and learning progress across year groups.'}
-              </p>
-            </div>
-            {showFilters && (
-              <FilterControls
-                schoolFilter={schoolFilter}
-                yearFilter={yearFilter}
-                schoolOptions={schoolOptions}
-                yearOptions={yearOptions}
-                onSchoolChange={setSchoolFilter}
-                onYearChange={setYearFilter}
-              />
-            )}
-          </div>
-        )}
-
-        {activeView === 'overview' && (
-          <div className="space-y-6">
-            <section className="admin-summary" aria-label="Cohort summary">
-              <div className="admin-summary-heading">
-                <h2 className="admin-eyebrow">The bigger picture</h2>
-                <p>{schoolFilter === 'all' ? 'All schools' : displaySchool(schoolFilter)} · {yearFilter === 'all' ? 'All year groups' : displayYear(yearFilter)}</p>
-              </div>
-              <div className="admin-metrics">
-                <MetricCard label="Student accounts" value={isLoading || loadError ? '—' : selectedStats.students} detail={loadError ? 'Student data unavailable' : 'In the selected cohort'} />
-                <MetricCard label="Started learning" value={isLoading || loadError ? '—' : `${selectedStats.startRate}%`} detail={loadError ? 'Student data unavailable' : isLoading ? 'Loading existing records' : `${selectedStats.started} students opened at least one course`} accent />
-                <MetricCard label="Average progress" value={isLoading || loadError ? '—' : `${selectedStats.averageProgress.toFixed(0)}%`} detail={loadError ? 'Student data unavailable' : 'Across courses available to each student'} />
-                <MetricCard label="Completed a course" value={isLoading || loadError ? '—' : selectedStats.completedOne} detail={loadError ? 'Student data unavailable' : 'Students with at least one completion'} />
-              </div>
-              {!isLoading && !loadError && selectedStats.students > 0 && (
-                <div className="admin-summary-footer">
-                  <p><span className="admin-status-dot" aria-hidden="true" />{notStarted > 0 ? `${notStarted} student${notStarted === 1 ? ' is' : 's are'} yet to get started.` : 'Every student in this view has started learning.'}</p>
-                  <button type="button" onClick={() => setActiveView('students')}>
-                    View students <ChevronRight size={15} />
-                  </button>
-                </div>
-              )}
-            </section>
-
-            {isLoading ? (
-              <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-                <div className="h-[340px] animate-pulse rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" />
-                <div className="h-[340px] animate-pulse rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" />
-              </div>
-            ) : loadError ? (
-              <div role="alert" className="rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-5 py-4 text-sm text-[var(--admin-accent)]">{loadError}</div>
-            ) : (
-              <div className="admin-overview-grid">
-                <CohortTable eyebrow="Your schools" title="Schools at a glance" rows={schoolRows} emptyLabel="No schools match the current filters." onOpen={openSchoolStudents} />
-                <ProgressDistribution records={filteredData} />
-              </div>
-            )}
-
-            {!isLoading && !loadError && (
-              <CohortTable eyebrow="Cohorts" title="Year groups at a glance" rows={yearRows} emptyLabel="No year groups match the current filters." onOpen={openYearStudents} />
-            )}
-          </div>
-        )}
-
-        {activeView === 'programme' && (
-          <AdminProgrammePanel
-            schoolFilter={schoolFilter}
-            yearFilter={yearFilter}
-            allCourses={allCourses}
-          />
-        )}
-
-        {activeView === 'students' && renderStudentContent()}
-
-        {activeView === 'schools' && (
-          isLoading ? <div className="h-[360px] animate-pulse rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" /> : loadError ?
-            <div role="alert" className="rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-5 py-4 text-sm text-[var(--admin-accent)]">{loadError}</div> :
-            <CohortTable eyebrow="School portfolio" title="All participating schools" rows={schoolRows} emptyLabel="No schools match the current filters." onOpen={openSchoolStudents} />
-        )}
-
-        {activeView === 'years' && (
-          isLoading ? <div className="h-[360px] animate-pulse rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" /> : loadError ?
-            <div role="alert" className="rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-5 py-4 text-sm text-[var(--admin-accent)]">{loadError}</div> :
-            <CohortTable eyebrow="Year-group portfolio" title="All year groups" rows={yearRows} emptyLabel="No year groups match the current filters." onOpen={openYearStudents} />
-        )}
-
-        {activeView === 'funnel' && <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-7"><AdminFunnelPanel /></section>}
-        {activeView === 'feedback' && <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-7"><AdminFeedbackInbox /></section>}
-        {activeView === 'gc-access' && <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-7"><AdminGcAccessPanel /></section>}
-
-        {(activeView === 'overview' || activeView === 'students') && (
-          <div className="mt-5 flex justify-end">
-            <button type="button" onClick={() => setReloadToken(value => value + 1)} disabled={isLoading} className="inline-flex items-center gap-2 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)] disabled:opacity-50">
-              <RefreshCw size={14} className={isLoading ? 'animate-spin' : undefined} /> Refresh student data
+        <nav className="gc8-nav" aria-label="Admin dashboard">
+          {SIDEBAR.map(item => (
+            <button
+              key={item.id}
+              type="button"
+              className="gc8-nav-item"
+              aria-current={sideCurrent === item.id ? 'page' : undefined}
+              onClick={() => go(item.id)}
+            >
+              <item.icon className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />
+              {item.label}
             </button>
-          </div>
-        )}
-      </main>
+          ))}
+        </nav>
+        <MenuPanel
+          label="Your account"
+          buttonLabel="Your account: Admin"
+          buttonClassName="gc8-user"
+          className="gc8-usermenu"
+          align="start"
+          side="top"
+          face={<>
+            <span className="gc8-user-box">{accountFace}</span>
+            <span className="gc8-user-copy"><span>Admin</span><span className="gc8-meta">The programme desk</span></span>
+          </>}
+        >
+          <MenuAction title="Log out" plain tone="danger" onPress={onLogout} />
+        </MenuPanel>
+      </aside>}
 
-      {deleteTarget && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 p-4" onClick={() => !isDeleting && closeDeleteDialog()}>
-          <div
-            ref={deleteDialogRef}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="delete-student-title"
-            aria-describedby="delete-student-description"
-            tabIndex={-1}
-            className="w-full max-w-sm rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-6"
-            onClick={event => event.stopPropagation()}
-          >
-            <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--admin-danger-bg)] text-[var(--admin-danger)]"><AlertTriangle size={20} /></div>
-              <h2 id="delete-student-title" className="font-sans text-xl font-semibold text-[var(--admin-ink)]">Delete student account</h2>
-            </div>
-            <p id="delete-student-description" className="text-sm leading-relaxed text-[var(--admin-body)]">Delete <strong>{deleteTarget.name}</strong> and all associated progress and profile data?</p>
-            <p className="mt-2 text-xs leading-relaxed text-[var(--admin-muted)]">This action cannot be undone.</p>
-            {reauthMethodFor(auth.currentUser) === 'password' && (
-              <label className="mt-5 block" htmlFor="admin-delete-password">
-                <span className="mb-2 block text-xs font-bold uppercase tracking-[0.12em] text-[var(--admin-muted)]">Re-enter your password</span>
-                <input id="admin-delete-password" type="password" value={deleteVerificationPassword} onChange={event => setDeleteVerificationPassword(event.target.value)} autoComplete="current-password" className="w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-3 text-sm text-[var(--admin-ink)] outline-none focus:border-[#B42318]" />
-              </label>
-            )}
-            <div className="mt-6 flex gap-3">
-              <button ref={cancelDeleteButtonRef} type="button" onClick={closeDeleteDialog} disabled={isDeleting} className="flex-1 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 text-sm font-bold text-[var(--admin-ink)] disabled:opacity-50">Cancel</button>
-              <button type="button" onClick={() => void handleDeleteStudent(deleteTarget)} disabled={isDeleting || (reauthMethodFor(auth.currentUser) === 'password' && !deleteVerificationPassword)} className="flex-1 rounded-full border border-[#8F1D14] bg-[#B42318] px-4 py-2.5 text-sm font-bold text-white disabled:opacity-50">
-                {isDeleting ? 'Deleting...' : 'Delete account'}
-              </button>
-            </div>
+      <div className="gc8-col">
+        {/* ─── Laptop: the bar along the top ─── */}
+        {wide && <div className="gc8-dbar">
+          <p className="gc8-label">{placeLabel}</p>
+          <div className="gc8-dbar-end">
+            {dataAsOf && <span className="gc8-meta">Data as of {dataAsOf}</span>}
+            <TextButton tone="quiet" className="gc8-ib" onClick={refreshStudents}>
+              <RefreshCw className="ui-icon" width={16} height={16} strokeWidth={2} aria-hidden="true" />Refresh
+            </TextButton>
           </div>
-        </div>
-      )}
+        </div>}
+
+        {/* ─── Phone: a place's bar with your account, or a page's bar with Back ─── */}
+        {!wide && (leaveTo ? (
+          activeView === 'funnel' && !openStudent ? null : (
+            <TopBar className="gc8-placebar adm-pagebar" ruled={scrolled} leave={{ kind: 'back', onPress: leave, label: openStudent ? 'Back to Students' : 'Back' }} />
+          )
+        ) : (
+          <TopBar
+            className="gc8-placebar"
+            ruled={scrolled}
+            placeLabel={placeLabel}
+            action={
+              <MenuPanel
+                label="Your account"
+                buttonLabel="Your account"
+                buttonClassName="adm-me"
+                className="adm-accountmenu"
+                chevron={false}
+                open={accountOpen}
+                onOpenChange={setAccountOpen}
+                face={<span className="adm-me-box">{accountFace}</span>}
+                head={<span className="adm-menuhead"><span>Admin</span><span className="gc8-meta">The programme desk</span></span>}
+              >
+                <MenuAction title="School access" onPress={openSchoolAccess} />
+                <MenuAction plain title={<span className="adm-mrow"><span>Refresh data</span>{dataAsOf ? <span className="gc8-meta">As of {dataAsOf}</span> : null}</span>} onPress={refreshStudents} />
+                <MenuRule />
+                <MenuAction plain title={<span className="adm-mrow"><span>Log out</span><LogOut className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" /></span>} onPress={onLogout} />
+              </MenuPanel>
+            }
+          />
+        ))}
+
+        {/* First run on a phone draws its own bar: Back, and its Refresh at the right. */}
+        {!wide && activeView === 'funnel' && !openStudent ? (
+          <AdminFunnelPanel onBack={() => go('overview')} />
+        ) : (
+          <main className="gc8-main adm-main">
+            {wide && activeView === 'funnel' && (
+              <div className="adm-backrow">
+                <TextButton tone="quiet" className="adm-back" aria-label="Back to Overview" onClick={() => go('overview')}>
+                  <ChevronLeft className="ui-icon" width={20} height={20} strokeWidth={1.75} aria-hidden="true" />Overview
+                </TextButton>
+              </div>
+            )}
+            {page}
+          </main>
+        )}
+
+        {!wide && <TabBar className="gc8-tabbar" label="Admin dashboard" items={PLACES} current={currentPlace} onSelect={id => go(id)} />}
+      </div>
+
+      {/* Delete: the shared confirm, today's words and its typed check (the administrator's password). */}
+      <Confirm
+        open={!!deleteTarget}
+        sentence="Delete student account"
+        detail={<>Delete <b>{deleteTarget?.name}</b> and all associated progress and profile data? This action cannot be undone.</>}
+        keepLabel="Cancel"
+        onKeep={() => { if (!isDeleting) closeDeleteDialog(); }}
+        dangerLabel={isDeleting ? 'Deleting...' : 'Delete account'}
+        dangerBlocked={isDeleting || (reauthMethodFor(auth.currentUser) === 'password' && !deleteVerificationPassword)}
+        onDanger={() => {
+          if (isDeleting || !deleteTarget) return;
+          if (reauthMethodFor(auth.currentUser) === 'password' && !deleteVerificationPassword) { deleteFieldRef.current?.focus(); return; }
+          void handleDeleteStudent(deleteTarget);
+        }}
+      >
+        {reauthMethodFor(auth.currentUser) === 'password' ? (
+          <Field
+            ref={deleteFieldRef}
+            id="admin-delete-password"
+            type="password"
+            label="Re-enter your password"
+            value={deleteVerificationPassword}
+            onChange={event => setDeleteVerificationPassword(event.target.value)}
+            autoComplete="current-password"
+          />
+        ) : null}
+      </Confirm>
+
+      {/* A failed delete says so here (it was a browser alert). */}
+      <MessageHost />
     </div>
   );
 };

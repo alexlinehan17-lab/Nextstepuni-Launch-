@@ -433,14 +433,14 @@ describe('Russian source directions visible in the practice session',()=>{
     render(<SessionScreen cards={[card]} subjectLabel="Russian" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
     fireEvent.click(screen.getByRole('button',{name:'Profession then position'}));
     fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
-    await waitFor(()=>expect(screen.getAllByRole('button',{name:/4m$/})).toHaveLength(10));
+    await waitFor(()=>expect(screen.getAllByRole('button',{name:/4 marks$/})).toHaveLength(10));
     const lawyer=screen.getByRole('button',{name:/^Юрист /});
     fireEvent.click(lawyer);
     expect(lawyer).toHaveAttribute('aria-pressed','true');
     await waitFor(()=>expect(screen.getByText(/You claimed 4 of 40 marks/)).toBeVisible());
     fireEvent.click(screen.getByRole('button',{name:'Position then profession'}));
     await waitFor(()=>expect(screen.getByRole('button',{name:/^Юрист /})).toHaveAttribute('aria-pressed','false'));
-    expect(screen.getAllByRole('button',{name:/4m$/})).toHaveLength(10);
+    expect(screen.getAllByRole('button',{name:/4 marks$/})).toHaveLength(10);
   });
 
   it('shows the 2014 paper handwriting split and total-only classification limit',async()=>{

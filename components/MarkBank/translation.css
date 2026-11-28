@@ -1,51 +1,35 @@
-/* Unseen translation marked unit by unit (TranslationPanel.tsx). The chips
-   and partial-mark steps are claim-rows.css; this file lays out the units.
-   Every colour is a Mark Bank token, so both themes follow the deck. A unit
-   is outlined evenly on all four sides; its state shows in the chosen
-   button, never in a coloured edge. */
-.mb-tr { color: var(--mb-ink); font-size: 13px; line-height: 1.5; display: grid; gap: 12px; }
-.mb-tr-eyebrow { margin: 0; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .09em; text-transform: uppercase; color: var(--mb-label); }
-.mb-tr h3 { margin: -6px 0 0; font: 600 18px/1.3 'Source Serif 4', Georgia, serif; color: var(--mb-ink); }
+/* Unseen translation marked unit by unit (TranslationPanel.tsx). The counts and partial-mark
+   steps are claim-rows.css; this file lays out the units. Each unit sits on the page, ruled by a
+   hairline: its name and marks, the printed words, then its three buttons. Only the buttons are
+   boxes; its state shows in the chosen button, never in a coloured edge. */
+.mb-tr { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); display: grid; gap: var(--space-3); }
+.mb-tr-eyebrow { margin: 0; color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
+.mb-tr h3 { margin: -6px 0 0; color: var(--ink-primary); font: 400 21px/26px var(--font-ui); letter-spacing: -0.03em; }
 
-.mb-tr-rule { padding: 11px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); display: grid; gap: 5px; }
-.mb-tr-rule strong { font: 650 12.5px/1.45 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); }
-.mb-tr-rule p { margin: 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); }
+.mb-tr-rule { display: grid; gap: 4px; padding: 12px 0 0; border-top: 1px solid var(--hairline); }
+.mb-tr-rule strong { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-tr-rule p { margin: 0; color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 .mb-tr-rule ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
-.mb-tr-rule li { font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-tr-rule li { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 
-.mb-tr-progress { font: 600 12px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); }
+.mb-tr-progress { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 
-.mb-tr-units { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-.mb-tr-unit {
-  display: grid; gap: 8px; padding: 10px 12px 11px; border-radius: 12px;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper);
-}
-.mb-tr-unit[data-marked="true"] { border-color: var(--mb-ink); }
-.mb-tr-unit-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-.mb-tr-unit-name { font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .09em; text-transform: uppercase; color: var(--mb-label); }
-.mb-tr-unit-text { margin: 0; font: 500 15px/1.5 'Source Serif 4', Georgia, serif; color: var(--mb-ink); overflow-wrap: anywhere; }
+.mb-tr-units { margin: 0; padding: 0; list-style: none; display: grid; }
+.mb-tr-unit { display: grid; gap: var(--space-2); padding: var(--space-4) 0; border-top: 1px solid var(--hairline); }
+.mb-tr-unit-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.mb-tr-unit-name { color: var(--ink-muted); font: 400 11px/14px var(--font-ui); letter-spacing: .1em; text-transform: uppercase; }
+.mb-tr-unit[data-marked="true"] .mb-tr-unit-head .mb-claim-chip { color: var(--ink-primary); }
+.mb-tr-unit-text { margin: 0; color: var(--ink-primary); font: 400 17px/24px var(--font-ui); overflow-wrap: anywhere; }
 
-/* Three square buttons with a visible face and edge before any hover; the
-   chosen one is the charcoal claim face (the approved Mark Bank selection). */
-.mb-tr-choices { display: flex; flex-wrap: wrap; gap: 6px; }
-.mb-tr-choices button {
-  min-height: 36px; padding: 0 12px; border-radius: 9px; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 5px;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 650 12.5px/1 'DM Sans', system-ui, sans-serif;
-}
-.mb-tr-choices button:hover { border-color: var(--mb-ink); color: var(--mb-ink); }
-.mb-tr-choices button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
+/* Full, Partial and None: the shared mark buttons (claim-rows.css), wider for their words. */
+.mb-tr-choices { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.mb-tr-choices button { padding: 0 14px; font: 400 14px/18px var(--font-ui); letter-spacing: 0; }
 
-.mb-tr-partial { display: grid; gap: 6px; padding: 8px 10px; border-radius: 9px; background: var(--mb-raised); }
-.mb-tr-partial > span { font: 500 12px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); }
+.mb-tr-partial { display: grid; gap: 6px; }
+.mb-tr-partial > span { color: var(--ink-secondary); font: 400 13px/18px var(--font-ui); }
 .mb-tr-partial .mb-claim-steps { justify-content: flex-start; }
-/* The shared step buttons are drawn for a charcoal (claimed) row, where the
-   pressed step is the paper face. Here they sit on a light panel, so the
-   pressed step takes the charcoal claim face instead. */
-.mb-tr-partial .mb-claim-steps button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
-
-.mb-tr-total { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px; border-radius: 11px; background: var(--mb-raised); }
-.mb-tr-total span { font: 600 12px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); }
-.mb-tr-total strong { font: 700 17px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.mb-tr-note { margin: 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+/* The total: one ruled line, as Politics has it. */
+.mb-tr-total { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); padding-top: 14px; border-top: 2px solid var(--ink-primary); }
+.mb-tr-total span { color: var(--ink-primary); font: 400 15px/21px var(--font-ui); }
+.mb-tr-total strong { color: var(--ink-primary); font: 400 20px/24px 'Departure Mono', 'Apercu Mono Pro', ui-monospace, monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mb-tr-note { margin: 0; color: var(--ink-muted); font: 400 13px/18px var(--font-ui); }

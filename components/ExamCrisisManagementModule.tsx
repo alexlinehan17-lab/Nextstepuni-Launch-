@@ -1,5 +1,5 @@
 import { BrandedBreathingView,BrandedCognitionView } from './learning/WideFeatures';
-import { moduleFill,moduleText } from './learning/brandTokens';
+import { moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -17,6 +17,9 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { Highlight,MicroCommitment,PersonalStory,ReadingSection,SupportSignpost } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerGroup,AnswerLine,ExerciseLabel,ExerciseSheet } from './learning/Exercise';
+import { Button } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
 
 const theme = skyTheme;
 
@@ -234,134 +237,97 @@ const CrisisScenarioTrainer = () => {
 
     const optimalCount = results.filter(r => r === 'good').length;
 
-    const consequenceStyle = (quality: 'bad' | 'ok' | 'good') => {
-        if (quality === 'good') return { bg: COLORS.successTint, border: COLORS.success, text: COLORS.successDarkText, label: COLORS.successDarkText };
-        if (quality === 'ok') return { bg: "var(--module-on-fill)", border: "var(--module-line)", text: "var(--module-ink)", label: "var(--module-ink)" };
-        return { bg: "var(--module-ink)", border: "var(--module-line)", text: "var(--module-ink)", label: "var(--module-danger-text)" };
-    };
-
-    return <div className="wr-skin" data-wide="CrisisScenarioTrainer"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-            <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(var(--nsu-orange-rgb), 0.2)', letterSpacing: '0.06em' }}>Exam Skills Trainer</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Crisis Scenario Trainer</h4>
-                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Your brain will default to its training. Build the right instincts now.</p>
-            </div>
-
+    return <ExerciseSheet label="Exam Skills Trainer" title="Crisis Scenario Trainer" sub="Your brain will default to its training. Build the right instincts now." name="CrisisScenarioTrainer">
             <AnimatePresence mode="wait">
                 {!finished ? (
-                    <MotionDiv key={`scenario-${scenarioIndex}`} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.3 }}>
-                        {/* Progress */}
-                        <div className="flex items-center justify-between mb-6">
-                            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Scenario {scenarioIndex + 1}/4</span>
-                            <div className="flex gap-1.5">
+                    <MotionDiv key={`scenario-${scenarioIndex}`} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.3 }} className="ex-stack">
+                        {/* Progress: the count in the readout, step marks in ink and hairline */}
+                        <div className="flex items-center justify-between">
+                            <span className="ex-count ui-readout">Scenario {scenarioIndex + 1}/4</span>
+                            <div className="flex gap-1.5" aria-hidden="true">
                                 {crisisScenarios.map((_, i) => (
-                                    <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: moduleFill(i <= scenarioIndex ? COLORS.success : "var(--module-surface)"), transition: 'background-color 0.3s' }} />
+                                    <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', boxSizing: 'border-box', backgroundColor: i <= scenarioIndex ? "var(--ink-primary)" : "transparent", border: i <= scenarioIndex ? "1.5px solid var(--ink-primary)" : "1.5px solid var(--outline-soft)", transition: 'background-color 0.3s' }} />
                                 ))}
                             </div>
                         </div>
 
-                        {/* Scenario card */}
-                        <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] mb-6 flex items-start gap-3" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 24px' }}>
-
-                            <div>
-                                <span className="inline-block mb-2" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Crisis Scenario</span>
-                                <p className="font-serif" style={{ fontSize: 17, color: "var(--module-ink)", lineHeight: 1.5 }}>{scenario.situation}</p>
-                            </div>
+                        {/* The scenario: words you start from, under their label, not in a box */}
+                        <div className="ex-thought">
+                            <ExerciseLabel>Crisis Scenario</ExerciseLabel>
+                            <p className="ex-thought-words">{scenario.situation}</p>
                         </div>
 
-                        {/* Options */}
-                        <div className="space-y-3 mb-4">
+                        {/* Options: answers that lock once one is chosen; the chosen one's consequence follows it */}
+                        <AnswerGroup kind="one" chooseOnArrow={false}>
                             {scenario.responses.map((response, idx) => {
                                 const isChosen = chosenIndex === idx;
                                 const isRevealed = chosenIndex !== null;
-                                const cs = consequenceStyle(response.quality);
 
                                 return (
-                                    <div key={idx}>
-                                        <button onClick={() => handleChoose(idx)} disabled={isRevealed} className="w-full text-left p-4 transition-all duration-200" style={
-                                            isRevealed
-                                                ? isChosen
-                                                    ? response.quality === 'good'
-                                                        ? { backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14 }
-                                                        : response.quality === 'bad'
-                                                            ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14 }
-                                                            : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14 }
-                                                    : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14, opacity: 0.4 }
-                                                : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14, cursor: 'pointer' }
-                                        } data-wide-button="true" data-selected={chosenIndex === idx} data-tone={response.quality === 'good' ? 'mint' : response.quality === 'bad' ? 'coral' : 'orange'} aria-pressed={chosenIndex === idx}>
-                                            <div className="flex items-start gap-3">
-                                                <span className="wr-answer-letter flex-shrink-0" style={{
-                                                    backgroundColor: moduleFill(isRevealed && isChosen
-                                                        ? response.quality === 'good' ? COLORS.success : response.quality === 'bad' ? "var(--module-danger)" : "var(--module-muted)"
-                                                        : "var(--module-surface)"),
-                                                    color: moduleText(isRevealed && isChosen ? "var(--module-on-fill)" : "var(--module-muted)"),
-                                                }}>
+                                    <div key={idx} className="ex-stack">
+                                        <ChoiceTile
+                                            onClick={() => handleChoose(idx)}
+                                            disabled={isRevealed}
+                                            chosen={isChosen}
+                                            label={<span className="flex items-start gap-3">
+                                                <span className="ex-badge">
                                                     {String.fromCharCode(65 + idx)}
                                                 </span>
-                                                <span style={{ fontSize: 14, fontWeight: 500, color: moduleText(isRevealed && !isChosen ? "var(--module-muted)" : "var(--module-ink)") }}>{response.text}</span>
-                                            </div>
-                                        </button>
+                                                <span className="min-w-0">{response.text}</span>
+                                            </span>}
+                                        />
 
                                         <AnimatePresence>
                                             {isChosen && isRevealed && (
                                                 <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.35, ease: 'easeOut' }} className="overflow-hidden">
-                                                    <div className="mt-2" style={{ borderLeft: `3px solid ${cs.border}`, backgroundColor: moduleFill(cs.bg), borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                                                        <p className="font-semibold text-sm mb-1" style={{ color: moduleText(cs.label) }}>{response.consequence}</p>
-                                                        <p className="text-sm leading-relaxed" style={{ color: moduleText(cs.text) }}>{response.explanation}</p>
-                                                    </div>
+                                                    <AnswerLine tone={response.quality === 'good' ? 'ok' : 'note'}>
+                                                        <b>{response.consequence}</b> {response.explanation}
+                                                    </AnswerLine>
                                                 </MotionDiv>
                                             )}
                                         </AnimatePresence>
                                     </div>
                                 );
                             })}
-                        </div>
+                        </AnswerGroup>
 
                         <AnimatePresence>
                             {chosenIndex !== null && (
-                                <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.25 }} className="flex justify-end mt-6">
-                                    <button onClick={handleNext} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">
+                                <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.25 }} className="flex justify-end">
+                                    <Button onClick={handleNext}>
                                         {scenarioIndex + 1 >= crisisScenarios.length ? 'See Results' : 'Next Scenario'}
-                                    </button>
+                                    </Button>
                                 </MotionDiv>
                             )}
                         </AnimatePresence>
                     </MotionDiv>
                 ) : (
-                    <MotionDiv key="results" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.35 }} className="text-center">
-                        <div className="mb-6">
-                            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style={{ backgroundColor: moduleFill(COLORS.successTint) }}>
-                                <span className="font-serif font-bold" style={{ fontSize: 28, color: moduleText(COLORS.success) }}>{optimalCount}/4</span>
-                            </div>
-                            <p className="font-serif font-semibold text-lg mb-1" style={{ color: "var(--module-ink)" }}>{optimalCount}/4 optimal responses</p>
+                    <MotionDiv key="results" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.35 }} className="ex-stack">
+                        {/* The score, in words under a hairline (no green disc) */}
+                        <div className="ex-result">
+                            <p className="ex-result-name">{optimalCount}/4</p>
+                            <p className="t-sub">{optimalCount}/4 optimal responses</p>
                         </div>
 
-                        <div className="mb-6" style={
-                            optimalCount === 4
-                                ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: moduleFill(COLORS.successTint), borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
-                                : optimalCount >= 2
-                                    ? { borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
-                                    : { borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
-                        }>
-                            <p className="text-sm leading-relaxed" style={{ color: moduleText(optimalCount === 4 ? COLORS.successDarkText : optimalCount >= 2 ? "var(--module-ink)" : "var(--module-danger-text)") }}>
-                                {optimalCount === 4 ? "You\u2019ve built exam-crisis muscle memory. When panic hits, your training will take over." : optimalCount >= 2 ? "Good instincts, but some panic responses slipped through. Review the scenarios where you chose poorly." : "Under pressure, your brain defaulted to panic. That\u2019s exactly why we practice. Run through these again."}
-                            </p>
-                        </div>
+                        {/* What the score means: a line that answers it, the tick only when all four were optimal */}
+                        <AnswerLine tone={optimalCount === 4 ? 'ok' : 'note'}>
+                            {optimalCount === 4 ? "You\u2019ve built exam-crisis muscle memory. When panic hits, your training will take over." : optimalCount >= 2 ? "Good instincts, but some panic responses slipped through. Review the scenarios where you chose poorly." : "Under pressure, your brain defaulted to panic. That\u2019s exactly why we practice. Run through these again."}
+                        </AnswerLine>
 
-                        <div className="flex justify-center gap-2 mb-6">
+                        {/* Each scenario as a numbered ring: the done ring where the response was optimal, a firmer ring where it was partial, a hairline ring where it was a panic response */}
+                        <div className="flex gap-2">
                             {results.map((r, i) => (
-                                <div key={i} className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold" style={{
-                                    backgroundColor: moduleFill(r === 'good' ? COLORS.success : r === 'ok' ? "var(--module-muted)" : "var(--module-danger)"),
-                                    color: "var(--module-on-fill)",
-                                }}>{i + 1}</div>
+                                <span key={i} data-quality={r} className={r === 'good' ? 'ex-badge ex-badge--done' : 'ex-badge'} style={r === 'ok' ? { borderColor: "var(--ink-secondary)" } : undefined}>{i + 1}</span>
                             ))}
                         </div>
 
-                        <button onClick={handlePlayAgain} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Play Again</button>
+                        <div className="ex-actions">
+                            <Button onClick={handlePlayAgain}>Play Again</Button>
+                        </div>
                     </MotionDiv>
                 )}
             </AnimatePresence>
-        </div></div>;
+        </ExerciseSheet>;
 };
 
 // --- MODULE COMPONENT ---

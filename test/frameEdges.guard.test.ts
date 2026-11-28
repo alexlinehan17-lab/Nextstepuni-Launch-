@@ -39,7 +39,7 @@ type Rule = 'fixed' | 'inset-0' | '100vh' | 'h-screen' | 'env(safe-area-' | 'var
 type Counts = Partial<Record<Rule, number>>;
 
 const INSTEAD: Record<Rule, string> = {
-  fixed: 'frame-takeover, frame-dialog, frame-sheet-backdrop or frame-float',
+  fixed: 'frame-top (a pinned page bar), frame-takeover, frame-dialog, frame-sheet-backdrop or frame-float',
   'inset-0': 'frame-takeover / frame-dialog for a layer; frame-safe-box for controls pinned inside one',
   '100vh': '100dvh, or calc(var(--safe-h) - margin) for a card',
   'h-screen': 'h-[100dvh] or min-h-[100dvh]',

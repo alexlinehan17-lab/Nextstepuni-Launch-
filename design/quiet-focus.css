@@ -29,6 +29,12 @@
     box-shadow: none !important;
   }
 
+  /* Focus a dialog or sheet placed by itself, with no key pressed (hooks/useModal: it opened on its
+   * own or from a tap): no ring until the next key press. */
+  :root:not([data-focus-review]) [data-quiet-focus]:focus-visible {
+    outline: none !important;
+  }
+
   /* Text-entry controls use the approved close edge, for mouse AND keyboard.
    * A 1px border plus 1px inset makes the edge without moving the layout. */
   :root:not([data-focus-review]) :where(

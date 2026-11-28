@@ -4,7 +4,8 @@ import { POINTS } from '../journeyPointsConfig';
 import { STUDY_SESSION_POINTS } from '../studySessionData';
 import './journey-points-guide.css';
 
-const EARNING_RATES = [
+/** The current earning rates: one list for the study primer and the Launchpad reference. */
+export const EARNING_RATES = [
   { label: 'Study session', detail: 'Every 10 minutes', amount: String(STUDY_SESSION_POINTS.PER_10_MINUTES), unit: 'JP', featured: true },
   { label: 'Module section', detail: 'Each section completed', amount: String(POINTS.SECTION_COMPLETE), unit: 'JP' },
   { label: 'Finish a module', detail: 'Completion bonus', amount: `+${POINTS.MODULE_COMPLETE_BONUS}`, unit: 'JP' },

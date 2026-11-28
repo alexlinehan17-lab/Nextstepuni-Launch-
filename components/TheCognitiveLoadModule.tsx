@@ -15,6 +15,8 @@ import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import { MotionDiv } from './Motion';
+import { AnswerLine,ExerciseSheet } from './learning/Exercise';
+import { Button,TextButton } from './ui/Button';
 
 const theme = fuchsiaTheme;
 
@@ -100,64 +102,59 @@ const WorkingMemoryDemo = () => {
   if (phase === 'result') {
     const span = bestSpan || (results.find((r) => r.correct) ? Math.max(...results.filter((r) => r.correct).map((r) => r.length)) : 0);
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Working Memory Span</h4>
-        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-8">The longest sequence you recalled correctly.</p>
-
-        <div className="text-center mb-6">
-          <p className="text-5xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{span}</p>
-          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2">items</p>
+      <ExerciseSheet title="Your Working Memory Span" sub="The longest sequence you recalled correctly." name="WorkingMemoryDemo">
+        <div className="text-center">
+          <p className="t-number-xl text-ink-primary">{span}</p>
+          <p className="t-sub mt-2">items</p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 mb-6 max-w-xs mx-auto">
-          <div className="text-center p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-            <p className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{span}</p>
-            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Your Span</p>
+        {/* The two figures in a line, on the sheet (no box round each) */}
+        <div className="grid grid-cols-2 gap-4 max-w-xs self-center w-full text-center py-3 border-y border-hairline">
+          <div>
+            <p className="t-name-sm text-ink-primary">{span}</p>
+            <p className="t-meta mt-1">Your Span</p>
           </div>
-          <div className="text-center p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-            <p className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">4</p>
-            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Average</p>
+          <div>
+            <p className="t-name-sm text-ink-primary">4</p>
+            <p className="t-meta mt-1">Average</p>
           </div>
         </div>
 
         <MotionDiv
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="p-4 rounded-xl text-sm font-medium bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)]"
         >
+          <AnswerLine tone="note">
           Your span: {span} items. Average: 4. This is the limit of what your brain can juggle at once. When you try to cram more than about 4 new ideas into a study session without taking a break, your brain quietly drops the rest — and you won't even realise it happened.
+          </AnswerLine>
         </MotionDiv>
 
-        <div className="mt-6 text-center">
-          <button onClick={reset} className="px-5 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-semibold rounded-xl transition-colors text-sm" data-wide-button="true">
+        <div className="ex-actions">
+          <TextButton tone="quiet" onClick={reset}>
             Try Again
-          </button>
+          </TextButton>
         </div>
-      </div>
+      </ExerciseSheet>
     );
   }
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Digit Span Test</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-6">How many digits can your working memory hold? Let's find out.</p>
-
+    <ExerciseSheet title="Digit Span Test" sub="How many digits can your working memory hold? Let's find out." name="WorkingMemoryDemo">
       {phase === 'ready' && (
-        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center">
-          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="ex-stack">
+          <p className="t-body text-ink-secondary">
             {results.length === 0
               ? 'Digits will flash on screen one at a time. Remember the sequence and type it back.'
               : `Sequence length: ${sequenceLength} digits`}
           </p>
           {failCount === 1 && (
-            <p className="text-xs text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-3">Incorrect. One more try at this length.</p>
+            <AnswerLine tone="note">Incorrect. One more try at this length.</AnswerLine>
           )}
-          <button
-            onClick={startRound}
-            className="px-6 py-3 text-sm font-bold rounded-xl bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true"
-          >
-            {results.length === 0 ? 'Start' : 'Next Round'}
-          </button>
+          <div className="ex-actions">
+            <Button onClick={startRound}>
+              {results.length === 0 ? 'Start' : 'Next Round'}
+            </Button>
+          </div>
         </MotionDiv>
       )}
 
@@ -170,12 +167,12 @@ const WorkingMemoryDemo = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="text-7xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] font-mono"
+              className="text-7xl text-ink-primary font-mono"
             >
               {digits[currentDigitIndex]}
             </MotionDiv>
           ) : (
-            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-[var(--module-muted)] text-sm">
+            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="t-meta">
               ...
             </MotionDiv>
           )}
@@ -183,30 +180,32 @@ const WorkingMemoryDemo = () => {
       )}
 
       {phase === 'recalling' && (
-        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center">
-          <p className="text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-4">Type the sequence you saw:</p>
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col items-center gap-4">
+          <p className="t-body text-ink-primary">Type the sequence you saw:</p>
           <InputOTP maxLength={sequenceLength} value={userInput} onChange={setUserInput} onKeyDown={(e) => { if (e.key === "Enter" && userInput.length > 0) handleSubmit(); }} autoFocus aria-label="Recall the digit sequence"><InputOTPGroup>{Array.from({length:sequenceLength},(_,index)=><InputOTPSlot key={index} index={index}/>)}</InputOTPGroup></InputOTP>
-          <button
+          <Button
             onClick={handleSubmit}
-            disabled={userInput.length === 0}
-            className="mt-4 px-6 py-2.5 text-sm font-bold rounded-xl bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed" data-wide-button="true"
+            {...{ disabled: userInput.length === 0 }}
           >
             Submit
-          </button>
+          </Button>
         </MotionDiv>
       )}
 
-      <div className="flex justify-center gap-1.5 mt-6">
-        {results.map((r, i) => (
-          <div
-            key={i}
-            className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${r.correct ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}
-          >
-            {r.length}
-          </div>
-        ))}
-      </div>
-    </div>
+      {/* The rounds so far: a ring per round with its length, green once recalled */}
+      {results.length > 0 && (
+        <div className="ex-steps justify-center">
+          {results.map((r, i) => (
+            <span
+              key={i}
+              className={`ex-badge${r.correct ? ' ex-badge--done' : ''}`}
+            >
+              {r.length}
+            </span>
+          ))}
+        </div>
+      )}
+    </ExerciseSheet>
   );
 };
 
@@ -254,37 +253,35 @@ const CognitiveLoadComparison = () => {
   };
 
   const overPhases = [
-    { label: 'Cluttered setup', x1: 0, x2: 0.33, color: "var(--module-ink)" },
-    { label: 'Multitasking', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
-    { label: 'Overloaded', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
+    { label: 'Cluttered setup', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+    { label: 'Multitasking', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+    { label: 'Overloaded', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
   ];
   const optPhases = [
-    { label: 'Clean setup', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
-    { label: 'Deep focus', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
-    { label: 'Real learning', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
+    { label: 'Clean setup', x1: 0, x2: 0.33, color: "var(--ink-secondary)" },
+    { label: 'Deep focus', x1: 0.33, x2: 0.66, color: "var(--ink-secondary)" },
+    { label: 'Real learning', x1: 0.66, x2: 1, color: "var(--ink-secondary)" },
   ];
 
-  const Chart = ({ extraneous, germane, phases, areaColor, areaId, label }: {
+  // Wasted effort solid ink, actual learning a dashed ink-2 line, a flat fill under the wasted effort (no
+  // gradient); text in the one typeface, 11 or more.
+  const font = { fontFamily: 'var(--font-ui)' };
+  const Chart = ({ extraneous, germane, phases, areaColor, label }: {
     extraneous: number[]; germane: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
-    areaColor: string; areaId: string; label: string;
+    areaColor: string; label: string;
   }) => (
     <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
-      <defs>
-        <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
-          <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
-        </linearGradient>
-      </defs>
       {/* Grid lines */}
       {[0.25, 0.5, 0.75, 1.0].map((v) => (
-        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
+        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--ink-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
       ))}
       {/* Baseline */}
-      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
+      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--ink-muted)" strokeOpacity="0.3" />
       {/* Extraneous load area */}
       <motion.path
         d={buildArea(extraneous)}
-        fill={`url(#${areaId})`}
+        fill={areaColor}
+        fillOpacity="0.08"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -296,10 +293,10 @@ const CognitiveLoadComparison = () => {
         initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
       />
-      {/* Germane load line (dashed, amber) */}
+      {/* Germane load line (dashed) */}
       <motion.path
         d={buildLine(germane)}
-        fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+        fill="none" stroke="var(--ink-secondary)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
         initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
       />
@@ -310,63 +307,56 @@ const CognitiveLoadComparison = () => {
         />
       ))}
       {/* Y-axis labels */}
-      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
-      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
-      {/* X-axis labels */}
+      <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>High</text>
+      <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--ink-muted)" style={font}>Low</text>
+      {/* X-axis labels (the first and last sit inside the drawing) */}
       {xLabels.map((m, i) => (
-        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
+        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="11" fill="var(--ink-muted)" textAnchor={i === 0 ? 'start' : i === xLabels.length - 1 ? 'end' : 'middle'} style={font}>{m}</text>
       ))}
       {/* Phase labels */}
       {phases.map((p, i) => (
-        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 30} fontSize="11" fill={p.color} textAnchor="middle" style={font}>{p.label}</text>
       ))}
       {/* Chart label */}
-      <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
+      <text x={padL} y={15} fontSize="12" fill="var(--ink-primary)" style={font}>{label}</text>
       {/* Legend */}
-      <line x1={W - padR - 120} x2={W - padR - 104} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-      <text x={W - padR - 100} y={17} fontSize="8" fill="var(--module-surface)">Wasted Effort</text>
-      <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
-      <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Actual Learning</text>
+      <line x1={W - padR - 231} x2={W - padR - 215} y1={11} y2={11} stroke={areaColor} strokeWidth="2" />
+      <text x={W - padR - 211} y={15} fontSize="11" fill="var(--ink-muted)" style={font}>Wasted Effort</text>
+      <line x1={W - padR - 119} x2={W - padR - 103} y1={11} y2={11} stroke="var(--ink-secondary)" strokeWidth="1.5" strokeDasharray="4 2" />
+      <text x={W - padR} y={15} fontSize="11" fill="var(--ink-muted)" textAnchor="end" style={font}>Actual Learning</text>
     </svg>
   );
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Mental Load in Action</h4>
-      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Two study sessions. Same material. Very different outcomes.</p>
-
+    <ExerciseSheet title="Mental Load in Action" sub="Two study sessions. Same material. Very different outcomes." name="CognitiveLoadComparison">
       {!revealed ? (
-        <div className="text-center">
-          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Where does your mental energy go during a typical study session? Most of it is wasted on distractions.</p>
-          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
-            Reveal the Comparison
-          </button>
+        <div className="ex-stack">
+          <p className="t-body text-ink-secondary">Where does your mental energy go during a typical study session? Most of it is wasted on distractions.</p>
+          <div className="ex-actions">
+            <Button onClick={() => setRevealed(true)}>
+              Reveal the Comparison
+            </Button>
+          </div>
         </div>
       ) : (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-          <div className="grid md:grid-cols-2 gap-4 mb-5">
-            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
-              <Chart extraneous={overExtran} germane={overGermane} phases={overPhases}
-                areaColor="var(--module-danger-text)" areaId="over-grad" label="Overloaded Study Session" />
-            </div>
-            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
-              <Chart extraneous={optExtran} germane={optGermane} phases={optPhases}
-                areaColor="var(--module-success-text)" areaId="opt-grad" label="Optimized Study Session" />
-            </div>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="ex-stack">
+          {/* The two charts, each on the sheet in ink (no coral or mint panel behind them) */}
+          <div className="ex-figure">
+            <Chart extraneous={overExtran} germane={overGermane} phases={overPhases}
+              areaColor="var(--ink-primary)" label="Overloaded Study Session" />
           </div>
-          <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
-              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Distractions dominate.</strong> Cluttered desk, phone buzzing, badly laid-out materials. Your brain's limited capacity is eaten up by distractions, leaving almost nothing for actual learning.</p>
-            </div>
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
-              <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
-              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Real learning dominates.</strong> Clean environment, well-organised materials, focused attention. Your brain is freed up for building real understanding — the stuff that actually sticks.</p>
-            </div>
+          <div className="ex-figure">
+            <Chart extraneous={optExtran} germane={optGermane} phases={optPhases}
+              areaColor="var(--ink-primary)" label="Optimized Study Session" />
+          </div>
+          {/* What each one means: words you read, ruled like rows (no tinted boxes) */}
+          <div className="ex-list">
+            <div><p className="t-sub"><strong className="text-ink-primary">Distractions dominate.</strong> Cluttered desk, phone buzzing, badly laid-out materials. Your brain's limited capacity is eaten up by distractions, leaving almost nothing for actual learning.</p></div>
+            <div><p className="t-sub"><strong className="text-ink-primary">Real learning dominates.</strong> Clean environment, well-organised materials, focused attention. Your brain is freed up for building real understanding — the stuff that actually sticks.</p></div>
           </div>
         </MotionDiv>
       )}
-    </div>
+    </ExerciseSheet>
   );
 };
 

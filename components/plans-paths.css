@@ -1,0 +1,58 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Year Plans and Learning Paths (r5-year-plans, r5-learning-paths, agreed
+ * 26 Nov 2026): each year or path keeps its drawing and lies on the white page
+ * between thin rules (a box you cannot press has no line round it); every bar
+ * is ink; Continue is a real button; the current year, or the path recommended
+ * next, is the screen's one sheet with the one charcoal Continue. On a laptop:
+ * today's two columns, centred beside the sidebar.
+ */
+.pp-page { background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); }
+.pp-width { width: 100%; max-width: 1040px; margin: 0 auto; }
+.pp-bar { position: sticky; top: 0; z-index: var(--z-sticky); background: var(--surface-canvas); }
+.pp-body { padding: 0 var(--space-6) calc(var(--space-12) + var(--edge-bottom)); }
+.pp-page :is(h2, p) { margin: 0; }
+.pp-intro { max-width: 62ch; padding: var(--space-2) 0 var(--space-6); }
+.pp-grid { display: grid; grid-template-columns: minmax(0, 1fr); }
+.pp-item { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; padding: var(--space-6) 0; border-top: 1px solid var(--hairline); }
+.pp-item--current { margin: var(--space-4) 0 var(--space-8); padding: 0; border-top: 0; }
+.pp-item--current .ui-paper-face { display: flex; flex-direction: column; gap: var(--space-3); }
+.pp-item + .pp-item--current { margin-top: var(--space-2); }
+.pp-top { display: flex; align-items: flex-start; gap: var(--space-3); }
+.pp-names { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: var(--space-1); }
+.pp-label { color: var(--ink-muted); }
+.pp-live { color: var(--accent-text); }
+.pp-title { font-size: 29px; font-weight: 400; line-height: 33px; letter-spacing: -.04em; color: var(--ink-primary); }
+.pp-number { width: 54px; height: 80px; flex: none; margin-top: 2px; object-fit: contain; pointer-events: none; user-select: none; }
+.pp-art { display: block; width: 64px; height: 56px; }
+.pp-art img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: left center; transform-origin: left center; }
+.pp-desc { font-size: 15px; line-height: 21px; color: var(--ink-secondary); }
+.pp-prog { display: flex; align-items: center; gap: var(--space-3); margin-top: var(--space-1); }
+.pp-bar-track { flex: 1; height: 3px; border-radius: 2px; background: var(--hairline); overflow: hidden; }
+.pp-bar-track > i { display: block; height: 100%; border-radius: inherit; background: var(--ink-primary); }
+.pp-prog .t-meta { white-space: nowrap; }
+.pp-acts { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.pp-go { min-width: 132px; justify-content: space-between; }
+.pp-toggle[aria-expanded='true'] .ui-icon { transform: rotate(180deg); }
+.pp-done { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 15px; color: var(--ink-primary); }
+.pp-done svg { color: var(--success-hex); }
+.pp-modules { margin-top: var(--space-1); }
+.pp-module-n { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--outline-soft); font-size: 11px; line-height: 1; color: var(--ink-muted); }
+.pp-module--done .ui-row-icon { color: var(--success-hex); }
+.pp-module--done .ui-row-title { color: var(--ink-secondary); }
+/* Line drawings with no fill of their own: the ink line turns pale in dark mode; their orange stays. */
+.dark .pp-number, .dark .pp-art-inv { filter: invert(1) hue-rotate(180deg); }
+@media (min-width: 768px) {
+  .pp-bar { padding: 0 var(--space-12); }
+  .pp-bar .ui-bar { border-bottom: 1px solid var(--hairline); }
+  .pp-body { padding: var(--space-6) var(--space-12) var(--space-12); }
+  .pp-intro { padding: 0 0 var(--space-8); }
+  .pp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px; row-gap: var(--space-3); align-items: stretch; }
+  /* Side by side, each one's progress and buttons sit on one line with its neighbour's. */
+  .pp-item > .pp-prog, .pp-item--current .ui-paper-face > .pp-prog { margin-top: auto; }
+  .pp-item--current .ui-paper-face { height: 100%; }
+  .pp-item--current, .pp-item + .pp-item--current { margin: 0; }
+  .pp-grid--paths > .pp-item:nth-child(-n + 2):not(.pp-item--current) { border-top: 0; padding-top: 0; }
+}

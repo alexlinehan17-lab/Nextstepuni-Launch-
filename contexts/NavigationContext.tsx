@@ -7,6 +7,7 @@ import React, { createContext, useContext, useReducer, useCallback, useEffect, u
 import { type CategoryType } from '../components/KnowledgeTree';
 import { useAuth } from './AuthContext';
 import { isAuthActionRequest } from '../utils/authActionLink';
+import { parentOf } from '../utils/places';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -15,7 +16,7 @@ export type ViewState =
   | 'dashboard' | 'learning-paths' | 'onboarding'
   | 'my-journey' | 'my-direction' | 'study-session' | 'insights'
   | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans' | 'wip-tools'
-  | 'your-setup';
+  | 'your-setup' | 'settings';
 
 export type DashboardSection = 'overview' | 'study' | 'confidence' | 'practice' | 'milestones';
 
@@ -47,6 +48,7 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_YEAR_PLANS' }
   | { type: 'NAVIGATE_TO_YOUR_SETUP' }
   | { type: 'NAVIGATE_TO_WIP_TOOLS' }
+  | { type: 'NAVIGATE_TO_SETTINGS' }
   | { type: 'SET_DASHBOARD_SECTION'; section: DashboardSection }
   | { type: 'SET_ACTIVE_TOOL'; tool: string | null }
   | { type: 'RESTORE_STATE'; state: Partial<NavigationState> };
@@ -72,9 +74,19 @@ interface NavigationContextValue {
   navigateToYearPlans: () => void;
   navigateToYourSetup: () => void;
   navigateToWipTools: () => void;
+  /** Settings is a page (agreed 26 Nov 2026), opened from Account. */
+  navigateToSettings: () => void;
   setDashboardSection: (section: DashboardSection) => void;
   setActiveTool: (tool: string | null) => void;
+  /** The one Back (navigation.md, "History, for the build"): an in-screen
+   *  step back first (see useBackStep), else the screen you came from, else
+   *  this screen's parent (a reload, a deep link). On a place it does nothing. */
   goBack: () => void;
+  /** True when Back will return to a screen of this app rather than to the parent. */
+  canGoBack: () => boolean;
+  /** While a screen shows a step of its own (a subject inside a tool), the
+   *  frame's Back goes back a step: register the step's back, get a release. */
+  registerBackStep: (back: () => void) => () => void;
 }
 
 // ─── URL Serialization ─────────────────────────────────────
@@ -84,7 +96,7 @@ const VALID_VIEWS = new Set<string>([
   'dashboard', 'learning-paths', 'onboarding',
   'my-journey', 'my-direction', 'study-session', 'insights',
   'jc-coming-soon', 'cut-content', 'accreditation', 'year-plans', 'wip-tools',
-  'your-setup',
+  'your-setup', 'settings',
 ]);
 
 const VALID_DASHBOARD_SECTIONS = new Set<DashboardSection>([
@@ -192,6 +204,8 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
       return { ...state, viewState: 'your-setup', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_WIP_TOOLS':
       return { ...state, viewState: 'wip-tools', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'NAVIGATE_TO_SETTINGS':
+      return { ...state, viewState: 'settings', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'SET_DASHBOARD_SECTION':
       if (state.viewState !== 'dashboard' || state.dashboardSection === action.section) return state;
       return { ...state, dashboardSection: action.section };
@@ -228,6 +242,11 @@ export const useNavigation = (): NavigationContextValue => {
 export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [state, dispatch] = useReducer(navigationReducer, undefined, getInitialState);
   const isPopstateRef = useRef(false);
+  /** The next route change replaces the current history entry (Back with no
+   *  history goes to the parent in place, so history never grows by Back). */
+  const replaceNextRef = useRef(false);
+  /** In-screen steps registered by useBackStep, newest last. */
+  const backStepsRef = useRef<Array<() => void>>([]);
   const { user, authResolved } = useAuth();
   const prevUserUidRef = useRef<string | null | undefined>(undefined);
 
@@ -253,12 +272,17 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     }
     const url = serializeToURL(state);
     const currentHistoryState = window.history.state;
+    const replaceNext = replaceNextRef.current;
+    replaceNextRef.current = false;
+    // How many of this app's screens lie behind this one: Back pops while it
+    // is above 0 and goes to the parent when it is 0.
+    const depth = Number(currentHistoryState?.__navDepth) || 0;
     const currentURLView = new URLSearchParams(window.location.search).get('view');
     const isLegacyTrainingHubEntry = currentHistoryState?.viewState === 'gamification-hub'
       || currentURLView === 'gamification-hub';
     // Replace (not push) on the initial mount to seed URL without adding a history entry
     if (!currentHistoryState?.__navSynced || isLegacyTrainingHubEntry) {
-      window.history.replaceState({ ...state, __navSynced: true }, '', url);
+      window.history.replaceState({ ...state, __navSynced: true, __navDepth: depth }, '', url);
     } else {
       // State changed after initial mount — check if it actually differs from current history
       const prev = currentHistoryState;
@@ -274,9 +298,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         // Tabs are sections of one destination, not extra stops. Replace the
         // dashboard entry so leaving it remains a single Back action, while a
         // later Back from another page still restores the selected section.
-        window.history.replaceState({ ...state, __navSynced: true }, '', url);
+        window.history.replaceState({ ...state, __navSynced: true, __navDepth: depth }, '', url);
+      } else if (routeChanged && replaceNext) {
+        window.history.replaceState({ ...state, __navSynced: true, __navDepth: depth }, '', url);
       } else if (routeChanged || dashboardSectionChanged) {
-        window.history.pushState({ ...state, __navSynced: true }, '', url);
+        window.history.pushState({ ...state, __navSynced: true, __navDepth: depth + 1 }, '', url);
       }
     }
   }, [state]);
@@ -314,7 +340,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       // resurfacing the retired Training Hub URL or creating a duplicate entry.
       if (!isAuthActionRequest()) {
         window.history.replaceState(
-          { ...restoredState, __navSynced: true },
+          { ...restoredState, __navSynced: true, __navDepth: Number(s?.__navDepth) || 0 },
           '',
           serializeToURL(restoredState),
         );
@@ -446,8 +472,32 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     // Section tabs update this page in place; preserve the reader’s scroll position.
   }, [navigate]);
 
+  const navigateToSettings = useCallback(() => {
+    navigate({ type: 'NAVIGATE_TO_SETTINGS' });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
+  const stateRef = useRef(state);
+  stateRef.current = state;
+
+  const canGoBack = useCallback(() => (Number(window.history.state?.__navDepth) || 0) > 0, []);
+
   const goBack = useCallback(() => {
-    window.history.back();
+    const step = backStepsRef.current[backStepsRef.current.length - 1];
+    if (step) { step(); return; }
+    if (canGoBack()) { window.history.back(); return; }
+    // No history to go back through (a reload with none, a deep link, a
+    // shared URL): go to this screen's parent, in place of this entry.
+    const parent = parentOf(stateRef.current);
+    if (!parent) return;
+    replaceNextRef.current = true;
+    dispatch({ type: 'RESTORE_STATE', state: { ...DEFAULT_NAVIGATION_STATE, ...parent } as Partial<NavigationState> });
+    window.scrollTo(0, 0);
+  }, [canGoBack]);
+
+  const registerBackStep = useCallback((back: () => void) => {
+    backStepsRef.current = [...backStepsRef.current, back];
+    return () => { backStepsRef.current = backStepsRef.current.filter(step => step !== back); };
   }, []);
 
   const value: NavigationContextValue = {
@@ -471,12 +521,32 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToYearPlans,
     navigateToYourSetup,
     navigateToWipTools,
+    navigateToSettings,
     setDashboardSection,
     setActiveTool,
     goBack,
+    canGoBack,
+    registerBackStep,
   };
 
   return <NavigationContext.Provider value={value}>{children}</NavigationContext.Provider>;
 };
+
+/** The navigation, or null outside the provider (a part rendered on its own
+ *  in a test or on the parts sheet). */
+export const useOptionalNavigation = (): NavigationContextValue | null => useContext(NavigationContext);
+
+/** While `active`, the frame's one Back steps back inside the screen (a
+ *  subject inside a tool) instead of leaving it. */
+export function useBackStep(active: boolean, back: () => void) {
+  const nav = useContext(NavigationContext);
+  const backRef = useRef(back);
+  backRef.current = back;
+  const register = nav?.registerBackStep;
+  useEffect(() => {
+    if (!active || !register) return undefined;
+    return register(() => backRef.current());
+  }, [active, register]);
+}
 
 export default NavigationContext;

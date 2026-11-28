@@ -15,6 +15,7 @@
 import React from 'react';
 import type { ReligiousEducationRubric, SecRubricCard } from '../../types/markBank';
 import SourceMaterialReader from './SourceMaterialReader';
+import { SelectionMark } from '../ui/Choice';
 import { ClaimDirections, ClaimRow, marksChip } from './ClaimRows';
 import {
   RE_UNPLACED,
@@ -136,12 +137,13 @@ const WayChoice: React.FC<{
               type="button"
               role="radio"
               aria-checked={chosen === way.way}
-              className="mb-re-way"
+              className="ui-choice mb-claim-row mb-re-way"
               data-chosen={chosen === way.way}
+              data-claimed={chosen === way.way}
               onClick={() => { if (chosen !== way.way) onScore(reWayScoreId, way.way); }}
             >
-              <span className="mb-re-way-dot" aria-hidden="true" />
-              <span className="mb-re-way-text">
+              <SelectionMark on={chosen === way.way} />
+              <span className="mb-claim-text mb-re-way-text">
                 <span>{way.gridHead}</span>
                 <small>{wayLine(way)}</small>
               </span>

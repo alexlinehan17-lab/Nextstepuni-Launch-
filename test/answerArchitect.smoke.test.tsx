@@ -22,7 +22,8 @@ describe('Answer Architect', () => {
   test('renders the picker, then a subject’s skeletons with source + beats toggle', () => {
     render(<AnswerArchitect studentSubjects={['Business']} />);
     // Level 0 — the tool heading and the picker.
-    expect(screen.getByRole('heading', { name: /Answer Architect/i })).toBeInTheDocument();
+    // The tool's name is in the Launchpad's bar now (area 7b): the picker opens on its own words.
+    expect(screen.getByText(/The mark-earning skeleton of a top answer/)).toBeInTheDocument();
     // Drill into Business (a subject we know has skeletons).
     fireEvent.click(screen.getByRole('button', { name: /^Business/ }));
     // Level 1 — skeleton cards with SEC attribution and a "Build the answer" toggle.

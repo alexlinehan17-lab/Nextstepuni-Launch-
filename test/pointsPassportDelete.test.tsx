@@ -65,7 +65,8 @@ describe('Points Passport mock deletion', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Remove February Mocks' }));
     expect(mocks.removeMockResult).not.toHaveBeenCalled();
-    expect(screen.getByRole('dialog', { name: 'Remove this mock result?' })).toHaveTextContent('February Mocks');
+    // Area 7a: the shared confirm (the one centred pop-up a phone allows).
+    expect(screen.getByRole('alertdialog', { name: 'Remove this mock result?' })).toHaveTextContent('February Mocks');
 
     fireEvent.click(screen.getByRole('button', { name: 'Remove result' }));
     expect(mocks.removeMockResult).toHaveBeenCalledWith('mock-1');
@@ -85,9 +86,11 @@ describe('Points Passport grade controls', () => {
     expect(screen.getByRole('combobox', {name:'Mathematics current grade'})).toHaveValue('H2');
     expect(screen.getByRole('combobox', {name:'Mathematics target grade'})).toHaveValue('H2');
   });
-  test('keeps the mock tracker reachable through More', async () => {
+  test('keeps the mock tracker reachable through the parts menu', async () => {
     render(<PointsPassport uid={DEMO_STUDENT_UID} profile={profile} />);
-    fireEvent.change(screen.getByRole('combobox', {name:'More Points Passport sections'}), {target:{value:'mocks'}});
+    // Area 7a: the five parts are one menu ("My subjects · 1 of 5"), not tabs and a More select.
+    fireEvent.click(screen.getByRole('button', {name:/Points Passport sections/}));
+    fireEvent.click(await screen.findByRole('menuitemradio', {name:'Mock Tracker'}));
     expect(await screen.findByRole('button', {name:'Remove February Mocks'})).toBeInTheDocument();
   });
 });

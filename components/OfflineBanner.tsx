@@ -4,11 +4,11 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { WifiOff, Wifi } from 'lucide-react';
 import { useOnlineStatus } from '../hooks/useOnlineStatus';
+import { StandingMessage } from './ui/Message';
 
+/** The one offline notice: the shared message's charcoal line at the foot of the screen (above the
+ *  tab bar and the home indicator), never over a bar or the sidebar. Today's words. */
 const OfflineBanner: React.FC = () => {
   const isOnline = useOnlineStatus();
   const [showReconnected, setShowReconnected] = useState(false);
@@ -33,41 +33,11 @@ const OfflineBanner: React.FC = () => {
     };
   }, [isOnline]);
 
-  const showBanner = !isOnline || showReconnected;
+  const text = !isOnline
+    ? 'You\'re offline — changes will sync when you reconnect'
+    : showReconnected ? 'Back online — syncing your changes' : null;
 
-  return (
-    <AnimatePresence>
-      {showBanner && (
-        <MotionDiv
-          initial={{ y: -40, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -40, opacity: 0 }}
-          transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
-          className="frame-bar [--frame-pad-top:0.5rem] fixed top-0 left-0 right-0 z-[200] flex items-center justify-center gap-2 pb-2 px-4 text-xs font-medium"
-          style={{
-            // COLORS.success (#3A8D5F) carries white at only 4.07:1, and the
-            // offline amber at 2.84:1. Darkening the green clears it with white;
-            // the amber stays as authored — it is the recognisable warning
-            // colour — and takes dark ink instead, which gives 6.13:1.
-            backgroundColor: isOnline ? '#2F7A50' : '#D4891C',
-            color: isOnline ? '#fff' : 'var(--ink-on-accent)',
-          }}
-        >
-          {isOnline ? (
-            <>
-              <Wifi size={13} />
-              <span>Back online — syncing your changes</span>
-            </>
-          ) : (
-            <>
-              <WifiOff size={13} />
-              <span>You're offline — changes will sync when you reconnect</span>
-            </>
-          )}
-        </MotionDiv>
-      )}
-    </AnimatePresence>
-  );
+  return <StandingMessage text={text} />;
 };
 
 export default OfflineBanner;

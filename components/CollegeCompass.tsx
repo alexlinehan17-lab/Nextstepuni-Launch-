@@ -14,17 +14,15 @@
  * maths / course matching is pushed OUT to Future Finder, the CAO Points
  * Simulator and Points Passport via cross-links.
  */
-import ToolMasthead from './launchpad/ToolMasthead';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { createPortal } from 'react-dom';
-import {
-  Eye, X, Check, ChevronDown, MapPin, Building2, CircleHelp, ExternalLink,
-  ChevronLeft, ChevronRight,
-} from 'lucide-react';
-import { MotionDiv } from './Motion';
-import { COLORS } from '../design/tokens';
+import { Building2, Check, ChevronDown, CircleHelp, LocateFixed } from 'lucide-react';
 import { type YearGroup } from './subjectData';
-import { useModal } from '../hooks/useModal';
+import { useBackStep } from '../contexts/NavigationContext';
+import { Button, TextButton } from './ui/Button';
+import { ChoiceTile } from './ui/Choice';
+import { PaperSheet, Row, List } from './ui/List';
+import { Sheet } from './ui/Sheet';
+import './college-compass-7.css';
 import { useCollegeCompass } from '../hooks/useCollegeCompass';
 import { ToolJumpCard } from './ModuleShared';
 import { INSTITUTIONS } from './futureFinderData';
@@ -51,18 +49,16 @@ const MythFlip: React.FC<{ claim: string; verdict: 'true' | 'false'; explainer: 
       type="button"
       onClick={() => setRevealed(r => !r)}
       aria-expanded={revealed}
-      className="w-full text-left py-3.5 border-t border-[var(--border-soft)] first:border-t-0"
+      className="cc7-myth"
     >
-      <div className="flex items-start gap-2.5">
-        <span
-          className="text-[9px] font-bold uppercase tracking-[0.12em] shrink-0 mt-0.5 text-[var(--ink-secondary)]"
-        >
+      <div className="cc7-myth-in">
+        <span className="t-label cc7-myth-label">
           {revealed ? (isMyth ? 'Myth' : 'True') : 'Reveal'}
         </span>
         <div className="min-w-0">
-          <p className="text-sm font-semibold text-[var(--ink-primary)]">“{claim}”</p>
+          <p className="cc7-myth-claim">“{claim}”</p>
           {revealed ? (
-            <p className="text-xs leading-relaxed mt-1.5 text-[var(--ink-secondary)]">{explainer}</p>
+            <p className="t-sub">{explainer}</p>
           ) : null}
         </div>
       </div>
@@ -76,112 +72,42 @@ const RestrictedCheck: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const selected = RESTRICTED_COURSE_TYPES.find(r => r.id === selectedId) ?? null;
   return (
-    <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-surface-paper shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5">
-      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500 mb-1">Quick check</p>
-      <h4 className="font-serif text-lg font-bold text-[#1A1A1A] dark:text-white mb-3">Is my course restricted?</h4>
-      <div className="flex flex-wrap gap-1.5 mb-3">
-        {RESTRICTED_COURSE_TYPES.map(r => {
-          const on = selectedId === r.id;
-          return (
-            <button
-              key={r.id}
-              type="button"
-              onClick={() => setSelectedId(on ? null : r.id)}
-              className="min-h-11 rounded-full border-2 px-3 text-xs font-semibold transition-colors"
-              style={{ borderColor: on ? COLORS.accent : COLORS.border, backgroundColor: on ? COLORS.accentTint : '#FFFFFF', color: '#1A1A1A' }}
-            >
-              {r.label}
-            </button>
-          );
-        })}
+    <section className="cc7-tool" aria-label="Is my course restricted?">
+      <p className="t-label cc7-label">Quick check</p>
+      <h3 className="t-heading">Is my course restricted?</h3>
+      <div className="cc7-picks">
+        {RESTRICTED_COURSE_TYPES.map(r => <ChoiceTile key={r.id} compact kind="toggle" chosen={selectedId === r.id} label={r.label} onClick={() => setSelectedId(selectedId === r.id ? null : r.id)} />)}
       </div>
       {selected && (
-        <div
-          className="rounded-xl px-4 py-3"
-          style={{ backgroundColor: selected.mustLockByFeb1 ? COLORS.accentTint : COLORS.successTint }}
-        >
-          <p className="text-sm font-bold" style={{ color: selected.mustLockByFeb1 ? COLORS.accentDarkText : COLORS.successDarkText }}>
-            {selected.mustLockByFeb1 ? 'Lock it in by 1 February' : 'No early gate'}
-          </p>
-          <p className="text-xs text-[#1A1A1A] mt-1 leading-relaxed">{selected.test}</p>
+        <div className="cc7-answer">
+          <p className="t-row">{selected.mustLockByFeb1 ? 'Lock it in by 1 February' : 'No early gate'}</p>
+          <p className="t-sub">{selected.test}</p>
         </div>
       )}
+    </section>
+  );
+};
+
+// ─── Dates and sources (the shared sheet) ────────────────────────────────────
+
+const VerifySheet: React.FC<{ open: boolean; entryYear: number; onClose: () => void }> = ({ open, entryYear, onClose }) => (
+  <Sheet open={open} onClose={onClose} title="Before you trust these dates" titleAlign="start" className="cc7-sheet"
+    footer={<Button kind="main" size="lg" block onClick={onClose}>Got it</Button>}>
+    <p className="t-sub">How College Compass handles a moving target</p>
+    <p className="t-body">{CYCLE_NOTE}</p>
+    <div className="cc7-answer">
+      <p className="t-row">You’re seeing the {entryYear} entry cycle.</p>
+      <p className="t-sub">Dates are stored without a year and resolved to whichever cycle is still ahead of you, so a passed deadline is never shown as upcoming.</p>
     </div>
-  );
-};
+    <p className="t-label cc7-label">Always confirm on the source</p>
+    <List label="Sources">
+      {COMPASS_SOURCES.map(source => <Row key={source.url} title={source.label} href={source.url} external />)}
+    </List>
+    <p className="t-meta">Content last reviewed {COMPASS_LAST_VERIFIED}. Figures reflect the 2026 cycle and must be re-checked each year.</p>
+  </Sheet>
+);
 
-// ─── Verify modal ────────────────────────────────────────────────────────────
-
-const VerifyModal: React.FC<{ entryYear: number; onClose: () => void }> = ({ entryYear, onClose }) => {
-  useModal(true, onClose);
-  return createPortal(
-    <MotionDiv
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="frame-dialog [--frame-gap:1rem] z-[var(--z-dialog)] flex items-center justify-center bg-black/55 backdrop-blur-sm"
-      onClick={onClose}
-    >
-      <MotionDiv
-        initial={{ opacity: 0, scale: 0.96, y: 12 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.96, y: 12 }}
-        transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
-        className="bg-white dark:bg-surface-paper rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-lg w-full frame-dialog-card [--frame-card-max:90vh] flex flex-col overflow-hidden"
-        onClick={(e: React.MouseEvent) => e.stopPropagation()}
-      >
-        <div className="flex items-start justify-between p-6 pb-4 shrink-0">
-          <div className="flex items-start gap-3 min-w-0">
-            <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(var(--nsu-orange-rgb), 0.12)' }}>
-              <Eye size={20} style={{ color: COLORS.accent }} />
-            </div>
-            <div className="min-w-0">
-              <h2 className="font-serif text-xl font-bold text-[#1A1A1A] dark:text-white">Before you trust these dates</h2>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">How College Compass handles a moving target</p>
-            </div>
-          </div>
-          <button onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl transition-colors hover:bg-black/5 dark:hover:bg-white/10" aria-label="Close">
-            <X size={18} className="text-zinc-500" />
-          </button>
-        </div>
-
-        <div className="px-6 pb-6 space-y-4 overflow-y-auto flex-1 min-h-0">
-          <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">{CYCLE_NOTE}</p>
-          <div className="rounded-xl p-3" style={{ backgroundColor: COLORS.successTint }}>
-            <p className="text-sm font-bold" style={{ color: COLORS.successDarkText }}>You’re seeing the {entryYear} entry cycle.</p>
-            <p className="text-xs mt-1 leading-relaxed" style={{ color: COLORS.successDarkText }}>
-              Dates are stored without a year and resolved to whichever cycle is still ahead of you, so a passed deadline is never shown as upcoming.
-            </p>
-          </div>
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 mb-2">Always confirm on the source</p>
-            <div className="space-y-1.5">
-              {COMPASS_SOURCES.map(s => (
-                <a key={s.url} href={s.url} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-sm font-semibold underline" style={{ color: COLORS.accentDarkText }}>
-                  {s.label} <ExternalLink size={12} />
-                </a>
-              ))}
-            </div>
-          </div>
-          <p className="text-[11px] text-zinc-400">Content last reviewed {COMPASS_LAST_VERIFIED}. Figures reflect the 2026 cycle and must be re-checked each year.</p>
-        </div>
-
-        <div className="px-6 pb-6 pt-2 shrink-0 border-t border-black/[0.04] dark:border-white/[0.06]">
-          <button
-            onClick={onClose}
-            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
-            style={{ backgroundColor: COLORS.accent }}
-          >
-            Got it
-          </button>
-        </div>
-      </MotionDiv>
-    </MotionDiv>,
-    document.body,
-  );
-};
-
-// ─── Focused milestone workspace ─────────────────────────────────────────────
+// ─── Stage panel ─────────────────────────────────────────────────────────────
 
 interface MilestonePanelProps {
   stop: JourneyStop;
@@ -198,123 +124,78 @@ const STATUS_LABEL: Record<StopStatus, string> = { past: 'Done', now: 'Now', fut
 
 const MilestonePanel: React.FC<MilestonePanelProps> = ({ stop, state, mode, checklist, onCycleItem, embedded, tabId, panelId }) => {
   const preview = mode === 'orientation';
-  const dateLabel = stop.end ? `${stop.start.label} → ${stop.end.label}` : stop.start.label;
+  const dateLabel = stop.end ? `${stop.start.label} to ${stop.end.label}` : stop.start.label;
   const firstIncompleteId = stop.checklistItems.find(item => itemStatus(checklist, `${stop.id}:${item.id}`) !== 'done')?.id;
+  const doneCount = stop.checklistItems.filter(item => itemStatus(checklist, `${stop.id}:${item.id}`) === 'done').length;
 
-  // Countdown chip (live mode, upcoming stops only)
-  let countdown: string | null = null;
-  if (!preview) {
-    if (state.status === 'now') countdown = 'Happening now';
-    else if (state.status === 'future' && state.daysUntilStart >= 0) {
-      countdown = state.daysUntilStart === 0 ? 'Today' : `in ${state.daysUntilStart} day${state.daysUntilStart === 1 ? '' : 's'}`;
-    }
-  }
+  // Countdown (live mode, upcoming stops only): "Happening now" is the one orange word.
+  let status: React.ReactNode;
+  if (preview) status = 'Preview';
+  else if (state.status === 'now') status = <><span className="cc7-live">Happening now</span>{stop.end ? ` · until ${stop.end.label}` : ''}</>;
+  else if (state.status === 'future' && state.daysUntilStart >= 0) status = state.daysUntilStart === 0 ? 'Today' : `in ${state.daysUntilStart} day${state.daysUntilStart === 1 ? '' : 's'}`;
+  else if (state.status === 'past') status = <span className="cc7-inline"><Check size={14} aria-hidden="true" /> {STATUS_LABEL.past}</span>;
+  else status = STATUS_LABEL[state.status];
 
   return (
-    <section
-      id={panelId}
-      role="tabpanel"
-      aria-labelledby={tabId}
-      tabIndex={-1}
-      className="rounded-[24px] border-[1.5px] border-[#1A1A1A] dark:border-zinc-600 bg-[var(--surface-paper)] overflow-hidden"
-    >
-      <header className="grid gap-5 px-5 py-6 sm:px-7 sm:py-7 md:grid-cols-[minmax(0,1fr)_auto] md:items-start">
-        <div>
-          <div className="flex items-center gap-2 flex-wrap text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-secondary)]">
-            <span>Stage {stop.order} of {JOURNEY_STOPS.length}</span>
-            <span aria-hidden="true">·</span>
-            <span>{dateLabel}</span>
+    <PaperSheet className="cc7-stage" label={stop.title} fitTilt>
+      <div id={panelId} role="tabpanel" aria-labelledby={tabId} tabIndex={-1} className="cc7-stage-in">
+        <div className="cc7-stage-top">
+          <div className="cc7-stage-name">
+            <p className="t-label cc7-label">Stage {stop.order} of {JOURNEY_STOPS.length} · {dateLabel}</p>
+            <h2 className="t-title cc7-title">{stop.title}</h2>
+            <p className="t-sub">{stop.tagline}</p>
           </div>
-          <h2 className="mt-2 text-2xl sm:text-[28px] font-semibold tracking-[-0.025em] text-[var(--ink-primary)]">{stop.title}</h2>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--ink-secondary)]">{stop.tagline}</p>
+          <p className="cc7-status">{status}</p>
         </div>
-        <div className="flex md:justify-end">
-          {countdown ? (
-            <span className="inline-flex border border-[var(--border-soft)] rounded-full px-3 py-1.5 text-[11px] font-semibold text-[var(--ink-primary)]">{countdown}</span>
-          ) : !preview && state.status === 'past' ? (
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-[var(--ink-secondary)]"><Check size={13} aria-hidden="true" /> {STATUS_LABEL.past}</span>
-          ) : (
-            <span className="inline-flex text-[11px] font-semibold text-[var(--ink-secondary)]">{preview ? 'Preview' : STATUS_LABEL[state.status]}</span>
+        <div className="cc7-cols">
+          <section aria-labelledby={`${panelId}-why`} className="cc7-why">
+            <p id={`${panelId}-why`} className="t-label cc7-label">Why this matters</p>
+            <p className="t-body">{stop.whyItMatters}</p>
+          </section>
+          {stop.checklistItems.length > 0 && (
+            <section aria-labelledby={`${panelId}-checklist`} className="cc7-acts">
+              <div className="cc7-acts-head">
+                <p id={`${panelId}-checklist`} className="t-label cc7-label">{preview ? 'Be ready for' : 'Your actions'}</p>
+                <span className="t-meta">{doneCount} of {stop.checklistItems.length} done</span>
+              </div>
+              <p className="t-meta">Tap an action to move it from not started, to in progress, to done.</p>
+              <ul className="cc7-list">
+                {stop.checklistItems.map(item => {
+                  const key = `${stop.id}:${item.id}`;
+                  const st = itemStatus(checklist, key);
+                  const done = st === 'done';
+                  const inProg = st === 'in-progress';
+                  const next = st === 'not-started' ? 'mark in progress' : st === 'in-progress' ? 'mark done' : 'clear';
+                  return (
+                    <li key={item.id}>
+                      <button type="button" className="cc7-act" data-status={st} onClick={() => onCycleItem(key)}
+                        aria-label={`${item.label}. ${done ? 'Done' : inProg ? 'In progress' : 'Not started'}. Tap to ${next}.`}>
+                        <span className="cc7-mark" aria-hidden="true">{done ? <Check size={13} strokeWidth={2.6} /> : null}</span>
+                        <span className="cc7-act-copy"><span className="cc7-act-title">{item.label}</span>{item.detail && <span className="t-meta">{item.detail}</span>}</span>
+                        <span className="t-meta cc7-act-state">{!done && item.id === firstIncompleteId && !preview ? 'Next · ' : ''}{done ? 'Done' : inProg ? 'In progress' : 'Not started'}</span>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
           )}
         </div>
-      </header>
-
-      <div className="border-t border-[var(--border-soft)] px-5 py-6 sm:px-7 sm:py-7 space-y-7">
-        <section aria-labelledby={`${panelId}-why`}>
-          <p id={`${panelId}-why`} className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-secondary)]">Why this matters</p>
-          <p className="mt-2 max-w-3xl text-sm leading-7 text-[var(--ink-primary)]">{stop.whyItMatters}</p>
-        </section>
-
-        {stop.checklistItems.length > 0 && (
-          <section aria-labelledby={`${panelId}-checklist`}>
-            <div className="flex items-end justify-between gap-4">
-              <div>
-                <p id={`${panelId}-checklist`} className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-secondary)]">{preview ? 'Be ready for' : 'Your actions'}</p>
-                <p className="mt-1 text-xs text-[var(--ink-secondary)]">Tap an action to move it from not started, to in progress, to done.</p>
-              </div>
-              <span className="text-xs tabular-nums text-[var(--ink-secondary)]">
-                {stop.checklistItems.filter(item => itemStatus(checklist, `${stop.id}:${item.id}`) === 'done').length}/{stop.checklistItems.length} done
-              </span>
-            </div>
-            <div className="mt-3 border-y border-[var(--border-soft)]">
-              {stop.checklistItems.map(item => {
-                const key = `${stop.id}:${item.id}`;
-                const status = itemStatus(checklist, key);
-                const done = status === 'done';
-                const inProg = status === 'in-progress';
-                const next = status === 'not-started' ? 'mark in progress' : status === 'in-progress' ? 'mark done' : 'clear';
-                return (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={() => onCycleItem(key)}
-                    aria-label={`${item.label}. ${done ? 'Done' : inProg ? 'In progress' : 'Not started'}. Tap to ${next}.`}
-                    className="w-full text-left py-3.5 border-t border-[var(--border-soft)] first:border-t-0 flex items-start gap-3 group"
-                  >
-                    <span
-                      className="inline-flex items-center justify-center w-5 h-5 rounded-full border shrink-0 mt-0.5"
-                      style={{ borderColor: done ? COLORS.success : inProg ? COLORS.accent : 'var(--border-soft)', backgroundColor: done ? COLORS.success : inProg ? COLORS.accent : 'transparent' }}
-                    >
-                      {done ? <Check size={12} className="text-white" aria-hidden="true" /> : inProg ? <span className="block w-2 h-[2px] rounded-full bg-white" /> : null}
-                    </span>
-                    <span className="min-w-0 flex-1">
-                      <span className={`block text-sm font-medium ${done ? 'text-[var(--ink-secondary)] line-through' : 'text-[var(--ink-primary)]'}`}>{item.label}</span>
-                      {item.detail && <span className="block text-xs leading-relaxed text-[var(--ink-secondary)] mt-1">{item.detail}</span>}
-                    </span>
-                    <span className="flex items-center gap-2 shrink-0 mt-0.5">
-                      {!done && item.id === firstIncompleteId && <span className="hidden sm:inline text-[9px] font-bold uppercase tracking-[0.12em] text-[var(--ink-secondary)]">Next</span>}
-                      <span className="text-[10px] font-semibold text-[var(--ink-secondary)]">{done ? 'Done' : inProg ? 'In progress' : 'Not started'}</span>
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </section>
-        )}
 
         {embedded}
 
         {stop.myths.length > 0 && (
-          <details className="border-y border-[var(--border-soft)] group">
-            <summary className="list-none cursor-pointer py-4 flex items-center justify-between gap-3 text-sm font-semibold text-[var(--ink-primary)]">
-              Common misconceptions
-              <ChevronDown size={17} className="text-[var(--ink-secondary)] transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div className="pb-1">
-              {stop.myths.map((m, i) => (
-                <MythFlip key={i} claim={m.claim} verdict={m.verdict} explainer={m.explainer} />
-              ))}
-            </div>
+          <details className="cc7-myths">
+            <summary className="cc7-myths-head"><span>Common misconceptions</span><ChevronDown size={20} strokeWidth={1.75} aria-hidden="true" /></summary>
+            <div>{stop.myths.map((m, i) => <MythFlip key={i} claim={m.claim} verdict={m.verdict} explainer={m.explainer} />)}</div>
           </details>
         )}
 
         {stop.crossLinks.map(link => (
-          <div key={link.toolId} className="-my-10">
-            <ToolJumpCard toolId={link.toolId} title={link.title} description={link.description} ctaLabel="Open tool" />
-          </div>
+          <ToolJumpCard key={link.toolId} toolId={link.toolId} title={link.title} description={link.description} ctaLabel="Open tool" />
         ))}
       </div>
-    </section>
+    </PaperSheet>
   );
 };
 
@@ -343,8 +224,11 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
   const [selectedStopId, setSelectedStopId] = useState<string>(initialStopId);
   const [showVerify, setShowVerify] = useState(false);
   const [showColleges, setShowColleges] = useState(false);
+  // The HEAR self-check is its own screen, reached from The Access Window; the bar's Back returns.
+  const [hearOpen, setHearOpen] = useState(false);
+  useBackStep(hearOpen, () => setHearOpen(false));
+  useEffect(() => { if (hearOpen) window.scrollTo?.({ top: 0 }); }, [hearOpen]);
 
-  const timelineRef = useRef<HTMLDivElement | null>(null);
   const workspaceRef = useRef<HTMLDivElement | null>(null);
   const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
 
@@ -355,15 +239,10 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
   const selectStop = (id: string, moveFocus = false, showWorkspace = false) => {
     setSelectedStopId(id);
     window.requestAnimationFrame(() => {
-      tabRefs.current[id]?.scrollIntoView?.({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       if (moveFocus) tabRefs.current[id]?.focus();
       if (showWorkspace) workspaceRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
     });
   };
-
-  useEffect(() => {
-    tabRefs.current[selectedStopId]?.scrollIntoView?.({ block: 'nearest', inline: 'center' });
-  }, [selectedStopId]);
 
   const handleTimelineKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>, index: number) => {
     let nextIndex: number;
@@ -399,8 +278,10 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
     if (stopId === 'lock-in') return <RestrictedCheck />;
     if (stopId === 'access-window') {
       return (
-        <div className="space-y-3">
-          <HearMeter selected={state.hearIndicators ?? []} onChange={setHearIndicators} />
+        <div className="cc7-embedded">
+          <List label="Self-checks">
+            <Row title="Could I qualify for HEAR?" over="Self-check" meta={(state.hearIndicators ?? []).length ? `${(state.hearIndicators ?? []).length} ticked` : 'Tick what is true for your family'} onPress={() => setHearOpen(true)} />
+          </List>
           <DareGate categoryId={state.dareCategoryId} onCategoryChange={setDareCategory} />
           <DocumentChecklist hearIndicators={state.hearIndicators ?? []} dareCategoryId={state.dareCategoryId} />
         </div>
@@ -408,7 +289,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
     }
     if (stopId === 'money-stops') {
       return (
-        <div className="space-y-3">
+        <div className="cc7-embedded">
           <OpenDoor />
           <MoneySorter />
         </div>
@@ -417,167 +298,83 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
     return null;
   };
 
+  if (hearOpen) {
+    return (
+      <div className="cc7 cc7-hear">
+        <div className="cc7-hear-head">
+          <p className="t-label cc7-label">The Access Window · Self-check</p>
+          <h1 className="t-title cc7-title">Could I qualify for HEAR?</h1>
+          <p className="t-sub">Tick what is true for your family. The meter shows where you would land.</p>
+        </div>
+        <HearMeter selected={state.hearIndicators ?? []} onChange={setHearIndicators} />
+      </div>
+    );
+  }
+
   return (
-    <div className="lp-compass w-full max-w-6xl mx-auto pb-12">
-      {/* ── Hero ── */}
-      <header className="lp-compass-header">
-        <div className="flex flex-col gap-3">
-          <ToolMasthead tool="college-compass" eyebrow="Your application year" title="College Compass." subtitle="The dates that matter. A clear next step." />
-          <div className="flex flex-wrap items-center gap-2 md:justify-end">
-            <span className="inline-flex items-center rounded-full border border-[var(--border-soft)] px-3 py-2 text-xs font-semibold text-[var(--ink-primary)]">
-              {entryYear} entry
-            </span>
-            <button
-              type="button"
-              onClick={() => setShowColleges(s => !s)}
-              aria-expanded={showColleges}
-              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-[var(--border-soft)] px-3 text-xs font-semibold text-[var(--ink-primary)] transition-colors hover:border-[#1A1A1A] dark:hover:border-zinc-400"
-            >
-              <Building2 size={14} aria-hidden="true" />
-              {targetCodes.length > 0 ? `${targetCodes.length} target college${targetCodes.length === 1 ? '' : 's'}` : 'Target colleges'}
-            </button>
-            <button
-              type="button"
-              onClick={() => setShowVerify(true)}
-              className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-3 text-xs font-semibold text-[var(--ink-secondary)] transition-colors hover:text-[var(--ink-primary)]"
-            >
-              <CircleHelp size={14} aria-hidden="true" /> Dates and sources
-            </button>
+    <div className="cc7">
+
+      {preview && (
+        <div className="cc7-preview">
+          <p className="t-row">You’re previewing the year ahead.</p>
+          <p className="t-sub">Nothing is urgent yet. Explore each stage now so the application year feels familiar when it arrives.</p>
+        </div>
+      )}
+
+      {/* The six stages as a runway across the top: dates above, names below; the stage you are in
+          filled; the chosen one's dot breathes in its ring (Alex, 26 Nov 2026). */}
+      <section aria-labelledby="compass-timeline-heading" className="cc7-runway-sec">
+        <div className="cc7-headgrid">
+          <div className="cc7-top">
+            <Button size="sm" aria-expanded={showColleges} onClick={() => setShowColleges(true)}><span className="cc7-inline"><Building2 size={16} strokeWidth={2} aria-hidden="true" />{targetCodes.length > 0 ? `${targetCodes.length} target college${targetCodes.length === 1 ? '' : 's'}` : 'Target colleges'}</span></Button>
+            <TextButton tone="quiet" onClick={() => setShowVerify(true)}><span className="cc7-inline"><CircleHelp size={20} strokeWidth={1.75} aria-hidden="true" />Dates and sources</span></TextButton>
+          </div>
+          <div className="cc7-runhead">
+            <p id="compass-timeline-heading" className="t-label cc7-label">Your application year</p>
+            <span className="t-meta">{entryYear} entry · six stages</span>
           </div>
         </div>
-
-        {preview && (
-          <div className="mt-6 max-w-2xl border-t border-[var(--border-soft)] pt-4">
-            <p className="text-sm font-semibold text-[var(--ink-primary)]">You’re previewing the year ahead.</p>
-            <p className="text-xs text-[var(--ink-secondary)] mt-1">Nothing is urgent yet. Explore each stage now so the application year feels familiar when it arrives.</p>
-          </div>
-        )}
-
-        {/* target college picker */}
-        {showColleges && (
-          <section aria-label="Target colleges" className="mt-6 rounded-2xl border-[1.5px] border-[#1A1A1A] dark:border-zinc-600 p-4 sm:p-5 bg-[var(--surface-paper)]">
-            <p className="text-xs text-[var(--ink-secondary)] mb-3">Choose the colleges you’re aiming at. We’ll keep them in mind when you reach funding and scholarships.</p>
-            <div className="flex flex-wrap gap-1.5">
-              {TARGET_COLLEGE_CODES.map(code => {
-                const on = targetCodes.includes(code);
-                return (
-                  <button
-                    key={code}
-                    type="button"
-                    onClick={() => toggleCollege(code)}
-                    aria-pressed={on}
-                    className="min-h-11 rounded-full border px-3 text-xs font-semibold text-[var(--ink-primary)] transition-colors"
-                    style={{ borderColor: on ? COLORS.border : 'var(--border-soft)', backgroundColor: on ? 'var(--ink-primary)' : 'transparent', color: on ? 'var(--surface-paper)' : 'var(--ink-primary)' }}
-                    title={INSTITUTIONS[code]}
-                  >
-                    {code}
-                  </button>
-                );
-              })}
-            </div>
-          </section>
-        )}
-      </header>
-
-      {/* ── One year, at a glance ── */}
-      <section aria-labelledby="compass-timeline-heading" className="lp-compass-timeline pt-6 sm:pt-8">
-        <div className="flex items-end justify-between gap-4 px-1">
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-secondary)]">Your application year</p>
-            <h2 id="compass-timeline-heading" className="mt-1 text-lg font-semibold tracking-[-0.015em] text-[var(--ink-primary)]">Six stages, in order</h2>
-          </div>
-          <p className="hidden sm:block text-xs text-[var(--ink-secondary)]">Choose a stage to see what matters.</p>
-        </div>
-
-        <div ref={timelineRef} className="mt-5 overflow-x-auto overscroll-x-contain scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div role="tablist" aria-label="College application stages" className="relative flex min-w-max gap-3 px-[13vw] md:grid md:min-w-0 md:grid-cols-6 md:gap-0 md:px-1">
-            <div aria-hidden="true" className="absolute left-[76px] right-[76px] top-[17px] hidden h-px bg-[var(--border-soft)] md:block" />
-            {JOURNEY_STOPS.map((stop, index) => {
-              const stopState = states[index];
-              const selected = selectedStopId === stop.id;
-              const doneCount = stop.checklistItems.filter(item => itemStatus(state.checklist, `${stop.id}:${item.id}`) === 'done').length;
-              const date = stop.start.label.replace(/ \(.+\)/, '');
-              return (
-                <button
-                  key={stop.id}
-                  ref={element => { tabRefs.current[stop.id] = element; }}
-                  id={`compass-tab-${stop.id}`}
-                  type="button"
-                  role="tab"
-                  aria-label={stop.title}
-                  aria-selected={selected}
-                  aria-controls={`compass-panel-${stop.id}`}
-                  tabIndex={selected ? 0 : -1}
-                  onClick={() => selectStop(stop.id)}
-                  onKeyDown={event => handleTimelineKeyDown(event, index)}
-                  className={`group relative z-10 w-[74vw] max-w-[270px] snap-center rounded-2xl border px-4 py-4 text-center md:w-auto md:max-w-none md:rounded-none md:border-0 md:bg-transparent md:px-2 md:pb-4 md:pt-0 ${selected ? 'border-[var(--ink-primary)] bg-[var(--surface-paper)]' : 'border-[var(--border-soft)] bg-[var(--surface-soft)]'}`}
-                >
-                  <span
-                    className="mx-auto flex h-9 w-9 items-center justify-center rounded-full border-[1.5px] bg-[var(--surface-paper)] transition-colors"
-                    style={{ borderColor: selected ? 'var(--ink-primary)' : stopState.status === 'past' && !preview ? COLORS.success : 'var(--border-soft)' }}
-                  >
-                    {stopState.status === 'past' && !preview ? (
-                      <Check size={14} style={{ color: selected ? 'var(--ink-primary)' : COLORS.success }} aria-hidden="true" />
-                    ) : (
-                      <span
-                        className="block h-2.5 w-2.5 rounded-full"
-                        style={{ backgroundColor: stopState.status === 'now' && !preview ? COLORS.accent : selected ? 'var(--ink-primary)' : 'var(--border-soft)' }}
-                      />
-                    )}
-                  </span>
-                  <span className="mt-2.5 block text-[10px] font-bold uppercase tracking-[0.12em] text-[var(--ink-secondary)]">{date}</span>
-                  <span className={`mt-1 block text-xs leading-tight ${selected ? 'font-bold text-[var(--ink-primary)]' : 'font-medium text-[var(--ink-secondary)]'}`}>{stop.title}</span>
-                  <span className="mt-1 block text-[9px] tabular-nums text-[var(--ink-secondary)]">
-                    {doneCount > 0 ? `${doneCount}/${stop.checklistItems.length} done` : stopState.status === 'now' && !preview ? 'Now' : selected ? 'Selected' : '\u00a0'}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between border-t border-[var(--border-soft)] py-3 md:hidden">
-          <button
-            type="button"
-            onClick={() => selectStop(JOURNEY_STOPS[Math.max(0, selectedIndex - 1)].id, true)}
-            disabled={selectedIndex === 0}
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[var(--ink-secondary)] disabled:opacity-30"
-          >
-            <ChevronLeft size={15} aria-hidden="true" /> Previous
-          </button>
-          <span className="text-[10px] font-semibold tabular-nums text-[var(--ink-secondary)]">{selectedIndex + 1} / {JOURNEY_STOPS.length}</span>
-          <button
-            type="button"
-            onClick={() => selectStop(JOURNEY_STOPS[Math.min(JOURNEY_STOPS.length - 1, selectedIndex + 1)].id, true)}
-            disabled={selectedIndex === JOURNEY_STOPS.length - 1}
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[var(--ink-secondary)] disabled:opacity-30"
-          >
-            Next <ChevronRight size={15} aria-hidden="true" />
-          </button>
+        <div role="tablist" aria-label="College application stages" className="cc7-runway">
+          {JOURNEY_STOPS.map((stop, index) => {
+            const stopState = states[index];
+            const selected = selectedStopId === stop.id;
+            // The runway's short date ("~1 Mar", "~Apr", "~Aug"): the label without its note or its word.
+            const date = stop.start.label.replace(/ \(.+\)/, '').replace(/^[A-Z][a-z]+ (?=~)|^[A-Z]{2,} /, '');
+            return (
+              <button
+                key={stop.id}
+                ref={element => { tabRefs.current[stop.id] = element; }}
+                id={`compass-tab-${stop.id}`}
+                type="button"
+                role="tab"
+                aria-label={stop.title}
+                aria-selected={selected}
+                aria-controls={`compass-panel-${stop.id}`}
+                tabIndex={selected ? 0 : -1}
+                data-now={!preview && stopState.status === 'now' ? '' : undefined}
+                data-past={!preview && stopState.status === 'past' ? '' : undefined}
+                onClick={() => selectStop(stop.id)}
+                onKeyDown={event => handleTimelineKeyDown(event, index)}
+                className="cc7-stop"
+              >
+                <span className="cc7-sdate">{date}</span>
+                <span className="cc7-sdot" aria-hidden="true" />
+                <span className="cc7-sname">{stop.title.replace(/^The /, '')}</span>
+              </button>
+            );
+          })}
         </div>
       </section>
 
       {!preview && (
-        <div className="border-y border-[var(--border-soft)] py-3.5">
-          {nextStep ? (
-            <button type="button" onClick={() => selectStop(nextStep.stop.id, false, true)} className="w-full flex items-center gap-3 text-left">
-              <MapPin size={16} style={{ color: COLORS.accent }} className="shrink-0" aria-hidden="true" />
-              <span className="min-w-0 flex-1 text-xs text-[var(--ink-secondary)]">
-                <strong className="font-semibold text-[var(--ink-primary)]">Next action:</strong> {nextStep.item.label}
-              </span>
-              <span className="hidden sm:block text-[10px] font-bold uppercase tracking-[0.12em] text-[var(--ink-secondary)]">{nextStep.stop.title}</span>
-              <ChevronRight size={15} className="shrink-0 text-[var(--ink-secondary)]" aria-hidden="true" />
-            </button>
-          ) : (
-            <div className="flex items-center gap-2.5 text-sm font-semibold text-[var(--ink-primary)]">
-              <Check size={16} style={{ color: COLORS.success }} aria-hidden="true" /> You’re all caught up.
-            </div>
-          )}
-        </div>
+        <List label="Next action" className="cc7-next">
+          {nextStep
+            ? <Row icon={<LocateFixed size={20} strokeWidth={1.75} />} over="Next action" title={nextStep.item.label} onPress={() => selectStop(nextStep.stop.id, false, true)} />
+            : <Row icon={<Check size={20} strokeWidth={1.75} />} title="You’re all caught up." />}
+        </List>
       )}
 
-      {/* ── One focused workspace ── */}
-      <div ref={workspaceRef} className="lp-compass-workspace mt-6 sm:mt-8" style={{ scrollMarginTop: '110px' }}>
+      <div ref={workspaceRef} className="cc7-workspace">
         <MilestonePanel
           key={selectedStop.id}
           stop={selectedStop}
@@ -591,7 +388,13 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
         />
       </div>
 
-      {showVerify && <VerifyModal entryYear={entryYear} onClose={() => setShowVerify(false)} />}
+      <Sheet open={showColleges} onClose={() => setShowColleges(false)} title="Target colleges" titleAlign="start" className="cc7-sheet">
+        <p className="t-sub">Choose the colleges you’re aiming at. We’ll keep them in mind when you reach funding and scholarships.</p>
+        <div className="cc7-colleges" role="group" aria-label="Target colleges">
+          {TARGET_COLLEGE_CODES.map(code => <ChoiceTile key={code} kind="several" chosen={targetCodes.includes(code)} label={INSTITUTIONS[code] ?? code} meta={INSTITUTIONS[code] ? code : undefined} onClick={() => toggleCollege(code)} />)}
+        </div>
+      </Sheet>
+      <VerifySheet open={showVerify} entryYear={entryYear} onClose={() => setShowVerify(false)} />
     </div>
   );
 };

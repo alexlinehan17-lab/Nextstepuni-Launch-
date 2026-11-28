@@ -106,5 +106,6 @@ test.each([
   render(<AdminFeedbackInbox />);
   expect(await screen.findByText(message)).toBeInTheDocument();
   expect(screen.getByText(platform)).toBeInTheDocument();
-  expect(screen.getByRole('tab', { name: /^New\s*1$/ })).toHaveAttribute('aria-selected', 'true');
+  // The five status chips became one menu that says which status is showing and how many (area 8b).
+  expect(screen.getByRole('button', { name: /New · 1$/ })).toHaveTextContent('New · 1');
 });

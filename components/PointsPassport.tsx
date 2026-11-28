@@ -3,13 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
-import ToolMasthead from './launchpad/ToolMasthead';
 import LaunchpadSelect from './launchpad/LaunchpadSelect';
 import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { TrendingUp, Plus, Trash2, ArrowRight, Star, Calendar, Shield, Target, Pencil } from 'lucide-react';
+import { TrendingUp, Plus, Trash2, ArrowRight, Shield, Target, Pencil } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade, type Level,
   LC_SUBJECTS, getPointsForGrade, getGradesForLevel, targetGradesFor,
@@ -25,13 +23,16 @@ import { useToast } from './Toast';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { COLORS } from '../design/tokens';
 import { logError } from '../utils/logError';
 import { LoadingState } from './ui/SystemState';
-import ModalFrame from './ui/ModalFrame';
+import { Confirm } from './ui/Sheet';
+import { Button, Glyph, IconButton, TextButton } from './ui/Button';
+import { Menu } from './ui/Menu';
+import { List, PaperSheet, Row } from './ui/List';
+import { ChoiceRuler, ChoiceTile } from './ui/Choice';
+import './points-passport-7.css';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
-import HorizontalTabs from './ui/HorizontalTabs';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -77,24 +78,9 @@ const SLOT_META: Record<ScenarioSlot, { label: string; description: string; Icon
 
 // ─── Utility ─────────────────────────────────────────────────────────────────
 
-// ─── Subject Color Map ───────────────────────────────────────────────────────
-
-const SUBJECT_DOT: Record<string, string> = {
-  'English': 'bg-blue-500', 'Irish': 'bg-emerald-500', 'Mathematics': 'bg-indigo-500',
-  'French': 'bg-sky-500', 'German': 'bg-yellow-500', 'Spanish': 'bg-orange-500',
-  'Physics': 'bg-cyan-500', 'Chemistry': 'bg-teal-500', 'Biology': 'bg-lime-500',
-  'Applied Maths': 'bg-violet-500', 'Computer Science': 'bg-fuchsia-500', 'Ag Science': 'bg-green-500',
-  'Accounting': 'bg-amber-500', 'Business': 'bg-amber-600', 'Economics': 'bg-yellow-600',
-  'History': 'bg-purple-500', 'Geography': 'bg-emerald-600', 'Home Economics': 'bg-orange-400',
-  'Art': 'bg-rose-400', 'Music': 'bg-pink-400',
-};
-
-function getDot(name: string) { return SUBJECT_DOT[name] || 'bg-zinc-500'; }
-
 // ─── Component ───────────────────────────────────────────────────────────────
 
 const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSettings, onProfileChange, initialTab = 'overview', lockSimulatorOverview = false }) => {
-  const mobileAppDesign = useMobileAppDesign();
   const { showToast } = useToast();
   const { rawProgressDoc } = useProgress();
   const isDemo = uid === DEMO_STUDENT_UID;
@@ -317,19 +303,19 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
 
   return (
     <>
-    <div className="space-y-6">
+    <div className="pp7">
 
-      <ToolMasthead tool="points-passport" eyebrow="Your grades, made visible" title="Points Passport." subtitle="Your current grades, your goal and the subjects that contribute." />
-      {activeTab !== 'planner' && <div className="lp-points-hero">
-        <div><p className="lp-eyebrow">Based on your current grades</p><p className="lp-points-total">{currentPoints} <span>/ 625</span></p><p>Your best six, with the maths bonus where eligible.</p></div>
-        <div><div className="flex justify-between gap-4"><span>Your target <strong>{targetPoints}</strong></span><span>Gap <strong>{Math.max(0,targetPoints-currentPoints)} points</strong></span></div>
-          <div className="lp-points-bar"><span style={{width:`${Math.min(100,currentPoints/625*100)}%`}} /><i style={{left:`${Math.min(99,targetPoints/625*100)}%`}} aria-label={`Target ${targetPoints}`} /></div><p className="text-xs">Your target is a goal you set, not a prediction.</p>
+      {/* The one sheet: the total written "465 / 625", the target, the gap and the bar with its
+          tick (boards c-tools1-passport, r5-points-passport). Not on What if?, which pins its own. */}
+      {activeTab !== 'planner' && <PaperSheet className="pp7-hero" label="Your points">
+        <div className="pp7-hero-total"><p className="t-label pp7-label">Based on your current grades</p><p className="pp7-total"><span>{currentPoints}</span><span className="pp7-of"> / 625</span></p><p className="t-meta">Your best six, with the maths bonus where eligible.</p></div>
+        <div className="pp7-hero-side"><div className="pp7-target"><span>Your target <b>{targetPoints}</b></span><span>Gap <b>{Math.max(0,targetPoints-currentPoints)} points</b></span></div>
+          <div className="pp7-bar"><span style={{width:`${Math.min(100,currentPoints/625*100)}%`}} /><i style={{left:`${Math.min(99,targetPoints/625*100)}%`}} aria-label={`Target ${targetPoints}`} /></div><p className="t-meta">Your target is a goal you set, not a prediction.</p>
         </div>
-      </div>}
-      <div className="lp-passport-nav">
-        <HorizontalTabs className={mobileAppDesign ? "editorial-tabs" : ""} variant={mobileAppDesign ? "underline" : "pill"} value={['overview','planner','scenarios'].includes(activeTab) ? activeTab : ''} label="Points Passport sections" onChange={next => setActiveTab(next as PassportTab)} options={[{value:'overview',label:'My subjects'},{value:'planner',label:'What if?'},{value:'scenarios',label:'Scenarios'}]} />
-        <LaunchpadSelect aria-label="More Points Passport sections" value={['mocks','bargains'].includes(activeTab) ? activeTab : ''} onChange={e => {if(e.target.value) setActiveTab(e.target.value as PassportTab);}}><option value="" disabled>More</option><option value="mocks">Mock Tracker</option><option value="bargains">Best Moves</option></LaunchpadSelect>
-      </div>
+      </PaperSheet>}
+      {/* The five parts in one menu: "My subjects · 1 of 5". */}
+      <Menu label="Points Passport sections" count block className="pp7-parts" value={activeTab} onChange={next => setActiveTab(next)}
+        options={[{ value: 'overview' as PassportTab, label: 'My subjects' }, { value: 'planner' as PassportTab, label: 'What if?' }, { value: 'scenarios' as PassportTab, label: 'Scenarios' }, { value: 'mocks' as PassportTab, label: 'Mock Tracker' }, { value: 'bargains' as PassportTab, label: 'Best Moves' }]} />
       {/* Tab content */}
       <AnimatePresence mode="wait">
         {activeTab === 'planner' && (
@@ -345,6 +331,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                 uid={uid}
                 initialTab="what-if"
                 overviewLocked={lockSimulatorOverview}
+                passport
                 onOpenSettings={onOpenSettings ?? (() => setActiveTab('overview'))}
               />
             </React.Suspense>
@@ -359,37 +346,37 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             exit={{ opacity: 0, y: -8 }}
             className="space-y-5"
           >
-            <div className="lp-split">
-              <section><div className="flex justify-between gap-4 mb-4"><h2 className="lp-title">Your subject contributions</h2>{onOpenSettings && <button className="text-sm underline" onClick={onOpenSettings}>Edit subjects</button>}</div>
-                <div className="lp-contributions"><div className="lp-contribution headings"><span>Subject</span><span>Current</span><span>Target</span><span>Gain</span></div>
+            <div className="pp7-split">
+              <section className="pp7-subjects"><div className="pp7-head"><h2 className="t-heading">Your subject contributions</h2>{onOpenSettings && <TextButton onClick={onOpenSettings}>Edit subjects</TextButton>}</div>
+                <div className="pp7-grades"><div className="pp7-grade pp7-grade--head t-label"><span>Subject</span><span>Current</span><span>Target</span><span>Gain</span></div>
                 {profile.subjects.map(sub => {
                   const isMaths = LC_SUBJECTS.find(lc => lc.name === sub.subjectName)?.isMaths ?? false;
                   const currentPts = getPointsForGrade(sub.currentGrade, isMaths);
                   const targetPts = getPointsForGrade(sub.targetGrade, isMaths);
                   const update = (field: 'currentGrade' | 'targetGrade', grade: Grade) => onProfileChange?.({...profile, subjects:profile.subjects.map(s => s.subjectName === sub.subjectName ? {...s,[field]:grade} : s)});
-                  return <div className="lp-contribution" key={sub.subjectName}><div><strong>{sub.subjectName}</strong><div className="lp-contribution-bar"><span style={{width:`${currentPts/125*100}%`}} /></div></div>
+                  return <div className="pp7-grade" key={sub.subjectName}><div className="pp7-grade-name"><span>{sub.subjectName}</span><div className="pp7-grade-bar"><span style={{width:`${currentPts/125*100}%`}} /></div></div>
                     <LaunchpadSelect aria-label={`${sub.subjectName} current grade`} value={sub.currentGrade} disabled={!onProfileChange} onChange={e => update('currentGrade',e.target.value as Grade)}>{getGradesForLevel(sub.level).map(g => <option key={g}>{g}</option>)}</LaunchpadSelect>
                     <LaunchpadSelect aria-label={`${sub.subjectName} target grade`} value={sub.targetGrade} disabled={!onProfileChange} onChange={e => update('targetGrade',e.target.value as Grade)}>{targetGradesFor(sub.level).map(g => <option key={g}>{g}</option>)}</LaunchpadSelect>
-                    <span className="text-right text-sm tabular-nums">{targetPts-currentPts > 0 ? '+' : ''}{targetPts-currentPts}</span>
+                    <span className="pp7-gain t-readout">{targetPts-currentPts > 0 ? '+' : ''}{targetPts-currentPts}</span>
                   </div>;
-                })}</div><p className="lp-body mt-3 text-xs">Subject gains are before best-six selection. Your total counts only your best six.</p>
+                })}</div><p className="t-meta pp7-note">Subject gains are before best-six selection. Your total counts only your best six.</p>
               </section>
-              <aside className="lp-panel"><p className="lp-eyebrow">Try a possibility</p><h2 className="lp-title">What would one grade change?</h2><p className="lp-body">Use What if? to explore a different set of grades without changing your current grades.</p><button className="lp-button w-full mt-6" onClick={() => setActiveTab('planner')}>Explore What If? <ArrowRight size={16} /></button></aside>
+              <aside className="pp7-try"><p className="t-label pp7-label">Try a possibility</p><h2 className="t-title pp7-try-title">What would one grade change?</h2><p className="t-sub">Use What if? to explore a different set of grades without changing your current grades.</p><Button kind="main" size="lg" block arrow="forward" onClick={() => setActiveTab('planner')}>Explore What If?</Button></aside>
             </div>
             {/* CAO Simulator insights (Connection 4: CAO Simulator → Points Passport) */}
             {caoData && caoData.whatIfScenarios && caoData.whatIfScenarios.length > 0 && (
-              <div className="rounded-xl p-4 space-y-2 bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: COLORS.accent }}>From Your Simulator</p>
+              <div className="pp7-section">
+                <p className="t-label pp7-label">From your simulator</p>
                 {caoData.whatIfScenarios.slice(0, 3).map((s: any, i: number) => (
                   <div key={i} className="flex items-center justify-between text-xs">
-                    <span className="text-zinc-600 dark:text-zinc-400">
+                    <span className="t-sub">
                       {s.subjectName}: {s.currentGrade} → {s.whatIfGrade}
                     </span>
-                    <span className="font-bold" style={{ color: COLORS.accent }}>+{s.pointsGain} pts</span>
+                    <span className="t-readout">+{s.pointsGain} pts</span>
                   </div>
                 ))}
                 {caoData.computedPoints && (
-                  <p className="text-[10px] pt-1" style={{ color: COLORS.accent }}>
+                  <p className="t-meta">
                     Current: {caoData.computedPoints.current} pts → Target: {caoData.computedPoints.target} pts
                   </p>
                 )}
@@ -408,181 +395,78 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             exit={{ opacity: 0, y: -8 }}
             className="space-y-5"
           >
-            {/* Trajectory chart (simple bar visualisation) */}
+            {/* The points trajectory: the student's own totals drawn (orange is their own value). */}
             {mockResults.length > 0 && (
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Points Trajectory
-                </p>
-                <div className="bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl p-4">
-                  <div className="flex items-end gap-2 h-32">
-                    {/* mockResults is newest-first (sorted desc by timestamp).
-                        Render oldest→newest left-to-right so the timeline reads
-                        correctly and each delta compares against the PREVIOUS
-                        (older) mock — otherwise improvements showed as negative. */}
-                    {[...mockResults].reverse().map((mock, idx, chrono) => {
-                      const pct = Math.min(100, (mock.totalPoints / 625) * 100);
-                      const prevPts = idx > 0 ? chrono[idx - 1].totalPoints : null;
-                      const delta = prevPts !== null ? mock.totalPoints - prevPts : null;
-                      return (
-                        <div key={mock.id} className="flex-1 flex flex-col items-center gap-1">
-                          <span className="text-[10px] font-bold text-zinc-600 dark:text-zinc-400">{mock.totalPoints}</span>
-                          {delta !== null && (
-                            <span className="text-[9px] font-bold" style={{ color: delta >= 0 ? '#3A8D5F' : '#7a7068' }}>
-                              {delta >= 0 ? '+' : ''}{delta}
-                            </span>
-                          )}
-                          <MotionDiv
-                            className="w-full rounded-t-lg min-h-[4px]"
-                            style={{ backgroundColor: COLORS.accent }}
-                            initial={{ height: 0 }}
-                            animate={{ height: `${pct}%` }}
-                            transition={{ delay: idx * 0.1, duration: 0.5 }}
-                          />
-                          <span className="text-[9px] text-zinc-400 dark:text-zinc-500 text-center leading-tight mt-1">
-                            {mock.label}
-                          </span>
-                        </div>
-                      );
-                    })}
-                    {/* Current grade marker */}
-                    <div className="flex-1 flex flex-col items-center gap-1">
-                      <span className="text-[10px] font-bold" style={{ color: COLORS.accent }}>{currentPoints}</span>
-                      <MotionDiv
-                        className="w-full rounded-t-lg min-h-[4px] border-2 border-dashed"
-                        style={{ backgroundColor: '#F8B080', borderColor: COLORS.accent }}
-                        initial={{ height: 0 }}
-                        animate={{ height: `${Math.min(100, (currentPoints / 625) * 100)}%` }}
-                        transition={{ delay: mockResults.length * 0.1, duration: 0.5 }}
-                      />
-                      <span className="text-[9px] text-center leading-tight mt-1 font-bold" style={{ color: COLORS.accent }}>Now</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Mock results list */}
-            {mockResults.length > 0 && (
-              <div className="space-y-2">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                  Recorded Mocks
-                </p>
-                {mockResults.map((mock) => (
-                  <div key={mock.id} className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                    <Calendar size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{mock.label}</p>
-                      <p className="text-[11px] text-[#9A9590] dark:text-zinc-500">{mock.date}</p>
-                    </div>
-                    <span className="text-sm font-bold" style={{ color: COLORS.accent }}>{mock.totalPoints} pts</span>
-                    <button
-                      onClick={() => setPendingDeleteMock(mock)}
-                      aria-label={`Remove ${mock.label}`}
-                      className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
-                    >
-                      <Trash2 size={14} className="text-zinc-400" />
-                    </button>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {mockResults.length === 0 && !showMockForm && (
-              <div className="text-center py-8">
-                <Calendar size={32} className="text-zinc-300 dark:text-zinc-600 mx-auto mb-3" />
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">No mocks recorded yet</p>
-                <p className="text-xs text-zinc-400 dark:text-zinc-500">Track your mock results to see your trajectory over time.</p>
-              </div>
-            )}
-
-            {/* Add mock button / form */}
-            {!showMockForm ? (
-              <button
-                onClick={initMockForm}
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-colors"
-                style={{ backgroundColor: COLORS.accent }}
-              >
-                <Plus size={16} /> Record Mock Results
-              </button>
-            ) : (
-              <MotionDiv
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl p-5 space-y-4"
-              >
-                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Record Mock Results</p>
-
-                {/* Label selector */}
-                <div className="space-y-2">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Exam Name</p>
-                  <div className="inline-flex flex-wrap items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1" role="group" aria-label="Exam name">
-                    {MOCK_PRESETS.map(preset => (
-                      <button
-                        key={preset}
-                        onClick={() => setMockLabel(preset)}
-                        aria-pressed={mockLabel === preset}
-                        className={`min-h-9 shrink-0 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors ${
-                          mockLabel === preset
-                            ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
-                            : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
-                        }`}
-                      >
-                        {preset}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Grade inputs per subject */}
-                <div className="space-y-3">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Grades</p>
-                  {profile.subjects.map(sub => {
-                    const grades = getGradesForLevel(sub.level);
+              <section className="pp7-section" aria-label="Points trajectory">
+                <p className="t-label pp7-label">Points trajectory</p>
+                <div className="pp7-chart">
+                  {/* mockResults is newest-first: oldest to newest left to right, each delta against the previous. */}
+                  {[...mockResults].reverse().map((mock, idx, chrono) => {
+                    const pct = Math.min(100, (mock.totalPoints / 625) * 100);
+                    const prevPts = idx > 0 ? chrono[idx - 1].totalPoints : null;
+                    const delta = prevPts !== null ? mock.totalPoints - prevPts : null;
                     return (
-                      <div key={sub.subjectName} className="space-y-1.5">
-                        <div className="flex items-center gap-2">
-                          <span className={`w-2 h-2 rounded-full ${getDot(sub.subjectName)}`} />
-                          <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">{sub.subjectName}</span>
-                        </div>
-                        <div className="flex flex-wrap gap-1">
-                          {grades.map(g => (
-                            <button
-                              key={g}
-                              onClick={() => setMockGrades(prev => ({ ...prev, [sub.subjectName]: g }))}
-                              aria-label={`${sub.subjectName} ${g}`}
-                              aria-pressed={mockGrades[sub.subjectName] === g}
-                              className={`px-2 py-1 rounded-md text-xs font-bold transition-all ${
-                                mockGrades[sub.subjectName] === g
-                                  ? 'text-white shadow-sm'
-                                  : 'bg-zinc-50 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
-                              }`}
-                              style={mockGrades[sub.subjectName] === g ? { backgroundColor: COLORS.accent } : undefined}
-                            >
-                              {g}
-                            </button>
-                          ))}
-                        </div>
+                      <div key={mock.id}>
+                        <span className="t-readout">{mock.totalPoints}</span>
+                        {delta !== null && <span className="t-meta">{delta >= 0 ? '+' : ''}{delta}</span>}
+                        <MotionDiv className="pp7-chart-bar" initial={{ height: 0 }} animate={{ height: `${pct}%` }} transition={{ delay: idx * 0.1, duration: 0.5 }} />
+                        <span className="t-meta">{mock.label}</span>
                       </div>
                     );
                   })}
+                  <div>
+                    <span className="t-readout">{currentPoints}</span>
+                    <MotionDiv className="pp7-chart-bar pp7-chart-bar--now" initial={{ height: 0 }} animate={{ height: `${Math.min(100, (currentPoints / 625) * 100)}%` }} transition={{ delay: mockResults.length * 0.1, duration: 0.5 }} />
+                    <span className="t-meta">Now</span>
+                  </div>
                 </div>
+              </section>
+            )}
 
-                {/* Save / Cancel */}
-                <div className="flex gap-3">
-                  <button
-                    onClick={saveMock}
-                    className="flex-1 py-2.5 rounded-xl text-sm font-bold text-white transition-colors"
-                    style={{ backgroundColor: COLORS.accent }}
-                  >
-                    Save Mock
-                  </button>
-                  <button
-                    onClick={() => setShowMockForm(false)}
-                    className="px-4 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
-                  >
-                    Cancel
-                  </button>
+            {mockResults.length > 0 && (
+              <section className="pp7-section" aria-label="Recorded mocks">
+                <p className="t-label pp7-label">Recorded mocks</p>
+                {mockResults.map((mock) => (
+                  <div key={mock.id} className="pp7-mock-row">
+                    <div><span>{mock.label}</span><span className="t-meta">{mock.date}</span></div>
+                    <span className="t-readout">{mock.totalPoints} points</span>
+                    <IconButton label={`Remove ${mock.label}`} icon={<Glyph icon={Trash2} size={20} />} onClick={() => setPendingDeleteMock(mock)} />
+                  </div>
+                ))}
+              </section>
+            )}
+
+            {mockResults.length === 0 && !showMockForm && (
+              <div className="pp7-section">
+                <h3 className="t-heading">No mocks recorded yet</h3>
+                <p className="t-sub">Track your mock results to see your trajectory over time.</p>
+              </div>
+            )}
+
+            {!showMockForm ? (
+              <Button kind="main" size="lg" block onClick={initMockForm}><span className="pp7-inline"><Plus size={20} aria-hidden="true" />Record mock results</span></Button>
+            ) : (
+              <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="pp7-form">
+                <h3 className="t-heading">Record mock results</h3>
+                <div className="pp7-section">
+                  <p className="t-label pp7-label">Exam name</p>
+                  <div className="pp7-presets" role="group" aria-label="Exam name">
+                    {MOCK_PRESETS.map(preset => <ChoiceTile key={preset} compact kind="toggle" chosen={mockLabel === preset} label={preset} onClick={() => setMockLabel(preset)} />)}
+                  </div>
+                </div>
+                <div className="pp7-section">
+                  <p className="t-label pp7-label">Grades</p>
+                  {profile.subjects.map(sub => (
+                    <div key={sub.subjectName} className="pp7-wsub">
+                      <span className="pp7-wsub-name">{sub.subjectName}</span>
+                      <ChoiceRuler label={`${sub.subjectName} mock grade`} value={mockGrades[sub.subjectName] ?? ''} onChange={g => setMockGrades(prev => ({ ...prev, [sub.subjectName]: g as Grade }))}
+                        options={getGradesForLevel(sub.level).map(g => ({ value: g, label: g, name: `${sub.subjectName} ${g}` }))} />
+                    </div>
+                  ))}
+                </div>
+                <div className="pp7-actions">
+                  <Button kind="main" size="lg" block onClick={saveMock}>Save mock</Button>
+                  <TextButton tone="quiet" onClick={() => setShowMockForm(false)}>Cancel</TextButton>
                 </div>
               </MotionDiv>
             )}
@@ -599,29 +483,21 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             className="space-y-5"
           >
             {/* Honesty framing: deltas compare against the student's own mocks */}
-            <div className="rounded-xl p-4 bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
-              <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Scenario Runway</p>
-              <p className="text-xs leading-relaxed mt-1 text-zinc-600 dark:text-zinc-400">
+            <section className="pp7-section" aria-label="Scenario runway">
+              <h3 className="t-heading">Scenario runway</h3>
+              <p className="t-sub">
                 Sketch a Safe, Target and Stretch grade set and compare them side by side.
                 Each delta is measured against {scenarioBaseline.isMock
-                  ? <>your latest recorded mock (<span className="font-semibold">{scenarioBaseline.label}</span>)</>
+                  ? <>your latest recorded mock ({scenarioBaseline.label})</>
                   : 'your current self-assessed grades'} — that&apos;s your own results so far, not a prediction of how the real exam will go.
               </p>
-            </div>
+              <div className="pp7-mock-row">
+                <div><span className="t-sub">{scenarioBaseline.isMock ? `Latest recorded mock · ${scenarioBaseline.label}` : 'Current grades from your subject profile'}</span></div>
+                <span className="t-readout">{scenarioBaseline.total} points</span>
+              </div>
+            </section>
 
-            {/* Baseline strip */}
-            <div className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-surface-paper" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
-              <TrendingUp size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
-              <p className="flex-1 min-w-0 text-xs text-zinc-600 dark:text-zinc-400 truncate">
-                {scenarioBaseline.isMock
-                  ? `Latest recorded mock · ${scenarioBaseline.label}`
-                  : 'Current grades from your subject profile'}
-              </p>
-              <span className="text-sm font-bold shrink-0" style={{ color: COLORS.accent }}>{scenarioBaseline.total} pts</span>
-            </div>
-
-            {/* Three slots side-by-side */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="pp7-slots">
               {SCENARIO_SLOTS.map(slot => {
                 const meta = SLOT_META[slot];
                 const SlotIcon = meta.Icon;
@@ -630,140 +506,60 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                 const delta = total !== null ? total - scenarioBaseline.total : null;
                 const lever = sc ? bestLeverToward(scenarioBaseline.entries, sc.grades) : null;
                 return (
-                  <div key={slot} className="rounded-xl p-4 bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline flex flex-col gap-2">
-                    <div className="flex items-center gap-2">
-                      <SlotIcon size={14} className="shrink-0" style={{ color: sc ? COLORS.accent : '#9A9590' }} />
-                      <span className="flex-1 text-xs font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{meta.label}</span>
-                      {sc && (
-                        <>
-                          <button
-                            onClick={() => startEditScenario(slot)}
-                            className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
-                            aria-label={`Edit ${meta.label} scenario`}
-                          >
-                            <Pencil size={12} className="text-zinc-400" />
-                          </button>
-                          <button
-                            onClick={() => deleteScenario(slot)}
-                            className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-surface-soft transition-colors"
-                            aria-label={`Clear ${meta.label} scenario`}
-                          >
-                            <Trash2 size={12} className="text-zinc-400" />
-                          </button>
-                        </>
-                      )}
+                  <section key={slot} className="pp7-slot" aria-label={`${meta.label} scenario`}>
+                    <div className="pp7-slot-head">
+                      <SlotIcon size={16} aria-hidden="true" />
+                      <span className="t-label">{meta.label}</span>
+                      {sc && <>
+                        <IconButton label={`Edit ${meta.label} scenario`} icon={<Glyph icon={Pencil} size={20} />} onClick={() => startEditScenario(slot)} />
+                        <IconButton label={`Clear ${meta.label} scenario`} icon={<Glyph icon={Trash2} size={20} />} onClick={() => deleteScenario(slot)} />
+                      </>}
                     </div>
-                    <p className="text-[11px] text-zinc-400 dark:text-zinc-500">{meta.description}</p>
-
+                    <p className="t-meta">{meta.description}</p>
                     {sc && total !== null && delta !== null ? (
                       <>
-                        <div>
-                          <span className="font-apercu text-3xl font-black" style={{ color: COLORS.accent }}>{total}</span>
-                          <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">/625</span>
-                        </div>
-                        <span
-                          className="self-start text-[10px] font-bold px-2 py-0.5 rounded-full"
-                          style={delta > 0
-                            ? { backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }
-                            : { backgroundColor: '#E8F2EC', color: '#1F5F3E' }}
-                        >
+                        <p className="pp7-slot-total">{total}<span className="pp7-of"> / 625</span></p>
+                        <p className="t-sub">
                           {delta > 0
                             ? `+${delta} vs ${scenarioBaseline.isMock ? 'latest mock' : 'current'}`
                             : delta === 0
                               ? `Level with your ${scenarioBaseline.isMock ? 'latest mock' : 'current grades'}`
                               : `Already ${-delta} ahead on your ${scenarioBaseline.isMock ? 'mocks' : 'grades'}`}
-                        </span>
+                        </p>
                         {lever && (
-                          <p className="text-[11px] leading-relaxed text-zinc-500 dark:text-zinc-400 mt-1">
-                            Biggest single step: <span className="font-semibold text-zinc-700 dark:text-zinc-300">{lever.subjectName} {lever.fromGrade} <ArrowRight size={9} className="inline" /> {lever.toGrade}</span>{' '}
-                            <span className="font-bold" style={{ color: '#1F5F3E' }}>+{lever.pointsGain} pts</span>
+                          <p className="t-meta">
+                            Biggest single step: {lever.subjectName} {lever.fromGrade} <ArrowRight size={12} className="inline" aria-label="to" /> {lever.toGrade} +{lever.pointsGain} points
                           </p>
                         )}
                       </>
                     ) : (
-                      <div className="flex flex-col gap-2 mt-1">
-                        <button
-                          onClick={() => startEditScenario(slot)}
-                          className="w-full py-2 rounded-lg text-xs font-bold text-white transition-colors"
-                          style={{ backgroundColor: COLORS.accent }}
-                        >
-                          Set grades
-                        </button>
-                        <button
-                          onClick={() => cloneScenarioFromCurrent(slot)}
-                          className="w-full py-1.5 rounded-lg text-[11px] font-medium text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
-                        >
-                          Start from current grades
-                        </button>
+                      <div className="pp7-actions">
+                        <Button block onClick={() => startEditScenario(slot)}>Set grades</Button>
+                        <TextButton tone="quiet" onClick={() => cloneScenarioFromCurrent(slot)}>Start from current grades</TextButton>
                       </div>
                     )}
-                  </div>
+                  </section>
                 );
               })}
             </div>
 
             {/* Scenario grade editor */}
             {editingSlot && (
-              <MotionDiv
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="bg-white dark:bg-surface-paper border border-zinc-200 dark:border-hairline rounded-xl p-5 space-y-4"
-              >
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">
-                    {SLOT_META[editingSlot].label} scenario — pick a grade per subject
-                  </p>
-                  <span className="text-sm font-bold shrink-0" style={{ color: COLORS.accent }}>
-                    {computeBestSixTotal(scenarioEntriesFromForm())} pts
-                  </span>
+              <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="pp7-form">
+                <div className="pp7-head">
+                  <h3 className="t-heading">{SLOT_META[editingSlot].label} scenario — pick a grade per subject</h3>
+                  <span className="t-readout">{computeBestSixTotal(scenarioEntriesFromForm())} points</span>
                 </div>
-
-                <div className="space-y-3">
-                  {profile.subjects.map(sub => {
-                    const grades = getGradesForLevel(sub.level);
-                    return (
-                      <div key={sub.subjectName} className="space-y-1.5">
-                        <div className="flex items-center gap-2">
-                          <span className={`w-2 h-2 rounded-full ${getDot(sub.subjectName)}`} />
-                          <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">{sub.subjectName}</span>
-                        </div>
-                        <div className="flex flex-wrap gap-1">
-                          {grades.map(g => (
-                            <button
-                              key={g}
-                              onClick={() => setScenarioGrades(prev => ({ ...prev, [sub.subjectName]: g }))}
-                              aria-label={`${sub.subjectName} ${g}`}
-                              aria-pressed={scenarioGrades[sub.subjectName] === g}
-                              className={`px-2 py-1 rounded-md text-xs font-bold transition-all ${
-                                scenarioGrades[sub.subjectName] === g
-                                  ? 'text-white shadow-sm'
-                                  : 'bg-zinc-50 dark:bg-surface-soft text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
-                              }`}
-                              style={scenarioGrades[sub.subjectName] === g ? { backgroundColor: COLORS.accent } : undefined}
-                            >
-                              {g}
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <div className="flex gap-3">
-                  <button
-                    onClick={saveScenarioForm}
-                    className="flex-1 py-2.5 rounded-xl text-sm font-bold text-white transition-colors"
-                    style={{ backgroundColor: COLORS.accent }}
-                  >
-                    Save {SLOT_META[editingSlot].label} Scenario
-                  </button>
-                  <button
-                    onClick={() => setEditingSlot(null)}
-                    className="px-4 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
-                  >
-                    Cancel
-                  </button>
+                {profile.subjects.map(sub => (
+                  <div key={sub.subjectName} className="pp7-wsub">
+                    <span className="pp7-wsub-name">{sub.subjectName}</span>
+                    <ChoiceRuler label={`${sub.subjectName} scenario grade`} value={scenarioGrades[sub.subjectName] ?? ''} onChange={g => setScenarioGrades(prev => ({ ...prev, [sub.subjectName]: g as Grade }))}
+                      options={getGradesForLevel(sub.level).map(g => ({ value: g, label: g, name: `${sub.subjectName} ${g}` }))} />
+                  </div>
+                ))}
+                <div className="pp7-actions">
+                  <Button kind="main" size="lg" block onClick={saveScenarioForm}>Save {SLOT_META[editingSlot].label} scenario</Button>
+                  <TextButton tone="quiet" onClick={() => setEditingSlot(null)}>Cancel</TextButton>
                 </div>
               </MotionDiv>
             )}
@@ -779,121 +575,39 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             exit={{ opacity: 0, y: -8 }}
             className="space-y-5"
           >
-            <header className="pb-5 border-b border-[#DDD7D0] dark:border-white/15">
-              <p className="text-[10px] font-bold tracking-[0.2em] uppercase" style={{ color: COLORS.accent }}>
-                Where points move
-              </p>
-              <h3 className="mt-2 font-serif text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
-                Best points bargains
-              </h3>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                Grade moves with a strong points return for the effort involved. Use these as priorities, not promises.
-              </p>
+            <header className="pp7-section">
+              <p className="t-label pp7-label">Where points move</p>
+              <h3 className="t-title">Best points bargains</h3>
+              <p className="t-sub">Grade moves with a strong points return for the effort involved. Use these as priorities, not promises.</p>
             </header>
 
             {bargains.length > 0 ? (
-              <div className="space-y-2">
+              <List label="Best points bargains" className="pp7-moves">
                 {bargains.map((b, idx) => (
-                  <MotionDiv
-                    key={b.subjectName}
-                    initial={{ opacity: 0, x: -12 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: idx * 0.05 }}
-                    className="p-4 rounded-xl bg-white/60 dark:bg-white/5 border border-zinc-200/60 dark:border-white/10"
-                  >
-                    <div className="flex items-center gap-3">
-                      <span className="text-lg font-bold w-6 text-center" style={{ color: COLORS.accent }}>#{idx + 1}</span>
-                      <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getDot(b.subjectName)}`} />
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{b.subjectName}</p>
-                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                          {b.fromGrade} <ArrowRight size={10} className="inline" /> {b.toGrade}
-                        </p>
-                      </div>
-                      <div className="text-right shrink-0">
-                        <span className="text-sm font-bold" style={{ color: COLORS.accent }}>
-                          +{b.pointsGain} pts
-                        </span>
-                      </div>
-                    </div>
-                    <div className="mt-2 ml-9 flex items-center gap-3">
-                      <span className="text-[11px] text-zinc-400 dark:text-zinc-500">
-                        Estimated effort: {b.effortHint}
-                      </span>
-                      {b.isMathsBonus && (
-                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: COLORS.accentDarkText }}>
-                          Unlocks +25 Maths Bonus!
-                        </span>
-                      )}
-                    </div>
-                  </MotionDiv>
+                  <Row key={b.subjectName} lead={`#${idx + 1}`} title={b.subjectName}
+                    meta={`${b.fromGrade} → ${b.toGrade} · Estimated effort: ${b.effortHint}${b.isMathsBonus ? ' · Unlocks the +25 maths bonus' : ''}`}
+                    value={`+${b.pointsGain} points`} />
                 ))}
-              </div>
+              </List>
             ) : (
-              <div className="text-center py-8">
-                <Star size={32} className="text-zinc-300 dark:text-zinc-600 mx-auto mb-3" />
-                <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                  You're already at your best grades in every subject. Amazing!
-                </p>
+              <div className="pp7-section">
+                <p className="t-sub">You're already at your best grades in every subject. Amazing!</p>
               </div>
             )}
 
-            {/* Total potential gain */}
             {bargains.length > 0 && (
-              <div className="rounded-[18px] bg-white dark:bg-surface-paper px-5 py-4 border-2" style={{ borderColor: COLORS.accent }}>
-                <div className="flex items-end justify-between gap-4">
-                  <div>
-                    <p className="text-[10px] font-bold tracking-[0.18em] uppercase" style={{ color: COLORS.accent }}>
-                      Three-move preview
-                    </p>
-                    <p className="mt-1 text-sm font-bold text-zinc-800 dark:text-zinc-200">
-                      Total potential from the top three
-                    </p>
-                  </div>
-                  <span className="text-xl font-bold shrink-0" style={{ color: COLORS.accent }}>
-                    +{topThreePotential} pts
-                  </span>
-                </div>
-                <p className="text-xs mt-2 text-zinc-600 dark:text-zinc-400">
-                  That would take you from {currentPoints} to {currentPoints + topThreePotential} points.
-                </p>
-              </div>
+              <section className="pp7-section" aria-label="Three-move preview">
+                <div className="pp7-head"><div><p className="t-label pp7-label">Three-move preview</p><p className="t-body">Total potential from the top three</p></div><span className="t-readout">+{topThreePotential} points</span></div>
+                <p className="t-meta">That would take you from {currentPoints} to {currentPoints + topThreePotential} points.</p>
+              </section>
             )}
           </MotionDiv>
         )}
       </AnimatePresence>
     </div>
-    <ModalFrame
-      open={pendingDeleteMock !== null}
-      onClose={() => setPendingDeleteMock(null)}
-      title="Remove this mock result?"
-      eyebrow="Points Passport"
-      description={pendingDeleteMock ? `${pendingDeleteMock.label} and its subject grades will be removed from your mock history.` : undefined}
-      width="sm"
-      labelledBy="remove-mock-title"
-      footer={(
-        <div className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
-          <button
-            type="button"
-            onClick={() => setPendingDeleteMock(null)}
-            className="min-h-11 rounded-xl border border-[#CFC9C2] bg-white px-4 text-sm font-semibold text-[#59534D] hover:border-[#383838] dark:border-zinc-700 dark:bg-surface-soft dark:text-zinc-200"
-          >
-            Keep result
-          </button>
-          <button
-            type="button"
-            onClick={deleteMock}
-            className="min-h-11 rounded-xl border-[1.5px] border-[#383838] bg-[#1A1A1A] px-4 text-sm font-semibold text-white"
-          >
-            Remove result
-          </button>
-        </div>
-      )}
-    >
-      <p className="text-sm leading-relaxed text-[#706A64] dark:text-zinc-400">
-        This cannot be undone. Your current grades and saved scenarios will not change.
-      </p>
-    </ModalFrame>
+    <Confirm open={pendingDeleteMock !== null} sentence="Remove this mock result?"
+      detail={pendingDeleteMock ? `${pendingDeleteMock.label} and its subject grades will be removed from your mock history. This cannot be undone. Your current grades and saved scenarios will not change.` : undefined}
+      keepLabel="Keep result" onKeep={() => setPendingDeleteMock(null)} dangerLabel="Remove result" onDanger={deleteMock} />
     </>
   );
 };

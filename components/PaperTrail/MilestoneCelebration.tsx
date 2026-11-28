@@ -10,13 +10,20 @@
  */
 
 import React, { useEffect, useRef } from 'react';
-import { Share2, Check } from 'lucide-react';
-import { MotionDiv, useReducedMotion } from '../Motion';
+import { useReducedMotion } from '../Motion';
 import { downloadMilestoneCard, type Milestone } from './milestones';
+import { Sheet } from '../ui/Sheet';
+import { Button } from '../ui/Button';
 import { FramePortal } from '../ui/Frame';
-import { COLORS } from '../../design/tokens';
 
-const CONFETTI = [COLORS.accent, '#3A8D5F', '#33658A', COLORS.accentDark, COLORS.accentDarkText];
+/** The burst in the system's colours: ink, and green for something done (no orange on a
+ *  passing effect). Read from the tokens so it follows the theme. */
+const confettiColours = () => {
+  const css = getComputedStyle(document.documentElement);
+  return ['--ink-primary', '--success-hex', '--ink-secondary']
+    .map(name => css.getPropertyValue(name).trim())
+    .filter(Boolean);
+};
 
 interface Props {
   milestone: Milestone;
@@ -33,6 +40,8 @@ const MilestoneCelebration: React.FC<Props> = ({ milestone, dateIso, onClose }) 
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext('2d');
     if (!canvas || !ctx) return;
+    const CONFETTI = confettiColours();
+    if (!CONFETTI.length) return;
     const W = (canvas.width = canvas.offsetWidth);
     const H = (canvas.height = canvas.offsetHeight);
     const parts = Array.from({ length: 90 }, () => ({
@@ -68,43 +77,23 @@ const MilestoneCelebration: React.FC<Props> = ({ milestone, dateIso, onClose }) 
     return () => cancelAnimationFrame(raf);
   }, [reduceMotion, milestone.id]);
 
-  // Portalled to <body> so the Launchpad bar and the tab bar cannot sit on top of it.
+  // The shared Sheet (from the bottom on a phone): its own words and its own way out, Share card
+  // and Nice. The burst falls once over the top, then is gone; it never takes a tap.
   return (
-    <FramePortal>
-    <div className="frame-dialog [--frame-gap:1.5rem] z-[var(--z-dialog)] flex items-center justify-center" role="dialog" aria-modal="true" aria-label={`Milestone: ${milestone.title}`}>
-      <div className="absolute inset-0 bg-black/40" onClick={onClose} />
-      <canvas ref={canvasRef} className="pointer-events-none absolute inset-0 w-full h-full" aria-hidden />
-      <MotionDiv
-        initial={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.85, y: 12 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ duration: 0.28, ease: 'easeOut' }}
-        className="relative w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] bg-white dark:bg-surface-paper dark:border-zinc-700 shadow-[6px_6px_0_0_#1a1a1a] dark:shadow-[6px_6px_0_0_#3f3f46] px-7 py-8 text-center"
-      >
-        <div className="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center text-[30px]" style={{ backgroundColor: '#FDEEDF' }}>
-          {milestone.kind === 'streak' ? '🔥' : '🎯'}
-        </div>
-        <p className="text-[10.5px] font-bold uppercase tracking-[0.14em] mb-1" style={{ color: '#9e9186' }}>Milestone reached</p>
-        <h2 className="text-2xl font-semibold mb-2" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{milestone.title}</h2>
-        <p className="text-[14px] leading-relaxed mb-6" style={{ color: '#5a5550' }}>{milestone.blurb}</p>
-        <div className="flex items-center justify-center gap-2.5">
-          <button
-            onClick={() => downloadMilestoneCard(milestone, dateIso)}
-            className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold border-2 transition-transform active:translate-y-0.5"
-            style={{ borderColor: 'rgba(var(--nsu-orange-rgb), 0.35)', color: COLORS.accent }}
-          >
-            <Share2 size={14} /> Share card
-          </button>
-          <button
-            onClick={onClose}
-            className="inline-flex items-center gap-1.5 rounded-full px-5 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: COLORS.accent, boxShadow: '0 3px 0 var(--accent-dark-hex)' }}
-          >
-            <Check size={14} /> Nice
-          </button>
-        </div>
-      </MotionDiv>
-    </div>
-    </FramePortal>
+    <>
+      <FramePortal><canvas ref={canvasRef} className="frame-takeover pt-milestone-burst" aria-hidden /></FramePortal>
+      <Sheet open bare title={`Milestone: ${milestone.title}`} onClose={onClose} className="pt-milestone"
+        footer={
+          <div className="ui-pair">
+            <Button size="lg" onClick={() => downloadMilestoneCard(milestone, dateIso)}>Share card</Button>
+            <Button kind="main" size="lg" onClick={onClose}>Nice</Button>
+          </div>
+        }>
+        <p className="t-label pt-milestone-label">Milestone reached</p>
+        <h2 className="t-title pt-milestone-title">{milestone.title}</h2>
+        <p className="t-sub">{milestone.blurb}</p>
+      </Sheet>
+    </>
   );
 };
 

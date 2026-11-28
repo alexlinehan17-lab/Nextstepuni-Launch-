@@ -1,3 +1,4 @@
+import { useBackStep } from '../contexts/NavigationContext';
 import { ArrowRight } from 'lucide-react';
 /**
  * @license
@@ -158,6 +159,9 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile, onOpenCareerP
   const [sortMode, setSortMode] = useState<SortMode>('match');
   const [regionFilter, setRegionFilter] = useState<string>('');
   const [savedData, setSavedData] = useState<FutureFinderData | null>(null);
+  // The bar's one Back returns from a course or the comparison to the results (area 7b: the in-page
+  // "Back to results" links go).
+  useBackStep(phase === 'detail' || phase === 'compare', () => setPhase('results'));
 
   // Auto-compute estimated points from profile subjects
   const autoPoints = useMemo(() => computeCurrentPoints(profile), [profile]);
@@ -882,7 +886,7 @@ function ResultCard({
 
 /** Phase 4: Detail View */
 function DetailPhase({
-  result, answers: _answers, autoPoints, isSaved, isCompared, onToggleSave, onToggleCompare, onBack,
+  result, answers: _answers, autoPoints, isSaved, isCompared, onToggleSave, onToggleCompare, onBack: _onBack,
 }: {
   result: RecommendationResult;
   answers: FutureFinderAnswers;
@@ -900,9 +904,6 @@ function DetailPhase({
 
   return (
     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.35 }}>
-      <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300 mb-4 transition-colors">
-        <ChevronLeft size={16} /> Back to results
-      </button>
 
       <div className="bg-white dark:bg-surface-paper overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
         {/* Header */}
@@ -1098,7 +1099,7 @@ function InfoTile({ icon: Icon, label, value }: { icon: LucideIcon; label: strin
 
 /** Phase 5: Compare View */
 function ComparePhase({
-  courses, answers: _answers, onBack, onRemove,
+  courses, answers: _answers, onBack: _onBack, onRemove,
 }: {
   courses: RecommendationResult[];
   answers: FutureFinderAnswers;
@@ -1119,9 +1120,6 @@ function ComparePhase({
 
   return (
     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.35 }}>
-      <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300 mb-4 transition-colors">
-        <ChevronLeft size={16} /> Back to results
-      </button>
 
       <div className="flex items-start justify-between gap-4 mb-6">
         <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Compare Courses</h2>

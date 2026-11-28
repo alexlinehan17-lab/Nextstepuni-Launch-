@@ -28,9 +28,13 @@ interface NotificationBellProps {
   onUnreadCountChange?: (count: number) => void;
   variant?: 'icon' | 'menu' | 'sidebar';
   returnFocusRef?: React.RefObject<HTMLButtonElement | null>;
+  /** In a list of rows (the account sheet): the row's own glyph in place of
+   *  the folded note, and the arrow that says it opens. */
+  menuIcon?: React.ReactNode;
+  menuTrailing?: React.ReactNode;
 }
 
-const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountChange, variant = 'icon', returnFocusRef }) => {
+const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountChange, variant = 'icon', returnFocusRef, menuIcon, menuTrailing }) => {
   const isDemo = uid === DEMO_STUDENT_UID;
   const [isOpen, setIsOpen] = useState(false);
   const [notifications, setNotifications] = useState<AppNotification[]>([]);
@@ -136,11 +140,15 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
         onClick={() => setIsOpen(!isOpen)}
         className={`nsu-post-toggle ${isOpen ? 'is-open' : ''}`}
       >
+        {variant === 'menu' && menuIcon ? <span className="nsu-post-row-icon" aria-hidden="true">{menuIcon}</span> : (
         <span className="nsu-post-symbol" aria-hidden="true">
           <span className="nsu-folded-note"><i /><i /></span>
           {unreadCount > 0 && <span className="nsu-post-count">{unreadCount > 99 ? '99+' : unreadCount}</span>}
         </span>
-        {variant === 'menu' && <span>Notifications</span>}
+        )}
+        {variant === 'menu' && <span className="nsu-post-row-label">Notifications</span>}
+        {variant === 'menu' && menuIcon && unreadCount > 0 && <span className="nsu-post-row-count">{unreadCount > 99 ? '99+' : unreadCount}</span>}
+        {variant === 'menu' && menuTrailing}
       </button>
 
       <AnimatePresence>

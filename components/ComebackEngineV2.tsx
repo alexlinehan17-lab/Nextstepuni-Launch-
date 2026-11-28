@@ -5,13 +5,9 @@
  * existing progress signals, builds a seven-day plan and routes every action
  * into the app's established execution tools.
  */
-import ToolMasthead from './launchpad/ToolMasthead';
 import React, { useEffect, useMemo, useState } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import {
-  ArrowRight, CalendarDays, Check, CheckCircle2, Clock3,
-  ListChecks, RefreshCcw, Sparkles,
-} from 'lucide-react';
+import { Check, CheckCircle2 } from 'lucide-react';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { useAuth } from '../contexts/AuthContext';
@@ -20,9 +16,17 @@ import { useOptionalProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 import type { StudentSubjectProfile } from './subjectData';
 import { AnimatePresence, MotionDiv } from './Motion';
-import PrimaryActionButton from './ui/PrimaryActionButton';
+import { PinnedFooter } from './ui/Bars';
+import { Button, IconButton, TextButton } from './ui/Button';
+import { ChoiceTile, useRovingRadios } from './ui/Choice';
+import { PaperSheet } from './ui/List';
+import { Confirm } from './ui/Sheet';
+import { useFrameTask } from './ui/Frame';
+import SubjectAvatar from './SubjectAvatar';
+import { useBackStep } from '../contexts/NavigationContext';
 import { LoadingState } from './ui/SystemState';
 import { useToast } from './Toast';
+import './comeback/comeback-7.css';
 import {
   buildRecoveryPlan,
   type RecoveryCapacity,
@@ -52,14 +56,6 @@ const CAPACITIES: { value: RecoveryCapacity; title: string; detail: string }[] =
   { value: 5, title: 'Steady week', detail: '5 focused blocks' },
   { value: 7, title: 'Strong return', detail: '7 focused blocks' },
 ];
-
-const signalTone = {
-  attention: { ink: '#A43F08' },
-  steady: { ink: '#5F574F' },
-  positive: { ink: '#1F5F3E' },
-};
-
-const shell = 'lp-panel';
 
 const recoveryPlanSessionKey = (uid: string) => `nextstepuni:comeback-plan:${uid}`;
 
@@ -100,6 +96,11 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
   const [plan, setPlan] = useState<RecoveryPlan | null>(sessionPlan);
   const [legacyAnchor, setLegacyAnchor] = useState<string | undefined>();
   const [loadedCompletions, setLoadedCompletions] = useState<Record<string, string[]>>({});
+  const [confirmRebuild, setConfirmRebuild] = useState(false);
+  // The steps are a task on a phone: Continue is pinned and the tab bar steps aside; the bar's
+  // one Back steps back a step (navigation.md: one leave control, no in-page back link).
+  useFrameTask(stage !== 'plan' && !isLoading);
+  useBackStep(stage === 'capacity' || stage === 'diagnosis', () => setStage(current => current === 'diagnosis' ? 'capacity' : 'setup'));
 
   const completions = suppliedCompletions ?? loadedCompletions;
   const curriculumLevel = user?.curriculumLevel ?? profile.curriculumLevel ?? 'senior';
@@ -219,153 +220,148 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
   const activePlan = plan ?? draftPlan;
   const completed = activePlan.actions.filter(action => action.done).length;
   const completionPercent = activePlan.actions.length ? Math.round(completed / activePlan.actions.length * 100) : 0;
+  const firstDay = activePlan.actions[0]?.dayLabel;
+  const lastDay = activePlan.actions[activePlan.actions.length - 1]?.dayLabel;
+  const stepNumber = stage === 'setup' ? 1 : stage === 'capacity' ? 2 : 3;
+  const foot = (children: React.ReactNode) => (
+    <div className="cb7-foot-wrap frame-float frame-float-bottom">
+      <PinnedFooter className="cb7-foot" note={`Step ${stepNumber} of 4`}>{children}</PinnedFooter>
+    </div>
+  );
 
   return (
-    <div className="lp-comeback mx-auto w-full max-w-5xl pb-14 text-[#1A1A1A] dark:text-[#F6F2EC]">
-      <ToolMasthead tool="comeback" eyebrow="A fresh starting point" title="The Comeback." subtitle="A smaller plan. A little momentum. Start here." />
-      {stage === 'plan' && <button type="button" onClick={resetPlan} className="mb-5 lp-button secondary"><RefreshCcw size={16} /> Rebuild plan</button>}
+    <div className="cb7" data-stage={stage}>
       <AnimatePresence mode="wait">
         {stage === 'setup' && (
-          <MotionDiv key="setup" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }} className="grid gap-6 lg:grid-cols-2">
-            <section className={`${shell} p-6 md:p-8`}>
-              <div className="mb-7 flex items-center gap-3">
-                <span className="font-mono text-[11px] font-bold text-accent">01</span>
-                <span className="h-px w-10 bg-accent" />
-                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">First, what changed?</p>
+          <MotionDiv key="setup" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }} className="cb7-step cb7-step--aside">
+            <section className="cb7-main">
+              <div className="cb7-top">
+                <Motif n="01" label="First, what changed?" />
+                <h2 className="t-title cb7-title">No judgement. Just a better starting point.</h2>
               </div>
-              <h2 className="mt-2 font-serif text-2xl font-semibold">No judgement. Just a better starting point.</h2>
-              <div className="mt-5 space-y-2.5">
-                {REASONS.map(option => {
-                  const selected = reason === option.id;
-                  return (
-                    <button key={option.id} type="button" onClick={() => setReason(option.id)} className={`w-full rounded-xl border-2 p-4 text-left transition-transform duration-200 ${selected ? 'border-[#1A1A1A] bg-white -translate-y-0.5' : 'border-[#DED8D1] bg-transparent hover:border-[#8D837A]'}`}>
-                      <span className="block text-sm font-bold">{option.title}</span>
-                      <span className="mt-1 block text-xs leading-5 text-[#766E67] dark:text-[#BBB3AB]">{option.detail}</span>
-                    </button>
-                  );
-                })}
-              </div>
-              <div className="lp-sticky-action mt-6"><button className="lp-button w-full" onClick={() => setStage('capacity')}>Continue <ArrowRight size={17} /></button></div>
+              <ChoiceRow label="First, what changed?" options={REASONS.map(option => ({ value: option.id, label: option.title, meta: option.detail }))} value={reason} onChange={value => setReason(value as RecoveryReason)} />
+              {foot(<Button kind="main" size="lg" block arrow="forward" onClick={() => setStage('capacity')}>Continue</Button>)}
             </section>
-            <aside className="lp-body hidden lg:block"><h2 className="lp-title">One step at a time.</h2><p>First, what changed. Then choose a week that feels manageable. You can review the plan before saving it.</p></aside>
+            <aside className="cb7-aside"><h3 className="t-heading">One step at a time.</h3><p className="t-sub">First, what changed. Then choose a week that feels manageable. You can review the plan before saving it.</p></aside>
           </MotionDiv>
         )}
-        {stage === 'capacity' && (<MotionDiv key="capacity" className="max-w-2xl mx-auto">
-          <button className="mb-4 text-sm underline" onClick={() => setStage('setup')}>Back to what changed</button>
-            <section className={`${shell} p-6 md:p-8`}>
-              <div className="mb-7 flex items-center gap-3">
-                <span className="font-mono text-[11px] font-bold text-accent">02</span>
-                <span className="h-px w-10 bg-accent" />
-                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Choose an honest week</p>
+        {stage === 'capacity' && (
+          <MotionDiv key="capacity" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }} className="cb7-step">
+            <section className="cb7-main">
+              <div className="cb7-top">
+                <Motif n="02" label="Choose an honest week" />
+                <h2 className="t-title cb7-title">What can you genuinely manage?</h2>
+                <p className="t-sub">This is a recovery week, not punishment. We cap the plan and respect your existing rest days.</p>
               </div>
-              <h2 className="mt-2 font-serif text-2xl font-semibold">What can you genuinely manage?</h2>
-              <p className="mt-2 text-sm leading-6 text-[#766E67] dark:text-[#BBB3AB]">This is a recovery week, not punishment. We cap the plan and respect your existing rest days.</p>
-              <div className="mt-6 grid gap-3">
-                {CAPACITIES.map(option => {
-                  const selected = capacity === option.value;
-                  return (
-                    <button key={option.value} type="button" onClick={() => setCapacity(option.value)} className={`flex items-center justify-between rounded-xl border-2 px-4 py-4 text-left transition-transform duration-200 ${selected ? 'border-[#1A1A1A] bg-white -translate-y-0.5' : 'border-[#DED8D1] hover:border-[#8D837A]'}`}>
-                      <span><strong className="block text-sm">{option.title}</strong><span className="mt-1 block text-xs text-[#766E67] dark:text-[#BBB3AB]">{option.detail}</span></span>
-                      <span className={`flex h-7 w-7 items-center justify-center rounded-full border-2 ${selected ? 'border-[#1F5F3E] bg-[#1F5F3E] text-white' : 'border-[#CFC8C0]'}`}>{selected && <Check size={15} strokeWidth={3} />}</span>
-                    </button>
-                  );
-                })}
-              </div>
-              {legacyAnchor && <p className="mt-5 rounded-xl bg-surface-soft px-4 py-3 text-xs leading-5 text-[#5F574F]">Your previous goal is preserved: <strong>{legacyAnchor}</strong></p>}
-              <PrimaryActionButton label="Read my recovery signals" icon={ArrowRight} onClick={() => setStage('diagnosis')} className="mt-7 w-full" />
+              <ChoiceRow label="Choose an honest week" options={CAPACITIES.map(option => ({ value: String(option.value), label: option.title, meta: option.detail }))} value={String(capacity)} onChange={value => setCapacity(Number(value) as RecoveryCapacity)} />
+              {legacyAnchor && <p className="t-sub cb7-anchor">Your previous goal is preserved: <span className="cb7-ink">{legacyAnchor}</span></p>}
+              {foot(<Button kind="main" size="lg" block arrow="forward" onClick={() => setStage('diagnosis')}>Read my recovery signals</Button>)}
             </section>
           </MotionDiv>
         )}
 
         {stage === 'diagnosis' && (
-          <MotionDiv key="diagnosis" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }} className={`${shell} overflow-hidden`}>
-            <div className="border-b border-[#DED8D1] p-6 md:p-8">
-              <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Your diagnosis</p>
-              <h2 className="mt-2 font-serif text-3xl font-semibold">Here is what the app can actually see.</h2>
-              <p className="mt-2 max-w-2xl text-sm leading-6 text-[#766E67] dark:text-[#BBB3AB]">No invented productivity score. These are the signals behind your plan, and you can rebuild it whenever your week changes.</p>
-            </div>
-            <div className="grid gap-px bg-[#DED8D1] md:grid-cols-3">
-              {draftPlan.signals.map((signal, index) => {
-                const tone = signalTone[signal.tone];
-                return (
-                  <div key={signal.id} className="min-h-40 bg-white p-6 dark:bg-surface-paper">
-                    <div className="mb-5 flex items-center gap-3">
-                      <span className="font-mono text-[11px] font-bold text-accent">{String(index + 1).padStart(2, '0')}</span>
-                      <span className="h-px w-8 bg-accent" />
-                    </div>
-                    <h3 className="text-sm font-bold" style={{ color: tone.ink }}>{signal.label}</h3>
-                    <p className="mt-2 text-sm leading-6 text-[#6F6861] dark:text-[#C9C2BA]">{signal.detail}</p>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="grid gap-5 p-6 md:grid-cols-[1fr_auto] md:items-center md:p-8">
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Recovery focus</p>
-                <p className="mt-2 font-serif text-xl font-semibold">{draftPlan.priorities.join(' and ') || 'Your current subjects'}</p>
-                <p className="mt-1 text-sm text-[#766E67] dark:text-[#BBB3AB]">Only two priorities at most. Everything else stays in maintenance mode for seven days.</p>
+          <MotionDiv key="diagnosis" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }} className="cb7-step">
+            <section className="cb7-main">
+              <div className="cb7-top">
+                <Motif n="03" label="Your diagnosis" />
+                <h2 className="t-title cb7-title">Here is what the app can actually see.</h2>
+                <p className="t-sub">No invented productivity score. These are the signals behind your plan, and you can rebuild it whenever your week changes.</p>
               </div>
-              <div className="flex flex-wrap gap-3">
-                <button type="button" onClick={() => setStage('setup')} className="min-h-12 rounded-xl border-2 border-[#1A1A1A] px-5 text-sm font-bold dark:border-[#E7E2DC]">Adjust</button>
-                <PrimaryActionButton label="Build my seven-day plan" icon={Sparkles} onClick={createPlan} />
+              <ol className="cb7-signals">
+                {draftPlan.signals.map((signal, index) => (
+                  <li key={signal.id}>
+                    <span className="ui-readout cb7-signal-n">{String(index + 1).padStart(2, '0')}</span>
+                    <span className="cb7-signal-copy"><span className="t-row">{signal.label}</span><span className="t-sub">{signal.detail}</span></span>
+                  </li>
+                ))}
+              </ol>
+              <div className="cb7-focus">
+                <p className="t-label">Recovery focus</p>
+                <p className="t-heading">{draftPlan.priorities.join(' and ') || 'Your current subjects'}</p>
+                <p className="t-sub">Only two priorities at most. Everything else stays in maintenance mode for seven days.</p>
               </div>
-            </div>
+              {foot(<><Button kind="main" size="lg" block arrow="forward" onClick={createPlan}>Build my seven-day plan</Button><TextButton tone="quiet" className="cb7-adjust" onClick={() => setStage('setup')}>Adjust</TextButton></>)}
+            </section>
           </MotionDiv>
         )}
 
         {stage === 'plan' && (
-          <MotionDiv key="plan" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }} className="grid gap-6 lg:grid-cols-[300px_1fr]">
-            <aside className="h-fit overflow-hidden rounded-[24px] border-2 border-accent bg-white shadow-[5px_5px_0_0_var(--nsu-orange)] dark:bg-surface-paper">
-              <div className="p-6">
-                <div className="mb-6 flex items-center gap-3">
-                  <span className="font-mono text-[11px] font-bold text-accent">07</span>
-                  <span className="h-px w-10 bg-accent" />
-                  <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Day plan</p>
+          <MotionDiv key="plan" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }} className="cb7-step cb7-step--plan">
+            <div className="cb7-top">
+              <Motif n="04" label="Your seven days" />
+              <h2 className="t-title cb7-title">A smaller plan. A little momentum.</h2>
+            </div>
+            <div className="cb7-plan">
+              <PaperSheet className="cb7-target" label="Seven-day target">
+                <p className="t-label">Seven-day target</p>
+                <p className="cb7-count"><span className="cb7-num">{completed}</span><span className="cb7-of"> / {activePlan.actions.length}</span><span className="cb7-done"> blocks done</span></p>
+                <span className="cb7-bar" role="progressbar" aria-label="Blocks done this week" aria-valuemin={0} aria-valuemax={100} aria-valuenow={completionPercent}><i style={{ width: `${completionPercent}%` }} /></span>
+                <div className="cb7-facts">
+                  <div><p className="t-label">Focus</p><p className="t-row">{activePlan.priorities.join(' and ')}</p></div>
+                  <div><p className="t-label">Capacity</p><p className="t-row">{activePlan.capacity} blocks at most</p></div>
                 </div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#A39A91]">Seven-day target</p>
-                <p className="mt-1 font-serif text-4xl font-semibold">{completed}<span className="text-xl text-[#A39A91]">/{activePlan.actions.length}</span></p>
-                <div className="mt-4 h-2 overflow-hidden rounded-full bg-surface-soft"><div className="h-full rounded-full bg-accent transition-[width] duration-500" style={{ width: `${completionPercent}%` }} /></div>
-              </div>
-              <div className="space-y-5 border-t border-hairline p-6">
-                <div><p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A39A91]">Focus</p><p className="mt-1 text-sm font-bold">{activePlan.priorities.join(' · ')}</p></div>
-                <div><p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A39A91]">Capacity</p><p className="mt-1 text-sm font-bold">{activePlan.capacity} blocks, maximum</p></div>
-                <p className="border-l-2 border-accent pl-3 text-xs leading-5 text-[#6F6861] dark:text-[#C9C2BA]">Finishing every block is useful. Missing one does not erase the others—the plan can be rebuilt without penalty.</p>
-              </div>
-            </aside>
+                <p className="t-meta">Finishing every block is useful. Missing one does not erase the others. The plan can be rebuilt without penalty.</p>
+              </PaperSheet>
 
-            <section className="space-y-3">
-              {activePlan.actions.map((action, index) => (
-                <MotionDiv key={action.id} initial={{ opacity: 0, x: 12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: index * 0.045, duration: 0.25 }} className={`${shell} p-5 md:p-6 ${action.done ? 'opacity-65' : ''}`}>
-                  <div className="grid gap-4 md:grid-cols-[88px_1fr_auto] md:items-center">
-                    <div>
-                      <p className="font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-[#A39A91]">{action.dayLabel}</p>
-                      <p className="mt-1 flex items-center gap-1.5 text-xs text-[#766E67] dark:text-[#BBB3AB]"><Clock3 size={13} /> {action.durationMinutes} min</p>
-                    </div>
-                    <div>
-                      <div className="flex flex-wrap items-center gap-2"><h3 className={`font-serif text-xl font-semibold ${action.done ? 'line-through' : ''}`}>{action.subject}</h3><span className="rounded-md bg-surface-soft px-2 py-1 text-[9px] font-bold uppercase tracking-[0.1em] text-[#5F574F]">{action.sessionType.replace('-', ' ')}</span></div>
-                      {action.topic && <p className="mt-1 text-sm font-semibold text-[#A43F08]">{action.topic}</p>}
-                      <p className="mt-1.5 text-xs leading-5 text-[#766E67] dark:text-[#BBB3AB]">{action.reason}</p>
-                    </div>
-                    <div className="flex items-center gap-2 md:justify-end">
-                      <button type="button" onClick={() => toggleAction(action.id)} aria-label={action.done ? 'Mark incomplete' : 'Mark complete'} className={`flex h-11 w-11 items-center justify-center rounded-xl border-2 ${action.done ? 'border-[#1F5F3E] bg-[#1F5F3E] text-white' : 'border-[#CFC8C0]'}`}><Check size={18} strokeWidth={3} /></button>
-                      {!action.done && <button type="button" onClick={() => openPlanDestination(action.destination)} className="inline-flex min-h-11 items-center gap-2 rounded-xl border-2 border-[#1A1A1A] px-4 text-xs font-bold dark:border-[#E7E2DC]">{action.destination === 'mark-bank' ? <ListChecks size={16} /> : <CalendarDays size={16} />}{action.destination === 'mark-bank' ? 'Open Mark Bank' : 'Open timetable'}</button>}
-                    </div>
+              <section className="cb7-week" aria-label="This week">
+                <div className="cb7-week-head"><h3 className="t-heading">This week</h3>{firstDay && <span className="ui-readout">{firstDay === lastDay ? firstDay : `${firstDay} to ${lastDay}`}</span>}</div>
+                <ul className="cb7-blocks">
+                  {activePlan.actions.map(action => (
+                    <li key={action.id} className="cb7-block" data-done={action.done || undefined}>
+                      <span className="t-label cb7-block-when">{action.dayLabel} · {sessionName(action.sessionType)} · {action.durationMinutes} min</span>
+                      <span className="cb7-block-art" aria-hidden="true"><SubjectAvatar subject={action.subject} bare /></span>
+                      <span className="cb7-block-copy">
+                        <span className="t-row cb7-block-subject">{action.subject}</span>
+                        {action.topic && <span className="t-sub">{action.topic}</span>}
+                        <span className="t-meta">{action.reason}</span>
+                        {!action.done && <TextButton arrow="opens" className="cb7-block-go" onClick={() => openPlanDestination(action.destination)}>{action.destination === 'mark-bank' ? 'Open Mark Bank' : 'Open your planner'}</TextButton>}
+                      </span>
+                      <IconButton className="cb7-tick" aria-pressed={action.done} label={action.done ? 'Mark incomplete' : 'Mark complete'} onClick={() => toggleAction(action.id)} icon={<Check className="ui-icon" width={20} height={20} strokeWidth={2} aria-hidden="true" focusable="false" />} />
+                    </li>
+                  ))}
+                </ul>
+                {completionPercent === 100 && (
+                  <div className="cb7-complete">
+                    <CheckCircle2 className="cb7-complete-mark" width={28} height={28} strokeWidth={1.75} aria-hidden="true" />
+                    <h3 className="t-heading">The comeback week is complete.</h3>
+                    <p className="t-sub">You rebuilt momentum without trying to repair everything at once. Return to your normal timetable, or rebuild this plan if another small recovery week would help.</p>
                   </div>
-                </MotionDiv>
-              ))}
-              {completionPercent === 100 && (
-                <div className={`${shell} bg-white p-6 text-center dark:bg-[#193226]`}>
-                  <CheckCircle2 className="mx-auto text-[#1F5F3E] dark:text-[#76C499]" size={34} />
-                  <h3 className="mt-3 font-serif text-2xl font-semibold">The comeback week is complete.</h3>
-                  <p className="mx-auto mt-2 max-w-lg text-sm leading-6 text-[#456453] dark:text-[#B9D8C5]">You rebuilt momentum without trying to repair everything at once. Return to your normal timetable, or rebuild this plan if another small recovery week would help.</p>
-                </div>
-              )}
-            </section>
+                )}
+                <TextButton tone="quiet" className="cb7-rebuild" onClick={() => setConfirmRebuild(true)}>Rebuild plan</TextButton>
+              </section>
+            </div>
+            <Confirm open={confirmRebuild} sentence="Rebuild plan?" keepLabel="Keep this plan" onKeep={() => setConfirmRebuild(false)} dangerLabel="Rebuild plan" onDanger={() => { setConfirmRebuild(false); resetPlan(); }} />
           </MotionDiv>
         )}
       </AnimatePresence>
     </div>
   );
+};
+
+/** The numbered motif kept from today's tool ("01 —— First, what changed?"), board c-tools2-comeback. */
+const Motif: React.FC<{ n: string; label: string }> = ({ n, label }) => (
+  <div className="cb7-motif"><b className="ui-readout">{n}</b><i aria-hidden="true" /><span className="t-label">{label}</span></div>
+);
+
+/** One answer from a short list, as the shared choice tiles: an ink outline and a drawn tick. */
+function ChoiceRow<V extends string>({ label, options, value, onChange }: { label: string; options: { value: V; label: string; meta: string }[]; value: V; onChange: (value: V) => void }) {
+  const current = options.findIndex(option => option.value === value);
+  const roving = useRovingRadios(options.length, current, index => onChange(options[index].value));
+  return (
+    <div className="cb7-choices" role="radiogroup" aria-label={label}>
+      {options.map((option, index) => (
+        <ChoiceTile key={option.value} ref={element => { roving.refs.current[index] = element; }} chosen={option.value === value}
+          label={option.label} meta={option.meta} tabIndex={roving.tabIndexOf(index)}
+          onKeyDown={event => roving.onKeyDown(event, index)} onClick={() => onChange(option.value)} />
+      ))}
+    </div>
+  );
+}
+
+const sessionName = (type: RecoveryPlan['actions'][number]['sessionType']) => {
+  const words = type.replace('-', ' ');
+  return words.charAt(0).toUpperCase() + words.slice(1);
 };
 
 export default ComebackEngineV2;

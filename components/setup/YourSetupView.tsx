@@ -5,13 +5,23 @@
  * "Your setup": everything a student told us in onboarding, read back from
  * their saved profile and North Star, each with the editor that already owns
  * it. No new store and no new editing logic.
+ *
+ * The look (r5-your-setup, agreed 26 Nov 2026): the walking character, the big
+ * headline and the seven numbered parts stay; the parts lie on the page between
+ * thin rules (a box you cannot press has no line round it), each subject carries
+ * its character, the week is drawn as seven marks, and the choices are the
+ * shared selection bar. On a laptop the parts sit in two columns and "Change
+ * exam date" sits beside "Change year" at the top of School year.
  */
 
-import { useId, useState } from 'react';
-import { ArrowUpRight, CalendarDays, PencilLine } from 'lucide-react';
-import KobraScope, { Button, Input, Tabs, TabsList, TabsTrigger } from '../approved-ui-runtime';
+import { useState } from 'react';
+import KobraScope from '../approved-ui-runtime';
 import PageHeader from '../ui/PageHeader';
+import { Button } from '../ui/Button';
+import { SelectionBar } from '../ui/Choice';
+import { Field } from '../ui/Field';
 import ThemeArtwork from '../ThemeArtwork';
+import SubjectAvatar from '../SubjectAvatar';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import { useStudyNotifications } from '../../hooks/useStudyNotifications';
 import { useSettingsContext } from '../../contexts/SettingsContext';
@@ -37,35 +47,25 @@ interface Props {
   onSetDarkMode: (dark: boolean) => void;
 }
 
+/** One numbered part of the page: its number and label, an action at the right, then its content, under a thin rule. */
 function Section({ index, title, action, className = '', children }: {
   index: string; title: string; action?: React.ReactNode; className?: string; children: React.ReactNode;
 }) {
   return (
-    <section className={`ys-card nsu-paper-card ${className}`} aria-labelledby={`ys-${index}`}>
-      <header className="ys-card-head">
+    <section className={`ys-sec ${className}`} aria-labelledby={`ys-${index}`}>
+      <header className="ys-sec-head">
         <p className="ys-eyebrow"><span>{index}</span>{title}</p>
-        {action}
+        {action ? <div className="ys-sec-actions">{action}</div> : null}
       </header>
       {children}
     </section>
   );
 }
 
-function ExamDateEditor({ current, year, onSave }: { current: string | null; year?: YearGroup; onSave: (examStartDate: string) => void }) {
-  const [editing, setEditing] = useState(false);
-  const [value, setValue] = useState('');
+function ExamDateForm({ current, year, onSave, onClose }: { current: string | null; year?: YearGroup; onSave: (examStartDate: string) => void; onClose: () => void }) {
+  const [value, setValue] = useState(() => current ?? getDefaultExamDateForYear(year));
   const [problem, setProblem] = useState<string | null>(null);
-  const id = useId();
   const { min, max } = examDateBounds();
-
-  if (!editing) {
-    return (
-      <Button variant="outline" className="nsu-ink-outline ys-edit ys-date-edit" onClick={() => { setValue(current ?? getDefaultExamDateForYear(year)); setProblem(null); setEditing(true); }}>
-        {current ? 'Change exam date' : 'Set exam date'}<CalendarDays aria-hidden="true" />
-      </Button>
-    );
-  }
-
   return (
     <form
       className="ys-date-form"
@@ -76,36 +76,25 @@ function ExamDateEditor({ current, year, onSave }: { current: string | null; yea
         const reason = examDateProblem(value);
         if (reason) { setProblem(reason); return; }
         onSave(value);
-        setEditing(false);
+        onClose();
       }}
     >
-      <label htmlFor={`${id}-date`}>When do your exams start?</label>
-      <Input
-        id={`${id}-date`}
+      <Field
+        label="When do your exams start?"
         type="date"
         value={value}
         min={min}
         max={max}
         required
-        aria-invalid={problem ? true : undefined}
-        aria-describedby={`${id}-hint${problem ? ` ${id}-problem` : ''}`}
+        help="Choose the date you’re working towards. You can change it again whenever you need to."
+        error={problem ?? undefined}
         onChange={event => { setValue(event.target.value); setProblem(null); }}
       />
-      <p id={`${id}-hint`} className="ys-meta">Choose the date you’re working towards. You can change it again whenever you need to.</p>
-      {problem && <p id={`${id}-problem`} className="ys-date-problem" role="alert">{problem}</p>}
       <div className="ys-date-actions">
-        <Button type="submit" className="ys-primary">Save date</Button>
-        <Button type="button" variant="outline" className="nsu-ink-outline" onClick={() => setEditing(false)}>Cancel</Button>
+        <Button kind="main" type="submit">Save date</Button>
+        <Button onClick={onClose}>Cancel</Button>
       </div>
     </form>
-  );
-}
-
-function EditButton({ label, onClick, external = false }: { label: string; onClick: () => void; external?: boolean }) {
-  return (
-    <Button variant="outline" className="nsu-ink-outline ys-edit" onClick={onClick}>
-      {label}{external ? <ArrowUpRight aria-hidden="true" /> : <PencilLine aria-hidden="true" />}
-    </Button>
   );
 }
 
@@ -119,11 +108,17 @@ export default function YourSetupView({
   // Settings are optional here (tests render the page without a provider).
   const settingsContext = useSettingsContext();
   const quizOn = settingsContext?.settings.studyQuiz !== false;
+  const [editingDate, setEditingDate] = useState(false);
+  const examYear = yearGroup ?? profile?.yearGroup;
+  const canChangeDate = Boolean(profile && onSaveExamDate && canEditExamDate(examYear));
+  const dateButton = canChangeDate && !editingDate
+    ? <Button className="ys-date-edit" onClick={() => setEditingDate(true)}>{profile?.examStartDate ? 'Change exam date' : 'Set exam date'}</Button>
+    : null;
 
   return (
     <KobraScope className="nsu-your-setup">
-      <div className={`${mobileAppDesign ? 'mobile-editorial ' : ''}product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]`}>
-        <div className="ys-topbar" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      <div className="product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
+        <div className="ys-topbar">
           <div className="ys-width">
             <PageHeader onBack={onBack} eyebrow="Your profile" title="Your setup" compact />
           </div>
@@ -131,38 +126,42 @@ export default function YourSetupView({
 
         <main className="ys-width ys-main">
           <div className="ys-hero">
-            <div>
-              <p className="ys-kicker">What you told us</p>
-              <h1 className="ys-title">Everything you set up, in one place.</h1>
-              <p className="ys-lede">Your year, your goal, your subjects and your week shape your plan, your points and what we recommend. Change any of them when things change.</p>
+            <div className="ys-hero-words">
+              <p className="t-label ys-kicker">What you told us</p>
+              <h1 className="t-display ys-title">Everything you set up, in one place.</h1>
+              <p className="t-sub ys-lede">Your year, your goal, your subjects and your week shape your plan, your points and what we recommend. Change any of them when things change.</p>
             </div>
-            <ThemeArtwork src="/assets/star-crew/companions/wayfinder.png" transparentBackground alt="" width={150} height={150} className="ys-art" />
+            <ThemeArtwork src="/assets/star-crew/companions/wayfinder.png" transparentBackground alt="" width={168} height={168} className="ys-art" />
           </div>
 
           {!profile && (
-            <section className="ys-card nsu-paper-card ys-empty" aria-labelledby="ys-empty-title">
-              <h2 id="ys-empty-title">You haven&apos;t finished setting up yet.</h2>
-              <p>Tell us your year, your subjects and the grades you&apos;re aiming for, and your plan builds around them.</p>
-              <Button className="ys-primary" onClick={onFinishSetup}>Finish setting up<ArrowUpRight aria-hidden="true" /></Button>
+            <section className="ys-sec ys-empty" aria-labelledby="ys-empty-title">
+              <h2 id="ys-empty-title" className="ys-value">You haven&apos;t finished setting up yet.</h2>
+              <p className="ys-meta">Tell us your year, your subjects and the grades you&apos;re aiming for, and your plan builds around them.</p>
+              <Button kind="main" arrow="forward" className="ys-finish" onClick={onFinishSetup}>Finish setting up</Button>
             </section>
           )}
 
           <div className="ys-grid">
-            <Section index="01" title="School year" action={<EditButton label="Change year" onClick={onOpenSettings} />}>
+            <Section index="01" title="School year" action={<>
+              {!mobileAppDesign ? dateButton : null}
+              <Button onClick={onOpenSettings}>Change year</Button>
+            </>}>
               <h2 id="ys-01" className="ys-value">{setup.year?.label || 'Not set'}</h2>
               {setup.year && <p className="ys-meta">{setup.year.cycle}</p>}
               {setup.exam && (
                 <dl className="ys-facts">
                   <div><dt>Exams start</dt><dd>{setup.exam.label}</dd></div>
-                  <div><dt>Time to go</dt><dd>{setup.exam.daysAway > 0 ? `${setup.exam.daysAway} days` : 'Underway'}</dd></div>
+                  <div><dt>Time to go</dt><dd>{setup.exam.daysAway > 0 ? <>{setup.exam.daysAway} <small>days</small></> : 'Underway'}</dd></div>
                 </dl>
               )}
-              {profile && onSaveExamDate && canEditExamDate(yearGroup ?? profile.yearGroup) && (
-                <div className="ys-date"><ExamDateEditor current={profile.examStartDate} year={yearGroup ?? profile.yearGroup} onSave={onSaveExamDate} /></div>
+              {mobileAppDesign && dateButton ? <div className="ys-date">{dateButton}</div> : null}
+              {canChangeDate && editingDate && profile && onSaveExamDate && (
+                <div className="ys-date"><ExamDateForm current={profile.examStartDate} year={examYear} onSave={onSaveExamDate} onClose={() => setEditingDate(false)} /></div>
               )}
             </Section>
 
-            <Section index="02" title="Your North Star" action={<EditButton label={setup.northStar ? 'Edit North Star' : 'Set North Star'} onClick={onEditNorthStar} />}>
+            <Section index="02" title="Your North Star" action={<Button onClick={onEditNorthStar}>{setup.northStar ? 'Edit North Star' : 'Set North Star'}</Button>}>
               {setup.northStar ? (
                 <>
                   <h2 id="ys-02" className="ys-value">{setup.northStar.title}</h2>
@@ -171,7 +170,7 @@ export default function YourSetupView({
                     <ul className="ys-vision" aria-label="Your vision board">
                       {setup.northStar.vision.map(card => (
                         <li key={card.id}>
-                          {card.art && <ThemeArtwork src={card.art} transparentBackground alt="" width={52} height={52} />}
+                          {card.art && <ThemeArtwork src={card.art} transparentBackground alt="" width={44} height={44} />}
                           <span>{card.label}</span>
                         </li>
                       ))}
@@ -183,7 +182,7 @@ export default function YourSetupView({
               )}
             </Section>
 
-            <Section index="03" title="Subjects and goals" className="ys-wide" action={profile && <EditButton label="Change subjects" onClick={onEditSubjects} />}>
+            <Section index="03" title="Subjects and goals" className="ys-wide" action={profile && <Button onClick={onEditSubjects}>Change subjects</Button>}>
               <h2 id="ys-03" className="ys-sr">Subjects and goals</h2>
               {setup.subjects.length ? (
                 <>
@@ -192,7 +191,7 @@ export default function YourSetupView({
                     <tbody>
                       {setup.subjects.map(subject => (
                         <tr key={subject.name}>
-                          <th scope="row"><span className="ys-dot" style={{ background: subject.fill }} aria-hidden="true" />{subject.name}</th>
+                          <th scope="row"><span className="ys-subject"><SubjectAvatar subject={subject.name} bare className="ys-subject-art" />{subject.name}</span></th>
                           <td>{subject.level}</td>
                           <td>{subject.current ?? <span className="ys-quiet">Later</span>}</td>
                           <td className="ys-target">{subject.target ?? <span className="ys-quiet">Later</span>}</td>
@@ -211,12 +210,12 @@ export default function YourSetupView({
               ) : <p className="ys-meta">No subjects yet.</p>}
             </Section>
 
-            <Section index="04" title="Your study week" action={profile && <EditButton label="Open Planner" onClick={onOpenPlanner} external />}>
+            <Section index="04" title="Your study week" action={profile && <Button arrow="forward" onClick={onOpenPlanner}>Open Planner</Button>}>
               <h2 id="ys-04" className="ys-value">{setup.studyDays} study {setup.studyDays === 1 ? 'day' : 'days'}</h2>
               <ol className="ys-week" aria-label="Study and rest days">
                 {setup.week.map(day => (
                   <li key={day.day} data-study={day.study || undefined} aria-label={`${day.day}: ${day.study ? 'study' : 'rest'}`}>
-                    <span>{day.short}</span><small>{day.study ? 'Study' : 'Rest'}</small>
+                    <i aria-hidden="true" /><span>{day.short}</span>
                   </li>
                 ))}
               </ol>
@@ -225,24 +224,16 @@ export default function YourSetupView({
 
             <Section index="05" title="Appearance">
               <h2 id="ys-05" className="ys-value">{darkMode ? 'Dark' : 'Light'}</h2>
-              <Tabs value={darkMode ? 'dark' : 'light'} onValueChange={value => onSetDarkMode(value === 'dark')}>
-                <TabsList aria-label="Appearance">
-                  <TabsTrigger value="light">Light</TabsTrigger>
-                  <TabsTrigger value="dark">Dark</TabsTrigger>
-                </TabsList>
-              </Tabs>
+              <SelectionBar label="Appearance" size="md" className="ys-seg" value={darkMode ? 'dark' : 'light'} onChange={value => onSetDarkMode(value === 'dark')}
+                options={[{ value: 'light', label: 'Light' }, { value: 'dark', label: 'Dark' }]} />
             </Section>
 
             {settingsContext && (
               <Section index="06" title="After each session">
                 <h2 id="ys-06" className="ys-value">{quizOn ? 'Quiz on' : 'Quiz off'}</h2>
                 <p className="ys-meta">We’ll ask whether you want to try questions from the topics you studied. You choose whether to start.</p>
-                <Tabs value={quizOn ? 'on' : 'off'} onValueChange={value => settingsContext.updateSetting('studyQuiz', value === 'on')}>
-                  <TabsList aria-label="End-of-session quiz">
-                    <TabsTrigger value="off">Off</TabsTrigger>
-                    <TabsTrigger value="on">On</TabsTrigger>
-                  </TabsList>
-                </Tabs>
+                <SelectionBar label="End-of-session quiz" size="md" className="ys-seg" value={quizOn ? 'on' : 'off'} onChange={value => settingsContext.updateSetting('studyQuiz', value === 'on')}
+                  options={[{ value: 'off', label: 'Off' }, { value: 'on', label: 'On' }]} />
               </Section>
             )}
 
@@ -251,12 +242,8 @@ export default function YourSetupView({
               <Section index="07" title="Notifications">
                 <h2 id="ys-07" className="ys-value">{notify.enabled ? 'On' : 'Off'}</h2>
                 <p className="ys-meta">One notification when your study time is up, so you can work in another app while the timer runs.</p>
-                <Tabs value={notify.enabled ? 'on' : 'off'} onValueChange={value => { if (value === 'on') void notify.turnOn(); else notify.turnOff(); }}>
-                  <TabsList aria-label="Study timer notifications">
-                    <TabsTrigger value="off">Off</TabsTrigger>
-                    <TabsTrigger value="on">On</TabsTrigger>
-                  </TabsList>
-                </Tabs>
+                <SelectionBar label="Study timer notifications" size="md" className="ys-seg" value={notify.enabled ? 'on' : 'off'} onChange={value => { if (value === 'on') void notify.turnOn(); else notify.turnOff(); }}
+                  options={[{ value: 'off', label: 'Off' }, { value: 'on', label: 'On' }]} />
                 {notify.blocked && <p className="ys-meta ys-notify-hint" role="status">{notify.hint}</p>}
               </Section>
             )}

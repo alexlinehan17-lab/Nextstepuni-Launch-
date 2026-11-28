@@ -74,6 +74,9 @@ export interface SheetProps {
   title: ReactNode;
   /** small (17px) for a sheet whose body opens with its own headline. */
   titleSize?: 'heading' | 'small';
+  /** The body opens with its own headline (a tile's card): the head shows only Close, and the
+   *  title stays the sheet's accessible name. */
+  hideTitle?: boolean;
   /** Unsaved changes: Cancel (left) throws them away, this (right) keeps them. Close is not shown. */
   save?: SheetAction;
   /** The main action, pinned at the bottom above the home indicator. */
@@ -81,13 +84,40 @@ export interface SheetProps {
   children: ReactNode;
   /** Name for Close (default "Close"). */
   closeLabel?: string;
+  /** A sheet about someone (the account sheet): their character, bare, after
+   *  Close, and the title at the left with this small line under it. */
+  art?: ReactNode;
+  meta?: ReactNode;
+  /** A sheet that carries its own words and its own way out (the first-visit
+   *  quick tour: Skip and Next): no handle, no header, no swipe. `title` is
+   *  then its accessible name only. Escape still calls onClose. */
+  bare?: boolean;
+  /** false: the caller dims the page itself (the quick tour leaves a hole
+   *  round what it points at), so the sheet paints no scrim of its own. */
+  dim?: boolean;
+  /** A sheet whose own choices are its way out (Finish for now: End and keep,
+   *  Keep studying, Discard): the handle and the title at the left, no Close.
+   *  Escape, the dimmed page and a swipe down still call onClose. */
+  plain?: boolean;
+  /** A quiet word at the right of the head that says how things stand ("Saved" on a module's
+   *  Notes, which save as you type). Not a button; ignored when there is a `save`. */
+  status?: ReactNode;
+  /** Controls at the right of the head that move through what the sheet shows (the marking
+   *  scheme's previous and next question): IconButtons, each 44 x 44. Close stays at the top
+   *  left. Ignored when there is a `save`; takes the place of `status`. */
+  actions?: ReactNode;
+  /** start: the title sits at the left beside Close (a module's Contents and Notes). */
+  titleAlign?: 'center' | 'start';
+  className?: string;
 }
 
-export function Sheet({ open, onClose, title, titleSize = 'heading', save, footer, children, closeLabel = 'Close' }: SheetProps) {
+export function Sheet({ open, onClose, title, titleSize = 'heading', hideTitle = false, save, footer, children, closeLabel = 'Close', art, meta, bare = false, dim = true, plain = false, status, actions, titleAlign = 'center', className = '' }: SheetProps) {
+  const lead = art !== undefined || meta !== undefined;
   const phase = usePresence(open, SHEET_LEAVE_MS);
   const panel = useRef<HTMLDivElement>(null);
   const titleId = useId();
-  useModal(open && phase !== 'closed', onClose, panel);
+  // A bare sheet starts with its words, not its first button (the tour's Skip).
+  useModal(open && phase !== 'closed', onClose, panel, { initialFocus: bare ? 'dialog' : 'first' });
   const [drag, setDrag] = useState<{ y0: number; t0: number; dy: number } | null>(null);
   if (phase === 'closed') return null;
 
@@ -116,22 +146,41 @@ export function Sheet({ open, onClose, title, titleSize = 'heading', save, foote
         data-dragging={drag ? '' : undefined}
         style={drag ? ({ '--sheet-drag': `${drag.dy}px` } as CSSProperties) : undefined}
       >
-        <div className="ui-scrim" aria-hidden="true" onClick={onClose} />
-        <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} className="ui-sheet frame-sheet">
-          <div className="ui-sheet-drag" {...dragHandlers}>
+        {dim ? <div className="ui-scrim" aria-hidden="true" onClick={onClose} /> : null}
+        <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={bare ? undefined : titleId} aria-label={bare && typeof title === 'string' ? title : undefined}
+          tabIndex={-1} className={`ui-sheet frame-sheet${bare ? ' ui-sheet--bare' : ''} ${className}`.trim()}>
+          {bare ? null : <div className="ui-sheet-drag" {...dragHandlers}>
             <span className="ui-sheet-grab" aria-hidden="true" />
-            <div className="ui-sheet-head frame-dialog-head">
+            {plain ? (
+              <div className="ui-sheet-head ui-sheet-head--plain">
+                <h2 id={titleId} className={`ui-sheet-title${titleSize === 'small' ? ' ui-sheet-title--small' : ''}`}>{title}</h2>
+              </div>
+            ) : lead ? (
+              <div className="ui-sheet-head ui-sheet-head--lead frame-dialog-head">
+                <button type="button" className="ui-icon-btn" aria-label={closeLabel} onClick={onClose}>
+                  <X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
+                </button>
+                {art ? <span className="ui-sheet-art" aria-hidden="true">{art}</span> : null}
+                <span className="ui-sheet-who">
+                  <h2 id={titleId} className="ui-sheet-title ui-sheet-title--small">{title}</h2>
+                  {meta ? <span className="ui-sheet-meta">{meta}</span> : null}
+                </span>
+              </div>
+            ) : (
+            <div className={`ui-sheet-head frame-dialog-head${titleAlign === 'start' ? ' ui-sheet-head--start' : ''}`}>
               {save
                 ? <button type="button" className="ui-sheet-text" onClick={onClose}>Cancel</button>
                 : <button type="button" className="ui-icon-btn" aria-label={closeLabel} onClick={onClose}>
                     <X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />
                   </button>}
-              <h2 id={titleId} className={`ui-sheet-title${titleSize === 'small' ? ' ui-sheet-title--small' : ''}`}>{title}</h2>
+              <h2 id={titleId} className={`ui-sheet-title${titleSize === 'small' ? ' ui-sheet-title--small' : ''}${hideTitle ? ' sr-only' : ''}`}>{title}</h2>
               {save
                 ? <button type="button" className="ui-sheet-text ui-sheet-text--strong" onClick={save.onPress}>{save.label}</button>
-                : <span aria-hidden="true" />}
+                : actions ? <span className="ui-sheet-actions">{actions}</span>
+                : status ? <span className="ui-sheet-status">{status}</span> : <span aria-hidden="true" />}
             </div>
-          </div>
+            )}
+          </div>}
           <div className="ui-sheet-body">{children}</div>
           {footer ? <div className="ui-sheet-foot">{footer}</div> : null}
         </div>
@@ -152,9 +201,15 @@ export interface ConfirmProps {
   /** The destructive choice, in red text. */
   dangerLabel: string;
   onDanger: () => void;
+  /** A typed check under the words (the Admin dashboard's "Re-enter your password", area 8b): a Field. */
+  children?: ReactNode;
+  /** The destructive choice cannot go ahead yet (the typed check is empty, or it is already
+   *  running): it says so to assistive tech (aria-disabled) and stays pressable, so onDanger
+   *  can take the person to what is missing. */
+  dangerBlocked?: boolean;
 }
 
-export function Confirm({ open, sentence, detail, keepLabel, onKeep, dangerLabel, onDanger }: ConfirmProps) {
+export function Confirm({ open, sentence, detail, keepLabel, onKeep, dangerLabel, onDanger, children, dangerBlocked = false }: ConfirmProps) {
   const phase = usePresence(open, CONFIRM_LEAVE_MS);
   const card = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -169,8 +224,9 @@ export function Confirm({ open, sentence, detail, keepLabel, onKeep, dangerLabel
           tabIndex={-1} className="ui-confirm frame-dialog-card">
           <h2 id={titleId} className="ui-confirm-title">{sentence}</h2>
           {detail ? <p id={detailId} className="ui-confirm-text">{detail}</p> : null}
+          {children ? <div className="ui-confirm-check">{children}</div> : null}
           <Button kind="main" block onClick={onKeep}>{keepLabel}</Button>
-          <TextButton tone="danger" onClick={onDanger}>{dangerLabel}</TextButton>
+          <TextButton tone="danger" aria-disabled={dangerBlocked || undefined} onClick={onDanger}>{dangerLabel}</TextButton>
         </div>
       </div>
     </FramePortal>

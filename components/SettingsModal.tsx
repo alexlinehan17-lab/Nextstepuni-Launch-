@@ -2,17 +2,21 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Settings, on Kobra (approved review, 25 Oct 2026): one paper panel in the
- * runtime's Dialog, sections divided by hairline rules, Switch rows for the
- * preferences and outline Button rows for everything that goes somewhere
- * (settings-modal.css). The Light / Dark picker is the one the app already
- * had, kept on purpose (Alex, 25 Oct): two miniatures of the app, an ink
- * border and a check on the chosen one.
+ * Settings is a page (agreed 26 Nov 2026, r5-account-settings): Back at the
+ * top left and the name once, on a phone and in a column centred beside the
+ * sidebar on a laptop; no floating card, no round X. Every setting and every
+ * account action is the one it always was, in the same order. Settings you
+ * cannot press lie on the page with no box; the rows you can press keep their
+ * icons and arrows; the chosen character takes the ink outline and the drawn
+ * tick; the Light / Dark miniatures stay (Alex, 25 Oct). settings-modal.css.
+ * The file keeps its name so callers and tests stay where they are.
  */
 
 import React, { useEffect, useRef, useState, useId } from 'react';
-import { X, Check, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
-import KobraScope, { Button, Dialog, DialogContent, DialogHeader, DialogTitle, Switch } from './approved-ui-runtime';
+import { Check, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
+import KobraScope, { Button, Switch } from './approved-ui-runtime';
+import PageHeader from './ui/PageHeader';
+import { SelectionMark } from './ui/Choice';
 import { useStudyNotifications } from '../hooks/useStudyNotifications';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
@@ -25,7 +29,9 @@ import './settings-modal.css';
 import { type UserSettings } from '../types';
 
 interface SettingsModalProps {
+  /** The Settings page is showing (the app's `settings` view). */
   isOpen: boolean;
+  /** Back: the screen the student came from. */
   onClose: () => void;
   settings: UserSettings;
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
@@ -93,35 +99,16 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
         .replace(/\b\w/g, character => character.toUpperCase())
     : '';
 
-  // The legal reader and the delete-account flow open above this dialog and
-  // own Escape and their backdrop while they are up. The Kobra Dialog hears
-  // that Escape first, so it stands aside and lets the key reach them.
-  const nestedOpen = legalDoc !== null || dataRightsOpen;
+  if (!isOpen) return null;
 
   return (
     <>
-    <Dialog
-      open={isOpen}
-      onOpenChange={(open, details) => {
-        if (open) return;
-        if (nestedOpen) { details.cancel(); details.allowPropagation(); return; }
-        onClose();
-      }}
-    >
-      <DialogContent size="sm" showCloseButton={false} className="nsu-settings nsu-paper-card">
-        {/* The dialog portals out of any page scope, so it carries its own. */}
-        <KobraScope className="st-scope">
-          <DialogHeader className="st-head">
-            <DialogTitle id="settings-dialog-title" className="st-title">Settings</DialogTitle>
-            <div className="st-head-end">
-              <p className="st-saved" role="status" aria-live="polite">
-                {showSaved && <span><Check aria-hidden="true" />Saved!</span>}
-              </p>
-              <Button variant="outline" size="icon" className="st-close" aria-label="Close" onClick={onClose}>
-                <X aria-hidden="true" />
-              </Button>
-            </div>
-          </DialogHeader>
+    <div className="product-shell nsu-settings-page min-h-[100dvh] bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
+      <KobraScope className="nsu-settings st-scope">
+          <div className="st-bar">
+            <PageHeader onBack={onClose} backLabel="Back" title="Settings"
+              actions={<p className="st-saved" role="status" aria-live="polite">{showSaved && <span><Check aria-hidden="true" />Saved</span>}</p>} />
+          </div>
 
           <div className="st-body">
             {/* Account */}
@@ -170,7 +157,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     }}
                     className="st-crew-option"
                   >
-                    <span className="st-crew-mark" aria-hidden="true" />
+                    <SelectionMark on={settings.avatar === seed} />
                     <CrewIllustration character={seed} className="st-crew-art" />
                     <span className="st-crew-name">{getAvatarName(seed).replace(/^The /, '')}</span>
                   </button>
@@ -203,7 +190,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                         </span>
                         <span className="st-theme-name">
                           {opt.label}
-                          {active && <Check size={13} strokeWidth={2.6} aria-hidden="true" />}
+                          <SelectionMark on={active} />
                         </span>
                       </button>
                     );
@@ -269,7 +256,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
               const isGraduated = userYearGroup === 'graduated';
               return (
                 <section className="st-group">
-                  <h3 className="st-eyebrow">School Year</h3>
+                  <h3 className="st-eyebrow">School year</h3>
                   <div className="st-row st-year">
                     <span className="st-year-text">
                       <GraduationCap aria-hidden="true" />
@@ -290,7 +277,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                         {action?.label ?? 'Set your school year so we can tune content to where you are.'}
                       </p>
                     ) : (
-                      <Button variant="outline" className="nsu-ink-outline st-action" onClick={() => { onClose(); onAdvanceYear(); }}>
+                      <Button variant="outline" className="nsu-ink-outline st-action" onClick={onAdvanceYear}>
                         {action.label}
                         <ArrowRight aria-hidden="true" />
                       </Button>
@@ -318,8 +305,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                 for the official sources we draw on.
               </p>
               <div className="st-rows">
-                <RowButton icon={<ShieldCheck />} label="Privacy Notice" onClick={() => setLegalDoc('privacy')} />
-                <RowButton icon={<FileText />} label="Terms of Use" onClick={() => setLegalDoc('terms')} />
+                <RowButton icon={<ShieldCheck />} label="Privacy notice" onClick={() => setLegalDoc('privacy')} />
+                <RowButton icon={<FileText />} label="Terms of use" onClick={() => setLegalDoc('terms')} />
               </div>
             </section>
 
@@ -347,29 +334,28 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
               {(onChangeSubjects || onResetNorthStar) && (
                 <div className="st-rows">
                   {onChangeSubjects && (
-                    <RowButton icon={<RefreshCw />} label="Change Subjects" onClick={() => { onClose(); onChangeSubjects(); }} />
+                    <RowButton icon={<RefreshCw />} label="Change subjects" onClick={onChangeSubjects} />
                   )}
                   {onResetNorthStar && (
-                    <RowButton icon={<Compass />} label={hasNorthStar ? 'Edit North Star' : 'Set North Star'} onClick={() => { onClose(); onResetNorthStar(); }} />
+                    <RowButton icon={<Compass />} label={hasNorthStar ? 'Edit North Star' : 'Set North Star'} onClick={onResetNorthStar} />
                   )}
                 </div>
               )}
               {onLogout && (
-                <Button variant="ghost" className="st-quiet" onClick={() => { onClose(); onLogout(); }}>
+                <Button variant="ghost" className="st-quiet" onClick={onLogout}>
                   <LogOut aria-hidden="true" />
-                  Sign Out
+                  Sign out
                 </Button>
               )}
             </section>
           </div>
-        </KobraScope>
-      </DialogContent>
-    </Dialog>
+      </KobraScope>
+    </div>
     <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} onDocumentChange={setLegalDoc} />
     <DataRightsModal
       open={dataRightsOpen}
       onClose={() => setDataRightsOpen(false)}
-      onAccountDeleted={() => { setDataRightsOpen(false); onClose(); onLogout?.(); }}
+      onAccountDeleted={() => { setDataRightsOpen(false); onLogout?.(); }}
     />
     </>
   );

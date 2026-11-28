@@ -6,26 +6,28 @@ import type { TopicHistoryActions } from './topics/TopicDetailCard';
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useMemo, useState } from 'react';
-import './dashboard/dashboard-refined.css';
+import React, { useEffect, useMemo, useState } from 'react';
 import KobraScope from './approved-ui-runtime';
-import { Button } from './approved-ui-runtime';
-import { SubjectPicker } from './dashboard/progress/SubjectPicker';
-import { ProgressSummary } from './dashboard/progress/ProgressSummary';
 import { ProgressPointsGoal } from './dashboard/progress/ProgressPointsGoal';
 import { caoGoalStanding } from './dashboard/progress/caoGoal';
-import { ProgressActivity, ProgressConfidence, ProgressSubjects, ProgressMocks } from './dashboard/progress/ProgressCharts';
+import { ProgressConfidence, ProgressMocks } from './dashboard/progress/ProgressCharts';
 import { MethodJournal } from './dashboard/progress/MethodJournal';
-import { ProgressTabs } from './dashboard/progress/shared';
+import { Artwork } from './dashboard/progress/shared';
 import { buildMethodJournal, selectSubjects } from './dashboard/progress/progressData';
-import './dashboard/progress/progress.css';
-import './dashboard/progress/refinements.css';
-import { ProgressSections, ProgressBreakdown } from './dashboard/progress/ProgressRefinements';
+import './dashboard/progress/my-progress.css';
 import { ProgressMilestones } from './dashboard/progress/ProgressMilestones';
+import { ProgressGraph, formatMinutes } from './dashboard/progress/ProgressGraph';
+import { Bar, ConfidenceScale, Duration, Figures, NextPart, ReadinessStrip, Section, SubjectBars, confidenceWord, type Figure } from './dashboard/progress/ProgressParts';
+import SubjectAvatar from './SubjectAvatar';
+import { Button, TextButton } from './ui/Button';
+import { SelectionWords, Switch } from './ui/Choice';
+import { Menu } from './ui/Menu';
+import { Sheet } from './ui/Sheet';
+import { List, Row } from './ui/List';
+import { TopBar } from './ui/Bars';
+import { LoadingShape } from './ui/States';
 
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
-import { ArrowRight, Moon, Sun } from 'lucide-react';
-import { MotionDiv } from './Motion';
 import PageHeader from './ui/PageHeader';
 import { type CategoryType } from './KnowledgeTree';
 import { type CourseData } from './Library';
@@ -70,7 +72,6 @@ import {
   type DashboardRange,
 } from './dashboard/dashboardAnalytics';
 import DashboardInsights from './dashboard/DashboardInsights';
-import ProgressSectionPicker from './dashboard/ProgressSectionPicker';
 import {
   buildActivityInsights,
   buildConfidenceInsights,
@@ -163,34 +164,11 @@ const RANGE_OPTIONS: Array<{ id: DashboardRange; label: string }> = [
   { id: 'year', label: 'Year' },
 ];
 
-const Panel: React.FC<{
-  eyebrow: string;
-  title: string;
-  detail?: string;
-  action?: React.ReactNode;
-  className?: string;
-  children: React.ReactNode;
-  disclosure?: boolean;
-}> = ({ eyebrow, title, detail, action, disclosure = false, className = '', children }) => {
-  const mobileAppDesign = useMobileAppDesign();
-  if (mobileAppDesign && disclosure) return <details className={`dashboard-disclosure ${className}`}>
-    <summary>{title}<span aria-hidden="true">+</span></summary>
-    {detail && <p className="dashboard-disclosure-detail">{detail}</p>}
-    <div className="dashboard-disclosure-body">{children}</div>
-  </details>;
-  return (
-  <article className={`pr-editorial-panel ${mobileAppDesign ? `dashboard-section ${eyebrow === 'Programme progress' ? 'dashboard-programme' : ''}` : 'rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]'} ${className}`}>
-    <div className="flex flex-wrap items-start justify-between gap-3 border-b border-[var(--outline-soft)] px-5 py-4 sm:px-6">
-      <div className="min-w-0">
-        <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">{eyebrow}</p>
-        <h2 className="mt-1 font-serif text-xl font-semibold tracking-[-0.015em] text-[var(--ink-primary)] sm:text-2xl">{title}</h2>
-        {detail && <p className={`mt-1 max-w-xl ${mobileAppDesign ? "text-[13px]" : "text-xs"} leading-relaxed text-[var(--ink-muted)]`}>{detail}</p>}
-      </div>
-      {action && <div className="shrink-0">{action}</div>}
-    </div>
-    <div className="px-5 py-4 sm:px-6 sm:py-5">{children}</div>
-  </article>
-  );
+/** What each kind of session is for, read out with its bar. */
+const MIX_NOTES: Record<string, string> = {
+  'new-learning': 'Getting started with unfamiliar material.',
+  practice: 'Putting what you know to work.',
+  revision: 'Returning to material you have studied.',
 };
 
 const DashboardView: React.FC<DashboardViewProps> = ({
@@ -221,8 +199,8 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   curriculumLevel = 'senior',
   activeTab,
   onTabChange,
-  darkMode = false,
-  onToggleTheme,
+  darkMode: _darkMode = false,
+  onToggleTheme: _onToggleTheme,
   onEditGrades,
   onAddMockResult,
 }) => {
@@ -233,6 +211,21 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   const [range, setRange] = useState<DashboardRange>('week');
   const [metric, setMetric] = useState<ActivityMetric>('sessions');
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
+  const [insights, setInsights] = useState<'activity' | 'confidence' | 'mocks' | null>(null);
+  const [average, setAverage] = useState(false);
+  const [readNumbers, setReadNumbers] = useState(false);
+  const [climbsOpen, setClimbsOpen] = useState(false);
+  const [rhythmOpen, setRhythmOpen] = useState(false);
+  const [subjectOrder, setSubjectOrder] = useState<'time' | 'name'>('time');
+  // The bar gains its hairline once the page has scrolled under it (tokens.md, "Bars").
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    if (!mobileAppDesign) return undefined;
+    const update = () => setScrolled(window.scrollY > 4);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    return () => window.removeEventListener('scroll', update);
+  }, [mobileAppDesign]);
   const subject = selectedSubjects.length === 1 ? selectedSubjects[0] : 'all';
   const scopedSessions = useMemo(() => selectSubjects(studySessions, selectedSubjects), [studySessions, selectedSubjects]);
   const scopedDebriefs = useMemo(() => selectSubjects(studyDebriefs, selectedSubjects), [studyDebriefs, selectedSubjects]);
@@ -351,11 +344,6 @@ const DashboardView: React.FC<DashboardViewProps> = ({
       : buildMockInsights(mockRecordsInRange, subject, todayKey),
     [mockRecordsInRange, selectedSubjects, subject, todayKey],
   );
-  const todayLabel = useMemo(
-    () => new Date().toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' }),
-    [],
-  );
-
   const dated = useDatedStudyPlan(studentProfile, uid);
   const todayPlan = useMemo(() => {
     if (dated.enabled) return dated.timetable?.[(new Date().getDay()+6)%7]?.blocks ?? [];
@@ -380,250 +368,253 @@ const DashboardView: React.FC<DashboardViewProps> = ({
 
   const nextBlock = todayPlan.find((block,index) => !(timetableCompletions[todayKey] ?? []).includes(getBlockId(block,index)) && !dated.saved?.plan.tasks.some(t=>t.id===block.id&&t.status==='completed'));
 
-  const activityPanel = <ProgressActivity className="lg:col-span-8" buckets={activityBuckets} metric={metric}
-    onMetricChange={setMetric} period={rangeBounds.label} subjectLabel={subjectLabel} onStartStudy={onStartStudy}
-    insights={<DashboardInsights id="dashboard-activity-insights" items={activityInsights} context={`${rangeBounds.label} · ${subjectLabel}`} />} />;
-  const confidencePanel = <ProgressConfidence className="lg:col-span-12" observations={confidencePoints}
-    bounds={rangeBounds} subjects={visibleSubjects} universe={subjects}
-    insights={<DashboardInsights id="dashboard-confidence-insights" items={confidenceInsights.length ? confidenceInsights : [{
-      id: 'confidence-empty', title: 'Confidence trend', trend: 'building', evidence: 'No confidence debriefs fall inside the selected period yet.',
-      guidance: 'Choose a confidence rating after your next completed session and the subject trend will begin here.',
-    }]} context={`${rangeBounds.label} · ${subjectLabel}`} note="Confidence is self-reported, not a grade prediction. Every subject in the current filter is included." />} />;
-  const mockPanel = <ProgressMocks className="lg:col-span-12" mocks={mocks} period={rangeBounds.label} subjectLabel={subjectLabel}
-    insights={<DashboardInsights id="dashboard-mock-insights" items={mockInsights} context={`${rangeBounds.label} · ${subjectLabel}`}
-      note="Total-point trends use comparable full mock sittings only. Subject insights also include single-subject results. These are recorded results, not predictions of final grades." />} />;
-  const subjectPanel = <ProgressSubjects className="lg:col-span-12" values={subjectAllocation} period={rangeBounds.label} />;
-  const methodsPanel = <MethodJournal className="lg:col-span-12" methods={methodRecords} period={rangeBounds.label} />;
+  const goToPart = (next: DashboardTab) => {
+    if (activeTab === undefined) setLocalTab(next);
+    onTabChange?.(next);
+  };
+  const partIndex = Math.max(0, TABS.findIndex(item => item.id === tab));
+  const nextPart = TABS[partIndex + 1];
+  const next = nextPart ? <NextPart position={partIndex + 2} of={TABS.length} name={nextPart.label} onPress={() => goToPart(nextPart.id)} /> : null;
+  const rangeWord = range === 'year' ? 'year' : range === 'month' ? 'month' : 'week';
+  const periodLabel = range === 'month' ? rangeBounds.label.replace(/\s\d{4}$/, '') : rangeBounds.label;
+  const noTime = visibleSubjects.filter(name => !subjectAllocation.some(item => item.value > 0 && sameStudySubject(item.label, name)));
+  const insightsFor = (key: 'activity' | 'confidence' | 'mocks') => setInsights(key);
+  const activityTotal = activityBuckets.reduce((sum, bucket) => sum + bucket[metric], 0);
+  const activityDays = activityBuckets.filter(bucket => bucket.sessions > 0).length;
+  const activityMinutes = activityBuckets.reduce((sum, bucket) => sum + bucket.minutes, 0);
+  const activitySessions = activityBuckets.reduce((sum, bucket) => sum + bucket.sessions, 0);
+  const bestBucket = activityBuckets.reduce((best, bucket) => bucket.minutes > best ? bucket.minutes : best, 0);
+  const mixTotal = sessionMix.reduce((sum, item) => sum + item.value, 0);
+  const latestConfidence = visibleSubjects.map(name => {
+    const entries = confidencePoints.filter(point => sameStudySubject(point.subject, name)).sort((a, b) => a.timestamp - b.timestamp);
+    return { name, count: entries.length, latest: entries[entries.length - 1]?.score ?? null };
+  });
+  const confidenceRows = latestConfidence.filter(item => item.latest !== null).sort((a, b) => (b.latest ?? 0) - (a.latest ?? 0));
+  const noCheckIns = latestConfidence.filter(item => item.latest === null).map(item => item.name);
 
-  const programmePanel = (
-    <Panel
-      disclosure
-      eyebrow="Programme progress"
-      title="Five climbs, all your own."
-      detail={fiveWorldCompleted === 0
-        ? 'Your first completed module paints the first mountain.'
-        : `${fiveWorldCompleted} of ${fiveWorldTotal} modules complete · each mountain fills as you progress.`}
-      className="lg:col-span-12"
-    >
-      <div className="-mx-5 overflow-x-auto px-5 pb-2 sm:-mx-6 sm:px-6">
-        <div className="min-w-[680px] lg:min-w-0">
-          <MountainLandscape progress={worldProgress} />
-        </div>
+  const figuresOverview: Figure[] = [
+    { name: 'Sessions', value: sessionsInRange.length, description: `Across ${activeDays} active day${activeDays === 1 ? '' : 's'}. Completed sessions in the selected period and subjects.` },
+    { name: 'Confidence', value: avgConfidence === null ? '–' : avgConfidence.toFixed(1), unit: avgConfidence === null ? undefined : '/ 5', description: avgConfidence === null ? 'Awaiting your first check-in' : 'Your check-in, out of 5. This is not a grade prediction.' },
+    { name: 'Study streak', value: streak.currentStreak, unit: 'days', description: 'Consecutive days · all subjects. It is independent of the selected subjects and period.' },
+  ];
+  const figuresStudy: Figure[] = [
+    { name: 'Time in total', value: <Duration minutes={activityMinutes} /> },
+    { name: range === 'year' ? 'Best month' : 'Best day', value: activityMinutes ? <Duration minutes={bestBucket} /> : '–' },
+    { name: 'Average session', value: activitySessions ? <Duration minutes={Math.round(activityMinutes / activitySessions)} /> : '–' },
+  ];
+
+  const journeyPoints = (
+    <div className="mp-jp">
+      <Artwork src="/assets/star-crew/companions/islander.png" size={76} />
+      <div className="mp-jp-text">
+        <p className="t-label mp-label">Journey points</p>
+        <p className="mp-jp-line"><strong className="mp-jp-number">{pointsEarned.toLocaleString()}</strong> <span className="t-sub">earned to date</span></p>
+        {pointsAvailable !== undefined && <p className="t-meta">{pointsAvailable.toLocaleString()} available to spend</p>}
       </div>
-      <p className="mt-1 text-center text-[10px] text-[var(--ink-muted)] lg:hidden">Swipe across to explore all five climbs</p>
-      <div className="mt-5 grid grid-cols-2 gap-x-6 gap-y-4 border-t border-[var(--outline-soft)] pt-5 sm:grid-cols-4">
-        <div>
-          <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Overall</p>
-          <p className="mt-1 font-serif text-2xl font-semibold text-[var(--ink-primary)]">{overallPct}%</p>
-        </div>
-        <div>
-          <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Modules</p>
-          <p className="mt-1 font-serif text-2xl font-semibold text-[var(--ink-primary)]">{fiveWorldCompleted}/{fiveWorldTotal}</p>
-        </div>
-        <div>
-          <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Furthest along</p>
-          <p className="mt-1 font-serif text-2xl font-semibold text-[var(--ink-primary)]">{WORLD_LABEL[furthest.world]} · {furthest.percent}%</p>
-        </div>
-        <div>
-          <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Longest streak</p>
-          <p className="mt-1 font-serif text-2xl font-semibold text-[var(--ink-primary)]">{streak.longestStreak ?? streak.currentStreak} days</p>
-        </div>
-      </div>
-    </Panel>
+    </div>
   );
 
-  return (
-    <KobraScope className="nsu-progress"><div className={`${mobileAppDesign ? 'mobile-editorial dashboard-mobile ' : ''}product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] transition-colors duration-300`}>
-      <div className="sticky inset-x-0 top-0 z-40 border-b border-[var(--outline-soft)] bg-[color:var(--surface-canvas)]/95 px-4 pb-4 backdrop-blur-xl md:px-10" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
-        <div className="mx-auto max-w-7xl">
-          <PageHeader onBack={onBack} eyebrow="Student dashboard" title="My Progress" compact />
-        </div>
+  const insightSheet = (
+    <Sheet open={insights !== null} onClose={() => setInsights(null)} title="What the pattern suggests" titleSize="small">
+      {insights === 'activity' && <>
+        <div className="mp-insight-switch"><span className="t-body">Show period average</span><Switch checked={average} onChange={setAverage} label="Show period average" /></div>
+        <p className="t-meta">The average covers elapsed days or months in this period. It isn’t a study target.</p>
+        <DashboardInsights id="dashboard-activity-insights" items={activityInsights} context={`${rangeBounds.label} · ${subjectLabel}`} />
+      </>}
+      {insights === 'confidence' && <DashboardInsights id="dashboard-confidence-insights" items={confidenceInsights.length ? confidenceInsights : [{
+        id: 'confidence-empty', title: 'Confidence trend', trend: 'building', evidence: 'No confidence debriefs fall inside the selected period yet.',
+        guidance: 'Choose a confidence rating after your next completed session and the subject trend will begin here.',
+      }]} context={`${rangeBounds.label} · ${subjectLabel}`} note="Confidence is self-reported, not a grade prediction. Every subject in the current filter is included." />}
+      {insights === 'mocks' && <DashboardInsights id="dashboard-mock-insights" items={mockInsights} context={`${rangeBounds.label} · ${subjectLabel}`}
+        note="Total-point trends use comparable full mock sittings only. Subject insights also include single-subject results. These are recorded results, not predictions of final grades." />}
+    </Sheet>
+  );
+
+  const programme = (
+    <Section label="Programme progress" title="Five climbs, all your own." className="mp-programme">
+      <p className="t-sub">{fiveWorldCompleted === 0
+        ? 'Your first completed module paints the first mountain.'
+        : `${fiveWorldCompleted} of ${fiveWorldTotal} modules complete · each mountain fills as you progress.`}</p>
+      {mobileAppDesign && <TextButton arrow="menu" aria-expanded={climbsOpen} onClick={() => setClimbsOpen(open => !open)}>{climbsOpen ? 'Hide the climbs' : 'Show the climbs'}</TextButton>}
+      {(!mobileAppDesign || climbsOpen) && <>
+        <div className="mp-climbs"><div className="mp-climbs-art"><MountainLandscape progress={worldProgress} /></div></div>
+        {mobileAppDesign && <p className="t-meta">Swipe across to explore all five climbs.</p>}
+        <Figures className="mp-figs--four" items={[
+          { name: 'Overall', value: overallPct, unit: '%' },
+          { name: 'Modules', value: fiveWorldCompleted, unit: `/ ${fiveWorldTotal}` },
+          { name: 'Furthest along', value: WORLD_LABEL[furthest.world], unit: `${furthest.percent}%` },
+          { name: 'Longest streak', value: streak.longestStreak ?? streak.currentStreak, unit: 'days' },
+        ]} />
+      </>}
+    </Section>
+  );
+
+  const today = (
+    <Section label="Today" title={nextBlock ? nextBlock.subjectName : 'Choose your next move'} className="mp-today">
+      <p className="t-meta">{nextBlock ? `${nextBlock.durationMinutes} min · ${nextBlock.sessionType.replace('-', ' ')}` : 'Keep the momentum small and specific.'}</p>
+      <p className="t-body">{recommendation?.reason === 'in-progress' ? 'Continue what you started.' : nextBlock ? 'One focused block is enough.' : 'Build evidence, one session at a time.'}</p>
+      {questState && <div className="mp-quest">
+        <Bar title={<><span className="t-label mp-label">{questState.isOnboarding ? `Day ${questState.dayNumber} quest` : 'Daily quest'}</span><span className="mp-quest-title">{questState.quest.title}</span></>}
+          readout={questState.isCompleted ? 'Completed' : `${Math.min(questState.current, questState.quest.target)} / ${questState.quest.target}`}
+          share={Math.min(1, questState.current / questState.quest.target)} done={questState.isCompleted} />
+      </div>}
+      {recommendation && recommendation.reason !== 'all-complete' && <p className="t-meta">
+        {recommendation.reason === 'in-progress' ? 'Suggested because it’s already underway — finishing beats starting fresh.' : 'Suggested because it’s the next module you haven’t opened.'}
+      </p>}
+      <div className="mp-actions">
+        {onStartStudy && <Button arrow="forward" onClick={onStartStudy}>Start studying</Button>}
+        {questState?.isCompleted && !questState.isClaimed && onClaimQuestReward && <Button onClick={onClaimQuestReward}>{`Claim ${questState.quest.rewardPoints} JP`}</Button>}
+        {recommendation && recommendation.reason !== 'all-complete' && <TextButton arrow="forward" onClick={() => onSelectModule(recommendation.moduleId)}>{`${recommendation.reason === 'in-progress' ? 'Continue' : 'Open'} ${recommendation.title}`}</TextButton>}
       </div>
+    </Section>
+  );
 
-      <main className="mx-auto max-w-7xl px-4 pb-[calc(120px+var(--sab,0px))] pt-7 sm:px-6 md:px-10 md:pt-10">
-        <MotionDiv
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <div className="dashboard-heading flex flex-col gap-6 border-b border-[var(--outline-strong)] pb-7 lg:flex-row lg:items-end lg:justify-between">
-            {mobileAppDesign ? <ProgressSectionPicker value={tab} options={TABS} onChange={next => {
-              if (activeTab === undefined) setLocalTab(next);
-              onTabChange?.(next);
-            }} /> : <div className="max-w-3xl">
-              <div className="flex items-center gap-3">
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent-hex)]">Your learning record</p>
-                <span className="h-px w-8 bg-[var(--outline-soft)]" aria-hidden="true" />
-                <p className="text-xs text-[var(--ink-muted)]">{todayLabel}</p>
-                {onToggleTheme && (
-                  <button
-                    type="button"
-                    role="switch"
-                    aria-checked={darkMode}
-                    onClick={onToggleTheme}
-                    aria-label={darkMode ? 'Switch to light mode (Beta)' : 'Switch to dark mode (Beta)'}
-                    className="pr-theme-toggle hidden h-10 w-10 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)] sm:flex"
-                  >
-                    {darkMode ? <Sun size={17} /> : <Moon size={17} />}
-                  </button>
-                )}
-              </div>
-              <h1 className="pr-page-title">
-                Your learning, in motion.
-              </h1>
-              <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--ink-secondary)] sm:text-[15px]">
-                Study rhythm, confidence and practice evidence—connected in one clear view.
-              </p>
-            </div>
+  const studyGraph = (
+    <Section ruled={false} label={`${periodLabel} · Study activity`} title={metric === 'sessions' ? `Your ${rangeWord} in focus.` : 'The time you made.'} big className="mp-activity">
+      <p className="mp-bigline"><span className="mp-big">{metric === 'sessions' ? activityTotal : <Duration minutes={activityTotal} />}</span>
+        <span className="t-sub">{`${metric === 'sessions' ? (activityTotal === 1 ? 'session' : 'sessions') : 'of study'} across ${activityDays} active ${range === 'year' ? 'months' : 'days'}`}</span></p>
+      {activityTotal === 0 ? <div className="mp-empty"><p className="t-body">No study sessions in this period.</p><p className="t-meta">Your next completed session will update this graph.</p>
+        {onStartStudy && <Button arrow="forward" onClick={onStartStudy}>Plan your next session</Button>}</div>
+        : readNumbers ? <table className="mp-table"><caption className="t-meta">{`${rangeBounds.label} · ${subjectLabel}`}</caption><thead><tr><th scope="col">Date</th><th scope="col">Sessions</th><th scope="col">Minutes</th></tr></thead>
+          <tbody>{activityBuckets.map(day => <tr key={day.key}><th scope="row">{day.accessibleLabel}</th><td>{day.sessions}</td><td>{day.minutes}</td></tr>)}</tbody></table>
+        : <div role="img" aria-label={`Study activity chart showing ${metric}`}><ProgressGraph buckets={activityBuckets} metric={metric} height={mobileAppDesign ? 168 : 230} average={average} /></div>}
+      <Figures items={figuresStudy} />
+      <div className="mp-graph-actions">
+        <TextButton tone="quiet" onClick={() => setMetric(metric === 'sessions' ? 'minutes' : 'sessions')}>{metric === 'sessions' ? 'Show minutes' : 'Show sessions'}</TextButton>
+        <TextButton tone="quiet" onClick={() => setReadNumbers(value => !value)}>{readNumbers ? 'Show graph' : 'Read the numbers'}</TextButton>
+        <TextButton tone="quiet" aria-label="Show study activity insights" onClick={() => insightsFor('activity')}>Insights</TextButton>
+      </div>
+    </Section>
+  );
 
-            }
-            {tab !== 'milestones' && (
-              <div className="dashboard-filters">
-                <SubjectPicker subjects={subjects} value={selectedSubjects} onChange={setSelectedSubjects} />
-                <ProgressTabs label="Dashboard time range" value={range} options={RANGE_OPTIONS.map(item => ({ value: item.id, label: item.label }))} onChange={value => setRange(value as DashboardRange)} />
+  const mix = (
+    <Section label="Session design" title="Learning mix" className="mp-mix">
+      <p className="t-sub">{`How you spent your ${mixTotal} study session${mixTotal === 1 ? '' : 's'}.`}</p>
+      <div className="mp-bars" role="group" aria-label="Session types">
+        {sessionMix.map(item => <Bar key={item.id} title={item.label} readout={`${item.value} session${item.value === 1 ? '' : 's'} · ${mixTotal ? Math.round(item.value / mixTotal * 100) : 0}%`}
+          share={mixTotal ? item.value / mixTotal : 0} note={MIX_NOTES[item.id]} />)}
+      </div>
+      {!mixTotal && <p className="t-meta">No sessions recorded yet.</p>}
+    </Section>
+  );
 
-              </div>
-            )}
-          </div>
+  const closerLook = uid && studentProfile ? (
+    <Section label="Your subjects" title="A closer look at your learning." className="mp-closer">
+      <p className="t-sub">Open a subject to see its record, topic by topic.</p>
+      <TopicHistoryPanel uid={uid} profile={studentProfile} sessions={studySessions} minutes={subjectAllocation} onStudyTopic={onStudyTopic} onPracticeTopic={onPracticeTopic} />
+    </Section>
+  ) : null;
 
-          {tab === 'overview' && pointsGoal.status !== 'hidden' && <div className="pr-goal-wrap">
-            <ProgressPointsGoal standing={pointsGoal} onEditGrades={onEditGrades} onAddMockResult={onAddMockResult} />
+  const rhythmSection = (
+    <Section label="Consistency" title="Study rhythm" className="mp-rhythm">
+      <p className="t-sub">Thirteen weeks of recorded study activity.</p>
+      <TextButton arrow="menu" aria-expanded={rhythmOpen} onClick={() => setRhythmOpen(open => !open)}>{rhythmOpen ? 'Hide the rhythm' : 'Show the rhythm'}</TextButton>
+      {rhythmOpen && <StudyRhythmChart weeks={rhythm} />}
+    </Section>
+  );
+
+  const readiness = (
+    <Section ruled={false} label="Current picture · all dates" title="Topic readiness" big className="mp-readiness">
+      <p className="mp-bigline"><span className="mp-big">{masterySummary.solid}</span><span className="t-sub">{`of your ${masterySummary.solid + masterySummary.shaky + masterySummary.notStarted} topics feel solid`}</span></p>
+      <div role="group" aria-label="Readiness levels"><ReadinessStrip summary={masterySummary} /></div>
+      <p className="t-meta">Your subject choice applies here. The dates do not.</p>
+    </Section>
+  );
+
+  let part: React.ReactNode;
+  if (tab === 'overview') {
+    const focus = (
+      <Section ruled={false} className="mp-focus" label={`${periodLabel} · Focus time`} title="Time you made for yourself." big
+        aside={<Artwork src="/assets/star-crew/companions/thinker.png" size={mobileAppDesign ? 88 : 96} />}>
+        <p className="mp-big mp-big--xl pr-focus-total" aria-label={formatMinutes(totalMinutes)}><Duration minutes={totalMinutes} /></p>
+        <div role="group" aria-label="Focus time in the selected period"><ProgressGraph buckets={activityBuckets} metric="minutes" height={mobileAppDesign ? 168 : 230} /></div>
+        <Figures items={figuresOverview} />
+        {journeyPoints}
+      </Section>
+    );
+    part = !hasLearningEvidence ? <>
+      {focus}
+      <Section label="Your learning record" title="Start with one focused session.">
+        <p className="t-sub">This page becomes useful as soon as there is real work to reflect back to you.</p>
+        <p className="t-body">Choose a subject, set a short timer and complete your first session. Your rhythm, confidence and study evidence will begin here.</p>
+        {onStartStudy && <Button kind="main" arrow="forward" onClick={onStartStudy}>Start a study session</Button>}
+      </Section>
+      {programme}
+    </> : <>
+      {focus}
+      <div className="mp-pair">
+        <Section label="Your subjects" title="Everyone has a place." className="mp-subjects"
+          aside={<TextButton tone="quiet" onClick={() => setSubjectOrder(order => order === 'time' ? 'name' : 'time')}>{subjectOrder === 'time' ? 'A–Z' : 'By time'}</TextButton>}>
+          <p className="t-sub">{`${formatMinutes(subjectAllocation.reduce((sum, item) => sum + item.value, 0))} of focus, shared across your subjects.`}</p>
+          {subjectAllocation.some(item => item.value > 0) ? <SubjectBars values={subjectAllocation} order={subjectOrder} /> : <p className="t-meta">Log a study session and its subject will appear here.</p>}
+          {noTime.length > 0 && subjectAllocation.some(item => item.value > 0) && <p className="t-meta">{`No time yet this ${rangeWord}: ${noTime.join(', ')}.`}</p>}
+        </Section>
+        <Section label={`Practice · ${masterySummary.solid + masterySummary.shaky + masterySummary.notStarted} topics`} title="How your topics feel right now." className="mp-practice-glance">
+          <ReadinessStrip summary={masterySummary} />
+        </Section>
+      </div>
+      {today}
+      {programme}
+    </>;
+  } else if (tab === 'study') {
+    part = <>
+      {studyGraph}
+      <div className="mp-pair">{mix}{rhythmSection}</div>
+      {closerLook}
+      <MethodJournal methods={methodRecords} period={rangeBounds.label} />
+    </>;
+  } else if (tab === 'confidence') {
+    part = <>
+      <Section ruled={false} label={`${periodLabel} · Confidence`} title="A different story in every subject." big className="mp-confidence">
+        <p className="mp-bigline"><span className="mp-big">{avgConfidence === null ? '–' : avgConfidence.toFixed(1)}</span>
+          <span className="t-sub">{avgConfidence === null ? 'No check-ins in this period yet' : `out of 5, from ${confidencePoints.length} check-in${confidencePoints.length === 1 ? '' : 's'}`}</span></p>
+        <p className="t-sub">How you felt after study, on a scale of 1 to 5.</p>
+        {confidenceRows.length > 0 && <List label="Confidence by subject">
+          {confidenceRows.map(item => <Row key={item.name} title={item.name} meta={`${confidenceWord(item.latest ?? 0)} · ${item.count} check-in${item.count === 1 ? '' : 's'}`}
+            art={<SubjectAvatar subject={item.name} bare />} trailing={<span className="mp-scale-cell"><ConfidenceScale score={item.latest ?? 0} /><span className="t-readout">{`${item.latest} / 5`}</span></span>} />)}
+        </List>}
+        <p className="t-meta">{noCheckIns.length ? `No check-ins yet: ${noCheckIns.join(', ')}. ` : ''}Confidence is how study felt, not a prediction of your grade.</p>
+      </Section>
+      <ProgressConfidence observations={confidencePoints} bounds={rangeBounds} subjects={visibleSubjects} universe={subjects} onInsights={() => insightsFor('confidence')} />
+    </>;
+  } else if (tab === 'practice') {
+    part = <>
+      {readiness}
+      <ProgressMocks mocks={mocks} period={rangeBounds.label} subjectLabel={subjectLabel} onInsights={() => insightsFor('mocks')} />
+    </>;
+  } else {
+    part = gamificationState ? (
+      <ProgressMilestones state={gamificationState} streak={streak} sessions={studySessions} strategyMastery={strategyMastery}
+        weeklyChallenge={weeklyChallenge} pointsAvailable={pointsAvailable} pointsReload={pointsReload} curriculumLevel={curriculumLevel} />
+    ) : (
+      <Section ruled={false} label="Milestones" title="Progress is loading">
+        <p className="t-sub">Your goals and achievements will appear here.</p>
+        <LoadingShape rows={3} label="Loading your milestones" />
+      </Section>
+    );
+  }
+
+  return (
+    <KobraScope className="nsu-progress"><div className={`mp-page ${mobileAppDesign ? 'mp-page--phone' : 'mp-page--desk'}`}>
+      {mobileAppDesign ? <TopBar placeLabel="Your record" ruled={scrolled} /> : null}
+      <div className="mp-col">
+        {mobileAppDesign ? <h1 className="t-name mp-name">My Progress</h1> : <PageHeader onBack={onBack} eyebrow="Your record" title="My Progress" className="mp-head" />}
+        <div className="mp-controls">
+          <Menu label="Progress section" count numbered block value={tab} onChange={goToPart} className="mp-part-menu"
+            options={TABS.map(item => ({ value: item.id, label: item.label }))} />
+          {tab !== 'milestones' && <div className="mp-filters">
+            <Menu label="Filter by subject" value={subject} onChange={value => setSelectedSubjects(value === 'all' ? [] : [value])} className="mp-subject-menu"
+              options={[{ value: 'all', label: 'All subjects' }, ...subjects.map(name => ({ value: name, label: name }))]} />
+            <SelectionWords label="Dashboard time range" value={range} onChange={value => setRange(value)} options={RANGE_OPTIONS.map(item => ({ value: item.id, label: item.label }))} />
           </div>}
-
-          {tab !== 'milestones' && (!mobileAppDesign || tab === 'overview' || tab === 'study') && <div className="pr-summary-wrap">
-            <ProgressSummary period={rangeBounds.label} minutes={totalMinutes} sessions={sessionsInRange.length} activeDays={activeDays}
-              confidence={avgConfidence} streak={streak.currentStreak} pointsEarned={pointsEarned} pointsAvailable={pointsAvailable} buckets={activityBuckets} />
-          </div>}
-
-          {mobileAppDesign && (tab === 'confidence' || tab === 'practice') && <p className="dashboard-period-scope">{rangeBounds.label} · {subjectLabel}</p>}
-          {!mobileAppDesign && <ProgressSections
-            value={tab}
-            options={TABS}
-            onChange={next => {
-              if (activeTab === undefined) setLocalTab(next);
-              onTabChange?.(next);
-            }}
-          />}
-
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
-            {tab === 'overview' && (
-              <>
-                {!hasLearningEvidence ? (
-                  <Panel eyebrow="Your learning record" title="Start with one focused session." detail="This dashboard becomes useful as soon as there is real work to reflect back to you." className="lg:col-span-12">
-                    <div className="flex flex-col items-start justify-between gap-6 py-2 sm:flex-row sm:items-center">
-                      <p className="max-w-2xl font-serif text-2xl font-semibold leading-tight text-[var(--ink-primary)]">Choose a subject, set a short timer and complete your first session. Your rhythm, confidence and study evidence will begin here.</p>
-                      {onStartStudy && (
-                        <button onClick={onStartStudy} className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--accent-hex)] px-5 text-sm font-bold text-white shadow-[3px_3px_0_0_var(--outline-strong)]">
-                          Start a study session <ArrowRight size={15} />
-                        </button>
-                      )}
-                    </div>
-                  </Panel>
-                ) : (
-                  <>
-                {activityPanel}
-                <Panel eyebrow="Today" title={nextBlock ? nextBlock.subjectName : 'Choose your next move'} detail={nextBlock ? `${nextBlock.durationMinutes} min · ${nextBlock.sessionType.replace('-', ' ')}` : 'Keep the momentum small and specific.'} className="pr-today lg:col-span-4">
-                  <div className="pr-today-body">
-                    <div>
-                      <p className="pr-today-message">
-                        {recommendation?.reason === 'in-progress' ? 'Continue what you started.' : nextBlock ? 'One focused block is enough.' : 'Build evidence, one session at a time.'}
-                      </p>
-                      {questState && (
-                        <div className="mt-6 border-t border-[var(--outline-soft)] pt-4">
-                          <div className="flex items-center justify-between gap-3 text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--ink-muted)]">
-                            <span>{questState.isOnboarding ? `Day ${questState.dayNumber} quest` : 'Daily quest'}</span>
-                            <span className="text-[var(--accent-hex)]">{questState.isCompleted ? 'Completed' : `${Math.min(questState.current, questState.quest.target)}/${questState.quest.target}`}</span>
-                          </div>
-                          <p className="mt-2 text-sm font-semibold text-[var(--ink-primary)]">{questState.quest.title}</p>
-                          <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-[var(--dashboard-track)]">
-                            <div className="h-full rounded-full bg-[var(--accent-hex)]" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%` }} />
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                    <div className="mt-7">
-                      {recommendation && recommendation.reason !== 'all-complete' && (
-                        <p className="mb-3 text-[11px] leading-relaxed text-[var(--ink-muted)]">
-                          {recommendation.reason === 'in-progress'
-                            ? 'Suggested because it’s already underway — finishing beats starting fresh.'
-                            : 'Suggested because it’s the next module you haven’t opened.'}
-                        </p>
-                      )}
-                      <div className="pr-today-actions">
-                      {onStartStudy && (
-                        <Button onClick={onStartStudy} variant="outline" className="nsu-ink-outline">
-                          Start studying <ArrowRight size={14} />
-                        </Button>
-                      )}
-                      {recommendation && recommendation.reason !== 'all-complete' && (
-                        <Button onClick={() => onSelectModule(recommendation.moduleId)} variant="ghost">
-                          {recommendation.reason === 'in-progress' ? 'Continue' : 'Open'} {recommendation.title}
-                        </Button>
-                      )}
-                      {questState?.isCompleted && !questState.isClaimed && onClaimQuestReward && (
-                        <Button onClick={onClaimQuestReward} variant="outline" className="nsu-ink-outline">
-                          Claim {questState.quest.rewardPoints} JP
-                        </Button>
-                      )}
-                      </div>
-                    </div>
-                  </div>
-                </Panel>
-                {!mobileAppDesign && confidencePanel}
-                {!mobileAppDesign && subjectPanel}
-                {programmePanel}
-                {methodsPanel}
-                {!mobileAppDesign && mockPanel}
-                {mobileAppDesign && <nav className="dashboard-section-links" aria-label="Explore your progress">{TABS.slice(1).map(item => <button type="button" key={item.id} onClick={() => { if (activeTab === undefined) setLocalTab(item.id); onTabChange?.(item.id); }}>{item.label}<ArrowRight size={17} /></button>)}</nav>}
-                  </>
-                )}
-                {!hasLearningEvidence && programmePanel}
-              </>
-            )}
-
-            {tab === 'study' && (
-              <>
-                <div className="lg:col-span-12">{React.cloneElement(activityPanel, { className: 'lg:col-span-12' })}</div>
-                <Panel disclosure eyebrow="Consistency" title="Study rhythm" detail="Thirteen weeks of recorded study activity." className="lg:col-span-7">
-                  <StudyRhythmChart weeks={rhythm} />
-                </Panel>
-                <ProgressBreakdown kind="mix" values={sessionMix} period={rangeBounds.label} className="lg:col-span-5" />
-                {subjectPanel}
-                {uid && studentProfile && <TopicHistoryPanel uid={uid} profile={studentProfile} sessions={studySessions} onStudyTopic={onStudyTopic} onPracticeTopic={onPracticeTopic} />}
-                {methodsPanel}
-              </>
-            )}
-
-            {tab === 'confidence' && (
-              <>
-                <div className="lg:col-span-12">{React.cloneElement(confidencePanel, { className: 'lg:col-span-12' })}</div>
-                <ProgressBreakdown kind="readiness" summary={masterySummary} className="lg:col-span-12" />
-                {!mobileAppDesign && programmePanel}
-              </>
-            )}
-
-            {tab === 'practice' && (
-              <>
-                {React.cloneElement(mockPanel, { className: 'lg:col-span-12' })}
-                <ProgressBreakdown kind="mix" values={sessionMix} period={rangeBounds.label} className="lg:col-span-6" />
-                <ProgressBreakdown kind="readiness" summary={masterySummary} className="lg:col-span-6" />
-                {methodsPanel}
-              </>
-            )}
-
-            {tab === 'milestones' && (gamificationState ? (
-              <ProgressMilestones state={gamificationState} streak={streak} sessions={studySessions} strategyMastery={strategyMastery}
-                weeklyChallenge={weeklyChallenge} pointsAvailable={pointsAvailable} pointsReload={pointsReload} curriculumLevel={curriculumLevel} />
-            ) : (
-              <Panel eyebrow="Milestones" title="Progress is loading" detail="Your goals and achievements will appear here." className="lg:col-span-12">
-                <div className="h-2 overflow-hidden rounded-full bg-[var(--dashboard-track)]">
-                  <div className="h-full w-1/3 animate-pulse rounded-full bg-[var(--accent-hex)]" />
-                </div>
-              </Panel>
-            ))}
-          </div>
-        </MotionDiv>
-      </main>
+        </div>
+        <main className="mp-part" aria-label={TABS[partIndex].label}>
+          {tab === 'overview' && pointsGoal.status !== 'hidden' && <div className="mp-goal"><ProgressPointsGoal standing={pointsGoal} onEditGrades={onEditGrades} onAddMockResult={onAddMockResult} /></div>}
+          {part}
+          {next ? <div className="mp-next-wrap">{next}</div> : null}
+        </main>
+      </div>
+      {insightSheet}
     </div></KobraScope>
   );
 };

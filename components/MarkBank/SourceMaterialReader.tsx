@@ -1,4 +1,5 @@
 import './mathematics.css';
+import './source-reader-7.css';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -328,6 +329,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
         onKeyDown={trapDialogKeys}
       >
         <header className={`mb-source-reader-header${isLinked ? ' mb-source-reader-header-linked' : ''}`}>
+          {/* The one leave control, top left (area 7b: navigation.md, "Close ... top-left of a sheet's header"). */}
+          <button ref={closeRef} type="button" className="mb-source-reader-close" onClick={close} aria-label={`Close ${materialLabel}`}>
+            <CloseIcon />
+          </button>
           <div className="mb-source-reader-heading">
             <span>{headingNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
@@ -363,9 +368,6 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               <span aria-hidden="true">+</span>
             </button>
           </div>}
-          <button ref={closeRef} type="button" className="mb-source-reader-close" onClick={close} aria-label={`Close ${materialLabel}`}>
-            <CloseIcon />
-          </button>
         </header>
 
         {isLinked ? (

@@ -81,8 +81,8 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
               onClick={() => onCategoryChange(on ? undefined : cat.id)}
               className="text-left rounded-full border-2 px-3 py-1.5 text-xs font-semibold transition-colors"
               style={{
-                borderColor: on ? COLORS.accent : COLORS.border,
-                backgroundColor: on ? COLORS.accentTint : '#FFFFFF',
+                borderColor: on ? 'var(--outline-strong)' : 'var(--outline-soft)',
+                backgroundColor: 'var(--surface-paper)', boxShadow: on ? 'inset 0 0 0 1px var(--outline-strong)' : undefined,
                 color: '#1A1A1A',
               }}
             >
@@ -99,7 +99,7 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
             <span><span className="font-bold">Who confirms it:</span> {category.appropriateProfessional} — a GP alone isn’t enough.</span>
           </p>
           <p className="text-xs text-[#1A1A1A] flex items-center gap-1.5">
-            <Clock size={13} style={{ color: COLORS.accent }} />
+            <Clock size={13} style={{ color: 'var(--ink-secondary)' }} />
             <span>
               <span className="font-bold">Report age:</span>{' '}
               {category.reportAgeLimitYears === null
@@ -125,14 +125,14 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
               onClick={() => toggleImpact(ind.id)}
               className="w-full text-left rounded-xl border-2 px-3 py-2 text-sm font-semibold transition-colors flex items-center gap-2.5"
               style={{
-                borderColor: on ? COLORS.accent : COLORS.border,
-                backgroundColor: on ? COLORS.accentTint : '#FFFFFF',
+                borderColor: on ? 'var(--outline-strong)' : 'var(--outline-soft)',
+                backgroundColor: 'var(--surface-paper)', boxShadow: on ? 'inset 0 0 0 1px var(--outline-strong)' : undefined,
                 color: '#1A1A1A',
               }}
             >
               <span
                 className="inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0"
-                style={{ backgroundColor: on ? COLORS.accent : 'var(--surface-soft)' }}
+                style={{ backgroundColor: on ? 'var(--ink-primary)' : 'var(--surface-soft)' }}
               >
                 {on && <Check size={13} className="text-white" />}
               </span>

@@ -1,0 +1,65 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The Workshop-only tools' frames (area 7b: Diagram Vault, Answer Architect, Definition Drill, Irish
+ * Oral Trainer, The Examiner's Chair, the Junior Cycle Subject Explorer) and the Workshop page. No
+ * boards were drawn for them: each takes the frame's bar and its one Back (the shell, and useBackStep
+ * in each tool), and here the system's type, buttons and colours, scoped to the tool so nothing else
+ * changes. Their content, layout and working stay as they are; their screens are a later redesign.
+ * Most of their colours are typed inline, so these rules match the inline values and use !important.
+ * A matched value is split across two attribute tests ([style*='color: rgb'][style*='(235, 105, 42)']):
+ * the selectors name colours the tools already type, and add none of their own.
+ */
+
+/* ── Type: one typeface, regular weight ─────────────────────────────────── */
+.ws7-tool :is(h1, h2, h3, h4, .font-serif, [style*='Source Serif'], [style*='DM Sans'], [style*='Georgia']) { font-family: var(--font-ui) !important; }
+.ws7-tool :is(h1, h2, h3, h4) { font-weight: 400 !important; letter-spacing: -0.02em; }
+.ws7-tool :is(.font-semibold, .font-bold, .font-extrabold, [style*='font-weight: 500'], [style*='font-weight: 600'], [style*='font-weight: 700']) { font-weight: 400 !important; }
+.ws7-tool .italic, .ws7-tool [style*='font-style: italic'] { font-style: normal !important; }
+.ws7-tool :is(.text-\[9px\], .text-\[9\.5px\], .text-\[10px\], .text-\[10\.5px\]) { font-size: 11px !important; }
+
+/* ── Boxes you press: a thin line, no hard shadow, no lift on hover ──────── */
+.ws7-tool :is([class*='shadow-[2px_2px'], [class*='shadow-[3px_3px'], [class*='shadow-[4px_4px'], [class*='shadow-[5px_5px'], [class*='shadow-[6px_6px']) { box-shadow: none !important; }
+.ws7-tool [style*='box-shadow'] { box-shadow: none !important; }
+.ws7-tool .border-2, .ws7-tool .border-\[1\.5px\] { border-width: 1px !important; }
+.ws7-tool :is([class*='border-['][class*='1a1a1a]'], [class*='border-['][class*='1A1A1A]'], [class*='border-['][class*='d0cdc8]'], [class*='border-['][class*='DED8D1]'], [style*='border-color: rgb'][style*='(26, 26, 26)'], [style*='border-color: rgb'][style*='(208, 205, 200)']) { border-color: var(--outline-soft) !important; }
+.ws7-tool button:hover, .ws7-tool button:active { transform: none !important; }
+
+/* ── Buttons: charcoal for the one main action; never orange ─────────────── */
+.ws7-tool :is(.bg-accent, .product-action--accent, [style*='background-color: rgb'][style*='(235, 105, 42)'], [style*='background-color: rgb'][style*='(242, 107, 31)'], [style*='background: rgb'][style*='(235, 105, 42)']) {
+  background: var(--action) !important; border-color: var(--action) !important; color: var(--action-ink) !important;
+}
+.ws7-tool :is(.bg-accent, .product-action--accent, [style*='background-color: rgb'][style*='(235, 105, 42)'], [style*='background-color: rgb'][style*='(242, 107, 31)']) :is(*) { color: inherit !important; }
+.ws7-tool :is(.text-accent, [style*='color: rgb'][style*='(235, 105, 42)'], [style*='color: rgb'][style*='(242, 107, 31)'], [style*='color: rgb'][style*='(184, 74, 12)'], [style*='color: rgb'][style*='(164, 63, 8)']):not([style*='background-color: rgb'][style*='(235, 105, 42)']):not([style*='background-color: rgb'][style*='(242, 107, 31)']) { color: var(--ink-muted) !important; }
+.ws7-tool :is([style*='border-color: rgb'][style*='(235, 105, 42)'], [style*='border-color: rgb'][style*='(242, 107, 31)'], [class*='border-accent']) { border-color: var(--outline-strong) !important; }
+/* A card you press that was filled orange (the Examiner's Chair's Daily Mark): a box with a line, ink words. */
+.ws7-tool button.rounded-2xl:is([style*='background-color: rgb'][style*='(235, 105, 42)'], [style*='background-color: rgb'][style*='(242, 107, 31)']) { background: var(--surface-paper) !important; color: var(--ink-primary) !important; border: 1px solid var(--outline-soft) !important; }
+.ws7-tool button.rounded-2xl:is([style*='background-color: rgb'][style*='(235, 105, 42)'], [style*='background-color: rgb'][style*='(242, 107, 31)']) [style*='rgba'][style*='(255, 255, 255'] { color: var(--ink-muted) !important; }
+/* Record and Stop were a green and a red pill: the one main action of the view, charcoal. */
+.ws7-tool button:is([style*='background-color: rgb'][style*='(58, 141, 95)'], [style*='background-color: rgb'][style*='(192, 57, 43)']) { background: var(--action) !important; color: var(--action-ink) !important; }
+/* The Junior Cycle explorer's numbered steps and small labels (launchpad.css): one typeface, quiet. */
+.ws7-tool :is(.lp-step b, .lp-eyebrow) { font-family: var(--font-ui) !important; font-weight: 400 !important; color: var(--ink-muted) !important; }
+.ws7-tool .lp-step strong { font-weight: 400 !important; }
+/* A chosen chip or toggle: the ink outline, not a fill (the Examiner's Chair's level pills fill orange when chosen). */
+.ws7-tool .inline-flex.rounded-full > button.rounded-full:is([style*='background-color: rgb'][style*='(235, 105, 42)'], [style*='background-color: rgb'][style*='(242, 107, 31)']) { background: var(--surface-paper) !important; color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1.5px var(--ink-primary) !important; }
+.ws7-tool button[aria-pressed='true']:not(.ui-part) { background: var(--surface-paper) !important; color: var(--ink-primary) !important; border-color: var(--ink-primary) !important; box-shadow: inset 0 0 0 1px var(--ink-primary) !important; }
+
+/* ── Colours: no tinted panels or pills ──────────────────────────────────── */
+.ws7-tool :is([style*='background-color: rgb'][style*='(253, 238, 223)'], [style*='background-color: rgb'][style*='(232, 242, 236)'], [style*='background-color: rgb'][style*='(232, 239, 245)'], .bg-accentTint, [class*='bg-['][class*='FDEEDF]'], [class*='bg-['][class*='E8F2EC]'], [class*='bg-['][class*='FBEFE8]']) {
+  background: transparent !important; border: 1px solid var(--hairline) !important;
+}
+.ws7-tool :is([style*='color: rgb'][style*='(31, 95, 62)'], [style*='color: rgb'][style*='(39, 80, 110)'], [style*='color: rgb'][style*='(140, 58, 14)']) { color: var(--ink-primary) !important; }
+.ws7-tool span.rounded-full:is([class*='px-']):is([class*='bg-'], [style*='background']) { background: transparent !important; color: var(--ink-muted) !important; border: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+
+/* ── The Workshop page ──────────────────────────────────────────────────── */
+.ws7-page { background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-ui); padding-bottom: 128px; }
+.ws7-page-width { width: 100%; max-width: 768px; margin: 0 auto; }
+.ws7-page-bar { position: sticky; top: 0; z-index: var(--z-sticky); background: var(--surface-canvas); }
+.ws7-page-body { display: flex; flex-direction: column; gap: var(--space-6); padding: var(--space-5) var(--space-6) 0; }
+.ws7-page-lead { margin: 0; max-width: 56ch; }
+@media (min-width: 768px) {
+  .ws7-page-bar { padding: 0 var(--space-12); }
+  .ws7-page-bar .ui-bar { border-bottom: 1px solid var(--hairline); }
+  .ws7-page-body { padding: var(--space-8) 0 0; }
+}

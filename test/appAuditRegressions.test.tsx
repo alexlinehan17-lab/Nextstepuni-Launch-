@@ -93,13 +93,18 @@ describe('app audit regressions', () => {
     const profile = readFileSync(resolve(ROOT, 'components/UserProfileMenu.tsx'), 'utf8');
     const catchUp = readFileSync(resolve(ROOT, 'components/CatchUpLane/index.tsx'), 'utf8');
     const commandWords = readFileSync(resolve(ROOT, 'components/CommandWordReflex/index.tsx'), 'utf8');
-    expect(router).toContain('label="Back to modules"');
+    // A world's bar moved into its own screen (area 5): its one Back is still named.
+    const world = readFileSync(resolve(ROOT, 'components/ModuleShowcase.tsx'), 'utf8');
+    expect(router).toContain('<ModuleWorldScreen');
+    expect(world).toContain("label: 'Back to Modules'");
     expect(shop).toContain("'Close Island Shop'");
-    expect(profile).toContain('aria-label="Close profile"');
+    // The account sheet is the shared Sheet now (area 0): its Close is named through closeLabel.
+    expect(profile).toContain('closeLabel="Close profile"');
     expect(catchUp).toContain('aria-label="Catch-Up level"');
     expect(catchUp).toContain('value={levelFilter}');
-    // The level filter is the shared pill tab control now (role=tab / aria-selected), not hand-rolled aria-pressed buttons.
-    expect(commandWords).toContain("import HorizontalTabs from '../ui/HorizontalTabs'");
+    // The level filter is the shared selection bar now (area 7b: role=radiogroup, named "Question level"), not hand-rolled aria-pressed buttons.
+    expect(commandWords).toContain("import { SelectionBar } from '../ui/Choice'");
+    expect(commandWords).toContain('label="Question level"');
     expect(commandWords).toContain('value={levelFilter}');
   });
 
