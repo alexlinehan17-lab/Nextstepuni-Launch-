@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, { useId } from 'react';
-import { ArrowUpRight, RotateCw } from 'lucide-react';
+import { ArrowRight, RotateCw } from 'lucide-react';
 import Avatar from '../../Avatar';
 import { IslandPreview } from './IslandPreview';
 import { possessive, type YearIsland } from './yearIslands';
@@ -71,7 +71,7 @@ export function YearIslandsBook(props: YearIslandsBookProps) {
         <div className="year-book-message">
           <strong>Add your school year to see your year.</strong>
           <p>We only show you the islands of classmates in the same year as you, so we need to know which year you are in.</p>
-          {onOpenSetup && <button type="button" className="year-action" onClick={onOpenSetup}>Set my school year <ArrowUpRight size={16} /></button>}
+          {onOpenSetup && <button type="button" className="year-action" onClick={onOpenSetup}>Set my school year <ArrowRight size={16} /></button>}
         </div>
       )}
       {status === 'ready' && (classmates.length ? (
@@ -89,7 +89,7 @@ export function YearIslandsBook(props: YearIslandsBookProps) {
                       <small>{tilesLabel(classmate.tileCount)}</small>
                     </span>
                   </span>
-                  <span className="year-visit-cta" aria-hidden="true">Visit island <ArrowUpRight size={15} /></span>
+                  <span className="year-visit-cta" aria-hidden="true">Visit island <ArrowRight size={15} /></span>
                 </button>
               </li>
             ))}

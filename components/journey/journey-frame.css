@@ -186,3 +186,6 @@
   .journey-paper.journey-paper.jm-frame :is(.shelf-tile, .tile-categories > button, .map-navigation button) { transition: none; }
   .journey-paper.journey-paper.jm-frame :is(.shelf-tile, .tile-categories > button):active { transform: none; }
 }
+/* Visit island stays in the app: the forward arrow, bare (no circle round it; area 9). */
+.journey-paper.journey-paper.jm-frame .jm-page .year-visit-cta svg,
+.journey-paper.journey-paper.jm-frame .jm-page .year-classmate-card:is(:hover,:focus-visible) .year-visit-cta svg { width: 20px; height: 20px; padding: 0; border: 0; border-radius: 0; background: none; color: inherit; }
