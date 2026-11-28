@@ -103,6 +103,8 @@
   outline: none;
 }
 
+/* Close Ways In: the shared quiet text button (area 9); the old icon button's rule below is unused. */
+.mb-wi-close { flex: none; margin: -10px -4px 0 0; }
 /* Close Ways In: the shared icon button, a bare glyph in a 44 x 44 target. */
 .mb-wi-icon-button {
   width: 44px;

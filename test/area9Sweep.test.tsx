@@ -80,3 +80,13 @@ test('a menu row\'s chevron shows: the rule that shows it comes after the rule t
   expect(hide).toBeGreaterThan(0);
   expect(show).toBeGreaterThan(hide);
 });
+
+test('a control that focuses itself on arrival (Mark Bank\'s Reveal) is quiet until a key is pressed', async () => {
+  const { quietFocus } = await import('@/hooks/useModal');
+  fireEvent.pointerDown(window);
+  expect(quietFocus()).toBe('');
+  fireEvent.keyDown(window, { key: 'Tab' });
+  expect(quietFocus()).toBeUndefined();
+  const session = readFileSync(join(process.cwd(), 'components/MarkBank/SessionScreen.tsx'), 'utf8');
+  expect(session).toMatch(/className="mb-reveal-button"\s+autoFocus=\{answerVariants\.length === 0\}\s+\/\/[^\n]*\n\s+data-quiet-focus=\{answerVariants\.length === 0 \? quietFocus\(\) : undefined\}/);
+});

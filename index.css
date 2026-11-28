@@ -1396,58 +1396,47 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   background: var(--mb-paper) !important;
 }
 
-/* The question-side doorway into a passage. It is part of the printed-paper
-   card, not another floating card inside it, so it closes the sheet edge to
-   edge and uses one quiet rule as its boundary. */
+/* The question-side doorway into a passage: a row on the page under a hairline (the system's look,
+   area 9; it was an orange-iconed serif row). Mark Bank's practice card, the PE task card, the Politics
+   feed, the applied-maths and PE rubrics and Listening Studio's sitting place it locally. */
 .mb-source-material-trigger {
-  width: calc(100% + 36px);
-  margin: 17px -18px -18px;
-  padding: 13px 16px;
+  width: 100%;
+  margin: var(--space-2) 0 0;
+  padding: 10px 0;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 12px;
+  gap: var(--space-3);
   align-items: center;
   text-align: left;
-  color: var(--mb-ink);
-  background: var(--mb-soft);
+  color: var(--ink-primary);
+  background: none;
   border: 0;
-  border-top: 1px solid var(--mb-border);
+  border-top: 1px solid var(--hairline);
   cursor: pointer;
   transition: background-color 160ms ease;
 }
 
-.mb-source-material-trigger:hover,
-.mb-source-material-trigger:focus-visible {
-  background: #FDEEDF;
+@media (hover: hover) and (pointer: fine) {
+  .mb-source-material-trigger:hover { background: var(--surface-soft); }
 }
 
-/* Scheme links sit between rubric paragraphs, so they cannot use the
-   question-card footer's negative bottom margin. */
+/* Scheme links sit between rubric paragraphs: a rule above and below. */
 .mb-source-material-trigger-inline {
-  width: 100%;
   margin: 17px 0 14px;
-  border-bottom: 1px solid var(--mb-border);
-}
-
-.dark .mb-source-material-trigger:hover,
-.dark .mb-source-material-trigger:focus-visible {
-  background: #38281F;
+  border-bottom: 1px solid var(--hairline);
 }
 
 .mb-source-material-trigger:focus-visible {
-  outline: 3px solid rgba(var(--nsu-orange-rgb), .28);
-  outline-offset: -3px;
+  outline: 2px solid var(--outline-strong);
+  outline-offset: 2px;
 }
 
 .mb-source-material-icon {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   display: grid;
   place-items: center;
-  color: #B64B12;
-  background: var(--mb-paper);
-  border: 1px solid rgba(var(--nsu-orange-rgb), .38);
-  border-radius: 11px;
+  color: var(--ink-secondary);
 }
 
 .mb-source-material-copy {
@@ -1457,14 +1446,12 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 }
 
 .mb-source-material-copy > span {
-  color: #9A3D0B;
-  font: 700 9.5px/1.4 'DM Sans', system-ui, sans-serif;
-  letter-spacing: .11em;
+  color: var(--ink-muted);
+  font: 400 11px/14px var(--font-ui);
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
-.dark .mb-source-material-copy > span,
-.dark .mb-source-material-icon,
 .dark .mb-source-reader-heading > span,
 .dark .mb-source-reader-provenance a {
   color: #FFAE7A;
@@ -1473,27 +1460,25 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 .mb-source-material-copy strong {
   margin-top: 1px;
   overflow: hidden;
-  color: var(--mb-ink);
-  font: 650 14px/1.35 'Source Serif 4', Georgia, serif;
+  color: var(--ink-primary);
+  font: 400 16px/21px var(--font-ui);
+  letter-spacing: -0.015em;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .mb-source-material-copy small {
   margin-top: 2px;
-  color: var(--mb-muted);
-  font: 500 10.5px/1.35 'DM Sans', system-ui, sans-serif;
+  color: var(--ink-muted);
+  font: 400 13px/18px var(--font-ui);
 }
 
 .mb-source-material-open {
-  width: 29px;
-  height: 29px;
+  width: 20px;
+  height: 20px;
   display: grid;
   place-items: center;
-  color: var(--mb-ink-2);
-  background: var(--mb-paper);
-  border: 1px solid var(--mb-border);
-  border-radius: 50%;
+  color: var(--ink-muted);
 }
 
 /* Immersive source reader. The overlay is intentionally solid-dim rather than
@@ -1923,14 +1908,6 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 }
 
 @media (max-width: 640px) {
-  .mb-source-material-trigger {
-    padding: 12px 14px;
-  }
-
-  .mb-source-material-copy strong {
-    font-size: 13.5px;
-  }
-
   .mb-source-reader-overlay {
     padding: 0;
   }

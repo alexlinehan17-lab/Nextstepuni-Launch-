@@ -45,6 +45,7 @@ import { MarkTick, marksLabel } from './ClaimRows';
 import './mark-bank-session-paper.css';
 import './practice-card.css';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
+import { quietFocus } from '../../hooks/useModal';
 import { emphasisSegments } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, useReducedMotion } from '../Motion';
@@ -3593,6 +3594,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 type="button"
                 className="mb-reveal-button"
                 autoFocus={answerVariants.length === 0}
+                // Focus lands here on arrival as it always did, without a ring until a key is pressed (area 9).
+                data-quiet-focus={answerVariants.length === 0 ? quietFocus() : undefined}
                 disabled={needsAttempt || (answerVariants.length > 0 && !answerVariantId)}
                 // Clear any lingering whisper so the schedule note for the card
                 // just graded does not hang over the one now in front of them.

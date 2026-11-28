@@ -29,6 +29,11 @@ if (typeof window !== 'undefined') {
     document.querySelectorAll(`[${QUIET}]`).forEach(el => el.removeAttribute(QUIET));
   }, true);
 }
+/** For a control that takes focus by itself on arrival (autoFocus): the attribute that keeps its
+ *  ring quiet until a key is pressed, or nothing when the student is using the keyboard. */
+export function quietFocus(): '' | undefined {
+  return keyboardLast ? undefined : '';
+}
 function placeFocus(target: HTMLElement) {
   if (!keyboardLast) {
     target.setAttribute(QUIET, '');

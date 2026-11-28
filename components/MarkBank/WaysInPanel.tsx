@@ -12,7 +12,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, Minus, Plus, Square, Volume2, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Minus, Plus, Square, Volume2 } from 'lucide-react';
 import type { SecCard } from '../../types/markBank';
 import { buildQuestionModel, splitQuestionLines } from '../WaysIn/questionModel';
 import { waysInSourceFromMarkBank } from '../WaysIn/sources';
@@ -20,6 +20,7 @@ import {
   buildKeyParts, planRowsFor,
   type KeyPartsBreakdown, type KPFlag, type KPUnit,
 } from '../WaysIn/keyParts';
+import { TextButton } from '../ui/Button';
 import './waysInPanel.css';
 
 type Stage = 'breakdown' | 'read' | 'plan';
@@ -402,9 +403,9 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
           <p className="mb-wi-eyebrow">Ways In · question support</p>
           <h2 id="mb-wi-title" ref={titleRef} tabIndex={-1}>Work with the wording.</h2>
         </div>
-        <button type="button" className="mb-wi-icon-button" onClick={close} aria-label="Close Ways In">
-          <X size={18} aria-hidden="true" />
-        </button>
+        {/* Said in words, not an X: the practice bar's Close is the screen's one leave control
+            (navigation.md; area 9). The name is unchanged. */}
+        <TextButton tone="quiet" className="mb-wi-close" onClick={close} aria-label="Close Ways In">Close</TextButton>
       </header>
 
       <p className="mb-wi-promise">
