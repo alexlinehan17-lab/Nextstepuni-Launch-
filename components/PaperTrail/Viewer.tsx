@@ -1691,8 +1691,6 @@ const Viewer: React.FC<ViewerProps> = ({
         const ss = String(secs % 60).padStart(2, '0');
         return (
           <div className="pv-loop" data-place="bar">
-            <IconButton label="End the loop — your place is saved" onClick={exitLoopSavingPlace}
-              icon={<X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
             <div className="pv-loop-copy">
               <p className="t-label pv-loop-label">
                 The full loop · <span className="ui-readout">{loop.idx + 1} of {loopQuestions.length}</span>
@@ -1702,6 +1700,11 @@ const Viewer: React.FC<ViewerProps> = ({
               </p>
             </div>
             <span className="ui-readout pv-loop-time">{mm}:{ss}</span>
+            {/* Ending the loop is said in words, not an X: the viewer's Close is the screen's one leave
+                control (navigation.md; area 9). The words are the start of its name. */}
+            <TextButton tone="quiet" className="pv-loop-end" aria-label="End the loop — your place is saved" onClick={exitLoopSavingPlace}>
+              End the loop
+            </TextButton>
             {marked ? (
               <UiButton kind="main" size="lg" block arrow={loop.idx + 1 >= loopQuestions.length ? undefined : 'forward'} onClick={loopNext}>
                 {loop.idx + 1 >= loopQuestions.length ? 'Finish' : 'Next'}
@@ -1719,8 +1722,6 @@ const Viewer: React.FC<ViewerProps> = ({
       {!attemptFirst && resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
         <div className="pv-loop pv-loop--resume" data-place="resume">
           <div className="pv-loop-head">
-            <IconButton label="Dismiss — keep the place saved for next time" onClick={() => setResumePlace(null)}
-              icon={<X className="ui-icon" width={24} height={24} strokeWidth={1.75} aria-hidden="true" focusable="false" />} />
             <div className="pv-loop-copy">
               <p className="t-label pv-loop-label">The full loop</p>
               <p className="pv-loop-say">
@@ -1732,6 +1733,9 @@ const Viewer: React.FC<ViewerProps> = ({
                 </p>
               )}
             </div>
+            <TextButton tone="quiet" className="pv-loop-end" aria-label="Dismiss — keep the place saved for next time" onClick={() => setResumePlace(null)}>
+              Dismiss
+            </TextButton>
           </div>
           <div className="ui-pair">
             <UiButton kind="main" size="lg" onClick={resumeLoop}>
