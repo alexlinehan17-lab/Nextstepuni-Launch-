@@ -3,13 +3,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowRight, ArrowLeft, Check, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart, Sparkles, Compass, Star, Puzzle, BookOpen } from 'lucide-react';
+import { Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart, Sparkles, Compass, Star, Puzzle, BookOpen } from 'lucide-react';
 import { type NorthStarCategory, type NorthStar } from '../types';
 import { type CurriculumLevel } from '../utils/authUtils';
 import { CATEGORY_COLORS, VISION_CARD_ART, getActiveCategories, getVisionCardsForLevel } from '../northStarData';
+import { Button, TextButton } from './ui/Button';
+import { SelectionMark } from './ui/Choice';
 import { CategoryIconBlob, NORTH_STAR_CATEGORY_BLOBS as CATEGORY_BLOBS } from './NorthStarCategoryIcon';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
@@ -38,6 +40,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
   const [selectedCategory, setSelectedCategory] = useState<NorthStarCategory | null>(initialData?.category ?? null);
   const [statement] = useState(initialData?.statement ?? '');
   const [selectedCards, setSelectedCards] = useState<Set<string>>(new Set(initialData?.visionBoard ?? []));
+  const choicesRef = useRef<HTMLDivElement>(null);
 
   const activeCategories = useMemo(() => getActiveCategories(curriculumLevel), [curriculumLevel]);
   const activeVisionCards = useMemo(() => getVisionCardsForLevel(curriculumLevel), [curriculumLevel]);
@@ -87,12 +90,6 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
     });
   };
 
-  const canProceedSub = () => {
-    if (subStep === 1) return selectedCategory !== null;
-    if (subStep === 2) return selectedCards.size >= minCards;
-    return false;
-  };
-
   const goNextSub = () => {
     if (subStep === 2) {
       handleComplete();
@@ -113,56 +110,53 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
     exit: (dir: number) => ({ opacity: 0, x: dir > 0 ? -40 : 40 }),
   };
 
+  // The system's look (area 9): the shared choice tiles (white, a 1px line; chosen, an ink outline and
+  // a drawn tick: round for the one reason, a rounded square for the several cards), the type scale,
+  // and the charcoal button that says what is still needed. Each card keeps its own drawing.
+  const stillNeeded = subStep === 1
+    ? (selectedCategory === null ? 'Pick the one that feels most like yours.' : null)
+    : (selectedCards.size < minCards ? `Pick ${minCards}-${maxCards} things that represent what you're working towards.` : null);
+
   return (
     <div className="space-y-6">
       <AnimatePresence mode="wait" custom={direction}>
 
         {/* Sub-step 1: Pick a category */}
         {subStep === 1 && (
-          <MotionDiv key="ns-sub1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-            <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">What's driving you?</h2>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+          <MotionDiv key="ns-sub1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.24, ease: [0.2, 0, 0, 1] }}>
+            <h2 className="t-heading text-[var(--ink-primary)] mb-1">What's driving you?</h2>
+            <p className="t-sub mb-6">
               {curriculumLevel === 'junior'
                 ? 'Everyone has a reason for putting in the work. What’s yours?'
                 : 'Everyone has a reason for doing the Leaving Cert. Pick the one that feels most like yours.'}
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div ref={choicesRef} tabIndex={-1} className="grid grid-cols-1 sm:grid-cols-2 gap-2" role="radiogroup" aria-label="What's driving you?">
               {activeCategories.map((cat) => {
                 const colors = CATEGORY_COLORS[cat.id];
                 const isSelected = selectedCategory === cat.id;
                 const Icon = ICON_MAP[cat.icon];
                 const blobCfg = CATEGORY_BLOBS[cat.id];
-                // Every card gets the full chunky-shadow + black border
-                // grammar so the unselected ones don't read as "undesigned"
-                // next to the selected. Selection is communicated by the
-                // accent-tint background + accent border swap only — same
-                // pattern as YearTransitionFlow's TY-vs-5th picker.
                 return (
                   <button
                     key={cat.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={isSelected}
                     onClick={() => setSelectedCategory(cat.id)}
-                    className={`flex items-center gap-3.5 p-4 rounded-2xl border-2 text-left text-[#1A1A1A] dark:text-zinc-100 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] dark:hover:shadow-[6px_6px_0_0_#3f3f46] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] dark:active:shadow-[0px_0px_0_0_#3f3f46] transition-all duration-150 ${
-                      isSelected
-                        ? 'bg-[#FDEEDF] dark:bg-accent/14 border-accent'
-                        : 'bg-white dark:bg-surface-paper border-[#1A1A1A] dark:border-zinc-600'
-                    }`}
+                    className="ui-part ui-choice text-left"
                   >
                     {blobCfg ? (
-                      <CategoryIconBlob config={blobCfg} size={64} />
+                      <CategoryIconBlob config={blobCfg} size={48} />
                     ) : (
-                      <div className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-surface-soft'}`}>
-                        {Icon && <Icon size={22} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />}
-                      </div>
+                      <span className="w-12 h-12 flex items-center justify-center shrink-0">
+                        {Icon && <Icon size={22} className={colors.text} />}
+                      </span>
                     )}
-                    <div>
-                      <p className="text-sm font-bold">{cat.label}</p>
-                      <p className={`text-xs mt-0.5 ${isSelected ? 'text-accentDarkText dark:text-zinc-300' : 'text-zinc-500 dark:text-zinc-400'}`}>{cat.description}</p>
-                    </div>
-                    {isSelected && (
-                      <div className="ml-auto shrink-0 w-6 h-6 rounded-full flex items-center justify-center bg-accent">
-                        <Check size={12} className="text-white" strokeWidth={3} />
-                      </div>
-                    )}
+                    <span className="ui-choice-body">
+                      <span className="ui-choice-label">{cat.label}</span>
+                      {' '}<span className="ui-choice-meta">{cat.description}</span>
+                    </span>
+                    <SelectionMark on={isSelected} />
                   </button>
                 );
               })}
@@ -172,12 +166,12 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
 
         {/* Sub-step 2: Vision board */}
         {subStep === 2 && (
-          <MotionDiv key="ns-sub2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-            <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Build Your Vision Board</h2>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
-              Pick <span className="font-semibold text-[var(--accent-hex)]">{minCards}-{maxCards} things</span> that represent what you're working towards. <span className="font-semibold text-[var(--accent-hex)]">{selectedCards.size} selected</span>
+          <MotionDiv key="ns-sub2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.24, ease: [0.2, 0, 0, 1] }}>
+            <h2 className="t-heading text-[var(--ink-primary)] mb-1">Build Your Vision Board</h2>
+            <p className="t-sub mb-6">
+              Pick <span className="text-[var(--ink-primary)]">{minCards}-{maxCards} things</span> that represent what you're working towards. <span className="text-[var(--ink-primary)]">{selectedCards.size} selected</span>
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+            <div ref={choicesRef} tabIndex={-1} className="grid grid-cols-2 sm:grid-cols-3 gap-2" role="group" aria-label="Build Your Vision Board">
               {sortedVisionCards.map((card) => {
                 const isSelected = selectedCards.has(card.id);
                 const colors = CATEGORY_COLORS[card.category];
@@ -185,38 +179,30 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                 const isDisabled = !isSelected && selectedCards.size >= maxCards;
                 const visionIcon = VISION_CARD_ART[card.id];
                 const categoryBlob = CATEGORY_BLOBS[card.category];
-                // Same selection language as the category picker above —
-                // accent-tint + accent border + offset shadow, scaled
-                // smaller (3px shadow) for the tighter tile grid.
                 return (
                   <button
                     key={card.id}
+                    type="button"
+                    role="checkbox"
+                    aria-checked={isSelected}
                     onClick={() => toggleCard(card.id)}
                     disabled={isDisabled}
-                    className={`flex flex-col items-center gap-2 p-3.5 rounded-xl border-2 transition-all duration-150 text-[#1A1A1A] dark:text-zinc-100 ${
-                      isSelected
-                        ? 'bg-[#FDEEDF] dark:bg-accent/14 border-accent shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]'
-                        : isDisabled
-                        ? 'bg-zinc-50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700 text-zinc-300 dark:text-zinc-600 cursor-not-allowed'
-                        : 'bg-white dark:bg-surface-paper border-hairline dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
-                    }`}
+                    className="ui-part ui-choice ui-choice--tile disabled:opacity-60"
                   >
                     {visionIcon && categoryBlob ? (
                       <CategoryIconBlob
                         config={{ iconPath: visionIcon, blob: categoryBlob.blob, blobPath: categoryBlob.blobPath }}
-                        size={56}
+                        size={48}
                       />
                     ) : (
-                      <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-surface-soft'}`}>
-                        {Icon && <Icon size={18} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />}
-                      </div>
+                      <span className="w-9 h-9 flex items-center justify-center">
+                        {Icon && <Icon size={18} className={colors.text} />}
+                      </span>
                     )}
-                    <span className="text-[11px] font-semibold text-center leading-tight">{card.label}</span>
-                    {isSelected && (
-                      <div className="w-5 h-5 rounded-full flex items-center justify-center bg-accent">
-                        <Check size={10} className="text-white" strokeWidth={3} />
-                      </div>
-                    )}
+                    <span className="ui-choice-body">
+                      <span className="ui-choice-label">{card.label}</span>
+                    </span>
+                    <SelectionMark on={isSelected} shape="square" />
                   </button>
                 );
               })}
@@ -226,23 +212,18 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
       </AnimatePresence>
 
       {/* Internal navigation */}
-      <div className="flex items-center justify-between pt-4">
+      <div className="flex items-end justify-between gap-4 pt-2">
         {subStep > 1 ? (
-          <button onClick={goBackSub} className="flex items-center gap-1.5 text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
-            <ArrowLeft size={14} /> Back
-          </button>
-        ) : <div />}
-        <button
+          <TextButton tone="quiet" onClick={goBackSub}>Back</TextButton>
+        ) : <span />}
+        <Button
+          kind="main"
+          arrow={subStep === 2 ? undefined : 'forward'}
+          missing={stillNeeded ? { sentence: stillNeeded, goTo: choicesRef } : undefined}
           onClick={goNextSub}
-          disabled={!canProceedSub()}
-          className="flex items-center gap-2 px-6 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[rgba(var(--accent),0.2)]"
         >
-          {subStep === 2 ? (
-            <><Check size={14} /> Save My North Star</>
-          ) : (
-            <>Continue <ArrowRight size={14} /></>
-          )}
-        </button>
+          {subStep === 2 ? 'Save My North Star' : 'Continue'}
+        </Button>
       </div>
     </div>
   );
