@@ -672,9 +672,7 @@
    "tailwind [#…]": 2
   },
   "components/ui/ModalFrame.tsx": {
-   "hex": 1,
-   "tailwind [#…]": 8,
-   "zinc/neutral-9xx surface": 1
+   "tailwind [#…]": 1
   },
   "components/ui/ProductPatterns.tsx": {
    "hex": 7,
